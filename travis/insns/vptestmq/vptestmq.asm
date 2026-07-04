@@ -20,3 +20,6 @@ default rel
 	vptestmq k1, ymm0, yword [eax+64]
 	vptestmq k3, zmm0, zword [eax+1]
 	vptestmq k2, zmm7, zword [eax+64]
+	vptestmq k5, xmm4, [0x2e6]
+	vptestmq k3, ymm5, [0xf65]
+	vptestmq k4, zmm1, [0x74f]

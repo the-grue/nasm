@@ -12,3 +12,5 @@ default rel
 	vcmple_oqsd xmm4, xmm4, qword [eax+64]
 	vcmple_oqsd k2, xmm4, qword [eax+1]
 	vcmple_oqsd k7, xmm6, qword [eax+64]
+	vcmple_oqsd xmm2, xmm1, [0x668]
+	vcmple_oqsd k7, xmm7, [0x8b6]

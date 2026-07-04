@@ -20,3 +20,6 @@ default rel
 	vpsadbw ymm1, ymm4, yword [eax+64]
 	vpsadbw zmm5, zmm4, zword [eax+1]
 	vpsadbw zmm0, zmm0, zword [eax+64]
+	vpsadbw xmm3, xmm2, [0xc2a]
+	vpsadbw ymm4, ymm2, [0x856]
+	vpsadbw zmm3, zmm3, [0xd52]

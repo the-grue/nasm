@@ -17,3 +17,6 @@ default rel
 	lzcnt edx, dword [eax+64]
 	lzcnt rax, qword [eax+1]
 	lzcnt rdx, qword [eax+64]
+	lzcnt si, [0xb38]
+	lzcnt ecx, [0x31d]
+	lzcnt rdx, [0x306]

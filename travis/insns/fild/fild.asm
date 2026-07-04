@@ -11,3 +11,6 @@ default rel
 	fild word [eax+64]
 	fild qword [eax+1]
 	fild qword [eax+64]
+	fild [0xedb]
+	fild [0x56c]
+	fild [0xb44]

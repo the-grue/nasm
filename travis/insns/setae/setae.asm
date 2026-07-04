@@ -13,3 +13,4 @@ default rel
 	setae r18d
 	setae byte [eax+1]
 	setae byte [eax+64]
+	setae [0x51a]

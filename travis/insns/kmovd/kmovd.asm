@@ -13,3 +13,4 @@ default rel
 	kmovd r18d, k3
 	kmovd dword [eax+1], k4
 	kmovd dword [eax+64], k7
+	kmovd [0xada], k4

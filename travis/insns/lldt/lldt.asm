@@ -15,3 +15,4 @@ default rel
 	lldt r18
 	lldt word [eax+1]
 	lldt word [eax+64]
+	lldt [0xc2c]

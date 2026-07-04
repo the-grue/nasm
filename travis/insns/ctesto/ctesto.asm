@@ -31,3 +31,11 @@ default rel
 	ctesto 5, dword [eax+64], 0x1adc93b8
 	ctesto 7, qword [eax+1], 65570845
 	ctesto 11, qword [eax+64], -381615414
+	ctesto 2, [0xaf8], cl
+	ctesto 13, [0xbde], dx
+	ctesto 14, [0x107], ecx
+	ctesto 5, [0xff9], rsi
+	ctesto 7, [0x581], 0x53
+	ctesto 6, [0xf77], 0x61de
+	ctesto 2, [0x284], 0x1cb251b2
+	ctesto 1, [0xd1e], -388813659

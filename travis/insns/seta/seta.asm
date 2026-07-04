@@ -13,3 +13,4 @@ default rel
 	seta r18d
 	seta byte [eax+1]
 	seta byte [eax+64]
+	seta [0x19a]

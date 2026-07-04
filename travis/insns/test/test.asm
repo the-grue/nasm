@@ -39,3 +39,15 @@ default rel
 	test dword [eax+64], 0x6bd7579
 	test qword [eax+1], 174016346
 	test qword [eax+64], -197546387
+	test [0xbcf], bl
+	test [0xdd0], bp
+	test [0x280], edi
+	test [0x6a9], rbp
+	test bl, [0x650]
+	test si, [0x56f]
+	test ebx, [0xf07]
+	test rsi, [0xa80]
+	test [0xc0a], 0xd4
+	test [0x9ab], 0xae70
+	test [0xbe8], 0x1f842620
+	test [0xd04], -6445748

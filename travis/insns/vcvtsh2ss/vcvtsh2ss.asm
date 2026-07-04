@@ -9,3 +9,4 @@ default rel
 	vcvtsh2ss xmm1, xmm2, xmm2, {sae}
 	vcvtsh2ss xmm5, xmm0, word [eax+1]
 	vcvtsh2ss xmm5, xmm7, word [eax+64]
+	vcvtsh2ss xmm3, xmm6, [0x9f9]

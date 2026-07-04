@@ -16,3 +16,5 @@ default rel
 	vmulsd xmm5, xmm0, qword [eax+64]
 	vmulsd xmm4, xmm4, qword [eax+1]
 	vmulsd xmm3, xmm7, qword [eax+64]
+	vmulsd xmm0, xmm1, [0xc45]
+	vmulsd xmm7, xmm6, [0x2f9]

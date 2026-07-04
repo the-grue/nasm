@@ -27,3 +27,8 @@ default rel
 	vcmpnge_uqps k6, ymm1, yword [eax+64]
 	vcmpnge_uqps k7, zmm3, zword [eax+1]
 	vcmpnge_uqps k5, zmm3, zword [eax+64]
+	vcmpnge_uqps xmm0, xmm1, [0x4a1]
+	vcmpnge_uqps ymm3, ymm2, [0xf7d]
+	vcmpnge_uqps k2, xmm0, [0x1b1]
+	vcmpnge_uqps k4, ymm2, [0xc67]
+	vcmpnge_uqps k2, zmm0, [0xa4c]

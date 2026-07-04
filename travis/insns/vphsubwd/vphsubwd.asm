@@ -5,3 +5,4 @@ default rel
 	vphsubwd xmm14, xmm15
 	vphsubwd xmm2, oword [eax+1]
 	vphsubwd xmm4, oword [eax+64]
+	vphsubwd xmm2, [0xee9]

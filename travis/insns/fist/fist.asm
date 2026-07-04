@@ -7,3 +7,5 @@ default rel
 	fist dword [eax+64]
 	fist word [eax+1]
 	fist word [eax+64]
+	fist [0x344]
+	fist [0x7f8]

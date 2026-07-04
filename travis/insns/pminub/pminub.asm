@@ -8,3 +8,5 @@ default rel
 	pminub mm2, qword [eax+64]
 	pminub xmm5, oword [eax+1]
 	pminub xmm4, oword [eax+64]
+	pminub mm5, [0xf99]
+	pminub xmm7, [0x62a]

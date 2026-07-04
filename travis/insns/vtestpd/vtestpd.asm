@@ -9,3 +9,5 @@ default rel
 	vtestpd xmm7, oword [eax+64]
 	vtestpd ymm5, yword [eax+1]
 	vtestpd ymm1, yword [eax+64]
+	vtestpd xmm6, [0x6db]
+	vtestpd ymm6, [0xf9c]

@@ -9,3 +9,5 @@ default rel
 	lwpins edi, dword [eax+64], 0x2a1e8b69
 	lwpins rcx, dword [eax+1], 0x2c131cdf
 	lwpins rbp, dword [eax+64], 0x3ea7214f
+	lwpins ebx, [0xf8f], 0x22af813e
+	lwpins rax, [0x342], 0x2cf6e9b

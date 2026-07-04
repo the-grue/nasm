@@ -13,3 +13,4 @@ default rel
 	setnae r18d
 	setnae byte [eax+1]
 	setnae byte [eax+64]
+	setnae [0xaf9]

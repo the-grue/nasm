@@ -35,3 +35,8 @@ default rel
 	vpaddb ymm7, ymm4, yword [eax+64]
 	vpaddb zmm1, zmm6, zword [eax+1]
 	vpaddb zmm7, zmm2, zword [eax+64]
+	vpaddb xmm6, xmm0, [0x6e3]
+	vpaddb ymm7, ymm1, [0xd0a]
+	vpaddb xmm6, xmm2, [0x1ba]
+	vpaddb ymm2, ymm2, [0xfe6]
+	vpaddb zmm5, zmm7, [0x7ce]

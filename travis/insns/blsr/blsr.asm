@@ -11,3 +11,5 @@ default rel
 	blsr ebx, dword [eax+64]
 	blsr rbp, qword [eax+1]
 	blsr rbx, qword [eax+64]
+	blsr esi, [0x3fb]
+	blsr rbp, [0x131]

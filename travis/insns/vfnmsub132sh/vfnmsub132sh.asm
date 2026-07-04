@@ -9,3 +9,4 @@ default rel
 	vfnmsub132sh xmm4, xmm1, xmm2, {ru-sae}
 	vfnmsub132sh xmm1, xmm7, word [eax+1]
 	vfnmsub132sh xmm7, xmm4, word [eax+64]
+	vfnmsub132sh xmm3, xmm2, [0xf40]

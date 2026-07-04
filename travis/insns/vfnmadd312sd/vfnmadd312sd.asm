@@ -4,3 +4,4 @@ default rel
 	vfnmadd312sd xmm12, xmm13, xmm8
 	vfnmadd312sd xmm2, xmm2, qword [eax+1]
 	vfnmadd312sd xmm4, xmm7, qword [eax+64]
+	vfnmadd312sd xmm7, xmm4, [0x423]

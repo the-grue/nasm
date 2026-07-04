@@ -11,3 +11,5 @@ default rel
 	ptwrite dword [eax+64]
 	ptwrite qword [eax+1]
 	ptwrite qword [eax+64]
+	ptwrite [0x7ce]
+	ptwrite [0x8fa]

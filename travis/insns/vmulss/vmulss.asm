@@ -16,3 +16,5 @@ default rel
 	vmulss xmm2, xmm0, dword [eax+64]
 	vmulss xmm4, xmm7, dword [eax+1]
 	vmulss xmm3, xmm3, dword [eax+64]
+	vmulss xmm0, xmm3, [0xbed]
+	vmulss xmm4, xmm3, [0xaf8]

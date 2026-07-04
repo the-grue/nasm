@@ -27,3 +27,6 @@ default rel
 	vcompressps yword [eax+64], ymm3
 	vcompressps zword [eax+1], zmm1
 	vcompressps zword [eax+64], zmm7
+	vcompressps [0x997], xmm1
+	vcompressps [0x704], ymm1
+	vcompressps [0x9a8], zmm1

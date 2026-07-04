@@ -14,3 +14,5 @@ default rel
 	vfmsub231ss xmm1, xmm5, dword [eax+64]
 	vfmsub231ss xmm3, xmm6, dword [eax+1]
 	vfmsub231ss xmm3, xmm0, dword [eax+64]
+	vfmsub231ss xmm0, xmm1, [0xd14]
+	vfmsub231ss xmm0, xmm5, [0x181]

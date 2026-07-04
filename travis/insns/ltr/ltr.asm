@@ -15,3 +15,4 @@ default rel
 	ltr r26
 	ltr word [eax+1]
 	ltr word [eax+64]
+	ltr [0xcef]

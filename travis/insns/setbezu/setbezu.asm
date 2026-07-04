@@ -13,3 +13,4 @@ default rel
 	setbezu r29b
 	setbezu byte [eax+1]
 	setbezu byte [eax+64]
+	setbezu [0xcd8]

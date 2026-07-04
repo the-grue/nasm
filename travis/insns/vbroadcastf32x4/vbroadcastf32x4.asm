@@ -15,3 +15,5 @@ default rel
 	vbroadcastf32x4 ymm6, oword [eax+64]
 	vbroadcastf32x4 zmm1, oword [eax+1]
 	vbroadcastf32x4 zmm0, oword [eax+64]
+	vbroadcastf32x4 ymm6, [0xe1a]
+	vbroadcastf32x4 zmm6, [0x23e]

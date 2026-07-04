@@ -17,3 +17,5 @@ default rel
 	vshufi32x4 ymm5, ymm7, yword [eax+64], 0xa2
 	vshufi32x4 zmm4, zmm2, zword [eax+1], 0x95
 	vshufi32x4 zmm1, zmm7, zword [eax+64], 0x7d
+	vshufi32x4 ymm6, ymm5, [0xdd6], 0x4e
+	vshufi32x4 zmm5, zmm2, [0xd6c], 0xef

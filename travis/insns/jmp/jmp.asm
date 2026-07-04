@@ -8,3 +8,12 @@ default rel
 	jmp .L1
 	jmp .L1
 	jmp .L1
+	jmp [0xd5c]
+	jmp [0xa7c]
+	jmp [0xe5d]
+	jmp [0x2af]
+	jmp [0xcce]
+	jmp [0xd46]
+	jmp [0x420]
+	jmp [0xb70]
+	jmp [0xc44]

@@ -11,3 +11,5 @@ default rel
 	vcmpsd xmm7, xmm1, qword [eax+64], 0x2f
 	vcmpsd k7, xmm3, qword [eax+1], 0xf
 	vcmpsd k7, xmm7, qword [eax+64], 0xb7
+	vcmpsd xmm0, xmm0, [0x356], 0x12
+	vcmpsd k1, xmm0, [0xd74], 0x57

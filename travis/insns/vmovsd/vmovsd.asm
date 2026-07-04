@@ -27,3 +27,7 @@ default rel
 	vmovsd xmm0, qword [eax+64]
 	vmovsd qword [eax+1], xmm1
 	vmovsd qword [eax+64], xmm1
+	vmovsd xmm4, [0xdec]
+	vmovsd [0xb27], xmm3
+	vmovsd xmm5, [0x92b]
+	vmovsd [0x12e], xmm5

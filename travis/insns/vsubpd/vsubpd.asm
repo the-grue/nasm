@@ -36,3 +36,8 @@ default rel
 	vsubpd ymm5, ymm0, yword [eax+64]
 	vsubpd zmm0, zmm0, zword [eax+1]
 	vsubpd zmm0, zmm5, zword [eax+64]
+	vsubpd xmm6, xmm1, [0x21c]
+	vsubpd ymm0, ymm0, [0xdde]
+	vsubpd xmm5, xmm5, [0xd42]
+	vsubpd ymm5, ymm3, [0x9b7]
+	vsubpd zmm5, zmm2, [0xbf7]

@@ -8,3 +8,5 @@ default rel
 	psubsb mm2, qword [eax+64]
 	psubsb xmm5, oword [eax+1]
 	psubsb xmm5, oword [eax+64]
+	psubsb mm0, [0xded]
+	psubsb xmm3, [0xedb]

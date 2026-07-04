@@ -5,3 +5,4 @@ default rel
 	wrussd dword [0x968], r16d
 	wrussd dword [eax+1], ebx
 	wrussd dword [eax+64], edi
+	wrussd [0xed9], ebp

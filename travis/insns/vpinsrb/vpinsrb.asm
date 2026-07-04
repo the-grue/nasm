@@ -15,3 +15,5 @@ default rel
 	vpinsrb xmm3, xmm3, byte [eax+64], 0xa4
 	vpinsrb xmm7, xmm6, byte [eax+1], 0xaf
 	vpinsrb xmm5, xmm4, byte [eax+64], 0xfc
+	vpinsrb xmm1, xmm3, [0x924], 0xc2
+	vpinsrb xmm7, xmm4, [0xf3f], 0x77

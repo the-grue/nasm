@@ -13,3 +13,4 @@ default rel
 	setnczu r31b
 	setnczu byte [eax+1]
 	setnczu byte [eax+64]
+	setnczu [0xb55]

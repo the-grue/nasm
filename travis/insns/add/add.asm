@@ -75,3 +75,33 @@ default rel
 	add ecx, dword [eax+64], 0x3d964c26
 	add rdi, qword [eax+1], 455876284
 	add rsi, qword [eax+64], -93805067
+	add [0xc1c], cl
+	add [0x2bc], dx
+	add [0x5b4], eax
+	add [0x9c6], rax
+	add bl, [0x95c]
+	add bp, [0x5e2]
+	add edi, [0x87a]
+	add rax, [0x46d]
+	add [0xc31], 0x22
+	add [0x581], -6
+	add [0x799], 0xefb
+	add [0x337], 31
+	add [0x187], 0x277e70f9
+	add [0x23e], 26
+	add [0xdf9], -30949254
+	add cl, cl, [0xba8]
+	add bx, di, [0xe71]
+	add eax, eax, [0x466]
+	add rbp, rbx, [0xe78]
+	add dl, [0x730], cl
+	add bx, [0xb3e], ax
+	add ebp, [0x504], edi
+	add rdi, [0xf51], rsi
+	add cx, [0x274], -113
+	add eax, [0x7f9], -17
+	add rsi, [0x8fe], -1
+	add bl, [0xcf7], 0xf1
+	add bp, [0x2a4], 0x11bf
+	add edi, [0xe60], 0x12b185e1
+	add rdx, [0x5d5], 232948762

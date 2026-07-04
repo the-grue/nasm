@@ -6,7 +6,8 @@
   "source": "ccmpo.asm",
   "option": "--bits 64 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/ccmpo/",
   "target": [
-   { "output": "ccmpo.bin64", "match": "ccmpo.bin64.t" }
+   { "output": "ccmpo.bin64", "match": "ccmpo.bin64.t" },
+   { "stderr": "ccmpo.stderr64" }
   ]
  }
 ]

@@ -35,3 +35,8 @@ default rel
 	vpaddsb ymm1, ymm2, yword [eax+64]
 	vpaddsb zmm4, zmm3, zword [eax+1]
 	vpaddsb zmm3, zmm7, zword [eax+64]
+	vpaddsb xmm1, xmm1, [0x44b]
+	vpaddsb ymm7, ymm6, [0x3ec]
+	vpaddsb xmm5, xmm3, [0x77f]
+	vpaddsb ymm6, ymm5, [0xba4]
+	vpaddsb zmm1, zmm6, [0x83a]

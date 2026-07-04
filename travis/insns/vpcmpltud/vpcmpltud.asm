@@ -20,3 +20,6 @@ default rel
 	vpcmpltud k5, ymm5, yword [eax+64]
 	vpcmpltud k3, zmm0, zword [eax+1]
 	vpcmpltud k3, zmm5, zword [eax+64]
+	vpcmpltud k5, xmm6, [0x659]
+	vpcmpltud k7, ymm6, [0xd04]
+	vpcmpltud k6, zmm7, [0xbcb]

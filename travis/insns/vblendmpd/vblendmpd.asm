@@ -23,3 +23,6 @@ default rel
 	vblendmpd ymm5, ymm3, yword [eax+64]
 	vblendmpd zmm0, zmm5, zword [eax+1]
 	vblendmpd zmm3, zmm7, zword [eax+64]
+	vblendmpd xmm4, xmm6, [0xf43]
+	vblendmpd ymm6, ymm2, [0xe9d]
+	vblendmpd zmm0, zmm5, [0x86a]

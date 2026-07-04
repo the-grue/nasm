@@ -32,3 +32,8 @@ default rel
 	vfmsubadd213ps ymm5, ymm7, yword [eax+64]
 	vfmsubadd213ps zmm1, zmm0, zword [eax+1]
 	vfmsubadd213ps zmm3, zmm5, zword [eax+64]
+	vfmsubadd213ps xmm6, xmm4, [0x51f]
+	vfmsubadd213ps ymm0, ymm4, [0x538]
+	vfmsubadd213ps xmm5, xmm4, [0x2fb]
+	vfmsubadd213ps ymm5, ymm3, [0xbb4]
+	vfmsubadd213ps zmm6, zmm6, [0x28c]

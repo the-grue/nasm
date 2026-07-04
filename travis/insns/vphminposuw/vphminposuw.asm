@@ -4,3 +4,4 @@ default rel
 	vphminposuw xmm10, xmm12
 	vphminposuw xmm6, oword [eax+1]
 	vphminposuw xmm7, oword [eax+64]
+	vphminposuw xmm4, [0xb29]

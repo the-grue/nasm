@@ -13,3 +13,4 @@ default rel
 	setns r31d
 	setns byte [eax+1]
 	setns byte [eax+64]
+	setns [0xec5]

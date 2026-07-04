@@ -11,3 +11,5 @@ default rel
 	vfrczpd xmm3, oword [eax+64]
 	vfrczpd ymm0, yword [eax+1]
 	vfrczpd ymm3, yword [eax+64]
+	vfrczpd xmm0, [0xd5f]
+	vfrczpd ymm2, [0x834]

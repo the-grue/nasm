@@ -23,3 +23,6 @@ default rel
 	vpermi2pd ymm0, ymm6, yword [eax+64]
 	vpermi2pd zmm0, zmm6, zword [eax+1]
 	vpermi2pd zmm2, zmm7, zword [eax+64]
+	vpermi2pd xmm2, xmm1, [0xeff]
+	vpermi2pd ymm5, ymm5, [0x7ed]
+	vpermi2pd zmm5, zmm7, [0x2c8]

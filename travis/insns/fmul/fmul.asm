@@ -11,3 +11,5 @@ default rel
 	fmul dword [eax+64]
 	fmul qword [eax+1]
 	fmul qword [eax+64]
+	fmul [0xd09]
+	fmul [0x6d1]

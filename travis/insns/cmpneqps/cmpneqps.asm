@@ -4,3 +4,4 @@ default rel
 	cmpneqps xmm15, xmm8
 	cmpneqps xmm1, oword [eax+1]
 	cmpneqps xmm6, oword [eax+64]
+	cmpneqps xmm6, [0x832]

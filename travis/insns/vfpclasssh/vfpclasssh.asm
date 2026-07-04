@@ -6,3 +6,4 @@ default rel
 	vfpclasssh k3{k5}, xmm3, 0x39
 	vfpclasssh k1, word [eax+1], 0x11
 	vfpclasssh k1, word [eax+64], 0xea
+	vfpclasssh k7, [0x24d], 0x6b

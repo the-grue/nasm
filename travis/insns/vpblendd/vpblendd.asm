@@ -11,3 +11,5 @@ default rel
 	vpblendd xmm5, xmm2, oword [eax+64], 0x68
 	vpblendd ymm6, ymm6, yword [eax+1], 0x4b
 	vpblendd ymm4, ymm2, yword [eax+64], 0x34
+	vpblendd xmm5, xmm4, [0xe85], 0xc9
+	vpblendd ymm5, ymm6, [0x2f1], 0xfe

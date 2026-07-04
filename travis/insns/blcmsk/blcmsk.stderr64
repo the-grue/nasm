@@ -8,3 +8,5 @@
 ./travis/insns/blcmsk/blcmsk.asm:9: warning: instruction obsolete and removed from the target CPU [-w+obsolete-removed]
 ./travis/insns/blcmsk/blcmsk.asm:10: warning: instruction obsolete and removed from the target CPU [-w+obsolete-removed]
 ./travis/insns/blcmsk/blcmsk.asm:11: warning: instruction obsolete and removed from the target CPU [-w+obsolete-removed]
+./travis/insns/blcmsk/blcmsk.asm:12: warning: instruction obsolete and removed from the target CPU [-w+obsolete-removed]
+./travis/insns/blcmsk/blcmsk.asm:13: warning: instruction obsolete and removed from the target CPU [-w+obsolete-removed]

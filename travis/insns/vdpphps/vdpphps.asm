@@ -23,3 +23,6 @@ default rel
 	vdpphps ymm5, ymm5, yword [eax+64]
 	vdpphps zmm1, zmm2, zword [eax+1]
 	vdpphps zmm0, zmm7, zword [eax+64]
+	vdpphps xmm6, xmm6, [0x36e]
+	vdpphps ymm5, ymm5, [0x3f7]
+	vdpphps zmm3, zmm1, [0x4f6]

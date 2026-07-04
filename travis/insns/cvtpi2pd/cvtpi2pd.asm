@@ -4,3 +4,4 @@ default rel
 	cvtpi2pd xmm12, mm1
 	cvtpi2pd xmm0, qword [eax+1]
 	cvtpi2pd xmm1, qword [eax+64]
+	cvtpi2pd xmm5, [0x525]

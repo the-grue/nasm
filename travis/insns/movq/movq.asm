@@ -29,3 +29,10 @@ default rel
 	movq qword [eax+64], xmm5
 	movq qword [eax+1], k1
 	movq qword [eax+64], k7
+	movq mm0, [0x76b]
+	movq [0x2a9], mm7
+	movq mm6, [0xcf9]
+	movq [0x24a], mm7
+	movq xmm0, [0xa07]
+	movq [0xa73], xmm5
+	movq [0xcb3], k3

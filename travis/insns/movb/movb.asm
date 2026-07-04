@@ -13,3 +13,4 @@ default rel
 	movb k2, r16b
 	movb byte [eax+1], k4
 	movb byte [eax+64], k4
+	movb [0x829], k6

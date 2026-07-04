@@ -11,3 +11,5 @@ default rel
 	aadd dword [eax+64], eax
 	aadd qword [eax+1], rbx
 	aadd qword [eax+64], rcx
+	aadd [0xd52], edi
+	aadd [0x5d8], rdi

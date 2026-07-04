@@ -8,3 +8,5 @@ default rel
 	pavgb mm0, qword [eax+64]
 	pavgb xmm5, oword [eax+1]
 	pavgb xmm2, oword [eax+64]
+	pavgb mm2, [0x1f4]
+	pavgb xmm0, [0x987]

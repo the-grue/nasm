@@ -13,3 +13,4 @@ default rel
 	setnbezu r30b
 	setnbezu byte [eax+1]
 	setnbezu byte [eax+64]
+	setnbezu [0x7fe]

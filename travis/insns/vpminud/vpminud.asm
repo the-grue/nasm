@@ -35,3 +35,8 @@ default rel
 	vpminud ymm4, ymm6, yword [eax+64]
 	vpminud zmm5, zmm7, zword [eax+1]
 	vpminud zmm6, zmm2, zword [eax+64]
+	vpminud xmm1, xmm5, [0xf8e]
+	vpminud ymm5, ymm7, [0x41b]
+	vpminud xmm6, xmm1, [0x676]
+	vpminud ymm5, ymm6, [0x7df]
+	vpminud zmm4, zmm5, [0x277]

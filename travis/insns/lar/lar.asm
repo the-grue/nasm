@@ -17,3 +17,6 @@ default rel
 	lar edx, word [eax+64]
 	lar rax, word [eax+1]
 	lar rdx, word [eax+64]
+	lar dx, [0x10f]
+	lar ebp, [0xc57]
+	lar rcx, [0xe95]

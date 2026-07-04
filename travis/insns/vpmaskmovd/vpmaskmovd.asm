@@ -21,3 +21,7 @@ default rel
 	vpmaskmovd oword [eax+64], xmm1, xmm0
 	vpmaskmovd yword [eax+1], ymm1, ymm3
 	vpmaskmovd yword [eax+64], ymm3, ymm2
+	vpmaskmovd xmm6, xmm5, [0xe68]
+	vpmaskmovd ymm7, ymm7, [0x9c8]
+	vpmaskmovd [0x7a4], xmm3, xmm3
+	vpmaskmovd [0x5c7], ymm4, ymm7

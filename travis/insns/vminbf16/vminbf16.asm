@@ -23,3 +23,6 @@ default rel
 	vminbf16 ymm7, ymm5, yword [eax+64]
 	vminbf16 zmm7, zmm2, zword [eax+1]
 	vminbf16 zmm4, zmm6, zword [eax+64]
+	vminbf16 xmm5, xmm0, [0x39f]
+	vminbf16 ymm4, ymm3, [0x856]
+	vminbf16 zmm4, zmm7, [0xab2]

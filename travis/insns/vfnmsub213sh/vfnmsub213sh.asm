@@ -9,3 +9,4 @@ default rel
 	vfnmsub213sh xmm3, xmm4, xmm1, {rz-sae}
 	vfnmsub213sh xmm2, xmm0, word [eax+1]
 	vfnmsub213sh xmm7, xmm6, word [eax+64]
+	vfnmsub213sh xmm3, xmm5, [0xa98]

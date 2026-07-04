@@ -12,3 +12,5 @@ default rel
 	vcmpngt_ussd xmm2, xmm5, qword [eax+64]
 	vcmpngt_ussd k2, xmm2, qword [eax+1]
 	vcmpngt_ussd k1, xmm6, qword [eax+64]
+	vcmpngt_ussd xmm6, xmm3, [0xd3f]
+	vcmpngt_ussd k2, xmm7, [0xcff]

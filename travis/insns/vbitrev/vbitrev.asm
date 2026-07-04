@@ -23,3 +23,6 @@ default rel
 	vbitrev ymm5, yword [eax+64]
 	vbitrev zmm6, zword [eax+1]
 	vbitrev zmm5, zword [eax+64]
+	vbitrev xmm2, [0xc76]
+	vbitrev ymm0, [0xd20]
+	vbitrev zmm4, [0x703]

@@ -35,3 +35,11 @@ default rel
 	shlx rcx, qword [eax+64], edi
 	shlx rbp, qword [eax+1], rbp
 	shlx rbx, qword [eax+64], rdi
+	shlx ebp, [0x32f], dl
+	shlx ecx, [0xa0f], bp
+	shlx ebx, [0xad1], ecx
+	shlx ebp, [0x284], rsi
+	shlx rbp, [0x16f], cl
+	shlx rdi, [0x55c], si
+	shlx rbx, [0xd00], edi
+	shlx rdx, [0xa40], rcx

@@ -17,3 +17,6 @@ default rel
 	vsm4rnds4 ymm2, ymm7, yword [eax+64]
 	vsm4rnds4 zmm3, zmm0, zword [eax+1]
 	vsm4rnds4 zmm7, zmm0, zword [eax+64]
+	vsm4rnds4 xmm0, xmm7, [0x21d]
+	vsm4rnds4 ymm7, ymm4, [0xc79]
+	vsm4rnds4 zmm0, zmm0, [0x4e5]

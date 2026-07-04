@@ -26,3 +26,6 @@ default rel
 	vpord ymm2, ymm3, yword [eax+64]
 	vpord zmm5, zmm3, zword [eax+1]
 	vpord zmm5, zmm5, zword [eax+64]
+	vpord xmm0, xmm0, [0xf1a]
+	vpord ymm7, ymm6, [0xa41]
+	vpord zmm6, zmm6, [0xef5]

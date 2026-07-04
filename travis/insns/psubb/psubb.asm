@@ -8,3 +8,5 @@ default rel
 	psubb mm3, qword [eax+64]
 	psubb xmm2, oword [eax+1]
 	psubb xmm7, oword [eax+64]
+	psubb mm4, [0xea7]
+	psubb xmm5, [0xda9]

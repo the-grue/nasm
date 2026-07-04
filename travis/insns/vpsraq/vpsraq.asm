@@ -43,3 +43,9 @@ default rel
 	vpsraq ymm4, yword [eax+64], 0xd9
 	vpsraq zmm7, zword [eax+1], 0xe6
 	vpsraq zmm7, zword [eax+64], 0x3
+	vpsraq xmm5, xmm7, [0x4ec]
+	vpsraq ymm6, ymm3, [0x792]
+	vpsraq zmm0, zmm6, [0x473]
+	vpsraq xmm3, [0x958], 0xda
+	vpsraq ymm5, [0xd81], 0x16
+	vpsraq zmm0, [0x362], 0x56

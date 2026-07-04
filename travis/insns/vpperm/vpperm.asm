@@ -11,3 +11,5 @@ default rel
 	vpperm xmm7, xmm0, xmm2, oword [eax+64]
 	vpperm xmm6, xmm0, oword [eax+1], xmm7
 	vpperm xmm5, xmm3, oword [eax+64], xmm7
+	vpperm xmm5, xmm4, xmm4, [0x8e8]
+	vpperm xmm4, xmm6, [0xb0a], xmm1

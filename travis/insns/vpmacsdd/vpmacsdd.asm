@@ -5,3 +5,4 @@ default rel
 	vpmacsdd xmm8, xmm12, xmm14, xmm8
 	vpmacsdd xmm3, xmm2, oword [eax+1], xmm7
 	vpmacsdd xmm4, xmm3, oword [eax+64], xmm5
+	vpmacsdd xmm5, xmm0, [0x931], xmm5

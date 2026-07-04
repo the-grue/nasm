@@ -23,3 +23,6 @@ default rel
 	vpopcntd ymm7, yword [eax+64]
 	vpopcntd zmm7, zword [eax+1]
 	vpopcntd zmm6, zword [eax+64]
+	vpopcntd xmm0, [0x696]
+	vpopcntd ymm1, [0x510]
+	vpopcntd zmm3, [0x852]

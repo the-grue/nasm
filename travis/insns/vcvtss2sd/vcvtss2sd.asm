@@ -16,3 +16,5 @@ default rel
 	vcvtss2sd xmm7, xmm3, dword [eax+64]
 	vcvtss2sd xmm3, xmm3, dword [eax+1]
 	vcvtss2sd xmm6, xmm0, dword [eax+64]
+	vcvtss2sd xmm7, xmm3, [0x8ef]
+	vcvtss2sd xmm3, xmm4, [0xa01]

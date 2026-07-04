@@ -13,3 +13,4 @@ default rel
 	kmovb k3, r24b
 	kmovb byte [eax+1], k6
 	kmovb byte [eax+64], k1
+	kmovb [0x1d3], k2

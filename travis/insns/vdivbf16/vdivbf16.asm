@@ -23,3 +23,6 @@ default rel
 	vdivbf16 ymm1, ymm0, yword [eax+64]
 	vdivbf16 zmm6, zmm6, zword [eax+1]
 	vdivbf16 zmm6, zmm3, zword [eax+64]
+	vdivbf16 xmm5, xmm5, [0x7e3]
+	vdivbf16 ymm7, ymm5, [0xbc2]
+	vdivbf16 zmm5, zmm6, [0xceb]

@@ -23,3 +23,6 @@ default rel
 	vreducebf16 ymm5, yword [eax+64], 0xb5
 	vreducebf16 zmm6, zword [eax+1], 0xb2
 	vreducebf16 zmm3, zword [eax+64], 0x4c
+	vreducebf16 xmm2, [0xcf0], 0xae
+	vreducebf16 ymm2, [0x4cb], 0x50
+	vreducebf16 zmm0, [0x3bc], 0x44

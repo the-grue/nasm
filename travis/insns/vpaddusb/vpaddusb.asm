@@ -35,3 +35,8 @@ default rel
 	vpaddusb ymm7, ymm5, yword [eax+64]
 	vpaddusb zmm2, zmm1, zword [eax+1]
 	vpaddusb zmm6, zmm5, zword [eax+64]
+	vpaddusb xmm1, xmm5, [0x1db]
+	vpaddusb ymm6, ymm0, [0xa32]
+	vpaddusb xmm2, xmm1, [0x202]
+	vpaddusb ymm4, ymm1, [0x438]
+	vpaddusb zmm2, zmm5, [0xfc8]

@@ -35,3 +35,11 @@ default rel
 	shrx rbx, qword [eax+64], eax
 	shrx rbx, qword [eax+1], rdi
 	shrx rax, qword [eax+64], rbp
+	shrx ebp, [0xe00], al
+	shrx esi, [0x2bf], bp
+	shrx ebp, [0xb49], ebx
+	shrx eax, [0x1c1], rsi
+	shrx rdi, [0x390], cl
+	shrx rdx, [0xcb8], ax
+	shrx rcx, [0x4fc], esi
+	shrx rdx, [0x302], rdx

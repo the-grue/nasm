@@ -23,3 +23,7 @@ default rel
 	xadd dword [eax+64], esi
 	xadd qword [eax+1], rdi
 	xadd qword [eax+64], rcx
+	xadd [0x5f3], al
+	xadd [0xa67], dx
+	xadd [0x303], ebp
+	xadd [0x660], rbx

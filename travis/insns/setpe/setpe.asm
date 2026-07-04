@@ -13,3 +13,4 @@ default rel
 	setpe r31d
 	setpe byte [eax+1]
 	setpe byte [eax+64]
+	setpe [0xeeb]

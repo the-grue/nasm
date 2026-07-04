@@ -13,3 +13,4 @@ default rel
 	setnezu r18b
 	setnezu byte [eax+1]
 	setnezu byte [eax+64]
+	setnezu [0xc32]

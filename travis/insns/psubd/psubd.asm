@@ -8,3 +8,5 @@ default rel
 	psubd mm2, qword [eax+64]
 	psubd xmm7, oword [eax+1]
 	psubd xmm2, oword [eax+64]
+	psubd mm5, [0x654]
+	psubd xmm0, [0xe67]

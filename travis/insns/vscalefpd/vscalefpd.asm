@@ -27,3 +27,6 @@ default rel
 	vscalefpd ymm1, ymm7, yword [eax+64]
 	vscalefpd zmm1, zmm6, zword [eax+1]
 	vscalefpd zmm3, zmm5, zword [eax+64]
+	vscalefpd xmm5, xmm2, [0x510]
+	vscalefpd ymm6, ymm4, [0x6c0]
+	vscalefpd zmm2, zmm3, [0xd97]

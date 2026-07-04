@@ -35,3 +35,8 @@ default rel
 	vpmullw ymm6, ymm3, yword [eax+64]
 	vpmullw zmm6, zmm4, zword [eax+1]
 	vpmullw zmm1, zmm1, zword [eax+64]
+	vpmullw xmm5, xmm1, [0x9e7]
+	vpmullw ymm3, ymm0, [0x81a]
+	vpmullw xmm1, xmm0, [0xf85]
+	vpmullw ymm7, ymm5, [0x7bc]
+	vpmullw zmm5, zmm7, [0xf65]

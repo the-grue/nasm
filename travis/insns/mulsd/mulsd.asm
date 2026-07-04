@@ -4,3 +4,4 @@ default rel
 	mulsd xmm8, xmm8
 	mulsd xmm2, qword [eax+1]
 	mulsd xmm6, qword [eax+64]
+	mulsd xmm2, [0x90f]

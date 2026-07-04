@@ -5,3 +5,4 @@ default rel
 	vrcpss xmm8, xmm15, xmm12
 	vrcpss xmm4, xmm5, dword [eax+1]
 	vrcpss xmm1, xmm1, dword [eax+64]
+	vrcpss xmm3, xmm2, [0x3b1]

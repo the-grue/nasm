@@ -4,3 +4,4 @@ default rel
 	shufpd xmm15, xmm13, 0x70
 	shufpd xmm6, oword [eax+1], 0xa0
 	shufpd xmm4, oword [eax+64], 0xa0
+	shufpd xmm0, [0xf53], 0xbd

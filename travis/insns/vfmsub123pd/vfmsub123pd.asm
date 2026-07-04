@@ -9,3 +9,5 @@ default rel
 	vfmsub123pd xmm1, xmm7, oword [eax+64]
 	vfmsub123pd ymm1, ymm6, yword [eax+1]
 	vfmsub123pd ymm0, ymm3, yword [eax+64]
+	vfmsub123pd xmm6, xmm1, [0x675]
+	vfmsub123pd ymm3, ymm6, [0xb0f]

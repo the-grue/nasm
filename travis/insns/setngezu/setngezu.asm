@@ -13,3 +13,4 @@ default rel
 	setngezu r20b
 	setngezu byte [eax+1]
 	setngezu byte [eax+64]
+	setngezu [0x3c3]

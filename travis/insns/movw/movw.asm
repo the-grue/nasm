@@ -13,3 +13,4 @@ default rel
 	movw k6, r20w
 	movw word [eax+1], k7
 	movw word [eax+64], k3
+	movw [0xffd], k4

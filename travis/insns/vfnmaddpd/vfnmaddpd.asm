@@ -23,3 +23,7 @@ default rel
 	vfnmaddpd xmm5, xmm3, xmm4, oword [eax+64]
 	vfnmaddpd ymm1, ymm3, ymm0, yword [eax+1]
 	vfnmaddpd ymm7, ymm3, ymm5, yword [eax+64]
+	vfnmaddpd xmm1, xmm7, [0x9fd], xmm3
+	vfnmaddpd ymm7, ymm0, [0x890], ymm7
+	vfnmaddpd xmm3, xmm4, xmm2, [0x4a2]
+	vfnmaddpd ymm1, ymm7, ymm3, [0xf83]

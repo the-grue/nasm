@@ -25,3 +25,7 @@ default rel
 	vmovw xmm6, word [eax+64]
 	vmovw word [eax+1], xmm5
 	vmovw word [eax+64], xmm0
+	vmovw xmm1, [0x123]
+	vmovw [0x2e3], xmm4
+	vmovw xmm1, [0x2e1]
+	vmovw [0x7fb], xmm2

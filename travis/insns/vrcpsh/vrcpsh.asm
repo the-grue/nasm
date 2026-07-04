@@ -9,3 +9,4 @@ default rel
 	vrcpsh xmm4, xmm5, xmm4, {sae}
 	vrcpsh xmm3, xmm1, word [eax+1]
 	vrcpsh xmm5, xmm0, word [eax+64]
+	vrcpsh xmm2, xmm1, [0x2a9]

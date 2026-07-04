@@ -17,3 +17,6 @@ default rel
 	bsr edi, dword [eax+64]
 	bsr rdx, qword [eax+1]
 	bsr rbx, qword [eax+64]
+	bsr bx, [0x6ec]
+	bsr edi, [0x8a2]
+	bsr rdx, [0x450]

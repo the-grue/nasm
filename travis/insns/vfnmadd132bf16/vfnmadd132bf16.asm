@@ -23,3 +23,6 @@ default rel
 	vfnmadd132bf16 ymm5, ymm5, yword [eax+64]
 	vfnmadd132bf16 zmm5, zmm2, zword [eax+1]
 	vfnmadd132bf16 zmm3, zmm0, zword [eax+64]
+	vfnmadd132bf16 xmm6, xmm2, [0x901]
+	vfnmadd132bf16 ymm6, ymm1, [0x67f]
+	vfnmadd132bf16 zmm7, zmm4, [0xe50]

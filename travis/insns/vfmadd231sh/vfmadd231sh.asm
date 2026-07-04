@@ -9,3 +9,4 @@ default rel
 	vfmadd231sh xmm1, xmm4, xmm7, {ru-sae}
 	vfmadd231sh xmm3, xmm7, word [eax+1]
 	vfmadd231sh xmm2, xmm6, word [eax+64]
+	vfmadd231sh xmm3, xmm4, [0x11d]

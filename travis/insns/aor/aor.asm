@@ -11,3 +11,5 @@ default rel
 	aor dword [eax+64], ecx
 	aor qword [eax+1], rdx
 	aor qword [eax+64], rdi
+	aor [0x829], edx
+	aor [0xca7], rcx

@@ -8,3 +8,5 @@ default rel
 	psignb mm3, qword [eax+64]
 	psignb xmm6, oword [eax+1]
 	psignb xmm0, oword [eax+64]
+	psignb mm1, [0xdfe]
+	psignb xmm5, [0x347]

@@ -17,3 +17,5 @@ default rel
 	vshuff32x4 ymm4, ymm6, yword [eax+64], 0xe
 	vshuff32x4 zmm1, zmm2, zword [eax+1], 0x6
 	vshuff32x4 zmm6, zmm5, zword [eax+64], 0xf7
+	vshuff32x4 ymm3, ymm4, [0x6b1], 0xa3
+	vshuff32x4 zmm4, zmm1, [0x2b7], 0x4

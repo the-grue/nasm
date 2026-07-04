@@ -27,3 +27,8 @@ default rel
 	vcmpeq_uspd k1, ymm6, yword [eax+64]
 	vcmpeq_uspd k1, zmm3, zword [eax+1]
 	vcmpeq_uspd k5, zmm6, zword [eax+64]
+	vcmpeq_uspd xmm3, xmm1, [0xbb3]
+	vcmpeq_uspd ymm2, ymm5, [0x2f1]
+	vcmpeq_uspd k4, xmm1, [0xf18]
+	vcmpeq_uspd k5, ymm1, [0xdc5]
+	vcmpeq_uspd k7, zmm1, [0x890]

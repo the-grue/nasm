@@ -7,3 +7,4 @@ default rel
 	extractps r14, xmm9, 0x5c
 	extractps dword [eax+1], xmm4, 0xf0
 	extractps dword [eax+64], xmm7, 0xe
+	extractps [0x57f], xmm7, 0x60

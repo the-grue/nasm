@@ -6,3 +6,4 @@ default rel
 	vucomxsh xmm2, xmm3, {sae}
 	vucomxsh xmm2, word [eax+1]
 	vucomxsh xmm1, word [eax+64]
+	vucomxsh xmm4, [0xed9]

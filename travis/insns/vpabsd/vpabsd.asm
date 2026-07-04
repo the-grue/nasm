@@ -31,3 +31,8 @@ default rel
 	vpabsd ymm1, yword [eax+64]
 	vpabsd zmm0, zword [eax+1]
 	vpabsd zmm7, zword [eax+64]
+	vpabsd xmm5, [0xc42]
+	vpabsd ymm2, [0xead]
+	vpabsd xmm3, [0xa74]
+	vpabsd ymm5, [0x804]
+	vpabsd zmm5, [0x528]

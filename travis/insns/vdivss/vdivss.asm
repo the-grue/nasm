@@ -16,3 +16,5 @@ default rel
 	vdivss xmm0, xmm0, dword [eax+64]
 	vdivss xmm4, xmm4, dword [eax+1]
 	vdivss xmm4, xmm0, dword [eax+64]
+	vdivss xmm7, xmm0, [0x6cd]
+	vdivss xmm2, xmm7, [0xbdb]

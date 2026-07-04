@@ -13,3 +13,4 @@ default rel
 	setpo r28d
 	setpo byte [eax+1]
 	setpo byte [eax+64]
+	setpo [0xba7]

@@ -33,3 +33,12 @@ default rel
 	cfcmovpo ecx, ebx, dword [eax+64]
 	cfcmovpo rax, rcx, qword [eax+1]
 	cfcmovpo rdx, rbp, qword [eax+64]
+	cfcmovpo [0x7b5], dx
+	cfcmovpo [0x948], ecx
+	cfcmovpo [0x584], rsi
+	cfcmovpo ax, [0xf72]
+	cfcmovpo edx, [0xfb3]
+	cfcmovpo rsi, [0x81e]
+	cfcmovpo di, cx, [0x791]
+	cfcmovpo ebx, ebp, [0xaeb]
+	cfcmovpo rbp, rdi, [0x356]

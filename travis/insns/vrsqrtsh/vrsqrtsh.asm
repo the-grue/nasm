@@ -9,3 +9,4 @@ default rel
 	vrsqrtsh xmm3, xmm7, xmm1, {sae}
 	vrsqrtsh xmm4, xmm2, word [eax+1]
 	vrsqrtsh xmm4, xmm6, word [eax+64]
+	vrsqrtsh xmm1, xmm1, [0xe7f]

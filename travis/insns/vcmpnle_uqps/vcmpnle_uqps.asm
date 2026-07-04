@@ -27,3 +27,8 @@ default rel
 	vcmpnle_uqps k4, ymm2, yword [eax+64]
 	vcmpnle_uqps k5, zmm7, zword [eax+1]
 	vcmpnle_uqps k7, zmm0, zword [eax+64]
+	vcmpnle_uqps xmm5, xmm3, [0x48e]
+	vcmpnle_uqps ymm3, ymm6, [0x897]
+	vcmpnle_uqps k7, xmm5, [0xbb4]
+	vcmpnle_uqps k3, ymm4, [0xcc5]
+	vcmpnle_uqps k3, zmm7, [0x6f4]

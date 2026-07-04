@@ -17,3 +17,5 @@ default rel
 	vinserti32x4 ymm1, ymm1, oword [eax+64], 0xcd
 	vinserti32x4 zmm0, zmm6, oword [eax+1], 0xad
 	vinserti32x4 zmm6, zmm0, oword [eax+64], 0x67
+	vinserti32x4 ymm0, ymm6, [0x309], 0x9c
+	vinserti32x4 zmm3, zmm2, [0x59d], 0xdc

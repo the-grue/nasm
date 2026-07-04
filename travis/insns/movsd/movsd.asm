@@ -11,3 +11,5 @@ default rel
 	movsd xmm1, qword [eax+64]
 	movsd qword [eax+1], xmm4
 	movsd qword [eax+64], xmm2
+	movsd xmm1, [0x3b2]
+	movsd [0x10e], xmm7

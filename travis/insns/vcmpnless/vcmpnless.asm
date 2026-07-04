@@ -12,3 +12,5 @@ default rel
 	vcmpnless xmm2, xmm5, qword [eax+64]
 	vcmpnless k5, xmm2, dword [eax+1]
 	vcmpnless k4, xmm4, dword [eax+64]
+	vcmpnless xmm3, xmm2, [0xcc5]
+	vcmpnless k5, xmm0, [0x167]

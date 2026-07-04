@@ -23,3 +23,6 @@ default rel
 	vmulbf16 ymm0, ymm6, yword [eax+64]
 	vmulbf16 zmm3, zmm5, zword [eax+1]
 	vmulbf16 zmm0, zmm6, zword [eax+64]
+	vmulbf16 xmm1, xmm0, [0x236]
+	vmulbf16 ymm2, ymm5, [0x646]
+	vmulbf16 zmm6, zmm7, [0x6b3]

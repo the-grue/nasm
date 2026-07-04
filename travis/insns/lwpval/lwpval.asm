@@ -9,3 +9,5 @@ default rel
 	lwpval ecx, dword [eax+64], 0x25e0a47a
 	lwpval rdx, dword [eax+1], 0x19e49139
 	lwpval rdi, dword [eax+64], 0x1feaa02e
+	lwpval edi, [0xde4], 0xf6db53c
+	lwpval rax, [0xa21], 0x2bec609f

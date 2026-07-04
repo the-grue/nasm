@@ -23,3 +23,6 @@ default rel
 	vpopcntw ymm5, yword [eax+64]
 	vpopcntw zmm0, zword [eax+1]
 	vpopcntw zmm1, zword [eax+64]
+	vpopcntw xmm7, [0xa11]
+	vpopcntw ymm1, [0x642]
+	vpopcntw zmm4, [0x557]

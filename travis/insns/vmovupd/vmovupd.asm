@@ -44,3 +44,13 @@ default rel
 	vmovupd yword [eax+64], ymm2
 	vmovupd zword [eax+1], zmm6
 	vmovupd zword [eax+64], zmm3
+	vmovupd xmm6, [0xaac]
+	vmovupd [0x4d3], xmm6
+	vmovupd ymm2, [0xd9f]
+	vmovupd [0x9dc], ymm0
+	vmovupd xmm3, [0x35e]
+	vmovupd ymm3, [0xee2]
+	vmovupd zmm5, [0xa34]
+	vmovupd [0x1be], xmm3
+	vmovupd [0x29d], ymm3
+	vmovupd [0x407], zmm6

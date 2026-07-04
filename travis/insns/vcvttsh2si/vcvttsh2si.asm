@@ -13,3 +13,5 @@ default rel
 	vcvttsh2si esi, word [eax+64]
 	vcvttsh2si rcx, word [eax+1]
 	vcvttsh2si rcx, word [eax+64]
+	vcvttsh2si ebp, [0x88c]
+	vcvttsh2si rdx, [0xfb3]

@@ -26,3 +26,6 @@ default rel
 	vpandnd ymm4, ymm4, yword [eax+64]
 	vpandnd zmm7, zmm0, zword [eax+1]
 	vpandnd zmm7, zmm0, zword [eax+64]
+	vpandnd xmm4, xmm4, [0x123]
+	vpandnd ymm3, ymm4, [0x9b7]
+	vpandnd zmm5, zmm0, [0x4c4]

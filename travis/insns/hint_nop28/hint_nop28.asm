@@ -17,3 +17,6 @@ default rel
 	hint_nop28 dword [eax+64]
 	hint_nop28 qword [eax+1]
 	hint_nop28 qword [eax+64]
+	hint_nop28 [0xe83]
+	hint_nop28 [0x22c]
+	hint_nop28 [0x1f9]

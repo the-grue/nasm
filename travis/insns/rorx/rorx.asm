@@ -11,3 +11,5 @@ default rel
 	rorx edx, dword [eax+64], 0xdf
 	rorx rdi, qword [eax+1], 0x9d
 	rorx rdi, qword [eax+64], 0x39
+	rorx ebp, [0xc56], 0x9a
+	rorx rdi, [0x545], 0xd3

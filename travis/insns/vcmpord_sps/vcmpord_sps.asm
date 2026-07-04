@@ -27,3 +27,8 @@ default rel
 	vcmpord_sps k4, ymm7, yword [eax+64]
 	vcmpord_sps k5, zmm0, zword [eax+1]
 	vcmpord_sps k4, zmm4, zword [eax+64]
+	vcmpord_sps xmm7, xmm1, [0xa29]
+	vcmpord_sps ymm3, ymm1, [0x807]
+	vcmpord_sps k2, xmm7, [0x3c7]
+	vcmpord_sps k6, ymm7, [0x18c]
+	vcmpord_sps k3, zmm4, [0x930]

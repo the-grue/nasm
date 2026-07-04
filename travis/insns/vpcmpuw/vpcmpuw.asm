@@ -20,3 +20,6 @@ default rel
 	vpcmpuw k1, ymm7, yword [eax+64], 0xe8
 	vpcmpuw k4, zmm0, zword [eax+1], 0xa9
 	vpcmpuw k1, zmm5, zword [eax+64], 0x94
+	vpcmpuw k3, xmm0, [0x73a], 0x4a
+	vpcmpuw k1, ymm2, [0x7f5], 0x31
+	vpcmpuw k3, zmm1, [0x647], 0x68

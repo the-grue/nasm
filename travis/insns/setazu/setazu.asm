@@ -13,3 +13,4 @@ default rel
 	setazu r30b
 	setazu byte [eax+1]
 	setazu byte [eax+64]
+	setazu [0x503]

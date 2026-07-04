@@ -20,3 +20,6 @@ default rel
 	vpcmpleuw k7, ymm2, yword [eax+64]
 	vpcmpleuw k7, zmm1, zword [eax+1]
 	vpcmpleuw k7, zmm7, zword [eax+64]
+	vpcmpleuw k1, xmm3, [0x8db]
+	vpcmpleuw k4, ymm3, [0x8a3]
+	vpcmpleuw k2, zmm0, [0x5db]

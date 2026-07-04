@@ -35,3 +35,8 @@ default rel
 	vxorps ymm6, ymm2, yword [eax+64]
 	vxorps zmm5, zmm6, zword [eax+1]
 	vxorps zmm1, zmm6, zword [eax+64]
+	vxorps xmm7, xmm7, [0x30f]
+	vxorps ymm7, ymm3, [0x19d]
+	vxorps xmm7, xmm0, [0x249]
+	vxorps ymm3, ymm2, [0x171]
+	vxorps zmm0, zmm4, [0xc34]

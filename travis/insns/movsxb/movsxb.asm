@@ -19,3 +19,6 @@ default rel
 	movsxb edi, byte [eax+64]
 	movsxb rbx, byte [eax+1]
 	movsxb rax, byte [eax+64]
+	movsxb di, [0x872]
+	movsxb ecx, [0x85e]
+	movsxb rbp, [0x36d]

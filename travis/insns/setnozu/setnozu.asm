@@ -13,3 +13,4 @@ default rel
 	setnozu r26b
 	setnozu byte [eax+1]
 	setnozu byte [eax+64]
+	setnozu [0xb3a]

@@ -4,3 +4,4 @@ default rel
 	pcmpistrm xmm13, xmm9, 0x18
 	pcmpistrm xmm4, oword [eax+1], 0x3c
 	pcmpistrm xmm4, oword [eax+64], 0x2a
+	pcmpistrm xmm0, [0xef4], 0x5c

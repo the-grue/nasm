@@ -28,7 +28,8 @@
   "source": "xor.asm",
   "option": "--bits 64 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/xor/",
   "target": [
-   { "output": "xor.bin64", "match": "xor.bin64.t" }
+   { "output": "xor.bin64", "match": "xor.bin64.t" },
+   { "stderr": "xor.stderr64" }
   ]
  }
 ]

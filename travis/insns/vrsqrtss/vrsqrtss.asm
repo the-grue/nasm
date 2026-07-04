@@ -5,3 +5,4 @@ default rel
 	vrsqrtss xmm13, xmm8, xmm15
 	vrsqrtss xmm0, xmm1, dword [eax+1]
 	vrsqrtss xmm6, xmm3, dword [eax+64]
+	vrsqrtss xmm7, xmm4, [0xece]

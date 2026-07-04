@@ -33,3 +33,12 @@ default rel
 	cfcmovno ebp, eax, dword [eax+64]
 	cfcmovno rdx, rdx, qword [eax+1]
 	cfcmovno rdx, rsi, qword [eax+64]
+	cfcmovno [0xc90], bp
+	cfcmovno [0xe73], eax
+	cfcmovno [0xd0c], rbx
+	cfcmovno bp, [0x563]
+	cfcmovno eax, [0xcaf]
+	cfcmovno rax, [0x642]
+	cfcmovno si, bx, [0x7a2]
+	cfcmovno ecx, edi, [0xeed]
+	cfcmovno rdi, rbx, [0xf88]

@@ -26,3 +26,6 @@ default rel
 	vpshldvd ymm4, ymm5, yword [eax+64]
 	vpshldvd zmm1, zmm1, zword [eax+1]
 	vpshldvd zmm1, zmm2, zword [eax+64]
+	vpshldvd xmm1, xmm7, [0x4e2]
+	vpshldvd ymm4, ymm3, [0x916]
+	vpshldvd zmm1, zmm4, [0xd30]

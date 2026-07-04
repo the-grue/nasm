@@ -11,3 +11,5 @@ default rel
 	vhsubpd xmm1, xmm2, oword [eax+64]
 	vhsubpd ymm0, ymm5, yword [eax+1]
 	vhsubpd ymm6, ymm5, yword [eax+64]
+	vhsubpd xmm0, xmm2, [0xbf2]
+	vhsubpd ymm2, ymm6, [0xa81]

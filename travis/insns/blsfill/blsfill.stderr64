@@ -8,3 +8,5 @@
 ./travis/insns/blsfill/blsfill.asm:9: warning: instruction obsolete and removed from the target CPU [-w+obsolete-removed]
 ./travis/insns/blsfill/blsfill.asm:10: warning: instruction obsolete and removed from the target CPU [-w+obsolete-removed]
 ./travis/insns/blsfill/blsfill.asm:11: warning: instruction obsolete and removed from the target CPU [-w+obsolete-removed]
+./travis/insns/blsfill/blsfill.asm:12: warning: instruction obsolete and removed from the target CPU [-w+obsolete-removed]
+./travis/insns/blsfill/blsfill.asm:13: warning: instruction obsolete and removed from the target CPU [-w+obsolete-removed]

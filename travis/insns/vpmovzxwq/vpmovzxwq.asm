@@ -31,3 +31,8 @@ default rel
 	vpmovzxwq ymm2, qword [eax+64]
 	vpmovzxwq zmm4, oword [eax+1]
 	vpmovzxwq zmm2, oword [eax+64]
+	vpmovzxwq xmm2, [0x87d]
+	vpmovzxwq ymm1, [0x2f8]
+	vpmovzxwq xmm2, [0xf3a]
+	vpmovzxwq ymm5, [0x3a5]
+	vpmovzxwq zmm0, [0xe69]

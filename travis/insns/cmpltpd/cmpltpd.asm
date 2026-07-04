@@ -4,3 +4,4 @@ default rel
 	cmpltpd xmm8, xmm13
 	cmpltpd xmm6, oword [eax+1]
 	cmpltpd xmm6, oword [eax+64]
+	cmpltpd xmm0, [0x72b]

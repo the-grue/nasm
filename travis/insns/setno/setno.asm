@@ -13,3 +13,4 @@ default rel
 	setno r21d
 	setno byte [eax+1]
 	setno byte [eax+64]
+	setno [0xdbe]

@@ -8,3 +8,5 @@ default rel
 	pxor mm4, qword [eax+64]
 	pxor xmm1, oword [eax+1]
 	pxor xmm2, oword [eax+64]
+	pxor mm2, [0x7c8]
+	pxor xmm2, [0x790]

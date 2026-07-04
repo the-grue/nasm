@@ -4,3 +4,4 @@ default rel
 	pclmullqhqdq xmm12, xmm14
 	pclmullqhqdq xmm2, oword [eax+1]
 	pclmullqhqdq xmm6, oword [eax+64]
+	pclmullqhqdq xmm0, [0x5cd]

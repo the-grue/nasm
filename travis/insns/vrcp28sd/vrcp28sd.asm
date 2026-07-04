@@ -9,3 +9,4 @@ default rel
 	vrcp28sd xmm0, xmm5, xmm1, {sae}
 	vrcp28sd xmm6, xmm5, qword [eax+1]
 	vrcp28sd xmm0, xmm1, qword [eax+64]
+	vrcp28sd xmm7, xmm7, [0xd15]

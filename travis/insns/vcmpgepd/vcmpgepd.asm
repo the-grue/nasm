@@ -27,3 +27,8 @@ default rel
 	vcmpgepd k1, ymm4, yword [eax+64]
 	vcmpgepd k5, zmm6, zword [eax+1]
 	vcmpgepd k1, zmm0, zword [eax+64]
+	vcmpgepd xmm2, xmm3, [0x253]
+	vcmpgepd ymm3, ymm5, [0xd4e]
+	vcmpgepd k3, xmm1, [0xaa9]
+	vcmpgepd k4, ymm2, [0xc21]
+	vcmpgepd k2, zmm2, [0xd11]

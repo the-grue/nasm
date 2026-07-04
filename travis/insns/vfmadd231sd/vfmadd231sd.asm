@@ -14,3 +14,5 @@ default rel
 	vfmadd231sd xmm5, xmm3, qword [eax+64]
 	vfmadd231sd xmm0, xmm6, qword [eax+1]
 	vfmadd231sd xmm3, xmm4, qword [eax+64]
+	vfmadd231sd xmm0, xmm2, [0x5e6]
+	vfmadd231sd xmm4, xmm7, [0x966]

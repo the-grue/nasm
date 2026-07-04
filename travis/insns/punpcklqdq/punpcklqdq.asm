@@ -4,3 +4,4 @@ default rel
 	punpcklqdq xmm15, xmm14
 	punpcklqdq xmm0, oword [eax+1]
 	punpcklqdq xmm7, oword [eax+64]
+	punpcklqdq xmm2, [0x4ba]

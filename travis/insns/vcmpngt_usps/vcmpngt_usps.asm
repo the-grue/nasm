@@ -27,3 +27,8 @@ default rel
 	vcmpngt_usps k4, ymm4, yword [eax+64]
 	vcmpngt_usps k5, zmm7, zword [eax+1]
 	vcmpngt_usps k3, zmm2, zword [eax+64]
+	vcmpngt_usps xmm7, xmm6, [0x32c]
+	vcmpngt_usps ymm6, ymm6, [0x4ea]
+	vcmpngt_usps k2, xmm6, [0xd84]
+	vcmpngt_usps k7, ymm5, [0xe98]
+	vcmpngt_usps k6, zmm6, [0x846]

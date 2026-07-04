@@ -8,3 +8,5 @@ default rel
 	pavgw mm6, qword [eax+64]
 	pavgw xmm7, oword [eax+1]
 	pavgw xmm3, oword [eax+64]
+	pavgw mm1, [0xf2b]
+	pavgw xmm6, [0xd4a]

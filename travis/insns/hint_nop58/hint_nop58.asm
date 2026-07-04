@@ -17,3 +17,6 @@ default rel
 	hint_nop58 dword [eax+64]
 	hint_nop58 qword [eax+1]
 	hint_nop58 qword [eax+64]
+	hint_nop58 [0x26e]
+	hint_nop58 [0xc4c]
+	hint_nop58 [0x842]

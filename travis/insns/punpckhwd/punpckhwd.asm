@@ -8,3 +8,5 @@ default rel
 	punpckhwd mm7, qword [eax+64]
 	punpckhwd xmm7, oword [eax+1]
 	punpckhwd xmm4, oword [eax+64]
+	punpckhwd mm6, [0x455]
+	punpckhwd xmm3, [0x69a]

@@ -16,3 +16,5 @@ default rel
 	vmaxsd xmm7, xmm5, qword [eax+64]
 	vmaxsd xmm4, xmm4, qword [eax+1]
 	vmaxsd xmm3, xmm4, qword [eax+64]
+	vmaxsd xmm1, xmm7, [0x26d]
+	vmaxsd xmm4, xmm2, [0xb57]

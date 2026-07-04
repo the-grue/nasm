@@ -8,3 +8,5 @@ default rel
 	psadbw mm7, qword [eax+64]
 	psadbw xmm0, oword [eax+1]
 	psadbw xmm4, oword [eax+64]
+	psadbw mm2, [0x137]
+	psadbw xmm0, [0x2d3]

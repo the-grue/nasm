@@ -27,3 +27,8 @@ default rel
 	vcmpnle_usps k3, ymm7, yword [eax+64]
 	vcmpnle_usps k2, zmm0, zword [eax+1]
 	vcmpnle_usps k4, zmm3, zword [eax+64]
+	vcmpnle_usps xmm6, xmm5, [0xd55]
+	vcmpnle_usps ymm0, ymm7, [0xa30]
+	vcmpnle_usps k2, xmm4, [0x449]
+	vcmpnle_usps k5, ymm6, [0xd7c]
+	vcmpnle_usps k6, zmm6, [0x22c]

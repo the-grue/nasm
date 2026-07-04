@@ -7,3 +7,5 @@ default rel
 	fisub dword [eax+64]
 	fisub word [eax+1]
 	fisub word [eax+64]
+	fisub [0x529]
+	fisub [0x6d0]

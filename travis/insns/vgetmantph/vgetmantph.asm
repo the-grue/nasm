@@ -23,3 +23,6 @@ default rel
 	vgetmantph ymm4, yword [eax+64], 0x4b
 	vgetmantph zmm6, zword [eax+1], 0x3f
 	vgetmantph zmm1, zword [eax+64], 0xb6
+	vgetmantph xmm3, [0xc89], 0xfa
+	vgetmantph ymm0, [0x11e], 0x77
+	vgetmantph zmm7, [0x849], 0xea

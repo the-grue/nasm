@@ -20,3 +20,6 @@ default rel
 	vpcmpgeuq k4, ymm6, yword [eax+64]
 	vpcmpgeuq k6, zmm6, zword [eax+1]
 	vpcmpgeuq k6, zmm4, zword [eax+64]
+	vpcmpgeuq k4, xmm6, [0x3eb]
+	vpcmpgeuq k5, ymm7, [0xd00]
+	vpcmpgeuq k1, zmm4, [0x2ec]

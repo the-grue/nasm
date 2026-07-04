@@ -15,3 +15,5 @@ default rel
 	vcvtsi2sh xmm6, xmm5, dword [eax+64]
 	vcvtsi2sh xmm3, xmm3, qword [eax+1]
 	vcvtsi2sh xmm0, xmm3, qword [eax+64]
+	vcvtsi2sh xmm2, xmm2, [0x10c]
+	vcvtsi2sh xmm6, xmm0, [0xf81]

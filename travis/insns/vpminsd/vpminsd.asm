@@ -35,3 +35,8 @@ default rel
 	vpminsd ymm3, ymm6, yword [eax+64]
 	vpminsd zmm7, zmm4, zword [eax+1]
 	vpminsd zmm2, zmm0, zword [eax+64]
+	vpminsd xmm1, xmm6, [0x68b]
+	vpminsd ymm2, ymm6, [0x68c]
+	vpminsd xmm6, xmm7, [0x1bc]
+	vpminsd ymm1, ymm1, [0x8e8]
+	vpminsd zmm3, zmm2, [0xd22]

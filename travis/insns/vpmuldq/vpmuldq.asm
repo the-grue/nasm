@@ -35,3 +35,8 @@ default rel
 	vpmuldq ymm1, ymm6, yword [eax+64]
 	vpmuldq zmm6, zmm6, zword [eax+1]
 	vpmuldq zmm3, zmm4, zword [eax+64]
+	vpmuldq xmm6, xmm0, [0xea6]
+	vpmuldq ymm3, ymm2, [0x169]
+	vpmuldq xmm6, xmm5, [0xe27]
+	vpmuldq ymm7, ymm7, [0x511]
+	vpmuldq zmm5, zmm6, [0xf2d]

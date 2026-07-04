@@ -12,3 +12,5 @@ default rel
 	vcmpltss xmm5, xmm1, qword [eax+64]
 	vcmpltss k3, xmm4, dword [eax+1]
 	vcmpltss k3, xmm4, dword [eax+64]
+	vcmpltss xmm5, xmm7, [0x91c]
+	vcmpltss k5, xmm7, [0x507]

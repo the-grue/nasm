@@ -7,3 +7,5 @@ default rel
 	ficomp dword [eax+64]
 	ficomp word [eax+1]
 	ficomp word [eax+64]
+	ficomp [0x6a0]
+	ficomp [0x141]

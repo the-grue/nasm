@@ -4,3 +4,4 @@ default rel
 	subsd xmm14, xmm13
 	subsd xmm0, qword [eax+1]
 	subsd xmm6, qword [eax+64]
+	subsd xmm7, [0x5b4]

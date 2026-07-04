@@ -33,3 +33,12 @@ default rel
 	cfcmovpe esi, ebx, dword [eax+64]
 	cfcmovpe rsi, rdi, qword [eax+1]
 	cfcmovpe rbx, rsi, qword [eax+64]
+	cfcmovpe [0x832], bx
+	cfcmovpe [0xf0e], esi
+	cfcmovpe [0x8f2], rdi
+	cfcmovpe ax, [0xde6]
+	cfcmovpe ecx, [0xbe5]
+	cfcmovpe rax, [0x59f]
+	cfcmovpe si, ax, [0x18b]
+	cfcmovpe eax, edx, [0xb95]
+	cfcmovpe rax, rbx, [0xb9e]

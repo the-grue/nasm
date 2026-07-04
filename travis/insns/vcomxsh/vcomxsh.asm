@@ -6,3 +6,4 @@ default rel
 	vcomxsh xmm5, xmm2, {sae}
 	vcomxsh xmm2, word [eax+1]
 	vcomxsh xmm4, word [eax+64]
+	vcomxsh xmm0, [0x79a]

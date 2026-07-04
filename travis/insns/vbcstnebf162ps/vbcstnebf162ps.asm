@@ -9,3 +9,5 @@ default rel
 	vbcstnebf162ps xmm6, word [eax+64]
 	vbcstnebf162ps ymm0, word [eax+1]
 	vbcstnebf162ps ymm6, word [eax+64]
+	vbcstnebf162ps xmm6, [0x40e]
+	vbcstnebf162ps ymm6, [0x5fe]

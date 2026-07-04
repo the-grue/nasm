@@ -4,3 +4,4 @@ default rel
 	aesimc xmm15, xmm12
 	aesimc xmm1, oword [eax+1]
 	aesimc xmm3, oword [eax+64]
+	aesimc xmm1, [0x8f1]

@@ -31,3 +31,8 @@ default rel
 	vpmadd52huq ymm4, ymm7, yword [eax+64]
 	vpmadd52huq zmm4, zmm7, zword [eax+1]
 	vpmadd52huq zmm1, zmm5, zword [eax+64]
+	vpmadd52huq xmm7, xmm0, [0xa3c]
+	vpmadd52huq ymm1, ymm0, [0x4f3]
+	vpmadd52huq xmm7, xmm5, [0x848]
+	vpmadd52huq ymm4, ymm6, [0x742]
+	vpmadd52huq zmm2, zmm1, [0x9bc]

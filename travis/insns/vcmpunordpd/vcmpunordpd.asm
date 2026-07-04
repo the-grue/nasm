@@ -27,3 +27,8 @@ default rel
 	vcmpunordpd k1, ymm7, yword [eax+64]
 	vcmpunordpd k1, zmm6, zword [eax+1]
 	vcmpunordpd k7, zmm6, zword [eax+64]
+	vcmpunordpd xmm5, xmm4, [0x457]
+	vcmpunordpd ymm3, ymm2, [0x929]
+	vcmpunordpd k5, xmm0, [0xc24]
+	vcmpunordpd k4, ymm7, [0x880]
+	vcmpunordpd k1, zmm1, [0xc0c]

@@ -13,3 +13,4 @@ default rel
 	seto r27d
 	seto byte [eax+1]
 	seto byte [eax+64]
+	seto [0x28c]

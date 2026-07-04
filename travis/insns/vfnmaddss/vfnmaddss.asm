@@ -11,3 +11,5 @@ default rel
 	vfnmaddss xmm0, xmm0, dword [eax+64], xmm0
 	vfnmaddss xmm6, xmm1, xmm4, dword [eax+1]
 	vfnmaddss xmm5, xmm2, xmm6, dword [eax+64]
+	vfnmaddss xmm0, xmm3, [0x1af], xmm6
+	vfnmaddss xmm5, xmm7, xmm0, [0x4bd]

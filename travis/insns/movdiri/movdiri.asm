@@ -11,3 +11,5 @@ default rel
 	movdiri dword [eax+64], eax
 	movdiri qword [eax+1], rbp
 	movdiri qword [eax+64], rsi
+	movdiri [0x60e], edi
+	movdiri [0x184], rbx

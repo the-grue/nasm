@@ -35,3 +35,8 @@ default rel
 	vgf2p8mulb ymm4, ymm6, yword [eax+64]
 	vgf2p8mulb zmm7, zmm5, zword [eax+1]
 	vgf2p8mulb zmm2, zmm5, zword [eax+64]
+	vgf2p8mulb xmm6, xmm5, [0x6c9]
+	vgf2p8mulb ymm3, ymm3, [0x6b6]
+	vgf2p8mulb xmm2, xmm4, [0xb7c]
+	vgf2p8mulb ymm4, ymm2, [0xf12]
+	vgf2p8mulb zmm4, zmm1, [0xc45]

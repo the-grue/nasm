@@ -23,3 +23,7 @@ default rel
 	cmpxchg dword [eax+64], esi
 	cmpxchg qword [eax+1], rax
 	cmpxchg qword [eax+64], rax
+	cmpxchg [0x935], al
+	cmpxchg [0xa23], si
+	cmpxchg [0x292], esi
+	cmpxchg [0x6cc], rcx

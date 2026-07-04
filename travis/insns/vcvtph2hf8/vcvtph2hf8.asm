@@ -23,3 +23,6 @@ default rel
 	vcvtph2hf8 xmm1, yword [eax+64]
 	vcvtph2hf8 ymm6, zword [eax+1]
 	vcvtph2hf8 ymm4, zword [eax+64]
+	vcvtph2hf8 xmm6, [0xa70]
+	vcvtph2hf8 xmm2, [0x86c]
+	vcvtph2hf8 ymm1, [0xca7]

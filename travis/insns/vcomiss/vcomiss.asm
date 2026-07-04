@@ -12,3 +12,5 @@ default rel
 	vcomiss xmm0, dword [eax+64]
 	vcomiss xmm7, dword [eax+1]
 	vcomiss xmm3, dword [eax+64]
+	vcomiss xmm2, [0x1d9]
+	vcomiss xmm7, [0xeba]

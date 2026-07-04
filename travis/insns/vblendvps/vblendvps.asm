@@ -11,3 +11,5 @@ default rel
 	vblendvps xmm6, xmm6, oword [eax+64], xmm1
 	vblendvps ymm7, ymm0, yword [eax+1], ymm2
 	vblendvps ymm2, ymm6, yword [eax+64], ymm0
+	vblendvps xmm5, xmm5, [0x9fc], xmm6
+	vblendvps ymm1, ymm0, [0xff4], ymm1

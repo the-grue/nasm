@@ -25,3 +25,6 @@ default rel
 	vpslldq ymm3, yword [eax+64], 0xbb
 	vpslldq zmm3, zword [eax+1], 0xf8
 	vpslldq zmm0, zword [eax+64], 0xc2
+	vpslldq xmm6, [0x9d3], 0xdf
+	vpslldq ymm3, [0xdd8], 0xba
+	vpslldq zmm2, [0xe7f], 0x7a

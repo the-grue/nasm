@@ -31,3 +31,11 @@ default rel
 	ctestnl 10, dword [eax+64], 0x382b5767
 	ctestnl 2, qword [eax+1], 412969038
 	ctestnl 9, qword [eax+64], -59803463
+	ctestnl 7, [0x924], cl
+	ctestnl 7, [0x382], ax
+	ctestnl 1, [0x22a], ebx
+	ctestnl 15, [0xfe9], rbx
+	ctestnl 6, [0x592], 0x2b
+	ctestnl 8, [0x6b4], 0x5024
+	ctestnl 6, [0xce7], 0x3d93e6f1
+	ctestnl 10, [0x98d], 471071136

@@ -26,3 +26,6 @@ default rel
 	vpminsq ymm4, ymm3, yword [eax+64]
 	vpminsq zmm7, zmm4, zword [eax+1]
 	vpminsq zmm7, zmm1, zword [eax+64]
+	vpminsq xmm3, xmm4, [0xce2]
+	vpminsq ymm4, ymm0, [0x4d1]
+	vpminsq zmm4, zmm0, [0xc49]

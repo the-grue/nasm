@@ -24,3 +24,6 @@ default rel
 	vcvtpd2qq ymm2, yword [eax+64]
 	vcvtpd2qq zmm6, zword [eax+1]
 	vcvtpd2qq zmm1, zword [eax+64]
+	vcvtpd2qq xmm6, [0x251]
+	vcvtpd2qq ymm0, [0x53c]
+	vcvtpd2qq zmm3, [0x8c7]

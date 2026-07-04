@@ -13,3 +13,5 @@ default rel
 	vcvttss2usis ebp, dword [eax+64]
 	vcvttss2usis rdi, dword [eax+1]
 	vcvttss2usis rax, dword [eax+64]
+	vcvttss2usis edx, [0x9b5]
+	vcvttss2usis rbx, [0x98b]

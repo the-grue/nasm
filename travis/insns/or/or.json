@@ -28,7 +28,8 @@
   "source": "or.asm",
   "option": "--bits 64 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/or/",
   "target": [
-   { "output": "or.bin64", "match": "or.bin64.t" }
+   { "output": "or.bin64", "match": "or.bin64.t" },
+   { "stderr": "or.stderr64" }
   ]
  }
 ]

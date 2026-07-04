@@ -47,3 +47,11 @@ default rel
 	vpsrad ymm0, yword [eax+64], 0x35
 	vpsrad zmm1, zword [eax+1], 0x99
 	vpsrad zmm1, zword [eax+64], 0x9f
+	vpsrad xmm5, xmm7, [0x8a0]
+	vpsrad ymm0, ymm4, [0xb7c]
+	vpsrad xmm2, xmm1, [0x12e]
+	vpsrad ymm4, ymm5, [0xaba]
+	vpsrad zmm7, zmm2, [0xb8e]
+	vpsrad xmm1, [0x2a3], 0x1b
+	vpsrad ymm0, [0xc44], 0xe8
+	vpsrad zmm1, [0x206], 0xa7

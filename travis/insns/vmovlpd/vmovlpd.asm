@@ -12,3 +12,5 @@ default rel
 	vmovlpd xmm5, xmm6, qword [eax+64]
 	vmovlpd qword [eax+1], xmm6
 	vmovlpd qword [eax+64], xmm6
+	vmovlpd xmm6, xmm6, [0x491]
+	vmovlpd [0xa34], xmm2

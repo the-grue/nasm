@@ -5,3 +5,4 @@ default rel
 	vfrczss xmm15, xmm10
 	vfrczss xmm3, dword [eax+1]
 	vfrczss xmm7, dword [eax+64]
+	vfrczss xmm7, [0xe64]

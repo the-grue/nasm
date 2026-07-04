@@ -39,3 +39,15 @@ default rel
 	shld eax, dword [eax+64], eax, cl
 	shld rbx, qword [eax+1], rbp, cl
 	shld rbp, qword [eax+64], rbx, cl
+	shld [0xe17], si, 0x8e
+	shld [0xb1a], esi, 0x93
+	shld [0x9f9], rbx, 0x68
+	shld [0x413], si, cl
+	shld [0x23d], edi, cl
+	shld [0x552], rdi, cl
+	shld dx, [0x247], di, 0x92
+	shld ecx, [0x1b8], ebp, 0x61
+	shld rax, [0x6cb], rbx, 0x52
+	shld si, [0x1a9], ax, cl
+	shld edi, [0x773], eax, cl
+	shld rbx, [0xde0], rbp, cl

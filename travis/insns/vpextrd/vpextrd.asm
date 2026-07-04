@@ -7,3 +7,4 @@ default rel
 	vpextrd r9d, xmm12, 0x6d
 	vpextrd dword [eax+1], xmm4, 0x84
 	vpextrd dword [eax+64], xmm0, 0xa5
+	vpextrd [0x885], xmm6, 0xd4

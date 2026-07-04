@@ -4,3 +4,4 @@ default rel
 	vaesimc xmm11, xmm12
 	vaesimc xmm0, oword [eax+1]
 	vaesimc xmm6, oword [eax+64]
+	vaesimc xmm0, [0x4ee]

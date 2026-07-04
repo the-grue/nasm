@@ -11,3 +11,6 @@ default rel
 	fisttp dword [eax+64]
 	fisttp qword [eax+1]
 	fisttp qword [eax+64]
+	fisttp [0x3ac]
+	fisttp [0xaf3]
+	fisttp [0x892]

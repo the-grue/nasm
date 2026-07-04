@@ -35,3 +35,8 @@ default rel
 	vpaddsw ymm6, ymm2, yword [eax+64]
 	vpaddsw zmm7, zmm2, zword [eax+1]
 	vpaddsw zmm5, zmm3, zword [eax+64]
+	vpaddsw xmm7, xmm2, [0x82f]
+	vpaddsw ymm0, ymm1, [0xc28]
+	vpaddsw xmm1, xmm3, [0x501]
+	vpaddsw ymm5, ymm4, [0x77e]
+	vpaddsw zmm1, zmm1, [0x77a]

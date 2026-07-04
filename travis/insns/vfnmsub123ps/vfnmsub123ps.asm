@@ -9,3 +9,5 @@ default rel
 	vfnmsub123ps xmm0, xmm7, oword [eax+64]
 	vfnmsub123ps ymm0, ymm2, yword [eax+1]
 	vfnmsub123ps ymm3, ymm0, yword [eax+64]
+	vfnmsub123ps xmm7, xmm2, [0xf14]
+	vfnmsub123ps ymm7, ymm7, [0x1ae]

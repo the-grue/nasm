@@ -27,3 +27,8 @@ default rel
 	vcmpgtps k2, ymm1, yword [eax+64]
 	vcmpgtps k7, zmm2, zword [eax+1]
 	vcmpgtps k5, zmm4, zword [eax+64]
+	vcmpgtps xmm6, xmm2, [0x2bf]
+	vcmpgtps ymm2, ymm1, [0x9c6]
+	vcmpgtps k1, xmm6, [0xad0]
+	vcmpgtps k7, ymm0, [0x8b4]
+	vcmpgtps k7, zmm6, [0xf5e]

@@ -9,3 +9,4 @@ default rel
 	vfmadd213sh xmm6, xmm1, xmm1, {rd-sae}
 	vfmadd213sh xmm3, xmm1, word [eax+1]
 	vfmadd213sh xmm6, xmm1, word [eax+64]
+	vfmadd213sh xmm7, xmm2, [0xa7d]

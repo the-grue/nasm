@@ -26,3 +26,6 @@ default rel
 	vpminuq ymm5, ymm0, yword [eax+64]
 	vpminuq zmm0, zmm0, zword [eax+1]
 	vpminuq zmm4, zmm1, zword [eax+64]
+	vpminuq xmm7, xmm7, [0x942]
+	vpminuq ymm5, ymm3, [0x693]
+	vpminuq zmm5, zmm0, [0x615]

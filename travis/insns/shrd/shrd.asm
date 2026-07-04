@@ -39,3 +39,15 @@ default rel
 	shrd esi, dword [eax+64], edx, cl
 	shrd rbx, qword [eax+1], rsi, cl
 	shrd rax, qword [eax+64], rbx, cl
+	shrd [0xd21], ax, 0xf0
+	shrd [0x562], eax, 0xfc
+	shrd [0x9bc], rdx, 0xda
+	shrd [0x128], si, cl
+	shrd [0x870], ebp, cl
+	shrd [0xe1a], rdi, cl
+	shrd di, [0x7ad], si, 0x1b
+	shrd ebx, [0x9ff], ebx, 0xda
+	shrd rdi, [0xfce], rcx, 0xf8
+	shrd dx, [0xb02], di, cl
+	shrd esi, [0x915], ecx, cl
+	shrd rdi, [0x7f7], rbx, cl

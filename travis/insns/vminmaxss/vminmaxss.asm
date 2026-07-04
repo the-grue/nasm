@@ -7,3 +7,4 @@ default rel
 	vminmaxss xmm4{k1}{z}, xmm5, xmm4, 0x8
 	vminmaxss xmm3, xmm1, dword [eax+1], 0x2f
 	vminmaxss xmm1, xmm3, dword [eax+64], 0x40
+	vminmaxss xmm4, xmm2, [0xc61], 0x40

@@ -9,3 +9,4 @@ default rel
 	vrsqrt28sd xmm5, xmm5, xmm2, {sae}
 	vrsqrt28sd xmm0, xmm2, qword [eax+1]
 	vrsqrt28sd xmm7, xmm3, qword [eax+64]
+	vrsqrt28sd xmm5, xmm1, [0x651]

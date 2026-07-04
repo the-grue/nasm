@@ -19,3 +19,5 @@ default rel
 	vmovsh xmm5, word [eax+64]
 	vmovsh word [eax+1], xmm0
 	vmovsh word [eax+64], xmm3
+	vmovsh xmm1, [0xf38]
+	vmovsh [0x1d7], xmm4

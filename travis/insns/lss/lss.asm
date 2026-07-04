@@ -17,3 +17,6 @@ default rel
 	lss edi, dword [eax+64]
 	lss rsi, qword [eax+1]
 	lss rbx, qword [eax+64]
+	lss ax, [0x154]
+	lss ecx, [0xa79]
+	lss rsi, [0x9da]

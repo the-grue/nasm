@@ -16,3 +16,5 @@ default rel
 	vmaxss xmm0, xmm6, dword [eax+64]
 	vmaxss xmm7, xmm7, dword [eax+1]
 	vmaxss xmm1, xmm1, dword [eax+64]
+	vmaxss xmm3, xmm1, [0xdf1]
+	vmaxss xmm4, xmm0, [0xd49]

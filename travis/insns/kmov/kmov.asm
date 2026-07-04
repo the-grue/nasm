@@ -15,3 +15,7 @@ default rel
 	kmov dword [eax+64], k6
 	kmov qword [eax+1], k2
 	kmov qword [eax+64], k3
+	kmov [0x4ad], k5
+	kmov [0x555], k2
+	kmov [0xbee], k3
+	kmov [0x612], k2

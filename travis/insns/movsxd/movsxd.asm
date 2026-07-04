@@ -19,3 +19,6 @@ default rel
 	movsxd eax, dword [eax+64]
 	movsxd rax, dword [eax+1]
 	movsxd rcx, dword [eax+64]
+	movsxd ax, [0xc52]
+	movsxd eax, [0xa76]
+	movsxd rbp, [0x1e4]

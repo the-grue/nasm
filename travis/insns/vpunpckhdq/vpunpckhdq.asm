@@ -35,3 +35,8 @@ default rel
 	vpunpckhdq ymm2, ymm6, yword [eax+64]
 	vpunpckhdq zmm0, zmm2, zword [eax+1]
 	vpunpckhdq zmm5, zmm5, zword [eax+64]
+	vpunpckhdq xmm3, xmm3, [0x9af]
+	vpunpckhdq ymm0, ymm6, [0x2ad]
+	vpunpckhdq xmm5, xmm6, [0xbb9]
+	vpunpckhdq ymm5, ymm0, [0x532]
+	vpunpckhdq zmm0, zmm2, [0xb68]

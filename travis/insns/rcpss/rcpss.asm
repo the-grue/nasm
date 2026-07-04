@@ -4,3 +4,4 @@ default rel
 	rcpss xmm8, xmm12
 	rcpss xmm4, dword [eax+1]
 	rcpss xmm7, dword [eax+64]
+	rcpss xmm0, [0x235]

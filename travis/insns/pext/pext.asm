@@ -13,3 +13,5 @@ default rel
 	pext edi, edi, dword [eax+64]
 	pext rdx, rsi, qword [eax+1]
 	pext rdi, rbp, qword [eax+64]
+	pext eax, esi, [0xad3]
+	pext rsi, rbx, [0x4c8]

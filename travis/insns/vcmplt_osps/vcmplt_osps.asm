@@ -27,3 +27,8 @@ default rel
 	vcmplt_osps k4, ymm6, yword [eax+64]
 	vcmplt_osps k7, zmm7, zword [eax+1]
 	vcmplt_osps k6, zmm6, zword [eax+64]
+	vcmplt_osps xmm3, xmm6, [0x14a]
+	vcmplt_osps ymm0, ymm4, [0x6ef]
+	vcmplt_osps k1, xmm0, [0xa69]
+	vcmplt_osps k2, ymm7, [0x72a]
+	vcmplt_osps k2, zmm2, [0xed5]

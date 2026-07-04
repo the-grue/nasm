@@ -9,3 +9,4 @@ default rel
 	vaddsh xmm5, xmm6, xmm4, {rz-sae}
 	vaddsh xmm2, xmm2, word [eax+1]
 	vaddsh xmm3, xmm7, word [eax+64]
+	vaddsh xmm0, xmm3, [0xc95]

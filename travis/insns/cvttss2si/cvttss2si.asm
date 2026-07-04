@@ -9,3 +9,5 @@ default rel
 	cvttss2si ebx, dword [eax+64]
 	cvttss2si rax, dword [eax+1]
 	cvttss2si rdx, dword [eax+64]
+	cvttss2si edx, [0xfb1]
+	cvttss2si rbp, [0x459]

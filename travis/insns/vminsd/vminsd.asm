@@ -16,3 +16,5 @@ default rel
 	vminsd xmm5, xmm3, qword [eax+64]
 	vminsd xmm0, xmm5, qword [eax+1]
 	vminsd xmm4, xmm0, qword [eax+64]
+	vminsd xmm0, xmm1, [0x702]
+	vminsd xmm2, xmm5, [0xd63]

@@ -9,3 +9,5 @@ default rel
 	blsfill edx, dword [eax+64]
 	blsfill rdx, qword [eax+1]
 	blsfill rcx, qword [eax+64]
+	blsfill eax, [0x22e]
+	blsfill rax, [0x8e6]

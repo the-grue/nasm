@@ -27,3 +27,8 @@ default rel
 	vcmpnlt_uspd k5, ymm0, yword [eax+64]
 	vcmpnlt_uspd k1, zmm7, zword [eax+1]
 	vcmpnlt_uspd k1, zmm6, zword [eax+64]
+	vcmpnlt_uspd xmm2, xmm2, [0xa8f]
+	vcmpnlt_uspd ymm3, ymm3, [0xf3f]
+	vcmpnlt_uspd k1, xmm6, [0xa5d]
+	vcmpnlt_uspd k7, ymm2, [0x581]
+	vcmpnlt_uspd k6, zmm1, [0x46a]

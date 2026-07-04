@@ -13,3 +13,4 @@ default rel
 	setnszu r29b
 	setnszu byte [eax+1]
 	setnszu byte [eax+64]
+	setnszu [0x304]

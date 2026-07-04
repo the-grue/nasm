@@ -9,3 +9,4 @@ default rel
 	vsubsh xmm5, xmm3, xmm5, {rd-sae}
 	vsubsh xmm4, xmm4, word [eax+1]
 	vsubsh xmm6, xmm1, word [eax+64]
+	vsubsh xmm4, xmm7, [0x7e2]

@@ -5,3 +5,4 @@ default rel
 	vdppd xmm15, xmm12, xmm9, 0x65
 	vdppd xmm5, xmm1, oword [eax+1], 0x87
 	vdppd xmm0, xmm0, oword [eax+64], 0x49
+	vdppd xmm0, xmm2, [0xc39], 0x1b

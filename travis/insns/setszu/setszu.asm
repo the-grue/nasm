@@ -13,3 +13,4 @@ default rel
 	setszu r21b
 	setszu byte [eax+1]
 	setszu byte [eax+64]
+	setszu [0xd52]

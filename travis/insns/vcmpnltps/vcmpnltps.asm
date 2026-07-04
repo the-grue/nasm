@@ -27,3 +27,8 @@ default rel
 	vcmpnltps k4, ymm2, yword [eax+64]
 	vcmpnltps k2, zmm1, zword [eax+1]
 	vcmpnltps k1, zmm7, zword [eax+64]
+	vcmpnltps xmm3, xmm7, [0x5fa]
+	vcmpnltps ymm4, ymm3, [0xb0c]
+	vcmpnltps k4, xmm1, [0x3d9]
+	vcmpnltps k4, ymm4, [0xc24]
+	vcmpnltps k1, zmm7, [0xbc1]

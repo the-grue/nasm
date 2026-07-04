@@ -27,3 +27,6 @@ default rel
 	vfnmsub132ph ymm6, ymm7, yword [eax+64]
 	vfnmsub132ph zmm1, zmm2, zword [eax+1]
 	vfnmsub132ph zmm2, zmm7, zword [eax+64]
+	vfnmsub132ph xmm5, xmm7, [0x6fd]
+	vfnmsub132ph ymm4, ymm5, [0x1ef]
+	vfnmsub132ph zmm6, zmm0, [0xa24]

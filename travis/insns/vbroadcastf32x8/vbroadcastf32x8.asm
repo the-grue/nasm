@@ -7,3 +7,4 @@ default rel
 	vbroadcastf32x8 zmm4{k7}{z}, yword [0x226]
 	vbroadcastf32x8 zmm5, yword [eax+1]
 	vbroadcastf32x8 zmm0, yword [eax+64]
+	vbroadcastf32x8 zmm7, [0x422]

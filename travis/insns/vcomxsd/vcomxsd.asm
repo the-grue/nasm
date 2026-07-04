@@ -6,3 +6,4 @@ default rel
 	vcomxsd xmm4, xmm2, {sae}
 	vcomxsd xmm0, qword [eax+1]
 	vcomxsd xmm4, qword [eax+64]
+	vcomxsd xmm1, [0x8ab]

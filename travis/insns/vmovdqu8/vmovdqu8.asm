@@ -39,3 +39,9 @@ default rel
 	vmovdqu8 yword [eax+64], ymm6
 	vmovdqu8 zword [eax+1], zmm2
 	vmovdqu8 zword [eax+64], zmm6
+	vmovdqu8 xmm1, [0x630]
+	vmovdqu8 ymm1, [0x50a]
+	vmovdqu8 zmm6, [0x9fd]
+	vmovdqu8 [0x35d], xmm5
+	vmovdqu8 [0x2f4], ymm1
+	vmovdqu8 [0x84c], zmm3

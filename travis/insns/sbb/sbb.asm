@@ -75,3 +75,33 @@ default rel
 	sbb esi, dword [eax+64], 0x2118f2f7
 	sbb rcx, qword [eax+1], -304481604
 	sbb rdx, qword [eax+64], 31411479
+	sbb [0x2d1], bl
+	sbb [0x56f], bx
+	sbb [0x43c], ecx
+	sbb [0xf6d], rsi
+	sbb dl, [0x780]
+	sbb si, [0x5f2]
+	sbb esi, [0xc77]
+	sbb rax, [0x5e8]
+	sbb [0xb9a], 0xcb
+	sbb [0x550], -59
+	sbb [0xaca], 0xd527
+	sbb [0xed3], 59
+	sbb [0xf09], 0x1b457a6d
+	sbb [0xd6f], 111
+	sbb [0xeed], 503962257
+	sbb cl, al, [0xadd]
+	sbb bx, ax, [0xd25]
+	sbb edx, eax, [0xc1f]
+	sbb rdx, rbp, [0x995]
+	sbb dl, [0xf4b], dl
+	sbb di, [0xc7c], dx
+	sbb ecx, [0x149], eax
+	sbb rdi, [0x541], rsi
+	sbb bp, [0xb60], -122
+	sbb ecx, [0xab1], -72
+	sbb rbp, [0x719], -21
+	sbb al, [0x293], 0xc9
+	sbb ax, [0x48c], 0xc298
+	sbb eax, [0xa8d], 0x1809bbdb
+	sbb rax, [0x3cc], 363984859

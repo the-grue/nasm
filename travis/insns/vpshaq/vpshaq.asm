@@ -11,3 +11,5 @@ default rel
 	vpshaq xmm6, oword [eax+64], xmm1
 	vpshaq xmm5, xmm4, oword [eax+1]
 	vpshaq xmm4, xmm2, oword [eax+64]
+	vpshaq xmm4, [0xc09], xmm6
+	vpshaq xmm4, xmm6, [0xe44]

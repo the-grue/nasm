@@ -47,3 +47,11 @@ default rel
 	vpsrld ymm4, yword [eax+64], 0x20
 	vpsrld zmm3, zword [eax+1], 0xca
 	vpsrld zmm4, zword [eax+64], 0x20
+	vpsrld xmm7, xmm0, [0x9e2]
+	vpsrld ymm3, ymm5, [0xecf]
+	vpsrld xmm6, xmm5, [0xf57]
+	vpsrld ymm1, ymm5, [0x37f]
+	vpsrld zmm2, zmm0, [0xc83]
+	vpsrld xmm0, [0x133], 0x5d
+	vpsrld ymm5, [0xc4f], 0x81
+	vpsrld zmm3, [0x8a1], 0x1f

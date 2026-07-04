@@ -13,3 +13,4 @@ default rel
 	setnp r21d
 	setnp byte [eax+1]
 	setnp byte [eax+64]
+	setnp [0x422]

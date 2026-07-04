@@ -11,3 +11,5 @@ default rel
 	cmpgxadd dword [eax+64], ebx, ebx
 	cmpgxadd qword [eax+1], rbp, rax
 	cmpgxadd qword [eax+64], rsi, rdi
+	cmpgxadd [0xe17], esi, ecx
+	cmpgxadd [0x311], rax, rdx

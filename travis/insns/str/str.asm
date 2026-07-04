@@ -15,3 +15,4 @@ default rel
 	str r26
 	str word [eax+1]
 	str word [eax+64]
+	str [0x482]

@@ -23,3 +23,6 @@ default rel
 	vpblendmb ymm1, ymm4, yword [eax+64]
 	vpblendmb zmm1, zmm1, zword [eax+1]
 	vpblendmb zmm1, zmm1, zword [eax+64]
+	vpblendmb xmm6, xmm0, [0xba0]
+	vpblendmb ymm7, ymm1, [0xb9e]
+	vpblendmb zmm1, zmm2, [0x34b]

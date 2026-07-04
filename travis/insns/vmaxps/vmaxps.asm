@@ -36,3 +36,8 @@ default rel
 	vmaxps ymm4, ymm4, yword [eax+64]
 	vmaxps zmm6, zmm7, zword [eax+1]
 	vmaxps zmm0, zmm1, zword [eax+64]
+	vmaxps xmm7, xmm5, [0xd7c]
+	vmaxps ymm6, ymm2, [0xf63]
+	vmaxps xmm6, xmm2, [0x262]
+	vmaxps ymm3, ymm0, [0x9f2]
+	vmaxps zmm4, zmm5, [0x4a8]

@@ -9,3 +9,5 @@ default rel
 	t1mskc ebp, dword [eax+64]
 	t1mskc rdx, qword [eax+1]
 	t1mskc rdx, qword [eax+64]
+	t1mskc ecx, [0x549]
+	t1mskc rcx, [0x81f]

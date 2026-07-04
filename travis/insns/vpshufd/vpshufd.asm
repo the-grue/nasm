@@ -31,3 +31,8 @@ default rel
 	vpshufd ymm7, yword [eax+64], 0x39
 	vpshufd zmm3, zword [eax+1], 0x9a
 	vpshufd zmm2, zword [eax+64], 0x2f
+	vpshufd xmm3, [0x59c], 0x97
+	vpshufd ymm5, [0x18f], 0xd
+	vpshufd xmm2, [0xd1e], 0x55
+	vpshufd ymm5, [0x6a9], 0x5f
+	vpshufd zmm1, [0x94a], 0x54

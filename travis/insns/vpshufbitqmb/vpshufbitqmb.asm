@@ -20,3 +20,6 @@ default rel
 	vpshufbitqmb k7, ymm0, yword [eax+64]
 	vpshufbitqmb k1, zmm3, zword [eax+1]
 	vpshufbitqmb k6, zmm1, zword [eax+64]
+	vpshufbitqmb k4, xmm4, [0x87f]
+	vpshufbitqmb k5, ymm3, [0x7d5]
+	vpshufbitqmb k4, zmm3, [0xbee]

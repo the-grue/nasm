@@ -35,3 +35,8 @@ default rel
 	vpmuludq ymm5, ymm6, yword [eax+64]
 	vpmuludq zmm0, zmm0, zword [eax+1]
 	vpmuludq zmm2, zmm6, zword [eax+64]
+	vpmuludq xmm0, xmm5, [0x27c]
+	vpmuludq ymm0, ymm1, [0x385]
+	vpmuludq xmm4, xmm4, [0xad5]
+	vpmuludq ymm7, ymm4, [0x98a]
+	vpmuludq zmm7, zmm1, [0xd72]

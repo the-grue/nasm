@@ -4,3 +4,4 @@ default rel
 	pcmpeqq xmm10, xmm15
 	pcmpeqq xmm5, oword [eax+1]
 	pcmpeqq xmm1, oword [eax+64]
+	pcmpeqq xmm6, [0x6f4]

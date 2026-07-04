@@ -26,3 +26,8 @@ default rel
 	vpcmpgtd k6, ymm7, yword [eax+64]
 	vpcmpgtd k1, zmm4, zword [eax+1]
 	vpcmpgtd k6, zmm0, zword [eax+64]
+	vpcmpgtd xmm2, xmm5, [0x1ae]
+	vpcmpgtd ymm1, ymm7, [0x20f]
+	vpcmpgtd k2, xmm6, [0xa4e]
+	vpcmpgtd k2, ymm5, [0xc18]
+	vpcmpgtd k4, zmm0, [0xe9b]

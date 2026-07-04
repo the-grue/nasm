@@ -12,3 +12,5 @@ default rel
 	vcmptruess xmm5, xmm0, qword [eax+64]
 	vcmptruess k3, xmm3, dword [eax+1]
 	vcmptruess k3, xmm7, dword [eax+64]
+	vcmptruess xmm0, xmm1, [0x9ab]
+	vcmptruess k5, xmm2, [0x7a6]

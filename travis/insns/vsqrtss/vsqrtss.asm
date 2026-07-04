@@ -16,3 +16,5 @@ default rel
 	vsqrtss xmm0, xmm0, dword [eax+64]
 	vsqrtss xmm5, xmm7, dword [eax+1]
 	vsqrtss xmm1, xmm6, dword [eax+64]
+	vsqrtss xmm6, xmm0, [0xa5e]
+	vsqrtss xmm2, xmm4, [0x87f]

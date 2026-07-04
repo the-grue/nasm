@@ -4,3 +4,4 @@ default rel
 	aesenc256kl xmm15, zword [0xf6e]
 	aesenc256kl xmm4, zword [eax+1]
 	aesenc256kl xmm5, zword [eax+64]
+	aesenc256kl xmm2, [0xe30]

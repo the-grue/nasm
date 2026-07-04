@@ -23,3 +23,7 @@ default rel
 	vfnmsubps xmm0, xmm1, xmm3, oword [eax+64]
 	vfnmsubps ymm5, ymm4, ymm0, yword [eax+1]
 	vfnmsubps ymm6, ymm0, ymm6, yword [eax+64]
+	vfnmsubps xmm3, xmm4, [0xe43], xmm2
+	vfnmsubps ymm2, ymm0, [0x1cf], ymm6
+	vfnmsubps xmm2, xmm1, xmm6, [0x7fa]
+	vfnmsubps ymm4, ymm4, ymm1, [0xccb]

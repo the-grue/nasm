@@ -13,3 +13,5 @@ default rel
 	psllq mm1, qword [eax+64]
 	psllq xmm7, oword [eax+1]
 	psllq xmm3, oword [eax+64]
+	psllq mm2, [0x2f0]
+	psllq xmm4, [0x262]

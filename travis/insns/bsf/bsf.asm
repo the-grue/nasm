@@ -17,3 +17,6 @@ default rel
 	bsf ebx, dword [eax+64]
 	bsf rcx, qword [eax+1]
 	bsf rcx, qword [eax+64]
+	bsf ax, [0x5f5]
+	bsf eax, [0x5e8]
+	bsf rdi, [0xe8f]

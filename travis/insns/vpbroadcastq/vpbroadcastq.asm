@@ -43,3 +43,8 @@ default rel
 	vpbroadcastq ymm1, qword [eax+64]
 	vpbroadcastq zmm4, qword [eax+1]
 	vpbroadcastq zmm2, qword [eax+64]
+	vpbroadcastq xmm0, [0x7a8]
+	vpbroadcastq ymm4, [0x296]
+	vpbroadcastq xmm4, [0x7f3]
+	vpbroadcastq ymm4, [0x992]
+	vpbroadcastq zmm5, [0xbca]

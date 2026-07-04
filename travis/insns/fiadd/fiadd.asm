@@ -7,3 +7,5 @@ default rel
 	fiadd dword [eax+64]
 	fiadd word [eax+1]
 	fiadd word [eax+64]
+	fiadd [0xcce]
+	fiadd [0x115]

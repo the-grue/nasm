@@ -13,3 +13,4 @@ default rel
 	setnle r18d
 	setnle byte [eax+1]
 	setnle byte [eax+64]
+	setnle [0xe49]

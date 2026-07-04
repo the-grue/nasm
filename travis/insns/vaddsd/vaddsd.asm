@@ -16,3 +16,5 @@ default rel
 	vaddsd xmm7, xmm7, qword [eax+64]
 	vaddsd xmm7, xmm4, qword [eax+1]
 	vaddsd xmm1, xmm5, qword [eax+64]
+	vaddsd xmm7, xmm2, [0x754]
+	vaddsd xmm3, xmm4, [0x4fb]

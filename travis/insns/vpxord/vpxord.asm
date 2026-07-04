@@ -26,3 +26,6 @@ default rel
 	vpxord ymm3, ymm6, yword [eax+64]
 	vpxord zmm4, zmm7, zword [eax+1]
 	vpxord zmm5, zmm4, zword [eax+64]
+	vpxord xmm5, xmm1, [0x82f]
+	vpxord ymm6, ymm6, [0xdf1]
+	vpxord zmm6, zmm0, [0x61f]

@@ -16,3 +16,5 @@ default rel
 	vminss xmm4, xmm7, dword [eax+64]
 	vminss xmm4, xmm5, dword [eax+1]
 	vminss xmm4, xmm6, dword [eax+64]
+	vminss xmm2, xmm6, [0xd78]
+	vminss xmm6, xmm0, [0x2b0]

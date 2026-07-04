@@ -14,3 +14,5 @@ default rel
 	vfnmadd132sd xmm3, xmm1, qword [eax+64]
 	vfnmadd132sd xmm4, xmm1, qword [eax+1]
 	vfnmadd132sd xmm2, xmm1, qword [eax+64]
+	vfnmadd132sd xmm2, xmm3, [0xb49]
+	vfnmadd132sd xmm3, xmm4, [0xdcf]

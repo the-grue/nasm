@@ -4,3 +4,4 @@ default rel
 	cmpordss xmm15, xmm10
 	cmpordss xmm6, dword [eax+1]
 	cmpordss xmm1, dword [eax+64]
+	cmpordss xmm1, [0xb24]

@@ -6,7 +6,8 @@
   "source": "ccmpnge.asm",
   "option": "--bits 64 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/ccmpnge/",
   "target": [
-   { "output": "ccmpnge.bin64", "match": "ccmpnge.bin64.t" }
+   { "output": "ccmpnge.bin64", "match": "ccmpnge.bin64.t" },
+   { "stderr": "ccmpnge.stderr64" }
   ]
  }
 ]

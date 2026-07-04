@@ -23,3 +23,6 @@ default rel
 	vrcpbf16 ymm7, yword [eax+64]
 	vrcpbf16 zmm1, zword [eax+1]
 	vrcpbf16 zmm4, zword [eax+64]
+	vrcpbf16 xmm3, [0xad0]
+	vrcpbf16 ymm6, [0x92f]
+	vrcpbf16 zmm6, [0x46e]

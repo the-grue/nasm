@@ -28,7 +28,8 @@
   "source": "cmp.asm",
   "option": "--bits 64 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/cmp/",
   "target": [
-   { "output": "cmp.bin64", "match": "cmp.bin64.t" }
+   { "output": "cmp.bin64", "match": "cmp.bin64.t" },
+   { "stderr": "cmp.stderr64" }
   ]
  }
 ]

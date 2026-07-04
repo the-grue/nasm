@@ -15,3 +15,4 @@ default rel
 	sldt r28
 	sldt word [eax+1]
 	sldt word [eax+64]
+	sldt [0xbd2]

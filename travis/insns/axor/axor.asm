@@ -11,3 +11,5 @@ default rel
 	axor dword [eax+64], ecx
 	axor qword [eax+1], rbp
 	axor qword [eax+64], rsi
+	axor [0x6d5], ebp
+	axor [0xa5c], rax

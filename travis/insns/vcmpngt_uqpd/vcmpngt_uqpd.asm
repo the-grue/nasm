@@ -27,3 +27,8 @@ default rel
 	vcmpngt_uqpd k5, ymm6, yword [eax+64]
 	vcmpngt_uqpd k6, zmm6, zword [eax+1]
 	vcmpngt_uqpd k7, zmm2, zword [eax+64]
+	vcmpngt_uqpd xmm1, xmm7, [0x1d0]
+	vcmpngt_uqpd ymm0, ymm6, [0xff6]
+	vcmpngt_uqpd k5, xmm3, [0xe78]
+	vcmpngt_uqpd k5, ymm1, [0x53e]
+	vcmpngt_uqpd k3, zmm1, [0xd9e]

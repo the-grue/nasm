@@ -13,3 +13,4 @@ default rel
 	setlezu r29b
 	setlezu byte [eax+1]
 	setlezu byte [eax+64]
+	setlezu [0xd74]

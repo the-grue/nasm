@@ -8,3 +8,5 @@ default rel
 	psubusb mm4, qword [eax+64]
 	psubusb xmm1, oword [eax+1]
 	psubusb xmm5, oword [eax+64]
+	psubusb mm0, [0xd10]
+	psubusb xmm1, [0xb3b]

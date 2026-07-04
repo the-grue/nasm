@@ -20,3 +20,6 @@ default rel
 	vpcmpequq k7, ymm4, yword [eax+64]
 	vpcmpequq k6, zmm6, zword [eax+1]
 	vpcmpequq k7, zmm5, zword [eax+64]
+	vpcmpequq k7, xmm2, [0xbb7]
+	vpcmpequq k1, ymm2, [0x266]
+	vpcmpequq k2, zmm6, [0xa6c]

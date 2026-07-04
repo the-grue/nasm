@@ -11,3 +11,5 @@ default rel
 	cmpnaexadd dword [eax+64], ebx, esi
 	cmpnaexadd qword [eax+1], rax, rsi
 	cmpnaexadd qword [eax+64], rdi, rbp
+	cmpnaexadd [0xf0e], edi, esi
+	cmpnaexadd [0x98b], rsi, rbp

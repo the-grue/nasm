@@ -33,3 +33,8 @@ default rel
 	vpdpwssds ymm7, ymm7, yword [eax+64]
 	vpdpwssds zmm1, zmm2, zword [eax+1]
 	vpdpwssds zmm4, zmm3, zword [eax+64]
+	vpdpwssds xmm7, xmm2, [0xfce]
+	vpdpwssds ymm1, ymm1, [0x318]
+	vpdpwssds xmm2, xmm1, [0x775]
+	vpdpwssds ymm4, ymm7, [0xe6f]
+	vpdpwssds zmm5, zmm3, [0xe60]

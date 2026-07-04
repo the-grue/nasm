@@ -8,3 +8,4 @@ default rel
 	vrcp28ps zmm0, zmm6, {sae}
 	vrcp28ps zmm1, zword [eax+1]
 	vrcp28ps zmm0, zword [eax+64]
+	vrcp28ps zmm3, [0x8b4]

@@ -17,3 +17,6 @@ default rel
 	lsl edx, word [eax+64]
 	lsl rax, word [eax+1]
 	lsl rbx, word [eax+64]
+	lsl di, [0xac5]
+	lsl edi, [0xc06]
+	lsl rcx, [0xd84]

@@ -12,3 +12,5 @@ default rel
 	vcmptrue_usss xmm1, xmm0, qword [eax+64]
 	vcmptrue_usss k2, xmm2, dword [eax+1]
 	vcmptrue_usss k1, xmm6, dword [eax+64]
+	vcmptrue_usss xmm3, xmm0, [0x64c]
+	vcmptrue_usss k6, xmm7, [0x867]

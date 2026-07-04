@@ -17,3 +17,6 @@ default rel
 	hint_nop22 dword [eax+64]
 	hint_nop22 qword [eax+1]
 	hint_nop22 qword [eax+64]
+	hint_nop22 [0xd45]
+	hint_nop22 [0x124]
+	hint_nop22 [0x60e]

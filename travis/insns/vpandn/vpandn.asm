@@ -11,3 +11,5 @@ default rel
 	vpandn xmm4, xmm0, oword [eax+64]
 	vpandn ymm4, ymm4, yword [eax+1]
 	vpandn ymm7, ymm0, yword [eax+64]
+	vpandn xmm5, xmm0, [0x679]
+	vpandn ymm2, ymm1, [0xd0c]

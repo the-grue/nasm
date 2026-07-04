@@ -11,3 +11,5 @@ default rel
 	vphaddd xmm4, xmm1, oword [eax+64]
 	vphaddd ymm2, ymm1, yword [eax+1]
 	vphaddd ymm4, ymm1, yword [eax+64]
+	vphaddd xmm2, xmm0, [0x5e9]
+	vphaddd ymm2, ymm4, [0xad4]

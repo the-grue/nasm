@@ -20,3 +20,6 @@ default rel
 	vfpclassbf16 k1, yword [eax+64], 0x3
 	vfpclassbf16 k1, zword [eax+1], 0xe5
 	vfpclassbf16 k6, zword [eax+64], 0xe8
+	vfpclassbf16 k2, [0x664], 0xdb
+	vfpclassbf16 k3, [0xf88], 0x69
+	vfpclassbf16 k3, [0x824], 0x65

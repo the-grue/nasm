@@ -8,3 +8,5 @@ default rel
 	pmulhw mm6, qword [eax+64]
 	pmulhw xmm2, oword [eax+1]
 	pmulhw xmm3, oword [eax+64]
+	pmulhw mm2, [0x614]
+	pmulhw xmm1, [0xf76]

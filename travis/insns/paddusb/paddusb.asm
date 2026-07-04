@@ -8,3 +8,5 @@ default rel
 	paddusb mm3, qword [eax+64]
 	paddusb xmm1, oword [eax+1]
 	paddusb xmm6, oword [eax+64]
+	paddusb mm7, [0x4de]
+	paddusb xmm7, [0xd23]

@@ -8,3 +8,4 @@ default rel
 	vgetexpsh xmm1, xmm2, xmm3, {sae}
 	vgetexpsh xmm3, xmm2, word [eax+1]
 	vgetexpsh xmm4, xmm2, word [eax+64]
+	vgetexpsh xmm4, xmm4, [0xddc]

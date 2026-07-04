@@ -12,3 +12,5 @@ default rel
 	vcmpnge_uqsd xmm2, xmm0, qword [eax+64]
 	vcmpnge_uqsd k6, xmm0, qword [eax+1]
 	vcmpnge_uqsd k2, xmm5, qword [eax+64]
+	vcmpnge_uqsd xmm4, xmm0, [0x390]
+	vcmpnge_uqsd k3, xmm5, [0x1fb]

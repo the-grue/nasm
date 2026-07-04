@@ -32,3 +32,8 @@ default rel
 	vsqrtps ymm4, yword [eax+64]
 	vsqrtps zmm1, zword [eax+1]
 	vsqrtps zmm7, zword [eax+64]
+	vsqrtps xmm3, [0x4d8]
+	vsqrtps ymm3, [0xbc7]
+	vsqrtps xmm6, [0x546]
+	vsqrtps ymm1, [0x1ad]
+	vsqrtps zmm1, [0x4ba]

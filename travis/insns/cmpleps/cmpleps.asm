@@ -4,3 +4,4 @@ default rel
 	cmpleps xmm13, xmm11
 	cmpleps xmm5, oword [eax+1]
 	cmpleps xmm4, oword [eax+64]
+	cmpleps xmm5, [0x290]

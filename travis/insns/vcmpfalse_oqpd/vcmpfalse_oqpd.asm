@@ -27,3 +27,8 @@ default rel
 	vcmpfalse_oqpd k6, ymm5, yword [eax+64]
 	vcmpfalse_oqpd k3, zmm7, zword [eax+1]
 	vcmpfalse_oqpd k2, zmm0, zword [eax+64]
+	vcmpfalse_oqpd xmm7, xmm2, [0x63b]
+	vcmpfalse_oqpd ymm7, ymm7, [0x878]
+	vcmpfalse_oqpd k4, xmm7, [0x405]
+	vcmpfalse_oqpd k2, ymm0, [0x3ab]
+	vcmpfalse_oqpd k6, zmm6, [0x2cf]

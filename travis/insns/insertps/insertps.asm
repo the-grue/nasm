@@ -4,3 +4,4 @@ default rel
 	insertps xmm14, xmm14, 0x48
 	insertps xmm5, dword [eax+1], 0xfe
 	insertps xmm3, dword [eax+64], 0x7d
+	insertps xmm1, [0xa55], 0xbc

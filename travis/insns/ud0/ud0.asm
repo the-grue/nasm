@@ -19,3 +19,6 @@ default rel
 	ud0 edi, dword [eax+64]
 	ud0 rcx, qword [eax+1]
 	ud0 rcx, qword [eax+64]
+	ud0 ax, [0x1d7]
+	ud0 edx, [0xdb9]
+	ud0 rsi, [0x65b]

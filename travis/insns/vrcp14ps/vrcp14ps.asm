@@ -23,3 +23,6 @@ default rel
 	vrcp14ps ymm1, yword [eax+64]
 	vrcp14ps zmm5, zword [eax+1]
 	vrcp14ps zmm6, zword [eax+64]
+	vrcp14ps xmm6, [0x2c8]
+	vrcp14ps ymm7, [0xa68]
+	vrcp14ps zmm2, [0x8a6]

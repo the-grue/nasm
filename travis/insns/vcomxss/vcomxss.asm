@@ -6,3 +6,4 @@ default rel
 	vcomxss xmm3, xmm6, {sae}
 	vcomxss xmm6, dword [eax+1]
 	vcomxss xmm0, dword [eax+64]
+	vcomxss xmm7, [0x784]

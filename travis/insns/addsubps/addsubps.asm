@@ -4,3 +4,4 @@ default rel
 	addsubps xmm8, xmm12
 	addsubps xmm5, oword [eax+1]
 	addsubps xmm5, oword [eax+64]
+	addsubps xmm5, [0xc9f]

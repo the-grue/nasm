@@ -27,3 +27,8 @@ default rel
 	vcmpeq_ospd k7, ymm7, yword [eax+64]
 	vcmpeq_ospd k5, zmm2, zword [eax+1]
 	vcmpeq_ospd k6, zmm6, zword [eax+64]
+	vcmpeq_ospd xmm3, xmm1, [0xd45]
+	vcmpeq_ospd ymm6, ymm5, [0xed7]
+	vcmpeq_ospd k1, xmm4, [0xe50]
+	vcmpeq_ospd k5, ymm3, [0x526]
+	vcmpeq_ospd k1, zmm7, [0x9df]

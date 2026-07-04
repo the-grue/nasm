@@ -11,3 +11,5 @@ default rel
 	vpxor xmm0, xmm3, oword [eax+64]
 	vpxor ymm1, ymm4, yword [eax+1]
 	vpxor ymm4, ymm0, yword [eax+64]
+	vpxor xmm1, xmm5, [0x33c]
+	vpxor ymm7, ymm0, [0xf81]

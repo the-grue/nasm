@@ -4,3 +4,4 @@ default rel
 	pmovzxwd xmm9, xmm13
 	pmovzxwd xmm5, qword [eax+1]
 	pmovzxwd xmm7, qword [eax+64]
+	pmovzxwd xmm1, [0xebd]

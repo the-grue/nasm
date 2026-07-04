@@ -49,3 +49,13 @@ default rel
 	vpermilpd ymm0, ymm6, yword [eax+64]
 	vpermilpd zmm5, zmm2, zword [eax+1]
 	vpermilpd zmm1, zmm2, zword [eax+64]
+	vpermilpd xmm7, xmm4, [0x4a2]
+	vpermilpd ymm2, ymm0, [0x631]
+	vpermilpd xmm4, [0x74a], 0xe1
+	vpermilpd ymm0, [0xc93], 0xff
+	vpermilpd xmm4, [0xf15], 0xb9
+	vpermilpd ymm7, [0xf0e], 0x47
+	vpermilpd zmm2, [0x3f2], 0x75
+	vpermilpd xmm4, xmm3, [0x8c3]
+	vpermilpd ymm5, ymm5, [0xa48]
+	vpermilpd zmm2, zmm7, [0x4c1]

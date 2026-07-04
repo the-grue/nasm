@@ -11,3 +11,5 @@ default rel
 	fst dword [eax+64]
 	fst qword [eax+1]
 	fst qword [eax+64]
+	fst [0x540]
+	fst [0xe37]

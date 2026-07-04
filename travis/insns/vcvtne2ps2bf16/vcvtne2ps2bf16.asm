@@ -26,3 +26,6 @@ default rel
 	vcvtne2ps2bf16 ymm4, ymm1, yword [eax+64]
 	vcvtne2ps2bf16 zmm3, zmm5, zword [eax+1]
 	vcvtne2ps2bf16 zmm5, zmm7, zword [eax+64]
+	vcvtne2ps2bf16 xmm1, xmm3, [0x6d5]
+	vcvtne2ps2bf16 ymm3, ymm6, [0xe59]
+	vcvtne2ps2bf16 zmm6, zmm3, [0xa57]

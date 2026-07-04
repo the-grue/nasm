@@ -13,3 +13,4 @@ default rel
 	setaezu r22b
 	setaezu byte [eax+1]
 	setaezu byte [eax+64]
+	setaezu [0xe9a]

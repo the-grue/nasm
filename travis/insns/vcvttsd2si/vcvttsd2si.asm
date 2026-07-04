@@ -25,3 +25,7 @@ default rel
 	vcvttsd2si edi, qword [eax+64]
 	vcvttsd2si rax, qword [eax+1]
 	vcvttsd2si rax, qword [eax+64]
+	vcvttsd2si ecx, [0xd83]
+	vcvttsd2si rdi, [0x6c8]
+	vcvttsd2si edi, [0xdb9]
+	vcvttsd2si rax, [0xc13]

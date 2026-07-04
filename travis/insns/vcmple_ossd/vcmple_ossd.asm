@@ -12,3 +12,5 @@ default rel
 	vcmple_ossd xmm5, xmm5, qword [eax+64]
 	vcmple_ossd k5, xmm3, qword [eax+1]
 	vcmple_ossd k2, xmm5, qword [eax+64]
+	vcmple_ossd xmm2, xmm3, [0x20b]
+	vcmple_ossd k3, xmm5, [0xd53]

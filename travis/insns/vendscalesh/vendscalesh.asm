@@ -8,3 +8,4 @@ default rel
 	vendscalesh xmm4{k5}{z}, xmm1, xmm1, 0x9
 	vendscalesh xmm7, xmm1, word [eax+1], 0x22
 	vendscalesh xmm3, xmm1, word [eax+64], 0x44
+	vendscalesh xmm6, xmm2, [0x780], 0x89

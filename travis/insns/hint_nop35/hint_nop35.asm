@@ -17,3 +17,6 @@ default rel
 	hint_nop35 dword [eax+64]
 	hint_nop35 qword [eax+1]
 	hint_nop35 qword [eax+64]
+	hint_nop35 [0x53f]
+	hint_nop35 [0x898]
+	hint_nop35 [0x44e]

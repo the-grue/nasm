@@ -31,3 +31,11 @@ default rel
 	ctestng 13, dword [eax+64], 0x2e222c32
 	ctestng 7, qword [eax+1], -461464867
 	ctestng 12, qword [eax+64], -114605603
+	ctestng 4, [0x7a6], dl
+	ctestng 7, [0x5cf], di
+	ctestng 1, [0x70e], ecx
+	ctestng 10, [0xec9], rax
+	ctestng 2, [0x22a], 0x61
+	ctestng 1, [0x893], 0xe3b5
+	ctestng 8, [0xa57], 0x164c02f7
+	ctestng 5, [0xe83], -330602137

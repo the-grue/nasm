@@ -9,3 +9,5 @@ default rel
 	vfmsubadd123pd xmm0, xmm1, oword [eax+64]
 	vfmsubadd123pd ymm6, ymm2, yword [eax+1]
 	vfmsubadd123pd ymm5, ymm3, yword [eax+64]
+	vfmsubadd123pd xmm3, xmm6, [0xc1f]
+	vfmsubadd123pd ymm4, ymm3, [0x9c8]

@@ -11,3 +11,5 @@ default rel
 	vcmpss xmm4, xmm4, dword [eax+64], 0x25
 	vcmpss k1, xmm0, dword [eax+1], 0x39
 	vcmpss k5, xmm7, dword [eax+64], 0x37
+	vcmpss xmm6, xmm3, [0x889], 0x5
+	vcmpss k4, xmm6, [0x4eb], 0x77

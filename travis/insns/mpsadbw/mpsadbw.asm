@@ -4,3 +4,4 @@ default rel
 	mpsadbw xmm15, xmm9, 0xf6
 	mpsadbw xmm7, oword [eax+1], 0xb9
 	mpsadbw xmm0, oword [eax+64], 0x75
+	mpsadbw xmm4, [0xcaa], 0xd1

@@ -25,3 +25,7 @@ default rel
 	adcx ebx, ecx, dword [eax+64]
 	adcx rdi, rax, qword [eax+1]
 	adcx rax, rbx, qword [eax+64]
+	adcx ebp, [0x4e0]
+	adcx rbx, [0x3eb]
+	adcx edx, edx, [0x280]
+	adcx rdx, rdx, [0xffe]

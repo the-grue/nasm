@@ -4,3 +4,4 @@ default rel
 	sqrtsd xmm12, xmm9
 	sqrtsd xmm4, qword [eax+1]
 	sqrtsd xmm3, qword [eax+64]
+	sqrtsd xmm0, [0x7e7]

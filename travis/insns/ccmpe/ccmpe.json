@@ -6,7 +6,8 @@
   "source": "ccmpe.asm",
   "option": "--bits 64 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/ccmpe/",
   "target": [
-   { "output": "ccmpe.bin64", "match": "ccmpe.bin64.t" }
+   { "output": "ccmpe.bin64", "match": "ccmpe.bin64.t" },
+   { "stderr": "ccmpe.stderr64" }
   ]
  }
 ]

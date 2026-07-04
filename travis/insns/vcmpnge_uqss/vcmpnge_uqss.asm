@@ -12,3 +12,5 @@ default rel
 	vcmpnge_uqss xmm7, xmm7, qword [eax+64]
 	vcmpnge_uqss k2, xmm5, dword [eax+1]
 	vcmpnge_uqss k2, xmm6, dword [eax+64]
+	vcmpnge_uqss xmm4, xmm2, [0xcfa]
+	vcmpnge_uqss k7, xmm7, [0x593]

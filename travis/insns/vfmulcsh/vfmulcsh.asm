@@ -9,3 +9,4 @@ default rel
 	vfmulcsh xmm5, xmm2, xmm0, {rz-sae}
 	vfmulcsh xmm3, xmm6, dword [eax+1]
 	vfmulcsh xmm0, xmm1, dword [eax+64]
+	vfmulcsh xmm7, xmm0, [0xcec]

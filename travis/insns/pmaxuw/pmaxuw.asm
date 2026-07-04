@@ -4,3 +4,4 @@ default rel
 	pmaxuw xmm8, xmm14
 	pmaxuw xmm3, oword [eax+1]
 	pmaxuw xmm2, oword [eax+64]
+	pmaxuw xmm2, [0x281]

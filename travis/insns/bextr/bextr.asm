@@ -23,3 +23,7 @@ default rel
 	bextr edi, dword [eax+64], 0x35597fb8
 	bextr rbx, qword [eax+1], 0x18b8a0b7
 	bextr rcx, qword [eax+64], 0xc6b61d5
+	bextr esi, [0x963], ebp
+	bextr rbp, [0xdab], rsi
+	bextr eax, [0xd4d], 0x3875e081
+	bextr rax, [0xd9e], 0x3aa5b601

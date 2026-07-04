@@ -18,3 +18,5 @@ default rel
 	pinsrw xmm6, [eax+64], 0x69
 	pinsrw xmm7, word [eax+1], 0x3b
 	pinsrw xmm6, word [eax+64], 0x3c
+	pinsrw mm1, [0xeb1], 0x72
+	pinsrw xmm1, [0xa48], 0x70

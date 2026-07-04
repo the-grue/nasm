@@ -8,3 +8,5 @@ default rel
 	pabsb mm1, qword [eax+64]
 	pabsb xmm4, oword [eax+1]
 	pabsb xmm4, oword [eax+64]
+	pabsb mm1, [0x7c8]
+	pabsb xmm4, [0x291]

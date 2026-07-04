@@ -20,3 +20,6 @@ default rel
 	vcmpbf16 k1, ymm5, yword [eax+64], 0xfe
 	vcmpbf16 k1, zmm6, zword [eax+1], 0xe5
 	vcmpbf16 k6, zmm1, zword [eax+64], 0x16
+	vcmpbf16 k3, xmm2, [0x4bf], 0x2
+	vcmpbf16 k7, ymm4, [0x25f], 0x10
+	vcmpbf16 k4, zmm5, [0xcd7], 0x2e

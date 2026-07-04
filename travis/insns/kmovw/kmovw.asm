@@ -13,3 +13,4 @@ default rel
 	kmovw k5, r29w
 	kmovw word [eax+1], k3
 	kmovw word [eax+64], k5
+	kmovw [0x513], k3

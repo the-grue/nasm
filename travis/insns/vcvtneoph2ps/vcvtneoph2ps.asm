@@ -9,3 +9,5 @@ default rel
 	vcvtneoph2ps xmm6, oword [eax+64]
 	vcvtneoph2ps ymm6, yword [eax+1]
 	vcvtneoph2ps ymm7, yword [eax+64]
+	vcvtneoph2ps xmm0, [0xb96]
+	vcvtneoph2ps ymm7, [0x3e1]

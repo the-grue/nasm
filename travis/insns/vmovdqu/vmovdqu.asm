@@ -19,3 +19,7 @@ default rel
 	vmovdqu ymm7, yword [eax+64]
 	vmovdqu yword [eax+1], ymm7
 	vmovdqu yword [eax+64], ymm3
+	vmovdqu xmm4, [0xa04]
+	vmovdqu [0xa49], xmm1
+	vmovdqu ymm1, [0x81e]
+	vmovdqu [0x849], ymm5

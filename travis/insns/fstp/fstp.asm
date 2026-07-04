@@ -13,3 +13,5 @@ default rel
 	fstp qword [eax+64]
 	fstp [eax+1]
 	fstp [eax+64]
+	fstp [0x442]
+	fstp [0xd09]

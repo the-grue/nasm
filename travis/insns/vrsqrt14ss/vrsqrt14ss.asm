@@ -8,3 +8,4 @@ default rel
 	vrsqrt14ss xmm1{k2}{z}, xmm2, xmm2
 	vrsqrt14ss xmm1, xmm5, dword [eax+1]
 	vrsqrt14ss xmm1, xmm3, dword [eax+64]
+	vrsqrt14ss xmm4, xmm7, [0x2a5]

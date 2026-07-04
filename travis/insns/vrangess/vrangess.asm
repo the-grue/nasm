@@ -8,3 +8,4 @@ default rel
 	vrangess xmm5{k1}{z}, xmm6, dword [0xae7], 0x81
 	vrangess xmm7, xmm2, dword [eax+1], 0x2e
 	vrangess xmm6, xmm2, dword [eax+64], 0x79
+	vrangess xmm7, xmm2, [0x299], 0x64

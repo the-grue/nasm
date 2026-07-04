@@ -4,3 +4,4 @@ default rel
 	pmaxsd xmm13, xmm14
 	pmaxsd xmm4, oword [eax+1]
 	pmaxsd xmm3, oword [eax+64]
+	pmaxsd xmm5, [0xba2]

@@ -13,3 +13,5 @@ default rel
 	psrlw mm1, qword [eax+64]
 	psrlw xmm5, oword [eax+1]
 	psrlw xmm4, oword [eax+64]
+	psrlw mm4, [0x8f6]
+	psrlw xmm1, [0xae9]

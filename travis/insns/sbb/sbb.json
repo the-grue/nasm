@@ -28,7 +28,8 @@
   "source": "sbb.asm",
   "option": "--bits 64 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/sbb/",
   "target": [
-   { "output": "sbb.bin64", "match": "sbb.bin64.t" }
+   { "output": "sbb.bin64", "match": "sbb.bin64.t" },
+   { "stderr": "sbb.stderr64" }
   ]
  }
 ]

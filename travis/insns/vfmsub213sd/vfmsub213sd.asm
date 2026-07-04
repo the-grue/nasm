@@ -14,3 +14,5 @@ default rel
 	vfmsub213sd xmm7, xmm0, qword [eax+64]
 	vfmsub213sd xmm4, xmm3, qword [eax+1]
 	vfmsub213sd xmm6, xmm0, qword [eax+64]
+	vfmsub213sd xmm5, xmm4, [0x268]
+	vfmsub213sd xmm6, xmm4, [0x805]

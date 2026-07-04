@@ -33,3 +33,12 @@ default rel
 	cfcmovo ebx, ecx, dword [eax+64]
 	cfcmovo rdx, rsi, qword [eax+1]
 	cfcmovo rdx, rbx, qword [eax+64]
+	cfcmovo [0xe9b], dx
+	cfcmovo [0xa68], edi
+	cfcmovo [0xe3d], rbp
+	cfcmovo dx, [0xa16]
+	cfcmovo edx, [0x618]
+	cfcmovo rsi, [0x283]
+	cfcmovo si, cx, [0xc53]
+	cfcmovo edx, eax, [0x79d]
+	cfcmovo rbx, rsi, [0x968]

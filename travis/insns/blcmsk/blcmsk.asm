@@ -9,3 +9,5 @@ default rel
 	blcmsk eax, dword [eax+64]
 	blcmsk rbx, qword [eax+1]
 	blcmsk rbx, qword [eax+64]
+	blcmsk edx, [0x666]
+	blcmsk rcx, [0xdf3]

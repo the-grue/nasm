@@ -9,3 +9,5 @@ default rel
 	vfnmadd321pd xmm5, xmm1, oword [eax+64]
 	vfnmadd321pd ymm7, ymm1, yword [eax+1]
 	vfnmadd321pd ymm5, ymm5, yword [eax+64]
+	vfnmadd321pd xmm3, xmm2, [0xfc0]
+	vfnmadd321pd ymm0, ymm6, [0x75c]

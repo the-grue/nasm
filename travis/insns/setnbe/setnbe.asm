@@ -13,3 +13,4 @@ default rel
 	setnbe r19d
 	setnbe byte [eax+1]
 	setnbe byte [eax+64]
+	setnbe [0x628]

@@ -13,3 +13,4 @@ default rel
 	setz r24d
 	setz byte [eax+1]
 	setz byte [eax+64]
+	setz [0x223]

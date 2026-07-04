@@ -8,3 +8,5 @@
 ./travis/insns/tzmsk/tzmsk.asm:9: warning: instruction obsolete and removed from the target CPU [-w+obsolete-removed]
 ./travis/insns/tzmsk/tzmsk.asm:10: warning: instruction obsolete and removed from the target CPU [-w+obsolete-removed]
 ./travis/insns/tzmsk/tzmsk.asm:11: warning: instruction obsolete and removed from the target CPU [-w+obsolete-removed]
+./travis/insns/tzmsk/tzmsk.asm:12: warning: instruction obsolete and removed from the target CPU [-w+obsolete-removed]
+./travis/insns/tzmsk/tzmsk.asm:13: warning: instruction obsolete and removed from the target CPU [-w+obsolete-removed]

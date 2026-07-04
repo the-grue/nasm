@@ -4,3 +4,4 @@ default rel
 	vfnmadd321ss xmm9, xmm14, xmm8
 	vfnmadd321ss xmm0, xmm1, dword [eax+1]
 	vfnmadd321ss xmm7, xmm0, dword [eax+64]
+	vfnmadd321ss xmm2, xmm7, [0xad7]

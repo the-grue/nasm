@@ -36,3 +36,8 @@ default rel
 	vdivps ymm5, ymm1, yword [eax+64]
 	vdivps zmm2, zmm3, zword [eax+1]
 	vdivps zmm7, zmm0, zword [eax+64]
+	vdivps xmm7, xmm3, [0x471]
+	vdivps ymm4, ymm4, [0x87d]
+	vdivps xmm2, xmm0, [0xc08]
+	vdivps ymm6, ymm2, [0x7d6]
+	vdivps zmm4, zmm1, [0x87a]

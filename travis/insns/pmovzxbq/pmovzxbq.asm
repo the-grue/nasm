@@ -4,3 +4,4 @@ default rel
 	pmovzxbq xmm13, xmm11
 	pmovzxbq xmm0, word [eax+1]
 	pmovzxbq xmm4, word [eax+64]
+	pmovzxbq xmm6, [0x658]

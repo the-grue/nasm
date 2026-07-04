@@ -19,3 +19,5 @@ default rel
 	andn eax, edi, dword [eax+64]
 	andn rbp, rdx, qword [eax+1]
 	andn rax, rcx, qword [eax+64]
+	andn eax, edx, [0x987]
+	andn rdx, rcx, [0x49c]

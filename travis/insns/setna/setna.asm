@@ -13,3 +13,4 @@ default rel
 	setna r23d
 	setna byte [eax+1]
 	setna byte [eax+64]
+	setna [0x930]

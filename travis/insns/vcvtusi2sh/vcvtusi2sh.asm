@@ -15,3 +15,5 @@ default rel
 	vcvtusi2sh xmm7, xmm5, dword [eax+64]
 	vcvtusi2sh xmm2, xmm6, qword [eax+1]
 	vcvtusi2sh xmm4, xmm2, qword [eax+64]
+	vcvtusi2sh xmm3, xmm7, [0xba8]
+	vcvtusi2sh xmm6, xmm0, [0x2b2]

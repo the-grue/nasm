@@ -37,3 +37,8 @@ default rel
 	vbroadcastss ymm1, dword [eax+64]
 	vbroadcastss zmm6, dword [eax+1]
 	vbroadcastss zmm3, dword [eax+64]
+	vbroadcastss xmm7, [0x878]
+	vbroadcastss ymm5, [0x33b]
+	vbroadcastss xmm7, [0x72c]
+	vbroadcastss ymm2, [0x101]
+	vbroadcastss zmm2, [0x558]

@@ -4,3 +4,4 @@ default rel
 	aesenclast xmm10, xmm8
 	aesenclast xmm2, oword [eax+1]
 	aesenclast xmm5, oword [eax+64]
+	aesenclast xmm6, [0xb7b]

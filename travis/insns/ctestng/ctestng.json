@@ -6,7 +6,8 @@
   "source": "ctestng.asm",
   "option": "--bits 64 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/ctestng/",
   "target": [
-   { "output": "ctestng.bin64", "match": "ctestng.bin64.t" }
+   { "output": "ctestng.bin64", "match": "ctestng.bin64.t" },
+   { "stderr": "ctestng.stderr64" }
   ]
  }
 ]

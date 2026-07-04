@@ -31,3 +31,11 @@ default rel
 	ctestnc 11, dword [eax+64], 0x3eb370ca
 	ctestnc 1, qword [eax+1], 534467702
 	ctestnc 15, qword [eax+64], -258542703
+	ctestnc 4, [0xcd8], al
+	ctestnc 2, [0x7fa], si
+	ctestnc 2, [0x5ad], esi
+	ctestnc 6, [0xccd], rax
+	ctestnc 8, [0xf8b], 0xeb
+	ctestnc 2, [0xb5e], 0xc2eb
+	ctestnc 5, [0x18d], 0x3e5e8eaa
+	ctestnc 7, [0x3d8], -89677070

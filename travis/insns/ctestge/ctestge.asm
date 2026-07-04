@@ -31,3 +31,11 @@ default rel
 	ctestge 2, dword [eax+64], 0x3d013cea
 	ctestge 2, qword [eax+1], 376208280
 	ctestge 6, qword [eax+64], -4161025
+	ctestge 12, [0x789], dl
+	ctestge 5, [0xe94], di
+	ctestge 6, [0x39e], esi
+	ctestge 6, [0xa4e], rbp
+	ctestge 12, [0xc4c], 0xf1
+	ctestge 0, [0xf05], 0xc3a6
+	ctestge 5, [0xf4d], 0x34f7c5a4
+	ctestge 1, [0xd63], -304702834

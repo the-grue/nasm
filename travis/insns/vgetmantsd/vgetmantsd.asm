@@ -7,3 +7,4 @@ default rel
 	vgetmantsd xmm3{k2}{z}, xmm3, xmm3, 0x98
 	vgetmantsd xmm3, xmm6, qword [eax+1], 0xef
 	vgetmantsd xmm1, xmm3, qword [eax+64], 0xaf
+	vgetmantsd xmm6, xmm6, [0x95d], 0x9f

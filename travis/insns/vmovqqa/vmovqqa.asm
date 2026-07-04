@@ -9,3 +9,5 @@ default rel
 	vmovqqa ymm3, yword [eax+64]
 	vmovqqa yword [eax+1], ymm1
 	vmovqqa yword [eax+64], ymm3
+	vmovqqa ymm2, [0x54c]
+	vmovqqa [0xcbe], ymm6

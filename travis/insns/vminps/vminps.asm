@@ -36,3 +36,8 @@ default rel
 	vminps ymm2, ymm6, yword [eax+64]
 	vminps zmm3, zmm4, zword [eax+1]
 	vminps zmm0, zmm1, zword [eax+64]
+	vminps xmm3, xmm2, [0x345]
+	vminps ymm5, ymm1, [0x444]
+	vminps xmm5, xmm6, [0x4ff]
+	vminps ymm7, ymm5, [0x1c3]
+	vminps zmm6, zmm6, [0x9c5]

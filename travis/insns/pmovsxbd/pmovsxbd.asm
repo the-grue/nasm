@@ -4,3 +4,4 @@ default rel
 	pmovsxbd xmm8, xmm13
 	pmovsxbd xmm5, dword [eax+1]
 	pmovsxbd xmm6, dword [eax+64]
+	pmovsxbd xmm4, [0x34c]

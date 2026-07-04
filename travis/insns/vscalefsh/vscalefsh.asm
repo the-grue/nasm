@@ -9,3 +9,4 @@ default rel
 	vscalefsh xmm3, xmm0, xmm4, {rz-sae}
 	vscalefsh xmm3, xmm5, word [eax+1]
 	vscalefsh xmm6, xmm3, word [eax+64]
+	vscalefsh xmm4, xmm0, [0xcc8]

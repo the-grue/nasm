@@ -31,3 +31,8 @@ default rel
 	vpdpwusds ymm4, ymm1, yword [eax+64]
 	vpdpwusds zmm5, zmm4, zword [eax+1]
 	vpdpwusds zmm0, zmm2, zword [eax+64]
+	vpdpwusds xmm4, xmm2, [0xdd0]
+	vpdpwusds ymm0, ymm0, [0x435]
+	vpdpwusds xmm1, xmm1, [0xa90]
+	vpdpwusds ymm2, ymm3, [0x475]
+	vpdpwusds zmm2, zmm5, [0xac0]

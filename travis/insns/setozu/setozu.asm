@@ -13,3 +13,4 @@ default rel
 	setozu r24b
 	setozu byte [eax+1]
 	setozu byte [eax+64]
+	setozu [0x657]

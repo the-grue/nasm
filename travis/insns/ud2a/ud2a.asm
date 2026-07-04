@@ -19,3 +19,6 @@ default rel
 	ud2a esi, dword [eax+64]
 	ud2a rbx, qword [eax+1]
 	ud2a rdi, qword [eax+64]
+	ud2a ax, [0xc3f]
+	ud2a edi, [0x470]
+	ud2a rbx, [0x6cf]

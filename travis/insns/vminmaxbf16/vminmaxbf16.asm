@@ -23,3 +23,6 @@ default rel
 	vminmaxbf16 ymm5, ymm2, yword [eax+64], 0xe6
 	vminmaxbf16 zmm5, zmm4, zword [eax+1], 0xf6
 	vminmaxbf16 zmm3, zmm4, zword [eax+64], 0x80
+	vminmaxbf16 xmm0, xmm3, [0x1c2], 0x4
+	vminmaxbf16 ymm3, ymm2, [0x864], 0xde
+	vminmaxbf16 zmm5, zmm7, [0x868], 0x85

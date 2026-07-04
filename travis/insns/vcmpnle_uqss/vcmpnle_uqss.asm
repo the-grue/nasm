@@ -12,3 +12,5 @@ default rel
 	vcmpnle_uqss xmm3, xmm5, qword [eax+64]
 	vcmpnle_uqss k2, xmm0, dword [eax+1]
 	vcmpnle_uqss k4, xmm6, dword [eax+64]
+	vcmpnle_uqss xmm5, xmm3, [0xcef]
+	vcmpnle_uqss k6, xmm0, [0x471]

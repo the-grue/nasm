@@ -27,3 +27,8 @@ default rel
 	vcmpge_oqps k5, ymm6, yword [eax+64]
 	vcmpge_oqps k6, zmm7, zword [eax+1]
 	vcmpge_oqps k3, zmm6, zword [eax+64]
+	vcmpge_oqps xmm1, xmm2, [0x8a8]
+	vcmpge_oqps ymm0, ymm0, [0x24d]
+	vcmpge_oqps k4, xmm6, [0xfc7]
+	vcmpge_oqps k2, ymm0, [0xafa]
+	vcmpge_oqps k6, zmm7, [0x6eb]

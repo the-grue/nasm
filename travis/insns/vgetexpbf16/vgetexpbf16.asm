@@ -23,3 +23,6 @@ default rel
 	vgetexpbf16 ymm5, yword [eax+64]
 	vgetexpbf16 zmm7, zword [eax+1]
 	vgetexpbf16 zmm5, zword [eax+64]
+	vgetexpbf16 xmm2, [0x3f5]
+	vgetexpbf16 ymm3, [0x640]
+	vgetexpbf16 zmm1, [0x8d3]

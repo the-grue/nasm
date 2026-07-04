@@ -12,3 +12,5 @@ default rel
 	vcmplesd xmm3, xmm5, qword [eax+64]
 	vcmplesd k1, xmm4, qword [eax+1]
 	vcmplesd k7, xmm1, qword [eax+64]
+	vcmplesd xmm0, xmm0, [0x6d6]
+	vcmplesd k6, xmm3, [0xf94]

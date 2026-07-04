@@ -8,3 +8,4 @@ default rel
 	vreducesh xmm6{k3}{z}, xmm5, xmm6, 0x98
 	vreducesh xmm1, xmm1, word [eax+1], 0xb4
 	vreducesh xmm1, xmm6, word [eax+64], 0xd1
+	vreducesh xmm0, xmm2, [0xe93], 0x7b

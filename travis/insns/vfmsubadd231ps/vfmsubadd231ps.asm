@@ -32,3 +32,8 @@ default rel
 	vfmsubadd231ps ymm3, ymm3, yword [eax+64]
 	vfmsubadd231ps zmm0, zmm2, zword [eax+1]
 	vfmsubadd231ps zmm1, zmm1, zword [eax+64]
+	vfmsubadd231ps xmm3, xmm3, [0x4cd]
+	vfmsubadd231ps ymm2, ymm5, [0x931]
+	vfmsubadd231ps xmm1, xmm4, [0x268]
+	vfmsubadd231ps ymm1, ymm6, [0xa19]
+	vfmsubadd231ps zmm1, zmm1, [0x886]

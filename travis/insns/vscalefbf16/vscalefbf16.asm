@@ -23,3 +23,6 @@ default rel
 	vscalefbf16 ymm7, ymm0, yword [eax+64]
 	vscalefbf16 zmm0, zmm6, zword [eax+1]
 	vscalefbf16 zmm6, zmm7, zword [eax+64]
+	vscalefbf16 xmm5, xmm5, [0x38a]
+	vscalefbf16 ymm5, ymm4, [0xc8e]
+	vscalefbf16 zmm5, zmm5, [0xb97]

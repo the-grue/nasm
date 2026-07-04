@@ -8,3 +8,5 @@ default rel
 	paddd mm6, qword [eax+64]
 	paddd xmm1, oword [eax+1]
 	paddd xmm7, oword [eax+64]
+	paddd mm6, [0xed8]
+	paddd xmm6, [0x665]

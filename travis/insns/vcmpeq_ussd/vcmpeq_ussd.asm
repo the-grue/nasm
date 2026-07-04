@@ -12,3 +12,5 @@ default rel
 	vcmpeq_ussd xmm4, xmm1, qword [eax+64]
 	vcmpeq_ussd k4, xmm2, qword [eax+1]
 	vcmpeq_ussd k3, xmm6, qword [eax+64]
+	vcmpeq_ussd xmm1, xmm1, [0x193]
+	vcmpeq_ussd k5, xmm6, [0x9db]

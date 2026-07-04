@@ -23,3 +23,6 @@ default rel
 	vpexpandw ymm7, yword [eax+64]
 	vpexpandw zmm0, zword [eax+1]
 	vpexpandw zmm6, zword [eax+64]
+	vpexpandw xmm4, [0x2fd]
+	vpexpandw ymm1, [0x67a]
+	vpexpandw zmm0, [0x239]

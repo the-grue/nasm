@@ -17,3 +17,6 @@ default rel
 	lgs edx, dword [eax+64]
 	lgs rcx, qword [eax+1]
 	lgs rax, qword [eax+64]
+	lgs bp, [0x386]
+	lgs edx, [0x389]
+	lgs rcx, [0x641]

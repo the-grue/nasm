@@ -47,3 +47,11 @@ default rel
 	vpsllq ymm5, yword [eax+64], 0xdf
 	vpsllq zmm0, zword [eax+1], 0xdf
 	vpsllq zmm2, zword [eax+64], 0x4a
+	vpsllq xmm1, xmm3, [0x88f]
+	vpsllq ymm5, ymm4, [0x5bc]
+	vpsllq xmm6, xmm6, [0x1c2]
+	vpsllq ymm5, ymm5, [0x920]
+	vpsllq zmm4, zmm2, [0x89c]
+	vpsllq xmm7, [0x3a7], 0x92
+	vpsllq ymm4, [0x952], 0x44
+	vpsllq zmm2, [0x86f], 0xbb

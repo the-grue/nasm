@@ -10,3 +10,4 @@ default rel
 	pextrb r9, xmm15, 0xb8
 	pextrb byte [eax+1], xmm3, 0xad
 	pextrb byte [eax+64], xmm6, 0xf5
+	pextrb [0x963], xmm0, 0xb

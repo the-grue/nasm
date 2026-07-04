@@ -27,3 +27,8 @@ default rel
 	vcmptrue_usps k2, ymm0, yword [eax+64]
 	vcmptrue_usps k6, zmm2, zword [eax+1]
 	vcmptrue_usps k7, zmm2, zword [eax+64]
+	vcmptrue_usps xmm3, xmm2, [0x55d]
+	vcmptrue_usps ymm6, ymm7, [0x755]
+	vcmptrue_usps k2, xmm4, [0xefd]
+	vcmptrue_usps k1, ymm7, [0x6ff]
+	vcmptrue_usps k3, zmm2, [0xc83]

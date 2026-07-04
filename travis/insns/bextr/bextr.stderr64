@@ -10,3 +10,5 @@
 ./travis/insns/bextr/bextr.asm:23: warning: instruction obsolete and removed from the target CPU [-w+obsolete-removed]
 ./travis/insns/bextr/bextr.asm:24: warning: instruction obsolete and removed from the target CPU [-w+obsolete-removed]
 ./travis/insns/bextr/bextr.asm:25: warning: instruction obsolete and removed from the target CPU [-w+obsolete-removed]
+./travis/insns/bextr/bextr.asm:28: warning: instruction obsolete and removed from the target CPU [-w+obsolete-removed]
+./travis/insns/bextr/bextr.asm:29: warning: instruction obsolete and removed from the target CPU [-w+obsolete-removed]

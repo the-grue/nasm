@@ -12,3 +12,5 @@ default rel
 	vcmpngtss xmm7, xmm7, qword [eax+64]
 	vcmpngtss k2, xmm7, dword [eax+1]
 	vcmpngtss k1, xmm6, dword [eax+64]
+	vcmpngtss xmm7, xmm4, [0xd76]
+	vcmpngtss k6, xmm7, [0xf30]

@@ -27,3 +27,6 @@ default rel
 	vdivph ymm4, ymm2, yword [eax+64]
 	vdivph zmm3, zmm1, zword [eax+1]
 	vdivph zmm0, zmm3, zword [eax+64]
+	vdivph xmm7, xmm2, [0x5d6]
+	vdivph ymm3, ymm0, [0xad8]
+	vdivph zmm1, zmm7, [0x8cd]

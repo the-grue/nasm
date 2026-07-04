@@ -13,3 +13,5 @@ default rel
 	fld qword [eax+64]
 	fld [eax+1]
 	fld [eax+64]
+	fld [0xf5e]
+	fld [0x563]

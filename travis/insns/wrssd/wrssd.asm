@@ -5,3 +5,4 @@ default rel
 	wrssd dword [0xb5d], r18d
 	wrssd dword [eax+1], esi
 	wrssd dword [eax+64], ecx
+	wrssd [0x5fc], esi

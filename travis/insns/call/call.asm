@@ -10,3 +10,12 @@ default rel
 	call .L1
 	call .L1
 	call .L1
+	call [0x2e1]
+	call [0x6c6]
+	call [0x8e1]
+	call [0x14e]
+	call [0xca7]
+	call [0x3eb]
+	call [0x895]
+	call [0xc39]
+	call [0xe20]

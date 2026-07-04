@@ -12,3 +12,5 @@ default rel
 	vcmpnge_usss xmm1, xmm5, qword [eax+64]
 	vcmpnge_usss k4, xmm1, dword [eax+1]
 	vcmpnge_usss k7, xmm1, dword [eax+64]
+	vcmpnge_usss xmm1, xmm4, [0x475]
+	vcmpnge_usss k3, xmm4, [0xd8f]

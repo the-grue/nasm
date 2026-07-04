@@ -33,3 +33,6 @@ default rel
 	vexpandps ymm4, yword [eax+64]
 	vexpandps zmm2, zword [eax+1]
 	vexpandps zmm5, zword [eax+64]
+	vexpandps xmm3, [0xf7e]
+	vexpandps ymm2, [0x150]
+	vexpandps zmm6, [0xe0b]

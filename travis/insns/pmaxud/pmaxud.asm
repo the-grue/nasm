@@ -4,3 +4,4 @@ default rel
 	pmaxud xmm9, xmm9
 	pmaxud xmm4, oword [eax+1]
 	pmaxud xmm4, oword [eax+64]
+	pmaxud xmm2, [0x55b]

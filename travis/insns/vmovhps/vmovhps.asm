@@ -12,3 +12,5 @@ default rel
 	vmovhps xmm5, xmm3, qword [eax+64]
 	vmovhps qword [eax+1], xmm3
 	vmovhps qword [eax+64], xmm6
+	vmovhps xmm3, xmm5, [0x62c]
+	vmovhps [0x165], xmm3

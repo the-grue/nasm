@@ -4,3 +4,4 @@ default rel
 	vpcmpestrm xmm12, xmm14, 0xe9
 	vpcmpestrm xmm1, oword [eax+1], 0xd7
 	vpcmpestrm xmm0, oword [eax+64], 0x92
+	vpcmpestrm xmm6, [0xa74], 0x59

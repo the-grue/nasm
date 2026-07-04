@@ -23,3 +23,6 @@ default rel
 	vplzcntd ymm0, yword [eax+64]
 	vplzcntd zmm2, zword [eax+1]
 	vplzcntd zmm6, zword [eax+64]
+	vplzcntd xmm0, [0xb61]
+	vplzcntd ymm6, [0x38d]
+	vplzcntd zmm4, [0xbb6]

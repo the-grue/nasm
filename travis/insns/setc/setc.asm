@@ -13,3 +13,4 @@ default rel
 	setc r20d
 	setc byte [eax+1]
 	setc byte [eax+64]
+	setc [0x3b8]

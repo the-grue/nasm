@@ -8,3 +8,4 @@ default rel
 	vrsqrt28ps zmm0, zmm5, {sae}
 	vrsqrt28ps zmm6, zword [eax+1]
 	vrsqrt28ps zmm0, zword [eax+64]
+	vrsqrt28ps zmm3, [0x490]

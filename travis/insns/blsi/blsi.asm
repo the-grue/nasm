@@ -11,3 +11,5 @@ default rel
 	blsi eax, dword [eax+64]
 	blsi rcx, qword [eax+1]
 	blsi rbx, qword [eax+64]
+	blsi esi, [0x4eb]
+	blsi rcx, [0x176]

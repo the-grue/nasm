@@ -12,3 +12,5 @@ default rel
 	vcmpngess xmm2, xmm0, qword [eax+64]
 	vcmpngess k4, xmm0, dword [eax+1]
 	vcmpngess k6, xmm7, dword [eax+64]
+	vcmpngess xmm5, xmm7, [0xd75]
+	vcmpngess k4, xmm0, [0xeaf]

@@ -4,3 +4,4 @@ default rel
 	maxps xmm11, xmm9
 	maxps xmm6, oword [eax+1]
 	maxps xmm6, oword [eax+64]
+	maxps xmm2, [0x358]

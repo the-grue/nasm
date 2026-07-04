@@ -75,3 +75,33 @@ default rel
 	adc edi, dword [eax+64], 0x1c9b9a8
 	adc rsi, qword [eax+1], -428886289
 	adc rsi, qword [eax+64], 6139295
+	adc [0xa68], bl
+	adc [0xe3d], bp
+	adc [0xb68], ecx
+	adc [0x31c], rdx
+	adc al, [0x685]
+	adc dx, [0xe6d]
+	adc esi, [0x8d9]
+	adc rdx, [0x342]
+	adc [0x1ad], 0x1e
+	adc [0x398], -56
+	adc [0x6be], 0x5482
+	adc [0xa03], 122
+	adc [0xe68], 0xf951f04
+	adc [0x92a], -90
+	adc [0x7a2], 41191012
+	adc cl, bl, [0xb7a]
+	adc si, di, [0x8d4]
+	adc esi, esi, [0x3a2]
+	adc rbp, rbp, [0x4f1]
+	adc dl, [0x228], cl
+	adc cx, [0xa58], bx
+	adc esi, [0xd3a], eax
+	adc rbp, [0x906], rbp
+	adc di, [0xa86], 27
+	adc edx, [0xf56], -13
+	adc rdx, [0x7d0], 59
+	adc dl, [0x397], 0x64
+	adc si, [0x1be], 0x6934
+	adc ebp, [0xc5c], 0x3a6c5247
+	adc rdi, [0x7e4], 220977984

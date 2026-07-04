@@ -27,3 +27,8 @@ default rel
 	vcmpunordps k7, ymm5, yword [eax+64]
 	vcmpunordps k2, zmm7, zword [eax+1]
 	vcmpunordps k7, zmm5, zword [eax+64]
+	vcmpunordps xmm5, xmm0, [0x704]
+	vcmpunordps ymm7, ymm0, [0xebf]
+	vcmpunordps k6, xmm1, [0x668]
+	vcmpunordps k4, ymm5, [0x91c]
+	vcmpunordps k4, zmm3, [0x303]

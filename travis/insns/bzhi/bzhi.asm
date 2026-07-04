@@ -13,3 +13,5 @@ default rel
 	bzhi ecx, dword [eax+64], ebp
 	bzhi rax, qword [eax+1], rax
 	bzhi rbx, qword [eax+64], rcx
+	bzhi esi, [0xfc6], ebp
+	bzhi rcx, [0x150], rdi

@@ -7,3 +7,4 @@ default rel
 	vbroadcasti32x8 zmm4{k6}{z}, yword [0xe7b]
 	vbroadcasti32x8 zmm3, yword [eax+1]
 	vbroadcasti32x8 zmm7, yword [eax+64]
+	vbroadcasti32x8 zmm1, [0xf78]

@@ -17,3 +17,4 @@ default rel
 	smsw r29d
 	smsw word [eax+1]
 	smsw word [eax+64]
+	smsw [0xc42]

@@ -6,3 +6,4 @@ default rel
 	vfpclasssd k1{k2}, qword [0xa79], 0x5c
 	vfpclasssd k3, qword [eax+1], 0xbd
 	vfpclasssd k6, qword [eax+64], 0xb0
+	vfpclasssd k5, [0xbe7], 0xf5

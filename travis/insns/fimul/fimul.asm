@@ -7,3 +7,5 @@ default rel
 	fimul dword [eax+64]
 	fimul word [eax+1]
 	fimul word [eax+64]
+	fimul [0x342]
+	fimul [0x5e6]

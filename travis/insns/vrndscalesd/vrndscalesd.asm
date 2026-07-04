@@ -8,3 +8,4 @@ default rel
 	vrndscalesd xmm0{k6}{z}, xmm2, xmm5, 0xfe
 	vrndscalesd xmm1, xmm0, qword [eax+1], 0x38
 	vrndscalesd xmm0, xmm0, qword [eax+64], 0x8c
+	vrndscalesd xmm7, xmm1, [0xece], 0x69

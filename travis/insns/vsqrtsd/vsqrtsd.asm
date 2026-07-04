@@ -16,3 +16,5 @@ default rel
 	vsqrtsd xmm7, xmm5, qword [eax+64]
 	vsqrtsd xmm3, xmm2, qword [eax+1]
 	vsqrtsd xmm0, xmm2, qword [eax+64]
+	vsqrtsd xmm7, xmm6, [0xba0]
+	vsqrtsd xmm1, xmm3, [0x210]

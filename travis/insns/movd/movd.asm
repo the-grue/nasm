@@ -33,3 +33,10 @@ default rel
 	movd dword [eax+64], xmm6
 	movd dword [eax+1], k7
 	movd dword [eax+64], k3
+	movd mm2, [0xd91]
+	movd [0x9e2], mm0
+	movd mm1, [0x2d1]
+	movd [0x86f], mm7
+	movd xmm2, [0x6cc]
+	movd [0x7c6], xmm2
+	movd [0x579], k7

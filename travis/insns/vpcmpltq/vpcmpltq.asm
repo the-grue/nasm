@@ -20,3 +20,6 @@ default rel
 	vpcmpltq k4, ymm0, yword [eax+64]
 	vpcmpltq k4, zmm6, zword [eax+1]
 	vpcmpltq k4, zmm6, zword [eax+64]
+	vpcmpltq k6, xmm7, [0x549]
+	vpcmpltq k3, ymm1, [0x7b1]
+	vpcmpltq k6, zmm1, [0x861]

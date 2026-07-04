@@ -63,3 +63,27 @@ default rel
 	mul edi, dword [eax+64], 0x344d3360
 	mul rcx, qword [eax+1], -389714665
 	mul rbx, qword [eax+64], -242256023
+	mul [0x578]
+	mul [0xa6d]
+	mul [0x778]
+	mul [0x793]
+	mul ebx, ebx, [0x8c3]
+	mul rsi, rbp, [0x3bf]
+	mul ax, [0x7af]
+	mul ecx, [0x730]
+	mul rcx, [0x1b2]
+	mul si, [0x38f], 30
+	mul ebx, [0x9f6], 29
+	mul rbx, [0xee2], 86
+	mul si, [0x75c], 0x878a
+	mul edx, [0x99d], 0x3f952956
+	mul rbx, [0x7a2], -71746408
+	mul bp, si, [0xa34]
+	mul ecx, edx, [0xd27]
+	mul rax, rdx, [0xf4f]
+	mul dx, [0xe97], -76
+	mul edx, [0xfbe], -99
+	mul rdi, [0xdc8], -13
+	mul dx, [0xeb3], 0x519c
+	mul ebp, [0x472], 0x17291b1c
+	mul rbp, [0x5a3], -518170626

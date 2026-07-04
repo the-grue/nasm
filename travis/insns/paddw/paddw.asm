@@ -8,3 +8,5 @@ default rel
 	paddw mm3, qword [eax+64]
 	paddw xmm1, oword [eax+1]
 	paddw xmm0, oword [eax+64]
+	paddw mm2, [0xaf0]
+	paddw xmm0, [0x7ae]

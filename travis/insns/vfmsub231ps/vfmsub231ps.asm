@@ -32,3 +32,8 @@ default rel
 	vfmsub231ps ymm6, ymm0, yword [eax+64]
 	vfmsub231ps zmm3, zmm0, zword [eax+1]
 	vfmsub231ps zmm3, zmm1, zword [eax+64]
+	vfmsub231ps xmm7, xmm3, [0xa59]
+	vfmsub231ps ymm7, ymm3, [0x448]
+	vfmsub231ps xmm6, xmm5, [0xb50]
+	vfmsub231ps ymm7, ymm1, [0xf5e]
+	vfmsub231ps zmm1, zmm2, [0x1d8]

@@ -11,3 +11,5 @@ default rel
 	fsubr dword [eax+64]
 	fsubr qword [eax+1]
 	fsubr qword [eax+64]
+	fsubr [0xd89]
+	fsubr [0x886]

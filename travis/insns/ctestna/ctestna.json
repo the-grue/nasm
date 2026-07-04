@@ -6,7 +6,8 @@
   "source": "ctestna.asm",
   "option": "--bits 64 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/ctestna/",
   "target": [
-   { "output": "ctestna.bin64", "match": "ctestna.bin64.t" }
+   { "output": "ctestna.bin64", "match": "ctestna.bin64.t" },
+   { "stderr": "ctestna.stderr64" }
   ]
  }
 ]

@@ -4,3 +4,4 @@ default rel
 	sha1nexte xmm13, xmm11
 	sha1nexte xmm1, oword [eax+1]
 	sha1nexte xmm1, oword [eax+64]
+	sha1nexte xmm1, [0x9bb]

@@ -8,3 +8,5 @@ default rel
 	psubq mm7, qword [eax+64]
 	psubq xmm3, oword [eax+1]
 	psubq xmm6, oword [eax+64]
+	psubq mm0, [0x90b]
+	psubq xmm3, [0x8b8]

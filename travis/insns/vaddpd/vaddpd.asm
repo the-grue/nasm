@@ -36,3 +36,8 @@ default rel
 	vaddpd ymm5, ymm1, yword [eax+64]
 	vaddpd zmm3, zmm7, zword [eax+1]
 	vaddpd zmm4, zmm1, zword [eax+64]
+	vaddpd xmm7, xmm1, [0xf06]
+	vaddpd ymm0, ymm5, [0xd97]
+	vaddpd xmm0, xmm3, [0x399]
+	vaddpd ymm5, ymm5, [0x516]
+	vaddpd zmm6, zmm2, [0x793]

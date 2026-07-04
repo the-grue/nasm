@@ -13,3 +13,4 @@ default rel
 	sete r21d
 	sete byte [eax+1]
 	sete byte [eax+64]
+	sete [0xdce]

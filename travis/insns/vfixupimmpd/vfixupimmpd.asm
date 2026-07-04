@@ -26,3 +26,6 @@ default rel
 	vfixupimmpd ymm5, ymm7, yword [eax+64], 0xa4
 	vfixupimmpd zmm2, zmm6, zword [eax+1], 0x43
 	vfixupimmpd zmm5, zmm5, zword [eax+64], 0x9d
+	vfixupimmpd xmm2, xmm1, [0x1f3], 0x37
+	vfixupimmpd ymm3, ymm1, [0x3b6], 0xd7
+	vfixupimmpd zmm4, zmm0, [0x589], 0x88

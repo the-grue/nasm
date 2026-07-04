@@ -6,3 +6,4 @@ default rel
 	vucomxss xmm0, xmm7, {sae}
 	vucomxss xmm6, dword [eax+1]
 	vucomxss xmm6, dword [eax+64]
+	vucomxss xmm1, [0x197]

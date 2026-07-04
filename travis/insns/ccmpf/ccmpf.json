@@ -6,7 +6,8 @@
   "source": "ccmpf.asm",
   "option": "--bits 64 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/ccmpf/",
   "target": [
-   { "output": "ccmpf.bin64", "match": "ccmpf.bin64.t" }
+   { "output": "ccmpf.bin64", "match": "ccmpf.bin64.t" },
+   { "stderr": "ccmpf.stderr64" }
   ]
  }
 ]

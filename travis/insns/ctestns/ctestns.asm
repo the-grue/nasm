@@ -31,3 +31,11 @@ default rel
 	ctestns 14, dword [eax+64], 0x267da035
 	ctestns 7, qword [eax+1], -63057385
 	ctestns 10, qword [eax+64], 27044069
+	ctestns 9, [0x8c3], bl
+	ctestns 12, [0x8d6], cx
+	ctestns 5, [0xd59], esi
+	ctestns 0, [0xe85], rcx
+	ctestns 5, [0x7a2], 0x73
+	ctestns 14, [0xe0a], 0xb7fe
+	ctestns 6, [0xb4c], 0x7e0d320
+	ctestns 11, [0x98a], 319382974

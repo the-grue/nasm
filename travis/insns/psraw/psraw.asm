@@ -13,3 +13,5 @@ default rel
 	psraw mm6, qword [eax+64]
 	psraw xmm5, oword [eax+1]
 	psraw xmm3, oword [eax+64]
+	psraw mm4, [0x3e7]
+	psraw xmm6, [0x4dd]

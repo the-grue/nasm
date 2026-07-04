@@ -23,3 +23,6 @@ default rel
 	vcvtbf162iubs ymm5, yword [eax+64]
 	vcvtbf162iubs zmm6, zword [eax+1]
 	vcvtbf162iubs zmm0, zword [eax+64]
+	vcvtbf162iubs xmm7, [0x7da]
+	vcvtbf162iubs ymm1, [0x83b]
+	vcvtbf162iubs zmm5, [0x1f6]

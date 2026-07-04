@@ -11,3 +11,5 @@ default rel
 	cmpnsxadd dword [eax+64], eax, eax
 	cmpnsxadd qword [eax+1], rdx, rdi
 	cmpnsxadd qword [eax+64], rbx, rdx
+	cmpnsxadd [0x73c], ebp, ecx
+	cmpnsxadd [0x507], rdx, rbx

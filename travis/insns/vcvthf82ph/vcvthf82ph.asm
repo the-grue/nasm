@@ -23,3 +23,6 @@ default rel
 	vcvthf82ph ymm7, oword [eax+64]
 	vcvthf82ph zmm0, yword [eax+1]
 	vcvthf82ph zmm5, yword [eax+64]
+	vcvthf82ph xmm6, [0xdf2]
+	vcvthf82ph ymm6, [0xd63]
+	vcvthf82ph zmm6, [0xce0]

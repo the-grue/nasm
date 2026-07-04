@@ -23,3 +23,7 @@ default rel
 	div dword [eax+64]
 	div qword [eax+1]
 	div qword [eax+64]
+	div [0xe4d]
+	div [0x1dd]
+	div [0x8ad]
+	div [0x8cf]

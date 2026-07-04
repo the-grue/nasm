@@ -13,3 +13,4 @@ default rel
 	setle r24d
 	setle byte [eax+1]
 	setle byte [eax+64]
+	setle [0xacf]

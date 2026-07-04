@@ -24,3 +24,6 @@ default rel
 	vcvtph2uw ymm4, yword [eax+64]
 	vcvtph2uw zmm6, zword [eax+1]
 	vcvtph2uw zmm1, zword [eax+64]
+	vcvtph2uw xmm3, [0x7c8]
+	vcvtph2uw ymm4, [0x2bc]
+	vcvtph2uw zmm5, [0xa44]

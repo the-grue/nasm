@@ -23,3 +23,6 @@ default rel
 	vsqrtbf16 ymm3, yword [eax+64]
 	vsqrtbf16 zmm3, zword [eax+1]
 	vsqrtbf16 zmm4, zword [eax+64]
+	vsqrtbf16 xmm5, [0xb04]
+	vsqrtbf16 ymm2, [0xf55]
+	vsqrtbf16 zmm5, [0x202]

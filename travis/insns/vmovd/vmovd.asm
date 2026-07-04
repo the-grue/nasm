@@ -23,3 +23,7 @@ default rel
 	vmovd xmm1, dword [eax+64]
 	vmovd dword [eax+1], xmm3
 	vmovd dword [eax+64], xmm3
+	vmovd xmm7, [0xa22]
+	vmovd [0xcce], xmm0
+	vmovd xmm3, [0x2b7]
+	vmovd [0xa41], xmm1

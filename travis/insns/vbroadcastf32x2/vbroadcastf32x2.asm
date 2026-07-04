@@ -15,3 +15,5 @@ default rel
 	vbroadcastf32x2 ymm3, qword [eax+64]
 	vbroadcastf32x2 zmm5, qword [eax+1]
 	vbroadcastf32x2 zmm1, qword [eax+64]
+	vbroadcastf32x2 ymm1, [0x433]
+	vbroadcastf32x2 zmm7, [0x552]

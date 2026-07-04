@@ -35,3 +35,8 @@ default rel
 	vpavgb ymm6, ymm3, yword [eax+64]
 	vpavgb zmm4, zmm7, zword [eax+1]
 	vpavgb zmm0, zmm3, zword [eax+64]
+	vpavgb xmm3, xmm5, [0x14b]
+	vpavgb ymm7, ymm6, [0x4d5]
+	vpavgb xmm7, xmm0, [0xec0]
+	vpavgb ymm2, ymm4, [0xe87]
+	vpavgb zmm1, zmm1, [0xa0f]

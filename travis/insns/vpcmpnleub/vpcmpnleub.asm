@@ -20,3 +20,6 @@ default rel
 	vpcmpnleub k1, ymm0, yword [eax+64]
 	vpcmpnleub k4, zmm7, zword [eax+1]
 	vpcmpnleub k2, zmm4, zword [eax+64]
+	vpcmpnleub k1, xmm2, [0xd7c]
+	vpcmpnleub k7, ymm1, [0x433]
+	vpcmpnleub k7, zmm6, [0xea1]

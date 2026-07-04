@@ -8,3 +8,4 @@ default rel
 	vfixupimmss xmm3{k4}{z}, xmm1, dword [0x473], 0xb
 	vfixupimmss xmm0, xmm3, dword [eax+1], 0xa2
 	vfixupimmss xmm0, xmm6, dword [eax+64], 0x4b
+	vfixupimmss xmm2, xmm2, [0xa3f], 0x8b

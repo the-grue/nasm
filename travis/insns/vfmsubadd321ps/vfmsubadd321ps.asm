@@ -9,3 +9,5 @@ default rel
 	vfmsubadd321ps xmm5, xmm1, oword [eax+64]
 	vfmsubadd321ps ymm3, ymm0, yword [eax+1]
 	vfmsubadd321ps ymm3, ymm1, yword [eax+64]
+	vfmsubadd321ps xmm5, xmm7, [0xa5f]
+	vfmsubadd321ps ymm6, ymm4, [0x573]

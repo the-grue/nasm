@@ -33,3 +33,12 @@ default rel
 	cfcmovna ecx, ebp, dword [eax+64]
 	cfcmovna rbx, rdx, qword [eax+1]
 	cfcmovna rdi, rbp, qword [eax+64]
+	cfcmovna [0x59b], si
+	cfcmovna [0xd71], eax
+	cfcmovna [0x25b], rdx
+	cfcmovna bx, [0x5ea]
+	cfcmovna edx, [0x46b]
+	cfcmovna rdi, [0x449]
+	cfcmovna cx, dx, [0xf08]
+	cfcmovna ecx, ebx, [0x605]
+	cfcmovna rdi, rdi, [0x67b]

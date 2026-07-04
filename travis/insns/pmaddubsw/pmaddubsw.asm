@@ -8,3 +8,5 @@ default rel
 	pmaddubsw mm7, qword [eax+64]
 	pmaddubsw xmm4, oword [eax+1]
 	pmaddubsw xmm3, oword [eax+64]
+	pmaddubsw mm4, [0xa14]
+	pmaddubsw xmm4, [0x8c3]

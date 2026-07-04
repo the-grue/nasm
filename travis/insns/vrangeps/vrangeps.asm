@@ -26,3 +26,6 @@ default rel
 	vrangeps ymm3, ymm7, yword [eax+64], 0x28
 	vrangeps zmm2, zmm1, zword [eax+1], 0x54
 	vrangeps zmm2, zmm1, zword [eax+64], 0xaa
+	vrangeps xmm7, xmm3, [0x4b4], 0x82
+	vrangeps ymm3, ymm0, [0xd0e], 0x7a
+	vrangeps zmm5, zmm0, [0x67c], 0x28

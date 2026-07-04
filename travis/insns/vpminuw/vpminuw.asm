@@ -35,3 +35,8 @@ default rel
 	vpminuw ymm0, ymm3, yword [eax+64]
 	vpminuw zmm6, zmm7, zword [eax+1]
 	vpminuw zmm3, zmm3, zword [eax+64]
+	vpminuw xmm4, xmm7, [0x27a]
+	vpminuw ymm5, ymm5, [0x67e]
+	vpminuw xmm3, xmm0, [0x824]
+	vpminuw ymm1, ymm1, [0x1dc]
+	vpminuw zmm6, zmm1, [0x56b]

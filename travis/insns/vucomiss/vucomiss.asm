@@ -12,3 +12,5 @@ default rel
 	vucomiss xmm3, dword [eax+64]
 	vucomiss xmm7, dword [eax+1]
 	vucomiss xmm0, dword [eax+64]
+	vucomiss xmm4, [0x407]
+	vucomiss xmm0, [0x335]

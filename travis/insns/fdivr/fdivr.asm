@@ -11,3 +11,5 @@ default rel
 	fdivr dword [eax+64]
 	fdivr qword [eax+1]
 	fdivr qword [eax+64]
+	fdivr [0x289]
+	fdivr [0xeab]

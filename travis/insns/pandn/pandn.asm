@@ -8,3 +8,5 @@ default rel
 	pandn mm4, qword [eax+64]
 	pandn xmm5, oword [eax+1]
 	pandn xmm3, oword [eax+64]
+	pandn mm4, [0xe35]
+	pandn xmm6, [0xa3f]

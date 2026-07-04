@@ -8,3 +8,4 @@ default rel
 	vinserti32x8 zmm3{k7}{z}, zmm1, yword [0xcbc], 0x4c
 	vinserti32x8 zmm2, zmm4, yword [eax+1], 0x3b
 	vinserti32x8 zmm2, zmm6, yword [eax+64], 0xd5
+	vinserti32x8 zmm3, zmm6, [0x421], 0x25

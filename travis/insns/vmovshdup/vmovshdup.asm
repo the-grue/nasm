@@ -31,3 +31,8 @@ default rel
 	vmovshdup ymm6, yword [eax+64]
 	vmovshdup zmm1, zword [eax+1]
 	vmovshdup zmm2, zword [eax+64]
+	vmovshdup xmm0, [0x9de]
+	vmovshdup ymm3, [0xdd3]
+	vmovshdup xmm0, [0xed4]
+	vmovshdup ymm3, [0xb96]
+	vmovshdup zmm7, [0xd88]

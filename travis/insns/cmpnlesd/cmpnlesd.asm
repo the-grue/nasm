@@ -4,3 +4,4 @@ default rel
 	cmpnlesd xmm14, xmm8
 	cmpnlesd xmm0, oword [eax+1]
 	cmpnlesd xmm3, oword [eax+64]
+	cmpnlesd xmm5, [0xbf5]

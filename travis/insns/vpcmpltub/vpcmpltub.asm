@@ -20,3 +20,6 @@ default rel
 	vpcmpltub k4, ymm6, yword [eax+64]
 	vpcmpltub k4, zmm7, zword [eax+1]
 	vpcmpltub k4, zmm7, zword [eax+64]
+	vpcmpltub k3, xmm2, [0xb82]
+	vpcmpltub k1, ymm1, [0xe93]
+	vpcmpltub k2, zmm0, [0x851]

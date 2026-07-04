@@ -8,3 +8,5 @@ default rel
 	palignr mm2, qword [eax+64], 0x11
 	palignr xmm1, oword [eax+1], 0x7a
 	palignr xmm4, oword [eax+64], 0x71
+	palignr mm6, [0x839], 0x3f
+	palignr xmm2, [0xde1], 0x2a

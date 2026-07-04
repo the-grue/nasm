@@ -9,3 +9,5 @@ default rel
 	vroundps xmm5, oword [eax+64], 0x37
 	vroundps ymm7, yword [eax+1], 0xcc
 	vroundps ymm5, yword [eax+64], 0x99
+	vroundps xmm2, [0x1ad], 0x6d
+	vroundps ymm2, [0xcff], 0x79

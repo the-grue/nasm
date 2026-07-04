@@ -35,3 +35,8 @@ default rel
 	vpmulld ymm3, ymm7, yword [eax+64]
 	vpmulld zmm6, zmm0, zword [eax+1]
 	vpmulld zmm1, zmm0, zword [eax+64]
+	vpmulld xmm2, xmm3, [0x79c]
+	vpmulld ymm0, ymm6, [0xad4]
+	vpmulld xmm3, xmm2, [0xdd6]
+	vpmulld ymm4, ymm1, [0x1a8]
+	vpmulld zmm5, zmm2, [0x129]

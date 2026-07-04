@@ -9,3 +9,5 @@ default rel
 	vlddqu xmm2, oword [eax+64]
 	vlddqu ymm6, yword [eax+1]
 	vlddqu ymm2, yword [eax+64]
+	vlddqu xmm3, [0x6a5]
+	vlddqu ymm4, [0xb8e]

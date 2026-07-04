@@ -11,3 +11,5 @@ default rel
 	cmpnaxadd dword [eax+64], ecx, esi
 	cmpnaxadd qword [eax+1], rbx, rdx
 	cmpnaxadd qword [eax+64], rbx, rcx
+	cmpnaxadd [0x745], esi, ecx
+	cmpnaxadd [0xa73], rbx, rax

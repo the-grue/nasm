@@ -9,3 +9,5 @@ default rel
 	blcs ebx, dword [eax+64]
 	blcs rcx, qword [eax+1]
 	blcs rbx, qword [eax+64]
+	blcs ecx, [0x80d]
+	blcs rdx, [0xc3c]

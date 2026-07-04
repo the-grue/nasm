@@ -35,3 +35,11 @@ default rel
 	sarx rbx, qword [eax+64], ebp
 	sarx rsi, qword [eax+1], rbp
 	sarx rdx, qword [eax+64], rdx
+	sarx ebx, [0xf7e], dl
+	sarx ebp, [0xcaf], bx
+	sarx edi, [0xc4b], eax
+	sarx ebx, [0xdad], rsi
+	sarx rbp, [0xf9f], bl
+	sarx rax, [0xa39], cx
+	sarx rsi, [0x82c], edi
+	sarx rbp, [0x6c0], rdx

@@ -12,3 +12,5 @@ default rel
 	vcomisd xmm2, qword [eax+64]
 	vcomisd xmm6, qword [eax+1]
 	vcomisd xmm5, qword [eax+64]
+	vcomisd xmm1, [0x477]
+	vcomisd xmm6, [0xbdc]

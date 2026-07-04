@@ -4,3 +4,4 @@ default rel
 	packusdw xmm9, xmm9
 	packusdw xmm0, oword [eax+1]
 	packusdw xmm0, oword [eax+64]
+	packusdw xmm1, [0x204]

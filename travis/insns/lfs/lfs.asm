@@ -17,3 +17,6 @@ default rel
 	lfs eax, dword [eax+64]
 	lfs rax, qword [eax+1]
 	lfs rax, qword [eax+64]
+	lfs bp, [0xafc]
+	lfs edx, [0x378]
+	lfs rcx, [0x364]

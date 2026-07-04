@@ -23,3 +23,6 @@ default rel
 	vsubbf16 ymm4, ymm3, yword [eax+64]
 	vsubbf16 zmm6, zmm1, zword [eax+1]
 	vsubbf16 zmm3, zmm1, zword [eax+64]
+	vsubbf16 xmm1, xmm7, [0x542]
+	vsubbf16 ymm2, ymm2, [0xdf4]
+	vsubbf16 zmm0, zmm7, [0x551]

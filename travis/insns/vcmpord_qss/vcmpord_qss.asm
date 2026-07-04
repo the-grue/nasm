@@ -12,3 +12,5 @@ default rel
 	vcmpord_qss xmm6, xmm4, qword [eax+64]
 	vcmpord_qss k7, xmm6, dword [eax+1]
 	vcmpord_qss k3, xmm5, dword [eax+64]
+	vcmpord_qss xmm3, xmm7, [0xab5]
+	vcmpord_qss k4, xmm6, [0x2b0]

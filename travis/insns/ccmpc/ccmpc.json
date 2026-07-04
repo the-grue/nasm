@@ -6,7 +6,8 @@
   "source": "ccmpc.asm",
   "option": "--bits 64 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/ccmpc/",
   "target": [
-   { "output": "ccmpc.bin64", "match": "ccmpc.bin64.t" }
+   { "output": "ccmpc.bin64", "match": "ccmpc.bin64.t" },
+   { "stderr": "ccmpc.stderr64" }
   ]
  }
 ]

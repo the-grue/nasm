@@ -12,3 +12,5 @@ default rel
 	vcmpneq_ussd xmm7, xmm0, qword [eax+64]
 	vcmpneq_ussd k4, xmm0, qword [eax+1]
 	vcmpneq_ussd k1, xmm0, qword [eax+64]
+	vcmpneq_ussd xmm4, xmm0, [0xb8c]
+	vcmpneq_ussd k1, xmm4, [0x314]

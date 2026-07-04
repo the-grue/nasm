@@ -35,3 +35,8 @@ default rel
 	vorps ymm3, ymm4, yword [eax+64]
 	vorps zmm0, zmm1, zword [eax+1]
 	vorps zmm0, zmm1, zword [eax+64]
+	vorps xmm7, xmm7, [0x794]
+	vorps ymm5, ymm0, [0x570]
+	vorps xmm5, xmm1, [0x282]
+	vorps ymm3, ymm2, [0x645]
+	vorps zmm3, zmm5, [0x8c6]

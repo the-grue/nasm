@@ -11,3 +11,5 @@ default rel
 	cmpaexadd dword [eax+64], edi, edx
 	cmpaexadd qword [eax+1], rbp, rax
 	cmpaexadd qword [eax+64], rax, rdi
+	cmpaexadd [0x5c4], ebx, edi
+	cmpaexadd [0xd44], rbx, rbx

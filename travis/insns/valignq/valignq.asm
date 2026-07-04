@@ -26,3 +26,6 @@ default rel
 	valignq ymm2, ymm2, yword [eax+64], 0x6f
 	valignq zmm1, zmm2, zword [eax+1], 0x11
 	valignq zmm6, zmm6, zword [eax+64], 0x23
+	valignq xmm1, xmm3, [0x957], 0x4d
+	valignq ymm4, ymm1, [0x9dc], 0xf
+	valignq zmm1, zmm2, [0x316], 0xfc

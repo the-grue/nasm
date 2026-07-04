@@ -9,3 +9,5 @@ default rel
 	movapd xmm5, oword [eax+64]
 	movapd oword [eax+1], xmm0
 	movapd oword [eax+64], xmm4
+	movapd xmm0, [0x73f]
+	movapd [0x332], xmm6

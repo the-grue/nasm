@@ -32,3 +32,8 @@ default rel
 	vsqrtpd ymm6, yword [eax+64]
 	vsqrtpd zmm7, zword [eax+1]
 	vsqrtpd zmm1, zword [eax+64]
+	vsqrtpd xmm1, [0xb2a]
+	vsqrtpd ymm1, [0x753]
+	vsqrtpd xmm5, [0x804]
+	vsqrtpd ymm3, [0xf13]
+	vsqrtpd zmm3, [0x380]

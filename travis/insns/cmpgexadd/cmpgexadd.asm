@@ -11,3 +11,5 @@ default rel
 	cmpgexadd dword [eax+64], eax, eax
 	cmpgexadd qword [eax+1], rbp, rdi
 	cmpgexadd qword [eax+64], rdx, rdi
+	cmpgexadd [0x806], ebx, edx
+	cmpgexadd [0x4e3], rsi, rax

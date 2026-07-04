@@ -75,3 +75,33 @@ default rel
 	sub eax, dword [eax+64], 0x1d7e895d
 	sub rax, qword [eax+1], -507148648
 	sub rcx, qword [eax+64], -395403989
+	sub [0x924], cl
+	sub [0x22b], si
+	sub [0x1b5], edi
+	sub [0xd9e], rbp
+	sub al, [0xda0]
+	sub ax, [0xc84]
+	sub edi, [0xb8c]
+	sub rbp, [0x9e3]
+	sub [0xd7b], 0xe7
+	sub [0x60a], -37
+	sub [0xac3], 0x4e70
+	sub [0xe26], 101
+	sub [0xafd], 0x263661f5
+	sub [0xb18], 54
+	sub [0xcc0], -276330528
+	sub bl, dl, [0xf72]
+	sub ax, bx, [0x604]
+	sub esi, ebx, [0xd0f]
+	sub rdi, rbx, [0x5b0]
+	sub cl, [0xef1], al
+	sub bx, [0x125], cx
+	sub esi, [0x46e], eax
+	sub rbp, [0x4bb], rdi
+	sub ax, [0xe29], 82
+	sub edx, [0x984], 49
+	sub rcx, [0x95b], -97
+	sub dl, [0x1bb], 0xb4
+	sub bp, [0xe8a], 0xae06
+	sub ebx, [0xeb3], 0x29a63948
+	sub rbp, [0xc4c], -302261169

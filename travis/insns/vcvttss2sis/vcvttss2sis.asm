@@ -13,3 +13,5 @@ default rel
 	vcvttss2sis ecx, dword [eax+64]
 	vcvttss2sis rdi, dword [eax+1]
 	vcvttss2sis rsi, dword [eax+64]
+	vcvttss2sis ecx, [0xbbf]
+	vcvttss2sis rcx, [0x2b6]

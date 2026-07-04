@@ -13,3 +13,4 @@ default rel
 	setpezu r16b
 	setpezu byte [eax+1]
 	setpezu byte [eax+64]
+	setpezu [0xdcd]

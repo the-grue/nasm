@@ -13,3 +13,4 @@ default rel
 	setczu r26b
 	setczu byte [eax+1]
 	setczu byte [eax+64]
+	setczu [0x7ec]

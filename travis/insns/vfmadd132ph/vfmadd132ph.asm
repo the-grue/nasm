@@ -27,3 +27,6 @@ default rel
 	vfmadd132ph ymm7, ymm1, yword [eax+64]
 	vfmadd132ph zmm6, zmm3, zword [eax+1]
 	vfmadd132ph zmm2, zmm0, zword [eax+64]
+	vfmadd132ph xmm2, xmm5, [0x745]
+	vfmadd132ph ymm1, ymm7, [0xb0c]
+	vfmadd132ph zmm0, zmm2, [0x45b]

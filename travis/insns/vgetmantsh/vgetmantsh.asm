@@ -7,3 +7,4 @@ default rel
 	vgetmantsh xmm6{k5}{z}, xmm7, xmm6, 0x87
 	vgetmantsh xmm4, xmm5, word [eax+1], 0x88
 	vgetmantsh xmm2, xmm5, word [eax+64], 0x62
+	vgetmantsh xmm7, xmm5, [0xecd], 0xa0

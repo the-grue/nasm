@@ -4,3 +4,4 @@ default rel
 	maxss xmm13, xmm14
 	maxss xmm1, dword [eax+1]
 	maxss xmm5, dword [eax+64]
+	maxss xmm3, [0x4d4]

@@ -8,3 +8,5 @@ default rel
 	phaddw mm7, qword [eax+64]
 	phaddw xmm0, oword [eax+1]
 	phaddw xmm2, oword [eax+64]
+	phaddw mm7, [0xec6]
+	phaddw xmm0, [0x527]

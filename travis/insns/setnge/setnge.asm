@@ -13,3 +13,4 @@ default rel
 	setnge r30d
 	setnge byte [eax+1]
 	setnge byte [eax+64]
+	setnge [0x5a9]

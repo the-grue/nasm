@@ -11,3 +11,5 @@ default rel
 	vphaddsw xmm5, xmm1, oword [eax+64]
 	vphaddsw ymm5, ymm3, yword [eax+1]
 	vphaddsw ymm3, ymm0, yword [eax+64]
+	vphaddsw xmm5, xmm7, [0xaf8]
+	vphaddsw ymm6, ymm0, [0x5b7]

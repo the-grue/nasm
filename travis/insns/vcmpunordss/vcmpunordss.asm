@@ -12,3 +12,5 @@ default rel
 	vcmpunordss xmm2, xmm6, qword [eax+64]
 	vcmpunordss k3, xmm5, dword [eax+1]
 	vcmpunordss k7, xmm0, dword [eax+64]
+	vcmpunordss xmm0, xmm2, [0xe29]
+	vcmpunordss k4, xmm2, [0xe5e]

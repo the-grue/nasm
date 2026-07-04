@@ -8,3 +8,5 @@ default rel
 	phsubd mm5, qword [eax+64]
 	phsubd xmm2, oword [eax+1]
 	phsubd xmm5, oword [eax+64]
+	phsubd mm1, [0xcab]
+	phsubd xmm7, [0x86f]

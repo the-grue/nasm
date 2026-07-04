@@ -13,3 +13,4 @@ default rel
 	setp r26d
 	setp byte [eax+1]
 	setp byte [eax+64]
+	setp [0xbde]

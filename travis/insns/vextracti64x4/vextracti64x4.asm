@@ -11,3 +11,4 @@ default rel
 	vextracti64x4 yword [0xd87]{k4}, zmm0, 0x89
 	vextracti64x4 yword [eax+1], zmm7, 0x25
 	vextracti64x4 yword [eax+64], zmm6, 0x60
+	vextracti64x4 [0xbd7], zmm4, 0x70

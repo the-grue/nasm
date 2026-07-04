@@ -11,3 +11,5 @@ default rel
 	rolx esi, dword [eax+64], 1
 	rolx rbx, qword [eax+1], 1
 	rolx rbp, qword [eax+64], 1
+	rolx edx, [0x928], 1
+	rolx rbp, [0xb87], 1

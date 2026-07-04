@@ -26,3 +26,6 @@ default rel
 	vpmaxsq ymm5, ymm2, yword [eax+64]
 	vpmaxsq zmm3, zmm1, zword [eax+1]
 	vpmaxsq zmm0, zmm5, zword [eax+64]
+	vpmaxsq xmm5, xmm6, [0xf1d]
+	vpmaxsq ymm6, ymm1, [0x4fc]
+	vpmaxsq zmm2, zmm1, [0xa10]

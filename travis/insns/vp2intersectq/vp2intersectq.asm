@@ -17,3 +17,6 @@ default rel
 	vp2intersectq k4, ymm7, yword [eax+64]
 	vp2intersectq k6, zmm6, zword [eax+1]
 	vp2intersectq k4, zmm0, zword [eax+64]
+	vp2intersectq k7, xmm3, [0xfa2]
+	vp2intersectq k5, ymm5, [0x17c]
+	vp2intersectq k2, zmm3, [0xd5f]

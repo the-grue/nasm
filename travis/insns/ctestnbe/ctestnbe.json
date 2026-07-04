@@ -6,7 +6,8 @@
   "source": "ctestnbe.asm",
   "option": "--bits 64 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/ctestnbe/",
   "target": [
-   { "output": "ctestnbe.bin64", "match": "ctestnbe.bin64.t" }
+   { "output": "ctestnbe.bin64", "match": "ctestnbe.bin64.t" },
+   { "stderr": "ctestnbe.stderr64" }
   ]
  }
 ]

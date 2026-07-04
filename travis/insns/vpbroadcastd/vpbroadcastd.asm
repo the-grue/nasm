@@ -43,3 +43,8 @@ default rel
 	vpbroadcastd ymm4, dword [eax+64]
 	vpbroadcastd zmm1, dword [eax+1]
 	vpbroadcastd zmm2, dword [eax+64]
+	vpbroadcastd xmm3, [0xf12]
+	vpbroadcastd ymm1, [0xebd]
+	vpbroadcastd xmm6, [0x2d6]
+	vpbroadcastd ymm0, [0x463]
+	vpbroadcastd zmm1, [0x98a]

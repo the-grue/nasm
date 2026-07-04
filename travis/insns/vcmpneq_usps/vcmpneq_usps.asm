@@ -27,3 +27,8 @@ default rel
 	vcmpneq_usps k4, ymm5, yword [eax+64]
 	vcmpneq_usps k7, zmm4, zword [eax+1]
 	vcmpneq_usps k4, zmm3, zword [eax+64]
+	vcmpneq_usps xmm0, xmm7, [0xf9d]
+	vcmpneq_usps ymm1, ymm1, [0x3a7]
+	vcmpneq_usps k6, xmm1, [0xa66]
+	vcmpneq_usps k2, ymm1, [0x48f]
+	vcmpneq_usps k3, zmm1, [0xf0b]

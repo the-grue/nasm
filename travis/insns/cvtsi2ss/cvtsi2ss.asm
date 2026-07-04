@@ -9,3 +9,5 @@ default rel
 	cvtsi2ss xmm3, dword [eax+64]
 	cvtsi2ss xmm0, qword [eax+1]
 	cvtsi2ss xmm7, qword [eax+64]
+	cvtsi2ss xmm4, [0x968]
+	cvtsi2ss xmm3, [0xeae]

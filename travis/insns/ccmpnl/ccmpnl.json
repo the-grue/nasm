@@ -6,7 +6,8 @@
   "source": "ccmpnl.asm",
   "option": "--bits 64 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/ccmpnl/",
   "target": [
-   { "output": "ccmpnl.bin64", "match": "ccmpnl.bin64.t" }
+   { "output": "ccmpnl.bin64", "match": "ccmpnl.bin64.t" },
+   { "stderr": "ccmpnl.stderr64" }
   ]
  }
 ]

@@ -11,3 +11,5 @@ default rel
 	vphsubsw xmm1, xmm7, oword [eax+64]
 	vphsubsw ymm1, ymm6, yword [eax+1]
 	vphsubsw ymm0, ymm0, yword [eax+64]
+	vphsubsw xmm7, xmm4, [0xe74]
+	vphsubsw ymm5, ymm6, [0x309]

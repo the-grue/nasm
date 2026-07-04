@@ -4,3 +4,4 @@ default rel
 	phminposuw xmm10, xmm14
 	phminposuw xmm3, oword [eax+1]
 	phminposuw xmm1, oword [eax+64]
+	phminposuw xmm1, [0xe9f]

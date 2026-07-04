@@ -17,3 +17,6 @@ default rel
 	tzcnt ebx, dword [eax+64]
 	tzcnt rbp, qword [eax+1]
 	tzcnt rdi, qword [eax+64]
+	tzcnt cx, [0xc73]
+	tzcnt edi, [0xc95]
+	tzcnt rax, [0xdb1]

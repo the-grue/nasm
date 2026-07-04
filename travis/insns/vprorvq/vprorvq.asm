@@ -26,3 +26,6 @@ default rel
 	vprorvq ymm5, ymm4, yword [eax+64]
 	vprorvq zmm6, zmm6, zword [eax+1]
 	vprorvq zmm2, zmm2, zword [eax+64]
+	vprorvq xmm6, xmm6, [0x6cc]
+	vprorvq ymm4, ymm0, [0xd78]
+	vprorvq zmm1, zmm4, [0xd38]

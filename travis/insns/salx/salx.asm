@@ -35,3 +35,11 @@ default rel
 	salx rsi, qword [eax+64], edi
 	salx rax, qword [eax+1], rax
 	salx rcx, qword [eax+64], rbx
+	salx edx, [0xf75], dl
+	salx eax, [0x449], di
+	salx eax, [0xf8d], edi
+	salx edx, [0xce1], rbx
+	salx rdi, [0x2ac], cl
+	salx rbp, [0x4db], dx
+	salx rbp, [0x60d], edx
+	salx rax, [0x9ac], rdi

@@ -23,3 +23,6 @@ default rel
 	vpternlogq ymm1, ymm0, yword [eax+64], 0xfe
 	vpternlogq zmm7, zmm5, zword [eax+1], 0x78
 	vpternlogq zmm1, zmm7, zword [eax+64], 0x70
+	vpternlogq xmm5, xmm6, [0xb53], 0x2e
+	vpternlogq ymm4, ymm0, [0x2fe], 0x61
+	vpternlogq zmm1, zmm5, [0x73e], 0xe0

@@ -28,7 +28,8 @@
   "source": "mov.asm",
   "option": "--bits 64 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/mov/",
   "target": [
-   { "output": "mov.bin64", "match": "mov.bin64.t" }
+   { "output": "mov.bin64", "match": "mov.bin64.t" },
+   { "stderr": "mov.stderr64" }
   ]
  }
 ]

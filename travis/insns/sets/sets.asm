@@ -13,3 +13,4 @@ default rel
 	sets r17d
 	sets byte [eax+1]
 	sets byte [eax+64]
+	sets [0x669]

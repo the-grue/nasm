@@ -31,3 +31,11 @@ default rel
 	ctestnbe 13, dword [eax+64], 0xa14ea28
 	ctestnbe 15, qword [eax+1], 210209992
 	ctestnbe 15, qword [eax+64], 178177797
+	ctestnbe 15, [0x7db], cl
+	ctestnbe 7, [0xc63], cx
+	ctestnbe 2, [0x519], ebx
+	ctestnbe 0, [0x4fa], rsi
+	ctestnbe 12, [0x46f], 0x81
+	ctestnbe 5, [0xdbf], 0xf582
+	ctestnbe 10, [0xa40], 0x7b5160e
+	ctestnbe 2, [0xd60], 23010373

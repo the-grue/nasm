@@ -13,3 +13,4 @@ default rel
 	setl r20d
 	setl byte [eax+1]
 	setl byte [eax+64]
+	setl [0xba5]

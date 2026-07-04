@@ -44,3 +44,13 @@ default rel
 	vmovaps yword [eax+64], ymm6
 	vmovaps zword [eax+1], zmm7
 	vmovaps zword [eax+64], zmm4
+	vmovaps xmm2, [0x1b2]
+	vmovaps [0x545], xmm5
+	vmovaps ymm1, [0x5ef]
+	vmovaps [0xeb1], ymm7
+	vmovaps xmm0, [0x38e]
+	vmovaps ymm4, [0x995]
+	vmovaps zmm3, [0x509]
+	vmovaps [0x316], xmm7
+	vmovaps [0x835], ymm4
+	vmovaps [0x6cc], zmm2

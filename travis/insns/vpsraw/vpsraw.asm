@@ -47,3 +47,11 @@ default rel
 	vpsraw ymm3, yword [eax+64], 0x7c
 	vpsraw zmm4, zword [eax+1], 0xd7
 	vpsraw zmm3, zword [eax+64], 0x96
+	vpsraw xmm3, xmm0, [0x475]
+	vpsraw ymm0, ymm1, [0x649]
+	vpsraw xmm3, xmm7, [0x23f]
+	vpsraw ymm7, ymm7, [0xba5]
+	vpsraw zmm7, zmm3, [0x7f4]
+	vpsraw xmm4, [0x186], 0x1e
+	vpsraw ymm0, [0xa63], 0x5e
+	vpsraw zmm2, [0x689], 0xac

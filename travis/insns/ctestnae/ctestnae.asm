@@ -31,3 +31,11 @@ default rel
 	ctestnae 0, dword [eax+64], 0x387ca22b
 	ctestnae 10, qword [eax+1], 185460660
 	ctestnae 10, qword [eax+64], 136551516
+	ctestnae 11, [0x8bb], cl
+	ctestnae 0, [0xb8a], dx
+	ctestnae 14, [0x60e], ebp
+	ctestnae 1, [0x144], rdi
+	ctestnae 2, [0xa9f], 0x27
+	ctestnae 14, [0x52a], 0x3fef
+	ctestnae 0, [0x242], 0x27afeb86
+	ctestnae 0, [0xdf8], 471649402

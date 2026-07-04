@@ -4,3 +4,4 @@ default rel
 	xorpd xmm13, xmm12
 	xorpd xmm5, oword [eax+1]
 	xorpd xmm5, oword [eax+64]
+	xorpd xmm2, [0xa29]

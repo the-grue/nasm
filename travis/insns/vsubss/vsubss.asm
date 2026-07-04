@@ -16,3 +16,5 @@ default rel
 	vsubss xmm4, xmm7, dword [eax+64]
 	vsubss xmm1, xmm5, dword [eax+1]
 	vsubss xmm0, xmm6, dword [eax+64]
+	vsubss xmm4, xmm0, [0x5fa]
+	vsubss xmm4, xmm7, [0xae9]

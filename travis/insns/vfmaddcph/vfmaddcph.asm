@@ -27,3 +27,6 @@ default rel
 	vfmaddcph ymm0, ymm1, yword [eax+64]
 	vfmaddcph zmm3, zmm3, zword [eax+1]
 	vfmaddcph zmm3, zmm3, zword [eax+64]
+	vfmaddcph xmm6, xmm4, [0x49f]
+	vfmaddcph ymm7, ymm6, [0x4ef]
+	vfmaddcph zmm2, zmm4, [0x9d9]

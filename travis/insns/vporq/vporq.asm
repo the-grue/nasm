@@ -26,3 +26,6 @@ default rel
 	vporq ymm4, ymm0, yword [eax+64]
 	vporq zmm4, zmm1, zword [eax+1]
 	vporq zmm7, zmm6, zword [eax+64]
+	vporq xmm0, xmm7, [0x3f5]
+	vporq ymm0, ymm0, [0x313]
+	vporq zmm6, zmm6, [0x163]

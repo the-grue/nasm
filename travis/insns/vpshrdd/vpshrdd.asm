@@ -26,3 +26,6 @@ default rel
 	vpshrdd ymm6, ymm0, yword [eax+64], 0xad
 	vpshrdd zmm4, zmm1, zword [eax+1], 0x57
 	vpshrdd zmm2, zmm6, zword [eax+64], 0x40
+	vpshrdd xmm1, xmm3, [0x718], 0x5a
+	vpshrdd ymm1, ymm3, [0xa9b], 0x1e
+	vpshrdd zmm3, zmm0, [0x41d], 0x80

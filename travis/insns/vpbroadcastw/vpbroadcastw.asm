@@ -49,3 +49,8 @@ default rel
 	vpbroadcastw ymm2, word [eax+64]
 	vpbroadcastw zmm7, word [eax+1]
 	vpbroadcastw zmm2, word [eax+64]
+	vpbroadcastw xmm4, [0x7bf]
+	vpbroadcastw ymm0, [0x18c]
+	vpbroadcastw xmm6, [0x335]
+	vpbroadcastw ymm5, [0x7f1]
+	vpbroadcastw zmm2, [0xeb5]

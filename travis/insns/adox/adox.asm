@@ -25,3 +25,7 @@ default rel
 	adox esi, ebp, dword [eax+64]
 	adox rsi, rax, qword [eax+1]
 	adox rdi, rsi, qword [eax+64]
+	adox ebx, [0x353]
+	adox rbp, [0x542]
+	adox ebp, ecx, [0x1cf]
+	adox rax, rax, [0x92d]

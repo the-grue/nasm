@@ -24,3 +24,6 @@ default rel
 	vrsqrtph ymm3, yword [eax+64]
 	vrsqrtph zmm1, zword [eax+1]
 	vrsqrtph zmm0, zword [eax+64]
+	vrsqrtph xmm2, [0x1b8]
+	vrsqrtph ymm1, [0x147]
+	vrsqrtph zmm0, [0x412]

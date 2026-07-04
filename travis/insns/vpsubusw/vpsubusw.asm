@@ -35,3 +35,8 @@ default rel
 	vpsubusw ymm0, ymm5, yword [eax+64]
 	vpsubusw zmm1, zmm0, zword [eax+1]
 	vpsubusw zmm4, zmm4, zword [eax+64]
+	vpsubusw xmm6, xmm7, [0xb9d]
+	vpsubusw ymm7, ymm0, [0x676]
+	vpsubusw xmm0, xmm7, [0xef2]
+	vpsubusw ymm2, ymm2, [0x643]
+	vpsubusw zmm3, zmm4, [0xc75]

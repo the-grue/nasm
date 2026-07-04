@@ -27,3 +27,8 @@ default rel
 	vcmptruepd k2, ymm4, yword [eax+64]
 	vcmptruepd k3, zmm2, zword [eax+1]
 	vcmptruepd k4, zmm1, zword [eax+64]
+	vcmptruepd xmm4, xmm2, [0x432]
+	vcmptruepd ymm0, ymm5, [0xb0e]
+	vcmptruepd k6, xmm1, [0x170]
+	vcmptruepd k3, ymm2, [0xc09]
+	vcmptruepd k7, zmm6, [0x406]

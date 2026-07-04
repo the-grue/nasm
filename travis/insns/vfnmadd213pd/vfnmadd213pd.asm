@@ -32,3 +32,8 @@ default rel
 	vfnmadd213pd ymm2, ymm6, yword [eax+64]
 	vfnmadd213pd zmm6, zmm5, zword [eax+1]
 	vfnmadd213pd zmm2, zmm4, zword [eax+64]
+	vfnmadd213pd xmm4, xmm5, [0x4f7]
+	vfnmadd213pd ymm5, ymm4, [0xbf5]
+	vfnmadd213pd xmm2, xmm5, [0x8cb]
+	vfnmadd213pd ymm6, ymm6, [0xf88]
+	vfnmadd213pd zmm7, zmm0, [0x221]

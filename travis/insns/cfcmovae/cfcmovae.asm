@@ -33,3 +33,12 @@ default rel
 	cfcmovae edi, ebp, dword [eax+64]
 	cfcmovae rbx, rdi, qword [eax+1]
 	cfcmovae rbx, rax, qword [eax+64]
+	cfcmovae [0xc0f], ax
+	cfcmovae [0x540], esi
+	cfcmovae [0xf76], rdx
+	cfcmovae bx, [0x4a7]
+	cfcmovae ecx, [0x50d]
+	cfcmovae rax, [0x94e]
+	cfcmovae di, bp, [0xd3d]
+	cfcmovae edi, ecx, [0x11c]
+	cfcmovae rdi, rax, [0xc95]

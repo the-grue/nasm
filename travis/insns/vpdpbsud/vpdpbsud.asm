@@ -31,3 +31,8 @@ default rel
 	vpdpbsud ymm4, ymm2, yword [eax+64]
 	vpdpbsud zmm5, zmm2, zword [eax+1]
 	vpdpbsud zmm3, zmm6, zword [eax+64]
+	vpdpbsud xmm1, xmm0, [0x3c3]
+	vpdpbsud ymm4, ymm7, [0xf48]
+	vpdpbsud xmm5, xmm0, [0xe57]
+	vpdpbsud ymm4, ymm2, [0xf74]
+	vpdpbsud zmm3, zmm6, [0x948]

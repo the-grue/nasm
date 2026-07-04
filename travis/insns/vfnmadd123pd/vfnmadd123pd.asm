@@ -9,3 +9,5 @@ default rel
 	vfnmadd123pd xmm6, xmm7, oword [eax+64]
 	vfnmadd123pd ymm6, ymm4, yword [eax+1]
 	vfnmadd123pd ymm1, ymm5, yword [eax+64]
+	vfnmadd123pd xmm5, xmm1, [0xa44]
+	vfnmadd123pd ymm6, ymm2, [0x355]

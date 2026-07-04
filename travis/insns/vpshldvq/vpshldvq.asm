@@ -26,3 +26,6 @@ default rel
 	vpshldvq ymm6, ymm1, yword [eax+64]
 	vpshldvq zmm5, zmm4, zword [eax+1]
 	vpshldvq zmm3, zmm6, zword [eax+64]
+	vpshldvq xmm2, xmm0, [0xa53]
+	vpshldvq ymm4, ymm6, [0x13f]
+	vpshldvq zmm0, zmm5, [0xca1]

@@ -11,3 +11,5 @@ default rel
 	fcom dword [eax+64]
 	fcom qword [eax+1]
 	fcom qword [eax+64]
+	fcom [0x960]
+	fcom [0x87c]

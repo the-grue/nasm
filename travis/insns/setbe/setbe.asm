@@ -13,3 +13,4 @@ default rel
 	setbe r21d
 	setbe byte [eax+1]
 	setbe byte [eax+64]
+	setbe [0xc51]

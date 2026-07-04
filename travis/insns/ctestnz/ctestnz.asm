@@ -31,3 +31,11 @@ default rel
 	ctestnz 11, dword [eax+64], 0x2ccff76f
 	ctestnz 5, qword [eax+1], 76994103
 	ctestnz 13, qword [eax+64], 508969010
+	ctestnz 15, [0xd09], al
+	ctestnz 2, [0x30c], ax
+	ctestnz 5, [0x9f6], ebp
+	ctestnz 3, [0xb48], rsi
+	ctestnz 4, [0xc07], 0x5e
+	ctestnz 6, [0x8ed], 0x9dd6
+	ctestnz 12, [0xd03], 0x1530029e
+	ctestnz 14, [0xebe], -262786085

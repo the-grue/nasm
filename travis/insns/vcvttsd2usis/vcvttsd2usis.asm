@@ -13,3 +13,5 @@ default rel
 	vcvttsd2usis ecx, qword [eax+64]
 	vcvttsd2usis rcx, qword [eax+1]
 	vcvttsd2usis rax, qword [eax+64]
+	vcvttsd2usis ebp, [0x88a]
+	vcvttsd2usis rdi, [0xda9]

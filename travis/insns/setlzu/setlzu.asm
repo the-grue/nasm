@@ -13,3 +13,4 @@ default rel
 	setlzu r16b
 	setlzu byte [eax+1]
 	setlzu byte [eax+64]
+	setlzu [0x2b2]

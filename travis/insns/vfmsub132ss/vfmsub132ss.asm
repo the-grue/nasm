@@ -14,3 +14,5 @@ default rel
 	vfmsub132ss xmm5, xmm4, dword [eax+64]
 	vfmsub132ss xmm4, xmm7, dword [eax+1]
 	vfmsub132ss xmm5, xmm1, dword [eax+64]
+	vfmsub132ss xmm6, xmm7, [0x43b]
+	vfmsub132ss xmm6, xmm7, [0x5c6]

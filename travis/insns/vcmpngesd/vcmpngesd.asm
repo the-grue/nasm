@@ -12,3 +12,5 @@ default rel
 	vcmpngesd xmm4, xmm6, qword [eax+64]
 	vcmpngesd k1, xmm6, qword [eax+1]
 	vcmpngesd k5, xmm5, qword [eax+64]
+	vcmpngesd xmm2, xmm7, [0x764]
+	vcmpngesd k3, xmm1, [0xfaf]

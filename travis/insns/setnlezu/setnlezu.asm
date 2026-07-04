@@ -13,3 +13,4 @@ default rel
 	setnlezu r31b
 	setnlezu byte [eax+1]
 	setnlezu byte [eax+64]
+	setnlezu [0x277]

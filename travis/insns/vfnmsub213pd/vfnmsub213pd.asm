@@ -32,3 +32,8 @@ default rel
 	vfnmsub213pd ymm4, ymm1, yword [eax+64]
 	vfnmsub213pd zmm6, zmm6, zword [eax+1]
 	vfnmsub213pd zmm5, zmm0, zword [eax+64]
+	vfnmsub213pd xmm5, xmm2, [0x3bd]
+	vfnmsub213pd ymm0, ymm2, [0x44a]
+	vfnmsub213pd xmm5, xmm2, [0x3c5]
+	vfnmsub213pd ymm5, ymm7, [0x319]
+	vfnmsub213pd zmm7, zmm0, [0x36b]

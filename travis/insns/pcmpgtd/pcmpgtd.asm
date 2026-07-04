@@ -8,3 +8,5 @@ default rel
 	pcmpgtd mm2, qword [eax+64]
 	pcmpgtd xmm7, oword [eax+1]
 	pcmpgtd xmm1, oword [eax+64]
+	pcmpgtd mm2, [0x203]
+	pcmpgtd xmm7, [0xd18]

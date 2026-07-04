@@ -13,3 +13,4 @@ default rel
 	setng r24d
 	setng byte [eax+1]
 	setng byte [eax+64]
+	setng [0xb40]

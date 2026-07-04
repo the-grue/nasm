@@ -4,3 +4,4 @@ default rel
 	minss xmm12, xmm11
 	minss xmm0, dword [eax+1]
 	minss xmm3, dword [eax+64]
+	minss xmm6, [0x178]

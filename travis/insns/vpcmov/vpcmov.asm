@@ -23,3 +23,7 @@ default rel
 	vpcmov xmm4, xmm7, xmm6, oword [eax+64]
 	vpcmov ymm5, ymm7, ymm5, yword [eax+1]
 	vpcmov ymm4, ymm1, ymm1, yword [eax+64]
+	vpcmov xmm0, xmm1, [0x8ae], xmm5
+	vpcmov ymm4, ymm5, [0xb78], ymm7
+	vpcmov xmm4, xmm3, xmm3, [0x889]
+	vpcmov ymm4, ymm7, ymm3, [0xc2d]

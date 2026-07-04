@@ -651,6 +651,48 @@ sub build_dispboundary_line {
     return { text => lc($mnem) . ' ' . join(', ', @operands), needs64 => $needs64 };
 }
 
+# Implicitly-sized memory operand coverage.
+#
+# For memory-capable operand tokens that carry an explicit size in
+# their own name (mem8/16/32/.../xmmrm128/ymmrm256/zmmrm512/mmxrm...,
+# i.e. every key in %mem_sizebits with a nonzero size), the generator
+# always renders a size keyword ("byte"/"dword"/"oword"/...) on the
+# memory form. But NASM permits omitting the keyword entirely whenever
+# the instruction template declares the operand's size is implied --
+# either a fixed size (x86/iflags.ph's SB/SW/SD/SQ/ST/SO/SY/SZ flags,
+# e.g. plain "mem" tokens like CLFLUSH/MOVNTI, already unsized by
+# %mem_sizebits and so not touched here) or a size *match* to another,
+# already-sized operand in the same template (SM0-4 flags, e.g.
+# "ADD reg32,rm32" / "MOVBE reg32,mem32" -- extremely common for
+# ALU/data-movement instructions pairing a register with a same-width
+# memory operand). Rather than parsing/expanding the SM/AR flag ranges
+# from insns.xda to decide exactly when this is legal, this candidate
+# simply tries the unsized form and lets the existing staged probe
+# below keep it only if it actually assembles -- consistent with the
+# rest of this tool's "regression test, not correctness oracle"
+# philosophy, and far simpler than re-deriving NASM's own operand-size
+# disambiguation logic.
+sub build_implicitsize_line {
+    my ($rng, $mnem, $ops, $is_branch) = @_;
+    my @operands;
+    my $used_mem = 0;
+    my $needs64 = 0;
+    for my $tok (@$ops) {
+        my $base = base_token($tok);
+        if (!$used_mem && ($mem_sizebits{$base} // 0)) {
+            push @operands, mem_operand($rng, 0);
+            $used_mem = 1;
+            next;
+        }
+        my $val = gen_operand($rng, $tok, $mnem, $is_branch);
+        return undef unless defined $val;
+        $needs64 = 1 if $needs64_token{$base};
+        push @operands, $val;
+    }
+    return undef unless $used_mem;
+    return { text => lc($mnem) . ' ' . join(', ', @operands), needs64 => $needs64 };
+}
+
 sub make_rng {
     my ($seedval) = @_;
     # Small deterministic xorshift-ish PRNG so runs are reproducible
@@ -718,6 +760,7 @@ for my $mnem (sort keys %by_mnemonic) {
     my @extra_broadcast;  # candidate {1toN}-broadcast lines
     my @extra_saeer;      # candidate {sae}/{rn-sae}-decorated lines
     my @extra_dispboundary; # candidate [eax+1]/[eax+64] boundary lines
+    my @extra_implicitsize; # candidate unsized-memory-operand lines
     for my $t (@sample) {
         my $opt_idx = optional_operand_index($t->{ops});
         my $extendable = has_extendable_token($t->{ops});
@@ -809,6 +852,18 @@ for my $mnem (sort keys %by_mnemonic) {
         }
     }
 
+    # Implicitly-sized memory operand coverage (see
+    # build_implicitsize_line() above): once per *distinct* template
+    # across the mnemonic's entire template set, same reasoning as the
+    # two loops above. Candidates only, routed through the same staged
+    # probe -- omitting the size keyword is only legal when the
+    # instruction's flags declare a fixed or size-matched operand size,
+    # which this generator doesn't parse directly (see comment above).
+    for my $t (@dedup_all) {
+        my $dl = build_implicitsize_line($rng, $mnem, $t->{ops}, $is_branch);
+        push @extra_implicitsize, $dl if defined $dl;
+    }
+
     next unless @lines;   # nothing we knew how to generate
 
     my @narrow_lines = grep { !$_->{needs64} } @lines;
@@ -870,7 +925,8 @@ for my $mnem (sort keys %by_mnemonic) {
 
     my @full_lines = @lines;
     for my $cat (\@extra_hireg, \@extra_apxreg, \@extra_mask, \@extra_maskz,
-                 \@extra_broadcast, \@extra_saeer, \@extra_dispboundary) {
+                 \@extra_broadcast, \@extra_saeer, \@extra_dispboundary,
+                 \@extra_implicitsize) {
         next unless @$cat;
         my $candidate = [@full_lines, @$cat];
         @full_lines = @$candidate if $probe_ok->($candidate);

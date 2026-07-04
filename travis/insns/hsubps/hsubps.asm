@@ -4,3 +4,4 @@ default rel
 	hsubps xmm11, xmm15
 	hsubps xmm2, oword [eax+1]
 	hsubps xmm4, oword [eax+64]
+	hsubps xmm4, [0x7d9]

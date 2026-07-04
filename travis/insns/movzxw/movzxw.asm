@@ -17,3 +17,6 @@ default rel
 	movzxw eax, word [eax+64]
 	movzxw rsi, word [eax+1]
 	movzxw rsi, word [eax+64]
+	movzxw si, [0x9bf]
+	movzxw esi, [0x36c]
+	movzxw rbx, [0xb07]

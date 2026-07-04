@@ -35,3 +35,8 @@ default rel
 	vandnpd ymm6, ymm4, yword [eax+64]
 	vandnpd zmm0, zmm2, zword [eax+1]
 	vandnpd zmm5, zmm0, zword [eax+64]
+	vandnpd xmm2, xmm6, [0xc56]
+	vandnpd ymm3, ymm4, [0x9fd]
+	vandnpd xmm3, xmm7, [0x4df]
+	vandnpd ymm0, ymm3, [0x81e]
+	vandnpd zmm4, zmm6, [0x726]

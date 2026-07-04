@@ -12,3 +12,5 @@ default rel
 	vcmpeq_ossd xmm7, xmm4, qword [eax+64]
 	vcmpeq_ossd k7, xmm4, qword [eax+1]
 	vcmpeq_ossd k1, xmm1, qword [eax+64]
+	vcmpeq_ossd xmm0, xmm2, [0xc2d]
+	vcmpeq_ossd k5, xmm2, [0x894]

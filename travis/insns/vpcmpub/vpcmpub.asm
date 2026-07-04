@@ -20,3 +20,6 @@ default rel
 	vpcmpub k7, ymm5, yword [eax+64], 0x96
 	vpcmpub k1, zmm0, zword [eax+1], 0xee
 	vpcmpub k5, zmm5, zword [eax+64], 0x33
+	vpcmpub k7, xmm7, [0xfd2], 0xb3
+	vpcmpub k2, ymm1, [0x49f], 0x4f
+	vpcmpub k4, zmm2, [0x1d7], 0xc9

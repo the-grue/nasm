@@ -20,3 +20,6 @@ default rel
 	vpcmpgeb k2, ymm5, yword [eax+64]
 	vpcmpgeb k1, zmm4, zword [eax+1]
 	vpcmpgeb k7, zmm1, zword [eax+64]
+	vpcmpgeb k7, xmm1, [0x9e5]
+	vpcmpgeb k4, ymm5, [0xc4c]
+	vpcmpgeb k6, zmm2, [0xe4f]

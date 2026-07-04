@@ -13,3 +13,4 @@ default rel
 	setg r25d
 	setg byte [eax+1]
 	setg byte [eax+64]
+	setg [0x87e]

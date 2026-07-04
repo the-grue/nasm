@@ -23,3 +23,7 @@ default rel
 	movrs esi, dword [eax+64]
 	movrs rdi, qword [eax+1]
 	movrs rsi, qword [eax+64]
+	movrs cl, [0x15e]
+	movrs dx, [0x3c8]
+	movrs edi, [0x825]
+	movrs rbx, [0x132]

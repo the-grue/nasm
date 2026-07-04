@@ -12,3 +12,5 @@ default rel
 	vcmpfalsess xmm0, xmm0, qword [eax+64]
 	vcmpfalsess k7, xmm6, dword [eax+1]
 	vcmpfalsess k4, xmm1, dword [eax+64]
+	vcmpfalsess xmm0, xmm1, [0xb95]
+	vcmpfalsess k5, xmm1, [0xe69]

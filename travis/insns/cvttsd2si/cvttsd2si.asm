@@ -9,3 +9,5 @@ default rel
 	cvttsd2si eax, qword [eax+64]
 	cvttsd2si rbp, qword [eax+1]
 	cvttsd2si rdi, qword [eax+64]
+	cvttsd2si esi, [0x1aa]
+	cvttsd2si rbp, [0xb87]

@@ -12,3 +12,5 @@ default rel
 	vcmpgt_oqss xmm3, xmm6, qword [eax+64]
 	vcmpgt_oqss k7, xmm7, dword [eax+1]
 	vcmpgt_oqss k2, xmm0, dword [eax+64]
+	vcmpgt_oqss xmm3, xmm1, [0xded]
+	vcmpgt_oqss k7, xmm3, [0x5be]

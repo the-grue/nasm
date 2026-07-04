@@ -27,3 +27,9 @@ default rel
 	movbe dword [eax+64], esi
 	movbe qword [eax+1], rbp
 	movbe qword [eax+64], rcx
+	movbe si, [0x960]
+	movbe edx, [0x694]
+	movbe rdx, [0x3b1]
+	movbe [0x671], di
+	movbe [0xdbe], ebp
+	movbe [0xb68], rcx

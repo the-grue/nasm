@@ -9,3 +9,5 @@ default rel
 	blsic edi, dword [eax+64]
 	blsic rdx, qword [eax+1]
 	blsic rcx, qword [eax+64]
+	blsic ecx, [0xdbe]
+	blsic rsi, [0x45a]

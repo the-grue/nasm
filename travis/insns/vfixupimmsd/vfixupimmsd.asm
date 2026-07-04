@@ -8,3 +8,4 @@ default rel
 	vfixupimmsd xmm2{k6}{z}, xmm1, xmm1, 0x55
 	vfixupimmsd xmm5, xmm1, qword [eax+1], 0xae
 	vfixupimmsd xmm2, xmm7, qword [eax+64], 0xbe
+	vfixupimmsd xmm1, xmm3, [0x8db], 0x10

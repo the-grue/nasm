@@ -11,3 +11,5 @@ default rel
 	cmpsxadd dword [eax+64], ebp, esi
 	cmpsxadd qword [eax+1], rcx, rsi
 	cmpsxadd qword [eax+64], rdi, rax
+	cmpsxadd [0xabc], eax, ebx
+	cmpsxadd [0x5d9], rbp, rbx

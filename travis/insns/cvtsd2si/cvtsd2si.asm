@@ -9,3 +9,5 @@ default rel
 	cvtsd2si eax, qword [eax+64]
 	cvtsd2si rdx, qword [eax+1]
 	cvtsd2si rax, qword [eax+64]
+	cvtsd2si ebx, [0xa12]
+	cvtsd2si rsi, [0x781]

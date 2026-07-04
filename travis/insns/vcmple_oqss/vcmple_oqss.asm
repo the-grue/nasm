@@ -12,3 +12,5 @@ default rel
 	vcmple_oqss xmm1, xmm0, qword [eax+64]
 	vcmple_oqss k3, xmm7, dword [eax+1]
 	vcmple_oqss k3, xmm3, dword [eax+64]
+	vcmple_oqss xmm6, xmm7, [0x6a7]
+	vcmple_oqss k1, xmm6, [0x2a7]

@@ -28,7 +28,8 @@
   "source": "and.asm",
   "option": "--bits 64 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/and/",
   "target": [
-   { "output": "and.bin64", "match": "and.bin64.t" }
+   { "output": "and.bin64", "match": "and.bin64.t" },
+   { "stderr": "and.stderr64" }
   ]
  }
 ]

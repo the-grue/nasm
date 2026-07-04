@@ -4,3 +4,4 @@ default rel
 	cmpless xmm15, xmm14
 	cmpless xmm4, dword [eax+1]
 	cmpless xmm2, dword [eax+64]
+	cmpless xmm0, [0x9ba]

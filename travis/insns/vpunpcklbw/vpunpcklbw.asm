@@ -35,3 +35,8 @@ default rel
 	vpunpcklbw ymm0, ymm5, yword [eax+64]
 	vpunpcklbw zmm2, zmm3, zword [eax+1]
 	vpunpcklbw zmm5, zmm2, zword [eax+64]
+	vpunpcklbw xmm4, xmm5, [0x316]
+	vpunpcklbw ymm0, ymm4, [0x570]
+	vpunpcklbw xmm2, xmm4, [0x784]
+	vpunpcklbw ymm3, ymm5, [0x50c]
+	vpunpcklbw zmm1, zmm2, [0x784]

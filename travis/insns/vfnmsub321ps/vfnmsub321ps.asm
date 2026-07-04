@@ -9,3 +9,5 @@ default rel
 	vfnmsub321ps xmm5, xmm0, oword [eax+64]
 	vfnmsub321ps ymm2, ymm1, yword [eax+1]
 	vfnmsub321ps ymm4, ymm5, yword [eax+64]
+	vfnmsub321ps xmm7, xmm3, [0x433]
+	vfnmsub321ps ymm0, ymm3, [0x40c]

@@ -8,3 +8,5 @@ default rel
 	packsswb mm2, qword [eax+64]
 	packsswb xmm5, oword [eax+1]
 	packsswb xmm4, oword [eax+64]
+	packsswb mm5, [0xbd3]
+	packsswb xmm4, [0x59b]

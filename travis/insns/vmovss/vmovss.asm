@@ -27,3 +27,7 @@ default rel
 	vmovss xmm1, dword [eax+64]
 	vmovss dword [eax+1], xmm3
 	vmovss dword [eax+64], xmm0
+	vmovss xmm1, [0xb75]
+	vmovss [0x128], xmm7
+	vmovss xmm7, [0x319]
+	vmovss [0x7d1], xmm4

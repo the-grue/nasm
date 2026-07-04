@@ -8,3 +8,5 @@ default rel
 	pshufb mm1, qword [eax+64]
 	pshufb xmm0, oword [eax+1]
 	pshufb xmm7, oword [eax+64]
+	pshufb mm2, [0xa2f]
+	pshufb xmm3, [0x171]

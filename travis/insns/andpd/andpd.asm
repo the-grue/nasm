@@ -4,3 +4,4 @@ default rel
 	andpd xmm10, xmm10
 	andpd xmm3, oword [eax+1]
 	andpd xmm5, oword [eax+64]
+	andpd xmm0, [0x58e]

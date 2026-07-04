@@ -24,3 +24,6 @@ default rel
 	vcvtph2psx ymm1, oword [eax+64]
 	vcvtph2psx zmm0, yword [eax+1]
 	vcvtph2psx zmm6, yword [eax+64]
+	vcvtph2psx xmm4, [0x6d3]
+	vcvtph2psx ymm3, [0x739]
+	vcvtph2psx zmm6, [0xf26]

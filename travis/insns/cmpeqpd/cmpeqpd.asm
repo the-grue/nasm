@@ -4,3 +4,4 @@ default rel
 	cmpeqpd xmm9, xmm13
 	cmpeqpd xmm1, oword [eax+1]
 	cmpeqpd xmm6, oword [eax+64]
+	cmpeqpd xmm3, [0x310]

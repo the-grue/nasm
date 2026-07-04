@@ -26,3 +26,6 @@ default rel
 	vpandq ymm2, ymm5, yword [eax+64]
 	vpandq zmm5, zmm0, zword [eax+1]
 	vpandq zmm6, zmm7, zword [eax+64]
+	vpandq xmm7, xmm3, [0xf1a]
+	vpandq ymm6, ymm1, [0x4d9]
+	vpandq zmm0, zmm3, [0x5bc]

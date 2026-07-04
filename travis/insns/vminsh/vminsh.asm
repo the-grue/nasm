@@ -18,3 +18,5 @@ default rel
 	vminsh xmm2, xmm7, word [eax+64]
 	vminsh xmm5, xmm5, word [eax+1]
 	vminsh xmm1, xmm7, word [eax+64]
+	vminsh xmm2, xmm3, [0x27e]
+	vminsh xmm5, xmm2, [0x62c]

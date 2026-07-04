@@ -35,3 +35,8 @@ default rel
 	vpshufb ymm1, ymm1, yword [eax+64]
 	vpshufb zmm1, zmm6, zword [eax+1]
 	vpshufb zmm7, zmm5, zword [eax+64]
+	vpshufb xmm7, xmm1, [0x5a5]
+	vpshufb ymm0, ymm4, [0xe1b]
+	vpshufb xmm2, xmm3, [0x2dc]
+	vpshufb ymm0, ymm4, [0xf75]
+	vpshufb zmm6, zmm7, [0x256]

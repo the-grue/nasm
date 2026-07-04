@@ -23,3 +23,6 @@ default rel
 	vpermi2q ymm5, ymm5, yword [eax+64]
 	vpermi2q zmm4, zmm7, zword [eax+1]
 	vpermi2q zmm1, zmm4, zword [eax+64]
+	vpermi2q xmm0, xmm0, [0xad5]
+	vpermi2q ymm2, ymm6, [0xd72]
+	vpermi2q zmm2, zmm3, [0xd92]

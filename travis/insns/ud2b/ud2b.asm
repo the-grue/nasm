@@ -19,3 +19,6 @@ default rel
 	ud2b eax, dword [eax+64]
 	ud2b rbx, qword [eax+1]
 	ud2b rdi, qword [eax+64]
+	ud2b bp, [0x812]
+	ud2b ecx, [0xde7]
+	ud2b rcx, [0xbe6]

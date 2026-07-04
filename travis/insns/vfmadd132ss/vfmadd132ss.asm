@@ -14,3 +14,5 @@ default rel
 	vfmadd132ss xmm7, xmm5, dword [eax+64]
 	vfmadd132ss xmm4, xmm4, dword [eax+1]
 	vfmadd132ss xmm5, xmm3, dword [eax+64]
+	vfmadd132ss xmm6, xmm7, [0xf31]
+	vfmadd132ss xmm4, xmm5, [0x10f]

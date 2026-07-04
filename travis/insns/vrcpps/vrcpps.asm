@@ -9,3 +9,5 @@ default rel
 	vrcpps xmm0, oword [eax+64]
 	vrcpps ymm6, yword [eax+1]
 	vrcpps ymm0, yword [eax+64]
+	vrcpps xmm6, [0xe1b]
+	vrcpps ymm1, [0x9a3]

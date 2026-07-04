@@ -27,3 +27,6 @@ default rel
 	vpmovqd oword [eax+64], ymm1
 	vpmovqd yword [eax+1], zmm0
 	vpmovqd yword [eax+64], zmm3
+	vpmovqd [0x371], xmm3
+	vpmovqd [0xed2], ymm5
+	vpmovqd [0x9e9], zmm2

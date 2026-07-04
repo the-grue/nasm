@@ -17,3 +17,6 @@ default rel
 	vprotd xmm6, xmm3, oword [eax+64]
 	vprotd xmm0, oword [eax+1], 0xf1
 	vprotd xmm0, oword [eax+64], 0x72
+	vprotd xmm5, [0xfa5], xmm2
+	vprotd xmm5, xmm6, [0xff6]
+	vprotd xmm3, [0x92f], 0x76

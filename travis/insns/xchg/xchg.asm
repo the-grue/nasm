@@ -31,3 +31,11 @@ default rel
 	xchg dword [eax+64], ecx
 	xchg qword [eax+1], rax
 	xchg qword [eax+64], rsi
+	xchg cl, [0xd42]
+	xchg bx, [0xd0d]
+	xchg esi, [0x4f7]
+	xchg rdi, [0xa95]
+	xchg [0xa4e], bl
+	xchg [0x1f6], si
+	xchg [0x4f1], edx
+	xchg [0x927], rdx

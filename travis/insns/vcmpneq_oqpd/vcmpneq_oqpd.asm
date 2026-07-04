@@ -27,3 +27,8 @@ default rel
 	vcmpneq_oqpd k3, ymm3, yword [eax+64]
 	vcmpneq_oqpd k4, zmm4, zword [eax+1]
 	vcmpneq_oqpd k4, zmm4, zword [eax+64]
+	vcmpneq_oqpd xmm5, xmm4, [0xc9d]
+	vcmpneq_oqpd ymm7, ymm2, [0x506]
+	vcmpneq_oqpd k2, xmm2, [0xbe2]
+	vcmpneq_oqpd k6, ymm1, [0xd95]
+	vcmpneq_oqpd k3, zmm2, [0xd09]

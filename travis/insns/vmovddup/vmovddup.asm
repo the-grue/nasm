@@ -31,3 +31,8 @@ default rel
 	vmovddup ymm1, yword [eax+64]
 	vmovddup zmm4, zword [eax+1]
 	vmovddup zmm2, zword [eax+64]
+	vmovddup xmm0, [0x304]
+	vmovddup ymm3, [0x468]
+	vmovddup xmm7, [0xc7d]
+	vmovddup ymm6, [0xeab]
+	vmovddup zmm1, [0x578]

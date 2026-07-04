@@ -9,3 +9,5 @@ default rel
 	movlps xmm3, qword [eax+64]
 	movlps qword [eax+1], xmm4
 	movlps qword [eax+64], xmm3
+	movlps xmm7, [0x257]
+	movlps [0x79d], xmm1

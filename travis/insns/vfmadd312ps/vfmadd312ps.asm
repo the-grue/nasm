@@ -9,3 +9,5 @@ default rel
 	vfmadd312ps xmm4, xmm0, oword [eax+64]
 	vfmadd312ps ymm0, ymm1, yword [eax+1]
 	vfmadd312ps ymm1, ymm5, yword [eax+64]
+	vfmadd312ps xmm3, xmm6, [0x9b0]
+	vfmadd312ps ymm1, ymm4, [0x957]

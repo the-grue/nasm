@@ -6,7 +6,8 @@
   "source": "ctestno.asm",
   "option": "--bits 64 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/ctestno/",
   "target": [
-   { "output": "ctestno.bin64", "match": "ctestno.bin64.t" }
+   { "output": "ctestno.bin64", "match": "ctestno.bin64.t" },
+   { "stderr": "ctestno.stderr64" }
   ]
  }
 ]

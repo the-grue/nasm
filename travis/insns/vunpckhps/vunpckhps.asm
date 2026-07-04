@@ -35,3 +35,8 @@ default rel
 	vunpckhps ymm1, ymm6, yword [eax+64]
 	vunpckhps zmm7, zmm2, zword [eax+1]
 	vunpckhps zmm0, zmm7, zword [eax+64]
+	vunpckhps xmm4, xmm0, [0x6e6]
+	vunpckhps ymm7, ymm3, [0x539]
+	vunpckhps xmm2, xmm7, [0x8db]
+	vunpckhps ymm2, ymm1, [0xb2c]
+	vunpckhps zmm5, zmm5, [0x4be]

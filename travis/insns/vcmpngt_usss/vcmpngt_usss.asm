@@ -12,3 +12,5 @@ default rel
 	vcmpngt_usss xmm2, xmm3, qword [eax+64]
 	vcmpngt_usss k4, xmm1, dword [eax+1]
 	vcmpngt_usss k5, xmm5, dword [eax+64]
+	vcmpngt_usss xmm2, xmm7, [0x341]
+	vcmpngt_usss k3, xmm6, [0x551]

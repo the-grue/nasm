@@ -17,3 +17,6 @@ default rel
 	hint_nop14 dword [eax+64]
 	hint_nop14 qword [eax+1]
 	hint_nop14 qword [eax+64]
+	hint_nop14 [0x924]
+	hint_nop14 [0xde0]
+	hint_nop14 [0xb50]

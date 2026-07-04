@@ -13,3 +13,4 @@ default rel
 	setngzu r16b
 	setngzu byte [eax+1]
 	setngzu byte [eax+64]
+	setngzu [0x789]

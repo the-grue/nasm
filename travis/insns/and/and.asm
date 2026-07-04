@@ -75,3 +75,33 @@ default rel
 	and esi, dword [eax+64], 0x1ec7c97e
 	and rcx, qword [eax+1], -506441116
 	and rbp, qword [eax+64], 188036657
+	and [0x94f], bl
+	and [0x52f], di
+	and [0xc16], edx
+	and [0x96b], rbx
+	and dl, [0x2b9]
+	and si, [0x3e9]
+	and ebp, [0x2db]
+	and rsi, [0xc67]
+	and [0x518], 0xfa
+	and [0xe1c], 35
+	and [0x186], 0x45e
+	and [0x508], 89
+	and [0x1fe], 0xe782af1
+	and [0xc3a], 17
+	and [0x801], -308360386
+	and al, dl, [0x7ea]
+	and cx, di, [0xbcc]
+	and ebp, edi, [0xcae]
+	and rsi, rcx, [0x705]
+	and bl, [0x8a4], cl
+	and di, [0x526], dx
+	and edx, [0x639], esi
+	and rcx, [0x237], rbp
+	and dx, [0x379], 67
+	and esi, [0x4fa], -114
+	and rsi, [0x255], -7
+	and al, [0x6a1], 0x2c
+	and di, [0xc68], 0x46ed
+	and ebx, [0x29f], 0x6b38db4
+	and rcx, [0x22a], 468030773

@@ -12,3 +12,5 @@ default rel
 	vcmpgess xmm6, xmm3, qword [eax+64]
 	vcmpgess k3, xmm4, dword [eax+1]
 	vcmpgess k4, xmm2, dword [eax+64]
+	vcmpgess xmm1, xmm3, [0xdfc]
+	vcmpgess k4, xmm4, [0x4c0]

@@ -35,3 +35,8 @@ default rel
 	vpmaxsw ymm2, ymm1, yword [eax+64]
 	vpmaxsw zmm2, zmm0, zword [eax+1]
 	vpmaxsw zmm7, zmm0, zword [eax+64]
+	vpmaxsw xmm6, xmm4, [0x43d]
+	vpmaxsw ymm0, ymm5, [0x3c9]
+	vpmaxsw xmm0, xmm6, [0x6e5]
+	vpmaxsw ymm3, ymm4, [0x3d3]
+	vpmaxsw zmm4, zmm1, [0x1cb]

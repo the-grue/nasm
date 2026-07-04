@@ -13,3 +13,4 @@ default rel
 	setnc r20d
 	setnc byte [eax+1]
 	setnc byte [eax+64]
+	setnc [0x7c2]

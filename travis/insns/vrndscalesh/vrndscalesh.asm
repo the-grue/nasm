@@ -8,3 +8,4 @@ default rel
 	vrndscalesh xmm5{k1}{z}, xmm1, word [0x71f], 0x73
 	vrndscalesh xmm6, xmm2, word [eax+1], 0xd1
 	vrndscalesh xmm2, xmm6, word [eax+64], 0x4c
+	vrndscalesh xmm6, xmm3, [0xd14], 0xd3

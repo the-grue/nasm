@@ -5,3 +5,4 @@ default rel
 	vpextrq r28, xmm16, 0xbd
 	vpextrq qword [eax+1], xmm1, 0x53
 	vpextrq qword [eax+64], xmm2, 0x37
+	vpextrq [0x49b], xmm4, 0xd3

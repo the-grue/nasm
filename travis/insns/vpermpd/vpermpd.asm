@@ -34,3 +34,8 @@ default rel
 	vpermpd ymm1, ymm4, yword [eax+64]
 	vpermpd zmm1, zmm3, zword [eax+1]
 	vpermpd zmm4, zmm7, zword [eax+64]
+	vpermpd ymm1, [0x24b], 0xdd
+	vpermpd ymm1, [0xb9b], 0xc9
+	vpermpd zmm1, [0xe01], 0xaf
+	vpermpd ymm5, ymm6, [0xb1a]
+	vpermpd zmm7, zmm6, [0x1e3]

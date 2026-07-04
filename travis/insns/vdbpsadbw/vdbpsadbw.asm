@@ -26,3 +26,6 @@ default rel
 	vdbpsadbw ymm2, ymm6, yword [eax+64], 0xad
 	vdbpsadbw zmm0, zmm1, zword [eax+1], 0x3b
 	vdbpsadbw zmm1, zmm2, zword [eax+64], 0x1e
+	vdbpsadbw xmm7, xmm0, [0xff0], 0x15
+	vdbpsadbw ymm3, ymm5, [0xc82], 0x75
+	vdbpsadbw zmm4, zmm0, [0x16b], 0xf5

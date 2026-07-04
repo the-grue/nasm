@@ -5,3 +5,4 @@ default rel
 	vphaddbq xmm8, xmm8
 	vphaddbq xmm2, oword [eax+1]
 	vphaddbq xmm0, oword [eax+64]
+	vphaddbq xmm6, [0xd87]

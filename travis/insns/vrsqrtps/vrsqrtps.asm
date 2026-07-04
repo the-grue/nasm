@@ -9,3 +9,5 @@ default rel
 	vrsqrtps xmm3, oword [eax+64]
 	vrsqrtps ymm0, yword [eax+1]
 	vrsqrtps ymm1, yword [eax+64]
+	vrsqrtps xmm5, [0xb21]
+	vrsqrtps ymm0, [0x23d]

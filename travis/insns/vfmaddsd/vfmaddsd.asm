@@ -11,3 +11,5 @@ default rel
 	vfmaddsd xmm5, xmm3, qword [eax+64], xmm0
 	vfmaddsd xmm3, xmm4, xmm3, qword [eax+1]
 	vfmaddsd xmm7, xmm0, xmm6, qword [eax+64]
+	vfmaddsd xmm1, xmm1, [0x67c], xmm4
+	vfmaddsd xmm3, xmm0, xmm4, [0x9fe]

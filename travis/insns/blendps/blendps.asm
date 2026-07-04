@@ -4,3 +4,4 @@ default rel
 	blendps xmm14, xmm8, 0xc
 	blendps xmm2, oword [eax+1], 0x2e
 	blendps xmm3, oword [eax+64], 0xb4
+	blendps xmm0, [0x258], 0x29

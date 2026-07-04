@@ -4,3 +4,4 @@ default rel
 	aesdeclast xmm13, xmm9
 	aesdeclast xmm0, oword [eax+1]
 	aesdeclast xmm6, oword [eax+64]
+	aesdeclast xmm2, [0x2d0]

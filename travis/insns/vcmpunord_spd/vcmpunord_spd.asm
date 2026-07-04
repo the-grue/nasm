@@ -27,3 +27,8 @@ default rel
 	vcmpunord_spd k4, ymm2, yword [eax+64]
 	vcmpunord_spd k3, zmm6, zword [eax+1]
 	vcmpunord_spd k6, zmm2, zword [eax+64]
+	vcmpunord_spd xmm7, xmm5, [0xe2c]
+	vcmpunord_spd ymm2, ymm5, [0xc23]
+	vcmpunord_spd k7, xmm2, [0x7f9]
+	vcmpunord_spd k3, ymm0, [0xadc]
+	vcmpunord_spd k2, zmm7, [0xa6f]

@@ -4,3 +4,4 @@ default rel
 	vaeskeygenassist xmm9, xmm9, 0xb0
 	vaeskeygenassist xmm7, oword [eax+1], 0x6a
 	vaeskeygenassist xmm1, oword [eax+64], 0x1e
+	vaeskeygenassist xmm5, [0xbc9], 0xf5

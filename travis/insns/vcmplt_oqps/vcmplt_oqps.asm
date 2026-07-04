@@ -27,3 +27,8 @@ default rel
 	vcmplt_oqps k5, ymm4, yword [eax+64]
 	vcmplt_oqps k1, zmm3, zword [eax+1]
 	vcmplt_oqps k4, zmm5, zword [eax+64]
+	vcmplt_oqps xmm7, xmm2, [0xc1f]
+	vcmplt_oqps ymm2, ymm2, [0x44e]
+	vcmplt_oqps k3, xmm5, [0x649]
+	vcmplt_oqps k1, ymm0, [0x76f]
+	vcmplt_oqps k7, zmm2, [0x3ee]

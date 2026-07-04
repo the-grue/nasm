@@ -13,3 +13,4 @@ default rel
 	setnaezu r17b
 	setnaezu byte [eax+1]
 	setnaezu byte [eax+64]
+	setnaezu [0x72c]

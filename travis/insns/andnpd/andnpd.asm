@@ -4,3 +4,4 @@ default rel
 	andnpd xmm15, xmm13
 	andnpd xmm5, oword [eax+1]
 	andnpd xmm7, oword [eax+64]
+	andnpd xmm2, [0x60c]

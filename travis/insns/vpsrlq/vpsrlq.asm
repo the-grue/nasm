@@ -47,3 +47,11 @@ default rel
 	vpsrlq ymm0, yword [eax+64], 0xbb
 	vpsrlq zmm0, zword [eax+1], 0x96
 	vpsrlq zmm7, zword [eax+64], 0x17
+	vpsrlq xmm7, xmm1, [0x926]
+	vpsrlq ymm4, ymm0, [0xf27]
+	vpsrlq xmm4, xmm5, [0x49c]
+	vpsrlq ymm3, ymm7, [0x5e8]
+	vpsrlq zmm7, zmm2, [0xb2b]
+	vpsrlq xmm7, [0xd5f], 0x4c
+	vpsrlq ymm0, [0x439], 0x72
+	vpsrlq zmm4, [0xaf7], 0xfc

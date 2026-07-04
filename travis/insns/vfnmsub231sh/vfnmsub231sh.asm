@@ -9,3 +9,4 @@ default rel
 	vfnmsub231sh xmm0, xmm2, xmm1, {rn-sae}
 	vfnmsub231sh xmm3, xmm1, word [eax+1]
 	vfnmsub231sh xmm6, xmm5, word [eax+64]
+	vfnmsub231sh xmm5, xmm3, [0x590]

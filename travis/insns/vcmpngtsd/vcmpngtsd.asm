@@ -12,3 +12,5 @@ default rel
 	vcmpngtsd xmm6, xmm2, qword [eax+64]
 	vcmpngtsd k6, xmm2, qword [eax+1]
 	vcmpngtsd k6, xmm5, qword [eax+64]
+	vcmpngtsd xmm3, xmm6, [0xc44]
+	vcmpngtsd k3, xmm4, [0x1ff]

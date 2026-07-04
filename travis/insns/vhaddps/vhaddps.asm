@@ -11,3 +11,5 @@ default rel
 	vhaddps xmm6, xmm1, oword [eax+64]
 	vhaddps ymm7, ymm6, yword [eax+1]
 	vhaddps ymm4, ymm5, yword [eax+64]
+	vhaddps xmm3, xmm2, [0xbe3]
+	vhaddps ymm2, ymm1, [0xa5c]

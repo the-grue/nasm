@@ -32,3 +32,8 @@ default rel
 	vfmsub132ps ymm3, ymm2, yword [eax+64]
 	vfmsub132ps zmm3, zmm7, zword [eax+1]
 	vfmsub132ps zmm4, zmm4, zword [eax+64]
+	vfmsub132ps xmm6, xmm6, [0x48c]
+	vfmsub132ps ymm6, ymm3, [0xfc4]
+	vfmsub132ps xmm5, xmm4, [0x5a4]
+	vfmsub132ps ymm1, ymm7, [0x9c6]
+	vfmsub132ps zmm2, zmm0, [0x4a7]

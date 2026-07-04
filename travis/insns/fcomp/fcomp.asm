@@ -11,3 +11,5 @@ default rel
 	fcomp dword [eax+64]
 	fcomp qword [eax+1]
 	fcomp qword [eax+64]
+	fcomp [0x693]
+	fcomp [0x7f3]

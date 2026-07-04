@@ -8,3 +8,5 @@ default rel
 	punpckhdq mm0, qword [eax+64]
 	punpckhdq xmm1, oword [eax+1]
 	punpckhdq xmm4, oword [eax+64]
+	punpckhdq mm0, [0xfb5]
+	punpckhdq xmm7, [0x37a]

@@ -34,3 +34,8 @@ default rel
 	vpermq ymm3, ymm0, yword [eax+64]
 	vpermq zmm5, zmm6, zword [eax+1]
 	vpermq zmm1, zmm2, zword [eax+64]
+	vpermq ymm3, [0x352], 0xa0
+	vpermq ymm0, [0xc95], 0x42
+	vpermq zmm4, [0xc11], 0x1e
+	vpermq ymm6, ymm6, [0xded]
+	vpermq zmm1, zmm3, [0xe9f]

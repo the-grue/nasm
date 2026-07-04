@@ -9,3 +9,5 @@ default rel
 	sha256rnds2 xmm1, oword [eax+64], xmm0
 	sha256rnds2 xmm3, oword [eax+1]
 	sha256rnds2 xmm0, oword [eax+64]
+	sha256rnds2 xmm1, [0x5d8], xmm0
+	sha256rnds2 xmm3, [0x96c]

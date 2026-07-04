@@ -11,3 +11,5 @@ default rel
 	vpsignw xmm3, xmm3, oword [eax+64]
 	vpsignw ymm4, ymm3, yword [eax+1]
 	vpsignw ymm7, ymm6, yword [eax+64]
+	vpsignw xmm4, xmm6, [0xbc1]
+	vpsignw ymm5, ymm1, [0xf58]

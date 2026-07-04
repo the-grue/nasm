@@ -4,3 +4,4 @@ default rel
 	xorps xmm9, xmm9
 	xorps xmm6, oword [eax+1]
 	xorps xmm6, oword [eax+64]
+	xorps xmm7, [0x883]

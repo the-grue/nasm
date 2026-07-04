@@ -27,3 +27,6 @@ default rel
 	vpmovsdb qword [eax+64], ymm0
 	vpmovsdb oword [eax+1], zmm5
 	vpmovsdb oword [eax+64], zmm4
+	vpmovsdb [0x2e0], xmm0
+	vpmovsdb [0xefe], ymm5
+	vpmovsdb [0xbdb], zmm0

@@ -23,3 +23,6 @@ default rel
 	vrcpph ymm6, yword [eax+64]
 	vrcpph zmm7, zword [eax+1]
 	vrcpph zmm3, zword [eax+64]
+	vrcpph xmm0, [0x685]
+	vrcpph ymm3, [0x9f0]
+	vrcpph zmm3, [0xa2e]

@@ -27,3 +27,8 @@ default rel
 	vcmpord_qpd k4, ymm1, yword [eax+64]
 	vcmpord_qpd k2, zmm7, zword [eax+1]
 	vcmpord_qpd k4, zmm3, zword [eax+64]
+	vcmpord_qpd xmm3, xmm7, [0x173]
+	vcmpord_qpd ymm7, ymm7, [0x283]
+	vcmpord_qpd k4, xmm7, [0xfd4]
+	vcmpord_qpd k5, ymm4, [0x527]
+	vcmpord_qpd k6, zmm7, [0x44d]

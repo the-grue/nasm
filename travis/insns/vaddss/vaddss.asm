@@ -16,3 +16,5 @@ default rel
 	vaddss xmm1, xmm2, dword [eax+64]
 	vaddss xmm1, xmm6, dword [eax+1]
 	vaddss xmm2, xmm7, dword [eax+64]
+	vaddss xmm2, xmm6, [0x396]
+	vaddss xmm0, xmm2, [0x3b6]

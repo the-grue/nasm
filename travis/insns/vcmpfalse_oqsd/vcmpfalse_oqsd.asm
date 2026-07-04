@@ -12,3 +12,5 @@ default rel
 	vcmpfalse_oqsd xmm2, xmm6, qword [eax+64]
 	vcmpfalse_oqsd k1, xmm2, qword [eax+1]
 	vcmpfalse_oqsd k4, xmm3, qword [eax+64]
+	vcmpfalse_oqsd xmm3, xmm0, [0x9c7]
+	vcmpfalse_oqsd k7, xmm0, [0x8c5]

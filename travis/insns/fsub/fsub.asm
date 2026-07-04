@@ -11,3 +11,5 @@ default rel
 	fsub dword [eax+64]
 	fsub qword [eax+1]
 	fsub qword [eax+64]
+	fsub [0xd22]
+	fsub [0x174]

@@ -11,3 +11,5 @@ default rel
 	fdiv dword [eax+64]
 	fdiv qword [eax+1]
 	fdiv qword [eax+64]
+	fdiv [0x129]
+	fdiv [0xb24]

@@ -13,3 +13,4 @@ default rel
 	setnlzu r16b
 	setnlzu byte [eax+1]
 	setnlzu byte [eax+64]
+	setnlzu [0xe4e]

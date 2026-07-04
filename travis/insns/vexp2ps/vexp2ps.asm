@@ -8,3 +8,4 @@ default rel
 	vexp2ps zmm6, zmm5, {sae}
 	vexp2ps zmm1, zword [eax+1]
 	vexp2ps zmm4, zword [eax+64]
+	vexp2ps zmm0, [0x61f]

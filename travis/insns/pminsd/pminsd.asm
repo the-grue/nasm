@@ -4,3 +4,4 @@ default rel
 	pminsd xmm10, xmm15
 	pminsd xmm5, oword [eax+1]
 	pminsd xmm6, oword [eax+64]
+	pminsd xmm7, [0x89e]

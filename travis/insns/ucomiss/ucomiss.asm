@@ -4,3 +4,4 @@ default rel
 	ucomiss xmm15, xmm14
 	ucomiss xmm3, dword [eax+1]
 	ucomiss xmm1, dword [eax+64]
+	ucomiss xmm5, [0x35d]

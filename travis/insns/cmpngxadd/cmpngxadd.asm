@@ -11,3 +11,5 @@ default rel
 	cmpngxadd dword [eax+64], ecx, ebx
 	cmpngxadd qword [eax+1], rdi, rdx
 	cmpngxadd qword [eax+64], rcx, rcx
+	cmpngxadd [0x474], ebx, edi
+	cmpngxadd [0x25b], rbp, rsi

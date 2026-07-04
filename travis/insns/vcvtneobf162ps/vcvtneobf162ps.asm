@@ -9,3 +9,5 @@ default rel
 	vcvtneobf162ps xmm7, oword [eax+64]
 	vcvtneobf162ps ymm3, yword [eax+1]
 	vcvtneobf162ps ymm5, yword [eax+64]
+	vcvtneobf162ps xmm5, [0xb66]
+	vcvtneobf162ps ymm5, [0x420]

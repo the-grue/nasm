@@ -13,3 +13,4 @@ default rel
 	setne r30d
 	setne byte [eax+1]
 	setne byte [eax+64]
+	setne [0xf64]

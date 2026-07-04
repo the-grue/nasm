@@ -12,3 +12,5 @@ default rel
 	vcmptrue_uqsd xmm2, xmm0, qword [eax+64]
 	vcmptrue_uqsd k1, xmm7, qword [eax+1]
 	vcmptrue_uqsd k4, xmm3, qword [eax+64]
+	vcmptrue_uqsd xmm6, xmm7, [0x114]
+	vcmptrue_uqsd k6, xmm5, [0x4cb]

@@ -35,3 +35,8 @@ default rel
 	vandps ymm6, ymm5, yword [eax+64]
 	vandps zmm4, zmm2, zword [eax+1]
 	vandps zmm1, zmm1, zword [eax+64]
+	vandps xmm6, xmm4, [0x700]
+	vandps ymm5, ymm4, [0xc56]
+	vandps xmm0, xmm0, [0x76b]
+	vandps ymm0, ymm2, [0xa13]
+	vandps zmm2, zmm6, [0x704]

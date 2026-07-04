@@ -11,3 +11,5 @@ default rel
 	vblendpd xmm0, xmm7, oword [eax+64], 0x21
 	vblendpd ymm6, ymm2, yword [eax+1], 0xd7
 	vblendpd ymm5, ymm0, yword [eax+64], 0x31
+	vblendpd xmm1, xmm6, [0x5c7], 0x1f
+	vblendpd ymm5, ymm2, [0xc1f], 0x80

@@ -7,3 +7,4 @@ default rel
 	vgetmantss xmm2{k2}{z}, xmm5, dword [0x717], 0xa7
 	vgetmantss xmm6, xmm5, dword [eax+1], 0x66
 	vgetmantss xmm6, xmm0, dword [eax+64], 0xbf
+	vgetmantss xmm5, xmm3, [0xdc6], 0xea

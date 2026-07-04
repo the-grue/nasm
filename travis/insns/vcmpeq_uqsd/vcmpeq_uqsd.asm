@@ -12,3 +12,5 @@ default rel
 	vcmpeq_uqsd xmm1, xmm2, qword [eax+64]
 	vcmpeq_uqsd k1, xmm6, qword [eax+1]
 	vcmpeq_uqsd k6, xmm4, qword [eax+64]
+	vcmpeq_uqsd xmm7, xmm5, [0x48d]
+	vcmpeq_uqsd k6, xmm6, [0x60c]

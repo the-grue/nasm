@@ -8,3 +8,5 @@ default rel
 	phaddd mm1, qword [eax+64]
 	phaddd xmm6, oword [eax+1]
 	phaddd xmm2, oword [eax+64]
+	phaddd mm1, [0xa96]
+	phaddd xmm1, [0x658]

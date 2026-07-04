@@ -27,3 +27,6 @@ default rel
 	vfmsubadd231ph ymm6, ymm3, yword [eax+64]
 	vfmsubadd231ph zmm3, zmm6, zword [eax+1]
 	vfmsubadd231ph zmm0, zmm6, zword [eax+64]
+	vfmsubadd231ph xmm4, xmm0, [0x1db]
+	vfmsubadd231ph ymm4, ymm3, [0xf49]
+	vfmsubadd231ph zmm3, zmm4, [0x396]

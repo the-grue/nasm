@@ -7,3 +7,5 @@ default rel
 	fidiv dword [eax+64]
 	fidiv word [eax+1]
 	fidiv word [eax+64]
+	fidiv [0x660]
+	fidiv [0x403]

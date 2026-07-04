@@ -27,3 +27,8 @@ default rel
 	vcmpngtps k5, ymm2, yword [eax+64]
 	vcmpngtps k3, zmm0, zword [eax+1]
 	vcmpngtps k2, zmm1, zword [eax+64]
+	vcmpngtps xmm1, xmm0, [0x8b3]
+	vcmpngtps ymm6, ymm7, [0xf31]
+	vcmpngtps k4, xmm3, [0x7ad]
+	vcmpngtps k3, ymm5, [0xabd]
+	vcmpngtps k6, zmm5, [0xf2f]

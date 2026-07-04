@@ -6,7 +6,8 @@
   "source": "ccmpng.asm",
   "option": "--bits 64 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/ccmpng/",
   "target": [
-   { "output": "ccmpng.bin64", "match": "ccmpng.bin64.t" }
+   { "output": "ccmpng.bin64", "match": "ccmpng.bin64.t" },
+   { "stderr": "ccmpng.stderr64" }
   ]
  }
 ]

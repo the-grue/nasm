@@ -31,3 +31,11 @@ default rel
 	ctesta 4, dword [eax+64], 0x26b8ae06
 	ctesta 7, qword [eax+1], -514777320
 	ctesta 13, qword [eax+64], 279081498
+	ctesta 8, [0xa4f], dl
+	ctesta 9, [0xa77], ax
+	ctesta 14, [0x152], ecx
+	ctesta 13, [0x5d0], rbp
+	ctesta 0, [0xd10], 0xd3
+	ctesta 8, [0xe9e], 0xbade
+	ctesta 5, [0xfe1], 0x1f8a3ed8
+	ctesta 4, [0xf82], 307270225

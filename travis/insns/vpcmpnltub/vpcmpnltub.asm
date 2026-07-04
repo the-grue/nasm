@@ -20,3 +20,6 @@ default rel
 	vpcmpnltub k6, ymm4, yword [eax+64]
 	vpcmpnltub k6, zmm5, zword [eax+1]
 	vpcmpnltub k5, zmm7, zword [eax+64]
+	vpcmpnltub k5, xmm0, [0x972]
+	vpcmpnltub k1, ymm1, [0x8b1]
+	vpcmpnltub k5, zmm1, [0xf97]

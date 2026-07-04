@@ -12,3 +12,5 @@ default rel
 	vcmpeq_usss xmm5, xmm7, qword [eax+64]
 	vcmpeq_usss k3, xmm1, dword [eax+1]
 	vcmpeq_usss k7, xmm6, dword [eax+64]
+	vcmpeq_usss xmm6, xmm7, [0x905]
+	vcmpeq_usss k3, xmm4, [0x279]

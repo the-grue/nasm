@@ -36,3 +36,8 @@ default rel
 	vmulps ymm5, ymm5, yword [eax+64]
 	vmulps zmm6, zmm6, zword [eax+1]
 	vmulps zmm0, zmm6, zword [eax+64]
+	vmulps xmm3, xmm7, [0x88d]
+	vmulps ymm7, ymm4, [0xce3]
+	vmulps xmm0, xmm0, [0x3d9]
+	vmulps ymm6, ymm7, [0x92d]
+	vmulps zmm1, zmm3, [0xccb]

@@ -12,3 +12,5 @@ default rel
 	vcmpneq_oqsd xmm4, xmm5, qword [eax+64]
 	vcmpneq_oqsd k4, xmm7, qword [eax+1]
 	vcmpneq_oqsd k1, xmm0, qword [eax+64]
+	vcmpneq_oqsd xmm5, xmm5, [0x540]
+	vcmpneq_oqsd k1, xmm4, [0x3fa]

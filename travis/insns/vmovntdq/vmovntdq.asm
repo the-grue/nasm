@@ -17,3 +17,6 @@ default rel
 	vmovntdq yword [eax+64], ymm6
 	vmovntdq zword [eax+1], zmm2
 	vmovntdq zword [eax+64], zmm0
+	vmovntdq [0x4f0], xmm3
+	vmovntdq [0x5da], ymm7
+	vmovntdq [0xcd6], zmm0

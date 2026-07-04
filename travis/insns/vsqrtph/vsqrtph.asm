@@ -24,3 +24,6 @@ default rel
 	vsqrtph ymm1, yword [eax+64]
 	vsqrtph zmm5, zword [eax+1]
 	vsqrtph zmm0, zword [eax+64]
+	vsqrtph xmm7, [0xe6b]
+	vsqrtph ymm0, [0x98e]
+	vsqrtph zmm6, [0x1d4]

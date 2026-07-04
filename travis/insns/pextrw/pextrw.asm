@@ -13,3 +13,4 @@ default rel
 	pextrw r8d, xmm11, 0x40
 	pextrw word [eax+1], xmm7, 0x9d
 	pextrw word [eax+64], xmm2, 0x78
+	pextrw [0x669], xmm6, 0xdb

@@ -31,3 +31,8 @@ default rel
 	vpmovsxbd ymm7, qword [eax+64]
 	vpmovsxbd zmm3, oword [eax+1]
 	vpmovsxbd zmm6, oword [eax+64]
+	vpmovsxbd xmm2, [0xeed]
+	vpmovsxbd ymm0, [0xa0d]
+	vpmovsxbd xmm1, [0x621]
+	vpmovsxbd ymm6, [0x460]
+	vpmovsxbd zmm6, [0xa2d]

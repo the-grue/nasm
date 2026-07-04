@@ -36,3 +36,8 @@ default rel
 	vsubps ymm6, ymm6, yword [eax+64]
 	vsubps zmm1, zmm0, zword [eax+1]
 	vsubps zmm2, zmm0, zword [eax+64]
+	vsubps xmm5, xmm6, [0x114]
+	vsubps ymm6, ymm6, [0xc5e]
+	vsubps xmm6, xmm7, [0x855]
+	vsubps ymm7, ymm5, [0xfe9]
+	vsubps zmm4, zmm5, [0x9cd]

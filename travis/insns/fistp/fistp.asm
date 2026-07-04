@@ -11,3 +11,6 @@ default rel
 	fistp word [eax+64]
 	fistp qword [eax+1]
 	fistp qword [eax+64]
+	fistp [0x19e]
+	fistp [0x2ef]
+	fistp [0x623]

@@ -23,3 +23,7 @@ default rel
 	idiv dword [eax+64]
 	idiv qword [eax+1]
 	idiv qword [eax+64]
+	idiv [0x416]
+	idiv [0xd14]
+	idiv [0x782]
+	idiv [0x61d]

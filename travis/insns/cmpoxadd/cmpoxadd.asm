@@ -11,3 +11,5 @@ default rel
 	cmpoxadd dword [eax+64], ecx, eax
 	cmpoxadd qword [eax+1], rcx, rcx
 	cmpoxadd qword [eax+64], rdi, rsi
+	cmpoxadd [0x644], eax, eax
+	cmpoxadd [0x985], rdi, rbp

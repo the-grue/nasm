@@ -11,3 +11,5 @@ default rel
 	vaddsubps xmm3, xmm0, oword [eax+64]
 	vaddsubps ymm1, ymm5, yword [eax+1]
 	vaddsubps ymm4, ymm0, yword [eax+64]
+	vaddsubps xmm0, xmm0, [0x9a4]
+	vaddsubps ymm2, ymm4, [0x281]

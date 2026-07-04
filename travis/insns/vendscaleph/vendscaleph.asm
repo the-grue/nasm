@@ -23,3 +23,6 @@ default rel
 	vendscaleph ymm0, yword [eax+64], 0x5f
 	vendscaleph zmm4, zword [eax+1], 0xac
 	vendscaleph zmm1, zword [eax+64], 0x77
+	vendscaleph xmm5, [0xfd7], 0x86
+	vendscaleph ymm4, [0xd74], 0xaf
+	vendscaleph zmm5, [0x5d3], 0xf5

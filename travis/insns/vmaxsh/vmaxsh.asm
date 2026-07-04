@@ -18,3 +18,5 @@ default rel
 	vmaxsh xmm5, xmm5, word [eax+64]
 	vmaxsh xmm5, xmm6, word [eax+1]
 	vmaxsh xmm6, xmm4, word [eax+64]
+	vmaxsh xmm2, xmm2, [0x3b7]
+	vmaxsh xmm0, xmm0, [0xb6d]

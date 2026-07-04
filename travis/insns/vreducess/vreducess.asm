@@ -8,3 +8,4 @@ default rel
 	vreducess xmm2{k6}{z}, xmm2, dword [0x78a], 0x65
 	vreducess xmm3, xmm1, dword [eax+1], 0xc4
 	vreducess xmm3, xmm3, dword [eax+64], 0xf8
+	vreducess xmm4, xmm5, [0xcbf], 0x71

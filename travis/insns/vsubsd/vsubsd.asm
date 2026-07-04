@@ -16,3 +16,5 @@ default rel
 	vsubsd xmm7, xmm6, qword [eax+64]
 	vsubsd xmm6, xmm7, qword [eax+1]
 	vsubsd xmm4, xmm4, qword [eax+64]
+	vsubsd xmm6, xmm4, [0xc8a]
+	vsubsd xmm0, xmm0, [0xef3]

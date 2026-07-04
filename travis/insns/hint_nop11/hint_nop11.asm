@@ -17,3 +17,6 @@ default rel
 	hint_nop11 dword [eax+64]
 	hint_nop11 qword [eax+1]
 	hint_nop11 qword [eax+64]
+	hint_nop11 [0x392]
+	hint_nop11 [0xc65]
+	hint_nop11 [0x1d0]

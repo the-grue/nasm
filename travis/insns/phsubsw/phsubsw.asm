@@ -8,3 +8,5 @@ default rel
 	phsubsw mm6, qword [eax+64]
 	phsubsw xmm6, oword [eax+1]
 	phsubsw xmm6, oword [eax+64]
+	phsubsw mm3, [0xe3b]
+	phsubsw xmm3, [0x36e]

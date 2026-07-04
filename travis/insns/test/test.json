@@ -28,7 +28,8 @@
   "source": "test.asm",
   "option": "--bits 64 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/test/",
   "target": [
-   { "output": "test.bin64", "match": "test.bin64.t" }
+   { "output": "test.bin64", "match": "test.bin64.t" },
+   { "stderr": "test.stderr64" }
   ]
  }
 ]

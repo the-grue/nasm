@@ -19,3 +19,6 @@ default rel
 	movsxw ecx, word [eax+64]
 	movsxw rsi, word [eax+1]
 	movsxw rbp, word [eax+64]
+	movsxw ax, [0x672]
+	movsxw ecx, [0xf58]
+	movsxw rcx, [0x32d]

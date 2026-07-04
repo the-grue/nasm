@@ -17,3 +17,4 @@ default rel
 	vpextrb r26b, xmm21, 0x2f
 	vpextrb byte [eax+1], xmm7, 0x3a
 	vpextrb byte [eax+64], xmm6, 0xd9
+	vpextrb [0xecb], xmm3, 0xed

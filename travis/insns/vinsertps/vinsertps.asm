@@ -6,3 +6,4 @@ default rel
 	vinsertps xmm16, xmm18, xmm19, 0xde
 	vinsertps xmm1, xmm2, dword [eax+1], 0xfd
 	vinsertps xmm1, xmm2, dword [eax+64], 0x4
+	vinsertps xmm5, xmm7, [0x538], 0xa3

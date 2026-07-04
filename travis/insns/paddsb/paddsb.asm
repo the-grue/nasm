@@ -8,3 +8,5 @@ default rel
 	paddsb mm0, qword [eax+64]
 	paddsb xmm4, oword [eax+1]
 	paddsb xmm7, oword [eax+64]
+	paddsb mm0, [0xf8e]
+	paddsb xmm5, [0xb27]

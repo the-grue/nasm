@@ -29,3 +29,6 @@ default rel
 	vbroadcastsd ymm7, qword [eax+64]
 	vbroadcastsd zmm5, qword [eax+1]
 	vbroadcastsd zmm4, qword [eax+64]
+	vbroadcastsd ymm6, [0x152]
+	vbroadcastsd ymm1, [0x172]
+	vbroadcastsd zmm6, [0xfae]

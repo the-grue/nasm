@@ -13,3 +13,4 @@ default rel
 	setgzu r27b
 	setgzu byte [eax+1]
 	setgzu byte [eax+64]
+	setgzu [0x9f9]

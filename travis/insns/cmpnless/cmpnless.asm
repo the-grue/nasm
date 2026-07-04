@@ -4,3 +4,4 @@ default rel
 	cmpnless xmm11, xmm12
 	cmpnless xmm3, dword [eax+1]
 	cmpnless xmm2, dword [eax+64]
+	cmpnless xmm2, [0xeb8]

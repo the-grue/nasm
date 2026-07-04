@@ -31,3 +31,8 @@ default rel
 	vmovsldup ymm3, yword [eax+64]
 	vmovsldup zmm1, zword [eax+1]
 	vmovsldup zmm4, zword [eax+64]
+	vmovsldup xmm3, [0xe53]
+	vmovsldup ymm6, [0xe6a]
+	vmovsldup xmm0, [0x9c8]
+	vmovsldup ymm0, [0x153]
+	vmovsldup zmm2, [0x3b4]

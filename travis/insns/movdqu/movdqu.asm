@@ -9,3 +9,5 @@ default rel
 	movdqu xmm6, oword [eax+64]
 	movdqu oword [eax+1], xmm1
 	movdqu oword [eax+64], xmm4
+	movdqu xmm1, [0xe4e]
+	movdqu [0xc30], xmm4

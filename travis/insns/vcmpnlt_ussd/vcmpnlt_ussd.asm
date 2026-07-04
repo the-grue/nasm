@@ -12,3 +12,5 @@ default rel
 	vcmpnlt_ussd xmm6, xmm0, qword [eax+64]
 	vcmpnlt_ussd k4, xmm6, qword [eax+1]
 	vcmpnlt_ussd k3, xmm3, qword [eax+64]
+	vcmpnlt_ussd xmm5, xmm4, [0x7e4]
+	vcmpnlt_ussd k1, xmm5, [0x112]

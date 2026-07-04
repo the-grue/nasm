@@ -11,3 +11,5 @@ default rel
 	aand dword [eax+64], edi
 	aand qword [eax+1], rdx
 	aand qword [eax+64], rsi
+	aand [0x436], edi
+	aand [0x77b], rdx

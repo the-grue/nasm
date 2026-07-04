@@ -13,3 +13,4 @@ default rel
 	setnb r17d
 	setnb byte [eax+1]
 	setnb byte [eax+64]
+	setnb [0xa10]

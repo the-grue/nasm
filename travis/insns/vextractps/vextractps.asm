@@ -19,3 +19,5 @@ default rel
 	vextractps dword [eax+64], xmm6, 0xe
 	vextractps dword [eax+1], xmm4, 0x2c
 	vextractps dword [eax+64], xmm4, 0x1b
+	vextractps [0x245], xmm2, 0xc5
+	vextractps [0x67b], xmm6, 0xa2

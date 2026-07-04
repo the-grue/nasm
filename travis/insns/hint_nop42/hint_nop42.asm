@@ -17,3 +17,6 @@ default rel
 	hint_nop42 dword [eax+64]
 	hint_nop42 qword [eax+1]
 	hint_nop42 qword [eax+64]
+	hint_nop42 [0x908]
+	hint_nop42 [0x679]
+	hint_nop42 [0xee9]

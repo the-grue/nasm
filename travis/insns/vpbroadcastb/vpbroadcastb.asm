@@ -55,3 +55,8 @@ default rel
 	vpbroadcastb ymm2, byte [eax+64]
 	vpbroadcastb zmm4, byte [eax+1]
 	vpbroadcastb zmm4, byte [eax+64]
+	vpbroadcastb xmm7, [0xa73]
+	vpbroadcastb ymm5, [0xc3e]
+	vpbroadcastb xmm6, [0x447]
+	vpbroadcastb ymm3, [0x1d0]
+	vpbroadcastb zmm3, [0x555]

@@ -9,3 +9,5 @@ default rel
 	blcfill ebp, dword [eax+64]
 	blcfill rsi, qword [eax+1]
 	blcfill rbp, qword [eax+64]
+	blcfill edx, [0x3cc]
+	blcfill rdx, [0x452]

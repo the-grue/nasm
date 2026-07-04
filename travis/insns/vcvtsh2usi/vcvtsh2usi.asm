@@ -13,3 +13,5 @@ default rel
 	vcvtsh2usi eax, word [eax+64]
 	vcvtsh2usi rsi, word [eax+1]
 	vcvtsh2usi rsi, word [eax+64]
+	vcvtsh2usi edi, [0xa2a]
+	vcvtsh2usi rbp, [0x39d]

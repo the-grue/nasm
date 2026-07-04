@@ -4,3 +4,4 @@ default rel
 	vfnmadd123ss xmm11, xmm8, xmm10
 	vfnmadd123ss xmm6, xmm7, dword [eax+1]
 	vfnmadd123ss xmm0, xmm2, dword [eax+64]
+	vfnmadd123ss xmm7, xmm3, [0xa17]

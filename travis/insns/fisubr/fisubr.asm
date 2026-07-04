@@ -7,3 +7,5 @@ default rel
 	fisubr dword [eax+64]
 	fisubr word [eax+1]
 	fisubr word [eax+64]
+	fisubr [0x8c4]
+	fisubr [0x5c2]

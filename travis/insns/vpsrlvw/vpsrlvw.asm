@@ -26,3 +26,6 @@ default rel
 	vpsrlvw ymm0, ymm6, yword [eax+64]
 	vpsrlvw zmm6, zmm7, zword [eax+1]
 	vpsrlvw zmm3, zmm3, zword [eax+64]
+	vpsrlvw xmm0, xmm4, [0x5ff]
+	vpsrlvw ymm6, ymm0, [0x473]
+	vpsrlvw zmm0, zmm2, [0xc34]

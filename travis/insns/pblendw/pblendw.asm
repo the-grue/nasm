@@ -4,3 +4,4 @@ default rel
 	pblendw xmm12, xmm11, 0x18
 	pblendw xmm1, oword [eax+1], 0x30
 	pblendw xmm2, oword [eax+64], 0xa0
+	pblendw xmm3, [0xaed], 0xcc

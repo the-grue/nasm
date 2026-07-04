@@ -9,3 +9,5 @@ default rel
 	blcic eax, dword [eax+64]
 	blcic rdi, qword [eax+1]
 	blcic rbx, qword [eax+64]
+	blcic ebx, [0x42c]
+	blcic rcx, [0xea1]

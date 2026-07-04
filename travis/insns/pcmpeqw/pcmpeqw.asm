@@ -8,3 +8,5 @@ default rel
 	pcmpeqw mm6, qword [eax+64]
 	pcmpeqw xmm3, oword [eax+1]
 	pcmpeqw xmm5, oword [eax+64]
+	pcmpeqw mm3, [0x90d]
+	pcmpeqw xmm7, [0x5e5]

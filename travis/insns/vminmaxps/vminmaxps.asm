@@ -23,3 +23,6 @@ default rel
 	vminmaxps ymm6, ymm3, yword [eax+64], 0xe0
 	vminmaxps zmm0, zmm6, zword [eax+1], 0xee
 	vminmaxps zmm1, zmm6, zword [eax+64], 0xe7
+	vminmaxps xmm0, xmm6, [0xfda], 0xd8
+	vminmaxps ymm7, ymm4, [0x3b4], 0x59
+	vminmaxps zmm1, zmm1, [0xe14], 0x9b

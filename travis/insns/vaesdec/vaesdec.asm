@@ -20,3 +20,6 @@ default rel
 	vaesdec ymm4, ymm7, yword [eax+64]
 	vaesdec zmm0, zmm7, zword [eax+1]
 	vaesdec zmm2, zmm0, zword [eax+64]
+	vaesdec xmm1, xmm7, [0x84d]
+	vaesdec ymm0, ymm6, [0x505]
+	vaesdec zmm0, zmm3, [0x2e3]

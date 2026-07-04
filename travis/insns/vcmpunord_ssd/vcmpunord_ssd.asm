@@ -12,3 +12,5 @@ default rel
 	vcmpunord_ssd xmm5, xmm3, qword [eax+64]
 	vcmpunord_ssd k4, xmm2, qword [eax+1]
 	vcmpunord_ssd k4, xmm3, qword [eax+64]
+	vcmpunord_ssd xmm6, xmm5, [0x99e]
+	vcmpunord_ssd k7, xmm2, [0xe94]

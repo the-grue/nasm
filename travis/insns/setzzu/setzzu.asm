@@ -13,3 +13,4 @@ default rel
 	setzzu r20b
 	setzzu byte [eax+1]
 	setzzu byte [eax+64]
+	setzzu [0xcb3]

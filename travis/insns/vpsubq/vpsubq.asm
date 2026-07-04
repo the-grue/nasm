@@ -35,3 +35,8 @@ default rel
 	vpsubq ymm0, ymm0, yword [eax+64]
 	vpsubq zmm2, zmm7, zword [eax+1]
 	vpsubq zmm5, zmm2, zword [eax+64]
+	vpsubq xmm4, xmm0, [0x94d]
+	vpsubq ymm5, ymm0, [0xb07]
+	vpsubq xmm6, xmm1, [0x204]
+	vpsubq ymm5, ymm6, [0x2d1]
+	vpsubq zmm2, zmm7, [0xc35]

@@ -23,3 +23,6 @@ default rel
 	vpconflictq ymm7, yword [eax+64]
 	vpconflictq zmm5, zword [eax+1]
 	vpconflictq zmm7, zword [eax+64]
+	vpconflictq xmm6, [0x9c9]
+	vpconflictq ymm2, [0x502]
+	vpconflictq zmm2, [0x4ba]

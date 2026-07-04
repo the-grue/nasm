@@ -11,3 +11,5 @@ default rel
 	vpshab xmm7, oword [eax+64], xmm4
 	vpshab xmm7, xmm5, oword [eax+1]
 	vpshab xmm4, xmm0, oword [eax+64]
+	vpshab xmm5, [0xe25], xmm2
+	vpshab xmm2, xmm3, [0x680]

@@ -17,3 +17,6 @@ default rel
 	popcnt esi, dword [eax+64]
 	popcnt rdi, qword [eax+1]
 	popcnt rdi, qword [eax+64]
+	popcnt si, [0xebb]
+	popcnt eax, [0x8fa]
+	popcnt rsi, [0x217]

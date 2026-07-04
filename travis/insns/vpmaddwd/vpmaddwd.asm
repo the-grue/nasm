@@ -35,3 +35,8 @@ default rel
 	vpmaddwd ymm3, ymm2, yword [eax+64]
 	vpmaddwd zmm6, zmm4, zword [eax+1]
 	vpmaddwd zmm0, zmm6, zword [eax+64]
+	vpmaddwd xmm4, xmm4, [0x42f]
+	vpmaddwd ymm7, ymm1, [0xef2]
+	vpmaddwd xmm5, xmm4, [0xaa2]
+	vpmaddwd ymm2, ymm0, [0xbe5]
+	vpmaddwd zmm6, zmm3, [0x66c]

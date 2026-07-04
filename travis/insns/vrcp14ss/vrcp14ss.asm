@@ -8,3 +8,4 @@ default rel
 	vrcp14ss xmm5{k3}{z}, xmm2, xmm0
 	vrcp14ss xmm0, xmm0, dword [eax+1]
 	vrcp14ss xmm7, xmm4, dword [eax+64]
+	vrcp14ss xmm1, xmm4, [0x3ab]

@@ -9,3 +9,4 @@ default rel
 	vdivsh xmm2, xmm3, xmm4, {rd-sae}
 	vdivsh xmm3, xmm4, word [eax+1]
 	vdivsh xmm6, xmm5, word [eax+64]
+	vdivsh xmm5, xmm3, [0x52f]

@@ -27,3 +27,8 @@ default rel
 	vcmptrue_uqps k7, ymm1, yword [eax+64]
 	vcmptrue_uqps k4, zmm1, zword [eax+1]
 	vcmptrue_uqps k7, zmm5, zword [eax+64]
+	vcmptrue_uqps xmm3, xmm1, [0x1b3]
+	vcmptrue_uqps ymm7, ymm0, [0xeb3]
+	vcmptrue_uqps k1, xmm4, [0xee5]
+	vcmptrue_uqps k7, ymm3, [0x6ed]
+	vcmptrue_uqps k6, zmm3, [0xd14]

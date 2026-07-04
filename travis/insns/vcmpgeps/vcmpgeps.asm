@@ -27,3 +27,8 @@ default rel
 	vcmpgeps k1, ymm0, yword [eax+64]
 	vcmpgeps k3, zmm1, zword [eax+1]
 	vcmpgeps k6, zmm7, zword [eax+64]
+	vcmpgeps xmm7, xmm5, [0x800]
+	vcmpgeps ymm4, ymm5, [0xb9b]
+	vcmpgeps k6, xmm6, [0x226]
+	vcmpgeps k2, ymm1, [0xba5]
+	vcmpgeps k4, zmm0, [0x5dd]

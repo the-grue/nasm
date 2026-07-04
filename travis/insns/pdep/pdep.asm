@@ -13,3 +13,5 @@ default rel
 	pdep edi, ebp, dword [eax+64]
 	pdep rbp, rsi, qword [eax+1]
 	pdep rbx, rsi, qword [eax+64]
+	pdep ecx, esi, [0x3f6]
+	pdep rdx, rdi, [0x993]

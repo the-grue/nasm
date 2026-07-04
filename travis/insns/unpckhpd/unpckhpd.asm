@@ -4,3 +4,4 @@ default rel
 	unpckhpd xmm15, xmm10
 	unpckhpd xmm7, oword [eax+1]
 	unpckhpd xmm3, oword [eax+64]
+	unpckhpd xmm6, [0xab6]

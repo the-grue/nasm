@@ -27,3 +27,8 @@ default rel
 	vcmpngeps k1, ymm1, yword [eax+64]
 	vcmpngeps k5, zmm5, zword [eax+1]
 	vcmpngeps k7, zmm7, zword [eax+64]
+	vcmpngeps xmm4, xmm3, [0x166]
+	vcmpngeps ymm5, ymm5, [0x7bc]
+	vcmpngeps k1, xmm7, [0x722]
+	vcmpngeps k5, ymm0, [0xd29]
+	vcmpngeps k1, zmm0, [0x7ee]

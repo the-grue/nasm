@@ -13,3 +13,4 @@ default rel
 	setnz r17d
 	setnz byte [eax+1]
 	setnz byte [eax+64]
+	setnz [0xf2b]

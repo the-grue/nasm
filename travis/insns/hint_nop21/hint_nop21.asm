@@ -17,3 +17,6 @@ default rel
 	hint_nop21 dword [eax+64]
 	hint_nop21 qword [eax+1]
 	hint_nop21 qword [eax+64]
+	hint_nop21 [0x5aa]
+	hint_nop21 [0x81b]
+	hint_nop21 [0x5e2]

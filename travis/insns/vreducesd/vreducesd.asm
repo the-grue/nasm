@@ -8,3 +8,4 @@ default rel
 	vreducesd xmm5{k4}{z}, xmm1, xmm6, 0xbe
 	vreducesd xmm3, xmm6, qword [eax+1], 0x6d
 	vreducesd xmm7, xmm3, qword [eax+64], 0x6f
+	vreducesd xmm3, xmm5, [0x6c3], 0xe

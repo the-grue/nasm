@@ -33,3 +33,12 @@ default rel
 	cfcmovne ebx, edi, dword [eax+64]
 	cfcmovne rbp, rdx, qword [eax+1]
 	cfcmovne rbp, rdi, qword [eax+64]
+	cfcmovne [0x13a], cx
+	cfcmovne [0x5d3], ecx
+	cfcmovne [0x6bf], rdx
+	cfcmovne bp, [0x429]
+	cfcmovne ecx, [0x5e5]
+	cfcmovne rbp, [0x645]
+	cfcmovne ax, bp, [0xfd6]
+	cfcmovne edi, edi, [0xf8e]
+	cfcmovne rbp, rdx, [0x726]

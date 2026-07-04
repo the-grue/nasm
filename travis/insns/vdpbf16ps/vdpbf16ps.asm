@@ -26,3 +26,6 @@ default rel
 	vdpbf16ps ymm5, ymm2, yword [eax+64]
 	vdpbf16ps zmm3, zmm1, zword [eax+1]
 	vdpbf16ps zmm5, zmm3, zword [eax+64]
+	vdpbf16ps xmm7, xmm7, [0x3f5]
+	vdpbf16ps ymm6, ymm7, [0x9e3]
+	vdpbf16ps zmm0, zmm2, [0x5fd]

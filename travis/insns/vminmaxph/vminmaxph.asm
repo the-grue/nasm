@@ -23,3 +23,6 @@ default rel
 	vminmaxph ymm7, ymm0, yword [eax+64], 0x11
 	vminmaxph zmm4, zmm7, zword [eax+1], 0xc6
 	vminmaxph zmm5, zmm1, zword [eax+64], 0xa7
+	vminmaxph xmm7, xmm5, [0x144], 0x44
+	vminmaxph ymm7, ymm0, [0x794], 0xf9
+	vminmaxph zmm1, zmm0, [0xa4e], 0x7c

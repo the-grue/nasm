@@ -8,3 +8,5 @@ default rel
 	por mm6, qword [eax+64]
 	por xmm1, oword [eax+1]
 	por xmm5, oword [eax+64]
+	por mm3, [0x876]
+	por xmm3, [0x833]

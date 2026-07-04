@@ -11,3 +11,5 @@ default rel
 	fadd dword [eax+64]
 	fadd qword [eax+1]
 	fadd qword [eax+64]
+	fadd [0x6ea]
+	fadd [0x5be]

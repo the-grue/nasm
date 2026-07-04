@@ -14,3 +14,5 @@ default rel
 	vfnmadd213sd xmm2, xmm5, qword [eax+64]
 	vfnmadd213sd xmm3, xmm4, qword [eax+1]
 	vfnmadd213sd xmm5, xmm7, qword [eax+64]
+	vfnmadd213sd xmm1, xmm0, [0xcb3]
+	vfnmadd213sd xmm5, xmm4, [0x5cf]

@@ -26,3 +26,6 @@ default rel
 	vpmultishiftqb ymm2, ymm5, yword [eax+64]
 	vpmultishiftqb zmm7, zmm5, zword [eax+1]
 	vpmultishiftqb zmm5, zmm3, zword [eax+64]
+	vpmultishiftqb xmm0, xmm5, [0xb2d]
+	vpmultishiftqb ymm3, ymm5, [0x3fa]
+	vpmultishiftqb zmm3, zmm3, [0x2e4]

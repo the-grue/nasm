@@ -17,3 +17,6 @@ default rel
 	hint_nop53 dword [eax+64]
 	hint_nop53 qword [eax+1]
 	hint_nop53 qword [eax+64]
+	hint_nop53 [0xfd7]
+	hint_nop53 [0xbbe]
+	hint_nop53 [0xf9c]

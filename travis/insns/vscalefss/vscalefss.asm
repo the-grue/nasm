@@ -9,3 +9,4 @@ default rel
 	vscalefss xmm3, xmm1, xmm6, {rd-sae}
 	vscalefss xmm5, xmm1, dword [eax+1]
 	vscalefss xmm0, xmm0, dword [eax+64]
+	vscalefss xmm3, xmm6, [0x481]

@@ -8,3 +8,5 @@ default rel
 	pmaxsw mm6, qword [eax+64]
 	pmaxsw xmm2, oword [eax+1]
 	pmaxsw xmm4, oword [eax+64]
+	pmaxsw mm3, [0x8db]
+	pmaxsw xmm0, [0x7ff]

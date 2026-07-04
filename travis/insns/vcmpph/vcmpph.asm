@@ -23,3 +23,6 @@ default rel
 	vcmpph k1, ymm2, yword [eax+64], 0x79
 	vcmpph k5, zmm4, zword [eax+1], 0xb3
 	vcmpph k7, zmm1, zword [eax+64], 0xab
+	vcmpph k3, xmm5, [0x2f8], 0x4f
+	vcmpph k7, ymm3, [0x490], 0xb6
+	vcmpph k2, zmm1, [0x357], 0x3f

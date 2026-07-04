@@ -7,3 +7,4 @@ default rel
 	vminmaxsh xmm3{k1}{z}, xmm0, word [0xdb9], 0x62
 	vminmaxsh xmm6, xmm4, word [eax+1], 0xb5
 	vminmaxsh xmm7, xmm2, word [eax+64], 0x5
+	vminmaxsh xmm0, xmm3, [0x7e1], 0xed

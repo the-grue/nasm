@@ -4,3 +4,4 @@ default rel
 	pcmpgtq xmm10, xmm11
 	pcmpgtq xmm0, oword [eax+1]
 	pcmpgtq xmm2, oword [eax+64]
+	pcmpgtq xmm0, [0x43c]

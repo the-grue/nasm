@@ -4,3 +4,4 @@ default rel
 	cmpnltss xmm11, xmm14
 	cmpnltss xmm5, dword [eax+1]
 	cmpnltss xmm0, dword [eax+64]
+	cmpnltss xmm2, [0x2ee]

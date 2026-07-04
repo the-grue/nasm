@@ -13,3 +13,4 @@ default rel
 	setnl r23d
 	setnl byte [eax+1]
 	setnl byte [eax+64]
+	setnl [0x489]

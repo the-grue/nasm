@@ -11,3 +11,5 @@ default rel
 	blsmsk ecx, dword [eax+64]
 	blsmsk rbp, qword [eax+1]
 	blsmsk rcx, qword [eax+64]
+	blsmsk eax, [0x871]
+	blsmsk rax, [0xb06]

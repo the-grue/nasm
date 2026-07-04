@@ -19,3 +19,6 @@ default rel
 	ud1 ebx, dword [eax+64]
 	ud1 rax, qword [eax+1]
 	ud1 rbp, qword [eax+64]
+	ud1 cx, [0x37d]
+	ud1 esi, [0xdc2]
+	ud1 rbp, [0x995]

@@ -35,3 +35,8 @@ default rel
 	vpackuswb ymm2, ymm2, yword [eax+64]
 	vpackuswb zmm1, zmm7, zword [eax+1]
 	vpackuswb zmm7, zmm5, zword [eax+64]
+	vpackuswb xmm0, xmm0, [0x6e7]
+	vpackuswb ymm2, ymm7, [0x654]
+	vpackuswb xmm5, xmm1, [0xa7a]
+	vpackuswb ymm1, ymm2, [0x9ad]
+	vpackuswb zmm4, zmm0, [0x2e2]

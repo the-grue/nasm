@@ -36,3 +36,8 @@ default rel
 	vminpd ymm4, ymm3, yword [eax+64]
 	vminpd zmm3, zmm5, zword [eax+1]
 	vminpd zmm6, zmm5, zword [eax+64]
+	vminpd xmm2, xmm5, [0xf6d]
+	vminpd ymm1, ymm2, [0xc73]
+	vminpd xmm6, xmm3, [0xa58]
+	vminpd ymm1, ymm7, [0x225]
+	vminpd zmm3, zmm3, [0x9bb]

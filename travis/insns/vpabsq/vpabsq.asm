@@ -23,3 +23,6 @@ default rel
 	vpabsq ymm2, yword [eax+64]
 	vpabsq zmm1, zword [eax+1]
 	vpabsq zmm6, zword [eax+64]
+	vpabsq xmm5, [0x2e9]
+	vpabsq ymm3, [0x430]
+	vpabsq zmm7, [0xea0]

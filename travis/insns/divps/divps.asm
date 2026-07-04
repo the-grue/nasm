@@ -4,3 +4,4 @@ default rel
 	divps xmm8, xmm15
 	divps xmm7, oword [eax+1]
 	divps xmm4, oword [eax+64]
+	divps xmm0, [0xc2c]

@@ -23,3 +23,5 @@ default rel
 	vextracti32x4 oword [eax+64], ymm3, 0x93
 	vextracti32x4 oword [eax+1], zmm2, 0xbd
 	vextracti32x4 oword [eax+64], zmm3, 0x60
+	vextracti32x4 [0xeab], ymm0, 0xc5
+	vextracti32x4 [0xfb1], zmm1, 0x7d

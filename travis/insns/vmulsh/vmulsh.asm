@@ -9,3 +9,4 @@ default rel
 	vmulsh xmm1, xmm6, xmm6, {rn-sae}
 	vmulsh xmm3, xmm3, word [eax+1]
 	vmulsh xmm6, xmm2, word [eax+64]
+	vmulsh xmm3, xmm1, [0x934]

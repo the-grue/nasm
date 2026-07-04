@@ -26,3 +26,6 @@ default rel
 	vprorq ymm7, yword [eax+64], 0x4a
 	vprorq zmm5, zword [eax+1], 0xc1
 	vprorq zmm0, zword [eax+64], 0x2e
+	vprorq xmm6, [0x317], 0xc7
+	vprorq ymm6, [0xabc], 0x40
+	vprorq zmm6, [0x34f], 0x54

@@ -6,7 +6,8 @@
   "source": "ccmpnz.asm",
   "option": "--bits 64 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/ccmpnz/",
   "target": [
-   { "output": "ccmpnz.bin64", "match": "ccmpnz.bin64.t" }
+   { "output": "ccmpnz.bin64", "match": "ccmpnz.bin64.t" },
+   { "stderr": "ccmpnz.stderr64" }
   ]
  }
 ]

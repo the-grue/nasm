@@ -24,3 +24,6 @@ default rel
 	vgetexpps ymm5, yword [eax+64]
 	vgetexpps zmm3, zword [eax+1]
 	vgetexpps zmm6, zword [eax+64]
+	vgetexpps xmm7, [0xc12]
+	vgetexpps ymm7, [0x3e2]
+	vgetexpps zmm5, [0xf59]

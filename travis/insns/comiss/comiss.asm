@@ -4,3 +4,4 @@ default rel
 	comiss xmm13, xmm11
 	comiss xmm6, dword [eax+1]
 	comiss xmm3, dword [eax+64]
+	comiss xmm3, [0xc85]

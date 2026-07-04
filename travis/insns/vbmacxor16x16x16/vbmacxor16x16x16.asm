@@ -11,3 +11,5 @@ default rel
 	vbmacxor16x16x16 ymm0, ymm5, yword [eax+64]
 	vbmacxor16x16x16 zmm7, zmm2, zword [eax+1]
 	vbmacxor16x16x16 zmm6, zmm1, zword [eax+64]
+	vbmacxor16x16x16 ymm6, ymm0, [0x506]
+	vbmacxor16x16x16 zmm3, zmm0, [0x89e]

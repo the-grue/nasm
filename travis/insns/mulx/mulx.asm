@@ -13,3 +13,5 @@ default rel
 	mulx esi, edi, dword [eax+64]
 	mulx rbx, rdi, qword [eax+1]
 	mulx rbp, rsi, qword [eax+64]
+	mulx ebx, ecx, [0x1d6]
+	mulx rbp, rdx, [0x812]

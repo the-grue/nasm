@@ -17,3 +17,6 @@ default rel
 	hint_nop27 dword [eax+64]
 	hint_nop27 qword [eax+1]
 	hint_nop27 qword [eax+64]
+	hint_nop27 [0xc5d]
+	hint_nop27 [0xf5f]
+	hint_nop27 [0x711]

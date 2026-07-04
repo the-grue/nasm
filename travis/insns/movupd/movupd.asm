@@ -9,3 +9,5 @@ default rel
 	movupd xmm0, oword [eax+64]
 	movupd oword [eax+1], xmm3
 	movupd oword [eax+64], xmm3
+	movupd xmm0, [0x8f7]
+	movupd [0x607], xmm2

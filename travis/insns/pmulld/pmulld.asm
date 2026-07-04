@@ -4,3 +4,4 @@ default rel
 	pmulld xmm12, xmm15
 	pmulld xmm3, oword [eax+1]
 	pmulld xmm6, oword [eax+64]
+	pmulld xmm0, [0xfb3]

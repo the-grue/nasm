@@ -20,3 +20,6 @@ default rel
 	vfpclassph k7, yword [eax+64], 0xf5
 	vfpclassph k7, zword [eax+1], 0xed
 	vfpclassph k1, zword [eax+64], 0x5c
+	vfpclassph k7, [0x272], 0xfa
+	vfpclassph k3, [0x466], 0xc1
+	vfpclassph k2, [0x29d], 0x61

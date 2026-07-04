@@ -12,3 +12,5 @@ default rel
 	vcmpnltsd xmm3, xmm7, qword [eax+64]
 	vcmpnltsd k5, xmm4, qword [eax+1]
 	vcmpnltsd k7, xmm1, qword [eax+64]
+	vcmpnltsd xmm3, xmm7, [0xc70]
+	vcmpnltsd k4, xmm0, [0x2db]

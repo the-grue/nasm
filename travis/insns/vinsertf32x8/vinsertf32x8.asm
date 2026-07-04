@@ -8,3 +8,4 @@ default rel
 	vinsertf32x8 zmm0{k5}{z}, zmm5, ymm2, 0x2f
 	vinsertf32x8 zmm1, zmm6, yword [eax+1], 0x94
 	vinsertf32x8 zmm6, zmm0, yword [eax+64], 0xd
+	vinsertf32x8 zmm0, zmm5, [0xc5a], 0x52

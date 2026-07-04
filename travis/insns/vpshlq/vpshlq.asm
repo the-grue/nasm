@@ -11,3 +11,5 @@ default rel
 	vpshlq xmm2, oword [eax+64], xmm7
 	vpshlq xmm5, xmm4, oword [eax+1]
 	vpshlq xmm4, xmm2, oword [eax+64]
+	vpshlq xmm5, [0x506], xmm3
+	vpshlq xmm7, xmm5, [0xe87]

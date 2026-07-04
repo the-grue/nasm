@@ -23,3 +23,6 @@ default rel
 	vpopcntq ymm6, yword [eax+64]
 	vpopcntq zmm5, zword [eax+1]
 	vpopcntq zmm1, zword [eax+64]
+	vpopcntq xmm3, [0xc18]
+	vpopcntq ymm6, [0x8f0]
+	vpopcntq zmm2, [0x8c4]

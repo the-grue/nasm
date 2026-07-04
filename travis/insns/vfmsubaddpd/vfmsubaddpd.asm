@@ -23,3 +23,7 @@ default rel
 	vfmsubaddpd xmm1, xmm2, xmm0, oword [eax+64]
 	vfmsubaddpd ymm7, ymm0, ymm4, yword [eax+1]
 	vfmsubaddpd ymm4, ymm4, ymm2, yword [eax+64]
+	vfmsubaddpd xmm4, xmm4, [0x54a], xmm4
+	vfmsubaddpd ymm0, ymm1, [0x37a], ymm7
+	vfmsubaddpd xmm7, xmm3, xmm3, [0xf22]
+	vfmsubaddpd ymm6, ymm3, ymm3, [0xf7a]

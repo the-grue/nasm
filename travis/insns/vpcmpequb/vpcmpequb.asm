@@ -20,3 +20,6 @@ default rel
 	vpcmpequb k3, ymm3, yword [eax+64]
 	vpcmpequb k6, zmm3, zword [eax+1]
 	vpcmpequb k1, zmm3, zword [eax+64]
+	vpcmpequb k7, xmm3, [0x392]
+	vpcmpequb k2, ymm2, [0x55d]
+	vpcmpequb k7, zmm4, [0xc5e]

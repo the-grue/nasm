@@ -11,3 +11,5 @@ default rel
 	vpor xmm6, xmm6, oword [eax+64]
 	vpor ymm7, ymm5, yword [eax+1]
 	vpor ymm6, ymm7, yword [eax+64]
+	vpor xmm1, xmm1, [0x66f]
+	vpor ymm4, ymm5, [0x95c]

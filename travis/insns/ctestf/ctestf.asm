@@ -31,3 +31,11 @@ default rel
 	ctestf 5, dword [eax+64], 0x2ace439
 	ctestf 6, qword [eax+1], -134059472
 	ctestf 15, qword [eax+64], 473355415
+	ctestf 12, [0x5bf], al
+	ctestf 9, [0x831], cx
+	ctestf 15, [0x90a], ebp
+	ctestf 8, [0xf03], rbp
+	ctestf 8, [0xf53], 0x61
+	ctestf 12, [0xce0], 0xdd0
+	ctestf 6, [0xf1d], 0xb716fe3
+	ctestf 13, [0xa10], 27245153

@@ -27,3 +27,8 @@ default rel
 	vcmptrue_uspd k2, ymm7, yword [eax+64]
 	vcmptrue_uspd k1, zmm1, zword [eax+1]
 	vcmptrue_uspd k5, zmm3, zword [eax+64]
+	vcmptrue_uspd xmm6, xmm2, [0x319]
+	vcmptrue_uspd ymm0, ymm5, [0xf12]
+	vcmptrue_uspd k2, xmm7, [0xfa3]
+	vcmptrue_uspd k2, ymm4, [0x95d]
+	vcmptrue_uspd k4, zmm5, [0x69f]

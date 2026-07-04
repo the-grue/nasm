@@ -8,3 +8,5 @@ default rel
 	packssdw mm4, qword [eax+64]
 	packssdw xmm6, oword [eax+1]
 	packssdw xmm3, oword [eax+64]
+	packssdw mm3, [0x43c]
+	packssdw xmm3, [0xee2]

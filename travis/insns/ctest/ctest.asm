@@ -31,3 +31,11 @@ default rel
 	ctest 11, dword [eax+64], 0x1d967033
 	ctest 8, qword [eax+1], 189310555
 	ctest 3, qword [eax+64], -524833596
+	ctest 4, [0x74c], cl
+	ctest 14, [0xd2c], si
+	ctest 9, [0xb5c], edx
+	ctest 0, [0x8a4], rbx
+	ctest 0, [0x9dd], 0xb
+	ctest 2, [0x96f], 0x57fa
+	ctest 11, [0xa6c], 0x363caf5e
+	ctest 6, [0x1fd], 318894437

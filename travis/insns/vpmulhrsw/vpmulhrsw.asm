@@ -35,3 +35,8 @@ default rel
 	vpmulhrsw ymm2, ymm2, yword [eax+64]
 	vpmulhrsw zmm4, zmm4, zword [eax+1]
 	vpmulhrsw zmm3, zmm5, zword [eax+64]
+	vpmulhrsw xmm3, xmm5, [0x5e6]
+	vpmulhrsw ymm5, ymm1, [0x60a]
+	vpmulhrsw xmm3, xmm7, [0xf55]
+	vpmulhrsw ymm0, ymm2, [0x3a1]
+	vpmulhrsw zmm7, zmm6, [0xe36]

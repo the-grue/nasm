@@ -23,3 +23,6 @@ default rel
 	vrndscaleph ymm6, yword [eax+64], 0x2a
 	vrndscaleph zmm4, zword [eax+1], 0xdf
 	vrndscaleph zmm5, zword [eax+64], 0xea
+	vrndscaleph xmm7, [0x2de], 0x49
+	vrndscaleph ymm1, [0x8da], 0xa9
+	vrndscaleph zmm3, [0x66f], 0x95

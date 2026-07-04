@@ -17,3 +17,6 @@ default rel
 	movzxb ebp, byte [eax+64]
 	movzxb rdi, byte [eax+1]
 	movzxb rsi, byte [eax+64]
+	movzxb ax, [0x27f]
+	movzxb ebp, [0x318]
+	movzxb rsi, [0x700]

@@ -17,3 +17,4 @@ default rel
 	vpextrw r16w, xmm22, 0x85
 	vpextrw word [eax+1], xmm7, 0x3b
 	vpextrw word [eax+64], xmm2, 0xb0
+	vpextrw [0xde2], xmm5, 0x26

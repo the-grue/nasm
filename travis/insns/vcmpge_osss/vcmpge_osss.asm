@@ -12,3 +12,5 @@ default rel
 	vcmpge_osss xmm5, xmm1, qword [eax+64]
 	vcmpge_osss k7, xmm7, dword [eax+1]
 	vcmpge_osss k1, xmm7, dword [eax+64]
+	vcmpge_osss xmm3, xmm3, [0x4a0]
+	vcmpge_osss k1, xmm3, [0x488]

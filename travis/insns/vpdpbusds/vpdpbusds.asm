@@ -33,3 +33,8 @@ default rel
 	vpdpbusds ymm1, ymm7, yword [eax+64]
 	vpdpbusds zmm5, zmm1, zword [eax+1]
 	vpdpbusds zmm5, zmm4, zword [eax+64]
+	vpdpbusds xmm0, xmm5, [0x4c6]
+	vpdpbusds ymm7, ymm2, [0xfad]
+	vpdpbusds xmm6, xmm0, [0xa8a]
+	vpdpbusds ymm6, ymm3, [0xaee]
+	vpdpbusds zmm3, zmm7, [0x79c]

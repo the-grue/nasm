@@ -17,3 +17,6 @@ default rel
 	hint_nop43 dword [eax+64]
 	hint_nop43 qword [eax+1]
 	hint_nop43 qword [eax+64]
+	hint_nop43 [0xccb]
+	hint_nop43 [0x543]
+	hint_nop43 [0xfef]

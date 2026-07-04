@@ -4,3 +4,4 @@ default rel
 	mulps xmm8, xmm11
 	mulps xmm4, oword [eax+1]
 	mulps xmm5, oword [eax+64]
+	mulps xmm1, [0x85f]

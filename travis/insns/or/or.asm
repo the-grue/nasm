@@ -75,3 +75,33 @@ default rel
 	or ebx, dword [eax+64], 0x39f5d983
 	or rcx, qword [eax+1], -220663921
 	or rsi, qword [eax+64], -288737155
+	or [0x371], al
+	or [0x1af], dx
+	or [0xdde], edi
+	or [0x1d9], rdi
+	or cl, [0xa04]
+	or si, [0xf92]
+	or ebp, [0xa8a]
+	or rdi, [0xc1e]
+	or [0xf77], 0xb3
+	or [0x43c], 25
+	or [0x425], 0xd63f
+	or [0x75b], -117
+	or [0x485], 0xb3f00f4
+	or [0x487], 79
+	or [0x2e6], 32597466
+	or cl, bl, [0xe7c]
+	or bx, si, [0x8d6]
+	or edx, ebx, [0x8d8]
+	or rcx, rax, [0xbcd]
+	or al, [0xc2c], dl
+	or si, [0xe93], cx
+	or ebx, [0x530], ebp
+	or rbx, [0x588], rax
+	or dx, [0x290], -108
+	or esi, [0x80e], -64
+	or rcx, [0xf55], 88
+	or dl, [0xa56], 0xfc
+	or cx, [0x7ca], 0x3aa9
+	or esi, [0x90d], 0xefae976
+	or rsi, [0x278], -409843528

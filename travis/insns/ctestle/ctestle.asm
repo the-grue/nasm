@@ -31,3 +31,11 @@ default rel
 	ctestle 14, dword [eax+64], 0x1060ecac
 	ctestle 12, qword [eax+1], -478784017
 	ctestle 12, qword [eax+64], -45324884
+	ctestle 11, [0xfaf], dl
+	ctestle 9, [0xe31], bx
+	ctestle 3, [0xe98], eax
+	ctestle 8, [0xe3f], rax
+	ctestle 14, [0x97f], 0x15
+	ctestle 4, [0x403], 0x95a1
+	ctestle 5, [0xa88], 0x3972715f
+	ctestle 7, [0x70b], 238658793
