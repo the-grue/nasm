@@ -267,6 +267,39 @@ its plain templates need 64-bit anyway). This is an accepted
 simplification, not a bug: most AVX512 mnemonics have non-decorated
 low-tier lines that keep `narrow_lines` non-empty regardless.
 
+## Modrm-memory disp8/disp32 boundary coverage
+
+`mem_operand()` deliberately emits bare-displacement addressing
+(`[0xNNN]`, no base register) for bit-width portability, which always
+encodes with a disp32 (or disp16 in 16-bit mode) — disp8 forms (or, for
+EVEX, the disp8×N compressed-displacement encoding) are never
+exercised by the ordinary generated lines. Whether a given instruction
+even has a disp8-encodable form, and what the compressed-displacement
+scale factor N is, is instruction-specific (it depends on the EVEX
+tuple type), so rather than computing the exact boundary per
+instruction, every distinct template (again scanned across the
+mnemonic's *entire* template set, for the same "buried variant" reason
+as EVEX decorators) with a modrm-memory-capable operand (`mem*`, `rm*`,
+`xmmrm*`/`ymmrm256`/`zmmrm512`, `mmxrm*` — see `%mem_sizebits`)
+additionally gets two candidate lines using `[eax+1]` and `[eax+64]` in
+place of that operand: `+1` is unambiguously disp8-encodable
+everywhere, and `+64` lands past the disp8 boundary for byte-granular
+encodings while still being a clean multiple of the larger EVEX
+compressed-displacement scales.
+
+`[eax+N]` (rather than a bare displacement, or a bit-width-specific
+base register like `rax`/`eax`/`ax`) is used because it's valid
+addressing syntax at every `--bits` width — 32-bit addressing works in
+16-bit and 64-bit code too via the `0x67` address-size-override prefix,
+confirmed empirically (`mov al,[eax+1]` assembles under `--bits 16`,
+`32`, and `64` alike). This is why these candidates don't need any
+bit-width-specific handling, unlike hireg/apxreg. They're still routed
+through the same staged, cumulative probe as the other "extra" buckets
+(rather than being pushed directly into `@lines`), since a handful of
+instructions may have memory-operand restrictions this generator
+doesn't model (alignment, tuple-type quirks, etc.) and one bad
+candidate line shouldn't cost a mnemonic its pre-existing coverage.
+
 ## Bit-width (16/32/64) handling
 
 Bit-mode support isn't derived from CPU/mode flags in `insns.xda` — the
@@ -337,14 +370,19 @@ the last full run:
   - a handful of exotic AMX-transpose / APX instructions whose full
     operand grammar wasn't targeted (e.g. `T2RPNTLVWZ0*`, `TCONJT*`,
     `TTMMULTF32PS`).
-- Memory/vsib operands only exercise base-register-free addressing
-  forms (see above) — true base+index+scale+disp combinations aren't
-  covered by generated tests.
+- Memory/vsib operands only exercise base-register-free (or, for the
+  disp-boundary lines, `[eax+N]`) addressing forms — true
+  base+index*scale+disp combinations, and non-`eax` base registers,
+  aren't covered by generated tests.
 - Decorator (`{k}`/`{z}`/`{1toN}`/`{sae}`/`{er}`) candidate lines are
   only exercised at `--bits 16/32` in the uncommon case where a
   mnemonic's non-decorated lines are already 64-bit-only (see "Staged,
   cumulative probing" above) — otherwise they're only ever probed at
   `--bits 64`, even though the syntax itself works at any width.
+- Disp8/disp32 boundary coverage uses two fixed offsets (`+1`, `+64`)
+  rather than computing each instruction's actual disp8-encodable range
+  (which depends on its EVEX tuple type for compressed displacement) —
+  a deliberate approximation, not exhaustive boundary-value coverage.
 - Register-span (`rs2`/`rs4`) operands used by multi-register FMA
   instructions (e.g. `V4FMADDPS`) aren't targeted by dedicated coverage.
 - ~70+ distinct operand-type tokens have generator support (see the
@@ -381,3 +419,9 @@ mnemonics gained at least one decorator line), verified by comparing
 per-mnemonic `.json` entry counts between a scratch regeneration and
 the committed `travis/insns/` tree (identical, 6955/6955) before
 committing. `make -j32 travis` continues to pass in ~26s.
+
+Adding modrm-memory disp8/disp32 boundary coverage likewise did not
+change these counts (1987 mnemonics gained at least one `[eax+N]`
+boundary line, verified via the same per-mnemonic `.json` entry-count
+comparison, identical 6955/6955). `make -j32 travis` continues to pass
+in ~26s.
