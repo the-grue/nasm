@@ -150,6 +150,51 @@ operand dropped, so both the full and omitted forms get captured as
 goldens. This is done once per template (not once per `--variants`
 instance) to keep output size growth linear rather than combinatorial.
 
+## High-register-number (`r8`-`r15`, `r16`-`r31`) coverage
+
+Registers numbered 8 and above only exist in 64-bit mode: `r8`-`r15`
+need a REX prefix, and `r16`-`r31` (APX) need REX2/EVEX register-
+extension bits — none of which exist outside 64-bit mode. This applies
+uniformly to GPRs and to vector registers (`xmm`/`ymm`/`zmm` 8-15 and
+16-31). By default the generator only draws from the "low" tier (0-7)
+for its normal instruction lines, which is always valid at every
+`--bits` width.
+
+For every operand-class token whose register pool has a `hireg`
+(8-15) or `apxreg` (16-31) tier — see `gpr_pool()` / `vec_pool()` and
+`%extendable_base` — the generator additionally tries building one
+all-`hireg` and one all-`apxreg` rendition of each eligible template
+(once per template, not once per `--variants` instance, via
+`build_variant_line()`). It doesn't need to consult APX/EVEX iflags to
+decide if this is legal for a given mnemonic: NASM's own template
+matching transparently substitutes an alternate (e.g. APX/EVEX-encoded)
+pattern whenever the operand syntax calls for it, so the generator can
+simply attempt to assemble the candidate and keep whichever combination
+works, using the same "regression test, not correctness oracle"
+philosophy as the rest of the tool.
+
+A handful of mnemonics (mostly `NOAPX`/`NOLONG`-flagged ones, e.g.
+`ARPL`) genuinely can't take extended-register operands at all. To
+avoid letting one bad candidate line cost the whole mnemonic its
+pre-existing 64-bit coverage, a staged-fallback probe tries, in order:
+hireg+apxreg together, hireg alone, apxreg alone, then neither (the
+pre-existing, already-validated behavior, which always succeeds). The
+probe also checks `--bits 16/32` whenever a mnemonic's *only* templates
+require 64-bit-sized registers regardless of number (e.g.
+`URDMSR`/`UWRMSR`, whose sole operands are `reg64`) — in that case the
+"full" body is reused verbatim for every bit width (see below), so a
+hireg/apxreg-only-in-64-bit-mode line would otherwise silently break
+their 16/32-bit coverage too.
+
+This work also fixed a related latent bug: `xmmreg`/`ymmreg`/`zmmreg`
+previously drew uniformly from registers 0-15 for *all* lines, not just
+the register-number-focused ones, but 8-15 needs 64-bit mode too — so a
+perfectly ordinary SSE/AVX mnemonic (e.g. `ADDPD`) could
+non-deterministically lose its 16/32-bit golden whenever the PRNG
+happened to land on register 8 or above for that mnemonic's seed. The
+low/hireg/apxreg tier split fixes this for good, since normal lines now
+only ever draw from the 0-7 "low" pool.
+
 ## Bit-width (16/32/64) handling
 
 Bit-mode support isn't derived from CPU/mode flags in `insns.xda` — the
@@ -231,8 +276,9 @@ the last full run:
   to be skipped.
 
 Extending coverage for any of the above is a matter of adding entries to
-the `%fixed`/`%gen` operand-generator tables or the `@cc_suffixes`
-expansion loop — no changes to the parser or driver loop are needed.
+the `%fixed`/`%gen` operand-generator tables or the shared
+`x86/insns-cc.ph` condition-code table — no changes to the parser or
+driver loop are needed.
 
 ## Validation
 
@@ -243,5 +289,9 @@ tests + `travis/insns/`):
 python3 tools/travis/nasm-t.py --nasm=./nasm --directory=./travis run
 ```
 
-4427 tests total, 4426 PASS, 1 pre-existing SKIP (`time`, an
-intentional/known skip unrelated to this tool), 0 FAIL, 0 ABORT.
+7371 tests total, 7370 PASS, 1 pre-existing SKIP (`time`, an
+intentional/known skip unrelated to this tool), 0 FAIL, 0 ABORT. (Count
+grew substantially from 4427 with this update, both from the new
+hireg/apxreg targets and from previously-silently-dropped 16/32-bit
+coverage being restored by the `xmmreg`/`ymmreg`/`zmmreg` low-tier bug
+fix described above.)
