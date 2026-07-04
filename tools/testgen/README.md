@@ -300,6 +300,44 @@ instructions may have memory-operand restrictions this generator
 doesn't model (alignment, tuple-type quirks, etc.) and one bad
 candidate line shouldn't cost a mnemonic its pre-existing coverage.
 
+## Implicitly-sized memory operand coverage
+
+Operand-type tokens fall into two groups with respect to memory-operand
+sizing: tokens with no size baked into their own name (plain `mem`),
+and tokens whose name already encodes a fixed size (`mem8`/`16`/`32`/
+`64`/`128`/`256`/`512`, `rm8`/`16`/`32`/`64`, `xmmrm8`/`16`/`32`/`64`/
+`128`, `ymmrm256`, `zmmrm512`, `mmxrm`/`mmxrm64` — the same
+`%mem_sizebits` table used for disp-boundary coverage). For the first
+group, `mem_operand($rng, 0)` already omits a size keyword
+unconditionally, so a bare `[0x1234]`-style operand with no `dword`/
+`oword`/etc. prefix was already being generated and exercised before
+this feature existed (confirmed by inspecting already-committed
+`.asm` files for mnemonics like `PDISTIB`/`MOVNTI`, whose sole memory
+operand is untyped `mem`).
+
+The second group is where the actual gap was: the generator always
+attached an explicit size keyword for these tokens, so NASM's
+`SM`-flag-driven implicit-size-inference path — where a memory
+operand's size is inferred from a paired, already-sized operand in the
+same instruction (a `SM0-N`-flagged template, per `x86/iflags.ph`),
+e.g. `ADD reg32,rm32` or `MOVBE reg32,mem32` never actually need a
+`dword` keyword — was never tested.
+
+Rather than parsing and range-expanding the `SM`/`AR` flag families
+from `insns.xda` to determine precisely which operand positions
+support implicit sizing (effectively reimplementing NASM's own
+operand-size-disambiguation logic), `build_implicitsize_line()` takes
+the same probe-and-keep approach as the other coverage buckets: for
+the first operand whose base token has a nonzero `%mem_sizebits`
+entry, it emits a bare (unsized) memory operand instead of the usual
+explicitly-sized one, leaving every other operand as normally
+generated. The candidate line is routed through the shared cumulative
+staged probe (alongside hireg/apxreg/mask/maskz/broadcast/saeer/
+disp-boundary) and is only kept if it actually assembles for that
+specific instruction — so an instruction whose size truly can't be
+inferred (no `SM` flag, ambiguous encoding, etc.) simply doesn't gain
+the line, without risking the rest of its coverage.
+
 ## Bit-width (16/32/64) handling
 
 Bit-mode support isn't derived from CPU/mode flags in `insns.xda` — the
@@ -385,6 +423,10 @@ the last full run:
   a deliberate approximation, not exhaustive boundary-value coverage.
 - Register-span (`rs2`/`rs4`) operands used by multi-register FMA
   instructions (e.g. `V4FMADDPS`) aren't targeted by dedicated coverage.
+- Implicit-size coverage only tries omitting the size keyword on the
+  *first* size-carrying memory operand in a template; templates with
+  multiple independently-sizable memory operands aren't exhaustively
+  covered.
 - ~70+ distinct operand-type tokens have generator support (see the
   `%fixed`/`%gen` tables at the top of the script); any new/renamed
   token introduced by a future `insns.dat` change that isn't in those
@@ -423,5 +465,11 @@ committing. `make -j32 travis` continues to pass in ~26s.
 Adding modrm-memory disp8/disp32 boundary coverage likewise did not
 change these counts (1987 mnemonics gained at least one `[eax+N]`
 boundary line, verified via the same per-mnemonic `.json` entry-count
+comparison, identical 6955/6955). `make -j32 travis` continues to pass
+in ~26s.
+
+Adding implicitly-sized memory operand coverage likewise did not
+change these counts (1922 mnemonics gained at least one implicit-size
+line, verified via the same per-mnemonic `.json` entry-count
 comparison, identical 6955/6955). `make -j32 travis` continues to pass
 in ~26s.
