@@ -1,3 +1,5 @@
 default rel
-	vcomisbf16 xmm13, xmm11
-	vcomisbf16 xmm11, xmm7
+	vcomisbf16 xmm6, xmm5
+	vcomisbf16 xmm5, xmm1
+	vcomisbf16 xmm13, xmm10
+	vcomisbf16 xmm23, xmm21

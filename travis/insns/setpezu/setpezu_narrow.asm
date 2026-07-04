@@ -1,4 +1,4 @@
-	setpezu ebp
+	setpezu edx
 	setpezu ecx
-	setpezu bl
-	setpezu byte [0x567]
+	setpezu byte [0x76b]
+	setpezu al

@@ -1,5 +1,6 @@
 default rel
 	pmulhw mm6, mm1
 	pmulhw mm5, mm1
-	pmulhw xmm2, xmm12
-	pmulhw xmm4, oword [0xed9]
+	pmulhw xmm1, xmm6
+	pmulhw xmm3, oword [0x302]
+	pmulhw xmm10, xmm15

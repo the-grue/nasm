@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPCMPEQD",
+  "id": "vpcmpeqd16",
+  "format": "bin",
+  "source": "vpcmpeqd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpcmpeqd/",
+  "target": [
+   { "output": "vpcmpeqd.bin16", "match": "vpcmpeqd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPCMPEQD",
+  "id": "vpcmpeqd32",
+  "format": "bin",
+  "source": "vpcmpeqd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpcmpeqd/",
+  "target": [
+   { "output": "vpcmpeqd.bin32", "match": "vpcmpeqd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPCMPEQD",
   "id": "vpcmpeqd64",
   "format": "bin",
   "source": "vpcmpeqd.asm",

@@ -1,4 +1,5 @@
 default rel
-	vpmadcswd xmm10, xmm9, xmm5, xmm8
-	vpmadcswd xmm10, xmm5, xmm8
-	vpmadcswd xmm13, xmm5, xmm5, xmm1
+	vpmadcswd xmm5, xmm4, xmm2, xmm4
+	vpmadcswd xmm5, xmm2, xmm4
+	vpmadcswd xmm7, xmm0, oword [0x2f0], xmm6
+	vpmadcswd xmm14, xmm10, xmm10, xmm10

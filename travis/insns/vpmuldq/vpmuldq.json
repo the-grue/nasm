@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPMULDQ",
+  "id": "vpmuldq16",
+  "format": "bin",
+  "source": "vpmuldq_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpmuldq/",
+  "target": [
+   { "output": "vpmuldq.bin16", "match": "vpmuldq.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPMULDQ",
+  "id": "vpmuldq32",
+  "format": "bin",
+  "source": "vpmuldq_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpmuldq/",
+  "target": [
+   { "output": "vpmuldq.bin32", "match": "vpmuldq.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPMULDQ",
   "id": "vpmuldq64",
   "format": "bin",
   "source": "vpmuldq.asm",

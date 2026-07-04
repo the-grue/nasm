@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPERM2I128",
+  "id": "vperm2i12816",
+  "format": "bin",
+  "source": "vperm2i128_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vperm2i128/",
+  "target": [
+   { "output": "vperm2i128.bin16", "match": "vperm2i128.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPERM2I128",
+  "id": "vperm2i12832",
+  "format": "bin",
+  "source": "vperm2i128_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vperm2i128/",
+  "target": [
+   { "output": "vperm2i128.bin32", "match": "vperm2i128.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPERM2I128",
   "id": "vperm2i12864",
   "format": "bin",
   "source": "vperm2i128.asm",

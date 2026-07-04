@@ -1,7 +1,13 @@
 default rel
 	setne byte [0x598]
-	setne bl
-	setne rax
-	setne rax
+	setne al
+	setne rbp
+	setne rbp
 	setne ebp
-	setne ecx
+	setne eax
+	setne r11b
+	setne r10
+	setne r9d
+	setne r22b
+	setne r17
+	setne r30d

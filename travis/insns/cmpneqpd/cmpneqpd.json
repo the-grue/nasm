@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for CMPNEQPD",
+  "id": "cmpneqpd16",
+  "format": "bin",
+  "source": "cmpneqpd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/cmpneqpd/",
+  "target": [
+   { "output": "cmpneqpd.bin16", "match": "cmpneqpd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for CMPNEQPD",
+  "id": "cmpneqpd32",
+  "format": "bin",
+  "source": "cmpneqpd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/cmpneqpd/",
+  "target": [
+   { "output": "cmpneqpd.bin32", "match": "cmpneqpd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for CMPNEQPD",
   "id": "cmpneqpd64",
   "format": "bin",
   "source": "cmpneqpd.asm",

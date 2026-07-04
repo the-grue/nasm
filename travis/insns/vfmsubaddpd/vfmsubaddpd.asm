@@ -1,13 +1,17 @@
 default rel
-	vfmsubaddpd xmm9, xmm0, xmm5, xmm10
-	vfmsubaddpd xmm9, xmm5, xmm10
-	vfmsubaddpd xmm5, xmm13, xmm15, xmm14
-	vfmsubaddpd ymm6, ymm5, ymm14, ymm9
-	vfmsubaddpd ymm6, ymm14, ymm9
-	vfmsubaddpd ymm3, ymm12, ymm9, ymm3
-	vfmsubaddpd xmm10, xmm6, xmm9, xmm8
-	vfmsubaddpd xmm10, xmm9, xmm8
-	vfmsubaddpd xmm14, xmm6, xmm9, xmm8
-	vfmsubaddpd ymm1, ymm1, ymm6, ymm2
-	vfmsubaddpd ymm1, ymm6, ymm2
-	vfmsubaddpd ymm10, ymm7, ymm15, yword [0xba3]
+	vfmsubaddpd xmm4, xmm0, xmm2, xmm5
+	vfmsubaddpd xmm4, xmm2, xmm5
+	vfmsubaddpd xmm7, xmm4, xmm6, xmm0
+	vfmsubaddpd ymm4, ymm1, ymm3, ymm4
+	vfmsubaddpd ymm4, ymm3, ymm4
+	vfmsubaddpd ymm0, ymm3, ymm1, ymm5
+	vfmsubaddpd xmm3, xmm7, xmm7, oword [0x924]
+	vfmsubaddpd xmm3, xmm7, oword [0x924]
+	vfmsubaddpd xmm4, xmm4, xmm1, xmm6
+	vfmsubaddpd ymm4, ymm7, ymm1, yword [0xcc3]
+	vfmsubaddpd ymm4, ymm1, yword [0xcc3]
+	vfmsubaddpd ymm0, ymm6, ymm5, ymm7
+	vfmsubaddpd xmm10, xmm14, xmm11, xmm15
+	vfmsubaddpd ymm11, ymm12, ymm15, ymm11
+	vfmsubaddpd xmm10, xmm11, xmm8, xmm14
+	vfmsubaddpd ymm14, ymm11, ymm14, ymm10

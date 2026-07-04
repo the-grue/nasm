@@ -1,6 +1,6 @@
 	ccmpne 9, byte [0x206], bl
-	ccmpne 14, cl, dl
-	ccmpne 5, word [0xfe2], bx
-	ccmpne 0, bp, di
-	ccmpne 4, dword [0xe30], esi
-	ccmpne 15, ebp, esi
+	ccmpne 15, al, al
+	ccmpne 15, word [0x568], bp
+	ccmpne 13, word [0x1a7], cx
+	ccmpne 8, esi, ebp
+	ccmpne 11, ebp, eax

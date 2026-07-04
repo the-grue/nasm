@@ -1,6 +1,8 @@
 default rel
-	vcmpord_sss xmm7, xmm9, qword [0xe60]
-	vcmpord_sss xmm7, qword [0xe60]
-	vcmpord_sss xmm2, xmm9, xmm8
-	vcmpord_sss k5, xmm5, dword [0xaab]
-	vcmpord_sss k1, xmm15, xmm5
+	vcmpord_sss xmm3, xmm4, qword [0xe60]
+	vcmpord_sss xmm3, qword [0xe60]
+	vcmpord_sss xmm5, xmm5, xmm7
+	vcmpord_sss k1, xmm2, xmm7
+	vcmpord_sss k3, xmm5, xmm3
+	vcmpord_sss xmm9, xmm12, xmm10
+	vcmpord_sss k2, xmm15, xmm11

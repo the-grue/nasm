@@ -1,3 +1,4 @@
 default rel
-	vsha512msg1 ymm13, xmm7
-	vsha512msg1 ymm6, xmm1
+	vsha512msg1 ymm6, xmm3
+	vsha512msg1 ymm4, xmm0
+	vsha512msg1 ymm11, xmm8

@@ -1,0 +1,4 @@
+	pshufd xmm2, xmm4, 0x31
+	pshufd xmm2, xmm7, 0x5e
+	pshufd xmm3, [0x4e6], 0x65
+	pshufd xmm7, [0x3ef], 0x1d

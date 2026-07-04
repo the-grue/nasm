@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for PMULUDQ",
+  "id": "pmuludq16",
+  "format": "bin",
+  "source": "pmuludq_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/pmuludq/",
+  "target": [
+   { "output": "pmuludq.bin16", "match": "pmuludq.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for PMULUDQ",
+  "id": "pmuludq32",
+  "format": "bin",
+  "source": "pmuludq_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/pmuludq/",
+  "target": [
+   { "output": "pmuludq.bin32", "match": "pmuludq.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for PMULUDQ",
   "id": "pmuludq64",
   "format": "bin",
   "source": "pmuludq.asm",

@@ -1,6 +1,6 @@
 	ctest 10, bl, al
-	ctest 15, byte [0x600], dl
-	ctest 10, ax, bx
-	ctest 1, di, bp
-	ctest 11, ebp, ebp
-	ctest 1, eax, ecx
+	ctest 0, al, al
+	ctest 12, word [0xb81], bx
+	ctest 7, dx, dx
+	ctest 10, dword [0x6ea], edx
+	ctest 4, ebp, edi

@@ -1,2 +1,2 @@
-	vcvtsd2usi edi, xmm13
-	vcvtsd2usi edx, qword [0x8b5]
+	vcvtsd2usi edi, xmm6
+	vcvtsd2usi ebp, xmm3

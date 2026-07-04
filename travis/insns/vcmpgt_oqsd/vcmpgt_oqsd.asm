@@ -1,6 +1,8 @@
 default rel
-	vcmpgt_oqsd xmm7, xmm12, qword [0x244]
-	vcmpgt_oqsd xmm7, qword [0x244]
-	vcmpgt_oqsd xmm2, xmm9, xmm11
-	vcmpgt_oqsd k4, xmm1, xmm12
-	vcmpgt_oqsd k2, xmm9, xmm7
+	vcmpgt_oqsd xmm3, xmm6, qword [0x244]
+	vcmpgt_oqsd xmm3, qword [0x244]
+	vcmpgt_oqsd xmm5, xmm6, xmm4
+	vcmpgt_oqsd k1, xmm3, xmm6
+	vcmpgt_oqsd k6, xmm5, xmm1
+	vcmpgt_oqsd xmm9, xmm12, xmm9
+	vcmpgt_oqsd k7, xmm11, xmm10

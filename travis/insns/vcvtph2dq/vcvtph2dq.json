@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VCVTPH2DQ",
+  "id": "vcvtph2dq16",
+  "format": "bin",
+  "source": "vcvtph2dq_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcvtph2dq/",
+  "target": [
+   { "output": "vcvtph2dq.bin16", "match": "vcvtph2dq.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCVTPH2DQ",
+  "id": "vcvtph2dq32",
+  "format": "bin",
+  "source": "vcvtph2dq_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcvtph2dq/",
+  "target": [
+   { "output": "vcvtph2dq.bin32", "match": "vcvtph2dq.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCVTPH2DQ",
   "id": "vcvtph2dq64",
   "format": "bin",
   "source": "vcvtph2dq.asm",

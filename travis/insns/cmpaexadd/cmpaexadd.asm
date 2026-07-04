@@ -1,5 +1,9 @@
 default rel
 	cmpaexadd dword [0x685], ebp, ebp
-	cmpaexadd dword [0xaa7], edi, ebx
-	cmpaexadd qword [0xf06], rsi, rbp
-	cmpaexadd qword [0x2d2], rcx, rbx
+	cmpaexadd dword [0x2d2], ecx, ebx
+	cmpaexadd qword [0x1b2], rax, rax
+	cmpaexadd qword [0x572], rbx, rcx
+	cmpaexadd dword [0xaa7], r14d, r9d
+	cmpaexadd qword [0x452], r9, r10
+	cmpaexadd dword [0xf06], r26d, r30d
+	cmpaexadd qword [0x28c], r17, r27

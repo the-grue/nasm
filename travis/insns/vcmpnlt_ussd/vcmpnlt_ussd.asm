@@ -1,6 +1,8 @@
 default rel
-	vcmpnlt_ussd xmm7, xmm2, xmm13
-	vcmpnlt_ussd xmm7, xmm13
-	vcmpnlt_ussd xmm5, xmm13, xmm13
-	vcmpnlt_ussd k7, xmm4, xmm9
-	vcmpnlt_ussd k4, xmm7, xmm1
+	vcmpnlt_ussd xmm3, xmm1, xmm6
+	vcmpnlt_ussd xmm3, xmm6
+	vcmpnlt_ussd xmm3, xmm4, xmm3
+	vcmpnlt_ussd k4, xmm0, qword [0x6ac]
+	vcmpnlt_ussd k4, xmm4, xmm7
+	vcmpnlt_ussd xmm10, xmm14, xmm10
+	vcmpnlt_ussd k4, xmm15, xmm13

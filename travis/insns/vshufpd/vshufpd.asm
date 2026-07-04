@@ -1,13 +1,21 @@
 default rel
-	vshufpd xmm4, xmm1, xmm2, 0x41
-	vshufpd xmm4, xmm2, 0x41
-	vshufpd xmm3, xmm6, oword [0x52e], 0x45
-	vshufpd ymm5, ymm8, ymm11, 0x1d
-	vshufpd ymm5, ymm11, 0x1d
-	vshufpd ymm5, ymm9, ymm0, 0x5b
-	vshufpd xmm3, xmm13, xmm2, 0x37
-	vshufpd xmm3, xmm2, 0x37
-	vshufpd xmm9, xmm7, oword [0x9ea], 0xd4
-	vshufpd ymm7, ymm4, yword [0x526], 0xbb
-	vshufpd ymm7, yword [0x526], 0xbb
-	vshufpd ymm5, ymm0, ymm9, 0x74
+	vshufpd xmm2, xmm0, xmm1, 0x41
+	vshufpd xmm2, xmm1, 0x41
+	vshufpd xmm5, xmm0, xmm4, 0x68
+	vshufpd ymm0, ymm2, ymm6, 0xa4
+	vshufpd ymm0, ymm6, 0xa4
+	vshufpd ymm2, ymm7, ymm5, 0x56
+	vshufpd xmm0, xmm4, xmm3, 0xa7
+	vshufpd xmm0, xmm3, 0xa7
+	vshufpd xmm3, xmm0, xmm2, 0xc
+	vshufpd ymm4, ymm2, ymm5, 0x3a
+	vshufpd ymm4, ymm5, 0x3a
+	vshufpd ymm2, ymm7, ymm0, 0xe6
+	vshufpd xmm9, xmm11, xmm14, 0x48
+	vshufpd ymm9, ymm9, ymm12, 0x79
+	vshufpd xmm15, xmm15, xmm13, 0x50
+	vshufpd ymm10, ymm11, ymm9, 0xfe
+	vshufpd xmm20, xmm21, xmm24, 0x4
+	vshufpd ymm27, ymm25, ymm29, 0x72
+	vshufpd xmm21, xmm21, xmm20, 0xad
+	vshufpd ymm24, ymm29, ymm25, 0x92

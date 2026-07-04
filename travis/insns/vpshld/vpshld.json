@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPSHLD",
+  "id": "vpshld16",
+  "format": "bin",
+  "source": "vpshld_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpshld/",
+  "target": [
+   { "output": "vpshld.bin16", "match": "vpshld.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPSHLD",
+  "id": "vpshld32",
+  "format": "bin",
+  "source": "vpshld_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpshld/",
+  "target": [
+   { "output": "vpshld.bin32", "match": "vpshld.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPSHLD",
   "id": "vpshld64",
   "format": "bin",
   "source": "vpshld.asm",

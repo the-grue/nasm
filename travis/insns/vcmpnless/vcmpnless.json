@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VCMPNLESS",
+  "id": "vcmpnless16",
+  "format": "bin",
+  "source": "vcmpnless_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcmpnless/",
+  "target": [
+   { "output": "vcmpnless.bin16", "match": "vcmpnless.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCMPNLESS",
+  "id": "vcmpnless32",
+  "format": "bin",
+  "source": "vcmpnless_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcmpnless/",
+  "target": [
+   { "output": "vcmpnless.bin32", "match": "vcmpnless.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCMPNLESS",
   "id": "vcmpnless64",
   "format": "bin",
   "source": "vcmpnless.asm",

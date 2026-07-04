@@ -1,7 +1,13 @@
 default rel
-	vfnmadd213bf16 xmm6, xmm5, xmm1
-	vfnmadd213bf16 xmm13, xmm4, xmm2
-	vfnmadd213bf16 ymm1, ymm13, ymm7
-	vfnmadd213bf16 ymm14, ymm11, ymm12
-	vfnmadd213bf16 zmm2, zmm10, zmm7
-	vfnmadd213bf16 zmm11, zmm10, zword [0xe97]
+	vfnmadd213bf16 xmm3, xmm2, xmm0
+	vfnmadd213bf16 xmm0, xmm3, oword [0xb74]
+	vfnmadd213bf16 ymm4, ymm6, ymm5
+	vfnmadd213bf16 ymm1, ymm3, yword [0xf59]
+	vfnmadd213bf16 zmm5, zmm3, zmm5
+	vfnmadd213bf16 zmm7, zmm1, zword [0xf15]
+	vfnmadd213bf16 xmm14, xmm10, xmm10
+	vfnmadd213bf16 ymm12, ymm11, ymm13
+	vfnmadd213bf16 zmm15, zmm12, zmm8
+	vfnmadd213bf16 xmm18, xmm17, xmm29
+	vfnmadd213bf16 ymm26, ymm30, ymm30
+	vfnmadd213bf16 zmm18, zmm23, zmm31

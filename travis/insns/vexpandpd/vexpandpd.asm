@@ -1,9 +1,17 @@
 default rel
-	vexpandpd xmm1, oword [0x92b]
-	vexpandpd xmm6, oword [0x51f]
-	vexpandpd ymm14, yword [0x2c2]
-	vexpandpd ymm11, yword [0xedb]
-	vexpandpd zmm13, zword [0x778]
-	vexpandpd zmm11, zword [0xeae]
-	vexpandpd xmm7, xmm11
-	vexpandpd xmm4, xmm6
+	vexpandpd xmm0, oword [0x92b]
+	vexpandpd xmm5, oword [0xedb]
+	vexpandpd ymm6, yword [0x778]
+	vexpandpd ymm2, yword [0x728]
+	vexpandpd zmm5, zword [0x538]
+	vexpandpd zmm0, zword [0x677]
+	vexpandpd xmm1, xmm2
+	vexpandpd xmm6, xmm0
+	vexpandpd xmm11, oword [0x51f]
+	vexpandpd ymm13, yword [0xeae]
+	vexpandpd zmm13, zword [0xd75]
+	vexpandpd xmm10, xmm11
+	vexpandpd xmm30, oword [0x2c2]
+	vexpandpd ymm23, yword [0xb8a]
+	vexpandpd zmm25, zword [0xd92]
+	vexpandpd xmm17, xmm18

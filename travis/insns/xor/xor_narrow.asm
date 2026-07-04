@@ -1,6 +1,6 @@
 	xor bl, dl
-	xor bl, bl
-	xor di, ax
-	xor word [0x959], ax
-	xor eax, ebp
-	xor dword [0x347], edx
+	xor byte [0x189], dl
+	xor ax, dx
+	xor bx, ax
+	xor dword [0x854], edi
+	xor ebp, ecx

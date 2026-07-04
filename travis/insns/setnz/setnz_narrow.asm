@@ -1,4 +1,4 @@
 	setnz byte [0x816]
-	setnz bl
-	setnz ebx
-	setnz edx
+	setnz cl
+	setnz ebp
+	setnz esi

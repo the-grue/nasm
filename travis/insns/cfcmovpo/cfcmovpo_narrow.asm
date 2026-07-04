@@ -1,6 +1,6 @@
 	cfcmovpo word [0xafe], cx
+	cfcmovpo cx, ax
+	cfcmovpo ecx, ebx
+	cfcmovpo dword [0x5ce], ebp
+	cfcmovpo bp, dx
 	cfcmovpo bp, si
-	cfcmovpo ecx, ecx
-	cfcmovpo ecx, ecx
-	cfcmovpo cx, word [0x51e]
-	cfcmovpo ax, word [0xd98]

@@ -1,3 +1,4 @@
 default rel
-	addsubpd xmm12, xmm6
-	addsubpd xmm0, xmm15
+	addsubpd xmm6, xmm3
+	addsubpd xmm5, xmm2
+	addsubpd xmm8, xmm12

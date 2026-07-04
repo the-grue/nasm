@@ -1,4 +1,5 @@
 default rel
-	vphadduwd xmm7, oword [0x697]
-	vphadduwd xmm7
-	vphadduwd xmm7, oword [0xee5]
+	vphadduwd xmm3, oword [0x697]
+	vphadduwd xmm3
+	vphadduwd xmm5, xmm7
+	vphadduwd xmm11, xmm14

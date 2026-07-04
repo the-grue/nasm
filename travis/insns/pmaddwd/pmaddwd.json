@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for PMADDWD",
+  "id": "pmaddwd16",
+  "format": "bin",
+  "source": "pmaddwd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/pmaddwd/",
+  "target": [
+   { "output": "pmaddwd.bin16", "match": "pmaddwd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for PMADDWD",
+  "id": "pmaddwd32",
+  "format": "bin",
+  "source": "pmaddwd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/pmaddwd/",
+  "target": [
+   { "output": "pmaddwd.bin32", "match": "pmaddwd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for PMADDWD",
   "id": "pmaddwd64",
   "format": "bin",
   "source": "pmaddwd.asm",

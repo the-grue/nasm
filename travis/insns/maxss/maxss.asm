@@ -1,3 +1,4 @@
 default rel
-	maxss xmm8, dword [0x4ad]
-	maxss xmm10, dword [0xbe0]
+	maxss xmm4, dword [0x4ad]
+	maxss xmm0, dword [0x835]
+	maxss xmm13, xmm14

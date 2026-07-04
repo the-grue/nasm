@@ -1,6 +1,17 @@
 [
  {
   "description": "Pseudorandom test for VSCATTERQPS",
+  "id": "vscatterqps32",
+  "format": "bin",
+  "source": "vscatterqps_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vscatterqps/",
+  "target": [
+   { "output": "vscatterqps.bin32", "match": "vscatterqps.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VSCATTERQPS",
   "id": "vscatterqps64",
   "format": "bin",
   "source": "vscatterqps.asm",

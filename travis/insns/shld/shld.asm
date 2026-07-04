@@ -1,9 +1,17 @@
 default rel
 	shld si, di, 0x19
-	shld word [0x64f], cx, 0x5d
-	shld dword [0x263], ebx, 0x25
-	shld dword [0x413], esi, 0xdc
-	shld rdi, rsi, 0xb5
-	shld qword [0x884], rdi, 0x54
-	shld dx, bx, cl
-	shld si, di, cl
+	shld bx, bp, 0x35
+	shld dword [0xde4], esi, 0xc2
+	shld edx, ebx, 0x11
+	shld rdi, rax, 0xd1
+	shld rbp, rbp, 0x56
+	shld dx, cx, cl
+	shld word [0xe19], bp, cl
+	shld r13w, r10w, 0x57
+	shld r13d, r13d, 0xdc
+	shld r14, r9, 0x65
+	shld r13w, r11w, cl
+	shld r21w, r27w, 0x18
+	shld r24d, r28d, 0x54
+	shld r16, r22, 0xdc
+	shld r20w, r31w, cl

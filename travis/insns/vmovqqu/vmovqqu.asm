@@ -1,5 +1,7 @@
 default rel
-	vmovqqu ymm14, ymm14
-	vmovqqu ymm11, ymm8
-	vmovqqu yword [0x83a], ymm11
+	vmovqqu ymm7, ymm7
+	vmovqqu ymm3, yword [0x3d6]
+	vmovqqu yword [0xe07], ymm6
+	vmovqqu yword [0x37d], ymm3
 	vmovqqu ymm13, ymm13
+	vmovqqu ymm13, ymm10

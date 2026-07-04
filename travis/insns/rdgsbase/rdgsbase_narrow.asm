@@ -1,2 +1,2 @@
 	rdgsbase edi
-	rdgsbase edi
+	rdgsbase edx

@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VCMPGTPS",
+  "id": "vcmpgtps16",
+  "format": "bin",
+  "source": "vcmpgtps_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcmpgtps/",
+  "target": [
+   { "output": "vcmpgtps.bin16", "match": "vcmpgtps.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCMPGTPS",
+  "id": "vcmpgtps32",
+  "format": "bin",
+  "source": "vcmpgtps_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcmpgtps/",
+  "target": [
+   { "output": "vcmpgtps.bin32", "match": "vcmpgtps.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCMPGTPS",
   "id": "vcmpgtps64",
   "format": "bin",
   "source": "vcmpgtps.asm",

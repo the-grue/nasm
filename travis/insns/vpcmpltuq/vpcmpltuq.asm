@@ -1,7 +1,13 @@
 default rel
-	vpcmpltuq k5, xmm1, xmm1
-	vpcmpltuq k4, xmm10, xmm0
-	vpcmpltuq k2, ymm13, ymm1
-	vpcmpltuq k2, ymm8, yword [0x4f0]
-	vpcmpltuq k3, zmm1, zword [0xfdb]
-	vpcmpltuq k5, zmm0, zmm6
+	vpcmpltuq k5, xmm0, xmm0
+	vpcmpltuq k2, xmm0, xmm4
+	vpcmpltuq k7, ymm2, ymm0
+	vpcmpltuq k7, ymm6, ymm3
+	vpcmpltuq k5, zmm6, zmm2
+	vpcmpltuq k6, zmm6, zword [0x7bf]
+	vpcmpltuq k4, xmm13, xmm12
+	vpcmpltuq k6, ymm15, ymm12
+	vpcmpltuq k7, zmm14, zmm11
+	vpcmpltuq k1, xmm20, xmm29
+	vpcmpltuq k1, ymm21, ymm22
+	vpcmpltuq k3, zmm17, zmm26

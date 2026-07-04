@@ -1,6 +1,6 @@
 	ctesto 9, al, al
-	ctesto 2, al, al
-	ctesto 2, word [0xd0a], bp
-	ctesto 1, cx, cx
-	ctesto 6, eax, edx
-	ctesto 1, ebx, esi
+	ctesto 12, byte [0x1f0], cl
+	ctesto 6, dx, bx
+	ctesto 1, di, dx
+	ctesto 14, dword [0xec6], ebp
+	ctesto 8, esi, ecx

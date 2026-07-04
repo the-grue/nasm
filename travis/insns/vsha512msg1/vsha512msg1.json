@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VSHA512MSG1",
+  "id": "vsha512msg116",
+  "format": "bin",
+  "source": "vsha512msg1_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vsha512msg1/",
+  "target": [
+   { "output": "vsha512msg1.bin16", "match": "vsha512msg1.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VSHA512MSG1",
+  "id": "vsha512msg132",
+  "format": "bin",
+  "source": "vsha512msg1_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vsha512msg1/",
+  "target": [
+   { "output": "vsha512msg1.bin32", "match": "vsha512msg1.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VSHA512MSG1",
   "id": "vsha512msg164",
   "format": "bin",
   "source": "vsha512msg1.asm",

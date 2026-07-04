@@ -1,3 +1,4 @@
 default rel
-	pminsd xmm1, xmm6
-	pminsd xmm4, oword [0xe68]
+	pminsd xmm0, xmm3
+	pminsd xmm5, xmm6
+	pminsd xmm10, xmm15

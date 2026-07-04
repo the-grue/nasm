@@ -1,5 +1,7 @@
 default rel
-	pblendvb xmm3, xmm14, xmm0
-	pblendvb xmm9, xmm14, xmm0
-	pblendvb xmm13, xmm8
-	pblendvb xmm12, xmm14
+	pblendvb xmm1, xmm7, xmm0
+	pblendvb xmm1, xmm6, xmm0
+	pblendvb xmm0, oword [0x893]
+	pblendvb xmm1, oword [0x719]
+	pblendvb xmm12, xmm9, xmm0
+	pblendvb xmm10, xmm14

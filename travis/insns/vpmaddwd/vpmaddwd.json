@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPMADDWD",
+  "id": "vpmaddwd16",
+  "format": "bin",
+  "source": "vpmaddwd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpmaddwd/",
+  "target": [
+   { "output": "vpmaddwd.bin16", "match": "vpmaddwd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPMADDWD",
+  "id": "vpmaddwd32",
+  "format": "bin",
+  "source": "vpmaddwd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpmaddwd/",
+  "target": [
+   { "output": "vpmaddwd.bin32", "match": "vpmaddwd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPMADDWD",
   "id": "vpmaddwd64",
   "format": "bin",
   "source": "vpmaddwd.asm",

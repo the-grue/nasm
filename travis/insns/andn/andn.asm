@@ -1,13 +1,17 @@
 default rel
 	andn edx, esi, ebx
 	andn edx, ebx
-	andn ebx, ebp, ebx
-	andn rbx, rdi, rsi
-	andn rbx, rsi
-	andn rdx, rdi, rbp
-	andn k4, k3, k6
-	andn k4, k6
-	andn k3, k7, k1
-	andn k3, k6, k2
-	andn k3, k2
-	andn k7, k7, k6
+	andn ecx, esi, edi
+	andn rcx, rbp, rcx
+	andn rcx, rcx
+	andn rbx, rbp, qword [0xc5c]
+	andn k6, k3, k7
+	andn k6, k7
+	andn k3, k2, k3
+	andn k5, k4, k1
+	andn k5, k1
+	andn k1, k1, k7
+	andn r10d, r15d, r13d
+	andn r14, r10, r15
+	andn r19d, r18d, r28d
+	andn r16, r21, r29

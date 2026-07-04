@@ -1,3 +1,4 @@
 default rel
-	cmpunordss xmm2, xmm14
-	cmpunordss xmm1, xmm15
+	cmpunordss xmm1, xmm7
+	cmpunordss xmm4, xmm6
+	cmpunordss xmm8, xmm9

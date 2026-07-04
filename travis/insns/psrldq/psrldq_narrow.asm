@@ -1,0 +1,2 @@
+	psrldq xmm6, 0x2
+	psrldq xmm0, 0x37

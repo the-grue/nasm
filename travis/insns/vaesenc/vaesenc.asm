@@ -1,10 +1,16 @@
 default rel
-	vaesenc xmm12, xmm8, xmm4
-	vaesenc xmm12, xmm4
-	vaesenc xmm8, xmm7, oword [0x88b]
-	vaesenc ymm1, ymm0, ymm15
-	vaesenc ymm1, ymm15
-	vaesenc ymm9, ymm3, ymm8
-	vaesenc zmm7, zmm0, zmm1
-	vaesenc zmm7, zmm1
-	vaesenc zmm5, zmm3, zmm11
+	vaesenc xmm6, xmm4, xmm2
+	vaesenc xmm6, xmm2
+	vaesenc xmm3, xmm7, xmm1
+	vaesenc ymm1, ymm4, ymm0
+	vaesenc ymm1, ymm0
+	vaesenc ymm5, ymm0, ymm7
+	vaesenc zmm0, zmm4, zmm2
+	vaesenc zmm0, zmm2
+	vaesenc zmm6, zmm1, zmm0
+	vaesenc xmm12, xmm11, xmm15
+	vaesenc ymm9, ymm8, ymm10
+	vaesenc zmm14, zmm15, zmm11
+	vaesenc xmm24, xmm17, xmm16
+	vaesenc ymm19, ymm19, ymm27
+	vaesenc zmm27, zmm31, zmm22

@@ -1,13 +1,17 @@
 default rel
 	bextr ebp, eax, eax
 	bextr ebp, eax
-	bextr esi, dword [0xf2f], edx
-	bextr rax, rdx, rdi
-	bextr rax, rdi
-	bextr rdi, rcx, rbx
-	bextr ebx, ecx, 0x309170d1
-	bextr ebx, 0x309170d1
-	bextr ebx, eax, 0x35347d73
-	bextr rsi, rbp, 0x2b11756b
-	bextr rsi, 0x2b11756b
-	bextr rdi, qword [0x6a1], 0x162e66f4
+	bextr edx, dword [0xc8d], eax
+	bextr rcx, rbx, rbx
+	bextr rcx, rbx
+	bextr rsi, rbp, rsi
+	bextr edi, dword [0x6a1], 0x162e66f4
+	bextr edi, 0x162e66f4
+	bextr edx, dword [0x9ba], 0x32e788d0
+	bextr rbp, rax, 0x8e77e79
+	bextr rbp, 0x8e77e79
+	bextr rbx, qword [0xef0], 0x32faafb5
+	bextr r13d, r14d, r15d
+	bextr r10, r14, r9
+	bextr r8d, r8d, 0x2ca3750d
+	bextr r8, r15, 0x385a9676

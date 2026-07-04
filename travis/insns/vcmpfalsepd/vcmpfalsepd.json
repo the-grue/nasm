@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VCMPFALSEPD",
+  "id": "vcmpfalsepd16",
+  "format": "bin",
+  "source": "vcmpfalsepd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcmpfalsepd/",
+  "target": [
+   { "output": "vcmpfalsepd.bin16", "match": "vcmpfalsepd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCMPFALSEPD",
+  "id": "vcmpfalsepd32",
+  "format": "bin",
+  "source": "vcmpfalsepd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcmpfalsepd/",
+  "target": [
+   { "output": "vcmpfalsepd.bin32", "match": "vcmpfalsepd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCMPFALSEPD",
   "id": "vcmpfalsepd64",
   "format": "bin",
   "source": "vcmpfalsepd.asm",

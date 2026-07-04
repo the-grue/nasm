@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VRANGESD",
+  "id": "vrangesd16",
+  "format": "bin",
+  "source": "vrangesd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vrangesd/",
+  "target": [
+   { "output": "vrangesd.bin16", "match": "vrangesd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VRANGESD",
+  "id": "vrangesd32",
+  "format": "bin",
+  "source": "vrangesd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vrangesd/",
+  "target": [
+   { "output": "vrangesd.bin32", "match": "vrangesd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VRANGESD",
   "id": "vrangesd64",
   "format": "bin",
   "source": "vrangesd.asm",

@@ -3,7 +3,7 @@
   "description": "Pseudorandom test for MOVB",
   "id": "movb16",
   "format": "bin",
-  "source": "movb.asm",
+  "source": "movb_narrow.asm",
   "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/movb/",
   "target": [
    { "output": "movb.bin16", "match": "movb.bin16.t" }
@@ -14,7 +14,7 @@
   "description": "Pseudorandom test for MOVB",
   "id": "movb32",
   "format": "bin",
-  "source": "movb.asm",
+  "source": "movb_narrow.asm",
   "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/movb/",
   "target": [
    { "output": "movb.bin32", "match": "movb.bin32.t" }

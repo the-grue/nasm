@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for ANDPD",
+  "id": "andpd16",
+  "format": "bin",
+  "source": "andpd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/andpd/",
+  "target": [
+   { "output": "andpd.bin16", "match": "andpd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for ANDPD",
+  "id": "andpd32",
+  "format": "bin",
+  "source": "andpd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/andpd/",
+  "target": [
+   { "output": "andpd.bin32", "match": "andpd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for ANDPD",
   "id": "andpd64",
   "format": "bin",
   "source": "andpd.asm",

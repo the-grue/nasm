@@ -1,7 +1,13 @@
 default rel
 	movzxw si, dx
-	movzxw bp, cx
-	movzxw ebp, word [0xf33]
-	movzxw ecx, si
-	movzxw rbx, word [0xbb0]
-	movzxw rcx, word [0xe80]
+	movzxw di, word [0x550]
+	movzxw ebx, bx
+	movzxw ebp, si
+	movzxw rsi, ax
+	movzxw rax, si
+	movzxw r15w, r10w
+	movzxw r15d, r13w
+	movzxw r13, r12w
+	movzxw r21w, r31w
+	movzxw r20d, r28w
+	movzxw r30, r24w

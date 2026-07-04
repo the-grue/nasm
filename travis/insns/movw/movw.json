@@ -3,7 +3,7 @@
   "description": "Pseudorandom test for MOVW",
   "id": "movw16",
   "format": "bin",
-  "source": "movw.asm",
+  "source": "movw_narrow.asm",
   "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/movw/",
   "target": [
    { "output": "movw.bin16", "match": "movw.bin16.t" }
@@ -14,7 +14,7 @@
   "description": "Pseudorandom test for MOVW",
   "id": "movw32",
   "format": "bin",
-  "source": "movw.asm",
+  "source": "movw_narrow.asm",
   "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/movw/",
   "target": [
    { "output": "movw.bin32", "match": "movw.bin32.t" }

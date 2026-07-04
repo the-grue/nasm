@@ -1,7 +1,13 @@
 default rel
 	hint_nop23 bp
-	hint_nop23 word [0xcd5]
-	hint_nop23 esi
+	hint_nop23 si
 	hint_nop23 ebx
-	hint_nop23 rdi
-	hint_nop23 qword [0xaa7]
+	hint_nop23 dword [0xaa7]
+	hint_nop23 rdx
+	hint_nop23 qword [0x949]
+	hint_nop23 r15w
+	hint_nop23 r9d
+	hint_nop23 r11
+	hint_nop23 r28w
+	hint_nop23 r28d
+	hint_nop23 r20

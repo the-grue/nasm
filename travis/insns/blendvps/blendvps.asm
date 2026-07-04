@@ -1,5 +1,7 @@
 default rel
-	blendvps xmm3, xmm13, xmm0
-	blendvps xmm8, xmm1, xmm0
-	blendvps xmm0, oword [0x263]
-	blendvps xmm13, xmm4
+	blendvps xmm1, xmm6, xmm0
+	blendvps xmm7, xmm6, xmm0
+	blendvps xmm1, xmm1
+	blendvps xmm6, xmm0
+	blendvps xmm12, xmm10, xmm0
+	blendvps xmm14, xmm15

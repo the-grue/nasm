@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for SHA1RNDS4",
+  "id": "sha1rnds416",
+  "format": "bin",
+  "source": "sha1rnds4_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/sha1rnds4/",
+  "target": [
+   { "output": "sha1rnds4.bin16", "match": "sha1rnds4.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for SHA1RNDS4",
+  "id": "sha1rnds432",
+  "format": "bin",
+  "source": "sha1rnds4_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/sha1rnds4/",
+  "target": [
+   { "output": "sha1rnds4.bin32", "match": "sha1rnds4.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for SHA1RNDS4",
   "id": "sha1rnds464",
   "format": "bin",
   "source": "sha1rnds4.asm",

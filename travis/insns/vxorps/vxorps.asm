@@ -1,13 +1,21 @@
 default rel
-	vxorps xmm14, xmm2, xmm12
-	vxorps xmm14, xmm12
-	vxorps xmm5, xmm1, xmm8
-	vxorps ymm1, ymm15, yword [0xfaf]
-	vxorps ymm1, yword [0xfaf]
-	vxorps ymm10, ymm13, yword [0x293]
-	vxorps xmm4, xmm1, oword [0x9f0]
-	vxorps xmm4, oword [0x9f0]
-	vxorps xmm6, xmm7, xmm10
-	vxorps ymm13, ymm0, ymm13
-	vxorps ymm13, ymm13
-	vxorps ymm9, ymm14, ymm0
+	vxorps xmm7, xmm1, xmm6
+	vxorps xmm7, xmm6
+	vxorps xmm6, xmm7, xmm6
+	vxorps ymm7, ymm0, ymm0
+	vxorps ymm7, ymm0
+	vxorps ymm6, ymm0, ymm6
+	vxorps xmm4, xmm7, xmm0
+	vxorps xmm4, xmm0
+	vxorps xmm5, xmm3, xmm5
+	vxorps ymm0, ymm4, ymm5
+	vxorps ymm0, ymm5
+	vxorps ymm5, ymm7, ymm0
+	vxorps xmm10, xmm8, xmm12
+	vxorps ymm14, ymm12, ymm11
+	vxorps xmm9, xmm14, xmm12
+	vxorps ymm13, ymm11, ymm15
+	vxorps xmm24, xmm17, xmm31
+	vxorps ymm23, ymm27, ymm26
+	vxorps xmm25, xmm26, xmm16
+	vxorps ymm26, ymm28, ymm21

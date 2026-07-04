@@ -1,10 +1,16 @@
 default rel
-	vmulph xmm13, xmm12, xmm8
-	vmulph xmm13, xmm8
-	vmulph xmm10, xmm6, xmm10
-	vmulph ymm3, ymm14, ymm7
-	vmulph ymm3, ymm7
-	vmulph ymm7, ymm3, ymm10
-	vmulph zmm6, zmm1, zmm13
-	vmulph zmm6, zmm13
-	vmulph zmm0, zmm10, zmm14
+	vmulph xmm6, xmm6, xmm4
+	vmulph xmm6, xmm4
+	vmulph xmm5, xmm3, xmm1
+	vmulph ymm2, ymm5, ymm0
+	vmulph ymm2, ymm0
+	vmulph ymm0, ymm2, ymm1
+	vmulph zmm7, zmm6, zmm6
+	vmulph zmm7, zmm6
+	vmulph zmm3, zmm7, zword [0xf3e]
+	vmulph xmm13, xmm11, xmm12
+	vmulph ymm9, ymm14, ymm8
+	vmulph zmm8, zmm11, zmm8
+	vmulph xmm26, xmm19, xmm30
+	vmulph ymm26, ymm19, ymm30
+	vmulph zmm21, zmm31, zmm17

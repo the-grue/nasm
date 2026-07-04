@@ -1,9 +1,17 @@
 default rel
 	ctestnge 8, dl, al
-	ctestnge 5, cl, bl
-	ctestnge 2, word [0x85e], si
-	ctestnge 1, bx, bx
-	ctestnge 1, dword [0x395], ebx
-	ctestnge 3, esi, edi
-	ctestnge 9, rdx, rbp
-	ctestnge 7, rdi, rdi
+	ctestnge 7, al, al
+	ctestnge 3, ax, bp
+	ctestnge 9, dx, bp
+	ctestnge 7, edi, edi
+	ctestnge 3, dword [0x331], ebp
+	ctestnge 6, rdi, rsi
+	ctestnge 1, rsi, rdi
+	ctestnge 5, r9b, r12b
+	ctestnge 2, r9w, r9w
+	ctestnge 7, r10d, r13d
+	ctestnge 6, r12, r11
+	ctestnge 7, r18b, r28b
+	ctestnge 1, r27w, r27w
+	ctestnge 10, r30d, r17d
+	ctestnge 5, r31, r28

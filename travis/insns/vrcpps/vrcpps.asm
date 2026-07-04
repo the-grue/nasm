@@ -1,5 +1,7 @@
 default rel
-	vrcpps xmm11, xmm11
-	vrcpps xmm15, oword [0x5c8]
-	vrcpps ymm10, ymm13
-	vrcpps ymm14, ymm8
+	vrcpps xmm5, xmm5
+	vrcpps xmm5, oword [0xedd]
+	vrcpps ymm2, ymm2
+	vrcpps ymm1, ymm5
+	vrcpps xmm15, xmm13
+	vrcpps ymm8, ymm12

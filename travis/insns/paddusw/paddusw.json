@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for PADDUSW",
+  "id": "paddusw16",
+  "format": "bin",
+  "source": "paddusw_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/paddusw/",
+  "target": [
+   { "output": "paddusw.bin16", "match": "paddusw.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for PADDUSW",
+  "id": "paddusw32",
+  "format": "bin",
+  "source": "paddusw_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/paddusw/",
+  "target": [
+   { "output": "paddusw.bin32", "match": "paddusw.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for PADDUSW",
   "id": "paddusw64",
   "format": "bin",
   "source": "paddusw.asm",

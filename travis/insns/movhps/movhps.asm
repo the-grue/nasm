@@ -1,5 +1,7 @@
 default rel
-	movhps xmm8, qword [0x22d]
-	movhps xmm9, qword [0x7f2]
-	movhps qword [0xd95], xmm15
-	movhps qword [0x7a9], xmm2
+	movhps xmm4, qword [0x22d]
+	movhps xmm3, qword [0x3b6]
+	movhps qword [0x547], xmm0
+	movhps qword [0xaa8], xmm6
+	movhps xmm12, qword [0x7f2]
+	movhps qword [0x30e], xmm9

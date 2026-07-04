@@ -1,10 +1,16 @@
 default rel
-	vpandnq xmm9, xmm7, xmm7
-	vpandnq xmm9, xmm7
-	vpandnq xmm7, xmm3, xmm8
-	vpandnq ymm6, ymm14, ymm15
-	vpandnq ymm6, ymm15
-	vpandnq ymm13, ymm10, ymm13
-	vpandnq zmm7, zmm9, zmm14
-	vpandnq zmm7, zmm14
-	vpandnq zmm14, zmm14, zmm14
+	vpandnq xmm4, xmm3, xmm3
+	vpandnq xmm4, xmm3
+	vpandnq xmm3, xmm7, oword [0xb4b]
+	vpandnq ymm0, ymm6, ymm4
+	vpandnq ymm0, ymm4
+	vpandnq ymm0, ymm7, ymm4
+	vpandnq zmm6, zmm2, zmm7
+	vpandnq zmm6, zmm7
+	vpandnq zmm7, zmm4, zmm1
+	vpandnq xmm11, xmm9, xmm11
+	vpandnq ymm13, ymm15, ymm15
+	vpandnq zmm8, zmm15, zmm10
+	vpandnq xmm24, xmm22, xmm30
+	vpandnq ymm30, ymm24, ymm30
+	vpandnq zmm17, zmm25, zmm20

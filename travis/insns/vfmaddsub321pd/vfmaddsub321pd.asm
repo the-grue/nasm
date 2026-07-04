@@ -1,5 +1,7 @@
 default rel
-	vfmaddsub321pd xmm9, xmm2, xmm9
-	vfmaddsub321pd xmm0, xmm6, oword [0x28f]
-	vfmaddsub321pd ymm11, ymm5, yword [0x523]
-	vfmaddsub321pd ymm2, ymm6, ymm9
+	vfmaddsub321pd xmm4, xmm1, xmm4
+	vfmaddsub321pd xmm6, xmm2, xmm3
+	vfmaddsub321pd ymm3, ymm4, ymm5
+	vfmaddsub321pd ymm0, ymm5, ymm4
+	vfmaddsub321pd xmm8, xmm11, xmm14
+	vfmaddsub321pd ymm8, ymm15, ymm9

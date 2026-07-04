@@ -1,7 +1,13 @@
 default rel
-	vpcmpnleq k4, xmm9, oword [0xddf]
-	vpcmpnleq k6, xmm9, xmm2
-	vpcmpnleq k5, ymm14, ymm7
-	vpcmpnleq k6, ymm11, ymm8
-	vpcmpnleq k1, zmm1, zmm3
-	vpcmpnleq k7, zmm11, zmm11
+	vpcmpnleq k4, xmm4, oword [0xddf]
+	vpcmpnleq k4, xmm3, oword [0xb94]
+	vpcmpnleq k1, ymm4, ymm0
+	vpcmpnleq k3, ymm5, ymm6
+	vpcmpnleq k2, zmm6, zword [0x525]
+	vpcmpnleq k4, zmm2, zword [0x16c]
+	vpcmpnleq k6, xmm12, xmm10
+	vpcmpnleq k2, ymm9, ymm15
+	vpcmpnleq k7, zmm14, zmm15
+	vpcmpnleq k1, xmm27, xmm30
+	vpcmpnleq k6, ymm18, ymm27
+	vpcmpnleq k3, zmm19, zmm16

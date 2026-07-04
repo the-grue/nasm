@@ -1,4 +1,4 @@
-	setnazu esi
-	setnazu ebx
-	setnazu bl
+	setnazu eax
+	setnazu ecx
+	setnazu byte [0x9cd]
 	setnazu bl

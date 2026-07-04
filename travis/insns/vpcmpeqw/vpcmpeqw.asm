@@ -1,11 +1,15 @@
 default rel
-	vpcmpeqw xmm1, xmm7, xmm5
-	vpcmpeqw xmm1, xmm5
-	vpcmpeqw xmm15, xmm15, xmm0
-	vpcmpeqw ymm1, ymm10, ymm12
-	vpcmpeqw ymm1, ymm12
-	vpcmpeqw ymm6, ymm4, yword [0xa4a]
-	vpcmpeqw k2, xmm13, oword [0xc40]
-	vpcmpeqw k6, xmm2, oword [0x46c]
-	vpcmpeqw k6, ymm9, ymm0
-	vpcmpeqw k3, ymm5, yword [0x83b]
+	vpcmpeqw xmm0, xmm3, xmm2
+	vpcmpeqw xmm0, xmm2
+	vpcmpeqw xmm2, xmm6, xmm2
+	vpcmpeqw ymm7, ymm4, ymm6
+	vpcmpeqw ymm7, ymm6
+	vpcmpeqw ymm6, ymm4, ymm0
+	vpcmpeqw k3, xmm2, oword [0x83b]
+	vpcmpeqw k6, xmm1, oword [0x434]
+	vpcmpeqw k4, ymm7, yword [0x76b]
+	vpcmpeqw k3, ymm4, ymm2
+	vpcmpeqw xmm15, xmm15, xmm8
+	vpcmpeqw ymm13, ymm14, ymm14
+	vpcmpeqw k4, xmm15, xmm13
+	vpcmpeqw k5, ymm8, ymm11

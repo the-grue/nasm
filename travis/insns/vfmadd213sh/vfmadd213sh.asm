@@ -1,4 +1,6 @@
 default rel
-	vfmadd213sh xmm11, xmm11, xmm4
-	vfmadd213sh xmm11, xmm4
-	vfmadd213sh xmm9, xmm5, xmm7
+	vfmadd213sh xmm5, xmm5, xmm2
+	vfmadd213sh xmm5, xmm2
+	vfmadd213sh xmm2, xmm3, xmm0
+	vfmadd213sh xmm12, xmm10, xmm9
+	vfmadd213sh xmm23, xmm29, xmm25

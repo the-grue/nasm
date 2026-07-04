@@ -1,5 +1,9 @@
 default rel
-	vfmadd213ss xmm15, xmm3, dword [0x2bd]
-	vfmadd213ss xmm9, xmm10, dword [0xcff]
-	vfmadd213ss xmm14, xmm4, xmm3
-	vfmadd213ss xmm5, xmm7, xmm4
+	vfmadd213ss xmm7, xmm1, dword [0x2bd]
+	vfmadd213ss xmm4, xmm1, xmm3
+	vfmadd213ss xmm3, xmm2, dword [0x38c]
+	vfmadd213ss xmm7, xmm6, xmm0
+	vfmadd213ss xmm12, xmm13, xmm15
+	vfmadd213ss xmm13, xmm14, xmm8
+	vfmadd213ss xmm28, xmm30, xmm20
+	vfmadd213ss xmm16, xmm16, xmm29

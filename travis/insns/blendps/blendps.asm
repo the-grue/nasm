@@ -1,3 +1,4 @@
 default rel
-	blendps xmm7, oword [0x610], 0x1f
-	blendps xmm12, xmm0, 0xf0
+	blendps xmm3, oword [0x610], 0x1f
+	blendps xmm0, xmm6, 0xfc
+	blendps xmm14, xmm8, 0xc

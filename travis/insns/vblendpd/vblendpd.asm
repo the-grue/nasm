@@ -1,7 +1,9 @@
 default rel
-	vblendpd xmm1, xmm8, xmm4, 0xc6
-	vblendpd xmm1, xmm4, 0xc6
-	vblendpd xmm13, xmm11, oword [0xabf], 0x94
-	vblendpd ymm15, ymm6, ymm6, 0x8f
-	vblendpd ymm15, ymm6, 0x8f
-	vblendpd ymm5, ymm13, yword [0x426], 0x2c
+	vblendpd xmm0, xmm4, xmm2, 0xc6
+	vblendpd xmm0, xmm2, 0xc6
+	vblendpd xmm3, xmm4, xmm6, 0xff
+	vblendpd ymm1, ymm1, ymm5, 0x19
+	vblendpd ymm1, ymm5, 0x19
+	vblendpd ymm2, ymm0, ymm0, 0xb3
+	vblendpd xmm14, xmm13, xmm13, 0xa6
+	vblendpd ymm14, ymm15, ymm10, 0xa

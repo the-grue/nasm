@@ -1,7 +1,11 @@
 default rel
-	vcvtsi2sh xmm1, xmm10, eax
-	vcvtsi2sh xmm1, eax
-	vcvtsi2sh xmm8, xmm8, esi
-	vcvtsi2sh xmm3, xmm6, rbp
-	vcvtsi2sh xmm3, rbp
-	vcvtsi2sh xmm9, xmm1, rdx
+	vcvtsi2sh xmm0, xmm5, eax
+	vcvtsi2sh xmm0, eax
+	vcvtsi2sh xmm1, xmm7, eax
+	vcvtsi2sh xmm1, xmm4, rcx
+	vcvtsi2sh xmm1, rcx
+	vcvtsi2sh xmm5, xmm7, rdx
+	vcvtsi2sh xmm12, xmm12, r9d
+	vcvtsi2sh xmm11, xmm15, r8
+	vcvtsi2sh xmm26, xmm19, r22d
+	vcvtsi2sh xmm18, xmm20, r22

@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VCMPPH",
+  "id": "vcmpph16",
+  "format": "bin",
+  "source": "vcmpph_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcmpph/",
+  "target": [
+   { "output": "vcmpph.bin16", "match": "vcmpph.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCMPPH",
+  "id": "vcmpph32",
+  "format": "bin",
+  "source": "vcmpph_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcmpph/",
+  "target": [
+   { "output": "vcmpph.bin32", "match": "vcmpph.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCMPPH",
   "id": "vcmpph64",
   "format": "bin",
   "source": "vcmpph.asm",

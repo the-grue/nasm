@@ -1,6 +1,6 @@
 	ccmpnle 2, byte [0x810], cl
-	ccmpnle 7, byte [0xf3a], al
-	ccmpnle 13, cx, bp
-	ccmpnle 9, word [0x9b9], dx
-	ccmpnle 4, eax, esi
-	ccmpnle 5, dword [0xbf9], eax
+	ccmpnle 5, byte [0xa07], dl
+	ccmpnle 9, bx, ax
+	ccmpnle 9, word [0x337], dx
+	ccmpnle 9, eax, edx
+	ccmpnle 7, ecx, edi

@@ -3,7 +3,7 @@
   "description": "Pseudorandom test for VMINMAXSD",
   "id": "vminmaxsd16",
   "format": "bin",
-  "source": "vminmaxsd.asm",
+  "source": "vminmaxsd_narrow.asm",
   "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vminmaxsd/",
   "target": [
    { "output": "vminmaxsd.bin16", "match": "vminmaxsd.bin16.t" }
@@ -14,7 +14,7 @@
   "description": "Pseudorandom test for VMINMAXSD",
   "id": "vminmaxsd32",
   "format": "bin",
-  "source": "vminmaxsd.asm",
+  "source": "vminmaxsd_narrow.asm",
   "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vminmaxsd/",
   "target": [
    { "output": "vminmaxsd.bin32", "match": "vminmaxsd.bin32.t" }

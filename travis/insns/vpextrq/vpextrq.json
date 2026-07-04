@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPEXTRQ",
+  "id": "vpextrq16",
+  "format": "bin",
+  "source": "vpextrq_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpextrq/",
+  "target": [
+   { "output": "vpextrq.bin16", "match": "vpextrq.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPEXTRQ",
+  "id": "vpextrq32",
+  "format": "bin",
+  "source": "vpextrq_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpextrq/",
+  "target": [
+   { "output": "vpextrq.bin32", "match": "vpextrq.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPEXTRQ",
   "id": "vpextrq64",
   "format": "bin",
   "source": "vpextrq.asm",

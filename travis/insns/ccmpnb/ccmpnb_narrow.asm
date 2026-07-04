@@ -1,6 +1,6 @@
 	ccmpnb 2, byte [0x683], cl
-	ccmpnb 2, bl, cl
-	ccmpnb 4, bx, ax
-	ccmpnb 10, dx, di
-	ccmpnb 8, edx, ecx
-	ccmpnb 0, ecx, edi
+	ccmpnb 2, cl, cl
+	ccmpnb 7, word [0x8c2], cx
+	ccmpnb 2, dx, bp
+	ccmpnb 8, ecx, ebp
+	ccmpnb 5, dword [0xf3c], ebx

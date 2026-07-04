@@ -1,3 +1,4 @@
 default rel
-	gf2p8affineqb xmm15, oword [0xe74], 0x23
-	gf2p8affineqb xmm14, oword [0xeb5], 0xa
+	gf2p8affineqb xmm7, oword [0xe74], 0x23
+	gf2p8affineqb xmm0, xmm5, 0xc9
+	gf2p8affineqb xmm15, xmm15, 0xea

@@ -1,4 +1,4 @@
-	setnozu ebx
-	setnozu ebx
-	setnozu dl
-	setnozu bl
+	setnozu ecx
+	setnozu ecx
+	setnozu byte [0x77e]
+	setnozu cl

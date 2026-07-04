@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VFMSUBADDPS",
+  "id": "vfmsubaddps16",
+  "format": "bin",
+  "source": "vfmsubaddps_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vfmsubaddps/",
+  "target": [
+   { "output": "vfmsubaddps.bin16", "match": "vfmsubaddps.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VFMSUBADDPS",
+  "id": "vfmsubaddps32",
+  "format": "bin",
+  "source": "vfmsubaddps_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vfmsubaddps/",
+  "target": [
+   { "output": "vfmsubaddps.bin32", "match": "vfmsubaddps.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VFMSUBADDPS",
   "id": "vfmsubaddps64",
   "format": "bin",
   "source": "vfmsubaddps.asm",

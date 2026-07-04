@@ -1,4 +1,6 @@
 default rel
-	vfmsub213sh xmm9, xmm14, word [0xa6f]
-	vfmsub213sh xmm9, word [0xa6f]
-	vfmsub213sh xmm14, xmm4, xmm11
+	vfmsub213sh xmm4, xmm7, word [0xa6f]
+	vfmsub213sh xmm4, word [0xa6f]
+	vfmsub213sh xmm6, xmm7, xmm3
+	vfmsub213sh xmm15, xmm10, xmm8
+	vfmsub213sh xmm27, xmm21, xmm29

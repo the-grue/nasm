@@ -1,9 +1,17 @@
 default rel
-	vcvtps2ph xmm8, ymm10, 0xe0
-	vcvtps2ph xmm3, ymm5, 0x25
-	vcvtps2ph xmm4, xmm5, 0xd8
-	vcvtps2ph qword [0xe96], xmm11, 0xac
-	vcvtps2ph xmm12, xmm2, 0xc1
-	vcvtps2ph xmm6, xmm6, 0x92
-	vcvtps2ph xmm11, ymm14, 0x1b
-	vcvtps2ph xmm7, ymm15, 0x2c
+	vcvtps2ph xmm4, ymm5, 0xe0
+	vcvtps2ph xmm6, ymm7, 0xe8
+	vcvtps2ph xmm5, xmm6, 0x22
+	vcvtps2ph xmm3, xmm7, 0x2c
+	vcvtps2ph xmm1, xmm7, 0x5d
+	vcvtps2ph xmm4, xmm5, 0xab
+	vcvtps2ph xmm0, ymm4, 0xb1
+	vcvtps2ph xmm3, ymm0, 0xf0
+	vcvtps2ph xmm11, ymm9, 0x5e
+	vcvtps2ph xmm14, xmm11, 0x68
+	vcvtps2ph xmm12, xmm14, 0x75
+	vcvtps2ph xmm14, ymm15, 0xa9
+	vcvtps2ph xmm18, ymm26, 0x43
+	vcvtps2ph xmm25, xmm27, 0xe5
+	vcvtps2ph xmm31, xmm16, 0xc4
+	vcvtps2ph xmm18, ymm16, 0x12

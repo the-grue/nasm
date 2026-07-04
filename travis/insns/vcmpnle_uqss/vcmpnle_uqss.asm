@@ -1,6 +1,8 @@
 default rel
-	vcmpnle_uqss xmm3, xmm1, qword [0xbd1]
-	vcmpnle_uqss xmm3, qword [0xbd1]
-	vcmpnle_uqss xmm5, xmm7, xmm5
-	vcmpnle_uqss k5, xmm9, xmm5
-	vcmpnle_uqss k3, xmm14, xmm1
+	vcmpnle_uqss xmm1, xmm0, qword [0xbd1]
+	vcmpnle_uqss xmm1, qword [0xbd1]
+	vcmpnle_uqss xmm5, xmm2, xmm7
+	vcmpnle_uqss k2, xmm0, dword [0xbb5]
+	vcmpnle_uqss k5, xmm6, xmm2
+	vcmpnle_uqss xmm10, xmm11, xmm12
+	vcmpnle_uqss k3, xmm13, xmm11

@@ -1,0 +1,6 @@
+	vpmovq2m k6, xmm7
+	vpmovq2m k4, xmm5
+	vpmovq2m k3, ymm7
+	vpmovq2m k6, ymm1
+	vpmovq2m k1, zmm1
+	vpmovq2m k5, zmm4

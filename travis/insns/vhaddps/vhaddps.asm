@@ -1,7 +1,9 @@
 default rel
-	vhaddps xmm9, xmm8, xmm11
-	vhaddps xmm9, xmm11
-	vhaddps xmm10, xmm11, xmm13
-	vhaddps ymm3, ymm13, ymm12
-	vhaddps ymm3, ymm12
-	vhaddps ymm8, ymm6, ymm11
+	vhaddps xmm4, xmm4, xmm5
+	vhaddps xmm4, xmm5
+	vhaddps xmm3, xmm6, xmm3
+	vhaddps ymm2, ymm5, yword [0xa8f]
+	vhaddps ymm2, yword [0xa8f]
+	vhaddps ymm7, ymm6, ymm3
+	vhaddps xmm13, xmm13, xmm11
+	vhaddps ymm11, ymm15, ymm10

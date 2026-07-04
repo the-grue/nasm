@@ -1,4 +1,4 @@
-	setzzu eax
+	setzzu edi
 	setzzu ebp
-	setzzu byte [0x306]
-	setzzu dl
+	setzzu al
+	setzzu bl

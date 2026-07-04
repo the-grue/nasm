@@ -1,7 +1,13 @@
 default rel
 	setnzzu rcx
 	setnzzu rsi
-	setnzzu ebx
-	setnzzu esi
-	setnzzu dl
-	setnzzu dl
+	setnzzu eax
+	setnzzu edi
+	setnzzu bl
+	setnzzu al
+	setnzzu r13
+	setnzzu r14d
+	setnzzu r13b
+	setnzzu r19
+	setnzzu r26d
+	setnzzu r16b

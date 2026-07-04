@@ -1,4 +1,5 @@
 default rel
-	vphsubdq xmm5, xmm14
-	vphsubdq xmm5
-	vphsubdq xmm8, xmm12
+	vphsubdq xmm2, xmm7
+	vphsubdq xmm2
+	vphsubdq xmm5, xmm2
+	vphsubdq xmm12, xmm11

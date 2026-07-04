@@ -1,3 +1,4 @@
 default rel
-	xorps xmm7, oword [0xc38]
-	xorps xmm2, xmm0
+	xorps xmm3, oword [0xc38]
+	xorps xmm2, oword [0xd59]
+	xorps xmm9, xmm9

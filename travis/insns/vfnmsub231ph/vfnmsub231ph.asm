@@ -1,10 +1,16 @@
 default rel
-	vfnmsub231ph xmm9, xmm11, oword [0x25c]
-	vfnmsub231ph xmm9, oword [0x25c]
-	vfnmsub231ph xmm15, xmm5, oword [0xad3]
-	vfnmsub231ph ymm8, ymm11, yword [0xd24]
-	vfnmsub231ph ymm8, yword [0xd24]
-	vfnmsub231ph ymm11, ymm7, ymm7
-	vfnmsub231ph zmm14, zmm15, zmm11
-	vfnmsub231ph zmm14, zmm11
-	vfnmsub231ph zmm2, zmm11, zword [0xbbe]
+	vfnmsub231ph xmm4, xmm5, oword [0x25c]
+	vfnmsub231ph xmm4, oword [0x25c]
+	vfnmsub231ph xmm5, xmm6, xmm3
+	vfnmsub231ph ymm4, ymm3, yword [0xfd5]
+	vfnmsub231ph ymm4, yword [0xfd5]
+	vfnmsub231ph ymm2, ymm7, yword [0x1cb]
+	vfnmsub231ph zmm3, zmm5, zword [0xc12]
+	vfnmsub231ph zmm3, zword [0xc12]
+	vfnmsub231ph zmm0, zmm1, zmm4
+	vfnmsub231ph xmm15, xmm10, xmm15
+	vfnmsub231ph ymm8, ymm13, ymm9
+	vfnmsub231ph zmm15, zmm14, zmm14
+	vfnmsub231ph xmm26, xmm24, xmm27
+	vfnmsub231ph ymm27, ymm29, ymm27
+	vfnmsub231ph zmm21, zmm31, zmm31

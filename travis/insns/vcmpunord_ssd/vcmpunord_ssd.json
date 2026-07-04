@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VCMPUNORD_SSD",
+  "id": "vcmpunord_ssd16",
+  "format": "bin",
+  "source": "vcmpunord_ssd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcmpunord_ssd/",
+  "target": [
+   { "output": "vcmpunord_ssd.bin16", "match": "vcmpunord_ssd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCMPUNORD_SSD",
+  "id": "vcmpunord_ssd32",
+  "format": "bin",
+  "source": "vcmpunord_ssd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcmpunord_ssd/",
+  "target": [
+   { "output": "vcmpunord_ssd.bin32", "match": "vcmpunord_ssd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCMPUNORD_SSD",
   "id": "vcmpunord_ssd64",
   "format": "bin",
   "source": "vcmpunord_ssd.asm",

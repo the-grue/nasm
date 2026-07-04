@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VGETMANTPD",
+  "id": "vgetmantpd16",
+  "format": "bin",
+  "source": "vgetmantpd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vgetmantpd/",
+  "target": [
+   { "output": "vgetmantpd.bin16", "match": "vgetmantpd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VGETMANTPD",
+  "id": "vgetmantpd32",
+  "format": "bin",
+  "source": "vgetmantpd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vgetmantpd/",
+  "target": [
+   { "output": "vgetmantpd.bin32", "match": "vgetmantpd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VGETMANTPD",
   "id": "vgetmantpd64",
   "format": "bin",
   "source": "vgetmantpd.asm",

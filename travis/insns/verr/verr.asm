@@ -1,3 +1,5 @@
 default rel
 	verr si
-	verr word [0x31e]
+	verr cx
+	verr r13w
+	verr r18w

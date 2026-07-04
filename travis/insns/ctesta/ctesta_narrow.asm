@@ -1,6 +1,6 @@
 	ctesta 14, dl, al
-	ctesta 3, bl, bl
-	ctesta 12, bx, cx
-	ctesta 7, word [0x782], di
-	ctesta 15, edi, esi
-	ctesta 8, edx, edx
+	ctesta 4, bl, dl
+	ctesta 6, word [0xf47], cx
+	ctesta 15, word [0x61d], ax
+	ctesta 1, ecx, eax
+	ctesta 14, edi, edi

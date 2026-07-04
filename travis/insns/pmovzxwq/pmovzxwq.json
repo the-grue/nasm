@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for PMOVZXWQ",
+  "id": "pmovzxwq16",
+  "format": "bin",
+  "source": "pmovzxwq_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/pmovzxwq/",
+  "target": [
+   { "output": "pmovzxwq.bin16", "match": "pmovzxwq.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for PMOVZXWQ",
+  "id": "pmovzxwq32",
+  "format": "bin",
+  "source": "pmovzxwq_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/pmovzxwq/",
+  "target": [
+   { "output": "pmovzxwq.bin32", "match": "pmovzxwq.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for PMOVZXWQ",
   "id": "pmovzxwq64",
   "format": "bin",
   "source": "pmovzxwq.asm",

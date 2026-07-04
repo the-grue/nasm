@@ -1,7 +1,11 @@
 default rel
-	vcvtsd2ss xmm8, xmm15, xmm0
-	vcvtsd2ss xmm8, xmm0
-	vcvtsd2ss xmm3, xmm9, xmm3
-	vcvtsd2ss xmm8, xmm10, xmm4
-	vcvtsd2ss xmm8, xmm4
-	vcvtsd2ss xmm4, xmm11, xmm13
+	vcvtsd2ss xmm4, xmm7, xmm0
+	vcvtsd2ss xmm4, xmm0
+	vcvtsd2ss xmm3, xmm2, xmm5
+	vcvtsd2ss xmm2, xmm6, xmm3
+	vcvtsd2ss xmm2, xmm3
+	vcvtsd2ss xmm0, xmm5, xmm1
+	vcvtsd2ss xmm9, xmm12, xmm9
+	vcvtsd2ss xmm10, xmm10, xmm8
+	vcvtsd2ss xmm19, xmm24, xmm26
+	vcvtsd2ss xmm20, xmm31, xmm21

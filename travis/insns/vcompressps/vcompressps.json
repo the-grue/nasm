@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VCOMPRESSPS",
+  "id": "vcompressps16",
+  "format": "bin",
+  "source": "vcompressps_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcompressps/",
+  "target": [
+   { "output": "vcompressps.bin16", "match": "vcompressps.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCOMPRESSPS",
+  "id": "vcompressps32",
+  "format": "bin",
+  "source": "vcompressps_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcompressps/",
+  "target": [
+   { "output": "vcompressps.bin32", "match": "vcompressps.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCOMPRESSPS",
   "id": "vcompressps64",
   "format": "bin",
   "source": "vcompressps.asm",

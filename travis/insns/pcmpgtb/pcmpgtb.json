@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for PCMPGTB",
+  "id": "pcmpgtb16",
+  "format": "bin",
+  "source": "pcmpgtb_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/pcmpgtb/",
+  "target": [
+   { "output": "pcmpgtb.bin16", "match": "pcmpgtb.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for PCMPGTB",
+  "id": "pcmpgtb32",
+  "format": "bin",
+  "source": "pcmpgtb_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/pcmpgtb/",
+  "target": [
+   { "output": "pcmpgtb.bin32", "match": "pcmpgtb.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for PCMPGTB",
   "id": "pcmpgtb64",
   "format": "bin",
   "source": "pcmpgtb.asm",

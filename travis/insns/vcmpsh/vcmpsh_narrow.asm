@@ -1,0 +1,3 @@
+	vcmpsh k4, xmm5, word [0xc8f], 0xfa
+	vcmpsh k4, word [0xc8f], 0xfa
+	vcmpsh k3, xmm5, word [0xfd4], 0x7d

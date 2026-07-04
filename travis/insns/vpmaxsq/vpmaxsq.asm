@@ -1,10 +1,16 @@
 default rel
-	vpmaxsq xmm15, xmm3, oword [0xb1c]
-	vpmaxsq xmm15, oword [0xb1c]
-	vpmaxsq xmm9, xmm2, xmm6
-	vpmaxsq ymm2, ymm3, ymm2
-	vpmaxsq ymm2, ymm2
-	vpmaxsq ymm4, ymm11, ymm8
-	vpmaxsq zmm1, zmm11, zmm11
-	vpmaxsq zmm1, zmm11
-	vpmaxsq zmm15, zmm6, zmm14
+	vpmaxsq xmm7, xmm1, oword [0xb1c]
+	vpmaxsq xmm7, oword [0xb1c]
+	vpmaxsq xmm5, xmm1, xmm5
+	vpmaxsq ymm4, ymm4, ymm5
+	vpmaxsq ymm4, ymm5
+	vpmaxsq ymm7, ymm2, ymm7
+	vpmaxsq zmm6, zmm1, zmm2
+	vpmaxsq zmm6, zmm2
+	vpmaxsq zmm5, zmm3, zword [0x14b]
+	vpmaxsq xmm12, xmm9, xmm8
+	vpmaxsq ymm12, ymm13, ymm15
+	vpmaxsq zmm14, zmm14, zmm12
+	vpmaxsq xmm22, xmm18, xmm19
+	vpmaxsq ymm22, ymm16, ymm30
+	vpmaxsq zmm23, zmm25, zmm28

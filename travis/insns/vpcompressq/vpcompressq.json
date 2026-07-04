@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPCOMPRESSQ",
+  "id": "vpcompressq16",
+  "format": "bin",
+  "source": "vpcompressq_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpcompressq/",
+  "target": [
+   { "output": "vpcompressq.bin16", "match": "vpcompressq.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPCOMPRESSQ",
+  "id": "vpcompressq32",
+  "format": "bin",
+  "source": "vpcompressq_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpcompressq/",
+  "target": [
+   { "output": "vpcompressq.bin32", "match": "vpcompressq.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPCOMPRESSQ",
   "id": "vpcompressq64",
   "format": "bin",
   "source": "vpcompressq.asm",

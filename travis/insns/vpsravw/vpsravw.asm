@@ -1,10 +1,16 @@
 default rel
-	vpsravw xmm9, xmm13, xmm0
-	vpsravw xmm9, xmm0
-	vpsravw xmm11, xmm14, xmm3
-	vpsravw ymm12, ymm2, yword [0xdac]
-	vpsravw ymm12, yword [0xdac]
-	vpsravw ymm1, ymm14, ymm7
-	vpsravw zmm1, zmm4, zmm15
-	vpsravw zmm1, zmm15
-	vpsravw zmm0, zmm8, zword [0x64f]
+	vpsravw xmm4, xmm6, xmm0
+	vpsravw xmm4, xmm0
+	vpsravw xmm7, xmm6, xmm7
+	vpsravw ymm2, ymm3, ymm2
+	vpsravw ymm2, ymm2
+	vpsravw ymm1, ymm1, yword [0x115]
+	vpsravw zmm2, zmm3, zword [0x180]
+	vpsravw zmm2, zword [0x180]
+	vpsravw zmm5, zmm3, zword [0x2b8]
+	vpsravw xmm13, xmm15, xmm13
+	vpsravw ymm8, ymm15, ymm8
+	vpsravw zmm8, zmm14, zmm14
+	vpsravw xmm19, xmm28, xmm18
+	vpsravw ymm24, ymm28, ymm21
+	vpsravw zmm20, zmm21, zmm26

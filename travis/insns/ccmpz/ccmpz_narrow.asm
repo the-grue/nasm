@@ -1,6 +1,6 @@
 	ccmpz 14, bl, bl
-	ccmpz 9, al, al
-	ccmpz 8, bx, cx
-	ccmpz 0, word [0xaae], ax
-	ccmpz 14, dword [0x800], edi
-	ccmpz 10, dword [0xad2], esi
+	ccmpz 2, al, dl
+	ccmpz 10, bp, di
+	ccmpz 6, si, ax
+	ccmpz 4, ecx, ebp
+	ccmpz 1, dword [0x7f1], eax

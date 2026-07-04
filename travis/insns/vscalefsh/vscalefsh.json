@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VSCALEFSH",
+  "id": "vscalefsh16",
+  "format": "bin",
+  "source": "vscalefsh_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vscalefsh/",
+  "target": [
+   { "output": "vscalefsh.bin16", "match": "vscalefsh.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VSCALEFSH",
+  "id": "vscalefsh32",
+  "format": "bin",
+  "source": "vscalefsh_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vscalefsh/",
+  "target": [
+   { "output": "vscalefsh.bin32", "match": "vscalefsh.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VSCALEFSH",
   "id": "vscalefsh64",
   "format": "bin",
   "source": "vscalefsh.asm",

@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VANDPD",
+  "id": "vandpd16",
+  "format": "bin",
+  "source": "vandpd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vandpd/",
+  "target": [
+   { "output": "vandpd.bin16", "match": "vandpd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VANDPD",
+  "id": "vandpd32",
+  "format": "bin",
+  "source": "vandpd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vandpd/",
+  "target": [
+   { "output": "vandpd.bin32", "match": "vandpd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VANDPD",
   "id": "vandpd64",
   "format": "bin",
   "source": "vandpd.asm",

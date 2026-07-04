@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for CMPNLTPD",
+  "id": "cmpnltpd16",
+  "format": "bin",
+  "source": "cmpnltpd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/cmpnltpd/",
+  "target": [
+   { "output": "cmpnltpd.bin16", "match": "cmpnltpd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for CMPNLTPD",
+  "id": "cmpnltpd32",
+  "format": "bin",
+  "source": "cmpnltpd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/cmpnltpd/",
+  "target": [
+   { "output": "cmpnltpd.bin32", "match": "cmpnltpd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for CMPNLTPD",
   "id": "cmpnltpd64",
   "format": "bin",
   "source": "cmpnltpd.asm",

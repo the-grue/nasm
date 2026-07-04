@@ -1,5 +1,9 @@
 default rel
-	vfmsub132sd xmm2, xmm4, xmm13
-	vfmsub132sd xmm4, xmm3, xmm5
-	vfmsub132sd xmm2, xmm3, xmm14
-	vfmsub132sd xmm6, xmm15, qword [0xc03]
+	vfmsub132sd xmm1, xmm2, xmm6
+	vfmsub132sd xmm0, xmm7, xmm7
+	vfmsub132sd xmm5, xmm5, xmm2
+	vfmsub132sd xmm0, xmm7, xmm3
+	vfmsub132sd xmm10, xmm9, xmm10
+	vfmsub132sd xmm10, xmm11, xmm8
+	vfmsub132sd xmm21, xmm18, xmm19
+	vfmsub132sd xmm23, xmm20, xmm28

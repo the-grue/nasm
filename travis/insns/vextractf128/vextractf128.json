@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VEXTRACTF128",
+  "id": "vextractf12816",
+  "format": "bin",
+  "source": "vextractf128_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vextractf128/",
+  "target": [
+   { "output": "vextractf128.bin16", "match": "vextractf128.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VEXTRACTF128",
+  "id": "vextractf12832",
+  "format": "bin",
+  "source": "vextractf128_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vextractf128/",
+  "target": [
+   { "output": "vextractf128.bin32", "match": "vextractf128.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VEXTRACTF128",
   "id": "vextractf12864",
   "format": "bin",
   "source": "vextractf128.asm",

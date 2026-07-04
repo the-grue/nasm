@@ -1,3 +1,5 @@
 default rel
 	lmsw cx
-	lmsw si
+	lmsw dx
+	lmsw r8w
+	lmsw r25w

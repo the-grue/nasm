@@ -1,3 +1,4 @@
 default rel
-	shufps xmm8, xmm4, 0x3e
-	shufps xmm13, xmm4, 0x4
+	shufps xmm4, xmm2, 0x3e
+	shufps xmm5, xmm7, 0x64
+	shufps xmm14, xmm13, 0x4f

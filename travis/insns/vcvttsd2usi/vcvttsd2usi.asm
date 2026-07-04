@@ -1,5 +1,9 @@
 default rel
 	vcvttsd2usi ecx, qword [0x7b2]
-	vcvttsd2usi ebx, xmm9
-	vcvttsd2usi rcx, xmm4
-	vcvttsd2usi rbp, xmm7
+	vcvttsd2usi eax, xmm7
+	vcvttsd2usi rcx, xmm5
+	vcvttsd2usi rax, qword [0x4d4]
+	vcvttsd2usi r9d, xmm12
+	vcvttsd2usi r12, xmm13
+	vcvttsd2usi r25d, xmm21
+	vcvttsd2usi r18, xmm16

@@ -1,10 +1,13 @@
 default rel
-	vprotb xmm6, oword [0x4bc], xmm5
-	vprotb xmm6, xmm5
-	vprotb xmm3, xmm6, xmm13
-	vprotb xmm4, xmm13, oword [0xccd]
-	vprotb xmm4, oword [0xccd]
-	vprotb xmm13, xmm13, xmm7
-	vprotb xmm3, xmm12, 0xb7
-	vprotb xmm3, 0xb7
-	vprotb xmm12, xmm3, 0x8f
+	vprotb xmm3, oword [0x4bc], xmm2
+	vprotb xmm3, xmm2
+	vprotb xmm7, oword [0xdb1], xmm6
+	vprotb xmm3, xmm3, xmm2
+	vprotb xmm3, xmm2
+	vprotb xmm0, xmm2, xmm3
+	vprotb xmm5, oword [0xd3d], 0xd5
+	vprotb xmm5, 0xd5
+	vprotb xmm5, xmm7, 0x4e
+	vprotb xmm9, xmm12, xmm11
+	vprotb xmm14, xmm13, xmm14
+	vprotb xmm11, xmm11, 0x45

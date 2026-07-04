@@ -1,6 +1,6 @@
 	ccmpae 8, byte [0x14d], dl
-	ccmpae 10, al, al
-	ccmpae 14, si, cx
-	ccmpae 13, word [0x472], si
-	ccmpae 4, edi, edi
-	ccmpae 10, esi, eax
+	ccmpae 11, dl, dl
+	ccmpae 3, cx, bx
+	ccmpae 5, word [0xa79], bp
+	ccmpae 2, dword [0x76d], edi
+	ccmpae 2, dword [0x14d], ebx

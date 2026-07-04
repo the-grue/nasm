@@ -1,10 +1,16 @@
 default rel
-	vpermd ymm9, ymm5, ymm7
-	vpermd ymm9, ymm7
-	vpermd ymm7, ymm7, ymm15
-	vpermd ymm8, ymm5, yword [0x728]
-	vpermd ymm8, yword [0x728]
-	vpermd ymm11, ymm1, ymm0
-	vpermd zmm6, zmm3, zmm4
-	vpermd zmm6, zmm4
-	vpermd zmm10, zmm5, zmm1
+	vpermd ymm4, ymm2, ymm3
+	vpermd ymm4, ymm3
+	vpermd ymm5, ymm3, yword [0x290]
+	vpermd ymm3, ymm0, ymm1
+	vpermd ymm3, ymm1
+	vpermd ymm0, ymm4, ymm5
+	vpermd zmm0, zmm5, zmm0
+	vpermd zmm0, zmm0
+	vpermd zmm3, zmm1, zmm7
+	vpermd ymm11, ymm11, ymm12
+	vpermd ymm9, ymm10, ymm13
+	vpermd zmm12, zmm13, zmm10
+	vpermd ymm31, ymm24, ymm21
+	vpermd ymm21, ymm21, ymm17
+	vpermd zmm19, zmm19, zmm29

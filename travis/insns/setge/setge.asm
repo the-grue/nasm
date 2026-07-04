@@ -1,7 +1,13 @@
 default rel
 	setge al
-	setge byte [0xdd9]
+	setge cl
 	setge rax
 	setge rsi
-	setge eax
-	setge esi
+	setge edi
+	setge edi
+	setge r15b
+	setge r12
+	setge r8d
+	setge r29b
+	setge r17
+	setge r27d

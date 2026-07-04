@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VCMPORD_SSS",
+  "id": "vcmpord_sss16",
+  "format": "bin",
+  "source": "vcmpord_sss_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcmpord_sss/",
+  "target": [
+   { "output": "vcmpord_sss.bin16", "match": "vcmpord_sss.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCMPORD_SSS",
+  "id": "vcmpord_sss32",
+  "format": "bin",
+  "source": "vcmpord_sss_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcmpord_sss/",
+  "target": [
+   { "output": "vcmpord_sss.bin32", "match": "vcmpord_sss.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCMPORD_SSS",
   "id": "vcmpord_sss64",
   "format": "bin",
   "source": "vcmpord_sss.asm",

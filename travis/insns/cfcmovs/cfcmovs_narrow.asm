@@ -1,6 +1,6 @@
 	cfcmovs bp, dx
-	cfcmovs bx, si
-	cfcmovs ebp, eax
-	cfcmovs esi, ebx
-	cfcmovs ax, bp
-	cfcmovs cx, cx
+	cfcmovs word [0x267], bx
+	cfcmovs ebx, ebx
+	cfcmovs dword [0x2da], eax
+	cfcmovs dx, cx
+	cfcmovs cx, si

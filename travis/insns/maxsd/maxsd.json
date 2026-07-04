@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for MAXSD",
+  "id": "maxsd16",
+  "format": "bin",
+  "source": "maxsd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/maxsd/",
+  "target": [
+   { "output": "maxsd.bin16", "match": "maxsd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for MAXSD",
+  "id": "maxsd32",
+  "format": "bin",
+  "source": "maxsd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/maxsd/",
+  "target": [
+   { "output": "maxsd.bin32", "match": "maxsd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for MAXSD",
   "id": "maxsd64",
   "format": "bin",
   "source": "maxsd.asm",

@@ -1,6 +1,8 @@
 default rel
-	vcmplt_osss xmm4, xmm14, xmm0
-	vcmplt_osss xmm4, xmm0
-	vcmplt_osss xmm2, xmm10, xmm8
-	vcmplt_osss k4, xmm7, dword [0xa12]
-	vcmplt_osss k1, xmm5, dword [0xaf5]
+	vcmplt_osss xmm2, xmm7, xmm0
+	vcmplt_osss xmm2, xmm0
+	vcmplt_osss xmm6, xmm4, xmm2
+	vcmplt_osss k6, xmm5, xmm0
+	vcmplt_osss k6, xmm6, xmm7
+	vcmplt_osss xmm9, xmm13, xmm9
+	vcmplt_osss k2, xmm13, xmm13

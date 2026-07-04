@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VFMADD312SS",
+  "id": "vfmadd312ss16",
+  "format": "bin",
+  "source": "vfmadd312ss_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vfmadd312ss/",
+  "target": [
+   { "output": "vfmadd312ss.bin16", "match": "vfmadd312ss.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VFMADD312SS",
+  "id": "vfmadd312ss32",
+  "format": "bin",
+  "source": "vfmadd312ss_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vfmadd312ss/",
+  "target": [
+   { "output": "vfmadd312ss.bin32", "match": "vfmadd312ss.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VFMADD312SS",
   "id": "vfmadd312ss64",
   "format": "bin",
   "source": "vfmadd312ss.asm",

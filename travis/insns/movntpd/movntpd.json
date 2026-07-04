@@ -3,7 +3,7 @@
   "description": "Pseudorandom test for MOVNTPD",
   "id": "movntpd16",
   "format": "bin",
-  "source": "movntpd.asm",
+  "source": "movntpd_narrow.asm",
   "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/movntpd/",
   "target": [
    { "output": "movntpd.bin16", "match": "movntpd.bin16.t" }
@@ -14,7 +14,7 @@
   "description": "Pseudorandom test for MOVNTPD",
   "id": "movntpd32",
   "format": "bin",
-  "source": "movntpd.asm",
+  "source": "movntpd_narrow.asm",
   "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/movntpd/",
   "target": [
    { "output": "movntpd.bin32", "match": "movntpd.bin32.t" }

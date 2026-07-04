@@ -1,11 +1,15 @@
 default rel
-	vcmpordpd xmm2, xmm14, oword [0xf19]
-	vcmpordpd xmm2, oword [0xf19]
-	vcmpordpd xmm4, xmm12, oword [0x659]
-	vcmpordpd ymm15, ymm14, ymm0
-	vcmpordpd ymm15, ymm0
-	vcmpordpd ymm3, ymm8, ymm0
-	vcmpordpd k5, xmm0, oword [0x3ba]
-	vcmpordpd k1, xmm2, oword [0x1a7]
-	vcmpordpd k1, ymm3, yword [0x120]
-	vcmpordpd k3, ymm2, yword [0x43a]
+	vcmpordpd xmm1, xmm7, oword [0xf19]
+	vcmpordpd xmm1, oword [0xf19]
+	vcmpordpd xmm1, xmm0, xmm4
+	vcmpordpd ymm4, ymm0, ymm0
+	vcmpordpd ymm4, ymm0
+	vcmpordpd ymm0, ymm1, yword [0x120]
+	vcmpordpd k3, xmm1, oword [0x43a]
+	vcmpordpd k3, xmm3, xmm1
+	vcmpordpd k1, ymm2, yword [0xc46]
+	vcmpordpd k5, ymm2, ymm7
+	vcmpordpd xmm10, xmm14, xmm14
+	vcmpordpd ymm15, ymm9, ymm8
+	vcmpordpd k4, xmm9, xmm11
+	vcmpordpd k6, ymm8, ymm8

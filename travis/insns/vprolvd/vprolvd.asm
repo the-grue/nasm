@@ -1,10 +1,16 @@
 default rel
-	vprolvd xmm14, xmm11, xmm7
-	vprolvd xmm14, xmm7
-	vprolvd xmm4, xmm9, xmm14
-	vprolvd ymm15, ymm8, yword [0x1a1]
-	vprolvd ymm15, yword [0x1a1]
-	vprolvd ymm2, ymm7, yword [0x8ce]
-	vprolvd zmm9, zmm8, zmm4
-	vprolvd zmm9, zmm4
-	vprolvd zmm5, zmm10, zword [0xc94]
+	vprolvd xmm7, xmm5, xmm3
+	vprolvd xmm7, xmm3
+	vprolvd xmm6, xmm0, xmm3
+	vprolvd ymm7, ymm4, ymm4
+	vprolvd ymm7, ymm4
+	vprolvd ymm4, ymm5, ymm3
+	vprolvd zmm0, zmm3, zmm5
+	vprolvd zmm0, zmm5
+	vprolvd zmm5, zmm0, zmm2
+	vprolvd xmm10, xmm12, xmm10
+	vprolvd ymm10, ymm10, ymm10
+	vprolvd zmm9, zmm13, zmm10
+	vprolvd xmm30, xmm31, xmm24
+	vprolvd ymm26, ymm28, ymm28
+	vprolvd zmm22, zmm22, zmm23

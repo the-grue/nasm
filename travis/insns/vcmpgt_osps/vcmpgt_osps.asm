@@ -1,11 +1,15 @@
 default rel
-	vcmpgt_osps xmm6, xmm3, xmm1
-	vcmpgt_osps xmm6, xmm1
-	vcmpgt_osps xmm1, xmm11, xmm10
-	vcmpgt_osps ymm3, ymm7, ymm8
-	vcmpgt_osps ymm3, ymm8
-	vcmpgt_osps ymm6, ymm15, yword [0x9ad]
-	vcmpgt_osps k6, xmm6, xmm1
-	vcmpgt_osps k4, xmm8, xmm12
-	vcmpgt_osps k2, ymm0, ymm7
-	vcmpgt_osps k1, ymm4, ymm3
+	vcmpgt_osps xmm3, xmm1, xmm0
+	vcmpgt_osps xmm3, xmm0
+	vcmpgt_osps xmm1, xmm4, xmm7
+	vcmpgt_osps ymm6, ymm4, yword [0x70a]
+	vcmpgt_osps ymm6, yword [0x70a]
+	vcmpgt_osps ymm1, ymm0, ymm3
+	vcmpgt_osps k1, xmm2, xmm1
+	vcmpgt_osps k5, xmm2, xmm4
+	vcmpgt_osps k3, ymm4, yword [0xe00]
+	vcmpgt_osps k1, ymm6, ymm1
+	vcmpgt_osps xmm8, xmm13, xmm8
+	vcmpgt_osps ymm8, ymm8, ymm11
+	vcmpgt_osps k6, xmm8, xmm9
+	vcmpgt_osps k5, ymm15, ymm15

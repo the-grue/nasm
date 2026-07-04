@@ -1,6 +1,6 @@
 	shld si, di, 0x19
-	shld word [0x64f], cx, 0x5d
-	shld dword [0x263], ebx, 0x25
-	shld dword [0x413], esi, 0xdc
-	shld dx, bx, cl
-	shld si, di, cl
+	shld bx, bp, 0x35
+	shld dword [0xde4], esi, 0xc2
+	shld edx, ebx, 0x11
+	shld dx, cx, cl
+	shld word [0xe19], bp, cl

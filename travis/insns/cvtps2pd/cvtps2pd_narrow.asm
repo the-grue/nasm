@@ -1,0 +1,2 @@
+	cvtps2pd xmm1, oword [0x50b]
+	cvtps2pd xmm6, xmm4

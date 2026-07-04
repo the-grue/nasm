@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VCOMISBF16",
+  "id": "vcomisbf1616",
+  "format": "bin",
+  "source": "vcomisbf16_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcomisbf16/",
+  "target": [
+   { "output": "vcomisbf16.bin16", "match": "vcomisbf16.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCOMISBF16",
+  "id": "vcomisbf1632",
+  "format": "bin",
+  "source": "vcomisbf16_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcomisbf16/",
+  "target": [
+   { "output": "vcomisbf16.bin32", "match": "vcomisbf16.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCOMISBF16",
   "id": "vcomisbf1664",
   "format": "bin",
   "source": "vcomisbf16.asm",

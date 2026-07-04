@@ -1,9 +1,17 @@
 default rel
 	cmova bx, word [0x36a]
-	cmova cx, si
-	cmova ecx, ebx
-	cmova ebp, edx
-	cmova rax, rdx
-	cmova rdi, rcx
-	cmova bp, ax, word [0x5f8]
-	cmova ax, si, word [0xcc7]
+	cmova bx, bp
+	cmova ecx, eax
+	cmova ecx, dword [0x19e]
+	cmova rdi, rax
+	cmova rsi, qword [0x547]
+	cmova di, bx, word [0x39c]
+	cmova di, dx, word [0xc2c]
+	cmova r11w, r11w
+	cmova r10d, r12d
+	cmova r13, r14
+	cmova r11w, r15w, r11w
+	cmova r27w, r22w
+	cmova r28d, r17d
+	cmova r28, r22
+	cmova r20w, r21w, r19w

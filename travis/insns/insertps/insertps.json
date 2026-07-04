@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for INSERTPS",
+  "id": "insertps16",
+  "format": "bin",
+  "source": "insertps_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/insertps/",
+  "target": [
+   { "output": "insertps.bin16", "match": "insertps.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for INSERTPS",
+  "id": "insertps32",
+  "format": "bin",
+  "source": "insertps_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/insertps/",
+  "target": [
+   { "output": "insertps.bin32", "match": "insertps.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for INSERTPS",
   "id": "insertps64",
   "format": "bin",
   "source": "insertps.asm",

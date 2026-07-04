@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VMOVQQU",
+  "id": "vmovqqu16",
+  "format": "bin",
+  "source": "vmovqqu_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vmovqqu/",
+  "target": [
+   { "output": "vmovqqu.bin16", "match": "vmovqqu.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VMOVQQU",
+  "id": "vmovqqu32",
+  "format": "bin",
+  "source": "vmovqqu_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vmovqqu/",
+  "target": [
+   { "output": "vmovqqu.bin32", "match": "vmovqqu.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VMOVQQU",
   "id": "vmovqqu64",
   "format": "bin",
   "source": "vmovqqu.asm",

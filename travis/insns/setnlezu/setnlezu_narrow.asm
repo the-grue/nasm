@@ -1,4 +1,4 @@
-	setnlezu ebx
-	setnlezu ebp
-	setnlezu byte [0xeb4]
+	setnlezu edi
+	setnlezu ecx
+	setnlezu bl
 	setnlezu bl

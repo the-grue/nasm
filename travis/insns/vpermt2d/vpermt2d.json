@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPERMT2D",
+  "id": "vpermt2d16",
+  "format": "bin",
+  "source": "vpermt2d_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpermt2d/",
+  "target": [
+   { "output": "vpermt2d.bin16", "match": "vpermt2d.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPERMT2D",
+  "id": "vpermt2d32",
+  "format": "bin",
+  "source": "vpermt2d_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpermt2d/",
+  "target": [
+   { "output": "vpermt2d.bin32", "match": "vpermt2d.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPERMT2D",
   "id": "vpermt2d64",
   "format": "bin",
   "source": "vpermt2d.asm",

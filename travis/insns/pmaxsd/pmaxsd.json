@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for PMAXSD",
+  "id": "pmaxsd16",
+  "format": "bin",
+  "source": "pmaxsd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/pmaxsd/",
+  "target": [
+   { "output": "pmaxsd.bin16", "match": "pmaxsd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for PMAXSD",
+  "id": "pmaxsd32",
+  "format": "bin",
+  "source": "pmaxsd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/pmaxsd/",
+  "target": [
+   { "output": "pmaxsd.bin32", "match": "pmaxsd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for PMAXSD",
   "id": "pmaxsd64",
   "format": "bin",
   "source": "pmaxsd.asm",

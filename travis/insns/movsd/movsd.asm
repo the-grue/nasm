@@ -1,7 +1,9 @@
 default rel
 	movsd
 	movsd
-	movsd xmm1, qword [0xd65]
-	movsd xmm12, xmm5
-	movsd xmm2, xmm13
-	movsd xmm15, xmm2
+	movsd xmm0, qword [0xd65]
+	movsd xmm1, qword [0x792]
+	movsd qword [0x3c8], xmm0
+	movsd qword [0xf2d], xmm6
+	movsd xmm14, xmm10
+	movsd xmm14, xmm13

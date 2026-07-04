@@ -1,5 +1,9 @@
 default rel
 	wrgsbase edi
-	wrgsbase edi
-	wrgsbase rcx
-	wrgsbase rdx
+	wrgsbase edx
+	wrgsbase rbx
+	wrgsbase rdi
+	wrgsbase r14d
+	wrgsbase r9
+	wrgsbase r21d
+	wrgsbase r29

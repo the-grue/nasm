@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VCMPLT_OSPD",
+  "id": "vcmplt_ospd16",
+  "format": "bin",
+  "source": "vcmplt_ospd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcmplt_ospd/",
+  "target": [
+   { "output": "vcmplt_ospd.bin16", "match": "vcmplt_ospd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCMPLT_OSPD",
+  "id": "vcmplt_ospd32",
+  "format": "bin",
+  "source": "vcmplt_ospd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcmplt_ospd/",
+  "target": [
+   { "output": "vcmplt_ospd.bin32", "match": "vcmplt_ospd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCMPLT_OSPD",
   "id": "vcmplt_ospd64",
   "format": "bin",
   "source": "vcmplt_ospd.asm",

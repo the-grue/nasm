@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VCOMISD",
+  "id": "vcomisd16",
+  "format": "bin",
+  "source": "vcomisd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcomisd/",
+  "target": [
+   { "output": "vcomisd.bin16", "match": "vcomisd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCOMISD",
+  "id": "vcomisd32",
+  "format": "bin",
+  "source": "vcomisd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcomisd/",
+  "target": [
+   { "output": "vcomisd.bin32", "match": "vcomisd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCOMISD",
   "id": "vcomisd64",
   "format": "bin",
   "source": "vcomisd.asm",

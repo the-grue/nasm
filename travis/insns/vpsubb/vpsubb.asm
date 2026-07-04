@@ -1,13 +1,21 @@
 default rel
-	vpsubb xmm13, xmm4, xmm2
-	vpsubb xmm13, xmm2
-	vpsubb xmm1, xmm4, xmm8
-	vpsubb ymm4, ymm8, ymm10
-	vpsubb ymm4, ymm10
-	vpsubb ymm14, ymm15, ymm1
-	vpsubb xmm8, xmm11, xmm4
-	vpsubb xmm8, xmm4
-	vpsubb xmm3, xmm0, oword [0xa18]
-	vpsubb ymm3, ymm5, ymm0
-	vpsubb ymm3, ymm0
-	vpsubb ymm7, ymm9, ymm0
+	vpsubb xmm6, xmm2, xmm1
+	vpsubb xmm6, xmm1
+	vpsubb xmm5, xmm5, oword [0xffc]
+	vpsubb ymm4, ymm0, ymm5
+	vpsubb ymm4, ymm5
+	vpsubb ymm1, ymm2, ymm0
+	vpsubb xmm3, xmm4, xmm0
+	vpsubb xmm3, xmm0
+	vpsubb xmm4, xmm4, xmm1
+	vpsubb ymm4, ymm3, yword [0x87e]
+	vpsubb ymm4, yword [0x87e]
+	vpsubb ymm2, ymm3, ymm0
+	vpsubb xmm8, xmm10, xmm8
+	vpsubb ymm9, ymm10, ymm9
+	vpsubb xmm9, xmm11, xmm10
+	vpsubb ymm10, ymm10, ymm10
+	vpsubb xmm24, xmm20, xmm24
+	vpsubb ymm16, ymm28, ymm25
+	vpsubb xmm24, xmm17, xmm25
+	vpsubb ymm23, ymm21, ymm30

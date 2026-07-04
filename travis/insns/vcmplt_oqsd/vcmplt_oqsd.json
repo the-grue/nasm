@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VCMPLT_OQSD",
+  "id": "vcmplt_oqsd16",
+  "format": "bin",
+  "source": "vcmplt_oqsd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcmplt_oqsd/",
+  "target": [
+   { "output": "vcmplt_oqsd.bin16", "match": "vcmplt_oqsd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCMPLT_OQSD",
+  "id": "vcmplt_oqsd32",
+  "format": "bin",
+  "source": "vcmplt_oqsd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcmplt_oqsd/",
+  "target": [
+   { "output": "vcmplt_oqsd.bin32", "match": "vcmplt_oqsd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCMPLT_OQSD",
   "id": "vcmplt_oqsd64",
   "format": "bin",
   "source": "vcmplt_oqsd.asm",

@@ -1,3 +1,4 @@
 default rel
-	cmpneqss xmm14, xmm0
-	cmpneqss xmm3, dword [0x72c]
+	cmpneqss xmm7, xmm0
+	cmpneqss xmm5, dword [0xcae]
+	cmpneqss xmm9, xmm14

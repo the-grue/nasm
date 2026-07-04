@@ -1,7 +1,13 @@
 default rel
-	vfnmsub213bf16 xmm12, xmm13, xmm15
-	vfnmsub213bf16 xmm10, xmm5, xmm0
-	vfnmsub213bf16 ymm14, ymm8, yword [0x830]
-	vfnmsub213bf16 ymm0, ymm15, yword [0xc20]
-	vfnmsub213bf16 zmm15, zmm4, zmm6
-	vfnmsub213bf16 zmm12, zmm14, zmm12
+	vfnmsub213bf16 xmm6, xmm6, xmm7
+	vfnmsub213bf16 xmm5, xmm3, xmm7
+	vfnmsub213bf16 ymm6, ymm5, yword [0x58f]
+	vfnmsub213bf16 ymm0, ymm1, ymm1
+	vfnmsub213bf16 zmm7, zmm7, zword [0xd4e]
+	vfnmsub213bf16 zmm3, zmm3, zword [0x5b8]
+	vfnmsub213bf16 xmm13, xmm10, xmm10
+	vfnmsub213bf16 ymm8, ymm11, ymm14
+	vfnmsub213bf16 zmm11, zmm11, zmm9
+	vfnmsub213bf16 xmm16, xmm30, xmm24
+	vfnmsub213bf16 ymm30, ymm17, ymm28
+	vfnmsub213bf16 zmm29, zmm25, zmm29

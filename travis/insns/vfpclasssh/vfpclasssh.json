@@ -3,7 +3,7 @@
   "description": "Pseudorandom test for VFPCLASSSH",
   "id": "vfpclasssh16",
   "format": "bin",
-  "source": "vfpclasssh.asm",
+  "source": "vfpclasssh_narrow.asm",
   "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vfpclasssh/",
   "target": [
    { "output": "vfpclasssh.bin16", "match": "vfpclasssh.bin16.t" }
@@ -14,7 +14,7 @@
   "description": "Pseudorandom test for VFPCLASSSH",
   "id": "vfpclasssh32",
   "format": "bin",
-  "source": "vfpclasssh.asm",
+  "source": "vfpclasssh_narrow.asm",
   "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vfpclasssh/",
   "target": [
    { "output": "vfpclasssh.bin32", "match": "vfpclasssh.bin32.t" }

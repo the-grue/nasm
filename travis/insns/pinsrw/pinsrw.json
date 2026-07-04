@@ -3,7 +3,7 @@
   "description": "Pseudorandom test for PINSRW",
   "id": "pinsrw16",
   "format": "bin",
-  "source": "pinsrw.asm",
+  "source": "pinsrw_narrow.asm",
   "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/pinsrw/",
   "target": [
    { "output": "pinsrw.bin16", "match": "pinsrw.bin16.t" }
@@ -14,7 +14,7 @@
   "description": "Pseudorandom test for PINSRW",
   "id": "pinsrw32",
   "format": "bin",
-  "source": "pinsrw.asm",
+  "source": "pinsrw_narrow.asm",
   "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/pinsrw/",
   "target": [
    { "output": "pinsrw.bin32", "match": "pinsrw.bin32.t" }

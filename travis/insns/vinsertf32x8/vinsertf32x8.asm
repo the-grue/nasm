@@ -1,4 +1,6 @@
 default rel
-	vinsertf32x8 zmm0, zmm12, ymm5, 0xd1
-	vinsertf32x8 zmm0, ymm5, 0xd1
-	vinsertf32x8 zmm9, zmm6, ymm11, 0x1c
+	vinsertf32x8 zmm0, zmm6, ymm2, 0xd1
+	vinsertf32x8 zmm0, ymm2, 0xd1
+	vinsertf32x8 zmm3, zmm2, ymm5, 0xd2
+	vinsertf32x8 zmm12, zmm11, ymm11, 0xba
+	vinsertf32x8 zmm17, zmm29, ymm18, 0x12

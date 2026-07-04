@@ -1,5 +1,6 @@
 default rel
 	cmpsd
 	cmpsd
-	cmpsd xmm6, xmm7, 0xbd
-	cmpsd xmm4, xmm4, 0xa8
+	cmpsd xmm3, xmm3, 0xbd
+	cmpsd xmm6, qword [0x58f], 0xf3
+	cmpsd xmm10, xmm9, 0x47

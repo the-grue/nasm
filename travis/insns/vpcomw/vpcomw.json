@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPCOMW",
+  "id": "vpcomw16",
+  "format": "bin",
+  "source": "vpcomw_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpcomw/",
+  "target": [
+   { "output": "vpcomw.bin16", "match": "vpcomw.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPCOMW",
+  "id": "vpcomw32",
+  "format": "bin",
+  "source": "vpcomw_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpcomw/",
+  "target": [
+   { "output": "vpcomw.bin32", "match": "vpcomw.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPCOMW",
   "id": "vpcomw64",
   "format": "bin",
   "source": "vpcomw.asm",

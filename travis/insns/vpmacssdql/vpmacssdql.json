@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPMACSSDQL",
+  "id": "vpmacssdql16",
+  "format": "bin",
+  "source": "vpmacssdql_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpmacssdql/",
+  "target": [
+   { "output": "vpmacssdql.bin16", "match": "vpmacssdql.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPMACSSDQL",
+  "id": "vpmacssdql32",
+  "format": "bin",
+  "source": "vpmacssdql_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpmacssdql/",
+  "target": [
+   { "output": "vpmacssdql.bin32", "match": "vpmacssdql.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPMACSSDQL",
   "id": "vpmacssdql64",
   "format": "bin",
   "source": "vpmacssdql.asm",

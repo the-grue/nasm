@@ -1,11 +1,15 @@
 default rel
-	vcmpunordpd xmm2, xmm2, oword [0x500]
-	vcmpunordpd xmm2, oword [0x500]
-	vcmpunordpd xmm6, xmm0, xmm7
-	vcmpunordpd ymm5, ymm4, ymm8
-	vcmpunordpd ymm5, ymm8
-	vcmpunordpd ymm3, ymm1, ymm10
-	vcmpunordpd k5, xmm8, oword [0xe6c]
-	vcmpunordpd k7, xmm2, oword [0x3d0]
-	vcmpunordpd k2, ymm6, ymm5
-	vcmpunordpd k1, ymm4, ymm14
+	vcmpunordpd xmm1, xmm1, oword [0x500]
+	vcmpunordpd xmm1, oword [0x500]
+	vcmpunordpd xmm3, xmm4, xmm0
+	vcmpunordpd ymm0, ymm5, ymm4
+	vcmpunordpd ymm0, ymm4
+	vcmpunordpd ymm1, ymm3, ymm2
+	vcmpunordpd k1, xmm2, xmm7
+	vcmpunordpd k2, xmm2, xmm1
+	vcmpunordpd k7, ymm5, yword [0x9e3]
+	vcmpunordpd k4, ymm2, yword [0x6c5]
+	vcmpunordpd xmm11, xmm8, xmm9
+	vcmpunordpd ymm14, ymm15, ymm15
+	vcmpunordpd k4, xmm8, xmm15
+	vcmpunordpd k4, ymm9, ymm15

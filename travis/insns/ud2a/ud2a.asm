@@ -2,8 +2,14 @@ default rel
 	ud2a
 	ud2a
 	ud2a bx, word [0x923]
-	ud2a bp, ax
-	ud2a ebx, edi
-	ud2a ebx, eax
-	ud2a rsi, qword [0xd31]
-	ud2a rax, rbx
+	ud2a bx, word [0x3e2]
+	ud2a eax, esi
+	ud2a ebx, ebx
+	ud2a rdx, rbp
+	ud2a rcx, rcx
+	ud2a r15w, r12w
+	ud2a r15d, r14d
+	ud2a r13, r8
+	ud2a r17w, r20w
+	ud2a r16d, r26d
+	ud2a r20, r20

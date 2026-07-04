@@ -1,9 +1,17 @@
 default rel
 	cmpxchg byte [0xca0], bl
-	cmpxchg dl, al
-	cmpxchg dx, bx
-	cmpxchg bx, bp
-	cmpxchg ebp, ecx
-	cmpxchg dword [0xb25], edx
-	cmpxchg rdi, rsi
-	cmpxchg rdx, rdi
+	cmpxchg al, al
+	cmpxchg bp, dx
+	cmpxchg ax, di
+	cmpxchg eax, edx
+	cmpxchg ecx, ecx
+	cmpxchg qword [0x590], rsi
+	cmpxchg qword [0xc80], rcx
+	cmpxchg r9b, r14b
+	cmpxchg r15w, r10w
+	cmpxchg r14d, r10d
+	cmpxchg r11, r14
+	cmpxchg r18b, r25b
+	cmpxchg r31w, r26w
+	cmpxchg r22d, r31d
+	cmpxchg r21, r17

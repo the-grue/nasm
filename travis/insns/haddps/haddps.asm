@@ -1,3 +1,4 @@
 default rel
-	haddps xmm15, oword [0x976]
-	haddps xmm11, xmm11
+	haddps xmm7, oword [0x976]
+	haddps xmm3, xmm6
+	haddps xmm13, xmm9

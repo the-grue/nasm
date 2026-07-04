@@ -1,10 +1,16 @@
 default rel
-	vfmsubadd231ph xmm13, xmm1, xmm6
-	vfmsubadd231ph xmm13, xmm6
-	vfmsubadd231ph xmm15, xmm4, xmm9
-	vfmsubadd231ph ymm0, ymm9, yword [0xdec]
-	vfmsubadd231ph ymm0, yword [0xdec]
-	vfmsubadd231ph ymm14, ymm1, ymm13
-	vfmsubadd231ph zmm12, zmm1, zmm13
-	vfmsubadd231ph zmm12, zmm13
-	vfmsubadd231ph zmm5, zmm3, zmm11
+	vfmsubadd231ph xmm6, xmm0, xmm3
+	vfmsubadd231ph xmm6, xmm3
+	vfmsubadd231ph xmm7, xmm6, oword [0x232]
+	vfmsubadd231ph ymm2, ymm6, yword [0x282]
+	vfmsubadd231ph ymm2, yword [0x282]
+	vfmsubadd231ph ymm1, ymm7, ymm0
+	vfmsubadd231ph zmm0, zmm3, zmm1
+	vfmsubadd231ph zmm0, zmm1
+	vfmsubadd231ph zmm5, zmm0, zword [0x7ce]
+	vfmsubadd231ph xmm15, xmm10, xmm9
+	vfmsubadd231ph ymm10, ymm14, ymm10
+	vfmsubadd231ph zmm8, zmm12, zmm9
+	vfmsubadd231ph xmm25, xmm16, xmm25
+	vfmsubadd231ph ymm19, ymm16, ymm27
+	vfmsubadd231ph zmm27, zmm28, zmm24

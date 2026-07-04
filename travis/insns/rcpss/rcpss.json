@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for RCPSS",
+  "id": "rcpss16",
+  "format": "bin",
+  "source": "rcpss_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/rcpss/",
+  "target": [
+   { "output": "rcpss.bin16", "match": "rcpss.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for RCPSS",
+  "id": "rcpss32",
+  "format": "bin",
+  "source": "rcpss_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/rcpss/",
+  "target": [
+   { "output": "rcpss.bin32", "match": "rcpss.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for RCPSS",
   "id": "rcpss64",
   "format": "bin",
   "source": "rcpss.asm",

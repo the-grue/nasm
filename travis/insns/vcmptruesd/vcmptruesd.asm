@@ -1,6 +1,8 @@
 default rel
-	vcmptruesd xmm3, xmm9, xmm15
-	vcmptruesd xmm3, xmm15
-	vcmptruesd xmm8, xmm7, xmm8
-	vcmptruesd k3, xmm10, xmm7
-	vcmptruesd k7, xmm9, qword [0xf42]
+	vcmptruesd xmm1, xmm4, xmm7
+	vcmptruesd xmm1, xmm7
+	vcmptruesd xmm2, xmm3, qword [0xa5b]
+	vcmptruesd k7, xmm7, xmm0
+	vcmptruesd k4, xmm5, xmm4
+	vcmptruesd xmm12, xmm11, xmm12
+	vcmptruesd k3, xmm12, xmm10

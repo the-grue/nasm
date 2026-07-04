@@ -1,4 +1,5 @@
 default rel
-	vfrczss xmm11, xmm11
-	vfrczss xmm11
-	vfrczss xmm15, xmm2
+	vfrczss xmm5, xmm5
+	vfrczss xmm5
+	vfrczss xmm1, xmm2
+	vfrczss xmm15, xmm10

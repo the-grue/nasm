@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VSUBSD",
+  "id": "vsubsd16",
+  "format": "bin",
+  "source": "vsubsd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vsubsd/",
+  "target": [
+   { "output": "vsubsd.bin16", "match": "vsubsd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VSUBSD",
+  "id": "vsubsd32",
+  "format": "bin",
+  "source": "vsubsd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vsubsd/",
+  "target": [
+   { "output": "vsubsd.bin32", "match": "vsubsd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VSUBSD",
   "id": "vsubsd64",
   "format": "bin",
   "source": "vsubsd.asm",

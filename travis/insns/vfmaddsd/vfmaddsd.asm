@@ -1,7 +1,9 @@
 default rel
-	vfmaddsd xmm5, xmm6, qword [0xded], xmm14
-	vfmaddsd xmm5, qword [0xded], xmm14
-	vfmaddsd xmm5, xmm6, qword [0x49d], xmm2
-	vfmaddsd xmm9, xmm4, xmm12, xmm6
-	vfmaddsd xmm9, xmm12, xmm6
-	vfmaddsd xmm4, xmm9, xmm6, qword [0x457]
+	vfmaddsd xmm2, xmm3, qword [0xded], xmm7
+	vfmaddsd xmm2, qword [0xded], xmm7
+	vfmaddsd xmm2, xmm3, xmm4, xmm3
+	vfmaddsd xmm6, xmm1, xmm5, xmm5
+	vfmaddsd xmm6, xmm5, xmm5
+	vfmaddsd xmm7, xmm0, xmm0, xmm5
+	vfmaddsd xmm10, xmm11, xmm14, xmm9
+	vfmaddsd xmm14, xmm15, xmm13, xmm10

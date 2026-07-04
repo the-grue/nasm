@@ -1,4 +1,6 @@
 default rel
-	vsubsh xmm7, xmm13, xmm6
-	vsubsh xmm7, xmm6
-	vsubsh xmm8, xmm11, xmm14
+	vsubsh xmm3, xmm6, xmm3
+	vsubsh xmm3, xmm3
+	vsubsh xmm3, xmm2, word [0xcb7]
+	vsubsh xmm12, xmm13, xmm11
+	vsubsh xmm30, xmm28, xmm17

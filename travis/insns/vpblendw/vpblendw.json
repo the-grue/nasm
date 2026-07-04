@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPBLENDW",
+  "id": "vpblendw16",
+  "format": "bin",
+  "source": "vpblendw_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpblendw/",
+  "target": [
+   { "output": "vpblendw.bin16", "match": "vpblendw.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPBLENDW",
+  "id": "vpblendw32",
+  "format": "bin",
+  "source": "vpblendw_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpblendw/",
+  "target": [
+   { "output": "vpblendw.bin32", "match": "vpblendw.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPBLENDW",
   "id": "vpblendw64",
   "format": "bin",
   "source": "vpblendw.asm",

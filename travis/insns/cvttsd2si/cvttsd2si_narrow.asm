@@ -1,2 +1,2 @@
-	cvttsd2si ebp, xmm5
-	cvttsd2si edx, xmm3
+	cvttsd2si ebp, xmm2
+	cvttsd2si edi, qword [0xe6e]

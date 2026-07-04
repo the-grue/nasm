@@ -1,7 +1,13 @@
 default rel
-	vpcmpltw k2, xmm4, xmm15
-	vpcmpltw k4, xmm1, oword [0xc39]
-	vpcmpltw k6, ymm14, yword [0x429]
-	vpcmpltw k7, ymm2, ymm3
-	vpcmpltw k4, zmm9, zword [0xac1]
-	vpcmpltw k5, zmm12, zword [0x49c]
+	vpcmpltw k2, xmm2, xmm7
+	vpcmpltw k6, xmm1, oword [0x315]
+	vpcmpltw k4, ymm1, ymm4
+	vpcmpltw k1, ymm4, ymm5
+	vpcmpltw k5, zmm1, zmm2
+	vpcmpltw k7, zmm0, zword [0xc76]
+	vpcmpltw k4, xmm8, xmm14
+	vpcmpltw k7, ymm13, ymm13
+	vpcmpltw k7, zmm11, zmm14
+	vpcmpltw k6, xmm29, xmm30
+	vpcmpltw k6, ymm29, ymm19
+	vpcmpltw k2, zmm23, zmm24

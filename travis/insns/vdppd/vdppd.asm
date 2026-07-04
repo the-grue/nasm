@@ -1,4 +1,5 @@
 default rel
-	vdppd xmm10, xmm9, oword [0xd97], 0x46
-	vdppd xmm10, oword [0xd97], 0x46
-	vdppd xmm15, xmm8, xmm6, 0x6
+	vdppd xmm5, xmm4, oword [0xd97], 0x46
+	vdppd xmm5, oword [0xd97], 0x46
+	vdppd xmm3, xmm6, xmm7, 0x36
+	vdppd xmm15, xmm12, xmm9, 0x65

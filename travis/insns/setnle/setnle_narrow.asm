@@ -1,4 +1,4 @@
 	setnle byte [0x33f]
-	setnle al
-	setnle edx
-	setnle ebp
+	setnle byte [0x24d]
+	setnle edi
+	setnle edi

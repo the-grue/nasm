@@ -1,7 +1,13 @@
 default rel
-	vcvtph2uw xmm14, xmm9
-	vcvtph2uw xmm13, xmm11
-	vcvtph2uw ymm2, ymm10
-	vcvtph2uw ymm9, ymm3
-	vcvtph2uw zmm1, zword [0x69b]
-	vcvtph2uw zmm0, zmm9
+	vcvtph2uw xmm7, xmm4
+	vcvtph2uw xmm5, xmm4
+	vcvtph2uw ymm0, ymm0
+	vcvtph2uw ymm4, ymm3
+	vcvtph2uw zmm4, zword [0xc35]
+	vcvtph2uw zmm7, zmm4
+	vcvtph2uw xmm14, xmm12
+	vcvtph2uw ymm15, ymm10
+	vcvtph2uw zmm10, zmm13
+	vcvtph2uw xmm27, xmm18
+	vcvtph2uw ymm16, ymm25
+	vcvtph2uw zmm23, zmm20

@@ -1,6 +1,6 @@
 	cfcmovnl si, bp
-	cfcmovnl si, bx
-	cfcmovnl dword [0xc96], edi
-	cfcmovnl dword [0x5e5], eax
-	cfcmovnl bx, word [0x72d]
-	cfcmovnl ax, word [0x6bf]
+	cfcmovnl word [0xc66], di
+	cfcmovnl eax, esi
+	cfcmovnl dword [0x410], edi
+	cfcmovnl si, word [0x203]
+	cfcmovnl bp, ax

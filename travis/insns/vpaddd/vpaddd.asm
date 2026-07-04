@@ -1,13 +1,21 @@
 default rel
-	vpaddd xmm14, xmm7, xmm1
-	vpaddd xmm14, xmm1
-	vpaddd xmm14, xmm13, xmm15
-	vpaddd ymm7, ymm0, ymm11
-	vpaddd ymm7, ymm11
-	vpaddd ymm1, ymm12, yword [0xbf5]
-	vpaddd xmm14, xmm8, xmm2
-	vpaddd xmm14, xmm2
-	vpaddd xmm8, xmm15, oword [0xe61]
-	vpaddd ymm9, ymm4, yword [0x41a]
-	vpaddd ymm9, yword [0x41a]
-	vpaddd ymm10, ymm6, ymm2
+	vpaddd xmm7, xmm3, xmm0
+	vpaddd xmm7, xmm0
+	vpaddd xmm4, xmm5, xmm6
+	vpaddd ymm6, ymm5, yword [0x893]
+	vpaddd ymm6, yword [0x893]
+	vpaddd ymm4, ymm2, yword [0x41a]
+	vpaddd xmm5, xmm3, xmm1
+	vpaddd xmm5, xmm1
+	vpaddd xmm1, xmm3, xmm4
+	vpaddd ymm2, ymm7, ymm7
+	vpaddd ymm2, ymm7
+	vpaddd ymm2, ymm7, ymm2
+	vpaddd xmm15, xmm14, xmm8
+	vpaddd ymm10, ymm9, ymm12
+	vpaddd xmm8, xmm13, xmm15
+	vpaddd ymm9, ymm9, ymm14
+	vpaddd xmm31, xmm23, xmm16
+	vpaddd ymm31, ymm30, ymm30
+	vpaddd xmm19, xmm31, xmm18
+	vpaddd ymm24, ymm30, ymm23

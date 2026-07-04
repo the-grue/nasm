@@ -1,4 +1,5 @@
 default rel
-	vpmacssdqh xmm2, xmm8, xmm4, xmm15
-	vpmacssdqh xmm2, xmm4, xmm15
-	vpmacssdqh xmm5, xmm8, xmm12, xmm13
+	vpmacssdqh xmm1, xmm4, xmm2, xmm7
+	vpmacssdqh xmm1, xmm2, xmm7
+	vpmacssdqh xmm0, xmm5, oword [0x26f], xmm3
+	vpmacssdqh xmm10, xmm12, xmm8, xmm14

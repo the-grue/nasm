@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VORPS",
+  "id": "vorps16",
+  "format": "bin",
+  "source": "vorps_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vorps/",
+  "target": [
+   { "output": "vorps.bin16", "match": "vorps.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VORPS",
+  "id": "vorps32",
+  "format": "bin",
+  "source": "vorps_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vorps/",
+  "target": [
+   { "output": "vorps.bin32", "match": "vorps.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VORPS",
   "id": "vorps64",
   "format": "bin",
   "source": "vorps.asm",

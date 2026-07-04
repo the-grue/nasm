@@ -1,3 +1,4 @@
 default rel
-	orpd xmm8, xmm1
-	orpd xmm6, oword [0x713]
+	orpd xmm4, xmm0
+	orpd xmm0, xmm4
+	orpd xmm11, xmm14

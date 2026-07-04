@@ -1,6 +1,8 @@
 default rel
-	vcmpneqss xmm7, xmm6, qword [0x5b2]
-	vcmpneqss xmm7, qword [0x5b2]
-	vcmpneqss xmm8, xmm8, qword [0xe04]
-	vcmpneqss k6, xmm8, xmm2
-	vcmpneqss k3, xmm2, xmm8
+	vcmpneqss xmm3, xmm3, qword [0x5b2]
+	vcmpneqss xmm3, qword [0x5b2]
+	vcmpneqss xmm1, xmm1, xmm1
+	vcmpneqss k3, xmm4, xmm1
+	vcmpneqss k1, xmm2, xmm0
+	vcmpneqss xmm12, xmm12, xmm15
+	vcmpneqss k6, xmm9, xmm15

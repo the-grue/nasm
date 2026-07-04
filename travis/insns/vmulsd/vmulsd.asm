@@ -1,7 +1,11 @@
 default rel
-	vmulsd xmm14, xmm5, xmm4
-	vmulsd xmm14, xmm4
-	vmulsd xmm5, xmm5, xmm2
-	vmulsd xmm0, xmm12, xmm9
-	vmulsd xmm0, xmm9
-	vmulsd xmm8, xmm8, qword [0xc76]
+	vmulsd xmm7, xmm2, xmm2
+	vmulsd xmm7, xmm2
+	vmulsd xmm1, xmm4, xmm4
+	vmulsd xmm7, xmm6, xmm2
+	vmulsd xmm7, xmm2
+	vmulsd xmm5, xmm6, xmm0
+	vmulsd xmm10, xmm10, xmm12
+	vmulsd xmm15, xmm13, xmm15
+	vmulsd xmm18, xmm16, xmm28
+	vmulsd xmm16, xmm24, xmm25

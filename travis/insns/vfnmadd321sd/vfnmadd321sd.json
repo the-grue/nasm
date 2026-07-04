@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VFNMADD321SD",
+  "id": "vfnmadd321sd16",
+  "format": "bin",
+  "source": "vfnmadd321sd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vfnmadd321sd/",
+  "target": [
+   { "output": "vfnmadd321sd.bin16", "match": "vfnmadd321sd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VFNMADD321SD",
+  "id": "vfnmadd321sd32",
+  "format": "bin",
+  "source": "vfnmadd321sd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vfnmadd321sd/",
+  "target": [
+   { "output": "vfnmadd321sd.bin32", "match": "vfnmadd321sd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VFNMADD321SD",
   "id": "vfnmadd321sd64",
   "format": "bin",
   "source": "vfnmadd321sd.asm",

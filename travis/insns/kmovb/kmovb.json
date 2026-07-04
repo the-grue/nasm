@@ -3,7 +3,7 @@
   "description": "Pseudorandom test for KMOVB",
   "id": "kmovb16",
   "format": "bin",
-  "source": "kmovb.asm",
+  "source": "kmovb_narrow.asm",
   "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/kmovb/",
   "target": [
    { "output": "kmovb.bin16", "match": "kmovb.bin16.t" }
@@ -14,7 +14,7 @@
   "description": "Pseudorandom test for KMOVB",
   "id": "kmovb32",
   "format": "bin",
-  "source": "kmovb.asm",
+  "source": "kmovb_narrow.asm",
   "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/kmovb/",
   "target": [
    { "output": "kmovb.bin32", "match": "kmovb.bin32.t" }

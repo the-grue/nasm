@@ -1,3 +1,5 @@
 default rel
-	vscatterpf0qpd [zmm9*1]
-	vscatterpf0qpd [zmm1*1]
+	vscatterpf0qpd [zmm4*1]
+	vscatterpf0qpd [zmm2*1]
+	vscatterpf0qpd [zmm8*1]
+	vscatterpf0qpd [zmm26*1]

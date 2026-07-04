@@ -1,6 +1,8 @@
 default rel
-	vcmpngtss xmm9, xmm1, xmm6
-	vcmpngtss xmm9, xmm6
-	vcmpngtss xmm14, xmm12, xmm10
-	vcmpngtss k6, xmm14, dword [0x745]
-	vcmpngtss k4, xmm9, xmm5
+	vcmpngtss xmm4, xmm0, xmm3
+	vcmpngtss xmm4, xmm3
+	vcmpngtss xmm6, xmm3, xmm4
+	vcmpngtss k2, xmm2, xmm2
+	vcmpngtss k3, xmm6, xmm7
+	vcmpngtss xmm15, xmm14, xmm9
+	vcmpngtss k5, xmm14, xmm9

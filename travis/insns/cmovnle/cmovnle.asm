@@ -1,9 +1,17 @@
 default rel
 	cmovnle cx, bx
-	cmovnle ax, di
-	cmovnle edx, esi
-	cmovnle ebx, esi
-	cmovnle rdx, qword [0xf6c]
-	cmovnle rbp, rdx
-	cmovnle ax, dx, word [0xc9a]
-	cmovnle dx, si, si
+	cmovnle bx, bx
+	cmovnle eax, edx
+	cmovnle edx, edx
+	cmovnle rbp, qword [0x948]
+	cmovnle rax, qword [0x737]
+	cmovnle dx, cx, word [0xd21]
+	cmovnle bp, di, bp
+	cmovnle r8w, r9w
+	cmovnle r15d, r15d
+	cmovnle r13, r11
+	cmovnle r15w, r12w, r11w
+	cmovnle r27w, r23w
+	cmovnle r30d, r21d
+	cmovnle r26, r30
+	cmovnle r25w, r26w, r18w

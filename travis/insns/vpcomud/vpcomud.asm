@@ -1,4 +1,5 @@
 default rel
-	vpcomud xmm14, xmm9, oword [0x7a4], 0x62
-	vpcomud xmm14, oword [0x7a4], 0x62
-	vpcomud xmm4, xmm2, xmm11, 0x64
+	vpcomud xmm7, xmm4, oword [0x7a4], 0x62
+	vpcomud xmm7, oword [0x7a4], 0x62
+	vpcomud xmm0, xmm7, xmm5, 0xac
+	vpcomud xmm10, xmm9, xmm12, 0xb2

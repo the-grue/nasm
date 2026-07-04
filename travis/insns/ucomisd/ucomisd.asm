@@ -1,3 +1,4 @@
 default rel
-	ucomisd xmm6, xmm10
-	ucomisd xmm7, xmm11
+	ucomisd xmm3, xmm5
+	ucomisd xmm2, xmm7
+	ucomisd xmm11, xmm8

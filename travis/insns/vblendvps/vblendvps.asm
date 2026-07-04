@@ -1,7 +1,9 @@
 default rel
-	vblendvps xmm11, xmm5, xmm13, xmm12
-	vblendvps xmm11, xmm13, xmm12
-	vblendvps xmm15, xmm13, oword [0xa8d], xmm14
-	vblendvps ymm15, ymm0, ymm6, ymm4
-	vblendvps ymm15, ymm6, ymm4
-	vblendvps ymm15, ymm4, ymm7, ymm12
+	vblendvps xmm5, xmm2, xmm6, xmm6
+	vblendvps xmm5, xmm6, xmm6
+	vblendvps xmm3, xmm2, oword [0x562], xmm4
+	vblendvps ymm3, ymm6, yword [0x6a2], ymm7
+	vblendvps ymm3, yword [0x6a2], ymm7
+	vblendvps ymm6, ymm4, ymm4, ymm1
+	vblendvps xmm15, xmm14, xmm13, xmm13
+	vblendvps ymm11, ymm12, ymm11, ymm13

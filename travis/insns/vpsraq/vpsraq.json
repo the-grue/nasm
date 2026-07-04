@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPSRAQ",
+  "id": "vpsraq16",
+  "format": "bin",
+  "source": "vpsraq_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpsraq/",
+  "target": [
+   { "output": "vpsraq.bin16", "match": "vpsraq.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPSRAQ",
+  "id": "vpsraq32",
+  "format": "bin",
+  "source": "vpsraq_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpsraq/",
+  "target": [
+   { "output": "vpsraq.bin32", "match": "vpsraq.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPSRAQ",
   "id": "vpsraq64",
   "format": "bin",
   "source": "vpsraq.asm",

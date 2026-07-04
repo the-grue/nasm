@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for PTEST",
+  "id": "ptest16",
+  "format": "bin",
+  "source": "ptest_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/ptest/",
+  "target": [
+   { "output": "ptest.bin16", "match": "ptest.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for PTEST",
+  "id": "ptest32",
+  "format": "bin",
+  "source": "ptest_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/ptest/",
+  "target": [
+   { "output": "ptest.bin32", "match": "ptest.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for PTEST",
   "id": "ptest64",
   "format": "bin",
   "source": "ptest.asm",

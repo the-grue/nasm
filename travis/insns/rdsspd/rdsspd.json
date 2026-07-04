@@ -3,7 +3,7 @@
   "description": "Pseudorandom test for RDSSPD",
   "id": "rdsspd16",
   "format": "bin",
-  "source": "rdsspd.asm",
+  "source": "rdsspd_narrow.asm",
   "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/rdsspd/",
   "target": [
    { "output": "rdsspd.bin16", "match": "rdsspd.bin16.t" }
@@ -14,7 +14,7 @@
   "description": "Pseudorandom test for RDSSPD",
   "id": "rdsspd32",
   "format": "bin",
-  "source": "rdsspd.asm",
+  "source": "rdsspd_narrow.asm",
   "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/rdsspd/",
   "target": [
    { "output": "rdsspd.bin32", "match": "rdsspd.bin32.t" }

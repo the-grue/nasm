@@ -1,9 +1,13 @@
 default rel
-	vpgatherqd xmm13, [xmm13*1], xmm12
-	vpgatherqd xmm13, [xmm11*1], xmm12
-	vpgatherqd xmm10, [ymm1*1], xmm4
-	vpgatherqd xmm9, [ymm5*1], xmm1
-	vpgatherqd xmm7, [xmm10*1]
-	vpgatherqd xmm7, [xmm9*1]
-	vpgatherqd xmm5, [ymm12*1]
-	vpgatherqd xmm2, [ymm0*1]
+	vpgatherqd xmm6, [xmm6*1], xmm6
+	vpgatherqd xmm4, [xmm2*1], xmm0
+	vpgatherqd xmm3, [ymm5*1], xmm3
+	vpgatherqd xmm7, [ymm4*1], xmm7
+	vpgatherqd xmm6, [xmm3*1]
+	vpgatherqd xmm6, [xmm3*1]
+	vpgatherqd xmm6, [ymm6*1]
+	vpgatherqd xmm6, [ymm6*1]
+	vpgatherqd xmm14, [xmm13*1], xmm14
+	vpgatherqd xmm12, [ymm10*1], xmm14
+	vpgatherqd xmm13, [xmm10*1]
+	vpgatherqd xmm10, [ymm10*1]

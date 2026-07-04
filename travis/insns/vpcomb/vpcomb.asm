@@ -1,4 +1,5 @@
 default rel
-	vpcomb xmm4, xmm5, xmm9, 0x4f
-	vpcomb xmm4, xmm9, 0x4f
-	vpcomb xmm6, xmm11, xmm13, 0xd0
+	vpcomb xmm2, xmm2, xmm4, 0x4f
+	vpcomb xmm2, xmm4, 0x4f
+	vpcomb xmm3, xmm0, oword [0x4d7], 0x7c
+	vpcomb xmm11, xmm13, xmm9, 0xe0

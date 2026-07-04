@@ -1,4 +1,4 @@
 	lss di, word [0xcbe]
-	lss bp, word [0xed2]
-	lss ebp, dword [0x227]
-	lss ecx, dword [0xca7]
+	lss cx, word [0xca7]
+	lss edi, dword [0x31a]
+	lss edx, dword [0x3ac]

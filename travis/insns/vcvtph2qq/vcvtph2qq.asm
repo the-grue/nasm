@@ -1,7 +1,13 @@
 default rel
-	vcvtph2qq xmm11, xmm3
-	vcvtph2qq xmm10, dword [0x5af]
-	vcvtph2qq ymm6, xmm9
-	vcvtph2qq ymm2, qword [0xcc6]
-	vcvtph2qq zmm8, xmm2
-	vcvtph2qq zmm6, oword [0xfe6]
+	vcvtph2qq xmm5, xmm1
+	vcvtph2qq xmm2, xmm1
+	vcvtph2qq ymm6, qword [0x8b1]
+	vcvtph2qq ymm7, xmm1
+	vcvtph2qq zmm3, oword [0x195]
+	vcvtph2qq zmm2, oword [0x378]
+	vcvtph2qq xmm13, xmm15
+	vcvtph2qq ymm9, xmm9
+	vcvtph2qq zmm12, xmm11
+	vcvtph2qq xmm20, xmm22
+	vcvtph2qq ymm22, xmm29
+	vcvtph2qq zmm30, xmm31

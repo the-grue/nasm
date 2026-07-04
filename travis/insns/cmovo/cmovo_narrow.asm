@@ -1,6 +1,6 @@
 	cmovo di, cx
-	cmovo cx, ax
-	cmovo edx, dword [0xa44]
-	cmovo esi, ecx
-	cmovo dx, ax, di
-	cmovo si, di, bx
+	cmovo bp, si
+	cmovo esi, edx
+	cmovo esi, eax
+	cmovo si, si, word [0x925]
+	cmovo ax, bx, di

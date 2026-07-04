@@ -1,9 +1,13 @@
 default rel
-	vgatherdpd xmm3, [xmm4*1], xmm2
-	vgatherdpd xmm3, [xmm15*1], xmm9
-	vgatherdpd ymm5, [xmm5*1], ymm3
-	vgatherdpd ymm7, [xmm14*1], ymm12
-	vgatherdpd xmm15, [xmm12*1]
-	vgatherdpd xmm15, [xmm6*1]
-	vgatherdpd ymm12, [xmm13*1]
-	vgatherdpd ymm12, [xmm2*1]
+	vgatherdpd xmm1, [xmm2*1], xmm1
+	vgatherdpd xmm3, [xmm7*1], xmm6
+	vgatherdpd ymm7, [xmm6*1], ymm7
+	vgatherdpd ymm5, [xmm6*1], ymm6
+	vgatherdpd xmm5, [xmm2*1]
+	vgatherdpd xmm6, [xmm3*1]
+	vgatherdpd ymm1, [xmm7*1]
+	vgatherdpd ymm5, [xmm4*1]
+	vgatherdpd xmm9, [xmm15*1], xmm12
+	vgatherdpd ymm11, [xmm14*1], ymm14
+	vgatherdpd xmm9, [xmm15*1]
+	vgatherdpd ymm11, [xmm12*1]

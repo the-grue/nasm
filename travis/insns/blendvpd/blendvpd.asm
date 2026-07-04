@@ -1,5 +1,7 @@
 default rel
-	blendvpd xmm6, xmm6, xmm0
-	blendvpd xmm9, xmm14, xmm0
-	blendvpd xmm0, oword [0xdb1]
-	blendvpd xmm2, xmm11
+	blendvpd xmm3, xmm3, xmm0
+	blendvpd xmm7, oword [0x2fe], xmm0
+	blendvpd xmm3, oword [0xab1]
+	blendvpd xmm5, oword [0xcd6]
+	blendvpd xmm12, xmm8, xmm0
+	blendvpd xmm8, xmm8

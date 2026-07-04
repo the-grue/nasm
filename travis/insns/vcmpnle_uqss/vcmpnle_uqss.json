@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VCMPNLE_UQSS",
+  "id": "vcmpnle_uqss16",
+  "format": "bin",
+  "source": "vcmpnle_uqss_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcmpnle_uqss/",
+  "target": [
+   { "output": "vcmpnle_uqss.bin16", "match": "vcmpnle_uqss.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCMPNLE_UQSS",
+  "id": "vcmpnle_uqss32",
+  "format": "bin",
+  "source": "vcmpnle_uqss_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcmpnle_uqss/",
+  "target": [
+   { "output": "vcmpnle_uqss.bin32", "match": "vcmpnle_uqss.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCMPNLE_UQSS",
   "id": "vcmpnle_uqss64",
   "format": "bin",
   "source": "vcmpnle_uqss.asm",

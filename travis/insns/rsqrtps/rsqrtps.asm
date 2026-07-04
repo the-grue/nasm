@@ -1,3 +1,4 @@
 default rel
-	rsqrtps xmm2, xmm7
-	rsqrtps xmm13, xmm7
+	rsqrtps xmm1, xmm3
+	rsqrtps xmm1, xmm7
+	rsqrtps xmm14, xmm10

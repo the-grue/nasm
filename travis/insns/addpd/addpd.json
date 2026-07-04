@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for ADDPD",
+  "id": "addpd16",
+  "format": "bin",
+  "source": "addpd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/addpd/",
+  "target": [
+   { "output": "addpd.bin16", "match": "addpd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for ADDPD",
+  "id": "addpd32",
+  "format": "bin",
+  "source": "addpd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/addpd/",
+  "target": [
+   { "output": "addpd.bin32", "match": "addpd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for ADDPD",
   "id": "addpd64",
   "format": "bin",
   "source": "addpd.asm",

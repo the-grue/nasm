@@ -1,5 +1,6 @@
 default rel
 	pabsb mm6, qword [0x4a2]
 	pabsb mm6, qword [0x402]
-	pabsb xmm0, xmm12
-	pabsb xmm14, oword [0x9dd]
+	pabsb xmm0, xmm6
+	pabsb xmm2, oword [0x4fb]
+	pabsb xmm15, xmm15

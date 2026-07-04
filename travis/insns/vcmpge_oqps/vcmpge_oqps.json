@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VCMPGE_OQPS",
+  "id": "vcmpge_oqps16",
+  "format": "bin",
+  "source": "vcmpge_oqps_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcmpge_oqps/",
+  "target": [
+   { "output": "vcmpge_oqps.bin16", "match": "vcmpge_oqps.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCMPGE_OQPS",
+  "id": "vcmpge_oqps32",
+  "format": "bin",
+  "source": "vcmpge_oqps_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcmpge_oqps/",
+  "target": [
+   { "output": "vcmpge_oqps.bin32", "match": "vcmpge_oqps.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCMPGE_OQPS",
   "id": "vcmpge_oqps64",
   "format": "bin",
   "source": "vcmpge_oqps.asm",

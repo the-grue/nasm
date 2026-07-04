@@ -1,3 +1,4 @@
 default rel
-	roundpd xmm2, xmm14, 0x7c
-	roundpd xmm13, xmm1, 0x77
+	roundpd xmm1, xmm7, 0x7c
+	roundpd xmm1, xmm6, 0x6e
+	roundpd xmm14, xmm11, 0x1e

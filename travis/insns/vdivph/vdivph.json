@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VDIVPH",
+  "id": "vdivph16",
+  "format": "bin",
+  "source": "vdivph_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vdivph/",
+  "target": [
+   { "output": "vdivph.bin16", "match": "vdivph.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VDIVPH",
+  "id": "vdivph32",
+  "format": "bin",
+  "source": "vdivph_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vdivph/",
+  "target": [
+   { "output": "vdivph.bin32", "match": "vdivph.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VDIVPH",
   "id": "vdivph64",
   "format": "bin",
   "source": "vdivph.asm",

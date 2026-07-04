@@ -1,7 +1,9 @@
 default rel
-	vpsignb xmm0, xmm5, oword [0xb8a]
+	vpsignb xmm0, xmm2, oword [0xb8a]
 	vpsignb xmm0, oword [0xb8a]
-	vpsignb xmm2, xmm6, xmm8
-	vpsignb ymm8, ymm6, yword [0x921]
-	vpsignb ymm8, yword [0x921]
-	vpsignb ymm6, ymm0, ymm14
+	vpsignb xmm7, xmm4, xmm0
+	vpsignb ymm2, ymm7, ymm7
+	vpsignb ymm2, ymm7
+	vpsignb ymm1, ymm6, ymm4
+	vpsignb xmm9, xmm11, xmm8
+	vpsignb ymm11, ymm9, ymm12

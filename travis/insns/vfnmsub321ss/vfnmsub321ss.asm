@@ -1,3 +1,4 @@
 default rel
-	vfnmsub321ss xmm8, xmm9, xmm2
-	vfnmsub321ss xmm12, xmm9, xmm3
+	vfnmsub321ss xmm4, xmm4, xmm1
+	vfnmsub321ss xmm2, xmm4, xmm3
+	vfnmsub321ss xmm14, xmm12, xmm10

@@ -1,3 +1,5 @@
 default rel
 	incsspd edx
-	incsspd ecx
+	incsspd eax
+	incsspd r11d
+	incsspd r18d

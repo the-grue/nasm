@@ -1,7 +1,13 @@
 default rel
-	vgetexppd xmm4, xmm10
-	vgetexppd xmm12, oword [0x6e4]
-	vgetexppd ymm14, ymm6
-	vgetexppd ymm3, ymm14
-	vgetexppd zmm14, zword [0x80f]
-	vgetexppd zmm12, zmm5
+	vgetexppd xmm2, xmm5
+	vgetexppd xmm3, xmm1
+	vgetexppd ymm0, yword [0xf02]
+	vgetexppd ymm2, ymm0
+	vgetexppd zmm6, zmm4
+	vgetexppd zmm5, zword [0x4da]
+	vgetexppd xmm14, xmm13
+	vgetexppd ymm15, ymm11
+	vgetexppd zmm13, zmm10
+	vgetexppd xmm22, xmm30
+	vgetexppd ymm28, ymm22
+	vgetexppd zmm31, zmm17

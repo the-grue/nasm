@@ -1,6 +1,6 @@
 	sbb byte [0x152], al
-	sbb al, bl
-	sbb bp, di
-	sbb word [0x678], cx
-	sbb ebp, ecx
+	sbb byte [0xc9c], dl
+	sbb cx, bx
+	sbb cx, si
 	sbb edx, ebx
+	sbb esi, ebp

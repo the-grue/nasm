@@ -1,6 +1,6 @@
 	movbe bx, word [0xdea]
-	movbe dx, word [0xd51]
-	movbe esi, dword [0xa9a]
-	movbe edx, dword [0xade]
-	movbe word [0xda1], ax
-	movbe word [0x1fc], bx
+	movbe dx, word [0xade]
+	movbe ecx, dword [0xcad]
+	movbe eax, dword [0x4b5]
+	movbe word [0xc58], ax
+	movbe word [0xb12], bp

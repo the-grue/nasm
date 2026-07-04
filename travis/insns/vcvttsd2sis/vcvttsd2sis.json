@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VCVTTSD2SIS",
+  "id": "vcvttsd2sis16",
+  "format": "bin",
+  "source": "vcvttsd2sis_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcvttsd2sis/",
+  "target": [
+   { "output": "vcvttsd2sis.bin16", "match": "vcvttsd2sis.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCVTTSD2SIS",
+  "id": "vcvttsd2sis32",
+  "format": "bin",
+  "source": "vcvttsd2sis_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcvttsd2sis/",
+  "target": [
+   { "output": "vcvttsd2sis.bin32", "match": "vcvttsd2sis.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCVTTSD2SIS",
   "id": "vcvttsd2sis64",
   "format": "bin",
   "source": "vcvttsd2sis.asm",

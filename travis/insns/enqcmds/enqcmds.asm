@@ -1,7 +1,7 @@
 default rel
 	enqcmds bp, zword [0xb81]
-	enqcmds bx, zword [0xb1d]
-	enqcmds edx, zword [0x8a5]
-	enqcmds edi, zword [0x974]
-	enqcmds rsi, zword [0x573]
-	enqcmds rdi, zword [0x1b4]
+	enqcmds di, zword [0x974]
+	enqcmds esi, zword [0x573]
+	enqcmds ebx, zword [0x407]
+	enqcmds rcx, zword [0x1bd]
+	enqcmds rax, zword [0xb26]

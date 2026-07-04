@@ -1,5 +1,9 @@
 default rel
-	vbroadcastf32x2 ymm15, xmm12
-	vbroadcastf32x2 ymm12, xmm0
-	vbroadcastf32x2 zmm14, xmm15
-	vbroadcastf32x2 zmm5, xmm4
+	vbroadcastf32x2 ymm7, xmm6
+	vbroadcastf32x2 ymm4, qword [0x5ba]
+	vbroadcastf32x2 zmm3, xmm0
+	vbroadcastf32x2 zmm3, xmm4
+	vbroadcastf32x2 ymm14, xmm13
+	vbroadcastf32x2 zmm15, xmm10
+	vbroadcastf32x2 ymm16, xmm30
+	vbroadcastf32x2 zmm26, xmm26

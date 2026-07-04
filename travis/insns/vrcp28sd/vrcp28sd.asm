@@ -1,4 +1,6 @@
 default rel
-	vrcp28sd xmm7, xmm9, qword [0x7c2]
-	vrcp28sd xmm7, qword [0x7c2]
-	vrcp28sd xmm4, xmm8, qword [0xf80]
+	vrcp28sd xmm3, xmm4, qword [0x7c2]
+	vrcp28sd xmm3, qword [0x7c2]
+	vrcp28sd xmm6, xmm2, qword [0x675]
+	vrcp28sd xmm10, xmm12, xmm15
+	vrcp28sd xmm31, xmm27, xmm31

@@ -1,4 +1,4 @@
 	setae bl
 	setae bl
-	setae ebx
-	setae edx
+	setae esi
+	setae ecx

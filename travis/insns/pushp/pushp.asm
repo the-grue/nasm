@@ -1,7 +1,7 @@
 default rel
 	pushp rdi
-	pushp rbp
-	pushp rdx, rbx
+	pushp rbx
 	pushp rbx, rsi
-	pushp rax:rsi
-	pushp rbx:rcx
+	pushp rbx, rsi
+	pushp rsi:rbp
+	pushp rdx:rax

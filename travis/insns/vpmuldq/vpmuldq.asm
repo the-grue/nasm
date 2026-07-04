@@ -1,13 +1,21 @@
 default rel
-	vpmuldq xmm14, xmm2, oword [0x84d]
-	vpmuldq xmm14, oword [0x84d]
-	vpmuldq xmm9, xmm3, oword [0xb45]
-	vpmuldq ymm9, ymm9, yword [0xf11]
-	vpmuldq ymm9, yword [0xf11]
-	vpmuldq ymm0, ymm3, yword [0x778]
-	vpmuldq xmm15, xmm5, oword [0xaa9]
-	vpmuldq xmm15, oword [0xaa9]
-	vpmuldq xmm7, xmm15, oword [0x1f5]
-	vpmuldq ymm7, ymm10, yword [0xf4a]
-	vpmuldq ymm7, yword [0xf4a]
-	vpmuldq ymm13, ymm9, ymm14
+	vpmuldq xmm7, xmm1, oword [0x84d]
+	vpmuldq xmm7, oword [0x84d]
+	vpmuldq xmm6, xmm7, xmm1
+	vpmuldq ymm7, ymm3, yword [0x674]
+	vpmuldq ymm7, yword [0x674]
+	vpmuldq ymm3, ymm5, yword [0xf4a]
+	vpmuldq xmm6, xmm4, xmm7
+	vpmuldq xmm6, xmm7
+	vpmuldq xmm7, xmm3, xmm3
+	vpmuldq ymm3, ymm6, ymm3
+	vpmuldq ymm3, ymm3
+	vpmuldq ymm3, ymm3, yword [0x61e]
+	vpmuldq xmm12, xmm9, xmm14
+	vpmuldq ymm14, ymm13, ymm11
+	vpmuldq xmm12, xmm14, xmm15
+	vpmuldq ymm15, ymm8, ymm12
+	vpmuldq xmm26, xmm25, xmm25
+	vpmuldq ymm31, ymm31, ymm17
+	vpmuldq xmm22, xmm29, xmm19
+	vpmuldq ymm20, ymm17, ymm26

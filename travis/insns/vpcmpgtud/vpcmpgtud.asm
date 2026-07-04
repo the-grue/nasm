@@ -1,7 +1,13 @@
 default rel
-	vpcmpgtud k2, xmm1, xmm11
-	vpcmpgtud k4, xmm1, xmm8
-	vpcmpgtud k6, ymm12, yword [0x4a9]
-	vpcmpgtud k3, ymm6, ymm8
-	vpcmpgtud k3, zmm6, zword [0xd61]
-	vpcmpgtud k4, zmm14, zmm12
+	vpcmpgtud k2, xmm0, xmm5
+	vpcmpgtud k6, xmm1, xmm3
+	vpcmpgtud k2, ymm4, ymm3
+	vpcmpgtud k2, ymm3, ymm3
+	vpcmpgtud k1, zmm5, zmm3
+	vpcmpgtud k2, zmm0, zword [0xd34]
+	vpcmpgtud k4, xmm8, xmm10
+	vpcmpgtud k6, ymm14, ymm12
+	vpcmpgtud k4, zmm12, zmm12
+	vpcmpgtud k4, xmm28, xmm28
+	vpcmpgtud k7, ymm21, ymm28
+	vpcmpgtud k4, zmm30, zmm25

@@ -1,2 +1,2 @@
 	blcfill edx, ebp
-	blcfill ebp, ebp
+	blcfill ebx, dword [0xe98]

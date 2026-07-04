@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for MINSS",
+  "id": "minss16",
+  "format": "bin",
+  "source": "minss_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/minss/",
+  "target": [
+   { "output": "minss.bin16", "match": "minss.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for MINSS",
+  "id": "minss32",
+  "format": "bin",
+  "source": "minss_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/minss/",
+  "target": [
+   { "output": "minss.bin32", "match": "minss.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for MINSS",
   "id": "minss64",
   "format": "bin",
   "source": "minss.asm",

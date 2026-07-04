@@ -1,7 +1,13 @@
 default rel
 	setpezu rbp
-	setpezu rdx
-	setpezu ebp
+	setpezu rcx
+	setpezu edx
 	setpezu ecx
-	setpezu bl
-	setpezu byte [0x567]
+	setpezu byte [0x76b]
+	setpezu al
+	setpezu r11
+	setpezu r11d
+	setpezu r9b
+	setpezu r30
+	setpezu r27d
+	setpezu r16b

@@ -1,3 +1,4 @@
 default rel
-	vfmsub312sd xmm3, xmm4, xmm3
-	vfmsub312sd xmm8, xmm6, xmm5
+	vfmsub312sd xmm1, xmm2, xmm1
+	vfmsub312sd xmm4, xmm3, xmm5
+	vfmsub312sd xmm12, xmm11, xmm9

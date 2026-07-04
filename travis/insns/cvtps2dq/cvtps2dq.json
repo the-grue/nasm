@@ -3,7 +3,7 @@
   "description": "Pseudorandom test for CVTPS2DQ",
   "id": "cvtps2dq16",
   "format": "bin",
-  "source": "cvtps2dq.asm",
+  "source": "cvtps2dq_narrow.asm",
   "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/cvtps2dq/",
   "target": [
    { "output": "cvtps2dq.bin16", "match": "cvtps2dq.bin16.t" }
@@ -14,7 +14,7 @@
   "description": "Pseudorandom test for CVTPS2DQ",
   "id": "cvtps2dq32",
   "format": "bin",
-  "source": "cvtps2dq.asm",
+  "source": "cvtps2dq_narrow.asm",
   "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/cvtps2dq/",
   "target": [
    { "output": "cvtps2dq.bin32", "match": "cvtps2dq.bin32.t" }

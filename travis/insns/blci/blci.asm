@@ -1,5 +1,7 @@
 default rel
 	blci edx, ebx
-	blci ecx, dword [0x1ec]
-	blci rsi, rbx
-	blci rbx, rbx
+	blci edx, ebx
+	blci rdx, rdi
+	blci rbx, rsi
+	blci r10d, r14d
+	blci r13, r10

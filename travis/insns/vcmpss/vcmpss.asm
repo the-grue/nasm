@@ -1,6 +1,8 @@
 default rel
-	vcmpss xmm3, xmm11, dword [0x40b], 0xbf
-	vcmpss xmm3, dword [0x40b], 0xbf
-	vcmpss xmm11, xmm7, xmm6, 0x7b
-	vcmpss k7, xmm15, xmm0, 0x16
-	vcmpss k7, xmm5, xmm1, 0x32
+	vcmpss xmm1, xmm5, dword [0x40b], 0xbf
+	vcmpss xmm1, dword [0x40b], 0xbf
+	vcmpss xmm0, xmm0, dword [0x62d], 0xe
+	vcmpss k1, xmm1, xmm2, 0x67
+	vcmpss k6, xmm5, xmm7, 0xa1
+	vcmpss xmm13, xmm11, xmm12, 0x62
+	vcmpss k7, xmm8, xmm13, 0xc9

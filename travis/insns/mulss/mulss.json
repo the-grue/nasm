@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for MULSS",
+  "id": "mulss16",
+  "format": "bin",
+  "source": "mulss_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/mulss/",
+  "target": [
+   { "output": "mulss.bin16", "match": "mulss.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for MULSS",
+  "id": "mulss32",
+  "format": "bin",
+  "source": "mulss_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/mulss/",
+  "target": [
+   { "output": "mulss.bin32", "match": "mulss.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for MULSS",
   "id": "mulss64",
   "format": "bin",
   "source": "mulss.asm",

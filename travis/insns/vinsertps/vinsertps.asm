@@ -1,4 +1,6 @@
 default rel
-	vinsertps xmm5, xmm4, xmm9, 0xda
-	vinsertps xmm5, xmm9, 0xda
-	vinsertps xmm5, xmm8, xmm7, 0xf
+	vinsertps xmm2, xmm2, xmm4, 0xda
+	vinsertps xmm2, xmm4, 0xda
+	vinsertps xmm7, xmm7, xmm4, 0x3c
+	vinsertps xmm10, xmm12, xmm8, 0x70
+	vinsertps xmm16, xmm18, xmm19, 0xde

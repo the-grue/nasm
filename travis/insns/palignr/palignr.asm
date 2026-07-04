@@ -1,5 +1,6 @@
 default rel
 	palignr mm5, mm3, 0x6c
 	palignr mm3, mm2, 0x18
-	palignr xmm8, xmm13, 0xa
-	palignr xmm1, xmm2, 0x57
+	palignr xmm4, xmm6, 0xa
+	palignr xmm7, oword [0xaea], 0x7c
+	palignr xmm8, xmm9, 0x15

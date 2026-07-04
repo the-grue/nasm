@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VADDSH",
+  "id": "vaddsh16",
+  "format": "bin",
+  "source": "vaddsh_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vaddsh/",
+  "target": [
+   { "output": "vaddsh.bin16", "match": "vaddsh.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VADDSH",
+  "id": "vaddsh32",
+  "format": "bin",
+  "source": "vaddsh_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vaddsh/",
+  "target": [
+   { "output": "vaddsh.bin32", "match": "vaddsh.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VADDSH",
   "id": "vaddsh64",
   "format": "bin",
   "source": "vaddsh.asm",

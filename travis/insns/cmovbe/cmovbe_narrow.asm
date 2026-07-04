@@ -1,6 +1,6 @@
 	cmovbe si, dx
-	cmovbe di, dx
-	cmovbe ecx, edi
-	cmovbe eax, ebx
-	cmovbe bp, bp, word [0x69b]
-	cmovbe di, cx, bx
+	cmovbe dx, word [0x16a]
+	cmovbe esi, ecx
+	cmovbe edx, dword [0xff6]
+	cmovbe dx, di, cx
+	cmovbe cx, di, bp

@@ -1,11 +1,19 @@
 default rel
-	vpermilpd xmm4, xmm13, xmm14
-	vpermilpd xmm4, xmm14
-	vpermilpd xmm4, xmm5, oword [0xecb]
-	vpermilpd ymm13, ymm5, ymm13
-	vpermilpd ymm13, ymm13
-	vpermilpd ymm0, ymm15, ymm15
-	vpermilpd xmm3, oword [0x49a], 0xa4
-	vpermilpd xmm5, xmm3, 0x2c
-	vpermilpd ymm15, yword [0xb42], 0x9c
-	vpermilpd ymm0, yword [0xde1], 0x2b
+	vpermilpd xmm2, xmm6, xmm7
+	vpermilpd xmm2, xmm7
+	vpermilpd xmm1, xmm6, xmm7
+	vpermilpd ymm3, ymm7, ymm7
+	vpermilpd ymm3, ymm7
+	vpermilpd ymm7, ymm7, ymm4
+	vpermilpd xmm0, oword [0xde1], 0x2b
+	vpermilpd xmm3, xmm3, 0x43
+	vpermilpd ymm1, ymm2, 0x4b
+	vpermilpd ymm0, yword [0xc84], 0x73
+	vpermilpd xmm10, xmm10, xmm14
+	vpermilpd ymm9, ymm13, ymm10
+	vpermilpd xmm11, xmm9, 0xc
+	vpermilpd ymm10, ymm13, 0x49
+	vpermilpd xmm30, xmm29, xmm21
+	vpermilpd ymm16, ymm19, ymm18
+	vpermilpd xmm28, xmm17, 0xb0
+	vpermilpd ymm18, ymm18, 0xef

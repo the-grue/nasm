@@ -1,13 +1,21 @@
 default rel
-	vunpcklpd xmm15, xmm2, xmm1
-	vunpcklpd xmm15, xmm1
-	vunpcklpd xmm2, xmm0, oword [0x40d]
-	vunpcklpd ymm1, ymm7, yword [0x7fd]
-	vunpcklpd ymm1, yword [0x7fd]
-	vunpcklpd ymm0, ymm9, ymm7
-	vunpcklpd xmm13, xmm8, oword [0x22a]
-	vunpcklpd xmm13, oword [0x22a]
-	vunpcklpd xmm13, xmm1, xmm12
-	vunpcklpd ymm5, ymm5, ymm5
-	vunpcklpd ymm5, ymm5
-	vunpcklpd ymm8, ymm5, yword [0xd2e]
+	vunpcklpd xmm7, xmm1, xmm0
+	vunpcklpd xmm7, xmm0
+	vunpcklpd xmm7, xmm3, xmm4
+	vunpcklpd ymm0, ymm3, yword [0x8d5]
+	vunpcklpd ymm0, yword [0x8d5]
+	vunpcklpd ymm2, ymm2, ymm2
+	vunpcklpd xmm4, xmm2, oword [0xd2e]
+	vunpcklpd xmm4, oword [0xd2e]
+	vunpcklpd xmm4, xmm7, oword [0x639]
+	vunpcklpd ymm4, ymm3, ymm0
+	vunpcklpd ymm4, ymm0
+	vunpcklpd ymm7, ymm7, ymm5
+	vunpcklpd xmm9, xmm8, xmm15
+	vunpcklpd ymm15, ymm8, ymm14
+	vunpcklpd xmm13, xmm11, xmm13
+	vunpcklpd ymm9, ymm14, ymm11
+	vunpcklpd xmm19, xmm17, xmm23
+	vunpcklpd ymm17, ymm16, ymm28
+	vunpcklpd xmm20, xmm23, xmm18
+	vunpcklpd ymm20, ymm20, ymm30

@@ -1,5 +1,5 @@
 default rel
 	vmwrite edx, ebx
-	vmwrite ebx, ebx
+	vmwrite esi, ebx
+	vmwrite rdx, rdx
 	vmwrite rdx, rsi
-	vmwrite rbx, rcx

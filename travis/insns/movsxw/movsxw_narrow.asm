@@ -1,6 +1,6 @@
 	movsxw eax, ax
 	movsxw eax, ax
 	movsxw ax, cx
-	movsxw ax, ax
-	movsxw edx, bx
-	movsxw esi, word [0xfc0]
+	movsxw cx, si
+	movsxw edi, word [0x190]
+	movsxw esi, ax

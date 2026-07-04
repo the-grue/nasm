@@ -3,7 +3,7 @@
   "description": "Pseudorandom test for CVTTPS2PI",
   "id": "cvttps2pi16",
   "format": "bin",
-  "source": "cvttps2pi.asm",
+  "source": "cvttps2pi_narrow.asm",
   "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/cvttps2pi/",
   "target": [
    { "output": "cvttps2pi.bin16", "match": "cvttps2pi.bin16.t" }
@@ -14,7 +14,7 @@
   "description": "Pseudorandom test for CVTTPS2PI",
   "id": "cvttps2pi32",
   "format": "bin",
-  "source": "cvttps2pi.asm",
+  "source": "cvttps2pi_narrow.asm",
   "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/cvttps2pi/",
   "target": [
    { "output": "cvttps2pi.bin32", "match": "cvttps2pi.bin32.t" }

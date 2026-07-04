@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for AESKEYGENASSIST",
+  "id": "aeskeygenassist16",
+  "format": "bin",
+  "source": "aeskeygenassist_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/aeskeygenassist/",
+  "target": [
+   { "output": "aeskeygenassist.bin16", "match": "aeskeygenassist.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for AESKEYGENASSIST",
+  "id": "aeskeygenassist32",
+  "format": "bin",
+  "source": "aeskeygenassist_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/aeskeygenassist/",
+  "target": [
+   { "output": "aeskeygenassist.bin32", "match": "aeskeygenassist.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for AESKEYGENASSIST",
   "id": "aeskeygenassist64",
   "format": "bin",
   "source": "aeskeygenassist.asm",

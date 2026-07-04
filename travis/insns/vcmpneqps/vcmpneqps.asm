@@ -1,11 +1,15 @@
 default rel
-	vcmpneqps xmm10, xmm3, xmm6
-	vcmpneqps xmm10, xmm6
-	vcmpneqps xmm9, xmm14, xmm14
-	vcmpneqps ymm3, ymm2, ymm1
-	vcmpneqps ymm3, ymm1
-	vcmpneqps ymm4, ymm11, ymm6
-	vcmpneqps k4, xmm1, oword [0x647]
-	vcmpneqps k5, xmm4, xmm1
-	vcmpneqps k1, ymm8, yword [0xeac]
-	vcmpneqps k4, ymm0, ymm11
+	vcmpneqps xmm5, xmm1, xmm3
+	vcmpneqps xmm5, xmm3
+	vcmpneqps xmm4, xmm0, xmm5
+	vcmpneqps ymm2, ymm3, ymm0
+	vcmpneqps ymm2, ymm0
+	vcmpneqps ymm0, ymm4, yword [0xeac]
+	vcmpneqps k4, xmm0, xmm5
+	vcmpneqps k7, xmm3, xmm4
+	vcmpneqps k7, ymm0, ymm2
+	vcmpneqps k5, ymm0, yword [0xa86]
+	vcmpneqps xmm12, xmm15, xmm13
+	vcmpneqps ymm13, ymm10, ymm12
+	vcmpneqps k2, xmm12, xmm9
+	vcmpneqps k7, ymm10, ymm15

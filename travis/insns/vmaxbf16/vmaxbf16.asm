@@ -1,7 +1,13 @@
 default rel
-	vmaxbf16 xmm5, xmm10, oword [0x9bd]
-	vmaxbf16 xmm8, xmm9, oword [0xc06]
-	vmaxbf16 ymm2, ymm5, ymm2
-	vmaxbf16 ymm9, ymm4, ymm3
-	vmaxbf16 zmm8, zmm14, zmm0
-	vmaxbf16 zmm7, zmm13, zmm6
+	vmaxbf16 xmm2, xmm5, oword [0x9bd]
+	vmaxbf16 xmm4, xmm1, xmm2
+	vmaxbf16 ymm2, ymm1, ymm7
+	vmaxbf16 ymm7, ymm4, yword [0x76b]
+	vmaxbf16 zmm6, zmm5, zmm2
+	vmaxbf16 zmm2, zmm6, zword [0x2cc]
+	vmaxbf16 xmm12, xmm12, xmm15
+	vmaxbf16 ymm13, ymm8, ymm11
+	vmaxbf16 zmm11, zmm10, zmm11
+	vmaxbf16 xmm27, xmm18, xmm21
+	vmaxbf16 ymm29, ymm23, ymm22
+	vmaxbf16 zmm20, zmm21, zmm19

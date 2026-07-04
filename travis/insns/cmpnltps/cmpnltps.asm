@@ -1,3 +1,4 @@
 default rel
-	cmpnltps xmm10, xmm5
-	cmpnltps xmm12, xmm10
+	cmpnltps xmm5, xmm2
+	cmpnltps xmm0, xmm7
+	cmpnltps xmm14, xmm8

@@ -1,2 +1,2 @@
 	blcic edi, edx
-	blcic ecx, eax
+	blcic edi, dword [0x5d5]

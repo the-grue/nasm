@@ -1,2 +1,2 @@
 	cmpncxadd dword [0xcbc], edi, edx
-	cmpncxadd dword [0x4a0], ecx, ecx
+	cmpncxadd dword [0x74b], esi, esi

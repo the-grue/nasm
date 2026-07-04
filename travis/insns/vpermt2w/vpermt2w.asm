@@ -1,7 +1,13 @@
 default rel
-	vpermt2w xmm14, xmm12, xmm8
-	vpermt2w xmm13, xmm6, oword [0x3fb]
-	vpermt2w ymm1, ymm10, ymm13
-	vpermt2w ymm10, ymm0, yword [0x933]
-	vpermt2w zmm13, zmm8, zword [0x106]
-	vpermt2w zmm11, zmm13, zword [0x16b]
+	vpermt2w xmm7, xmm6, xmm4
+	vpermt2w xmm3, xmm6, xmm0
+	vpermt2w ymm7, ymm4, yword [0x947]
+	vpermt2w ymm4, ymm7, ymm3
+	vpermt2w zmm6, zmm6, zmm5
+	vpermt2w zmm4, zmm0, zmm2
+	vpermt2w xmm14, xmm11, xmm14
+	vpermt2w ymm14, ymm8, ymm13
+	vpermt2w zmm14, zmm12, zmm8
+	vpermt2w xmm19, xmm17, xmm26
+	vpermt2w ymm29, ymm31, ymm16
+	vpermt2w zmm28, zmm19, zmm22

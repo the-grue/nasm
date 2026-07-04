@@ -1,3 +1,4 @@
 default rel
-	xorpd xmm9, xmm5
-	xorpd xmm10, xmm12
+	xorpd xmm4, xmm2
+	xorpd xmm6, xmm0
+	xorpd xmm13, xmm12

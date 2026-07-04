@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPMULTISHIFTQB",
+  "id": "vpmultishiftqb16",
+  "format": "bin",
+  "source": "vpmultishiftqb_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpmultishiftqb/",
+  "target": [
+   { "output": "vpmultishiftqb.bin16", "match": "vpmultishiftqb.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPMULTISHIFTQB",
+  "id": "vpmultishiftqb32",
+  "format": "bin",
+  "source": "vpmultishiftqb_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpmultishiftqb/",
+  "target": [
+   { "output": "vpmultishiftqb.bin32", "match": "vpmultishiftqb.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPMULTISHIFTQB",
   "id": "vpmultishiftqb64",
   "format": "bin",
   "source": "vpmultishiftqb.asm",

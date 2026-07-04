@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VCMPNGT_USPS",
+  "id": "vcmpngt_usps16",
+  "format": "bin",
+  "source": "vcmpngt_usps_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcmpngt_usps/",
+  "target": [
+   { "output": "vcmpngt_usps.bin16", "match": "vcmpngt_usps.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCMPNGT_USPS",
+  "id": "vcmpngt_usps32",
+  "format": "bin",
+  "source": "vcmpngt_usps_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcmpngt_usps/",
+  "target": [
+   { "output": "vcmpngt_usps.bin32", "match": "vcmpngt_usps.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCMPNGT_USPS",
   "id": "vcmpngt_usps64",
   "format": "bin",
   "source": "vcmpngt_usps.asm",

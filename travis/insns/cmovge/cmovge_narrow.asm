@@ -1,6 +1,6 @@
 	cmovge dx, si
-	cmovge cx, bx
-	cmovge ecx, dword [0x5df]
-	cmovge eax, dword [0xe62]
-	cmovge si, cx, bx
-	cmovge bp, bx, word [0x29c]
+	cmovge bp, ax
+	cmovge edi, dword [0x3e3]
+	cmovge edx, ecx
+	cmovge di, di, bp
+	cmovge bp, si, word [0x84a]

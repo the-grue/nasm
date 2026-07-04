@@ -1,0 +1,8 @@
+	vcompresspd oword [0x7aa], xmm4
+	vcompresspd oword [0x740], xmm7
+	vcompresspd yword [0x90a], ymm4
+	vcompresspd yword [0xcc5], ymm2
+	vcompresspd zword [0x599], zmm2
+	vcompresspd zword [0xf60], zmm1
+	vcompresspd xmm1, xmm1
+	vcompresspd xmm6, xmm0

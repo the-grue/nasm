@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VMINSS",
+  "id": "vminss16",
+  "format": "bin",
+  "source": "vminss_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vminss/",
+  "target": [
+   { "output": "vminss.bin16", "match": "vminss.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VMINSS",
+  "id": "vminss32",
+  "format": "bin",
+  "source": "vminss_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vminss/",
+  "target": [
+   { "output": "vminss.bin32", "match": "vminss.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VMINSS",
   "id": "vminss64",
   "format": "bin",
   "source": "vminss.asm",

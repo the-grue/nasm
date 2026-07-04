@@ -1,3 +1,4 @@
 default rel
-	pmovsxdq xmm15, xmm6
-	pmovsxdq xmm9, xmm11
+	pmovsxdq xmm7, xmm3
+	pmovsxdq xmm6, qword [0x9b8]
+	pmovsxdq xmm12, xmm12

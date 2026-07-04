@@ -1,5 +1,9 @@
 default rel
-	vfnmadd231sd xmm6, xmm8, xmm6
-	vfnmadd231sd xmm10, xmm9, qword [0xe96]
-	vfnmadd231sd xmm1, xmm2, xmm6
-	vfnmadd231sd xmm10, xmm11, qword [0xcb1]
+	vfnmadd231sd xmm3, xmm4, xmm3
+	vfnmadd231sd xmm3, xmm3, xmm5
+	vfnmadd231sd xmm6, xmm6, xmm1
+	vfnmadd231sd xmm3, xmm3, qword [0x165]
+	vfnmadd231sd xmm13, xmm12, xmm15
+	vfnmadd231sd xmm15, xmm11, xmm13
+	vfnmadd231sd xmm30, xmm17, xmm18
+	vfnmadd231sd xmm27, xmm18, xmm18

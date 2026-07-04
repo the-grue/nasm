@@ -1,5 +1,6 @@
 default rel
 	paddusb mm4, qword [0xb3f]
 	paddusb mm0, mm5
-	paddusb xmm2, xmm3
-	paddusb xmm2, xmm7
+	paddusb xmm1, xmm1
+	paddusb xmm5, oword [0xcfe]
+	paddusb xmm9, xmm11

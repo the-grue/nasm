@@ -1,6 +1,6 @@
 	cmovp cx, bp
-	cmovp bp, cx
-	cmovp eax, dword [0x43b]
-	cmovp eax, dword [0x5dd]
-	cmovp dx, bx, si
-	cmovp cx, bx, bx
+	cmovp bp, ax
+	cmovp ebp, esi
+	cmovp ebp, ebx
+	cmovp bp, di, si
+	cmovp ax, bp, di

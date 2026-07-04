@@ -1,9 +1,17 @@
 default rel
 	bts bx, di
-	bts dx, di
-	bts ebx, ebx
-	bts dword [0xa06], edi
-	bts qword [0x3d0], rsi
-	bts qword [0xcb9], rdi
-	bts di, 0x14
-	bts bp, 0x22
+	bts bx, si
+	bts edi, edi
+	bts dword [0xb2b], edi
+	bts rcx, rbp
+	bts qword [0x1c1], rsi
+	bts dx, 0x4a
+	bts ax, 0x74
+	bts r12w, r11w
+	bts r9d, r12d
+	bts r9, r8
+	bts r10w, 0x2f
+	bts r28w, r21w
+	bts r31d, r28d
+	bts r17, r24
+	bts r18w, 0x19

@@ -1,13 +1,21 @@
 default rel
-	vgf2p8mulb xmm10, xmm2, xmm11
-	vgf2p8mulb xmm10, xmm11
-	vgf2p8mulb xmm12, xmm3, xmm13
-	vgf2p8mulb ymm8, ymm5, yword [0x973]
-	vgf2p8mulb ymm8, yword [0x973]
-	vgf2p8mulb ymm7, ymm4, ymm11
-	vgf2p8mulb xmm15, xmm4, oword [0xd76]
-	vgf2p8mulb xmm15, oword [0xd76]
-	vgf2p8mulb xmm2, xmm13, xmm4
-	vgf2p8mulb ymm4, ymm7, ymm8
-	vgf2p8mulb ymm4, ymm8
-	vgf2p8mulb ymm0, ymm9, ymm6
+	vgf2p8mulb xmm5, xmm1, xmm5
+	vgf2p8mulb xmm5, xmm5
+	vgf2p8mulb xmm6, xmm4, xmm2
+	vgf2p8mulb ymm1, ymm5, yword [0x4e4]
+	vgf2p8mulb ymm1, yword [0x4e4]
+	vgf2p8mulb ymm2, ymm3, ymm4
+	vgf2p8mulb xmm0, xmm4, xmm3
+	vgf2p8mulb xmm0, xmm3
+	vgf2p8mulb xmm3, xmm6, xmm5
+	vgf2p8mulb ymm6, ymm0, ymm7
+	vgf2p8mulb ymm6, ymm7
+	vgf2p8mulb ymm5, ymm7, ymm1
+	vgf2p8mulb xmm14, xmm9, xmm9
+	vgf2p8mulb ymm13, ymm14, ymm9
+	vgf2p8mulb xmm12, xmm13, xmm12
+	vgf2p8mulb ymm14, ymm11, ymm9
+	vgf2p8mulb xmm29, xmm24, xmm21
+	vgf2p8mulb ymm29, ymm20, ymm20
+	vgf2p8mulb xmm29, xmm28, xmm29
+	vgf2p8mulb ymm21, ymm18, ymm18

@@ -1,6 +1,6 @@
 	ccmp 6, byte [0xe6d], dl
-	ccmp 10, cl, al
-	ccmp 1, si, bp
-	ccmp 10, word [0x708], dx
-	ccmp 10, ebx, esi
-	ccmp 10, esi, ebx
+	ccmp 9, byte [0xb44], dl
+	ccmp 6, si, dx
+	ccmp 1, word [0x7aa], ax
+	ccmp 3, ecx, ebp
+	ccmp 2, dword [0xf62], esi

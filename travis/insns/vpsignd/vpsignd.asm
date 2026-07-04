@@ -1,7 +1,9 @@
 default rel
-	vpsignd xmm4, xmm6, xmm1
-	vpsignd xmm4, xmm1
-	vpsignd xmm10, xmm10, oword [0x245]
-	vpsignd ymm14, ymm4, ymm8
-	vpsignd ymm14, ymm8
-	vpsignd ymm4, ymm7, ymm0
+	vpsignd xmm2, xmm3, xmm0
+	vpsignd xmm2, xmm0
+	vpsignd xmm0, xmm4, xmm3
+	vpsignd ymm3, ymm0, ymm2
+	vpsignd ymm3, ymm2
+	vpsignd ymm2, ymm5, ymm6
+	vpsignd xmm13, xmm13, xmm15
+	vpsignd ymm14, ymm9, ymm15

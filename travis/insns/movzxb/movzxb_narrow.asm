@@ -1,4 +1,4 @@
 	movzxb ax, al
-	movzxb bx, bl
+	movzxb cx, dl
+	movzxb ebp, al
 	movzxb edx, bl
-	movzxb edi, byte [0x2c8]

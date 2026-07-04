@@ -3,7 +3,7 @@
   "description": "Pseudorandom test for PMAXUW",
   "id": "pmaxuw16",
   "format": "bin",
-  "source": "pmaxuw.asm",
+  "source": "pmaxuw_narrow.asm",
   "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/pmaxuw/",
   "target": [
    { "output": "pmaxuw.bin16", "match": "pmaxuw.bin16.t" }
@@ -14,7 +14,7 @@
   "description": "Pseudorandom test for PMAXUW",
   "id": "pmaxuw32",
   "format": "bin",
-  "source": "pmaxuw.asm",
+  "source": "pmaxuw_narrow.asm",
   "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/pmaxuw/",
   "target": [
    { "output": "pmaxuw.bin32", "match": "pmaxuw.bin32.t" }

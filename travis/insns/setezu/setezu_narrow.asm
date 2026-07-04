@@ -1,4 +1,4 @@
-	setezu edi
-	setezu ebx
-	setezu byte [0xea6]
+	setezu ebp
+	setezu edx
 	setezu bl
+	setezu byte [0x2f3]

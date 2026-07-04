@@ -1,3 +1,4 @@
 default rel
-	punpckhqdq xmm7, xmm5
-	punpckhqdq xmm1, oword [0xf13]
+	punpckhqdq xmm3, xmm2
+	punpckhqdq xmm0, oword [0xfee]
+	punpckhqdq xmm8, xmm13

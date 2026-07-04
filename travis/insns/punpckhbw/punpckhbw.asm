@@ -1,5 +1,6 @@
 default rel
 	punpckhbw mm2, mm4
 	punpckhbw mm0, mm1
-	punpckhbw xmm8, xmm2
-	punpckhbw xmm14, xmm5
+	punpckhbw xmm4, xmm1
+	punpckhbw xmm4, xmm7
+	punpckhbw xmm15, xmm10

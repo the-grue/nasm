@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VRNDSCALEPD",
+  "id": "vrndscalepd16",
+  "format": "bin",
+  "source": "vrndscalepd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vrndscalepd/",
+  "target": [
+   { "output": "vrndscalepd.bin16", "match": "vrndscalepd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VRNDSCALEPD",
+  "id": "vrndscalepd32",
+  "format": "bin",
+  "source": "vrndscalepd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vrndscalepd/",
+  "target": [
+   { "output": "vrndscalepd.bin32", "match": "vrndscalepd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VRNDSCALEPD",
   "id": "vrndscalepd64",
   "format": "bin",
   "source": "vrndscalepd.asm",

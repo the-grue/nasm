@@ -1,3 +1,4 @@
 default rel
-	comisd xmm7, xmm15
-	comisd xmm14, qword [0x63b]
+	comisd xmm3, xmm7
+	comisd xmm3, xmm4
+	comisd xmm15, xmm14

@@ -1,13 +1,21 @@
 default rel
-	vpsrad xmm15, xmm6, xmm6
-	vpsrad xmm15, xmm6
-	vpsrad xmm3, xmm6, oword [0x191]
-	vpsrad xmm6, xmm6, 0x8c
-	vpsrad xmm6, 0x8c
-	vpsrad xmm15, xmm2, 0x87
-	vpsrad ymm4, ymm6, xmm3
-	vpsrad ymm4, xmm3
-	vpsrad ymm8, ymm7, xmm2
-	vpsrad ymm13, ymm9, 0x4f
-	vpsrad ymm13, 0x4f
-	vpsrad ymm2, ymm4, 0xc1
+	vpsrad xmm7, xmm3, xmm3
+	vpsrad xmm7, xmm3
+	vpsrad xmm4, xmm7, xmm4
+	vpsrad xmm2, xmm3, 0x44
+	vpsrad xmm2, 0x44
+	vpsrad xmm4, xmm2, 0x2d
+	vpsrad ymm2, ymm6, xmm6
+	vpsrad ymm2, xmm6
+	vpsrad ymm6, ymm2, xmm7
+	vpsrad ymm0, ymm6, 0xe4
+	vpsrad ymm0, 0xe4
+	vpsrad ymm7, ymm2, 0x12
+	vpsrad xmm9, xmm11, xmm14
+	vpsrad xmm9, xmm12, 0x7e
+	vpsrad ymm15, ymm15, xmm8
+	vpsrad ymm14, ymm12, 0x82
+	vpsrad xmm16, xmm22, xmm22
+	vpsrad xmm25, xmm18, 0xd1
+	vpsrad ymm21, ymm17, xmm18
+	vpsrad ymm19, ymm25, 0x41

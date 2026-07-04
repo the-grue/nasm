@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VMOVHPD",
+  "id": "vmovhpd16",
+  "format": "bin",
+  "source": "vmovhpd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vmovhpd/",
+  "target": [
+   { "output": "vmovhpd.bin16", "match": "vmovhpd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VMOVHPD",
+  "id": "vmovhpd32",
+  "format": "bin",
+  "source": "vmovhpd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vmovhpd/",
+  "target": [
+   { "output": "vmovhpd.bin32", "match": "vmovhpd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VMOVHPD",
   "id": "vmovhpd64",
   "format": "bin",
   "source": "vmovhpd.asm",

@@ -1,13 +1,21 @@
 default rel
-	vpmulhw xmm12, xmm6, oword [0x190]
-	vpmulhw xmm12, oword [0x190]
-	vpmulhw xmm15, xmm7, xmm9
-	vpmulhw ymm4, ymm9, ymm13
-	vpmulhw ymm4, ymm13
-	vpmulhw ymm14, ymm0, ymm13
-	vpmulhw xmm7, xmm0, oword [0xcbd]
-	vpmulhw xmm7, oword [0xcbd]
-	vpmulhw xmm12, xmm4, xmm4
-	vpmulhw ymm1, ymm6, yword [0xd73]
-	vpmulhw ymm1, yword [0xd73]
-	vpmulhw ymm1, ymm0, yword [0x932]
+	vpmulhw xmm6, xmm3, oword [0x190]
+	vpmulhw xmm6, oword [0x190]
+	vpmulhw xmm0, xmm6, oword [0x1e1]
+	vpmulhw ymm3, ymm6, ymm0
+	vpmulhw ymm3, ymm0
+	vpmulhw ymm0, ymm3, yword [0xd73]
+	vpmulhw xmm0, xmm0, oword [0x932]
+	vpmulhw xmm0, oword [0x932]
+	vpmulhw xmm6, xmm4, xmm1
+	vpmulhw ymm3, ymm7, yword [0xfea]
+	vpmulhw ymm3, yword [0xfea]
+	vpmulhw ymm0, ymm6, ymm4
+	vpmulhw xmm15, xmm11, xmm10
+	vpmulhw ymm14, ymm14, ymm14
+	vpmulhw xmm9, xmm12, xmm11
+	vpmulhw ymm12, ymm10, ymm10
+	vpmulhw xmm25, xmm20, xmm25
+	vpmulhw ymm20, ymm21, ymm20
+	vpmulhw xmm19, xmm29, xmm23
+	vpmulhw ymm17, ymm22, ymm30

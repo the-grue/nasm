@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPSHLDVD",
+  "id": "vpshldvd16",
+  "format": "bin",
+  "source": "vpshldvd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpshldvd/",
+  "target": [
+   { "output": "vpshldvd.bin16", "match": "vpshldvd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPSHLDVD",
+  "id": "vpshldvd32",
+  "format": "bin",
+  "source": "vpshldvd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpshldvd/",
+  "target": [
+   { "output": "vpshldvd.bin32", "match": "vpshldvd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPSHLDVD",
   "id": "vpshldvd64",
   "format": "bin",
   "source": "vpshldvd.asm",

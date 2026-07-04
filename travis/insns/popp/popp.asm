@@ -1,7 +1,7 @@
 default rel
 	popp rsi
-	popp rcx
-	popp rax, rdi
+	popp rdi
 	popp rbp, rbx
-	popp rbx:rsi
-	popp rcx:rdi
+	popp rbp, rax
+	popp rbp:rdi
+	popp rcx:rbx

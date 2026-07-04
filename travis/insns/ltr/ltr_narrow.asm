@@ -2,5 +2,5 @@
 	ltr word [0x313]
 	ltr bx
 	ltr bp
-	ltr ebx
 	ltr ebp
+	ltr eax

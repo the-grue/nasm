@@ -1,11 +1,15 @@
 default rel
-	vcmpnge_uqps xmm14, xmm2, xmm7
-	vcmpnge_uqps xmm14, xmm7
-	vcmpnge_uqps xmm5, xmm4, xmm13
-	vcmpnge_uqps ymm6, ymm11, ymm3
-	vcmpnge_uqps ymm6, ymm3
-	vcmpnge_uqps ymm3, ymm1, ymm9
-	vcmpnge_uqps k2, xmm1, oword [0x6d4]
-	vcmpnge_uqps k3, xmm13, xmm0
-	vcmpnge_uqps k6, ymm2, ymm3
-	vcmpnge_uqps k7, ymm12, ymm9
+	vcmpnge_uqps xmm7, xmm1, xmm3
+	vcmpnge_uqps xmm7, xmm3
+	vcmpnge_uqps xmm3, xmm1, xmm0
+	vcmpnge_uqps ymm1, ymm4, ymm0
+	vcmpnge_uqps ymm1, ymm0
+	vcmpnge_uqps ymm6, ymm1, ymm1
+	vcmpnge_uqps k7, xmm6, xmm4
+	vcmpnge_uqps k3, xmm1, xmm2
+	vcmpnge_uqps k2, ymm7, ymm0
+	vcmpnge_uqps k2, ymm0, ymm7
+	vcmpnge_uqps xmm10, xmm10, xmm13
+	vcmpnge_uqps ymm14, ymm11, ymm10
+	vcmpnge_uqps k3, xmm9, xmm9
+	vcmpnge_uqps k7, ymm12, ymm13

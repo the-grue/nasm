@@ -1,4 +1,4 @@
 	rdrand bx
-	rdrand dx
-	rdrand ebp
-	rdrand ecx
+	rdrand cx
+	rdrand esi
+	rdrand edi

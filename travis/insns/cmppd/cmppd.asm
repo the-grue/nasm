@@ -1,3 +1,4 @@
 default rel
-	cmppd xmm8, xmm6, 0xe7
-	cmppd xmm12, xmm7, 0x5f
+	cmppd xmm4, xmm3, 0xe7
+	cmppd xmm6, xmm4, 0x11
+	cmppd xmm14, xmm10, 0x7f

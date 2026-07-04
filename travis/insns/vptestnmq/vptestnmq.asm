@@ -1,7 +1,13 @@
 default rel
-	vptestnmq k5, xmm5, oword [0x889]
-	vptestnmq k3, xmm11, xmm14
-	vptestnmq k2, ymm5, ymm1
-	vptestnmq k6, ymm12, ymm2
-	vptestnmq k5, zmm11, zmm3
-	vptestnmq k3, zmm8, zmm12
+	vptestnmq k5, xmm2, oword [0x889]
+	vptestnmq k3, xmm0, oword [0xcae]
+	vptestnmq k4, ymm1, ymm5
+	vptestnmq k3, ymm3, ymm1
+	vptestnmq k5, zmm1, zmm1
+	vptestnmq k5, zmm7, zmm7
+	vptestnmq k3, xmm13, xmm9
+	vptestnmq k3, ymm9, ymm10
+	vptestnmq k4, zmm14, zmm14
+	vptestnmq k7, xmm19, xmm21
+	vptestnmq k4, ymm16, ymm28
+	vptestnmq k4, zmm30, zmm19

@@ -1,6 +1,6 @@
 	add bl, bl
-	add byte [0xaf0], bl
-	add ax, bp
-	add dx, dx
-	add ebp, esi
-	add eax, eax
+	add dl, bl
+	add dx, si
+	add di, di
+	add dword [0xa9d], ecx
+	add esi, ebp

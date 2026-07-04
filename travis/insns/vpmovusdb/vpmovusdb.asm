@@ -1,9 +1,17 @@
 default rel
-	vpmovusdb xmm2, xmm1
-	vpmovusdb xmm0, xmm3
-	vpmovusdb xmm8, ymm14
-	vpmovusdb xmm0, ymm2
-	vpmovusdb xmm3, zmm1
-	vpmovusdb xmm13, zmm8
-	vpmovusdb dword [0x21d], xmm6
-	vpmovusdb dword [0xb2d], xmm5
+	vpmovusdb xmm1, xmm0
+	vpmovusdb xmm0, xmm1
+	vpmovusdb xmm1, ymm0
+	vpmovusdb xmm5, ymm2
+	vpmovusdb xmm1, zmm0
+	vpmovusdb xmm1, zmm5
+	vpmovusdb dword [0xaa9], xmm7
+	vpmovusdb dword [0xe90], xmm1
+	vpmovusdb xmm8, xmm9
+	vpmovusdb xmm14, ymm12
+	vpmovusdb xmm12, zmm14
+	vpmovusdb dword [0x653], xmm11
+	vpmovusdb xmm24, xmm30
+	vpmovusdb xmm17, ymm22
+	vpmovusdb xmm22, zmm25
+	vpmovusdb dword [0x1ec], xmm27

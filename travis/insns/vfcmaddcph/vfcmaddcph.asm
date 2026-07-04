@@ -1,10 +1,16 @@
 default rel
-	vfcmaddcph xmm6, xmm7, xmm0
-	vfcmaddcph xmm6, xmm0
-	vfcmaddcph xmm1, xmm3, xmm7
-	vfcmaddcph ymm14, ymm10, ymm2
-	vfcmaddcph ymm14, ymm2
-	vfcmaddcph ymm15, ymm4, yword [0x631]
-	vfcmaddcph zmm10, zmm8, zmm1
-	vfcmaddcph zmm10, zmm1
-	vfcmaddcph zmm2, zmm4, zmm10
+	vfcmaddcph xmm3, xmm3, xmm0
+	vfcmaddcph xmm3, xmm0
+	vfcmaddcph xmm3, xmm1, oword [0x588]
+	vfcmaddcph ymm5, ymm2, ymm4
+	vfcmaddcph ymm5, ymm4
+	vfcmaddcph ymm0, ymm4, ymm3
+	vfcmaddcph zmm6, zmm2, zmm1
+	vfcmaddcph zmm6, zmm1
+	vfcmaddcph zmm5, zmm7, zmm0
+	vfcmaddcph xmm8, xmm9, xmm13
+	vfcmaddcph ymm11, ymm8, ymm9
+	vfcmaddcph zmm8, zmm8, zmm13
+	vfcmaddcph xmm23, xmm30, xmm26
+	vfcmaddcph ymm20, ymm25, ymm26
+	vfcmaddcph zmm30, zmm26, zmm27

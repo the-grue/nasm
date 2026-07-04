@@ -1,9 +1,17 @@
 default rel
 	ccmpt 12, bl, cl
-	ccmpt 6, dl, al
-	ccmpt 11, cx, bx
-	ccmpt 15, word [0x203], bp
-	ccmpt 10, dword [0xa28], esi
-	ccmpt 15, dword [0x2fe], ebx
-	ccmpt 0, rdi, rsi
-	ccmpt 0, qword [0x537], rsi
+	ccmpt 5, dl, dl
+	ccmpt 1, word [0xac6], bp
+	ccmpt 0, di, si
+	ccmpt 0, dword [0x537], esi
+	ccmpt 3, ebx, edx
+	ccmpt 0, rdi, rax
+	ccmpt 3, rbp, rdi
+	ccmpt 6, r8b, r15b
+	ccmpt 9, r12w, r15w
+	ccmpt 4, r10d, r9d
+	ccmpt 8, r8, r10
+	ccmpt 0, r27b, r18b
+	ccmpt 11, r18w, r20w
+	ccmpt 3, r27d, r21d
+	ccmpt 6, r28, r29

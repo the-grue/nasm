@@ -1,7 +1,13 @@
 default rel
 	setszu rdx
-	setszu rdx
-	setszu eax
-	setszu ecx
+	setszu rcx
+	setszu ebx
+	setszu ebp
+	setszu byte [0x5bd]
 	setszu cl
-	setszu dl
+	setszu r11
+	setszu r13d
+	setszu r9b
+	setszu r16
+	setszu r19d
+	setszu r21b

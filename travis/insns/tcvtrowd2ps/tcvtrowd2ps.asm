@@ -1,5 +1,9 @@
 default rel
-	tcvtrowd2ps zmm3, tmm0, ecx
-	tcvtrowd2ps zmm5, tmm7, eax
-	tcvtrowd2ps zmm12, tmm3, 0xc2
-	tcvtrowd2ps zmm5, tmm3, 0xe0
+	tcvtrowd2ps zmm1, tmm0, ecx
+	tcvtrowd2ps zmm2, tmm3, ebp
+	tcvtrowd2ps zmm2, tmm3, 0xbf
+	tcvtrowd2ps zmm6, tmm1, 0x97
+	tcvtrowd2ps zmm10, tmm7, r8d
+	tcvtrowd2ps zmm8, tmm6, 0xca
+	tcvtrowd2ps zmm28, tmm3, r28d
+	tcvtrowd2ps zmm24, tmm1, 0x4a

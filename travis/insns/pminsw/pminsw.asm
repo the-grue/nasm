@@ -1,5 +1,6 @@
 default rel
 	pminsw mm0, mm0
 	pminsw mm0, mm3
-	pminsw xmm15, xmm1
-	pminsw xmm1, oword [0x44b]
+	pminsw xmm7, xmm0
+	pminsw xmm6, oword [0x7fa]
+	pminsw xmm8, xmm15

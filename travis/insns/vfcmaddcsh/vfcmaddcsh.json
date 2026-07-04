@@ -3,7 +3,7 @@
   "description": "Pseudorandom test for VFCMADDCSH",
   "id": "vfcmaddcsh16",
   "format": "bin",
-  "source": "vfcmaddcsh.asm",
+  "source": "vfcmaddcsh_narrow.asm",
   "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vfcmaddcsh/",
   "target": [
    { "output": "vfcmaddcsh.bin16", "match": "vfcmaddcsh.bin16.t" }
@@ -14,7 +14,7 @@
   "description": "Pseudorandom test for VFCMADDCSH",
   "id": "vfcmaddcsh32",
   "format": "bin",
-  "source": "vfcmaddcsh.asm",
+  "source": "vfcmaddcsh_narrow.asm",
   "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vfcmaddcsh/",
   "target": [
    { "output": "vfcmaddcsh.bin32", "match": "vfcmaddcsh.bin32.t" }

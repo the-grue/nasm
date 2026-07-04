@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for MOVUPS",
+  "id": "movups16",
+  "format": "bin",
+  "source": "movups_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/movups/",
+  "target": [
+   { "output": "movups.bin16", "match": "movups.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for MOVUPS",
+  "id": "movups32",
+  "format": "bin",
+  "source": "movups_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/movups/",
+  "target": [
+   { "output": "movups.bin32", "match": "movups.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for MOVUPS",
   "id": "movups64",
   "format": "bin",
   "source": "movups.asm",

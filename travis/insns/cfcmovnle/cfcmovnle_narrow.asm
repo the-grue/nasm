@@ -1,6 +1,6 @@
 	cfcmovnle word [0x568], di
-	cfcmovnle bp, bx
-	cfcmovnle esi, ecx
-	cfcmovnle dword [0xab8], eax
-	cfcmovnle bx, word [0x2df]
-	cfcmovnle cx, bx
+	cfcmovnle word [0x56f], bp
+	cfcmovnle eax, esi
+	cfcmovnle ebx, esi
+	cfcmovnle bp, si
+	cfcmovnle cx, si

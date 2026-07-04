@@ -1,7 +1,9 @@
 default rel
-	vpshlw xmm9, xmm9, xmm4
-	vpshlw xmm9, xmm4
-	vpshlw xmm5, xmm8, xmm10
-	vpshlw xmm11, xmm2, oword [0xcdf]
-	vpshlw xmm11, oword [0xcdf]
-	vpshlw xmm12, xmm1, xmm10
+	vpshlw xmm4, xmm4, xmm2
+	vpshlw xmm4, xmm2
+	vpshlw xmm5, oword [0xc4f], xmm0
+	vpshlw xmm2, xmm5, xmm1
+	vpshlw xmm2, xmm1
+	vpshlw xmm7, xmm4, xmm6
+	vpshlw xmm10, xmm9, xmm12
+	vpshlw xmm13, xmm9, xmm15

@@ -1,9 +1,17 @@
 default rel
 	cmovs dx, bp
-	cmovs di, si
-	cmovs edi, dword [0xb8b]
-	cmovs ebp, ecx
-	cmovs rax, rdi
-	cmovs rbx, qword [0xf8c]
-	cmovs bp, ax, word [0xf87]
-	cmovs si, si, cx
+	cmovs si, word [0xf6e]
+	cmovs esi, eax
+	cmovs ebp, dword [0x150]
+	cmovs rdi, qword [0xb71]
+	cmovs rdi, qword [0xd22]
+	cmovs si, cx, si
+	cmovs ax, bp, bp
+	cmovs r13w, r9w
+	cmovs r12d, r14d
+	cmovs r12, r8
+	cmovs r10w, r10w, r11w
+	cmovs r26w, r28w
+	cmovs r19d, r27d
+	cmovs r21, r23
+	cmovs r31w, r28w, r26w

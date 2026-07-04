@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VRCP28PS",
+  "id": "vrcp28ps16",
+  "format": "bin",
+  "source": "vrcp28ps_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vrcp28ps/",
+  "target": [
+   { "output": "vrcp28ps.bin16", "match": "vrcp28ps.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VRCP28PS",
+  "id": "vrcp28ps32",
+  "format": "bin",
+  "source": "vrcp28ps_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vrcp28ps/",
+  "target": [
+   { "output": "vrcp28ps.bin32", "match": "vrcp28ps.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VRCP28PS",
   "id": "vrcp28ps64",
   "format": "bin",
   "source": "vrcp28ps.asm",

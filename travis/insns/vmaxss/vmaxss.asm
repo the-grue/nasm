@@ -1,7 +1,11 @@
 default rel
-	vmaxss xmm15, xmm12, xmm8
-	vmaxss xmm15, xmm8
-	vmaxss xmm1, xmm7, dword [0x739]
-	vmaxss xmm11, xmm1, xmm10
-	vmaxss xmm11, xmm10
-	vmaxss xmm6, xmm11, dword [0xd14]
+	vmaxss xmm7, xmm6, xmm4
+	vmaxss xmm7, xmm4
+	vmaxss xmm0, xmm5, xmm5
+	vmaxss xmm7, xmm6, xmm3
+	vmaxss xmm7, xmm3
+	vmaxss xmm0, xmm7, xmm0
+	vmaxss xmm8, xmm11, xmm14
+	vmaxss xmm13, xmm13, xmm12
+	vmaxss xmm22, xmm27, xmm17
+	vmaxss xmm16, xmm24, xmm26

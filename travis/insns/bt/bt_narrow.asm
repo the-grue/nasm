@@ -1,6 +1,6 @@
 	bt ax, di
-	bt word [0x301], di
-	bt ebx, eax
+	bt ax, dx
+	bt dword [0xf36], ebx
 	bt ebp, ebp
-	bt word [0xef4], 0x40
-	bt si, 0x1f
+	bt cx, 0x6f
+	bt word [0x900], 0x2e

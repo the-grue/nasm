@@ -1,2 +1,2 @@
-	vcvttsd2sis ecx, xmm11
-	vcvttsd2sis eax, xmm5
+	vcvttsd2sis ecx, xmm5
+	vcvttsd2sis ebp, xmm1

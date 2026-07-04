@@ -1,9 +1,17 @@
 default rel
-	vpabsd xmm7, oword [0xfec]
-	vpabsd xmm6, oword [0x71e]
-	vpabsd ymm6, ymm10
-	vpabsd ymm9, ymm1
-	vpabsd xmm12, xmm5
-	vpabsd xmm0, xmm9
-	vpabsd ymm3, ymm11
-	vpabsd ymm14, yword [0xa88]
+	vpabsd xmm3, oword [0xfec]
+	vpabsd xmm1, xmm4
+	vpabsd ymm1, ymm6
+	vpabsd ymm4, ymm2
+	vpabsd xmm5, oword [0xc6c]
+	vpabsd xmm0, xmm0
+	vpabsd ymm0, ymm3
+	vpabsd ymm4, ymm1
+	vpabsd xmm11, xmm14
+	vpabsd ymm12, ymm10
+	vpabsd xmm13, xmm15
+	vpabsd ymm12, ymm9
+	vpabsd xmm22, xmm22
+	vpabsd ymm16, ymm24
+	vpabsd xmm22, xmm26
+	vpabsd ymm20, ymm17

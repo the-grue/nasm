@@ -1,7 +1,9 @@
 default rel
-	vphaddsw xmm15, xmm5, xmm8
-	vphaddsw xmm15, xmm8
-	vphaddsw xmm10, xmm9, xmm12
-	vphaddsw ymm12, ymm15, yword [0x781]
-	vphaddsw ymm12, yword [0x781]
-	vphaddsw ymm0, ymm12, ymm0
+	vphaddsw xmm7, xmm2, xmm4
+	vphaddsw xmm7, xmm4
+	vphaddsw xmm7, xmm3, xmm6
+	vphaddsw ymm5, ymm0, yword [0xb75]
+	vphaddsw ymm5, yword [0xb75]
+	vphaddsw ymm7, ymm5, ymm4
+	vphaddsw xmm13, xmm12, xmm10
+	vphaddsw ymm14, ymm13, ymm15

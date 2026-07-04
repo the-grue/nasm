@@ -1,0 +1,2 @@
+	pextrd eax, xmm5, 0xcc
+	pextrd dword [0x3aa], xmm5, 0x85

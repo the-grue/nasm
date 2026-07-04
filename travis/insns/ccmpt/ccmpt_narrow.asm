@@ -1,6 +1,6 @@
 	ccmpt 12, bl, cl
-	ccmpt 6, dl, al
-	ccmpt 11, cx, bx
-	ccmpt 15, word [0x203], bp
-	ccmpt 10, dword [0xa28], esi
-	ccmpt 15, dword [0x2fe], ebx
+	ccmpt 5, dl, dl
+	ccmpt 1, word [0xac6], bp
+	ccmpt 0, di, si
+	ccmpt 0, dword [0x537], esi
+	ccmpt 3, ebx, edx

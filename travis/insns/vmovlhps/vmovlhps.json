@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VMOVLHPS",
+  "id": "vmovlhps16",
+  "format": "bin",
+  "source": "vmovlhps_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vmovlhps/",
+  "target": [
+   { "output": "vmovlhps.bin16", "match": "vmovlhps.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VMOVLHPS",
+  "id": "vmovlhps32",
+  "format": "bin",
+  "source": "vmovlhps_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vmovlhps/",
+  "target": [
+   { "output": "vmovlhps.bin32", "match": "vmovlhps.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VMOVLHPS",
   "id": "vmovlhps64",
   "format": "bin",
   "source": "vmovlhps.asm",

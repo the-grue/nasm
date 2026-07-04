@@ -1,4 +1,4 @@
 	movsxd si, eax
-	movsxd cx, dword [0x204]
-	movsxd eax, ebp
-	movsxd edi, edx
+	movsxd si, dword [0xc7c]
+	movsxd ebx, ecx
+	movsxd ebp, ecx

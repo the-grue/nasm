@@ -1,6 +1,6 @@
 	test cl, dl
-	test byte [0xfbd], bl
-	test word [0x77a], di
-	test si, dx
-	test ebx, eax
-	test edi, edx
+	test cl, al
+	test dx, si
+	test dx, di
+	test dword [0x934], edx
+	test esi, ebp

@@ -1,4 +1,6 @@
 default rel
-	vreducesd xmm8, xmm10, xmm1, 0x77
-	vreducesd xmm8, xmm1, 0x77
-	vreducesd xmm11, xmm5, xmm3, 0xf7
+	vreducesd xmm4, xmm5, xmm0, 0x77
+	vreducesd xmm4, xmm0, 0x77
+	vreducesd xmm6, xmm7, xmm3, 0xcc
+	vreducesd xmm13, xmm10, xmm13, 0x3c
+	vreducesd xmm31, xmm23, xmm18, 0x29

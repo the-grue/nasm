@@ -1,5 +1,7 @@
 default rel
-	extractps dword [0x687], xmm11, 0x74
-	extractps dword [0x7b3], xmm8, 0x5c
-	extractps rax, xmm7, 0xaa
-	extractps rdi, xmm0, 0xb3
+	extractps dword [0x687], xmm5, 0x74
+	extractps edi, xmm0, 0xb3
+	extractps rcx, xmm7, 0x5e
+	extractps rbx, xmm2, 0x45
+	extractps r15d, xmm11, 0x8b
+	extractps r14, xmm9, 0x5c

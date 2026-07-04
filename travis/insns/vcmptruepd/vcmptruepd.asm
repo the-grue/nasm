@@ -1,11 +1,15 @@
 default rel
-	vcmptruepd xmm1, xmm9, xmm8
-	vcmptruepd xmm1, xmm8
-	vcmptruepd xmm9, xmm11, oword [0x10a]
-	vcmptruepd ymm0, ymm1, ymm14
-	vcmptruepd ymm0, ymm14
-	vcmptruepd ymm13, ymm8, ymm15
-	vcmptruepd k3, xmm11, xmm12
-	vcmptruepd k1, xmm2, xmm12
-	vcmptruepd k5, ymm1, ymm0
-	vcmptruepd k2, ymm7, ymm7
+	vcmptruepd xmm0, xmm4, xmm4
+	vcmptruepd xmm0, xmm4
+	vcmptruepd xmm0, xmm7, oword [0x8b0]
+	vcmptruepd ymm1, ymm7, ymm5
+	vcmptruepd ymm1, ymm5
+	vcmptruepd ymm5, ymm0, ymm0
+	vcmptruepd k2, xmm3, xmm3
+	vcmptruepd k6, xmm5, oword [0xce5]
+	vcmptruepd k2, ymm1, yword [0x514]
+	vcmptruepd k6, ymm3, ymm4
+	vcmptruepd xmm12, xmm13, xmm14
+	vcmptruepd ymm11, ymm14, ymm8
+	vcmptruepd k2, xmm8, xmm15
+	vcmptruepd k3, ymm15, ymm11

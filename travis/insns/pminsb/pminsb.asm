@@ -1,3 +1,4 @@
 default rel
-	pminsb xmm5, xmm0
-	pminsb xmm10, xmm1
+	pminsb xmm2, xmm0
+	pminsb xmm4, xmm3
+	pminsb xmm13, xmm13

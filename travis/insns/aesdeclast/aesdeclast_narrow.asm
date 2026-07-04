@@ -1,0 +1,2 @@
+	aesdeclast xmm6, xmm7
+	aesdeclast xmm6, oword [0x5f8]

@@ -1,4 +1,6 @@
 default rel
-	vfnmsub132sh xmm1, xmm3, xmm13
-	vfnmsub132sh xmm1, xmm13
-	vfnmsub132sh xmm5, xmm4, word [0xda7]
+	vfnmsub132sh xmm0, xmm1, xmm6
+	vfnmsub132sh xmm0, xmm6
+	vfnmsub132sh xmm1, xmm1, xmm6
+	vfnmsub132sh xmm10, xmm10, xmm14
+	vfnmsub132sh xmm29, xmm16, xmm18

@@ -1,4 +1,4 @@
-	vcvttsd2si edx, xmm13
-	vcvttsd2si ebp, qword [0xb97]
+	vcvttsd2si edx, xmm6
+	vcvttsd2si eax, qword [0x854]
 	vcvttsd2si ebx, xmm7
-	vcvttsd2si esi, qword [0x778]
+	vcvttsd2si eax, xmm4

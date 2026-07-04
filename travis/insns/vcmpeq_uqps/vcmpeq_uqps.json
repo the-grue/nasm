@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VCMPEQ_UQPS",
+  "id": "vcmpeq_uqps16",
+  "format": "bin",
+  "source": "vcmpeq_uqps_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcmpeq_uqps/",
+  "target": [
+   { "output": "vcmpeq_uqps.bin16", "match": "vcmpeq_uqps.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCMPEQ_UQPS",
+  "id": "vcmpeq_uqps32",
+  "format": "bin",
+  "source": "vcmpeq_uqps_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcmpeq_uqps/",
+  "target": [
+   { "output": "vcmpeq_uqps.bin32", "match": "vcmpeq_uqps.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCMPEQ_UQPS",
   "id": "vcmpeq_uqps64",
   "format": "bin",
   "source": "vcmpeq_uqps.asm",

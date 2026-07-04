@@ -1,10 +1,16 @@
 default rel
-	vpsrlvw xmm2, xmm13, xmm4
-	vpsrlvw xmm2, xmm4
-	vpsrlvw xmm8, xmm0, xmm14
-	vpsrlvw ymm1, ymm13, ymm10
-	vpsrlvw ymm1, ymm10
-	vpsrlvw ymm7, ymm2, ymm0
-	vpsrlvw zmm2, zmm4, zword [0x863]
-	vpsrlvw zmm2, zword [0x863]
-	vpsrlvw zmm13, zmm15, zword [0x28f]
+	vpsrlvw xmm1, xmm6, xmm2
+	vpsrlvw xmm1, xmm2
+	vpsrlvw xmm0, xmm5, xmm1
+	vpsrlvw ymm2, ymm0, ymm2
+	vpsrlvw ymm2, ymm2
+	vpsrlvw ymm7, ymm1, ymm6
+	vpsrlvw zmm3, zmm5, zmm2
+	vpsrlvw zmm3, zmm2
+	vpsrlvw zmm1, zmm5, zword [0xe81]
+	vpsrlvw xmm12, xmm8, xmm11
+	vpsrlvw ymm14, ymm11, ymm14
+	vpsrlvw zmm8, zmm10, zmm10
+	vpsrlvw xmm30, xmm17, xmm29
+	vpsrlvw ymm31, ymm28, ymm17
+	vpsrlvw zmm23, zmm30, zmm20

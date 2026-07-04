@@ -1,3 +1,4 @@
 default rel
-	packusdw xmm10, xmm3
-	packusdw xmm2, xmm13
+	packusdw xmm5, xmm1
+	packusdw xmm4, xmm1
+	packusdw xmm9, xmm9

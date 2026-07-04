@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VCMPORD_QPS",
+  "id": "vcmpord_qps16",
+  "format": "bin",
+  "source": "vcmpord_qps_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcmpord_qps/",
+  "target": [
+   { "output": "vcmpord_qps.bin16", "match": "vcmpord_qps.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCMPORD_QPS",
+  "id": "vcmpord_qps32",
+  "format": "bin",
+  "source": "vcmpord_qps_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcmpord_qps/",
+  "target": [
+   { "output": "vcmpord_qps.bin32", "match": "vcmpord_qps.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCMPORD_QPS",
   "id": "vcmpord_qps64",
   "format": "bin",
   "source": "vcmpord_qps.asm",

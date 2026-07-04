@@ -1,3 +1,5 @@
 default rel
-	vgetmantss xmm11, xmm14, xmm4, 0x96
-	vgetmantss xmm3, xmm15, xmm6, 0x97
+	vgetmantss xmm5, xmm7, xmm2, 0x96
+	vgetmantss xmm0, xmm2, xmm0, 0x2
+	vgetmantss xmm9, xmm15, xmm9, 0x6c
+	vgetmantss xmm25, xmm29, xmm28, 0xe3

@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPSUBQ",
+  "id": "vpsubq16",
+  "format": "bin",
+  "source": "vpsubq_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpsubq/",
+  "target": [
+   { "output": "vpsubq.bin16", "match": "vpsubq.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPSUBQ",
+  "id": "vpsubq32",
+  "format": "bin",
+  "source": "vpsubq_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpsubq/",
+  "target": [
+   { "output": "vpsubq.bin32", "match": "vpsubq.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPSUBQ",
   "id": "vpsubq64",
   "format": "bin",
   "source": "vpsubq.asm",

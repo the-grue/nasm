@@ -1,7 +1,9 @@
 default rel
-	vpperm xmm0, xmm9, xmm3, oword [0xfe4]
-	vpperm xmm0, xmm3, oword [0xfe4]
-	vpperm xmm13, xmm6, xmm5, xmm9
-	vpperm xmm2, xmm6, xmm10, xmm15
-	vpperm xmm2, xmm10, xmm15
-	vpperm xmm4, xmm10, oword [0xe4a], xmm5
+	vpperm xmm0, xmm4, xmm1, oword [0xfe4]
+	vpperm xmm0, xmm1, oword [0xfe4]
+	vpperm xmm5, xmm7, xmm2, xmm7
+	vpperm xmm7, xmm2, xmm4, xmm7
+	vpperm xmm7, xmm4, xmm7
+	vpperm xmm7, xmm5, oword [0x35c], xmm0
+	vpperm xmm14, xmm11, xmm10, xmm12
+	vpperm xmm13, xmm15, xmm8, xmm15

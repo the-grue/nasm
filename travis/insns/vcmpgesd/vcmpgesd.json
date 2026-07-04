@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VCMPGESD",
+  "id": "vcmpgesd16",
+  "format": "bin",
+  "source": "vcmpgesd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcmpgesd/",
+  "target": [
+   { "output": "vcmpgesd.bin16", "match": "vcmpgesd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCMPGESD",
+  "id": "vcmpgesd32",
+  "format": "bin",
+  "source": "vcmpgesd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcmpgesd/",
+  "target": [
+   { "output": "vcmpgesd.bin32", "match": "vcmpgesd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCMPGESD",
   "id": "vcmpgesd64",
   "format": "bin",
   "source": "vcmpgesd.asm",

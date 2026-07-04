@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPSRLD",
+  "id": "vpsrld16",
+  "format": "bin",
+  "source": "vpsrld_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpsrld/",
+  "target": [
+   { "output": "vpsrld.bin16", "match": "vpsrld.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPSRLD",
+  "id": "vpsrld32",
+  "format": "bin",
+  "source": "vpsrld_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpsrld/",
+  "target": [
+   { "output": "vpsrld.bin32", "match": "vpsrld.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPSRLD",
   "id": "vpsrld64",
   "format": "bin",
   "source": "vpsrld.asm",

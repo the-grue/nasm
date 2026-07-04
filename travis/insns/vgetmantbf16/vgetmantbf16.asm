@@ -1,7 +1,13 @@
 default rel
-	vgetmantbf16 xmm10, oword [0xe78], 0xb
-	vgetmantbf16 xmm5, xmm14, 0x83
-	vgetmantbf16 ymm1, yword [0x1e6], 0x6c
-	vgetmantbf16 ymm7, yword [0x557], 0x31
-	vgetmantbf16 zmm7, zmm4, 0x2e
-	vgetmantbf16 zmm9, zmm5, 0xa8
+	vgetmantbf16 xmm5, oword [0xe78], 0xb
+	vgetmantbf16 xmm0, xmm3, 0xe3
+	vgetmantbf16 ymm2, ymm3, 0x3f
+	vgetmantbf16 ymm4, ymm5, 0x1
+	vgetmantbf16 zmm6, zmm1, 0x50
+	vgetmantbf16 zmm3, zmm1, 0x7d
+	vgetmantbf16 xmm10, xmm11, 0xe3
+	vgetmantbf16 ymm10, ymm9, 0x9e
+	vgetmantbf16 zmm12, zmm8, 0x4
+	vgetmantbf16 xmm24, xmm17, 0xf3
+	vgetmantbf16 ymm25, ymm21, 0xa8
+	vgetmantbf16 zmm25, zmm23, 0x70

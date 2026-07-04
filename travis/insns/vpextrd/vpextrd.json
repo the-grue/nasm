@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPEXTRD",
+  "id": "vpextrd16",
+  "format": "bin",
+  "source": "vpextrd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpextrd/",
+  "target": [
+   { "output": "vpextrd.bin16", "match": "vpextrd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPEXTRD",
+  "id": "vpextrd32",
+  "format": "bin",
+  "source": "vpextrd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpextrd/",
+  "target": [
+   { "output": "vpextrd.bin32", "match": "vpextrd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPEXTRD",
   "id": "vpextrd64",
   "format": "bin",
   "source": "vpextrd.asm",

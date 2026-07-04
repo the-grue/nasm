@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for CMPLEPD",
+  "id": "cmplepd16",
+  "format": "bin",
+  "source": "cmplepd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/cmplepd/",
+  "target": [
+   { "output": "cmplepd.bin16", "match": "cmplepd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for CMPLEPD",
+  "id": "cmplepd32",
+  "format": "bin",
+  "source": "cmplepd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/cmplepd/",
+  "target": [
+   { "output": "cmplepd.bin32", "match": "cmplepd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for CMPLEPD",
   "id": "cmplepd64",
   "format": "bin",
   "source": "cmplepd.asm",

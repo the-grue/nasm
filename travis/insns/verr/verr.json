@@ -3,7 +3,7 @@
   "description": "Pseudorandom test for VERR",
   "id": "verr16",
   "format": "bin",
-  "source": "verr.asm",
+  "source": "verr_narrow.asm",
   "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/verr/",
   "target": [
    { "output": "verr.bin16", "match": "verr.bin16.t" }
@@ -14,7 +14,7 @@
   "description": "Pseudorandom test for VERR",
   "id": "verr32",
   "format": "bin",
-  "source": "verr.asm",
+  "source": "verr_narrow.asm",
   "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/verr/",
   "target": [
    { "output": "verr.bin32", "match": "verr.bin32.t" }

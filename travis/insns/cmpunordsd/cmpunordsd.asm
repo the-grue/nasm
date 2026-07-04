@@ -1,3 +1,4 @@
 default rel
-	cmpunordsd xmm3, xmm5
-	cmpunordsd xmm5, oword [0x2ec]
+	cmpunordsd xmm1, xmm2
+	cmpunordsd xmm7, oword [0xa84]
+	cmpunordsd xmm10, xmm14

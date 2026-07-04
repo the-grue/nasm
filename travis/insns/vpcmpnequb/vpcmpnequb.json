@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPCMPNEQUB",
+  "id": "vpcmpnequb16",
+  "format": "bin",
+  "source": "vpcmpnequb_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpcmpnequb/",
+  "target": [
+   { "output": "vpcmpnequb.bin16", "match": "vpcmpnequb.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPCMPNEQUB",
+  "id": "vpcmpnequb32",
+  "format": "bin",
+  "source": "vpcmpnequb_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpcmpnequb/",
+  "target": [
+   { "output": "vpcmpnequb.bin32", "match": "vpcmpnequb.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPCMPNEQUB",
   "id": "vpcmpnequb64",
   "format": "bin",
   "source": "vpcmpnequb.asm",

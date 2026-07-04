@@ -1,6 +1,6 @@
 	bts bx, di
-	bts dx, di
-	bts ebx, ebx
-	bts dword [0xa06], edi
-	bts di, 0x14
-	bts bp, 0x22
+	bts bx, si
+	bts edi, edi
+	bts dword [0xb2b], edi
+	bts dx, 0x4a
+	bts ax, 0x74

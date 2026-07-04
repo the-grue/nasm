@@ -3,7 +3,7 @@
   "description": "Pseudorandom test for TPAUSE",
   "id": "tpause16",
   "format": "bin",
-  "source": "tpause.asm",
+  "source": "tpause_narrow.asm",
   "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/tpause/",
   "target": [
    { "output": "tpause.bin16", "match": "tpause.bin16.t" }
@@ -14,7 +14,7 @@
   "description": "Pseudorandom test for TPAUSE",
   "id": "tpause32",
   "format": "bin",
-  "source": "tpause.asm",
+  "source": "tpause_narrow.asm",
   "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/tpause/",
   "target": [
    { "output": "tpause.bin32", "match": "tpause.bin32.t" }

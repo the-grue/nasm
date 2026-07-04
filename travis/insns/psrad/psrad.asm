@@ -3,7 +3,9 @@ default rel
 	psrad mm6, mm2
 	psrad mm2, 0x7f
 	psrad mm0, 0x4
-	psrad xmm11, oword [0x9fa]
-	psrad xmm9, xmm9
-	psrad xmm11, 0x71
-	psrad xmm4, 0x41
+	psrad xmm5, oword [0x9fa]
+	psrad xmm7, xmm4
+	psrad xmm2, 0x43
+	psrad xmm6, 0x34
+	psrad xmm12, xmm8
+	psrad xmm12, 0x33

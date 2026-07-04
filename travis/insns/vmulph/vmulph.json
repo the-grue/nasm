@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VMULPH",
+  "id": "vmulph16",
+  "format": "bin",
+  "source": "vmulph_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vmulph/",
+  "target": [
+   { "output": "vmulph.bin16", "match": "vmulph.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VMULPH",
+  "id": "vmulph32",
+  "format": "bin",
+  "source": "vmulph_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vmulph/",
+  "target": [
+   { "output": "vmulph.bin32", "match": "vmulph.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VMULPH",
   "id": "vmulph64",
   "format": "bin",
   "source": "vmulph.asm",

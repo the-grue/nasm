@@ -1,9 +1,17 @@
 default rel
 	btc ax, bx
-	btc dx, dx
-	btc dword [0x5e1], ecx
-	btc ecx, edx
-	btc rdi, rdx
-	btc rax, rbp
-	btc bp, 0x61
-	btc bp, 0xd3
+	btc cx, bx
+	btc edx, ebx
+	btc dword [0x790], ebp
+	btc rdx, rbp
+	btc rax, rdi
+	btc si, 0x78
+	btc word [0xdc6], 0x99
+	btc r12w, r12w
+	btc r14d, r12d
+	btc r14, r13
+	btc r9w, 0x9f
+	btc r24w, r29w
+	btc r20d, r16d
+	btc r17, r22
+	btc r29w, 0x66

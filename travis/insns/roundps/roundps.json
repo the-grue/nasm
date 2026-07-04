@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for ROUNDPS",
+  "id": "roundps16",
+  "format": "bin",
+  "source": "roundps_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/roundps/",
+  "target": [
+   { "output": "roundps.bin16", "match": "roundps.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for ROUNDPS",
+  "id": "roundps32",
+  "format": "bin",
+  "source": "roundps_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/roundps/",
+  "target": [
+   { "output": "roundps.bin32", "match": "roundps.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for ROUNDPS",
   "id": "roundps64",
   "format": "bin",
   "source": "roundps.asm",

@@ -1,3 +1,4 @@
 default rel
-	aesenc xmm15, xmm5
-	aesenc xmm3, oword [0x8f3]
+	aesenc xmm7, xmm2
+	aesenc xmm3, xmm0
+	aesenc xmm9, xmm13

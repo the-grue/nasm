@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VMINPH",
+  "id": "vminph16",
+  "format": "bin",
+  "source": "vminph_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vminph/",
+  "target": [
+   { "output": "vminph.bin16", "match": "vminph.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VMINPH",
+  "id": "vminph32",
+  "format": "bin",
+  "source": "vminph_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vminph/",
+  "target": [
+   { "output": "vminph.bin32", "match": "vminph.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VMINPH",
   "id": "vminph64",
   "format": "bin",
   "source": "vminph.asm",

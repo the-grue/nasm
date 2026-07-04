@@ -1,6 +1,8 @@
 default rel
-	vcmpeq_uqss xmm5, xmm11, xmm6
-	vcmpeq_uqss xmm5, xmm6
-	vcmpeq_uqss xmm6, xmm9, qword [0xee9]
-	vcmpeq_uqss k4, xmm4, xmm10
-	vcmpeq_uqss k4, xmm2, xmm5
+	vcmpeq_uqss xmm2, xmm5, xmm3
+	vcmpeq_uqss xmm2, xmm3
+	vcmpeq_uqss xmm2, xmm5, xmm1
+	vcmpeq_uqss k4, xmm2, xmm4
+	vcmpeq_uqss k2, xmm3, xmm4
+	vcmpeq_uqss xmm11, xmm12, xmm14
+	vcmpeq_uqss k3, xmm15, xmm15

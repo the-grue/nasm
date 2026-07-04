@@ -3,7 +3,7 @@
   "description": "Pseudorandom test for PSUBSW",
   "id": "psubsw16",
   "format": "bin",
-  "source": "psubsw.asm",
+  "source": "psubsw_narrow.asm",
   "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/psubsw/",
   "target": [
    { "output": "psubsw.bin16", "match": "psubsw.bin16.t" }
@@ -14,7 +14,7 @@
   "description": "Pseudorandom test for PSUBSW",
   "id": "psubsw32",
   "format": "bin",
-  "source": "psubsw.asm",
+  "source": "psubsw_narrow.asm",
   "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/psubsw/",
   "target": [
    { "output": "psubsw.bin32", "match": "psubsw.bin32.t" }

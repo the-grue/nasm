@@ -3,7 +3,9 @@ default rel
 	psllw mm2, qword [0xf84]
 	psllw mm2, 0x5a
 	psllw mm5, 0x3c
-	psllw xmm14, xmm14
-	psllw xmm10, oword [0xfa5]
-	psllw xmm13, 0x16
-	psllw xmm15, 0x2
+	psllw xmm7, xmm7
+	psllw xmm1, oword [0x11f]
+	psllw xmm7, 0x7
+	psllw xmm5, 0x5b
+	psllw xmm13, xmm14
+	psllw xmm9, 0x78

@@ -1,5 +1,9 @@
 default rel
 	vcvtss2usi eax, dword [0xb7c]
-	vcvtss2usi ebp, xmm6
-	vcvtss2usi rsi, xmm10
-	vcvtss2usi rbp, xmm4
+	vcvtss2usi ebx, xmm7
+	vcvtss2usi rdx, xmm2
+	vcvtss2usi rdx, dword [0x29e]
+	vcvtss2usi r15d, xmm8
+	vcvtss2usi r13, xmm15
+	vcvtss2usi r22d, xmm26
+	vcvtss2usi r17, xmm22

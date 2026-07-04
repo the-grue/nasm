@@ -1,5 +1,7 @@
 default rel
 	blsic ecx, ebp
-	blsic esi, ebp
-	blsic rdx, rsi
-	blsic rcx, rdx
+	blsic ebx, ecx
+	blsic rcx, rbx
+	blsic rsi, rcx
+	blsic r13d, r9d
+	blsic r14, r9

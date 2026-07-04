@@ -1,3 +1,4 @@
 default rel
-	ucomiss xmm2, xmm9
-	ucomiss xmm15, dword [0x591]
+	ucomiss xmm1, xmm4
+	ucomiss xmm5, dword [0xaa0]
+	ucomiss xmm15, xmm14

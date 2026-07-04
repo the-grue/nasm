@@ -1,3 +1,4 @@
 default rel
-	pmaxud xmm10, xmm6
-	pmaxud xmm2, xmm11
+	pmaxud xmm5, xmm3
+	pmaxud xmm5, xmm2
+	pmaxud xmm9, xmm9

@@ -1,9 +1,17 @@
 default rel
 	dec si
-	dec si
-	dec ebx
-	dec edx
+	dec dx
+	dec ecx
+	dec ebp
 	dec cl
-	dec byte [0xdea]
+	dec al
 	dec dx
 	dec bx
+	dec r13w
+	dec r13d
+	dec r9b
+	dec r10w
+	dec r20w
+	dec r28d
+	dec r19b
+	dec r26w

@@ -1,3 +1,4 @@
 default rel
-	divps xmm9, xmm15
-	divps xmm1, oword [0xc15]
+	divps xmm4, xmm7
+	divps xmm0, xmm4
+	divps xmm8, xmm15

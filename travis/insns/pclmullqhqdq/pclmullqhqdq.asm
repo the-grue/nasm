@@ -1,3 +1,4 @@
 default rel
-	pclmullqhqdq xmm2, xmm11
-	pclmullqhqdq xmm8, oword [0xea8]
+	pclmullqhqdq xmm1, xmm5
+	pclmullqhqdq xmm6, oword [0xe44]
+	pclmullqhqdq xmm12, xmm14

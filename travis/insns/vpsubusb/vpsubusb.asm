@@ -1,13 +1,21 @@
 default rel
-	vpsubusb xmm15, xmm10, xmm9
-	vpsubusb xmm15, xmm9
-	vpsubusb xmm3, xmm10, xmm0
-	vpsubusb ymm14, ymm2, yword [0xddc]
-	vpsubusb ymm14, yword [0xddc]
-	vpsubusb ymm9, ymm6, ymm5
-	vpsubusb xmm1, xmm12, xmm3
-	vpsubusb xmm1, xmm3
-	vpsubusb xmm14, xmm5, xmm7
-	vpsubusb ymm5, ymm13, ymm13
-	vpsubusb ymm5, ymm13
-	vpsubusb ymm9, ymm1, ymm12
+	vpsubusb xmm7, xmm5, xmm4
+	vpsubusb xmm7, xmm4
+	vpsubusb xmm6, xmm6, xmm3
+	vpsubusb ymm4, ymm2, ymm6
+	vpsubusb ymm4, ymm6
+	vpsubusb ymm2, ymm6, ymm6
+	vpsubusb xmm4, xmm0, xmm6
+	vpsubusb xmm4, xmm6
+	vpsubusb xmm2, xmm2, oword [0x859]
+	vpsubusb ymm5, ymm3, yword [0xec2]
+	vpsubusb ymm5, yword [0xec2]
+	vpsubusb ymm3, ymm4, ymm4
+	vpsubusb xmm9, xmm13, xmm9
+	vpsubusb ymm8, ymm9, ymm15
+	vpsubusb xmm11, xmm9, xmm13
+	vpsubusb ymm10, ymm12, ymm10
+	vpsubusb xmm16, xmm30, xmm18
+	vpsubusb ymm21, ymm25, ymm23
+	vpsubusb xmm30, xmm25, xmm22
+	vpsubusb ymm28, ymm28, ymm31

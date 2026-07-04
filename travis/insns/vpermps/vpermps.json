@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPERMPS",
+  "id": "vpermps16",
+  "format": "bin",
+  "source": "vpermps_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpermps/",
+  "target": [
+   { "output": "vpermps.bin16", "match": "vpermps.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPERMPS",
+  "id": "vpermps32",
+  "format": "bin",
+  "source": "vpermps_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpermps/",
+  "target": [
+   { "output": "vpermps.bin32", "match": "vpermps.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPERMPS",
   "id": "vpermps64",
   "format": "bin",
   "source": "vpermps.asm",

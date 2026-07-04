@@ -1,3 +1,4 @@
 default rel
-	cmpltsd xmm6, xmm9
-	cmpltsd xmm7, oword [0xe20]
+	cmpltsd xmm3, xmm4
+	cmpltsd xmm1, xmm6
+	cmpltsd xmm11, xmm14

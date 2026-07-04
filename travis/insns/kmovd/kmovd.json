@@ -3,7 +3,7 @@
   "description": "Pseudorandom test for KMOVD",
   "id": "kmovd16",
   "format": "bin",
-  "source": "kmovd.asm",
+  "source": "kmovd_narrow.asm",
   "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/kmovd/",
   "target": [
    { "output": "kmovd.bin16", "match": "kmovd.bin16.t" }
@@ -14,7 +14,7 @@
   "description": "Pseudorandom test for KMOVD",
   "id": "kmovd32",
   "format": "bin",
-  "source": "kmovd.asm",
+  "source": "kmovd_narrow.asm",
   "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/kmovd/",
   "target": [
    { "output": "kmovd.bin32", "match": "kmovd.bin32.t" }

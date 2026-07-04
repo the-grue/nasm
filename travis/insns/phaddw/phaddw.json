@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for PHADDW",
+  "id": "phaddw16",
+  "format": "bin",
+  "source": "phaddw_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/phaddw/",
+  "target": [
+   { "output": "phaddw.bin16", "match": "phaddw.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for PHADDW",
+  "id": "phaddw32",
+  "format": "bin",
+  "source": "phaddw_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/phaddw/",
+  "target": [
+   { "output": "phaddw.bin32", "match": "phaddw.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for PHADDW",
   "id": "phaddw64",
   "format": "bin",
   "source": "phaddw.asm",

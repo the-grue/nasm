@@ -1,3 +1,4 @@
 default rel
-	cvtpd2dq xmm2, xmm10
-	cvtpd2dq xmm9, xmm3
+	cvtpd2dq xmm1, xmm5
+	cvtpd2dq xmm7, xmm5
+	cvtpd2dq xmm12, xmm9

@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPCOMUD",
+  "id": "vpcomud16",
+  "format": "bin",
+  "source": "vpcomud_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpcomud/",
+  "target": [
+   { "output": "vpcomud.bin16", "match": "vpcomud.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPCOMUD",
+  "id": "vpcomud32",
+  "format": "bin",
+  "source": "vpcomud_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpcomud/",
+  "target": [
+   { "output": "vpcomud.bin32", "match": "vpcomud.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPCOMUD",
   "id": "vpcomud64",
   "format": "bin",
   "source": "vpcomud.asm",

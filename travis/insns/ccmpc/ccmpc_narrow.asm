@@ -1,6 +1,6 @@
 	ccmpc 9, al, dl
-	ccmpc 2, bl, cl
-	ccmpc 11, word [0x48b], ax
-	ccmpc 5, dx, si
-	ccmpc 5, ebp, eax
-	ccmpc 14, dword [0x17b], ebp
+	ccmpc 3, bl, cl
+	ccmpc 8, word [0x5e9], cx
+	ccmpc 11, ax, si
+	ccmpc 13, dword [0x544], edi
+	ccmpc 6, eax, ebx

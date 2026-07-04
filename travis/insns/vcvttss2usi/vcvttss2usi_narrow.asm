@@ -1,2 +1,2 @@
-	vcvttss2usi ebp, xmm1
-	vcvttss2usi eax, xmm14
+	vcvttss2usi ebp, xmm0
+	vcvttss2usi edi, dword [0x2d6]

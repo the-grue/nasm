@@ -1,6 +1,8 @@
 default rel
-	vcmpge_osss xmm2, xmm6, xmm1
-	vcmpge_osss xmm2, xmm1
-	vcmpge_osss xmm10, xmm6, xmm12
-	vcmpge_osss k6, xmm7, xmm1
-	vcmpge_osss k5, xmm3, xmm12
+	vcmpge_osss xmm1, xmm3, xmm0
+	vcmpge_osss xmm1, xmm0
+	vcmpge_osss xmm1, xmm0, xmm1
+	vcmpge_osss k1, xmm6, xmm4
+	vcmpge_osss k3, xmm7, xmm0
+	vcmpge_osss xmm13, xmm11, xmm12
+	vcmpge_osss k3, xmm12, xmm15

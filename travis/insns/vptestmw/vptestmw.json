@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPTESTMW",
+  "id": "vptestmw16",
+  "format": "bin",
+  "source": "vptestmw_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vptestmw/",
+  "target": [
+   { "output": "vptestmw.bin16", "match": "vptestmw.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPTESTMW",
+  "id": "vptestmw32",
+  "format": "bin",
+  "source": "vptestmw_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vptestmw/",
+  "target": [
+   { "output": "vptestmw.bin32", "match": "vptestmw.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPTESTMW",
   "id": "vptestmw64",
   "format": "bin",
   "source": "vptestmw.asm",

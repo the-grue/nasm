@@ -1,4 +1,4 @@
 	movzxd cx, ebx
-	movzxd di, edi
-	movzxd edi, ecx
-	movzxd ebp, eax
+	movzxd dx, ebp
+	movzxd ebx, eax
+	movzxd ebp, ebp

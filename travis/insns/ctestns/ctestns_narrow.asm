@@ -1,6 +1,6 @@
 	ctestns 15, al, cl
-	ctestns 15, al, bl
-	ctestns 6, ax, bx
-	ctestns 10, word [0xb8e], cx
-	ctestns 5, ecx, eax
-	ctestns 5, ecx, ebx
+	ctestns 0, cl, dl
+	ctestns 11, cx, cx
+	ctestns 15, cx, cx
+	ctestns 15, esi, ebx
+	ctestns 12, edi, esi

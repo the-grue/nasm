@@ -1,6 +1,17 @@
 [
  {
   "description": "Pseudorandom test for VGATHERDPS",
+  "id": "vgatherdps32",
+  "format": "bin",
+  "source": "vgatherdps_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vgatherdps/",
+  "target": [
+   { "output": "vgatherdps.bin32", "match": "vgatherdps.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VGATHERDPS",
   "id": "vgatherdps64",
   "format": "bin",
   "source": "vgatherdps.asm",

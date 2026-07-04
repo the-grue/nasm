@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPTESTMQ",
+  "id": "vptestmq16",
+  "format": "bin",
+  "source": "vptestmq_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vptestmq/",
+  "target": [
+   { "output": "vptestmq.bin16", "match": "vptestmq.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPTESTMQ",
+  "id": "vptestmq32",
+  "format": "bin",
+  "source": "vptestmq_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vptestmq/",
+  "target": [
+   { "output": "vptestmq.bin32", "match": "vptestmq.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPTESTMQ",
   "id": "vptestmq64",
   "format": "bin",
   "source": "vptestmq.asm",

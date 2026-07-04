@@ -1,3 +1,4 @@
 default rel
-	cmpnless xmm7, xmm9
-	cmpnless xmm6, xmm0
+	cmpnless xmm3, xmm4
+	cmpnless xmm0, dword [0x8ce]
+	cmpnless xmm11, xmm12

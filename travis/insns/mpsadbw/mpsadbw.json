@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for MPSADBW",
+  "id": "mpsadbw16",
+  "format": "bin",
+  "source": "mpsadbw_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/mpsadbw/",
+  "target": [
+   { "output": "mpsadbw.bin16", "match": "mpsadbw.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for MPSADBW",
+  "id": "mpsadbw32",
+  "format": "bin",
+  "source": "mpsadbw_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/mpsadbw/",
+  "target": [
+   { "output": "mpsadbw.bin32", "match": "mpsadbw.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for MPSADBW",
   "id": "mpsadbw64",
   "format": "bin",
   "source": "mpsadbw.asm",

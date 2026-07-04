@@ -1,7 +1,13 @@
 default rel
 	seto byte [0x857]
-	seto bl
-	seto rsi
+	seto dl
+	seto rdx
 	seto rdi
-	seto edx
-	seto ecx
+	seto edi
+	seto eax
+	seto r10b
+	seto r11
+	seto r14d
+	seto r21b
+	seto r21
+	seto r27d

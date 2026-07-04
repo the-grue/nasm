@@ -1,6 +1,8 @@
 default rel
-	vcmpord_ssd xmm7, xmm3, xmm12
-	vcmpord_ssd xmm7, xmm12
-	vcmpord_ssd xmm10, xmm0, qword [0xea6]
-	vcmpord_ssd k3, xmm3, qword [0x8c1]
-	vcmpord_ssd k2, xmm1, qword [0x610]
+	vcmpord_ssd xmm3, xmm1, xmm6
+	vcmpord_ssd xmm3, xmm6
+	vcmpord_ssd xmm6, xmm4, xmm0
+	vcmpord_ssd k7, xmm2, xmm6
+	vcmpord_ssd k2, xmm0, xmm0
+	vcmpord_ssd xmm13, xmm8, xmm15
+	vcmpord_ssd k2, xmm11, xmm9

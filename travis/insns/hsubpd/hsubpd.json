@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for HSUBPD",
+  "id": "hsubpd16",
+  "format": "bin",
+  "source": "hsubpd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/hsubpd/",
+  "target": [
+   { "output": "hsubpd.bin16", "match": "hsubpd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for HSUBPD",
+  "id": "hsubpd32",
+  "format": "bin",
+  "source": "hsubpd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/hsubpd/",
+  "target": [
+   { "output": "hsubpd.bin32", "match": "hsubpd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for HSUBPD",
   "id": "hsubpd64",
   "format": "bin",
   "source": "hsubpd.asm",

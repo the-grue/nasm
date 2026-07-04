@@ -1,6 +1,6 @@
 	cmovg si, bp
-	cmovg bx, ax
-	cmovg eax, dword [0x75b]
-	cmovg esi, edx
-	cmovg cx, cx, cx
-	cmovg si, bp, word [0xfa0]
+	cmovg bp, si
+	cmovg ebx, edi
+	cmovg ecx, ecx
+	cmovg si, si, di
+	cmovg si, dx, word [0x8b0]

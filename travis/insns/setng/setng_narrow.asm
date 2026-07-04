@@ -1,4 +1,4 @@
 	setng bl
-	setng bl
-	setng ebp
-	setng eax
+	setng al
+	setng edx
+	setng esi

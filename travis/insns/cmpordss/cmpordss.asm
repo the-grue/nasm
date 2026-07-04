@@ -1,3 +1,4 @@
 default rel
-	cmpordss xmm13, xmm14
-	cmpordss xmm14, xmm2
+	cmpordss xmm6, xmm7
+	cmpordss xmm2, dword [0x392]
+	cmpordss xmm15, xmm10

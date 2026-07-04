@@ -1,5 +1,9 @@
 default rel
-	vfnmadd213sd xmm11, xmm6, xmm2
-	vfnmadd213sd xmm9, xmm4, xmm5
-	vfnmadd213sd xmm15, xmm3, xmm10
-	vfnmadd213sd xmm9, xmm4, qword [0x4c2]
+	vfnmadd213sd xmm5, xmm3, xmm1
+	vfnmadd213sd xmm4, xmm5, xmm2
+	vfnmadd213sd xmm5, xmm2, xmm1
+	vfnmadd213sd xmm2, xmm1, qword [0xd15]
+	vfnmadd213sd xmm12, xmm10, xmm9
+	vfnmadd213sd xmm9, xmm15, xmm11
+	vfnmadd213sd xmm21, xmm31, xmm19
+	vfnmadd213sd xmm28, xmm31, xmm21

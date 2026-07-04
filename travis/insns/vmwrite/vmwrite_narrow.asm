@@ -1,2 +1,2 @@
 	vmwrite edx, ebx
-	vmwrite ebx, ebx
+	vmwrite esi, ebx

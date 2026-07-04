@@ -1,5 +1,7 @@
 default rel
-	cvtsi2sd xmm10, dword [0x1ae]
-	cvtsi2sd xmm0, dword [0x8f9]
-	cvtsi2sd xmm11, rbp
-	cvtsi2sd xmm12, rdx
+	cvtsi2sd xmm5, dword [0x1ae]
+	cvtsi2sd xmm1, dword [0xcac]
+	cvtsi2sd xmm3, rdi
+	cvtsi2sd xmm5, rax
+	cvtsi2sd xmm8, r14d
+	cvtsi2sd xmm14, r14

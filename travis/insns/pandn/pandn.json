@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for PANDN",
+  "id": "pandn16",
+  "format": "bin",
+  "source": "pandn_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/pandn/",
+  "target": [
+   { "output": "pandn.bin16", "match": "pandn.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for PANDN",
+  "id": "pandn32",
+  "format": "bin",
+  "source": "pandn_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/pandn/",
+  "target": [
+   { "output": "pandn.bin32", "match": "pandn.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for PANDN",
   "id": "pandn64",
   "format": "bin",
   "source": "pandn.asm",

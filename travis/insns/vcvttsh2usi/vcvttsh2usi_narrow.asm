@@ -1,2 +1,2 @@
-	vcvttsh2usi eax, xmm13
-	vcvttsh2usi eax, xmm9
+	vcvttsh2usi eax, xmm6
+	vcvttsh2usi ebp, xmm1

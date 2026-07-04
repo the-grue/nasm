@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VFMSUB231BF16",
+  "id": "vfmsub231bf1616",
+  "format": "bin",
+  "source": "vfmsub231bf16_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vfmsub231bf16/",
+  "target": [
+   { "output": "vfmsub231bf16.bin16", "match": "vfmsub231bf16.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VFMSUB231BF16",
+  "id": "vfmsub231bf1632",
+  "format": "bin",
+  "source": "vfmsub231bf16_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vfmsub231bf16/",
+  "target": [
+   { "output": "vfmsub231bf16.bin32", "match": "vfmsub231bf16.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VFMSUB231BF16",
   "id": "vfmsub231bf1664",
   "format": "bin",
   "source": "vfmsub231bf16.asm",

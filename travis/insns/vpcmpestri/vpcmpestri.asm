@@ -1,3 +1,4 @@
 default rel
-	vpcmpestri xmm15, oword [0xa31], 0xab
-	vpcmpestri xmm6, xmm0, 0xfc
+	vpcmpestri xmm7, oword [0xa31], 0xab
+	vpcmpestri xmm7, xmm0, 0x72
+	vpcmpestri xmm11, xmm11, 0xc

@@ -1,4 +1,6 @@
 default rel
-	vscalefss xmm3, xmm7, dword [0xe70]
-	vscalefss xmm3, dword [0xe70]
-	vscalefss xmm6, xmm0, xmm10
+	vscalefss xmm1, xmm3, dword [0xe70]
+	vscalefss xmm1, dword [0xe70]
+	vscalefss xmm5, xmm4, xmm3
+	vscalefss xmm11, xmm8, xmm9
+	vscalefss xmm26, xmm23, xmm29

@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPMACSSDD",
+  "id": "vpmacssdd16",
+  "format": "bin",
+  "source": "vpmacssdd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpmacssdd/",
+  "target": [
+   { "output": "vpmacssdd.bin16", "match": "vpmacssdd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPMACSSDD",
+  "id": "vpmacssdd32",
+  "format": "bin",
+  "source": "vpmacssdd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpmacssdd/",
+  "target": [
+   { "output": "vpmacssdd.bin32", "match": "vpmacssdd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPMACSSDD",
   "id": "vpmacssdd64",
   "format": "bin",
   "source": "vpmacssdd.asm",

@@ -1,2 +1,2 @@
 	blsic ecx, ebp
-	blsic esi, ebp
+	blsic ebx, ecx

@@ -1,4 +1,6 @@
 default rel
-	vdivsh xmm2, xmm6, xmm5
-	vdivsh xmm2, xmm5
-	vdivsh xmm10, xmm1, xmm8
+	vdivsh xmm1, xmm3, xmm2
+	vdivsh xmm1, xmm2
+	vdivsh xmm2, xmm0, xmm1
+	vdivsh xmm13, xmm8, xmm9
+	vdivsh xmm24, xmm30, xmm18

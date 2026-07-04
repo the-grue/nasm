@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VCMPUNORD_QSD",
+  "id": "vcmpunord_qsd16",
+  "format": "bin",
+  "source": "vcmpunord_qsd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcmpunord_qsd/",
+  "target": [
+   { "output": "vcmpunord_qsd.bin16", "match": "vcmpunord_qsd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCMPUNORD_QSD",
+  "id": "vcmpunord_qsd32",
+  "format": "bin",
+  "source": "vcmpunord_qsd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcmpunord_qsd/",
+  "target": [
+   { "output": "vcmpunord_qsd.bin32", "match": "vcmpunord_qsd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCMPUNORD_QSD",
   "id": "vcmpunord_qsd64",
   "format": "bin",
   "source": "vcmpunord_qsd.asm",

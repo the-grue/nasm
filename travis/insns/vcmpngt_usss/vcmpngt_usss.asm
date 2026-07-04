@@ -1,6 +1,8 @@
 default rel
-	vcmpngt_usss xmm0, xmm3, xmm13
-	vcmpngt_usss xmm0, xmm13
-	vcmpngt_usss xmm14, xmm2, xmm1
-	vcmpngt_usss k5, xmm12, dword [0xdd1]
-	vcmpngt_usss k3, xmm11, dword [0xc79]
+	vcmpngt_usss xmm0, xmm1, xmm6
+	vcmpngt_usss xmm0, xmm6
+	vcmpngt_usss xmm6, xmm6, xmm5
+	vcmpngt_usss k6, xmm6, xmm0
+	vcmpngt_usss k2, xmm0, dword [0x36d]
+	vcmpngt_usss xmm15, xmm9, xmm12
+	vcmpngt_usss k7, xmm15, xmm15

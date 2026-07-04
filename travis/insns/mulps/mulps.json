@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for MULPS",
+  "id": "mulps16",
+  "format": "bin",
+  "source": "mulps_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/mulps/",
+  "target": [
+   { "output": "mulps.bin16", "match": "mulps.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for MULPS",
+  "id": "mulps32",
+  "format": "bin",
+  "source": "mulps_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/mulps/",
+  "target": [
+   { "output": "mulps.bin32", "match": "mulps.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for MULPS",
   "id": "mulps64",
   "format": "bin",
   "source": "mulps.asm",

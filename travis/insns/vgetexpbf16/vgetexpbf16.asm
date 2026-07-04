@@ -1,7 +1,13 @@
 default rel
-	vgetexpbf16 xmm9, xmm2
-	vgetexpbf16 xmm5, oword [0xdba]
-	vgetexpbf16 ymm9, yword [0xad2]
-	vgetexpbf16 ymm1, ymm12
-	vgetexpbf16 zmm3, zmm11
-	vgetexpbf16 zmm4, zmm14
+	vgetexpbf16 xmm4, xmm1
+	vgetexpbf16 xmm5, xmm0
+	vgetexpbf16 ymm0, yword [0x4a1]
+	vgetexpbf16 ymm7, ymm1
+	vgetexpbf16 zmm1, zword [0x5e1]
+	vgetexpbf16 zmm2, zmm4
+	vgetexpbf16 xmm10, xmm14
+	vgetexpbf16 ymm10, ymm13
+	vgetexpbf16 zmm14, zmm14
+	vgetexpbf16 xmm29, xmm25
+	vgetexpbf16 ymm20, ymm19
+	vgetexpbf16 zmm17, zmm19

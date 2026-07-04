@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VFMADD123PS",
+  "id": "vfmadd123ps16",
+  "format": "bin",
+  "source": "vfmadd123ps_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vfmadd123ps/",
+  "target": [
+   { "output": "vfmadd123ps.bin16", "match": "vfmadd123ps.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VFMADD123PS",
+  "id": "vfmadd123ps32",
+  "format": "bin",
+  "source": "vfmadd123ps_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vfmadd123ps/",
+  "target": [
+   { "output": "vfmadd123ps.bin32", "match": "vfmadd123ps.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VFMADD123PS",
   "id": "vfmadd123ps64",
   "format": "bin",
   "source": "vfmadd123ps.asm",

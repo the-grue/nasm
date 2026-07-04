@@ -1,7 +1,13 @@
 default rel
-	vpcmpngtub k7, xmm11, xmm10
-	vpcmpngtub k5, xmm3, xmm1
-	vpcmpngtub k5, ymm15, ymm14
-	vpcmpngtub k7, ymm10, yword [0xbb1]
-	vpcmpngtub k7, zmm11, zword [0x80a]
-	vpcmpngtub k1, zmm8, zmm1
+	vpcmpngtub k7, xmm5, xmm5
+	vpcmpngtub k5, xmm7, oword [0xaa2]
+	vpcmpngtub k7, ymm5, yword [0xc11]
+	vpcmpngtub k7, ymm0, ymm2
+	vpcmpngtub k3, zmm0, zmm3
+	vpcmpngtub k1, zmm0, zword [0x7e0]
+	vpcmpngtub k5, xmm9, xmm11
+	vpcmpngtub k7, ymm11, ymm8
+	vpcmpngtub k5, zmm11, zmm10
+	vpcmpngtub k1, xmm26, xmm31
+	vpcmpngtub k4, ymm18, ymm17
+	vpcmpngtub k4, zmm20, zmm24

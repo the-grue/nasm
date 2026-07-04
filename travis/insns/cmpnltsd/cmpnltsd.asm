@@ -1,3 +1,4 @@
 default rel
-	cmpnltsd xmm13, xmm14
-	cmpnltsd xmm7, oword [0x3e4]
+	cmpnltsd xmm6, xmm7
+	cmpnltsd xmm7, oword [0x6c4]
+	cmpnltsd xmm11, xmm15

@@ -1,6 +1,6 @@
 	cmovnz cx, cx
-	cmovnz dx, si
-	cmovnz ecx, edi
-	cmovnz ecx, ebx
-	cmovnz dx, ax, ax
-	cmovnz bx, bp, di
+	cmovnz ax, word [0x582]
+	cmovnz eax, edx
+	cmovnz ecx, eax
+	cmovnz bp, cx, cx
+	cmovnz ax, di, dx

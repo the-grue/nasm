@@ -1,9 +1,17 @@
 default rel
 	idiv bl
-	idiv bl
-	idiv ax
+	idiv al
 	idiv cx
-	idiv dword [0x95f]
-	idiv dword [0x445]
+	idiv word [0x445]
+	idiv edx
+	idiv dword [0xd5d]
+	idiv rax
 	idiv rdx
-	idiv rdi
+	idiv r10b
+	idiv r14w
+	idiv r13d
+	idiv r15
+	idiv r21b
+	idiv r24w
+	idiv r28d
+	idiv r27

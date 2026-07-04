@@ -1,10 +1,13 @@
 default rel
-	vpinsrb xmm2, xmm1, byte [0x3f4], 0x5
-	vpinsrb xmm2, byte [0x3f4], 0x5
-	vpinsrb xmm0, xmm11, byte [0x6ec], 0xe3
-	vpinsrb xmm9, xmm15, bl, 0xa0
-	vpinsrb xmm9, bl, 0xa0
-	vpinsrb xmm9, xmm5, dl, 0xa9
-	vpinsrb xmm2, xmm10, edx, 0xcd
-	vpinsrb xmm2, edx, 0xcd
-	vpinsrb xmm8, xmm0, eax, 0x45
+	vpinsrb xmm1, xmm0, byte [0x3f4], 0x5
+	vpinsrb xmm1, byte [0x3f4], 0x5
+	vpinsrb xmm5, xmm4, byte [0x5b8], 0xa4
+	vpinsrb xmm7, xmm5, cl, 0x88
+	vpinsrb xmm7, cl, 0x88
+	vpinsrb xmm1, xmm4, byte [0x2e4], 0x9e
+	vpinsrb xmm6, xmm0, edx, 0x2a
+	vpinsrb xmm6, edx, 0x2a
+	vpinsrb xmm5, xmm6, ecx, 0x6f
+	vpinsrb xmm8, xmm13, byte [0x6ec], 0xe3
+	vpinsrb xmm14, xmm12, r8b, 0x1f
+	vpinsrb xmm15, xmm14, r14d, 0x9f

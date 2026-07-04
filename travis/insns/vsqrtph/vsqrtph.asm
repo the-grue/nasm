@@ -1,7 +1,13 @@
 default rel
-	vsqrtph xmm6, oword [0xa87]
-	vsqrtph xmm12, xmm1
-	vsqrtph ymm15, ymm12
-	vsqrtph ymm3, yword [0xf46]
-	vsqrtph zmm1, zword [0xacb]
-	vsqrtph zmm6, zmm11
+	vsqrtph xmm3, oword [0xa87]
+	vsqrtph xmm0, oword [0x4a5]
+	vsqrtph ymm5, yword [0x253]
+	vsqrtph ymm5, ymm5
+	vsqrtph zmm7, zmm3
+	vsqrtph zmm5, zmm5
+	vsqrtph xmm14, xmm10
+	vsqrtph ymm15, ymm13
+	vsqrtph zmm14, zmm12
+	vsqrtph xmm17, xmm31
+	vsqrtph ymm22, ymm17
+	vsqrtph zmm21, zmm29

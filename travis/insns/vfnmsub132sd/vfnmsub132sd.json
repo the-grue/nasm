@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VFNMSUB132SD",
+  "id": "vfnmsub132sd16",
+  "format": "bin",
+  "source": "vfnmsub132sd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vfnmsub132sd/",
+  "target": [
+   { "output": "vfnmsub132sd.bin16", "match": "vfnmsub132sd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VFNMSUB132SD",
+  "id": "vfnmsub132sd32",
+  "format": "bin",
+  "source": "vfnmsub132sd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vfnmsub132sd/",
+  "target": [
+   { "output": "vfnmsub132sd.bin32", "match": "vfnmsub132sd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VFNMSUB132SD",
   "id": "vfnmsub132sd64",
   "format": "bin",
   "source": "vfnmsub132sd.asm",

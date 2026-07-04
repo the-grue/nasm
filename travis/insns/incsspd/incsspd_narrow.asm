@@ -1,0 +1,2 @@
+	incsspd edx
+	incsspd eax

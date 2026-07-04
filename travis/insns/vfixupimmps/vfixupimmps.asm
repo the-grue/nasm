@@ -1,10 +1,16 @@
 default rel
-	vfixupimmps xmm11, xmm4, xmm3, 0x6
-	vfixupimmps xmm11, xmm3, 0x6
-	vfixupimmps xmm6, xmm14, xmm7, 0x79
-	vfixupimmps ymm7, ymm1, yword [0xe24], 0xb7
-	vfixupimmps ymm7, yword [0xe24], 0xb7
-	vfixupimmps ymm15, ymm15, yword [0x342], 0x10
-	vfixupimmps zmm10, zmm0, zmm7, 0x4f
-	vfixupimmps zmm10, zmm7, 0x4f
-	vfixupimmps zmm14, zmm9, zmm9, 0x40
+	vfixupimmps xmm5, xmm2, xmm1, 0x6
+	vfixupimmps xmm5, xmm1, 0x6
+	vfixupimmps xmm7, xmm5, oword [0xf16], 0xd5
+	vfixupimmps ymm1, ymm0, ymm0, 0x3c
+	vfixupimmps ymm1, ymm0, 0x3c
+	vfixupimmps ymm5, ymm1, yword [0x418], 0xe0
+	vfixupimmps zmm2, zmm0, zmm5, 0x98
+	vfixupimmps zmm2, zmm5, 0x98
+	vfixupimmps zmm1, zmm7, zmm0, 0x4f
+	vfixupimmps xmm11, xmm15, xmm9, 0x7f
+	vfixupimmps ymm11, ymm10, ymm15, 0x9a
+	vfixupimmps zmm15, zmm11, zmm11, 0xb
+	vfixupimmps xmm23, xmm23, xmm17, 0xfd
+	vfixupimmps ymm17, ymm25, ymm19, 0x57
+	vfixupimmps zmm16, zmm18, zmm29, 0xe7

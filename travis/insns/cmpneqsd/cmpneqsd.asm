@@ -1,3 +1,4 @@
 default rel
-	cmpneqsd xmm10, xmm13
-	cmpneqsd xmm2, xmm14
+	cmpneqsd xmm5, xmm6
+	cmpneqsd xmm3, xmm2
+	cmpneqsd xmm9, xmm8

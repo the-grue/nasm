@@ -3,4 +3,4 @@
 	movsx eax, ax
 	movsx eax, ax
 	movsx dx, dl
-	movsx ax, byte [0x644]
+	movsx cx, cl

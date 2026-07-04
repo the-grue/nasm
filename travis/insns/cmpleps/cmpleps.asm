@@ -1,3 +1,4 @@
 default rel
-	cmpleps xmm12, xmm7
-	cmpleps xmm11, xmm9
+	cmpleps xmm6, xmm3
+	cmpleps xmm0, xmm7
+	cmpleps xmm13, xmm11

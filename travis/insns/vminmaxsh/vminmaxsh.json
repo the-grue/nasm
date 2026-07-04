@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VMINMAXSH",
+  "id": "vminmaxsh16",
+  "format": "bin",
+  "source": "vminmaxsh_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vminmaxsh/",
+  "target": [
+   { "output": "vminmaxsh.bin16", "match": "vminmaxsh.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VMINMAXSH",
+  "id": "vminmaxsh32",
+  "format": "bin",
+  "source": "vminmaxsh_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vminmaxsh/",
+  "target": [
+   { "output": "vminmaxsh.bin32", "match": "vminmaxsh.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VMINMAXSH",
   "id": "vminmaxsh64",
   "format": "bin",
   "source": "vminmaxsh.asm",

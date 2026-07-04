@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VCMPNLE_USPD",
+  "id": "vcmpnle_uspd16",
+  "format": "bin",
+  "source": "vcmpnle_uspd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcmpnle_uspd/",
+  "target": [
+   { "output": "vcmpnle_uspd.bin16", "match": "vcmpnle_uspd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCMPNLE_USPD",
+  "id": "vcmpnle_uspd32",
+  "format": "bin",
+  "source": "vcmpnle_uspd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcmpnle_uspd/",
+  "target": [
+   { "output": "vcmpnle_uspd.bin32", "match": "vcmpnle_uspd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCMPNLE_USPD",
   "id": "vcmpnle_uspd64",
   "format": "bin",
   "source": "vcmpnle_uspd.asm",

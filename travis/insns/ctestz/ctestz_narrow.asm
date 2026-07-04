@@ -1,6 +1,6 @@
 	ctestz 1, dl, al
-	ctestz 6, dl, al
-	ctestz 10, word [0x6e6], ax
-	ctestz 14, bx, bp
-	ctestz 4, edi, edi
-	ctestz 13, dword [0xd73], esi
+	ctestz 6, dl, cl
+	ctestz 4, word [0x516], dx
+	ctestz 15, ax, bp
+	ctestz 7, dword [0x15b], esi
+	ctestz 14, ebx, edi

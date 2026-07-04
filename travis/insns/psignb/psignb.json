@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for PSIGNB",
+  "id": "psignb16",
+  "format": "bin",
+  "source": "psignb_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/psignb/",
+  "target": [
+   { "output": "psignb.bin16", "match": "psignb.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for PSIGNB",
+  "id": "psignb32",
+  "format": "bin",
+  "source": "psignb_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/psignb/",
+  "target": [
+   { "output": "psignb.bin32", "match": "psignb.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for PSIGNB",
   "id": "psignb64",
   "format": "bin",
   "source": "psignb.asm",

@@ -1,6 +1,6 @@
 	cmovl cx, bx
-	cmovl dx, di
+	cmovl cx, word [0x102]
 	cmovl eax, ebp
-	cmovl eax, eax
-	cmovl si, cx, cx
-	cmovl cx, ax, word [0x9b3]
+	cmovl eax, ecx
+	cmovl si, bp, word [0x50c]
+	cmovl si, ax, word [0x684]

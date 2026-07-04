@@ -1,2 +1,2 @@
-	cvtss2si ebx, xmm15
-	cvtss2si esi, xmm8
+	cvtss2si ebx, xmm7
+	cvtss2si eax, xmm0

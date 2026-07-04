@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPCMPLEQ",
+  "id": "vpcmpleq16",
+  "format": "bin",
+  "source": "vpcmpleq_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpcmpleq/",
+  "target": [
+   { "output": "vpcmpleq.bin16", "match": "vpcmpleq.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPCMPLEQ",
+  "id": "vpcmpleq32",
+  "format": "bin",
+  "source": "vpcmpleq_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpcmpleq/",
+  "target": [
+   { "output": "vpcmpleq.bin32", "match": "vpcmpleq.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPCMPLEQ",
   "id": "vpcmpleq64",
   "format": "bin",
   "source": "vpcmpleq.asm",

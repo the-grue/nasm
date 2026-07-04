@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPMADD52HUQ",
+  "id": "vpmadd52huq16",
+  "format": "bin",
+  "source": "vpmadd52huq_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpmadd52huq/",
+  "target": [
+   { "output": "vpmadd52huq.bin16", "match": "vpmadd52huq.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPMADD52HUQ",
+  "id": "vpmadd52huq32",
+  "format": "bin",
+  "source": "vpmadd52huq_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpmadd52huq/",
+  "target": [
+   { "output": "vpmadd52huq.bin32", "match": "vpmadd52huq.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPMADD52HUQ",
   "id": "vpmadd52huq64",
   "format": "bin",
   "source": "vpmadd52huq.asm",

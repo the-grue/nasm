@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPHADDUDQ",
+  "id": "vphaddudq16",
+  "format": "bin",
+  "source": "vphaddudq_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vphaddudq/",
+  "target": [
+   { "output": "vphaddudq.bin16", "match": "vphaddudq.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPHADDUDQ",
+  "id": "vphaddudq32",
+  "format": "bin",
+  "source": "vphaddudq_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vphaddudq/",
+  "target": [
+   { "output": "vphaddudq.bin32", "match": "vphaddudq.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPHADDUDQ",
   "id": "vphaddudq64",
   "format": "bin",
   "source": "vphaddudq.asm",

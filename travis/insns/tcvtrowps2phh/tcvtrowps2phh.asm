@@ -1,5 +1,9 @@
 default rel
-	tcvtrowps2phh zmm10, tmm2, edx
-	tcvtrowps2phh zmm1, tmm6, esi
-	tcvtrowps2phh zmm5, tmm7, 0x91
-	tcvtrowps2phh zmm10, tmm2, 0x2c
+	tcvtrowps2phh zmm5, tmm2, edx
+	tcvtrowps2phh zmm5, tmm2, ebx
+	tcvtrowps2phh zmm5, tmm5, 0xda
+	tcvtrowps2phh zmm0, tmm7, 0xde
+	tcvtrowps2phh zmm8, tmm6, r12d
+	tcvtrowps2phh zmm13, tmm1, 0x45
+	tcvtrowps2phh zmm21, tmm7, r25d
+	tcvtrowps2phh zmm29, tmm0, 0xa8

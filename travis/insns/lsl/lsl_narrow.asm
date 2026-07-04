@@ -1,4 +1,4 @@
 	lsl ax, word [0x289]
-	lsl bx, word [0xcbd]
-	lsl edi, di
-	lsl edx, bp
+	lsl ax, word [0x884]
+	lsl ebx, word [0x857]
+	lsl eax, word [0x7f1]

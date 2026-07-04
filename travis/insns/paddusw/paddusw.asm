@@ -1,5 +1,6 @@
 default rel
 	paddusw mm7, mm6
 	paddusw mm2, qword [0x41f]
-	paddusw xmm7, xmm1
-	paddusw xmm15, oword [0x3ee]
+	paddusw xmm3, xmm0
+	paddusw xmm3, oword [0x2cf]
+	paddusw xmm15, xmm15

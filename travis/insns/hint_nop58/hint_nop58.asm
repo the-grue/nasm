@@ -1,7 +1,13 @@
 default rel
 	hint_nop58 di
-	hint_nop58 dx
-	hint_nop58 edi
+	hint_nop58 di
 	hint_nop58 dword [0xa69]
-	hint_nop58 rdi
-	hint_nop58 qword [0xdce]
+	hint_nop58 dword [0xdce]
+	hint_nop58 rcx
+	hint_nop58 rbx
+	hint_nop58 r10w
+	hint_nop58 r9d
+	hint_nop58 r12
+	hint_nop58 r24w
+	hint_nop58 r27d
+	hint_nop58 r18

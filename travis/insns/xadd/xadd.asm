@@ -1,9 +1,17 @@
 default rel
 	xadd dl, al
-	xadd cl, cl
-	xadd word [0x5b2], si
-	xadd word [0x431], ax
-	xadd edx, ebx
-	xadd eax, edx
-	xadd qword [0x3a6], rcx
-	xadd rbp, rbp
+	xadd cl, dl
+	xadd ax, si
+	xadd bp, bx
+	xadd ebx, ebp
+	xadd edx, ebp
+	xadd qword [0xf00], rdi
+	xadd rdx, rax
+	xadd r11b, r13b
+	xadd r12w, r10w
+	xadd r15d, r13d
+	xadd r14, r10
+	xadd r24b, r30b
+	xadd r18w, r16w
+	xadd r29d, r20d
+	xadd r27, r24

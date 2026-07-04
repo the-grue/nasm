@@ -1,7 +1,13 @@
 default rel
 	hint_nop16 cx
-	hint_nop16 word [0x4a4]
-	hint_nop16 edx
+	hint_nop16 dx
 	hint_nop16 dword [0xe9a]
-	hint_nop16 rax
-	hint_nop16 rcx
+	hint_nop16 ecx
+	hint_nop16 rsi
+	hint_nop16 rbp
+	hint_nop16 r14w
+	hint_nop16 r9d
+	hint_nop16 r15
+	hint_nop16 r19w
+	hint_nop16 r18d
+	hint_nop16 r17

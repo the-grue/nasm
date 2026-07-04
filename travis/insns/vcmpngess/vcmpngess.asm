@@ -1,6 +1,8 @@
 default rel
-	vcmpngess xmm5, xmm13, xmm12
-	vcmpngess xmm5, xmm12
-	vcmpngess xmm9, xmm3, qword [0x759]
-	vcmpngess k5, xmm2, xmm11
-	vcmpngess k6, xmm15, xmm12
+	vcmpngess xmm2, xmm6, xmm6
+	vcmpngess xmm2, xmm6
+	vcmpngess xmm2, xmm5, qword [0xf47]
+	vcmpngess k4, xmm6, xmm4
+	vcmpngess k1, xmm3, xmm0
+	vcmpngess xmm12, xmm9, xmm13
+	vcmpngess k1, xmm15, xmm8

@@ -1,7 +1,13 @@
 default rel
 	setgzu rcx
-	setgzu rdi
-	setgzu esi
-	setgzu ecx
-	setgzu byte [0xfa1]
-	setgzu byte [0x45b]
+	setgzu rcx
+	setgzu ebp
+	setgzu ebx
+	setgzu cl
+	setgzu dl
+	setgzu r14
+	setgzu r15d
+	setgzu r9b
+	setgzu r25
+	setgzu r30d
+	setgzu r27b

@@ -3,7 +3,7 @@
   "description": "Pseudorandom test for ENCODEKEY256",
   "id": "encodekey25616",
   "format": "bin",
-  "source": "encodekey256.asm",
+  "source": "encodekey256_narrow.asm",
   "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/encodekey256/",
   "target": [
    { "output": "encodekey256.bin16", "match": "encodekey256.bin16.t" }
@@ -14,7 +14,7 @@
   "description": "Pseudorandom test for ENCODEKEY256",
   "id": "encodekey25632",
   "format": "bin",
-  "source": "encodekey256.asm",
+  "source": "encodekey256_narrow.asm",
   "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/encodekey256/",
   "target": [
    { "output": "encodekey256.bin32", "match": "encodekey256.bin32.t" }

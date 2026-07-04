@@ -1,6 +1,6 @@
 	ctestna 12, bl, bl
-	ctestna 11, al, al
-	ctestna 4, ax, bx
-	ctestna 10, ax, ax
-	ctestna 1, ebx, ebx
-	ctestna 8, dword [0x2ea], edi
+	ctestna 1, cl, bl
+	ctestna 1, ax, dx
+	ctestna 9, word [0x611], bp
+	ctestna 12, ebx, ebp
+	ctestna 9, dword [0x756], ecx

@@ -1,3 +1,4 @@
 default rel
-	vpcmpistrm xmm13, xmm1, 0x5f
-	vpcmpistrm xmm5, xmm1, 0x37
+	vpcmpistrm xmm6, xmm0, 0x5f
+	vpcmpistrm xmm0, xmm5, 0x7c
+	vpcmpistrm xmm10, xmm10, 0x1e

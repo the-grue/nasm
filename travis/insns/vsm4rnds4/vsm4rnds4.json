@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VSM4RNDS4",
+  "id": "vsm4rnds416",
+  "format": "bin",
+  "source": "vsm4rnds4_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vsm4rnds4/",
+  "target": [
+   { "output": "vsm4rnds4.bin16", "match": "vsm4rnds4.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VSM4RNDS4",
+  "id": "vsm4rnds432",
+  "format": "bin",
+  "source": "vsm4rnds4_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vsm4rnds4/",
+  "target": [
+   { "output": "vsm4rnds4.bin32", "match": "vsm4rnds4.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VSM4RNDS4",
   "id": "vsm4rnds464",
   "format": "bin",
   "source": "vsm4rnds4.asm",

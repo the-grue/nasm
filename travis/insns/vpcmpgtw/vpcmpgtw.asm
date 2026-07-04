@@ -1,11 +1,15 @@
 default rel
-	vpcmpgtw xmm6, xmm15, oword [0x658]
-	vpcmpgtw xmm6, oword [0x658]
-	vpcmpgtw xmm13, xmm3, xmm4
-	vpcmpgtw ymm2, ymm11, yword [0x12c]
-	vpcmpgtw ymm2, yword [0x12c]
-	vpcmpgtw ymm12, ymm9, ymm1
-	vpcmpgtw k3, xmm10, oword [0x806]
-	vpcmpgtw k2, xmm13, xmm0
-	vpcmpgtw k3, ymm5, ymm11
-	vpcmpgtw k4, ymm11, yword [0xb40]
+	vpcmpgtw xmm3, xmm7, oword [0x658]
+	vpcmpgtw xmm3, oword [0x658]
+	vpcmpgtw xmm7, xmm0, oword [0x9d6]
+	vpcmpgtw ymm2, ymm0, ymm5
+	vpcmpgtw ymm2, ymm5
+	vpcmpgtw ymm3, ymm2, ymm5
+	vpcmpgtw k4, xmm5, oword [0xb40]
+	vpcmpgtw k4, xmm2, xmm2
+	vpcmpgtw k2, ymm5, yword [0x2c0]
+	vpcmpgtw k3, ymm3, ymm1
+	vpcmpgtw xmm14, xmm9, xmm10
+	vpcmpgtw ymm15, ymm11, ymm10
+	vpcmpgtw k4, xmm8, xmm15
+	vpcmpgtw k4, ymm9, ymm12

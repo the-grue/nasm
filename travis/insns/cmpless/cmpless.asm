@@ -1,3 +1,4 @@
 default rel
-	cmpless xmm7, xmm12
-	cmpless xmm15, dword [0x31b]
+	cmpless xmm3, xmm6
+	cmpless xmm0, dword [0xad0]
+	cmpless xmm15, xmm14

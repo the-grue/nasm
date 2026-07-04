@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VDPPHPS",
+  "id": "vdpphps16",
+  "format": "bin",
+  "source": "vdpphps_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vdpphps/",
+  "target": [
+   { "output": "vdpphps.bin16", "match": "vdpphps.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VDPPHPS",
+  "id": "vdpphps32",
+  "format": "bin",
+  "source": "vdpphps_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vdpphps/",
+  "target": [
+   { "output": "vdpphps.bin32", "match": "vdpphps.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VDPPHPS",
   "id": "vdpphps64",
   "format": "bin",
   "source": "vdpphps.asm",

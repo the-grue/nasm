@@ -1,6 +1,8 @@
 default rel
-	vcmpnlt_uqsd xmm4, xmm3, xmm3
-	vcmpnlt_uqsd xmm4, xmm3
-	vcmpnlt_uqsd xmm6, xmm8, xmm4
-	vcmpnlt_uqsd k2, xmm4, xmm14
-	vcmpnlt_uqsd k2, xmm3, xmm8
+	vcmpnlt_uqsd xmm2, xmm1, xmm1
+	vcmpnlt_uqsd xmm2, xmm1
+	vcmpnlt_uqsd xmm2, xmm7, xmm1
+	vcmpnlt_uqsd k1, xmm4, xmm7
+	vcmpnlt_uqsd k5, xmm6, xmm0
+	vcmpnlt_uqsd xmm11, xmm12, xmm13
+	vcmpnlt_uqsd k4, xmm9, xmm9

@@ -1,4 +1,4 @@
 	xchg ax, di
-	xchg ax, bp
-	xchg bx, ax
-	xchg di, ax
+	xchg ax, cx
+	xchg si, ax
+	xchg si, ax

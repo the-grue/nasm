@@ -1,4 +1,6 @@
 default rel
-	vrcp14sd xmm6, xmm6, qword [0x9f2]
-	vrcp14sd xmm6, qword [0x9f2]
-	vrcp14sd xmm4, xmm0, qword [0x6ee]
+	vrcp14sd xmm3, xmm3, qword [0x9f2]
+	vrcp14sd xmm3, qword [0x9f2]
+	vrcp14sd xmm2, xmm3, qword [0x1e0]
+	vrcp14sd xmm10, xmm8, xmm15
+	vrcp14sd xmm22, xmm23, xmm20

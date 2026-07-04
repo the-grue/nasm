@@ -1,9 +1,17 @@
 default rel
-	vmovdqu64 xmm15, xmm5
-	vmovdqu64 xmm0, xmm11
-	vmovdqu64 ymm10, ymm4
-	vmovdqu64 ymm7, yword [0xffd]
-	vmovdqu64 zmm1, zmm5
-	vmovdqu64 zmm5, zmm4
-	vmovdqu64 xmm11, xmm1
-	vmovdqu64 xmm13, xmm9
+	vmovdqu64 xmm7, xmm2
+	vmovdqu64 xmm4, xmm3
+	vmovdqu64 ymm7, yword [0x251]
+	vmovdqu64 ymm2, ymm5
+	vmovdqu64 zmm0, zmm6
+	vmovdqu64 zmm2, zmm6
+	vmovdqu64 oword [0xecd], xmm0
+	vmovdqu64 xmm6, xmm5
+	vmovdqu64 xmm8, xmm11
+	vmovdqu64 ymm12, ymm10
+	vmovdqu64 zmm12, zmm12
+	vmovdqu64 xmm13, xmm12
+	vmovdqu64 xmm27, xmm26
+	vmovdqu64 ymm21, ymm25
+	vmovdqu64 zmm31, zmm28
+	vmovdqu64 xmm19, xmm20

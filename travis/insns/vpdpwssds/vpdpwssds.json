@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPDPWSSDS",
+  "id": "vpdpwssds16",
+  "format": "bin",
+  "source": "vpdpwssds_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpdpwssds/",
+  "target": [
+   { "output": "vpdpwssds.bin16", "match": "vpdpwssds.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPDPWSSDS",
+  "id": "vpdpwssds32",
+  "format": "bin",
+  "source": "vpdpwssds_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpdpwssds/",
+  "target": [
+   { "output": "vpdpwssds.bin32", "match": "vpdpwssds.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPDPWSSDS",
   "id": "vpdpwssds64",
   "format": "bin",
   "source": "vpdpwssds.asm",

@@ -1,4 +1,6 @@
 default rel
-	vrsqrt14sd xmm7, xmm0, qword [0xe52]
-	vrsqrt14sd xmm7, qword [0xe52]
-	vrsqrt14sd xmm14, xmm10, qword [0x5d9]
+	vrsqrt14sd xmm3, xmm0, qword [0xe52]
+	vrsqrt14sd xmm3, qword [0xe52]
+	vrsqrt14sd xmm6, xmm5, xmm1
+	vrsqrt14sd xmm15, xmm13, xmm14
+	vrsqrt14sd xmm21, xmm26, xmm21

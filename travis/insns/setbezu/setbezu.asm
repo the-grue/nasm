@@ -1,7 +1,13 @@
 default rel
 	setbezu rdi
-	setbezu rax
-	setbezu ebx
-	setbezu edi
-	setbezu dl
-	setbezu cl
+	setbezu rdi
+	setbezu ecx
+	setbezu edx
+	setbezu al
+	setbezu byte [0x4bc]
+	setbezu r8
+	setbezu r14d
+	setbezu r12b
+	setbezu r20
+	setbezu r16d
+	setbezu r29b

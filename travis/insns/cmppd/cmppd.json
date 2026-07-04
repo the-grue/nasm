@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for CMPPD",
+  "id": "cmppd16",
+  "format": "bin",
+  "source": "cmppd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/cmppd/",
+  "target": [
+   { "output": "cmppd.bin16", "match": "cmppd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for CMPPD",
+  "id": "cmppd32",
+  "format": "bin",
+  "source": "cmppd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/cmppd/",
+  "target": [
+   { "output": "cmppd.bin32", "match": "cmppd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for CMPPD",
   "id": "cmppd64",
   "format": "bin",
   "source": "cmppd.asm",

@@ -1,3 +1,4 @@
 default rel
-	roundsd xmm15, xmm12, 0x2a
-	roundsd xmm11, xmm15, 0x18
+	roundsd xmm7, xmm6, 0x2a
+	roundsd xmm4, xmm7, 0x67
+	roundsd xmm13, xmm8, 0xf4

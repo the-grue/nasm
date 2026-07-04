@@ -1,4 +1,5 @@
 default rel
-	vpcomuq xmm6, xmm13, xmm8, 0xfb
-	vpcomuq xmm6, xmm8, 0xfb
-	vpcomuq xmm9, xmm7, xmm0, 0x9e
+	vpcomuq xmm3, xmm6, xmm4, 0xfb
+	vpcomuq xmm3, xmm4, 0xfb
+	vpcomuq xmm2, xmm2, xmm7, 0xba
+	vpcomuq xmm12, xmm11, xmm8, 0x4

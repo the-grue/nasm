@@ -1,6 +1,6 @@
 	cmovs dx, bp
-	cmovs di, si
-	cmovs edi, dword [0xb8b]
-	cmovs ebp, ecx
-	cmovs bp, ax, word [0xf87]
-	cmovs si, si, cx
+	cmovs si, word [0xf6e]
+	cmovs esi, eax
+	cmovs ebp, dword [0x150]
+	cmovs si, cx, si
+	cmovs ax, bp, bp

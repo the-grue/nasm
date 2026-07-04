@@ -1,2 +1,2 @@
-	vpextrd ebp, xmm4, 0xcb
-	vpextrd esi, xmm10, 0xf
+	vpextrd eax, xmm6, 0x5
+	vpextrd ebp, xmm2, 0xad

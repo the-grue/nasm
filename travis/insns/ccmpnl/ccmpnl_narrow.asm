@@ -1,6 +1,6 @@
 	ccmpnl 11, bl, al
-	ccmpnl 7, byte [0xae7], bl
-	ccmpnl 13, bx, si
-	ccmpnl 2, word [0xd24], bp
-	ccmpnl 13, dword [0x8ce], edi
-	ccmpnl 14, dword [0x99f], ebp
+	ccmpnl 4, al, dl
+	ccmpnl 12, word [0xdb5], si
+	ccmpnl 2, di, bx
+	ccmpnl 1, ebx, esi
+	ccmpnl 2, edx, esi

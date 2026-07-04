@@ -1,7 +1,9 @@
 default rel
-	vpsignw xmm12, xmm12, xmm4
-	vpsignw xmm12, xmm4
-	vpsignw xmm5, xmm5, xmm14
-	vpsignw ymm0, ymm5, ymm15
-	vpsignw ymm0, ymm15
-	vpsignw ymm6, ymm3, yword [0x8a4]
+	vpsignw xmm6, xmm6, xmm2
+	vpsignw xmm6, xmm2
+	vpsignw xmm4, xmm7, xmm1
+	vpsignw ymm7, ymm4, yword [0x3c3]
+	vpsignw ymm7, yword [0x3c3]
+	vpsignw ymm5, ymm5, ymm4
+	vpsignw xmm10, xmm10, xmm13
+	vpsignw ymm10, ymm13, ymm15

@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VFIXUPIMMSD",
+  "id": "vfixupimmsd16",
+  "format": "bin",
+  "source": "vfixupimmsd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vfixupimmsd/",
+  "target": [
+   { "output": "vfixupimmsd.bin16", "match": "vfixupimmsd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VFIXUPIMMSD",
+  "id": "vfixupimmsd32",
+  "format": "bin",
+  "source": "vfixupimmsd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vfixupimmsd/",
+  "target": [
+   { "output": "vfixupimmsd.bin32", "match": "vfixupimmsd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VFIXUPIMMSD",
   "id": "vfixupimmsd64",
   "format": "bin",
   "source": "vfixupimmsd.asm",

@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPCMOV",
+  "id": "vpcmov16",
+  "format": "bin",
+  "source": "vpcmov_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpcmov/",
+  "target": [
+   { "output": "vpcmov.bin16", "match": "vpcmov.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPCMOV",
+  "id": "vpcmov32",
+  "format": "bin",
+  "source": "vpcmov_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpcmov/",
+  "target": [
+   { "output": "vpcmov.bin32", "match": "vpcmov.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPCMOV",
   "id": "vpcmov64",
   "format": "bin",
   "source": "vpcmov.asm",

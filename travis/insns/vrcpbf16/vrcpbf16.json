@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VRCPBF16",
+  "id": "vrcpbf1616",
+  "format": "bin",
+  "source": "vrcpbf16_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vrcpbf16/",
+  "target": [
+   { "output": "vrcpbf16.bin16", "match": "vrcpbf16.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VRCPBF16",
+  "id": "vrcpbf1632",
+  "format": "bin",
+  "source": "vrcpbf16_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vrcpbf16/",
+  "target": [
+   { "output": "vrcpbf16.bin32", "match": "vrcpbf16.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VRCPBF16",
   "id": "vrcpbf1664",
   "format": "bin",
   "source": "vrcpbf16.asm",

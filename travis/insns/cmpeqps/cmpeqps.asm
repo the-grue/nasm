@@ -1,3 +1,4 @@
 default rel
-	cmpeqps xmm6, xmm0
-	cmpeqps xmm4, xmm2
+	cmpeqps xmm3, xmm0
+	cmpeqps xmm3, xmm5
+	cmpeqps xmm10, xmm11

@@ -1,4 +1,4 @@
-	setszu eax
-	setszu ecx
+	setszu ebx
+	setszu ebp
+	setszu byte [0x5bd]
 	setszu cl
-	setszu dl

@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPCMPLTUQ",
+  "id": "vpcmpltuq16",
+  "format": "bin",
+  "source": "vpcmpltuq_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpcmpltuq/",
+  "target": [
+   { "output": "vpcmpltuq.bin16", "match": "vpcmpltuq.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPCMPLTUQ",
+  "id": "vpcmpltuq32",
+  "format": "bin",
+  "source": "vpcmpltuq_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpcmpltuq/",
+  "target": [
+   { "output": "vpcmpltuq.bin32", "match": "vpcmpltuq.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPCMPLTUQ",
   "id": "vpcmpltuq64",
   "format": "bin",
   "source": "vpcmpltuq.asm",

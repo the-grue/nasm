@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VAESIMC",
+  "id": "vaesimc16",
+  "format": "bin",
+  "source": "vaesimc_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vaesimc/",
+  "target": [
+   { "output": "vaesimc.bin16", "match": "vaesimc.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VAESIMC",
+  "id": "vaesimc32",
+  "format": "bin",
+  "source": "vaesimc_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vaesimc/",
+  "target": [
+   { "output": "vaesimc.bin32", "match": "vaesimc.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VAESIMC",
   "id": "vaesimc64",
   "format": "bin",
   "source": "vaesimc.asm",

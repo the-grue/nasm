@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for RSQRTPS",
+  "id": "rsqrtps16",
+  "format": "bin",
+  "source": "rsqrtps_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/rsqrtps/",
+  "target": [
+   { "output": "rsqrtps.bin16", "match": "rsqrtps.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for RSQRTPS",
+  "id": "rsqrtps32",
+  "format": "bin",
+  "source": "rsqrtps_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/rsqrtps/",
+  "target": [
+   { "output": "rsqrtps.bin32", "match": "rsqrtps.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for RSQRTPS",
   "id": "rsqrtps64",
   "format": "bin",
   "source": "rsqrtps.asm",

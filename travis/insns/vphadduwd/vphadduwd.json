@@ -3,7 +3,7 @@
   "description": "Pseudorandom test for VPHADDUWD",
   "id": "vphadduwd16",
   "format": "bin",
-  "source": "vphadduwd.asm",
+  "source": "vphadduwd_narrow.asm",
   "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vphadduwd/",
   "target": [
    { "output": "vphadduwd.bin16", "match": "vphadduwd.bin16.t" }
@@ -14,7 +14,7 @@
   "description": "Pseudorandom test for VPHADDUWD",
   "id": "vphadduwd32",
   "format": "bin",
-  "source": "vphadduwd.asm",
+  "source": "vphadduwd_narrow.asm",
   "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vphadduwd/",
   "target": [
    { "output": "vphadduwd.bin32", "match": "vphadduwd.bin32.t" }

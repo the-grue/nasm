@@ -1,5 +1,7 @@
 default rel
-	pshuflw xmm8, xmm15, 0x3
-	pshuflw xmm3, xmm15, 0x3f
-	pshuflw xmm8, [0x373], 0x75
-	pshuflw xmm4, [0xa4d], 0x26
+	pshuflw xmm4, xmm7, 0x3
+	pshuflw xmm2, xmm4, 0x26
+	pshuflw xmm5, [0xdda], 0x9
+	pshuflw xmm6, [0xf47], 0x63
+	pshuflw xmm9, xmm15, 0x3f
+	pshuflw xmm9, [0xe2a], 0x7

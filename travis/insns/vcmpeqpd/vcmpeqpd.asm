@@ -1,11 +1,15 @@
 default rel
-	vcmpeqpd xmm14, xmm0, xmm7
-	vcmpeqpd xmm14, xmm7
-	vcmpeqpd xmm15, xmm8, xmm15
-	vcmpeqpd ymm4, ymm2, ymm3
-	vcmpeqpd ymm4, ymm3
-	vcmpeqpd ymm3, ymm3, ymm5
-	vcmpeqpd k4, xmm4, xmm8
-	vcmpeqpd k1, xmm9, xmm13
-	vcmpeqpd k6, ymm9, yword [0x199]
-	vcmpeqpd k6, ymm8, ymm13
+	vcmpeqpd xmm7, xmm0, xmm3
+	vcmpeqpd xmm7, xmm3
+	vcmpeqpd xmm5, xmm1, xmm1
+	vcmpeqpd ymm0, ymm2, ymm2
+	vcmpeqpd ymm0, ymm2
+	vcmpeqpd ymm5, ymm4, yword [0x199]
+	vcmpeqpd k6, xmm4, xmm6
+	vcmpeqpd k6, xmm5, xmm7
+	vcmpeqpd k2, ymm0, ymm1
+	vcmpeqpd k2, ymm5, ymm1
+	vcmpeqpd xmm15, xmm12, xmm8
+	vcmpeqpd ymm10, ymm12, ymm8
+	vcmpeqpd k4, xmm15, xmm15
+	vcmpeqpd k1, ymm11, ymm14

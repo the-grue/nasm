@@ -1,6 +1,17 @@
 [
  {
   "description": "Pseudorandom test for VGATHERQPS",
+  "id": "vgatherqps32",
+  "format": "bin",
+  "source": "vgatherqps_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vgatherqps/",
+  "target": [
+   { "output": "vgatherqps.bin32", "match": "vgatherqps.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VGATHERQPS",
   "id": "vgatherqps64",
   "format": "bin",
   "source": "vgatherqps.asm",

@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for CVTPI2PD",
+  "id": "cvtpi2pd16",
+  "format": "bin",
+  "source": "cvtpi2pd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/cvtpi2pd/",
+  "target": [
+   { "output": "cvtpi2pd.bin16", "match": "cvtpi2pd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for CVTPI2PD",
+  "id": "cvtpi2pd32",
+  "format": "bin",
+  "source": "cvtpi2pd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/cvtpi2pd/",
+  "target": [
+   { "output": "cvtpi2pd.bin32", "match": "cvtpi2pd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for CVTPI2PD",
   "id": "cvtpi2pd64",
   "format": "bin",
   "source": "cvtpi2pd.asm",

@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for PMAXSW",
+  "id": "pmaxsw16",
+  "format": "bin",
+  "source": "pmaxsw_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/pmaxsw/",
+  "target": [
+   { "output": "pmaxsw.bin16", "match": "pmaxsw.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for PMAXSW",
+  "id": "pmaxsw32",
+  "format": "bin",
+  "source": "pmaxsw_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/pmaxsw/",
+  "target": [
+   { "output": "pmaxsw.bin32", "match": "pmaxsw.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for PMAXSW",
   "id": "pmaxsw64",
   "format": "bin",
   "source": "pmaxsw.asm",

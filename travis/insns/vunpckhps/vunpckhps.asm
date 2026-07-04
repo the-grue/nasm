@@ -1,13 +1,21 @@
 default rel
-	vunpckhps xmm5, xmm10, oword [0xd20]
-	vunpckhps xmm5, oword [0xd20]
-	vunpckhps xmm15, xmm12, oword [0x684]
-	vunpckhps ymm5, ymm1, ymm3
-	vunpckhps ymm5, ymm3
-	vunpckhps ymm14, ymm9, yword [0x128]
-	vunpckhps xmm11, xmm8, xmm12
-	vunpckhps xmm11, xmm12
-	vunpckhps xmm9, xmm6, xmm5
-	vunpckhps ymm7, ymm13, ymm0
-	vunpckhps ymm7, ymm0
-	vunpckhps ymm15, ymm6, ymm9
+	vunpckhps xmm2, xmm5, oword [0xd20]
+	vunpckhps xmm2, oword [0xd20]
+	vunpckhps xmm3, xmm1, oword [0xa36]
+	vunpckhps ymm7, ymm0, yword [0x898]
+	vunpckhps ymm7, yword [0x898]
+	vunpckhps ymm3, ymm6, ymm0
+	vunpckhps xmm7, xmm3, xmm4
+	vunpckhps xmm7, xmm4
+	vunpckhps xmm2, xmm5, oword [0xbd3]
+	vunpckhps ymm5, ymm1, ymm4
+	vunpckhps ymm5, ymm4
+	vunpckhps ymm5, ymm3, ymm2
+	vunpckhps xmm15, xmm14, xmm14
+	vunpckhps ymm11, ymm14, ymm12
+	vunpckhps xmm13, xmm15, xmm11
+	vunpckhps ymm12, ymm11, ymm12
+	vunpckhps xmm21, xmm21, xmm17
+	vunpckhps ymm22, ymm24, ymm21
+	vunpckhps xmm25, xmm26, xmm20
+	vunpckhps ymm29, ymm28, ymm27

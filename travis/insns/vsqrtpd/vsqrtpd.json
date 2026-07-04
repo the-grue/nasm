@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VSQRTPD",
+  "id": "vsqrtpd16",
+  "format": "bin",
+  "source": "vsqrtpd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vsqrtpd/",
+  "target": [
+   { "output": "vsqrtpd.bin16", "match": "vsqrtpd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VSQRTPD",
+  "id": "vsqrtpd32",
+  "format": "bin",
+  "source": "vsqrtpd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vsqrtpd/",
+  "target": [
+   { "output": "vsqrtpd.bin32", "match": "vsqrtpd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VSQRTPD",
   "id": "vsqrtpd64",
   "format": "bin",
   "source": "vsqrtpd.asm",

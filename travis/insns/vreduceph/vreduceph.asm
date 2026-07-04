@@ -1,7 +1,13 @@
 default rel
-	vreduceph xmm13, xmm7, 0x31
-	vreduceph xmm0, oword [0x760], 0x68
-	vreduceph ymm12, ymm5, 0x7f
-	vreduceph ymm1, yword [0xdb3], 0x17
-	vreduceph zmm12, zmm10, 0x77
-	vreduceph zmm8, zmm6, 0x8e
+	vreduceph xmm6, xmm3, 0x31
+	vreduceph xmm2, xmm0, 0xde
+	vreduceph ymm6, ymm6, 0x2c
+	vreduceph ymm3, ymm4, 0x2e
+	vreduceph zmm2, zmm0, 0xce
+	vreduceph zmm7, zword [0x45c], 0xf8
+	vreduceph xmm8, xmm15, 0x6d
+	vreduceph ymm13, ymm11, 0x83
+	vreduceph zmm8, zmm12, 0x4c
+	vreduceph xmm22, xmm28, 0x69
+	vreduceph ymm23, ymm22, 0x8e
+	vreduceph zmm27, zmm25, 0x9b

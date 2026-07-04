@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VBCSTNESH2PS",
+  "id": "vbcstnesh2ps16",
+  "format": "bin",
+  "source": "vbcstnesh2ps_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vbcstnesh2ps/",
+  "target": [
+   { "output": "vbcstnesh2ps.bin16", "match": "vbcstnesh2ps.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VBCSTNESH2PS",
+  "id": "vbcstnesh2ps32",
+  "format": "bin",
+  "source": "vbcstnesh2ps_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vbcstnesh2ps/",
+  "target": [
+   { "output": "vbcstnesh2ps.bin32", "match": "vbcstnesh2ps.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VBCSTNESH2PS",
   "id": "vbcstnesh2ps64",
   "format": "bin",
   "source": "vbcstnesh2ps.asm",

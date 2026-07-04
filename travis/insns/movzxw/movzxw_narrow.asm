@@ -1,4 +1,4 @@
 	movzxw si, dx
-	movzxw bp, cx
-	movzxw ebp, word [0xf33]
-	movzxw ecx, si
+	movzxw di, word [0x550]
+	movzxw ebx, bx
+	movzxw ebp, si

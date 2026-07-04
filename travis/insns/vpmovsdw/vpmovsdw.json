@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPMOVSDW",
+  "id": "vpmovsdw16",
+  "format": "bin",
+  "source": "vpmovsdw_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpmovsdw/",
+  "target": [
+   { "output": "vpmovsdw.bin16", "match": "vpmovsdw.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPMOVSDW",
+  "id": "vpmovsdw32",
+  "format": "bin",
+  "source": "vpmovsdw_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpmovsdw/",
+  "target": [
+   { "output": "vpmovsdw.bin32", "match": "vpmovsdw.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPMOVSDW",
   "id": "vpmovsdw64",
   "format": "bin",
   "source": "vpmovsdw.asm",

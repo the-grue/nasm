@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPEXPANDB",
+  "id": "vpexpandb16",
+  "format": "bin",
+  "source": "vpexpandb_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpexpandb/",
+  "target": [
+   { "output": "vpexpandb.bin16", "match": "vpexpandb.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPEXPANDB",
+  "id": "vpexpandb32",
+  "format": "bin",
+  "source": "vpexpandb_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpexpandb/",
+  "target": [
+   { "output": "vpexpandb.bin32", "match": "vpexpandb.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPEXPANDB",
   "id": "vpexpandb64",
   "format": "bin",
   "source": "vpexpandb.asm",

@@ -1,10 +1,16 @@
 default rel
-	vpmullq xmm6, xmm15, xmm6
-	vpmullq xmm6, xmm6
-	vpmullq xmm14, xmm9, xmm9
-	vpmullq ymm6, ymm12, yword [0x5b3]
-	vpmullq ymm6, yword [0x5b3]
-	vpmullq ymm13, ymm13, ymm1
-	vpmullq zmm15, zmm0, zword [0x15d]
-	vpmullq zmm15, zword [0x15d]
-	vpmullq zmm4, zmm10, zword [0x34c]
+	vpmullq xmm3, xmm7, xmm3
+	vpmullq xmm3, xmm3
+	vpmullq xmm5, xmm2, oword [0xde4]
+	vpmullq ymm1, ymm0, yword [0x15c]
+	vpmullq ymm1, yword [0x15c]
+	vpmullq ymm7, ymm2, ymm7
+	vpmullq zmm7, zmm2, zmm0
+	vpmullq zmm7, zmm0
+	vpmullq zmm4, zmm7, zmm0
+	vpmullq xmm15, xmm12, xmm10
+	vpmullq ymm15, ymm8, ymm10
+	vpmullq zmm14, zmm15, zmm12
+	vpmullq xmm25, xmm22, xmm28
+	vpmullq ymm26, ymm29, ymm18
+	vpmullq zmm22, zmm24, zmm22

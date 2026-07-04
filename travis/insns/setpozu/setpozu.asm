@@ -1,7 +1,13 @@
 default rel
 	setpozu rdx
-	setpozu rax
-	setpozu ebx
+	setpozu rsi
+	setpozu ecx
 	setpozu esi
+	setpozu dl
 	setpozu al
-	setpozu cl
+	setpozu r9
+	setpozu r9d
+	setpozu r11b
+	setpozu r19
+	setpozu r23d
+	setpozu r20b

@@ -1,3 +1,4 @@
 default rel
-	pcmpgtq xmm14, xmm1
-	pcmpgtq xmm4, xmm4
+	pcmpgtq xmm7, xmm0
+	pcmpgtq xmm2, xmm5
+	pcmpgtq xmm10, xmm11

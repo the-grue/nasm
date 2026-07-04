@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VBLENDMPD",
+  "id": "vblendmpd16",
+  "format": "bin",
+  "source": "vblendmpd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vblendmpd/",
+  "target": [
+   { "output": "vblendmpd.bin16", "match": "vblendmpd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VBLENDMPD",
+  "id": "vblendmpd32",
+  "format": "bin",
+  "source": "vblendmpd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vblendmpd/",
+  "target": [
+   { "output": "vblendmpd.bin32", "match": "vblendmpd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VBLENDMPD",
   "id": "vblendmpd64",
   "format": "bin",
   "source": "vblendmpd.asm",

@@ -1,5 +1,9 @@
 default rel
 	aand dword [0x9d7], edi
-	aand dword [0x32c], edi
-	aand qword [0x205], rdi
-	aand qword [0xa64], rbx
+	aand dword [0xa64], ebx
+	aand qword [0x371], rbp
+	aand qword [0xf0b], rbx
+	aand dword [0x32c], r14d
+	aand qword [0x765], r9
+	aand dword [0x205], r28d
+	aand qword [0x3bd], r23

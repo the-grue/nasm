@@ -1,6 +1,6 @@
-	vpextrw esi, xmm8, 0x67
-	vpextrw edi, xmm7, 0xd
-	vpextrw word [0xf71], xmm5, 0x73
-	vpextrw word [0xd67], xmm1, 0x1d
-	vpextrw cx, xmm12, 0xd9
-	vpextrw cx, xmm12, 0xdb
+	vpextrw ebp, xmm2, 0x73
+	vpextrw ecx, xmm6, 0xdb
+	vpextrw word [0x45b], xmm4, 0xab
+	vpextrw word [0x74e], xmm4, 0x77
+	vpextrw dx, xmm5, 0xb0
+	vpextrw cx, xmm7, 0xf0

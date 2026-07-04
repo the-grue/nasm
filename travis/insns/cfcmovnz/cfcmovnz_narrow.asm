@@ -1,6 +1,6 @@
 	cfcmovnz bx, si
-	cfcmovnz ax, bx
-	cfcmovnz edi, ebp
-	cfcmovnz dword [0x950], edx
-	cfcmovnz cx, ax
-	cfcmovnz dx, word [0x92b]
+	cfcmovnz word [0xf13], di
+	cfcmovnz edx, edx
+	cfcmovnz ecx, eax
+	cfcmovnz di, bx
+	cfcmovnz di, word [0x64a]

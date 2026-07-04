@@ -1,5 +1,7 @@
 default rel
-	vfmsub123ps xmm4, xmm11, oword [0x3c8]
-	vfmsub123ps xmm8, xmm7, xmm0
-	vfmsub123ps ymm1, ymm13, ymm6
-	vfmsub123ps ymm8, ymm3, ymm6
+	vfmsub123ps xmm2, xmm5, oword [0x3c8]
+	vfmsub123ps xmm1, xmm3, xmm1
+	vfmsub123ps ymm3, ymm3, ymm2
+	vfmsub123ps ymm4, ymm4, ymm5
+	vfmsub123ps xmm12, xmm11, xmm10
+	vfmsub123ps ymm13, ymm15, ymm12

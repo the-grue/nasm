@@ -1,4 +1,4 @@
 	setbe byte [0xb09]
-	setbe dl
-	setbe ebp
-	setbe edi
+	setbe al
+	setbe ecx
+	setbe eax

@@ -1,10 +1,16 @@
 default rel
-	vmaxph xmm13, xmm8, oword [0xdb4]
-	vmaxph xmm13, oword [0xdb4]
-	vmaxph xmm4, xmm14, xmm6
-	vmaxph ymm0, ymm3, yword [0x4f9]
-	vmaxph ymm0, yword [0x4f9]
-	vmaxph ymm13, ymm5, yword [0x90b]
-	vmaxph zmm12, zmm1, zword [0x439]
-	vmaxph zmm12, zword [0x439]
-	vmaxph zmm9, zmm2, zword [0x270]
+	vmaxph xmm6, xmm4, oword [0xdb4]
+	vmaxph xmm6, oword [0xdb4]
+	vmaxph xmm6, xmm2, oword [0x671]
+	vmaxph ymm6, ymm4, yword [0x279]
+	vmaxph ymm6, yword [0x279]
+	vmaxph ymm5, ymm0, ymm6
+	vmaxph zmm4, zmm3, zmm7
+	vmaxph zmm4, zmm7
+	vmaxph zmm6, zmm4, zmm0
+	vmaxph xmm10, xmm15, xmm8
+	vmaxph ymm14, ymm9, ymm12
+	vmaxph zmm15, zmm14, zmm8
+	vmaxph xmm22, xmm16, xmm19
+	vmaxph ymm18, ymm30, ymm17
+	vmaxph zmm17, zmm20, zmm28

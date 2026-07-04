@@ -1,11 +1,15 @@
 default rel
-	vcmpunord_spd xmm9, xmm3, oword [0x187]
-	vcmpunord_spd xmm9, oword [0x187]
-	vcmpunord_spd xmm14, xmm1, xmm5
-	vcmpunord_spd ymm2, ymm12, ymm12
-	vcmpunord_spd ymm2, ymm12
-	vcmpunord_spd ymm0, ymm14, ymm14
-	vcmpunord_spd k6, xmm4, xmm11
-	vcmpunord_spd k5, xmm4, xmm2
-	vcmpunord_spd k7, ymm1, yword [0xb04]
-	vcmpunord_spd k6, ymm10, ymm1
+	vcmpunord_spd xmm4, xmm1, oword [0x187]
+	vcmpunord_spd xmm4, oword [0x187]
+	vcmpunord_spd xmm3, xmm6, xmm7
+	vcmpunord_spd ymm1, ymm7, yword [0x4d2]
+	vcmpunord_spd ymm1, yword [0x4d2]
+	vcmpunord_spd ymm7, ymm0, yword [0xb04]
+	vcmpunord_spd k6, xmm5, xmm0
+	vcmpunord_spd k4, xmm1, xmm6
+	vcmpunord_spd k2, ymm5, yword [0xa3a]
+	vcmpunord_spd k4, ymm5, ymm4
+	vcmpunord_spd xmm15, xmm8, xmm12
+	vcmpunord_spd ymm10, ymm13, ymm12
+	vcmpunord_spd k4, xmm9, xmm14
+	vcmpunord_spd k5, ymm13, ymm10

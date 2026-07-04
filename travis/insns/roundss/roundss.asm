@@ -1,3 +1,4 @@
 default rel
-	roundss xmm6, xmm9, 0x2c
-	roundss xmm4, dword [0x16b], 0xc
+	roundss xmm3, xmm4, 0x2c
+	roundss xmm3, dword [0xd4a], 0xa1
+	roundss xmm10, xmm13, 0x8

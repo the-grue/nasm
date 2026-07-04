@@ -1,5 +1,7 @@
 default rel
-	movups xmm10, xmm15
-	movups xmm13, xmm1
-	movups xmm7, xmm15
-	movups xmm15, xmm14
+	movups xmm5, xmm7
+	movups xmm3, oword [0xa2f]
+	movups oword [0xee1], xmm6
+	movups xmm2, xmm7
+	movups xmm14, xmm13
+	movups xmm8, xmm8

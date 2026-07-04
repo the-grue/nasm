@@ -1,0 +1,9 @@
+	vprorq xmm7, oword [0x249], 0x45
+	vprorq xmm7, 0x45
+	vprorq xmm0, oword [0xcc2], 0xcc
+	vprorq ymm5, ymm2, 0x3b
+	vprorq ymm5, 0x3b
+	vprorq ymm6, ymm0, 0x38
+	vprorq zmm5, zmm6, 0xe4
+	vprorq zmm5, 0xe4
+	vprorq zmm0, zword [0xd60], 0xe0

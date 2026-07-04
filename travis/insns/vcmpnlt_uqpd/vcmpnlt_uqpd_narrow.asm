@@ -1,0 +1,10 @@
+	vcmpnlt_uqpd xmm4, xmm3, xmm1
+	vcmpnlt_uqpd xmm4, xmm1
+	vcmpnlt_uqpd xmm7, xmm3, xmm0
+	vcmpnlt_uqpd ymm1, ymm6, ymm7
+	vcmpnlt_uqpd ymm1, ymm7
+	vcmpnlt_uqpd ymm4, ymm7, ymm2
+	vcmpnlt_uqpd k6, xmm4, xmm1
+	vcmpnlt_uqpd k6, xmm5, xmm2
+	vcmpnlt_uqpd k5, ymm2, ymm4
+	vcmpnlt_uqpd k4, ymm7, ymm0

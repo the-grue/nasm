@@ -3,7 +3,7 @@
   "description": "Pseudorandom test for XORPS",
   "id": "xorps16",
   "format": "bin",
-  "source": "xorps.asm",
+  "source": "xorps_narrow.asm",
   "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/xorps/",
   "target": [
    { "output": "xorps.bin16", "match": "xorps.bin16.t" }
@@ -14,7 +14,7 @@
   "description": "Pseudorandom test for XORPS",
   "id": "xorps32",
   "format": "bin",
-  "source": "xorps.asm",
+  "source": "xorps_narrow.asm",
   "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/xorps/",
   "target": [
    { "output": "xorps.bin32", "match": "xorps.bin32.t" }

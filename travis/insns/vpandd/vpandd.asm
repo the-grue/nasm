@@ -1,10 +1,16 @@
 default rel
-	vpandd xmm7, xmm10, xmm8
-	vpandd xmm7, xmm8
-	vpandd xmm1, xmm8, oword [0x94f]
-	vpandd ymm2, ymm13, ymm0
-	vpandd ymm2, ymm0
-	vpandd ymm5, ymm10, ymm8
-	vpandd zmm11, zmm12, zword [0xecd]
-	vpandd zmm11, zword [0xecd]
-	vpandd zmm5, zmm3, zword [0x6a7]
+	vpandd xmm3, xmm5, xmm4
+	vpandd xmm3, xmm4
+	vpandd xmm2, xmm0, xmm5
+	vpandd ymm0, ymm4, yword [0xc9c]
+	vpandd ymm0, yword [0xc9c]
+	vpandd ymm2, ymm2, ymm1
+	vpandd zmm5, zmm1, zmm3
+	vpandd zmm5, zmm3
+	vpandd zmm6, zmm2, zmm1
+	vpandd xmm8, xmm12, xmm13
+	vpandd ymm15, ymm15, ymm10
+	vpandd zmm9, zmm14, zmm14
+	vpandd xmm24, xmm18, xmm29
+	vpandd ymm19, ymm30, ymm22
+	vpandd zmm24, zmm20, zmm19

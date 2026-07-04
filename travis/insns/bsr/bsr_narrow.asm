@@ -1,4 +1,4 @@
 	bsr di, dx
-	bsr bx, dx
-	bsr edi, ebp
-	bsr ecx, esi
+	bsr cx, word [0x696]
+	bsr edx, ecx
+	bsr ebx, esi

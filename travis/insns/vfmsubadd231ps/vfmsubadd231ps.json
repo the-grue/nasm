@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VFMSUBADD231PS",
+  "id": "vfmsubadd231ps16",
+  "format": "bin",
+  "source": "vfmsubadd231ps_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vfmsubadd231ps/",
+  "target": [
+   { "output": "vfmsubadd231ps.bin16", "match": "vfmsubadd231ps.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VFMSUBADD231PS",
+  "id": "vfmsubadd231ps32",
+  "format": "bin",
+  "source": "vfmsubadd231ps_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vfmsubadd231ps/",
+  "target": [
+   { "output": "vfmsubadd231ps.bin32", "match": "vfmsubadd231ps.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VFMSUBADD231PS",
   "id": "vfmsubadd231ps64",
   "format": "bin",
   "source": "vfmsubadd231ps.asm",

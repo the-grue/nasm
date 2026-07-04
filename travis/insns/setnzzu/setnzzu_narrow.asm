@@ -1,4 +1,4 @@
-	setnzzu ebx
-	setnzzu esi
-	setnzzu dl
-	setnzzu dl
+	setnzzu eax
+	setnzzu edi
+	setnzzu bl
+	setnzzu al

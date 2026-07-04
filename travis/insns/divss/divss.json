@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for DIVSS",
+  "id": "divss16",
+  "format": "bin",
+  "source": "divss_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/divss/",
+  "target": [
+   { "output": "divss.bin16", "match": "divss.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for DIVSS",
+  "id": "divss32",
+  "format": "bin",
+  "source": "divss_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/divss/",
+  "target": [
+   { "output": "divss.bin32", "match": "divss.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for DIVSS",
   "id": "divss64",
   "format": "bin",
   "source": "divss.asm",

@@ -1,6 +1,6 @@
 	shrd cx, si, 0x5b
-	shrd cx, bp, 0x3f
-	shrd eax, edi, 0x48
-	shrd dword [0xe0b], eax, 0x80
-	shrd word [0xcda], si, cl
-	shrd dx, cx, cl
+	shrd word [0x531], di, 0xde
+	shrd edx, edx, 0xa2
+	shrd dword [0xcda], esi, 0xae
+	shrd cx, si, cl
+	shrd si, ax, cl

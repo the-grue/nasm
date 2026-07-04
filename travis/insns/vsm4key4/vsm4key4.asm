@@ -1,7 +1,13 @@
 default rel
-	vsm4key4 xmm14, xmm2, xmm9
-	vsm4key4 xmm0, xmm10, xmm1
-	vsm4key4 ymm4, ymm10, ymm7
-	vsm4key4 ymm3, ymm1, ymm12
-	vsm4key4 zmm3, zmm1, zmm7
-	vsm4key4 zmm6, zmm12, zmm7
+	vsm4key4 xmm7, xmm1, xmm4
+	vsm4key4 xmm0, xmm3, xmm0
+	vsm4key4 ymm3, ymm6, ymm0
+	vsm4key4 ymm3, ymm2, ymm5
+	vsm4key4 zmm7, zmm0, zword [0x8b2]
+	vsm4key4 zmm0, zmm5, zmm4
+	vsm4key4 xmm8, xmm13, xmm12
+	vsm4key4 ymm11, ymm11, ymm11
+	vsm4key4 zmm14, zmm11, zmm9
+	vsm4key4 xmm17, xmm20, xmm26
+	vsm4key4 ymm28, ymm17, ymm23
+	vsm4key4 zmm29, zmm25, zmm29

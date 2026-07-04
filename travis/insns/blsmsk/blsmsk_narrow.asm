@@ -1,2 +1,2 @@
 	blsmsk eax, edx
-	blsmsk ebx, esi
+	blsmsk edi, dword [0xaaa]

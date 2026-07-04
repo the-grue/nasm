@@ -1,5 +1,7 @@
 default rel
-	vrsqrtps xmm3, xmm10
-	vrsqrtps xmm1, xmm14
-	vrsqrtps ymm5, ymm11
-	vrsqrtps ymm11, yword [0xd1c]
+	vrsqrtps xmm1, xmm5
+	vrsqrtps xmm3, oword [0xbf7]
+	vrsqrtps ymm7, yword [0xa63]
+	vrsqrtps ymm2, yword [0x8fd]
+	vrsqrtps xmm8, xmm8
+	vrsqrtps ymm8, ymm9

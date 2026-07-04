@@ -1,7 +1,13 @@
 default rel
-	vpermi2d xmm9, xmm5, xmm11
-	vpermi2d xmm4, xmm1, xmm14
-	vpermi2d ymm7, ymm12, ymm2
-	vpermi2d ymm4, ymm8, yword [0xb59]
-	vpermi2d zmm13, zmm10, zmm6
-	vpermi2d zmm4, zmm0, zword [0xb11]
+	vpermi2d xmm4, xmm2, xmm5
+	vpermi2d xmm1, xmm1, xmm4
+	vpermi2d ymm6, ymm5, yword [0xb13]
+	vpermi2d ymm5, ymm0, ymm4
+	vpermi2d zmm1, zmm6, zmm2
+	vpermi2d zmm4, zmm3, zmm2
+	vpermi2d xmm10, xmm8, xmm13
+	vpermi2d ymm10, ymm11, ymm10
+	vpermi2d zmm10, zmm10, zmm8
+	vpermi2d xmm30, xmm23, xmm28
+	vpermi2d ymm16, ymm29, ymm26
+	vpermi2d zmm20, zmm16, zmm16

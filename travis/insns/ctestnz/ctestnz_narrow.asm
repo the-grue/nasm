@@ -1,6 +1,6 @@
 	ctestnz 10, cl, al
-	ctestnz 11, al, al
-	ctestnz 2, di, bp
-	ctestnz 6, ax, di
-	ctestnz 7, eax, ebp
-	ctestnz 9, dword [0x7f2], esi
+	ctestnz 11, byte [0x6b1], al
+	ctestnz 0, word [0x7e8], dx
+	ctestnz 5, bx, dx
+	ctestnz 2, esi, esi
+	ctestnz 11, ebp, esi

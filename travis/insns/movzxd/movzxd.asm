@@ -1,7 +1,7 @@
 default rel
 	movzxd cx, ebx
-	movzxd di, edi
-	movzxd edi, ecx
-	movzxd ebp, eax
-	movzxd rax, ebp
-	movzxd rdi, dword [0xf15]
+	movzxd dx, ebp
+	movzxd ebx, eax
+	movzxd ebp, ebp
+	movzxd rax, ebx
+	movzxd rbx, esi

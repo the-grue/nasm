@@ -1,9 +1,17 @@
 default rel
-	vpdpwsud xmm13, xmm1, xmm15
-	vpdpwsud xmm2, xmm3, oword [0x5eb]
-	vpdpwsud ymm11, ymm2, ymm2
-	vpdpwsud ymm6, ymm5, yword [0xbc7]
-	vpdpwsud xmm10, xmm4, xmm10
-	vpdpwsud xmm11, xmm14, xmm6
-	vpdpwsud ymm15, ymm5, ymm13
-	vpdpwsud ymm0, ymm9, ymm6
+	vpdpwsud xmm6, xmm0, xmm7
+	vpdpwsud xmm2, xmm1, xmm2
+	vpdpwsud ymm6, ymm5, ymm2
+	vpdpwsud ymm7, ymm2, ymm6
+	vpdpwsud xmm0, xmm4, xmm3
+	vpdpwsud xmm2, xmm1, xmm6
+	vpdpwsud ymm5, ymm3, ymm4
+	vpdpwsud ymm5, ymm4, ymm6
+	vpdpwsud xmm9, xmm9, xmm13
+	vpdpwsud ymm12, ymm13, ymm13
+	vpdpwsud xmm8, xmm8, xmm14
+	vpdpwsud ymm15, ymm8, ymm14
+	vpdpwsud xmm21, xmm27, xmm18
+	vpdpwsud ymm30, ymm23, ymm22
+	vpdpwsud xmm29, xmm21, xmm17
+	vpdpwsud ymm18, ymm21, ymm20

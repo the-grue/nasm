@@ -1,4 +1,4 @@
-	setngzu ebp
-	setngzu ebx
-	setngzu bl
-	setngzu bl
+	setngzu edx
+	setngzu ecx
+	setngzu al
+	setngzu al

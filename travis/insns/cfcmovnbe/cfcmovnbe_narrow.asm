@@ -1,6 +1,6 @@
 	cfcmovnbe word [0x101], si
-	cfcmovnbe bx, si
-	cfcmovnbe dword [0xff0], edx
-	cfcmovnbe esi, esi
-	cfcmovnbe bx, word [0x1bf]
-	cfcmovnbe ax, bp
+	cfcmovnbe word [0x7e3], ax
+	cfcmovnbe esi, ecx
+	cfcmovnbe ebx, edi
+	cfcmovnbe bp, word [0x8d9]
+	cfcmovnbe cx, di

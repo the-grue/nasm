@@ -1,3 +1,4 @@
 default rel
-	maxps xmm10, oword [0x1ac]
-	maxps xmm6, xmm7
+	maxps xmm5, oword [0x1ac]
+	maxps xmm2, xmm3
+	maxps xmm11, xmm9

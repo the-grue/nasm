@@ -1,3 +1,5 @@
 default rel
-	vucomxsd xmm3, xmm6
-	vucomxsd xmm15, xmm0
+	vucomxsd xmm1, xmm3
+	vucomxsd xmm4, qword [0x38f]
+	vucomxsd xmm15, xmm13
+	vucomxsd xmm16, xmm22

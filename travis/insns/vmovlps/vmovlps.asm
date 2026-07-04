@@ -1,6 +1,10 @@
 default rel
-	vmovlps xmm9, xmm9, qword [0x3de]
-	vmovlps xmm9, qword [0x3de]
-	vmovlps xmm5, xmm9, qword [0x6ac]
-	vmovlps qword [0x5a3], xmm4
-	vmovlps qword [0x165], xmm10
+	vmovlps xmm4, xmm4, qword [0x3de]
+	vmovlps xmm4, qword [0x3de]
+	vmovlps xmm5, xmm0, qword [0x52d]
+	vmovlps qword [0x1fd], xmm4
+	vmovlps qword [0x67b], xmm1
+	vmovlps xmm10, xmm12, qword [0x6ac]
+	vmovlps qword [0x8ac], xmm14
+	vmovlps xmm20, xmm20, qword [0x165]
+	vmovlps qword [0x5ca], xmm31

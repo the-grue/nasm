@@ -1,4 +1,4 @@
 	setnp dl
-	setnp cl
-	setnp esi
-	setnp edx
+	setnp dl
+	setnp edi
+	setnp ecx

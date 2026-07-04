@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for PABSW",
+  "id": "pabsw16",
+  "format": "bin",
+  "source": "pabsw_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/pabsw/",
+  "target": [
+   { "output": "pabsw.bin16", "match": "pabsw.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for PABSW",
+  "id": "pabsw32",
+  "format": "bin",
+  "source": "pabsw_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/pabsw/",
+  "target": [
+   { "output": "pabsw.bin32", "match": "pabsw.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for PABSW",
   "id": "pabsw64",
   "format": "bin",
   "source": "pabsw.asm",

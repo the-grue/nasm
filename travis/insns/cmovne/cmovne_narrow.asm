@@ -1,6 +1,6 @@
 	cmovne bx, dx
-	cmovne cx, word [0x892]
-	cmovne edi, dword [0xf1c]
-	cmovne ebx, esi
-	cmovne si, cx, bp
-	cmovne cx, ax, ax
+	cmovne bp, word [0x37f]
+	cmovne esi, esi
+	cmovne edx, ecx
+	cmovne dx, bp, bp
+	cmovne ax, di, cx

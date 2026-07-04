@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for PCMPEQW",
+  "id": "pcmpeqw16",
+  "format": "bin",
+  "source": "pcmpeqw_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/pcmpeqw/",
+  "target": [
+   { "output": "pcmpeqw.bin16", "match": "pcmpeqw.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for PCMPEQW",
+  "id": "pcmpeqw32",
+  "format": "bin",
+  "source": "pcmpeqw_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/pcmpeqw/",
+  "target": [
+   { "output": "pcmpeqw.bin32", "match": "pcmpeqw.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for PCMPEQW",
   "id": "pcmpeqw64",
   "format": "bin",
   "source": "pcmpeqw.asm",

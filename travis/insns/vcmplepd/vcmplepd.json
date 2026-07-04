@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VCMPLEPD",
+  "id": "vcmplepd16",
+  "format": "bin",
+  "source": "vcmplepd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcmplepd/",
+  "target": [
+   { "output": "vcmplepd.bin16", "match": "vcmplepd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCMPLEPD",
+  "id": "vcmplepd32",
+  "format": "bin",
+  "source": "vcmplepd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcmplepd/",
+  "target": [
+   { "output": "vcmplepd.bin32", "match": "vcmplepd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCMPLEPD",
   "id": "vcmplepd64",
   "format": "bin",
   "source": "vcmplepd.asm",

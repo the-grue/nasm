@@ -1,7 +1,9 @@
 default rel
-	vphaddw xmm3, xmm1, xmm7
-	vphaddw xmm3, xmm7
-	vphaddw xmm0, xmm14, xmm12
-	vphaddw ymm14, ymm10, ymm4
-	vphaddw ymm14, ymm4
-	vphaddw ymm10, ymm12, yword [0xa2f]
+	vphaddw xmm1, xmm0, xmm3
+	vphaddw xmm1, xmm3
+	vphaddw xmm4, xmm2, xmm6
+	vphaddw ymm6, ymm4, ymm1
+	vphaddw ymm6, ymm1
+	vphaddw ymm0, ymm7, ymm3
+	vphaddw xmm8, xmm15, xmm13
+	vphaddw ymm13, ymm12, ymm10

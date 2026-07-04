@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for PMULHW",
+  "id": "pmulhw16",
+  "format": "bin",
+  "source": "pmulhw_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/pmulhw/",
+  "target": [
+   { "output": "pmulhw.bin16", "match": "pmulhw.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for PMULHW",
+  "id": "pmulhw32",
+  "format": "bin",
+  "source": "pmulhw_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/pmulhw/",
+  "target": [
+   { "output": "pmulhw.bin32", "match": "pmulhw.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for PMULHW",
   "id": "pmulhw64",
   "format": "bin",
   "source": "pmulhw.asm",

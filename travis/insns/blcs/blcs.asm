@@ -1,5 +1,7 @@
 default rel
 	blcs ecx, ebx
-	blcs ebp, ebx
-	blcs rbp, rdx
-	blcs rdx, rsi
+	blcs esi, edx
+	blcs rbx, rsi
+	blcs rbp, qword [0x9a2]
+	blcs r15d, r9d
+	blcs r11, r10

@@ -1,2 +1,2 @@
-	cvtsd2si esi, xmm1
-	cvtsd2si ebx, xmm11
+	cvtsd2si esi, xmm0
+	cvtsd2si esi, qword [0x7c1]

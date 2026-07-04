@@ -1,7 +1,9 @@
 default rel
-	vphsubsw xmm12, xmm3, oword [0x452]
-	vphsubsw xmm12, oword [0x452]
-	vphsubsw xmm4, xmm9, oword [0x884]
-	vphsubsw ymm6, ymm7, yword [0x206]
-	vphsubsw ymm6, yword [0x206]
-	vphsubsw ymm7, ymm10, ymm2
+	vphsubsw xmm6, xmm1, oword [0x452]
+	vphsubsw xmm6, oword [0x452]
+	vphsubsw xmm6, xmm0, xmm5
+	vphsubsw ymm3, ymm1, ymm6
+	vphsubsw ymm3, ymm6
+	vphsubsw ymm2, ymm2, ymm6
+	vphsubsw xmm10, xmm12, xmm14
+	vphsubsw ymm8, ymm15, ymm10

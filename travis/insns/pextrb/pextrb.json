@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for PEXTRB",
+  "id": "pextrb16",
+  "format": "bin",
+  "source": "pextrb_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/pextrb/",
+  "target": [
+   { "output": "pextrb.bin16", "match": "pextrb.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for PEXTRB",
+  "id": "pextrb32",
+  "format": "bin",
+  "source": "pextrb_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/pextrb/",
+  "target": [
+   { "output": "pextrb.bin32", "match": "pextrb.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for PEXTRB",
   "id": "pextrb64",
   "format": "bin",
   "source": "pextrb.asm",

@@ -1,4 +1,5 @@
 default rel
-	vroundss xmm9, xmm13, xmm4, 0x2f
-	vroundss xmm9, xmm4, 0x2f
-	vroundss xmm7, xmm10, dword [0xbd4], 0xf1
+	vroundss xmm4, xmm6, xmm2, 0x2f
+	vroundss xmm4, xmm2, 0x2f
+	vroundss xmm5, xmm3, xmm2, 0xe9
+	vroundss xmm11, xmm13, xmm15, 0xb9

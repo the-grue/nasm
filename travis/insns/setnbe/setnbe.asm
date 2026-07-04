@@ -1,7 +1,13 @@
 default rel
 	setnbe byte [0xb9a]
-	setnbe byte [0x646]
-	setnbe rsi
-	setnbe rbx
-	setnbe edi
-	setnbe ebx
+	setnbe al
+	setnbe rdi
+	setnbe rdx
+	setnbe eax
+	setnbe esi
+	setnbe r15b
+	setnbe r9
+	setnbe r12d
+	setnbe r21b
+	setnbe r28
+	setnbe r19d

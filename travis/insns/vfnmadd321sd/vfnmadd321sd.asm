@@ -1,3 +1,4 @@
 default rel
-	vfnmadd321sd xmm11, xmm14, xmm13
-	vfnmadd321sd xmm12, xmm10, xmm15
+	vfnmadd321sd xmm5, xmm7, xmm6
+	vfnmadd321sd xmm2, xmm4, qword [0xef7]
+	vfnmadd321sd xmm14, xmm13, xmm11

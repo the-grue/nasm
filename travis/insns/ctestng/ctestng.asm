@@ -1,9 +1,17 @@
 default rel
 	ctestng 2, cl, al
-	ctestng 15, byte [0xb23], dl
-	ctestng 14, dx, cx
-	ctestng 14, dx, bx
-	ctestng 9, edi, eax
-	ctestng 1, ebx, eax
-	ctestng 5, rdi, rax
-	ctestng 13, rsi, rdi
+	ctestng 7, dl, bl
+	ctestng 8, dx, cx
+	ctestng 5, di, ax
+	ctestng 13, esi, edi
+	ctestng 2, dword [0x4a9], ecx
+	ctestng 1, rbp, rcx
+	ctestng 0, qword [0xeac], rdx
+	ctestng 15, r15b, r13b
+	ctestng 13, r8w, r8w
+	ctestng 7, r13d, r10d
+	ctestng 11, r15, r14
+	ctestng 14, r30b, r16b
+	ctestng 8, r19w, r17w
+	ctestng 9, r31d, r26d
+	ctestng 10, r22, r24

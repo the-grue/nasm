@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for MULPD",
+  "id": "mulpd16",
+  "format": "bin",
+  "source": "mulpd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/mulpd/",
+  "target": [
+   { "output": "mulpd.bin16", "match": "mulpd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for MULPD",
+  "id": "mulpd32",
+  "format": "bin",
+  "source": "mulpd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/mulpd/",
+  "target": [
+   { "output": "mulpd.bin32", "match": "mulpd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for MULPD",
   "id": "mulpd64",
   "format": "bin",
   "source": "mulpd.asm",

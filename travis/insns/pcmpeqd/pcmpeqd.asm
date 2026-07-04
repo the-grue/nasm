@@ -1,5 +1,6 @@
 default rel
 	pcmpeqd mm4, qword [0x5d6]
 	pcmpeqd mm6, qword [0xdae]
-	pcmpeqd xmm1, oword [0x8eb]
+	pcmpeqd xmm0, oword [0x8eb]
+	pcmpeqd xmm5, oword [0xee9]
 	pcmpeqd xmm15, xmm9

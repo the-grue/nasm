@@ -1,0 +1,4 @@
+	movdqu xmm6, xmm4
+	movdqu xmm6, xmm0
+	movdqu xmm0, xmm2
+	movdqu xmm0, xmm2

@@ -1,3 +1,4 @@
 default rel
-	cmpnltss xmm3, xmm14
-	cmpnltss xmm7, dword [0xa1e]
+	cmpnltss xmm1, xmm7
+	cmpnltss xmm7, xmm6
+	cmpnltss xmm11, xmm14

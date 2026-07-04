@@ -1,5 +1,9 @@
 default rel
-	vfnmsub213ss xmm6, xmm12, xmm15
-	vfnmsub213ss xmm6, xmm1, xmm8
-	vfnmsub213ss xmm0, xmm3, dword [0x1fb]
-	vfnmsub213ss xmm14, xmm0, dword [0xf64]
+	vfnmsub213ss xmm3, xmm6, xmm7
+	vfnmsub213ss xmm5, xmm0, dword [0x10e]
+	vfnmsub213ss xmm7, xmm7, xmm6
+	vfnmsub213ss xmm5, xmm3, xmm4
+	vfnmsub213ss xmm11, xmm8, xmm9
+	vfnmsub213ss xmm14, xmm8, xmm14
+	vfnmsub213ss xmm24, xmm16, xmm19
+	vfnmsub213ss xmm31, xmm18, xmm22

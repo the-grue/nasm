@@ -1,0 +1,2 @@
+	lmsw cx
+	lmsw dx

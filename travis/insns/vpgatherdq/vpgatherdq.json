@@ -1,6 +1,17 @@
 [
  {
   "description": "Pseudorandom test for VPGATHERDQ",
+  "id": "vpgatherdq32",
+  "format": "bin",
+  "source": "vpgatherdq_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpgatherdq/",
+  "target": [
+   { "output": "vpgatherdq.bin32", "match": "vpgatherdq.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPGATHERDQ",
   "id": "vpgatherdq64",
   "format": "bin",
   "source": "vpgatherdq.asm",

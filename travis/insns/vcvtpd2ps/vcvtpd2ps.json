@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VCVTPD2PS",
+  "id": "vcvtpd2ps16",
+  "format": "bin",
+  "source": "vcvtpd2ps_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcvtpd2ps/",
+  "target": [
+   { "output": "vcvtpd2ps.bin16", "match": "vcvtpd2ps.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCVTPD2PS",
+  "id": "vcvtpd2ps32",
+  "format": "bin",
+  "source": "vcvtpd2ps_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcvtpd2ps/",
+  "target": [
+   { "output": "vcvtpd2ps.bin32", "match": "vcvtpd2ps.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCVTPD2PS",
   "id": "vcvtpd2ps64",
   "format": "bin",
   "source": "vcvtpd2ps.asm",

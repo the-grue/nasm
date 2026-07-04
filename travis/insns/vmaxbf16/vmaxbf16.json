@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VMAXBF16",
+  "id": "vmaxbf1616",
+  "format": "bin",
+  "source": "vmaxbf16_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vmaxbf16/",
+  "target": [
+   { "output": "vmaxbf16.bin16", "match": "vmaxbf16.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VMAXBF16",
+  "id": "vmaxbf1632",
+  "format": "bin",
+  "source": "vmaxbf16_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vmaxbf16/",
+  "target": [
+   { "output": "vmaxbf16.bin32", "match": "vmaxbf16.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VMAXBF16",
   "id": "vmaxbf1664",
   "format": "bin",
   "source": "vmaxbf16.asm",

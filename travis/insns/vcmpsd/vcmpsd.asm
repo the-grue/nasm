@@ -1,6 +1,8 @@
 default rel
-	vcmpsd xmm12, xmm12, qword [0x8ea], 0x5b
-	vcmpsd xmm12, qword [0x8ea], 0x5b
-	vcmpsd xmm11, xmm4, xmm8, 0x13
-	vcmpsd k1, xmm7, xmm5, 0x5c
-	vcmpsd k4, xmm0, xmm9, 0xf1
+	vcmpsd xmm6, xmm6, qword [0x8ea], 0x5b
+	vcmpsd xmm6, qword [0x8ea], 0x5b
+	vcmpsd xmm2, xmm2, xmm0, 0x5
+	vcmpsd k5, xmm7, xmm7, 0x5e
+	vcmpsd k6, xmm5, qword [0x2d6], 0xe8
+	vcmpsd xmm13, xmm10, xmm8, 0x8b
+	vcmpsd k7, xmm12, xmm11, 0x51

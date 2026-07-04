@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VFNMSUBSS",
+  "id": "vfnmsubss16",
+  "format": "bin",
+  "source": "vfnmsubss_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vfnmsubss/",
+  "target": [
+   { "output": "vfnmsubss.bin16", "match": "vfnmsubss.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VFNMSUBSS",
+  "id": "vfnmsubss32",
+  "format": "bin",
+  "source": "vfnmsubss_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vfnmsubss/",
+  "target": [
+   { "output": "vfnmsubss.bin32", "match": "vfnmsubss.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VFNMSUBSS",
   "id": "vfnmsubss64",
   "format": "bin",
   "source": "vfnmsubss.asm",

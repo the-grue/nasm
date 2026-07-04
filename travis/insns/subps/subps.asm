@@ -1,3 +1,4 @@
 default rel
-	subps xmm4, xmm9
-	subps xmm15, xmm3
+	subps xmm2, xmm4
+	subps xmm0, oword [0xa14]
+	subps xmm15, xmm8

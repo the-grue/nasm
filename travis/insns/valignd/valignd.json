@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VALIGND",
+  "id": "valignd16",
+  "format": "bin",
+  "source": "valignd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/valignd/",
+  "target": [
+   { "output": "valignd.bin16", "match": "valignd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VALIGND",
+  "id": "valignd32",
+  "format": "bin",
+  "source": "valignd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/valignd/",
+  "target": [
+   { "output": "valignd.bin32", "match": "valignd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VALIGND",
   "id": "valignd64",
   "format": "bin",
   "source": "valignd.asm",

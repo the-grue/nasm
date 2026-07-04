@@ -1,4 +1,4 @@
-	setbezu ebx
-	setbezu edi
-	setbezu dl
-	setbezu cl
+	setbezu ecx
+	setbezu edx
+	setbezu al
+	setbezu byte [0x4bc]

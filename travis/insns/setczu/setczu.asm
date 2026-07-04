@@ -3,5 +3,11 @@ default rel
 	setczu rcx
 	setczu ecx
 	setczu ecx
-	setczu al
-	setczu bl
+	setczu dl
+	setczu dl
+	setczu r10
+	setczu r9d
+	setczu r14b
+	setczu r21
+	setczu r19d
+	setczu r26b

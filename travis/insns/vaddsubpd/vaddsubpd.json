@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VADDSUBPD",
+  "id": "vaddsubpd16",
+  "format": "bin",
+  "source": "vaddsubpd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vaddsubpd/",
+  "target": [
+   { "output": "vaddsubpd.bin16", "match": "vaddsubpd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VADDSUBPD",
+  "id": "vaddsubpd32",
+  "format": "bin",
+  "source": "vaddsubpd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vaddsubpd/",
+  "target": [
+   { "output": "vaddsubpd.bin32", "match": "vaddsubpd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VADDSUBPD",
   "id": "vaddsubpd64",
   "format": "bin",
   "source": "vaddsubpd.asm",

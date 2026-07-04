@@ -1,3 +1,4 @@
 default rel
-	vextractf128 xmm1, ymm14, 0x28
-	vextractf128 xmm7, ymm7, 0x5f
+	vextractf128 xmm0, ymm7, 0x28
+	vextractf128 xmm0, ymm6, 0x3e
+	vextractf128 xmm11, ymm11, 0x75

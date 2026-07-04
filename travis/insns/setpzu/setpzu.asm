@@ -1,7 +1,13 @@
 default rel
 	setpzu rdx
-	setpzu rbx
-	setpzu edx
-	setpzu esi
-	setpzu byte [0xbe9]
-	setpzu al
+	setpzu rsi
+	setpzu ebp
+	setpzu eax
+	setpzu dl
+	setpzu cl
+	setpzu r10
+	setpzu r13d
+	setpzu r9b
+	setpzu r24
+	setpzu r24d
+	setpzu r28b

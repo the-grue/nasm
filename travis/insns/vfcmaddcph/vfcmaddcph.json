@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VFCMADDCPH",
+  "id": "vfcmaddcph16",
+  "format": "bin",
+  "source": "vfcmaddcph_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vfcmaddcph/",
+  "target": [
+   { "output": "vfcmaddcph.bin16", "match": "vfcmaddcph.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VFCMADDCPH",
+  "id": "vfcmaddcph32",
+  "format": "bin",
+  "source": "vfcmaddcph_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vfcmaddcph/",
+  "target": [
+   { "output": "vfcmaddcph.bin32", "match": "vfcmaddcph.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VFCMADDCPH",
   "id": "vfcmaddcph64",
   "format": "bin",
   "source": "vfcmaddcph.asm",

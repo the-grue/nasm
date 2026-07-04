@@ -1,5 +1,9 @@
 default rel
-	vcvttss2sis eax, xmm8
-	vcvttss2sis edx, dword [0x7b2]
-	vcvttss2sis rax, dword [0x14a]
-	vcvttss2sis rbx, dword [0x554]
+	vcvttss2sis eax, xmm4
+	vcvttss2sis edi, xmm1
+	vcvttss2sis rdi, xmm0
+	vcvttss2sis rcx, xmm4
+	vcvttss2sis r12d, xmm15
+	vcvttss2sis r15, xmm13
+	vcvttss2sis r23d, xmm16
+	vcvttss2sis r29, xmm23

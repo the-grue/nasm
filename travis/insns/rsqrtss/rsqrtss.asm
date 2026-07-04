@@ -1,3 +1,4 @@
 default rel
-	rsqrtss xmm8, xmm10
-	rsqrtss xmm4, xmm15
+	rsqrtss xmm4, xmm5
+	rsqrtss xmm0, xmm0
+	rsqrtss xmm10, xmm8

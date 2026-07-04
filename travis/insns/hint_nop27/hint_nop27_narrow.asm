@@ -1,0 +1,6 @@
+	hint_nop27 si
+	hint_nop27 di
+	hint_nop27 dword [0xd9a]
+	hint_nop27 dword [0xda0]
+	hint_nop27 qword [0xddf]
+	hint_nop27 qword [0x74e]

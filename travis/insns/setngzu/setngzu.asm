@@ -1,7 +1,13 @@
 default rel
 	setngzu rdx
-	setngzu rdx
-	setngzu ebp
-	setngzu ebx
-	setngzu bl
-	setngzu bl
+	setngzu rbx
+	setngzu edx
+	setngzu ecx
+	setngzu al
+	setngzu al
+	setngzu r12
+	setngzu r10d
+	setngzu r13b
+	setngzu r30
+	setngzu r24d
+	setngzu r16b

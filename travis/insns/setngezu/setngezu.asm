@@ -1,7 +1,13 @@
 default rel
 	setngezu rbp
-	setngezu rdi
-	setngezu ecx
-	setngezu ebx
+	setngezu rbx
+	setngezu edx
+	setngezu edi
+	setngezu byte [0xd7f]
 	setngezu bl
-	setngezu byte [0xd80]
+	setngezu r14
+	setngezu r11d
+	setngezu r13b
+	setngezu r22
+	setngezu r28d
+	setngezu r20b

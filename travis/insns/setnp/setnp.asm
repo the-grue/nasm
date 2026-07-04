@@ -1,7 +1,13 @@
 default rel
 	setnp dl
-	setnp cl
+	setnp dl
+	setnp rsi
 	setnp rax
-	setnp rdi
-	setnp esi
-	setnp edx
+	setnp edi
+	setnp ecx
+	setnp r8b
+	setnp r11
+	setnp r12d
+	setnp r27b
+	setnp r28
+	setnp r21d

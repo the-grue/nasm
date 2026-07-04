@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VADDBF16",
+  "id": "vaddbf1616",
+  "format": "bin",
+  "source": "vaddbf16_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vaddbf16/",
+  "target": [
+   { "output": "vaddbf16.bin16", "match": "vaddbf16.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VADDBF16",
+  "id": "vaddbf1632",
+  "format": "bin",
+  "source": "vaddbf16_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vaddbf16/",
+  "target": [
+   { "output": "vaddbf16.bin32", "match": "vaddbf16.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VADDBF16",
   "id": "vaddbf1664",
   "format": "bin",
   "source": "vaddbf16.asm",

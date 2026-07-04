@@ -1,4 +1,6 @@
 default rel
-	vreducess xmm8, xmm9, xmm3, 0xfc
-	vreducess xmm8, xmm3, 0xfc
-	vreducess xmm6, xmm6, xmm2, 0x8a
+	vreducess xmm4, xmm4, xmm1, 0xfc
+	vreducess xmm4, xmm1, 0xfc
+	vreducess xmm7, xmm0, dword [0xeca], 0xcd
+	vreducess xmm11, xmm11, xmm12, 0x2b
+	vreducess xmm24, xmm17, xmm20, 0x68

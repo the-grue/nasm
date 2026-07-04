@@ -1,3 +1,4 @@
 default rel
-	cmpneqps xmm14, oword [0xf47]
-	cmpneqps xmm15, xmm13
+	cmpneqps xmm7, oword [0xf47]
+	cmpneqps xmm3, oword [0x1f1]
+	cmpneqps xmm15, xmm8

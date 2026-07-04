@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPMACSDQH",
+  "id": "vpmacsdqh16",
+  "format": "bin",
+  "source": "vpmacsdqh_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpmacsdqh/",
+  "target": [
+   { "output": "vpmacsdqh.bin16", "match": "vpmacsdqh.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPMACSDQH",
+  "id": "vpmacsdqh32",
+  "format": "bin",
+  "source": "vpmacsdqh_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpmacsdqh/",
+  "target": [
+   { "output": "vpmacsdqh.bin32", "match": "vpmacsdqh.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPMACSDQH",
   "id": "vpmacsdqh64",
   "format": "bin",
   "source": "vpmacsdqh.asm",

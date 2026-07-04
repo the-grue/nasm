@@ -1,3 +1,4 @@
 default rel
-	pclmulqdq xmm1, xmm10, 0x6
-	pclmulqdq xmm2, oword [0x431], 0x9f
+	pclmulqdq xmm0, xmm5, 0x6
+	pclmulqdq xmm6, xmm7, 0xed
+	pclmulqdq xmm9, xmm14, 0x37

@@ -1,3 +1,4 @@
 default rel
-	aesdec xmm1, oword [0x639]
-	aesdec xmm13, xmm12
+	aesdec xmm0, oword [0x639]
+	aesdec xmm4, xmm5
+	aesdec xmm14, xmm8

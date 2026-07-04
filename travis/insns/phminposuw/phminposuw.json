@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for PHMINPOSUW",
+  "id": "phminposuw16",
+  "format": "bin",
+  "source": "phminposuw_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/phminposuw/",
+  "target": [
+   { "output": "phminposuw.bin16", "match": "phminposuw.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for PHMINPOSUW",
+  "id": "phminposuw32",
+  "format": "bin",
+  "source": "phminposuw_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/phminposuw/",
+  "target": [
+   { "output": "phminposuw.bin32", "match": "phminposuw.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for PHMINPOSUW",
   "id": "phminposuw64",
   "format": "bin",
   "source": "phminposuw.asm",

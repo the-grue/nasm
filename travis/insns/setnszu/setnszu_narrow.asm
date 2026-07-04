@@ -1,4 +1,4 @@
-	setnszu esi
-	setnszu ecx
-	setnszu byte [0x13c]
-	setnszu dl
+	setnszu edi
+	setnszu edi
+	setnszu cl
+	setnszu bl

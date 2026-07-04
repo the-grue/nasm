@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for SUBSD",
+  "id": "subsd16",
+  "format": "bin",
+  "source": "subsd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/subsd/",
+  "target": [
+   { "output": "subsd.bin16", "match": "subsd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for SUBSD",
+  "id": "subsd32",
+  "format": "bin",
+  "source": "subsd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/subsd/",
+  "target": [
+   { "output": "subsd.bin32", "match": "subsd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for SUBSD",
   "id": "subsd64",
   "format": "bin",
   "source": "subsd.asm",

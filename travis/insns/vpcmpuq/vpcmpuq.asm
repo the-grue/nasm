@@ -1,7 +1,13 @@
 default rel
-	vpcmpuq k3, xmm10, xmm10, 0xb9
-	vpcmpuq k1, xmm3, oword [0x900], 0x60
-	vpcmpuq k3, ymm11, ymm2, 0x63
-	vpcmpuq k4, ymm11, yword [0xb82], 0x65
-	vpcmpuq k7, zmm2, zmm3, 0x35
-	vpcmpuq k3, zmm11, zmm13, 0x36
+	vpcmpuq k3, xmm5, xmm5, 0xb9
+	vpcmpuq k2, xmm3, xmm5, 0xfd
+	vpcmpuq k5, ymm3, yword [0x380], 0x75
+	vpcmpuq k6, ymm0, ymm1, 0x2e
+	vpcmpuq k1, zmm6, zword [0x53c], 0x64
+	vpcmpuq k6, zmm5, zmm1, 0x48
+	vpcmpuq k1, xmm9, xmm13, 0x89
+	vpcmpuq k2, ymm9, ymm10, 0xba
+	vpcmpuq k1, zmm14, zmm10, 0xc6
+	vpcmpuq k3, xmm21, xmm27, 0x6
+	vpcmpuq k2, ymm29, ymm19, 0x38
+	vpcmpuq k1, zmm25, zmm25, 0xba

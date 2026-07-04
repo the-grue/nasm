@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPADDSW",
+  "id": "vpaddsw16",
+  "format": "bin",
+  "source": "vpaddsw_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpaddsw/",
+  "target": [
+   { "output": "vpaddsw.bin16", "match": "vpaddsw.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPADDSW",
+  "id": "vpaddsw32",
+  "format": "bin",
+  "source": "vpaddsw_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpaddsw/",
+  "target": [
+   { "output": "vpaddsw.bin32", "match": "vpaddsw.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPADDSW",
   "id": "vpaddsw64",
   "format": "bin",
   "source": "vpaddsw.asm",

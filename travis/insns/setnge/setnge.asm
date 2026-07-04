@@ -1,7 +1,13 @@
 default rel
 	setnge al
-	setnge byte [0xee7]
-	setnge rdx
+	setnge bl
+	setnge rbx
 	setnge rbx
 	setnge ebx
 	setnge edi
+	setnge r14b
+	setnge r14
+	setnge r13d
+	setnge r30b
+	setnge r31
+	setnge r30d

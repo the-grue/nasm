@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VINSERTF64X4",
+  "id": "vinsertf64x416",
+  "format": "bin",
+  "source": "vinsertf64x4_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vinsertf64x4/",
+  "target": [
+   { "output": "vinsertf64x4.bin16", "match": "vinsertf64x4.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VINSERTF64X4",
+  "id": "vinsertf64x432",
+  "format": "bin",
+  "source": "vinsertf64x4_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vinsertf64x4/",
+  "target": [
+   { "output": "vinsertf64x4.bin32", "match": "vinsertf64x4.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VINSERTF64X4",
   "id": "vinsertf64x464",
   "format": "bin",
   "source": "vinsertf64x4.asm",

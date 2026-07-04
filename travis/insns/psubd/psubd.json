@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for PSUBD",
+  "id": "psubd16",
+  "format": "bin",
+  "source": "psubd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/psubd/",
+  "target": [
+   { "output": "psubd.bin16", "match": "psubd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for PSUBD",
+  "id": "psubd32",
+  "format": "bin",
+  "source": "psubd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/psubd/",
+  "target": [
+   { "output": "psubd.bin32", "match": "psubd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for PSUBD",
   "id": "psubd64",
   "format": "bin",
   "source": "psubd.asm",

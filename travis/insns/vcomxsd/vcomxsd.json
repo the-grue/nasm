@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VCOMXSD",
+  "id": "vcomxsd16",
+  "format": "bin",
+  "source": "vcomxsd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcomxsd/",
+  "target": [
+   { "output": "vcomxsd.bin16", "match": "vcomxsd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCOMXSD",
+  "id": "vcomxsd32",
+  "format": "bin",
+  "source": "vcomxsd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcomxsd/",
+  "target": [
+   { "output": "vcomxsd.bin32", "match": "vcomxsd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCOMXSD",
   "id": "vcomxsd64",
   "format": "bin",
   "source": "vcomxsd.asm",

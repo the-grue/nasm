@@ -1,4 +1,4 @@
 	popcnt bp, di
-	popcnt bp, bx
-	popcnt eax, ebx
-	popcnt edx, edi
+	popcnt dx, dx
+	popcnt edx, dword [0xe26]
+	popcnt ebx, ebp

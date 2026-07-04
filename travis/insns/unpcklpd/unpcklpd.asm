@@ -1,3 +1,4 @@
 default rel
-	unpcklpd xmm15, xmm15
-	unpcklpd xmm9, oword [0x201]
+	unpcklpd xmm7, xmm7
+	unpcklpd xmm3, xmm1
+	unpcklpd xmm12, xmm15

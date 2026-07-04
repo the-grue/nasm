@@ -1,5 +1,5 @@
 	bswap edx
-	bswap ebx
+	bswap esi
 	bswap ax
 	bswap ax
 	bswap cx

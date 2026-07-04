@@ -3,7 +3,7 @@
   "description": "Pseudorandom test for MOVDQ2Q",
   "id": "movdq2q16",
   "format": "bin",
-  "source": "movdq2q.asm",
+  "source": "movdq2q_narrow.asm",
   "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/movdq2q/",
   "target": [
    { "output": "movdq2q.bin16", "match": "movdq2q.bin16.t" }
@@ -14,7 +14,7 @@
   "description": "Pseudorandom test for MOVDQ2Q",
   "id": "movdq2q32",
   "format": "bin",
-  "source": "movdq2q.asm",
+  "source": "movdq2q_narrow.asm",
   "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/movdq2q/",
   "target": [
    { "output": "movdq2q.bin32", "match": "movdq2q.bin32.t" }

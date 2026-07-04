@@ -1,4 +1,6 @@
 default rel
-	vcvtsh2sd xmm6, xmm15, xmm13
-	vcvtsh2sd xmm6, xmm13
-	vcvtsh2sd xmm4, xmm0, word [0xd18]
+	vcvtsh2sd xmm3, xmm7, xmm6
+	vcvtsh2sd xmm3, xmm6
+	vcvtsh2sd xmm2, xmm2, xmm2
+	vcvtsh2sd xmm10, xmm8, xmm15
+	vcvtsh2sd xmm28, xmm23, xmm18

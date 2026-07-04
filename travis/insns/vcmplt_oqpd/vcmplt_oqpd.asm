@@ -1,11 +1,15 @@
 default rel
-	vcmplt_oqpd xmm11, xmm7, xmm10
-	vcmplt_oqpd xmm11, xmm10
-	vcmplt_oqpd xmm12, xmm14, xmm12
-	vcmplt_oqpd ymm3, ymm15, ymm10
-	vcmplt_oqpd ymm3, ymm10
-	vcmplt_oqpd ymm9, ymm14, ymm5
-	vcmplt_oqpd k7, xmm15, xmm4
-	vcmplt_oqpd k7, xmm2, xmm9
-	vcmplt_oqpd k7, ymm11, yword [0x159]
-	vcmplt_oqpd k4, ymm13, ymm6
+	vcmplt_oqpd xmm5, xmm3, xmm5
+	vcmplt_oqpd xmm5, xmm5
+	vcmplt_oqpd xmm0, xmm5, xmm7
+	vcmplt_oqpd ymm5, ymm2, yword [0xf1b]
+	vcmplt_oqpd ymm5, yword [0xf1b]
+	vcmplt_oqpd ymm7, ymm5, yword [0x159]
+	vcmplt_oqpd k4, xmm6, xmm3
+	vcmplt_oqpd k3, xmm3, xmm5
+	vcmplt_oqpd k3, ymm4, ymm3
+	vcmplt_oqpd k2, ymm7, ymm3
+	vcmplt_oqpd xmm14, xmm15, xmm10
+	vcmplt_oqpd ymm10, ymm10, ymm15
+	vcmplt_oqpd k7, xmm12, xmm13
+	vcmplt_oqpd k3, ymm14, ymm8

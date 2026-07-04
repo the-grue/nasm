@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VCMPEQ_USPS",
+  "id": "vcmpeq_usps16",
+  "format": "bin",
+  "source": "vcmpeq_usps_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcmpeq_usps/",
+  "target": [
+   { "output": "vcmpeq_usps.bin16", "match": "vcmpeq_usps.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCMPEQ_USPS",
+  "id": "vcmpeq_usps32",
+  "format": "bin",
+  "source": "vcmpeq_usps_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcmpeq_usps/",
+  "target": [
+   { "output": "vcmpeq_usps.bin32", "match": "vcmpeq_usps.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCMPEQ_USPS",
   "id": "vcmpeq_usps64",
   "format": "bin",
   "source": "vcmpeq_usps.asm",

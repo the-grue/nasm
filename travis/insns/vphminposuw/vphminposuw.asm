@@ -1,3 +1,4 @@
 default rel
-	vphminposuw xmm8, xmm10
-	vphminposuw xmm4, xmm11
+	vphminposuw xmm4, xmm5
+	vphminposuw xmm6, xmm1
+	vphminposuw xmm10, xmm12

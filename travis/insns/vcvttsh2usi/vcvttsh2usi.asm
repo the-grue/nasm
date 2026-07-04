@@ -1,5 +1,9 @@
 default rel
-	vcvttsh2usi eax, xmm13
-	vcvttsh2usi eax, xmm9
-	vcvttsh2usi rbp, word [0xa5e]
-	vcvttsh2usi rbx, xmm0
+	vcvttsh2usi eax, xmm6
+	vcvttsh2usi ebp, xmm1
+	vcvttsh2usi rdx, xmm2
+	vcvttsh2usi rbx, word [0x561]
+	vcvttsh2usi r8d, xmm13
+	vcvttsh2usi r13, xmm10
+	vcvttsh2usi r25d, xmm30
+	vcvttsh2usi r25, xmm31

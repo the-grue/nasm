@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPXORQ",
+  "id": "vpxorq16",
+  "format": "bin",
+  "source": "vpxorq_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpxorq/",
+  "target": [
+   { "output": "vpxorq.bin16", "match": "vpxorq.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPXORQ",
+  "id": "vpxorq32",
+  "format": "bin",
+  "source": "vpxorq_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpxorq/",
+  "target": [
+   { "output": "vpxorq.bin32", "match": "vpxorq.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPXORQ",
   "id": "vpxorq64",
   "format": "bin",
   "source": "vpxorq.asm",

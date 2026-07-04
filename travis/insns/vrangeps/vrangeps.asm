@@ -1,10 +1,16 @@
 default rel
-	vrangeps xmm12, xmm2, xmm5, 0x2
-	vrangeps xmm12, xmm5, 0x2
-	vrangeps xmm4, xmm7, xmm4, 0xbd
-	vrangeps ymm13, ymm12, ymm3, 0xe0
-	vrangeps ymm13, ymm3, 0xe0
-	vrangeps ymm12, ymm15, ymm3, 0x78
-	vrangeps zmm5, zmm8, zword [0xc38], 0xca
-	vrangeps zmm5, zword [0xc38], 0xca
-	vrangeps zmm13, zmm10, zmm1, 0xee
+	vrangeps xmm6, xmm1, xmm2, 0x2
+	vrangeps xmm6, xmm2, 0x2
+	vrangeps xmm1, xmm7, oword [0xf6f], 0xa7
+	vrangeps ymm1, ymm3, ymm4, 0xfd
+	vrangeps ymm1, ymm4, 0xfd
+	vrangeps ymm6, ymm0, ymm0, 0x8
+	vrangeps zmm3, zmm5, zword [0xb22], 0x42
+	vrangeps zmm3, zword [0xb22], 0x42
+	vrangeps zmm3, zmm2, zword [0xe4d], 0xd9
+	vrangeps xmm10, xmm11, xmm9, 0x49
+	vrangeps ymm13, ymm14, ymm14, 0xa5
+	vrangeps zmm11, zmm11, zmm15, 0x8d
+	vrangeps xmm27, xmm29, xmm28, 0x23
+	vrangeps ymm24, ymm17, ymm30, 0x9c
+	vrangeps zmm30, zmm26, zmm17, 0xc4

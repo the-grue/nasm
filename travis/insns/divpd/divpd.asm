@@ -1,3 +1,4 @@
 default rel
-	divpd xmm14, xmm7
-	divpd xmm5, xmm4
+	divpd xmm7, xmm3
+	divpd xmm3, xmm5
+	divpd xmm10, xmm8

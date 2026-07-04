@@ -1,7 +1,13 @@
 default rel
 	setna byte [0x586]
-	setna cl
+	setna al
 	setna rdx
-	setna rbx
-	setna edx
+	setna rcx
 	setna edi
+	setna edx
+	setna r11b
+	setna r14
+	setna r14d
+	setna r24b
+	setna r16
+	setna r23d

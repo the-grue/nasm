@@ -1,2 +1,2 @@
-	rdpid eax
-	rdpid ebp
+	rdpid edx
+	rdpid edi

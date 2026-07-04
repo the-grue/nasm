@@ -1,10 +1,16 @@
 default rel
-	vdbpsadbw xmm2, xmm7, xmm12, 0xe8
-	vdbpsadbw xmm2, xmm12, 0xe8
-	vdbpsadbw xmm13, xmm1, xmm9, 0xb7
-	vdbpsadbw ymm15, ymm3, ymm7, 0xeb
-	vdbpsadbw ymm15, ymm7, 0xeb
-	vdbpsadbw ymm2, ymm8, ymm13, 0xc8
-	vdbpsadbw zmm14, zmm0, zmm0, 0xc6
-	vdbpsadbw zmm14, zmm0, 0xc6
-	vdbpsadbw zmm15, zmm14, zmm0, 0xc8
+	vdbpsadbw xmm1, xmm3, xmm6, 0xe8
+	vdbpsadbw xmm1, xmm6, 0xe8
+	vdbpsadbw xmm3, xmm7, xmm4, 0x50
+	vdbpsadbw ymm6, ymm6, yword [0x1d4], 0x19
+	vdbpsadbw ymm6, yword [0x1d4], 0x19
+	vdbpsadbw ymm6, ymm7, ymm3, 0xfc
+	vdbpsadbw zmm2, zmm7, zmm0, 0xb0
+	vdbpsadbw zmm2, zmm0, 0xb0
+	vdbpsadbw zmm6, zmm1, zmm0, 0xa0
+	vdbpsadbw xmm14, xmm8, xmm11, 0x9a
+	vdbpsadbw ymm8, ymm14, ymm15, 0xf0
+	vdbpsadbw zmm11, zmm10, zmm15, 0x95
+	vdbpsadbw xmm27, xmm31, xmm19, 0x2e
+	vdbpsadbw ymm20, ymm16, ymm28, 0x99
+	vdbpsadbw zmm24, zmm28, zmm18, 0xb2

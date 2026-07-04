@@ -1,4 +1,6 @@
 default rel
-	vrcp14ss xmm9, xmm15, xmm8
-	vrcp14ss xmm9, xmm8
-	vrcp14ss xmm12, xmm11, dword [0xdfa]
+	vrcp14ss xmm4, xmm7, xmm4
+	vrcp14ss xmm4, xmm4
+	vrcp14ss xmm4, xmm2, xmm0
+	vrcp14ss xmm14, xmm13, xmm15
+	vrcp14ss xmm29, xmm28, xmm22

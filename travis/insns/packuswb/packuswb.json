@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for PACKUSWB",
+  "id": "packuswb16",
+  "format": "bin",
+  "source": "packuswb_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/packuswb/",
+  "target": [
+   { "output": "packuswb.bin16", "match": "packuswb.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for PACKUSWB",
+  "id": "packuswb32",
+  "format": "bin",
+  "source": "packuswb_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/packuswb/",
+  "target": [
+   { "output": "packuswb.bin32", "match": "packuswb.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for PACKUSWB",
   "id": "packuswb64",
   "format": "bin",
   "source": "packuswb.asm",

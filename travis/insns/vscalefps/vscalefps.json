@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VSCALEFPS",
+  "id": "vscalefps16",
+  "format": "bin",
+  "source": "vscalefps_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vscalefps/",
+  "target": [
+   { "output": "vscalefps.bin16", "match": "vscalefps.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VSCALEFPS",
+  "id": "vscalefps32",
+  "format": "bin",
+  "source": "vscalefps_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vscalefps/",
+  "target": [
+   { "output": "vscalefps.bin32", "match": "vscalefps.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VSCALEFPS",
   "id": "vscalefps64",
   "format": "bin",
   "source": "vscalefps.asm",

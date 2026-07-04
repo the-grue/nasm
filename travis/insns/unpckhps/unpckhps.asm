@@ -1,3 +1,4 @@
 default rel
-	unpckhps xmm6, xmm15
-	unpckhps xmm8, oword [0xba3]
+	unpckhps xmm3, xmm7
+	unpckhps xmm7, xmm2
+	unpckhps xmm12, xmm15

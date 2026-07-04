@@ -1,7 +1,13 @@
 default rel
 	hint_nop 0x6d, ax, dx
-	hint_nop 0x7b, ax, word [0x6d9]
-	hint_nop 0x3c, ecx, ebp
-	hint_nop 0x9, ebp, ebp
-	hint_nop 0xc, rbx, rdi
-	hint_nop 0x60, rdx, rax
+	hint_nop 0x2, bp, bp
+	hint_nop 0x4c, ebp, ebx
+	hint_nop 0x6a, ecx, dword [0x6cf]
+	hint_nop 0xc, rbx, qword [0x403]
+	hint_nop 0x37, rax, rdx
+	hint_nop 0x7b, r8w, r14w
+	hint_nop 0x7, r14d, r14d
+	hint_nop 0x61, r8, r10
+	hint_nop 0x32, r23w, r22w
+	hint_nop 0x45, r16d, r16d
+	hint_nop 0x64, r31, r16

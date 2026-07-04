@@ -1,6 +1,6 @@
 	ctestne 7, bl, dl
-	ctestne 8, byte [0x489], dl
-	ctestne 11, word [0x62a], bp
-	ctestne 14, si, di
-	ctestne 9, ebp, edx
-	ctestne 13, ebp, edx
+	ctestne 5, byte [0xf01], al
+	ctestne 10, word [0xa59], ax
+	ctestne 4, ax, dx
+	ctestne 9, ebp, eax
+	ctestne 15, ebp, ecx

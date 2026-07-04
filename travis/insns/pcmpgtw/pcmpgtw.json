@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for PCMPGTW",
+  "id": "pcmpgtw16",
+  "format": "bin",
+  "source": "pcmpgtw_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/pcmpgtw/",
+  "target": [
+   { "output": "pcmpgtw.bin16", "match": "pcmpgtw.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for PCMPGTW",
+  "id": "pcmpgtw32",
+  "format": "bin",
+  "source": "pcmpgtw_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/pcmpgtw/",
+  "target": [
+   { "output": "pcmpgtw.bin32", "match": "pcmpgtw.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for PCMPGTW",
   "id": "pcmpgtw64",
   "format": "bin",
   "source": "pcmpgtw.asm",

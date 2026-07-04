@@ -1,2 +1,2 @@
 	wrgsbase edi
-	wrgsbase edi
+	wrgsbase edx

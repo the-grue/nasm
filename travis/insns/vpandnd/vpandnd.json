@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPANDND",
+  "id": "vpandnd16",
+  "format": "bin",
+  "source": "vpandnd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpandnd/",
+  "target": [
+   { "output": "vpandnd.bin16", "match": "vpandnd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPANDND",
+  "id": "vpandnd32",
+  "format": "bin",
+  "source": "vpandnd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpandnd/",
+  "target": [
+   { "output": "vpandnd.bin32", "match": "vpandnd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPANDND",
   "id": "vpandnd64",
   "format": "bin",
   "source": "vpandnd.asm",

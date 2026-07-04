@@ -1,4 +1,4 @@
 	bsf ax, ax
-	bsf ax, word [0x784]
-	bsf ecx, edi
-	bsf ebp, eax
+	bsf si, word [0xe75]
+	bsf ecx, ecx
+	bsf esi, dword [0xfb8]

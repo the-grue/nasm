@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VCMPNEQ_OQSD",
+  "id": "vcmpneq_oqsd16",
+  "format": "bin",
+  "source": "vcmpneq_oqsd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcmpneq_oqsd/",
+  "target": [
+   { "output": "vcmpneq_oqsd.bin16", "match": "vcmpneq_oqsd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCMPNEQ_OQSD",
+  "id": "vcmpneq_oqsd32",
+  "format": "bin",
+  "source": "vcmpneq_oqsd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcmpneq_oqsd/",
+  "target": [
+   { "output": "vcmpneq_oqsd.bin32", "match": "vcmpneq_oqsd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCMPNEQ_OQSD",
   "id": "vcmpneq_oqsd64",
   "format": "bin",
   "source": "vcmpneq_oqsd.asm",

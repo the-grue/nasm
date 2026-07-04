@@ -1,7 +1,13 @@
 default rel
-	vrsqrtbf16 xmm12, xmm13
-	vrsqrtbf16 xmm6, xmm3
-	vrsqrtbf16 ymm12, ymm13
-	vrsqrtbf16 ymm7, ymm13
-	vrsqrtbf16 zmm0, zword [0xe72]
-	vrsqrtbf16 zmm7, zmm6
+	vrsqrtbf16 xmm6, xmm6
+	vrsqrtbf16 xmm1, oword [0x7fd]
+	vrsqrtbf16 ymm3, yword [0x1b2]
+	vrsqrtbf16 ymm3, ymm4
+	vrsqrtbf16 zmm0, zmm5
+	vrsqrtbf16 zmm1, zmm5
+	vrsqrtbf16 xmm11, xmm10
+	vrsqrtbf16 ymm13, ymm15
+	vrsqrtbf16 zmm12, zmm11
+	vrsqrtbf16 xmm19, xmm28
+	vrsqrtbf16 ymm23, ymm18
+	vrsqrtbf16 zmm29, zmm22

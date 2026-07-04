@@ -1,9 +1,9 @@
 	sarx ecx, esi, cl
 	sarx ecx, cl
-	sarx ebx, ebp, dl
-	sarx ecx, ebp, bp
-	sarx ecx, bp
-	sarx edi, esi, cx
-	sarx ebp, esi, ebp
-	sarx ebp, ebp
-	sarx eax, eax, esi
+	sarx ebp, dword [0xd24], cl
+	sarx esi, ebp, ax
+	sarx esi, ax
+	sarx edi, esi, dx
+	sarx edx, ecx, esi
+	sarx edx, esi
+	sarx ebp, edi, ebx

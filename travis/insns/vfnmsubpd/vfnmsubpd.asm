@@ -1,13 +1,17 @@
 default rel
-	vfnmsubpd xmm11, xmm2, xmm4, xmm5
-	vfnmsubpd xmm11, xmm4, xmm5
-	vfnmsubpd xmm10, xmm2, xmm9, xmm1
-	vfnmsubpd ymm15, ymm2, yword [0xc11], ymm7
-	vfnmsubpd ymm15, yword [0xc11], ymm7
-	vfnmsubpd ymm9, ymm3, yword [0x83e], ymm12
-	vfnmsubpd xmm0, xmm6, xmm8, xmm4
-	vfnmsubpd xmm0, xmm8, xmm4
-	vfnmsubpd xmm10, xmm10, xmm9, xmm7
-	vfnmsubpd ymm11, ymm11, ymm5, ymm12
-	vfnmsubpd ymm11, ymm5, ymm12
-	vfnmsubpd ymm1, ymm3, ymm6, ymm6
+	vfnmsubpd xmm5, xmm1, xmm2, xmm2
+	vfnmsubpd xmm5, xmm2, xmm2
+	vfnmsubpd xmm5, xmm3, xmm1, xmm7
+	vfnmsubpd ymm3, ymm6, ymm3, ymm4
+	vfnmsubpd ymm3, ymm3, ymm4
+	vfnmsubpd ymm5, ymm2, ymm6, ymm0
+	vfnmsubpd xmm1, xmm3, xmm3, xmm4
+	vfnmsubpd xmm1, xmm3, xmm4
+	vfnmsubpd xmm6, xmm1, xmm4, xmm1
+	vfnmsubpd ymm5, ymm0, ymm2, yword [0x31f]
+	vfnmsubpd ymm5, ymm2, yword [0x31f]
+	vfnmsubpd ymm5, ymm6, ymm2, ymm0
+	vfnmsubpd xmm13, xmm9, xmm13, xmm12
+	vfnmsubpd ymm12, ymm10, ymm13, ymm13
+	vfnmsubpd xmm13, xmm11, xmm12, xmm11
+	vfnmsubpd ymm12, ymm15, ymm8, ymm13

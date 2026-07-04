@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for CMPUNORDPS",
+  "id": "cmpunordps16",
+  "format": "bin",
+  "source": "cmpunordps_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/cmpunordps/",
+  "target": [
+   { "output": "cmpunordps.bin16", "match": "cmpunordps.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for CMPUNORDPS",
+  "id": "cmpunordps32",
+  "format": "bin",
+  "source": "cmpunordps_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/cmpunordps/",
+  "target": [
+   { "output": "cmpunordps.bin32", "match": "cmpunordps.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for CMPUNORDPS",
   "id": "cmpunordps64",
   "format": "bin",
   "source": "cmpunordps.asm",

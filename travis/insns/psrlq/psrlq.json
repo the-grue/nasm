@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for PSRLQ",
+  "id": "psrlq16",
+  "format": "bin",
+  "source": "psrlq_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/psrlq/",
+  "target": [
+   { "output": "psrlq.bin16", "match": "psrlq.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for PSRLQ",
+  "id": "psrlq32",
+  "format": "bin",
+  "source": "psrlq_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/psrlq/",
+  "target": [
+   { "output": "psrlq.bin32", "match": "psrlq.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for PSRLQ",
   "id": "psrlq64",
   "format": "bin",
   "source": "psrlq.asm",

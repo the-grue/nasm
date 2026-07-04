@@ -1,3 +1,4 @@
 default rel
-	minpd xmm2, xmm14
-	minpd xmm15, oword [0x121]
+	minpd xmm1, xmm7
+	minpd xmm0, oword [0x520]
+	minpd xmm15, xmm13

@@ -1,3 +1,5 @@
 default rel
-	vcmpeq_oqss k7, xmm10, xmm10
-	vcmpeq_oqss k1, xmm7, xmm9
+	vcmpeq_oqss k7, xmm5, xmm5
+	vcmpeq_oqss k5, xmm5, xmm5
+	vcmpeq_oqss k1, xmm11, xmm8
+	vcmpeq_oqss k5, xmm27, xmm22

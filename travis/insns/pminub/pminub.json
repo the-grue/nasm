@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for PMINUB",
+  "id": "pminub16",
+  "format": "bin",
+  "source": "pminub_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/pminub/",
+  "target": [
+   { "output": "pminub.bin16", "match": "pminub.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for PMINUB",
+  "id": "pminub32",
+  "format": "bin",
+  "source": "pminub_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/pminub/",
+  "target": [
+   { "output": "pminub.bin32", "match": "pminub.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for PMINUB",
   "id": "pminub64",
   "format": "bin",
   "source": "pminub.asm",

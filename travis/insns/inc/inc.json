@@ -3,7 +3,7 @@
   "description": "Pseudorandom test for INC",
   "id": "inc16",
   "format": "bin",
-  "source": "inc.asm",
+  "source": "inc_narrow.asm",
   "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/inc/",
   "target": [
    { "output": "inc.bin16", "match": "inc.bin16.t" }
@@ -14,7 +14,7 @@
   "description": "Pseudorandom test for INC",
   "id": "inc32",
   "format": "bin",
-  "source": "inc.asm",
+  "source": "inc_narrow.asm",
   "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/inc/",
   "target": [
    { "output": "inc.bin32", "match": "inc.bin32.t" }

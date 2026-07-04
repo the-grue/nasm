@@ -1,9 +1,15 @@
 default rel
 	ud2b si, di
-	ud2b di, bx
-	ud2b edx, edi
-	ud2b eax, esi
-	ud2b rcx, rbx
-	ud2b rbx, rdi
+	ud2b bx, word [0x12f]
+	ud2b ecx, ecx
+	ud2b edi, ebp
+	ud2b rbp, rdx
+	ud2b rbx, rax
 	ud2b
 	ud2b
+	ud2b r14w, r13w
+	ud2b r8d, r9d
+	ud2b r9, r11
+	ud2b r18w, r24w
+	ud2b r18d, r16d
+	ud2b r17, r21

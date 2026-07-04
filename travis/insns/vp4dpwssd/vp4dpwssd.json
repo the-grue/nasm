@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VP4DPWSSD",
+  "id": "vp4dpwssd16",
+  "format": "bin",
+  "source": "vp4dpwssd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vp4dpwssd/",
+  "target": [
+   { "output": "vp4dpwssd.bin16", "match": "vp4dpwssd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VP4DPWSSD",
+  "id": "vp4dpwssd32",
+  "format": "bin",
+  "source": "vp4dpwssd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vp4dpwssd/",
+  "target": [
+   { "output": "vp4dpwssd.bin32", "match": "vp4dpwssd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VP4DPWSSD",
   "id": "vp4dpwssd64",
   "format": "bin",
   "source": "vp4dpwssd.asm",

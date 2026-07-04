@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VENDSCALEPH",
+  "id": "vendscaleph16",
+  "format": "bin",
+  "source": "vendscaleph_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vendscaleph/",
+  "target": [
+   { "output": "vendscaleph.bin16", "match": "vendscaleph.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VENDSCALEPH",
+  "id": "vendscaleph32",
+  "format": "bin",
+  "source": "vendscaleph_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vendscaleph/",
+  "target": [
+   { "output": "vendscaleph.bin32", "match": "vendscaleph.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VENDSCALEPH",
   "id": "vendscaleph64",
   "format": "bin",
   "source": "vendscaleph.asm",

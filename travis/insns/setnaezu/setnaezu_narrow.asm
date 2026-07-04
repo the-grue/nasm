@@ -1,4 +1,4 @@
-	setnaezu ebx
+	setnaezu ebp
 	setnaezu esi
-	setnaezu byte [0x59e]
 	setnaezu cl
+	setnaezu bl

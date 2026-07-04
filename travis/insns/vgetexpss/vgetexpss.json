@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VGETEXPSS",
+  "id": "vgetexpss16",
+  "format": "bin",
+  "source": "vgetexpss_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vgetexpss/",
+  "target": [
+   { "output": "vgetexpss.bin16", "match": "vgetexpss.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VGETEXPSS",
+  "id": "vgetexpss32",
+  "format": "bin",
+  "source": "vgetexpss_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vgetexpss/",
+  "target": [
+   { "output": "vgetexpss.bin32", "match": "vgetexpss.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VGETEXPSS",
   "id": "vgetexpss64",
   "format": "bin",
   "source": "vgetexpss.asm",

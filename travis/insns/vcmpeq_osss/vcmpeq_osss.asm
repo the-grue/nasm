@@ -1,6 +1,8 @@
 default rel
-	vcmpeq_osss xmm13, xmm1, xmm7
-	vcmpeq_osss xmm13, xmm7
-	vcmpeq_osss xmm5, xmm11, xmm5
-	vcmpeq_osss k6, xmm10, dword [0xf6a]
-	vcmpeq_osss k5, xmm2, xmm13
+	vcmpeq_osss xmm6, xmm0, xmm3
+	vcmpeq_osss xmm6, xmm3
+	vcmpeq_osss xmm6, xmm7, xmm1
+	vcmpeq_osss k2, xmm6, xmm4
+	vcmpeq_osss k2, xmm1, xmm4
+	vcmpeq_osss xmm10, xmm13, xmm13
+	vcmpeq_osss k6, xmm15, xmm9

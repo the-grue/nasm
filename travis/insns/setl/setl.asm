@@ -1,7 +1,13 @@
 default rel
 	setl cl
-	setl al
-	setl rdx
-	setl rdx
-	setl edi
+	setl cl
+	setl rdi
+	setl rax
 	setl eax
+	setl edx
+	setl r8b
+	setl r8
+	setl r10d
+	setl r16b
+	setl r27
+	setl r20d

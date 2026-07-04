@@ -1,7 +1,13 @@
 default rel
 	setnc cl
-	setnc byte [0x351]
+	setnc cl
 	setnc rax
-	setnc rsi
-	setnc eax
-	setnc edx
+	setnc rdi
+	setnc ebx
+	setnc ecx
+	setnc r15b
+	setnc r12
+	setnc r8d
+	setnc r18b
+	setnc r31
+	setnc r20d

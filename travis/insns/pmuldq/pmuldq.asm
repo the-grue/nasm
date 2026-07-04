@@ -1,3 +1,4 @@
 default rel
-	pmuldq xmm14, xmm13
-	pmuldq xmm15, xmm8
+	pmuldq xmm7, xmm6
+	pmuldq xmm0, oword [0x779]
+	pmuldq xmm15, xmm11

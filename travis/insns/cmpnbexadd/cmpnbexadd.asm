@@ -1,5 +1,9 @@
 default rel
 	cmpnbexadd dword [0x34d], edx, edi
-	cmpnbexadd dword [0x9ff], eax, ebp
-	cmpnbexadd qword [0xf32], rbx, rsi
-	cmpnbexadd qword [0x1c2], rcx, rsi
+	cmpnbexadd dword [0x1c2], ecx, esi
+	cmpnbexadd qword [0x7c4], rdx, rdx
+	cmpnbexadd qword [0xcce], rbx, rdi
+	cmpnbexadd dword [0x9ff], r8d, r15d
+	cmpnbexadd qword [0x84d], r8, r15
+	cmpnbexadd dword [0xf32], r19d, r26d
+	cmpnbexadd qword [0x4f2], r30, r29

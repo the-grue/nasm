@@ -1,13 +1,21 @@
 default rel
-	vpmaxud xmm15, xmm8, oword [0x967]
-	vpmaxud xmm15, oword [0x967]
-	vpmaxud xmm0, xmm11, oword [0xc10]
-	vpmaxud ymm3, ymm15, ymm2
-	vpmaxud ymm3, ymm2
-	vpmaxud ymm8, ymm11, yword [0x33b]
-	vpmaxud xmm6, xmm13, xmm14
-	vpmaxud xmm6, xmm14
-	vpmaxud xmm3, xmm6, oword [0xedd]
-	vpmaxud ymm11, ymm13, ymm15
-	vpmaxud ymm11, ymm15
-	vpmaxud ymm5, ymm2, ymm7
+	vpmaxud xmm7, xmm4, oword [0x967]
+	vpmaxud xmm7, oword [0x967]
+	vpmaxud xmm5, xmm1, xmm5
+	vpmaxud ymm6, ymm1, ymm6
+	vpmaxud ymm6, ymm6
+	vpmaxud ymm5, ymm6, ymm7
+	vpmaxud xmm2, xmm1, xmm3
+	vpmaxud xmm2, xmm3
+	vpmaxud xmm1, xmm3, xmm4
+	vpmaxud ymm6, ymm6, ymm1
+	vpmaxud ymm6, ymm1
+	vpmaxud ymm5, ymm7, yword [0x28d]
+	vpmaxud xmm8, xmm13, xmm14
+	vpmaxud ymm12, ymm15, ymm9
+	vpmaxud xmm14, xmm9, xmm15
+	vpmaxud ymm11, ymm12, ymm9
+	vpmaxud xmm27, xmm19, xmm31
+	vpmaxud ymm22, ymm28, ymm30
+	vpmaxud xmm23, xmm20, xmm26
+	vpmaxud ymm26, ymm30, ymm19

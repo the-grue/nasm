@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for PSHUFHW",
+  "id": "pshufhw16",
+  "format": "bin",
+  "source": "pshufhw_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/pshufhw/",
+  "target": [
+   { "output": "pshufhw.bin16", "match": "pshufhw.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for PSHUFHW",
+  "id": "pshufhw32",
+  "format": "bin",
+  "source": "pshufhw_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/pshufhw/",
+  "target": [
+   { "output": "pshufhw.bin32", "match": "pshufhw.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for PSHUFHW",
   "id": "pshufhw64",
   "format": "bin",
   "source": "pshufhw.asm",

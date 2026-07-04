@@ -1,5 +1,7 @@
 default rel
-	movaps xmm14, xmm3
-	movaps xmm11, oword [0x2ed]
-	movaps xmm8, xmm15
-	movaps oword [0x678], xmm11
+	movaps xmm7, xmm1
+	movaps xmm4, oword [0xda7]
+	movaps xmm5, xmm1
+	movaps xmm4, xmm5
+	movaps xmm13, xmm14
+	movaps xmm13, xmm10

@@ -1,6 +1,6 @@
 	ctestge 5, dl, al
-	ctestge 11, al, dl
-	ctestge 4, word [0x93f], bx
-	ctestge 14, bx, si
-	ctestge 13, ebx, ebx
-	ctestge 0, esi, edx
+	ctestge 8, dl, cl
+	ctestge 3, di, ax
+	ctestge 10, word [0xc28], dx
+	ctestge 3, edi, ecx
+	ctestge 5, ebx, ecx

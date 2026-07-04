@@ -1,13 +1,21 @@
 default rel
-	vpsubq xmm11, xmm10, xmm1
-	vpsubq xmm11, xmm1
-	vpsubq xmm15, xmm1, xmm0
-	vpsubq ymm12, ymm14, yword [0x804]
-	vpsubq ymm12, yword [0x804]
-	vpsubq ymm14, ymm7, ymm14
-	vpsubq xmm4, xmm5, oword [0x6e9]
-	vpsubq xmm4, oword [0x6e9]
-	vpsubq xmm7, xmm9, oword [0xd47]
-	vpsubq ymm15, ymm14, ymm7
-	vpsubq ymm15, ymm7
-	vpsubq ymm1, ymm3, yword [0xc55]
+	vpsubq xmm5, xmm5, xmm0
+	vpsubq xmm5, xmm0
+	vpsubq xmm7, xmm3, oword [0x829]
+	vpsubq ymm5, ymm7, ymm2
+	vpsubq ymm5, ymm2
+	vpsubq ymm7, ymm7, ymm3
+	vpsubq xmm0, xmm1, oword [0xc55]
+	vpsubq xmm0, oword [0xc55]
+	vpsubq xmm2, xmm4, xmm6
+	vpsubq ymm4, ymm4, ymm1
+	vpsubq ymm4, ymm1
+	vpsubq ymm2, ymm3, ymm1
+	vpsubq xmm15, xmm8, xmm13
+	vpsubq ymm14, ymm11, ymm11
+	vpsubq xmm13, xmm10, xmm10
+	vpsubq ymm15, ymm8, ymm14
+	vpsubq xmm16, xmm28, xmm30
+	vpsubq ymm25, ymm31, ymm29
+	vpsubq xmm26, xmm22, xmm20
+	vpsubq ymm28, ymm30, ymm23

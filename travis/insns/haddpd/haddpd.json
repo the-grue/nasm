@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for HADDPD",
+  "id": "haddpd16",
+  "format": "bin",
+  "source": "haddpd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/haddpd/",
+  "target": [
+   { "output": "haddpd.bin16", "match": "haddpd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for HADDPD",
+  "id": "haddpd32",
+  "format": "bin",
+  "source": "haddpd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/haddpd/",
+  "target": [
+   { "output": "haddpd.bin32", "match": "haddpd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for HADDPD",
   "id": "haddpd64",
   "format": "bin",
   "source": "haddpd.asm",

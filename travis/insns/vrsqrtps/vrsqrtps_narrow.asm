@@ -1,0 +1,4 @@
+	vrsqrtps xmm1, xmm5
+	vrsqrtps xmm3, oword [0xbf7]
+	vrsqrtps ymm7, yword [0xa63]
+	vrsqrtps ymm2, yword [0x8fd]

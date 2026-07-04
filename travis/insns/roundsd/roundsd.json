@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for ROUNDSD",
+  "id": "roundsd16",
+  "format": "bin",
+  "source": "roundsd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/roundsd/",
+  "target": [
+   { "output": "roundsd.bin16", "match": "roundsd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for ROUNDSD",
+  "id": "roundsd32",
+  "format": "bin",
+  "source": "roundsd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/roundsd/",
+  "target": [
+   { "output": "roundsd.bin32", "match": "roundsd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for ROUNDSD",
   "id": "roundsd64",
   "format": "bin",
   "source": "roundsd.asm",

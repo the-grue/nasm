@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPBLENDMQ",
+  "id": "vpblendmq16",
+  "format": "bin",
+  "source": "vpblendmq_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpblendmq/",
+  "target": [
+   { "output": "vpblendmq.bin16", "match": "vpblendmq.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPBLENDMQ",
+  "id": "vpblendmq32",
+  "format": "bin",
+  "source": "vpblendmq_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpblendmq/",
+  "target": [
+   { "output": "vpblendmq.bin32", "match": "vpblendmq.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPBLENDMQ",
   "id": "vpblendmq64",
   "format": "bin",
   "source": "vpblendmq.asm",

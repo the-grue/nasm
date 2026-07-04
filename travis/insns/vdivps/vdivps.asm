@@ -1,13 +1,21 @@
 default rel
-	vdivps xmm5, xmm1, xmm12
-	vdivps xmm5, xmm12
-	vdivps xmm5, xmm15, oword [0x9a6]
-	vdivps ymm1, ymm3, ymm5
-	vdivps ymm1, ymm5
-	vdivps ymm6, ymm0, yword [0x5da]
-	vdivps xmm8, xmm10, xmm7
-	vdivps xmm8, xmm7
-	vdivps xmm1, xmm4, xmm4
-	vdivps ymm2, ymm3, ymm0
-	vdivps ymm2, ymm0
-	vdivps ymm3, ymm5, ymm7
+	vdivps xmm2, xmm0, xmm6
+	vdivps xmm2, xmm6
+	vdivps xmm2, xmm2, xmm0
+	vdivps ymm6, ymm2, ymm5
+	vdivps ymm6, ymm5
+	vdivps ymm1, ymm1, ymm0
+	vdivps xmm1, xmm2, xmm3
+	vdivps xmm1, xmm3
+	vdivps xmm2, xmm2, xmm4
+	vdivps ymm7, ymm5, yword [0x3e4]
+	vdivps ymm7, yword [0x3e4]
+	vdivps ymm0, ymm2, yword [0xf96]
+	vdivps xmm10, xmm15, xmm15
+	vdivps ymm9, ymm11, ymm8
+	vdivps xmm13, xmm13, xmm15
+	vdivps ymm15, ymm13, ymm11
+	vdivps xmm25, xmm17, xmm19
+	vdivps ymm20, ymm26, ymm20
+	vdivps xmm24, xmm31, xmm23
+	vdivps ymm17, ymm17, ymm30

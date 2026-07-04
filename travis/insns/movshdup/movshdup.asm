@@ -1,3 +1,4 @@
 default rel
-	movshdup xmm11, xmm12
-	movshdup xmm14, oword [0x6b4]
+	movshdup xmm5, xmm6
+	movshdup xmm6, xmm1
+	movshdup xmm15, xmm14

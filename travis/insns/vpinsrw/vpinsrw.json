@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPINSRW",
+  "id": "vpinsrw16",
+  "format": "bin",
+  "source": "vpinsrw_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpinsrw/",
+  "target": [
+   { "output": "vpinsrw.bin16", "match": "vpinsrw.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPINSRW",
+  "id": "vpinsrw32",
+  "format": "bin",
+  "source": "vpinsrw_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpinsrw/",
+  "target": [
+   { "output": "vpinsrw.bin32", "match": "vpinsrw.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPINSRW",
   "id": "vpinsrw64",
   "format": "bin",
   "source": "vpinsrw.asm",

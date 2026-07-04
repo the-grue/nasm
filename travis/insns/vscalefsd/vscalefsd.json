@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VSCALEFSD",
+  "id": "vscalefsd16",
+  "format": "bin",
+  "source": "vscalefsd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vscalefsd/",
+  "target": [
+   { "output": "vscalefsd.bin16", "match": "vscalefsd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VSCALEFSD",
+  "id": "vscalefsd32",
+  "format": "bin",
+  "source": "vscalefsd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vscalefsd/",
+  "target": [
+   { "output": "vscalefsd.bin32", "match": "vscalefsd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VSCALEFSD",
   "id": "vscalefsd64",
   "format": "bin",
   "source": "vscalefsd.asm",

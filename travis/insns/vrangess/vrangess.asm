@@ -1,4 +1,6 @@
 default rel
-	vrangess xmm0, xmm2, xmm14, 0xdf
-	vrangess xmm0, xmm14, 0xdf
-	vrangess xmm0, xmm11, xmm11, 0xa8
+	vrangess xmm0, xmm1, xmm7, 0xdf
+	vrangess xmm0, xmm7, 0xdf
+	vrangess xmm5, xmm6, xmm0, 0x26
+	vrangess xmm8, xmm13, xmm12, 0xb4
+	vrangess xmm26, xmm27, xmm27, 0x35

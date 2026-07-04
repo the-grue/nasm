@@ -1,3 +1,4 @@
 default rel
-	punpcklqdq xmm12, xmm3
-	punpcklqdq xmm14, oword [0x1f9]
+	punpcklqdq xmm6, xmm1
+	punpcklqdq xmm4, oword [0x674]
+	punpcklqdq xmm15, xmm14

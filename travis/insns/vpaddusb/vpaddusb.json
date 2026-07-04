@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPADDUSB",
+  "id": "vpaddusb16",
+  "format": "bin",
+  "source": "vpaddusb_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpaddusb/",
+  "target": [
+   { "output": "vpaddusb.bin16", "match": "vpaddusb.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPADDUSB",
+  "id": "vpaddusb32",
+  "format": "bin",
+  "source": "vpaddusb_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpaddusb/",
+  "target": [
+   { "output": "vpaddusb.bin32", "match": "vpaddusb.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPADDUSB",
   "id": "vpaddusb64",
   "format": "bin",
   "source": "vpaddusb.asm",

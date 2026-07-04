@@ -1,9 +1,17 @@
 default rel
-	vpdpwuuds xmm3, xmm13, oword [0xb5d]
-	vpdpwuuds xmm6, xmm14, oword [0xf0f]
-	vpdpwuuds ymm6, ymm12, ymm7
-	vpdpwuuds ymm7, ymm15, ymm1
-	vpdpwuuds xmm4, xmm14, xmm9
-	vpdpwuuds xmm9, xmm1, xmm8
-	vpdpwuuds ymm9, ymm7, ymm12
-	vpdpwuuds ymm1, ymm7, ymm13
+	vpdpwuuds xmm1, xmm6, oword [0xb5d]
+	vpdpwuuds xmm5, xmm3, xmm7
+	vpdpwuuds ymm1, ymm0, ymm7
+	vpdpwuuds ymm4, ymm3, ymm6
+	vpdpwuuds xmm0, xmm3, xmm6
+	vpdpwuuds xmm1, xmm7, xmm4
+	vpdpwuuds ymm7, ymm7, yword [0xee9]
+	vpdpwuuds ymm4, ymm5, ymm1
+	vpdpwuuds xmm11, xmm15, xmm15
+	vpdpwuuds ymm11, ymm12, ymm12
+	vpdpwuuds xmm13, xmm13, xmm12
+	vpdpwuuds ymm8, ymm14, ymm9
+	vpdpwuuds xmm30, xmm22, xmm28
+	vpdpwuuds ymm17, ymm17, ymm24
+	vpdpwuuds xmm16, xmm26, xmm21
+	vpdpwuuds ymm29, ymm17, ymm24

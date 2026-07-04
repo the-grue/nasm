@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VP2INTERSECTD",
+  "id": "vp2intersectd16",
+  "format": "bin",
+  "source": "vp2intersectd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vp2intersectd/",
+  "target": [
+   { "output": "vp2intersectd.bin16", "match": "vp2intersectd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VP2INTERSECTD",
+  "id": "vp2intersectd32",
+  "format": "bin",
+  "source": "vp2intersectd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vp2intersectd/",
+  "target": [
+   { "output": "vp2intersectd.bin32", "match": "vp2intersectd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VP2INTERSECTD",
   "id": "vp2intersectd64",
   "format": "bin",
   "source": "vp2intersectd.asm",

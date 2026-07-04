@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for SUBPD",
+  "id": "subpd16",
+  "format": "bin",
+  "source": "subpd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/subpd/",
+  "target": [
+   { "output": "subpd.bin16", "match": "subpd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for SUBPD",
+  "id": "subpd32",
+  "format": "bin",
+  "source": "subpd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/subpd/",
+  "target": [
+   { "output": "subpd.bin32", "match": "subpd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for SUBPD",
   "id": "subpd64",
   "format": "bin",
   "source": "subpd.asm",

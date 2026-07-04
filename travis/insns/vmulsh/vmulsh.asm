@@ -1,4 +1,6 @@
 default rel
-	vmulsh xmm7, xmm0, xmm2
-	vmulsh xmm7, xmm2
-	vmulsh xmm3, xmm13, xmm7
+	vmulsh xmm3, xmm0, xmm1
+	vmulsh xmm3, xmm1
+	vmulsh xmm4, xmm7, word [0xa91]
+	vmulsh xmm9, xmm14, xmm8
+	vmulsh xmm23, xmm22, xmm17

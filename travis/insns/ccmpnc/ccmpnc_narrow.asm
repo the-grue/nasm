@@ -1,6 +1,6 @@
 	ccmpnc 4, al, cl
-	ccmpnc 0, bl, cl
-	ccmpnc 11, word [0xf2c], bx
-	ccmpnc 4, bp, cx
-	ccmpnc 9, ebx, esi
-	ccmpnc 2, dword [0x6f7], ecx
+	ccmpnc 15, bl, al
+	ccmpnc 13, si, si
+	ccmpnc 13, word [0xa10], dx
+	ccmpnc 4, edx, esi
+	ccmpnc 15, dword [0xdaa], esi

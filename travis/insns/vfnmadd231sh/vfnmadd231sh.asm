@@ -1,4 +1,6 @@
 default rel
-	vfnmadd231sh xmm3, xmm10, word [0xeb5]
-	vfnmadd231sh xmm3, word [0xeb5]
-	vfnmadd231sh xmm0, xmm5, word [0x8e9]
+	vfnmadd231sh xmm1, xmm5, word [0xeb5]
+	vfnmadd231sh xmm1, word [0xeb5]
+	vfnmadd231sh xmm3, xmm5, xmm0
+	vfnmadd231sh xmm8, xmm10, xmm15
+	vfnmadd231sh xmm24, xmm22, xmm28

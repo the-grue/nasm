@@ -1,7 +1,9 @@
 default rel
-	vpblendvb xmm15, xmm11, xmm8, xmm13
-	vpblendvb xmm15, xmm8, xmm13
-	vpblendvb xmm9, xmm15, oword [0x217], xmm14
-	vpblendvb ymm3, ymm14, yword [0x3f4], ymm5
-	vpblendvb ymm3, yword [0x3f4], ymm5
-	vpblendvb ymm12, ymm9, ymm4, ymm13
+	vpblendvb xmm7, xmm5, xmm4, xmm6
+	vpblendvb xmm7, xmm4, xmm6
+	vpblendvb xmm1, xmm2, oword [0xa4c], xmm2
+	vpblendvb ymm2, ymm6, ymm0, ymm4
+	vpblendvb ymm2, ymm0, ymm4
+	vpblendvb ymm3, ymm0, ymm4, ymm3
+	vpblendvb xmm12, xmm15, xmm14, xmm8
+	vpblendvb ymm8, ymm14, ymm8, ymm11

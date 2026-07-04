@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for PAND",
+  "id": "pand16",
+  "format": "bin",
+  "source": "pand_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/pand/",
+  "target": [
+   { "output": "pand.bin16", "match": "pand.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for PAND",
+  "id": "pand32",
+  "format": "bin",
+  "source": "pand_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/pand/",
+  "target": [
+   { "output": "pand.bin32", "match": "pand.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for PAND",
   "id": "pand64",
   "format": "bin",
   "source": "pand.asm",

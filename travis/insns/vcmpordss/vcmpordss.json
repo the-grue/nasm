@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VCMPORDSS",
+  "id": "vcmpordss16",
+  "format": "bin",
+  "source": "vcmpordss_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcmpordss/",
+  "target": [
+   { "output": "vcmpordss.bin16", "match": "vcmpordss.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCMPORDSS",
+  "id": "vcmpordss32",
+  "format": "bin",
+  "source": "vcmpordss_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcmpordss/",
+  "target": [
+   { "output": "vcmpordss.bin32", "match": "vcmpordss.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCMPORDSS",
   "id": "vcmpordss64",
   "format": "bin",
   "source": "vcmpordss.asm",

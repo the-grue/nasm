@@ -1,5 +1,6 @@
 default rel
 	psubd mm3, qword [0x8ff]
 	psubd mm0, qword [0xa99]
-	psubd xmm12, xmm15
-	psubd xmm11, xmm12
+	psubd xmm6, xmm7
+	psubd xmm3, oword [0x5cd]
+	psubd xmm13, xmm9

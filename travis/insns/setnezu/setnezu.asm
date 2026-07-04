@@ -1,7 +1,13 @@
 default rel
 	setnezu rsi
 	setnezu rdi
-	setnezu edi
-	setnezu edi
-	setnezu cl
-	setnezu byte [0x63c]
+	setnezu edx
+	setnezu ecx
+	setnezu dl
+	setnezu byte [0xb42]
+	setnezu r13
+	setnezu r12d
+	setnezu r8b
+	setnezu r29
+	setnezu r29d
+	setnezu r18b

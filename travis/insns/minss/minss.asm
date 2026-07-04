@@ -1,3 +1,4 @@
 default rel
-	minss xmm7, xmm5
-	minss xmm9, xmm10
+	minss xmm3, xmm2
+	minss xmm4, xmm2
+	minss xmm12, xmm11

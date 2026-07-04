@@ -1,4 +1,5 @@
 default rel
-	vphaddbq xmm10, oword [0xbf9]
-	vphaddbq xmm10
-	vphaddbq xmm0, xmm8
+	vphaddbq xmm5, oword [0xbf9]
+	vphaddbq xmm5
+	vphaddbq xmm5, oword [0xaff]
+	vphaddbq xmm8, xmm8

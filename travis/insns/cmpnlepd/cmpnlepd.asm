@@ -1,3 +1,4 @@
 default rel
-	cmpnlepd xmm6, xmm11
-	cmpnlepd xmm5, xmm2
+	cmpnlepd xmm3, xmm5
+	cmpnlepd xmm6, xmm6
+	cmpnlepd xmm10, xmm9

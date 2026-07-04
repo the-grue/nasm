@@ -1,11 +1,15 @@
 default rel
-	vcmpps xmm0, xmm2, xmm2, 0x9b
-	vcmpps xmm0, xmm2, 0x9b
-	vcmpps xmm8, xmm8, oword [0xfa7], 0xf5
-	vcmpps ymm4, ymm15, yword [0x550], 0x3c
-	vcmpps ymm4, yword [0x550], 0x3c
-	vcmpps ymm1, ymm15, yword [0x89c], 0xaf
-	vcmpps k4, xmm11, oword [0x212], 0x81
-	vcmpps k1, xmm4, oword [0xf45], 0x11
-	vcmpps k6, ymm15, ymm10, 0xc
-	vcmpps k2, ymm5, ymm4, 0xfc
+	vcmpps xmm0, xmm1, xmm1, 0x9b
+	vcmpps xmm0, xmm1, 0x9b
+	vcmpps xmm2, xmm1, xmm7, 0xd4
+	vcmpps ymm4, ymm5, ymm5, 0xc3
+	vcmpps ymm4, ymm5, 0xc3
+	vcmpps ymm7, ymm4, ymm0, 0x32
+	vcmpps k3, xmm3, xmm7, 0x86
+	vcmpps k6, xmm3, oword [0xc8d], 0x8
+	vcmpps k7, ymm0, ymm2, 0xc9
+	vcmpps k5, ymm5, ymm5, 0xe7
+	vcmpps xmm12, xmm12, xmm15, 0xfa
+	vcmpps ymm8, ymm12, ymm8, 0x47
+	vcmpps k3, xmm13, xmm13, 0x4b
+	vcmpps k1, ymm13, ymm15, 0x27

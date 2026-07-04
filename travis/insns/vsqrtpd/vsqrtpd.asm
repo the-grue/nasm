@@ -1,9 +1,17 @@
 default rel
-	vsqrtpd xmm15, oword [0x3a8]
-	vsqrtpd xmm4, xmm11
-	vsqrtpd ymm8, ymm7
-	vsqrtpd ymm13, ymm9
-	vsqrtpd xmm6, oword [0xd68]
-	vsqrtpd xmm15, xmm1
-	vsqrtpd ymm6, yword [0x29b]
-	vsqrtpd ymm11, ymm9
+	vsqrtpd xmm7, oword [0x3a8]
+	vsqrtpd xmm1, xmm6
+	vsqrtpd ymm1, ymm3
+	vsqrtpd ymm0, ymm7
+	vsqrtpd xmm0, oword [0xb0a]
+	vsqrtpd xmm5, xmm7
+	vsqrtpd ymm5, ymm5
+	vsqrtpd ymm0, ymm2
+	vsqrtpd xmm10, xmm10
+	vsqrtpd ymm15, ymm14
+	vsqrtpd xmm12, xmm11
+	vsqrtpd ymm12, ymm12
+	vsqrtpd xmm27, xmm24
+	vsqrtpd ymm31, ymm18
+	vsqrtpd xmm18, xmm23
+	vsqrtpd ymm22, ymm29

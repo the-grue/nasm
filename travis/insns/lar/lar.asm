@@ -1,7 +1,13 @@
 default rel
 	lar si, bx
-	lar dx, di
-	lar ebp, dx
-	lar ebp, word [0x933]
-	lar rcx, dx
-	lar rdi, dx
+	lar cx, bp
+	lar ebp, cx
+	lar edx, cx
+	lar rax, dx
+	lar rbx, word [0xd68]
+	lar r11w, r12w
+	lar r11d, r11w
+	lar r9, r15w
+	lar r28w, r31w
+	lar r28d, r23w
+	lar r16, r22w

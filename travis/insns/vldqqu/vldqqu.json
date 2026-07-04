@@ -3,7 +3,7 @@
   "description": "Pseudorandom test for VLDQQU",
   "id": "vldqqu16",
   "format": "bin",
-  "source": "vldqqu.asm",
+  "source": "vldqqu_narrow.asm",
   "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vldqqu/",
   "target": [
    { "output": "vldqqu.bin16", "match": "vldqqu.bin16.t" }
@@ -14,7 +14,7 @@
   "description": "Pseudorandom test for VLDQQU",
   "id": "vldqqu32",
   "format": "bin",
-  "source": "vldqqu.asm",
+  "source": "vldqqu_narrow.asm",
   "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vldqqu/",
   "target": [
    { "output": "vldqqu.bin32", "match": "vldqqu.bin32.t" }

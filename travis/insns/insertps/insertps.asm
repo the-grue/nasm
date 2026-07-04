@@ -1,3 +1,4 @@
 default rel
-	insertps xmm13, dword [0x39c], 0xce
-	insertps xmm13, dword [0x537], 0x17
+	insertps xmm6, dword [0x39c], 0xce
+	insertps xmm5, xmm0, 0x7d
+	insertps xmm14, xmm14, 0x48

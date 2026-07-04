@@ -1,5 +1,7 @@
 default rel
 	tzmsk ecx, ecx
-	tzmsk ecx, edx
-	tzmsk rsi, rax
-	tzmsk rbx, rax
+	tzmsk eax, ebx
+	tzmsk rcx, rdi
+	tzmsk rdi, rbx
+	tzmsk r11d, r12d
+	tzmsk r9, r8

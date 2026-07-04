@@ -1,2 +1,2 @@
-	vcvttsd2usis ebx, xmm13
-	vcvttsd2usis edx, xmm1
+	vcvttsd2usis ebx, xmm6
+	vcvttsd2usis ebp, qword [0xd29]

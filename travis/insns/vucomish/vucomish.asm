@@ -1,3 +1,5 @@
 default rel
-	vucomish xmm10, word [0x570]
-	vucomish xmm14, xmm10
+	vucomish xmm5, word [0x570]
+	vucomish xmm1, xmm4
+	vucomish xmm15, xmm9
+	vucomish xmm26, xmm28

@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPXORD",
+  "id": "vpxord16",
+  "format": "bin",
+  "source": "vpxord_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpxord/",
+  "target": [
+   { "output": "vpxord.bin16", "match": "vpxord.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPXORD",
+  "id": "vpxord32",
+  "format": "bin",
+  "source": "vpxord_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpxord/",
+  "target": [
+   { "output": "vpxord.bin32", "match": "vpxord.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPXORD",
   "id": "vpxord64",
   "format": "bin",
   "source": "vpxord.asm",

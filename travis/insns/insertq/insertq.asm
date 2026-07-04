@@ -1,5 +1,7 @@
 default rel
-	insertq xmm1, xmm15, 0x6d, 0x20
-	insertq xmm0, xmm7, 0x3a, 0x6c
-	insertq xmm2, xmm2
-	insertq xmm5, xmm13
+	insertq xmm0, xmm7, 0x6d, 0x20
+	insertq xmm1, xmm2, 0x7a, 0xc
+	insertq xmm2, xmm4
+	insertq xmm0, xmm2
+	insertq xmm8, xmm11, 0x3a, 0x6c
+	insertq xmm14, xmm13

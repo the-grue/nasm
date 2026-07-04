@@ -1,7 +1,13 @@
 default rel
 	setzzu rax
-	setzzu rsi
-	setzzu eax
+	setzzu rbp
+	setzzu edi
 	setzzu ebp
-	setzzu byte [0x306]
-	setzzu dl
+	setzzu al
+	setzzu bl
+	setzzu r13
+	setzzu r9d
+	setzzu r12b
+	setzzu r16
+	setzzu r24d
+	setzzu r20b

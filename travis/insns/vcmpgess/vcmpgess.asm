@@ -1,6 +1,8 @@
 default rel
-	vcmpgess xmm2, xmm0, xmm0
-	vcmpgess xmm2, xmm0
-	vcmpgess xmm7, xmm12, xmm7
-	vcmpgess k6, xmm4, xmm13
-	vcmpgess k2, xmm15, xmm1
+	vcmpgess xmm1, xmm0, xmm0
+	vcmpgess xmm1, xmm0
+	vcmpgess xmm2, xmm6, xmm7
+	vcmpgess k2, xmm0, dword [0xf47]
+	vcmpgess k7, xmm4, xmm3
+	vcmpgess xmm11, xmm14, xmm10
+	vcmpgess k1, xmm13, xmm14

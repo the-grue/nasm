@@ -1,9 +1,17 @@
 default rel
-	vpmadd52huq xmm4, xmm13, xmm9
-	vpmadd52huq xmm3, xmm8, xmm7
-	vpmadd52huq ymm8, ymm8, ymm10
-	vpmadd52huq ymm11, ymm9, ymm15
-	vpmadd52huq xmm15, xmm14, oword [0x5a0]
-	vpmadd52huq xmm5, xmm4, xmm1
-	vpmadd52huq ymm14, ymm11, ymm0
-	vpmadd52huq ymm12, ymm1, ymm9
+	vpmadd52huq xmm2, xmm6, xmm4
+	vpmadd52huq xmm4, xmm5, oword [0xa0b]
+	vpmadd52huq ymm4, ymm7, yword [0xe8f]
+	vpmadd52huq ymm7, ymm5, ymm0
+	vpmadd52huq xmm6, xmm0, xmm4
+	vpmadd52huq xmm2, xmm6, xmm4
+	vpmadd52huq ymm1, ymm3, ymm7
+	vpmadd52huq ymm0, ymm1, ymm7
+	vpmadd52huq xmm9, xmm12, xmm10
+	vpmadd52huq ymm14, ymm10, ymm10
+	vpmadd52huq xmm12, xmm13, xmm10
+	vpmadd52huq ymm12, ymm15, ymm8
+	vpmadd52huq xmm23, xmm24, xmm24
+	vpmadd52huq ymm20, ymm16, ymm17
+	vpmadd52huq xmm22, xmm27, xmm31
+	vpmadd52huq ymm28, ymm26, ymm25

@@ -1,6 +1,6 @@
 	cfcmovnp dx, di
-	cfcmovnp bp, cx
-	cfcmovnp eax, esi
+	cfcmovnp si, si
+	cfcmovnp ebx, edx
 	cfcmovnp edx, ebx
-	cfcmovnp dx, ax
-	cfcmovnp di, si
+	cfcmovnp ax, dx
+	cfcmovnp bp, bx

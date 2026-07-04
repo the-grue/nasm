@@ -1,6 +1,6 @@
 	cmovae bx, bp
-	cmovae di, bp
-	cmovae edi, dword [0xbaf]
-	cmovae edi, dword [0x8ad]
-	cmovae ax, dx, ax
-	cmovae ax, dx, dx
+	cmovae di, word [0xd54]
+	cmovae edi, ebp
+	cmovae edi, edx
+	cmovae dx, ax, cx
+	cmovae cx, di, word [0x9ae]

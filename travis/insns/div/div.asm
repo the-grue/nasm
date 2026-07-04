@@ -1,9 +1,17 @@
 default rel
 	div byte [0xd38]
-	div al
-	div word [0xc46]
+	div byte [0xc46]
 	div word [0x965]
-	div ebp
-	div eax
-	div rdi
-	div rcx
+	div ax
+	div edi
+	div dword [0xab5]
+	div rsi
+	div rsi
+	div r11b
+	div r8w
+	div r10d
+	div r11
+	div r16b
+	div r30w
+	div r20d
+	div r26

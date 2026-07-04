@@ -3,7 +3,7 @@
   "description": "Pseudorandom test for PSLLQ",
   "id": "psllq16",
   "format": "bin",
-  "source": "psllq.asm",
+  "source": "psllq_narrow.asm",
   "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/psllq/",
   "target": [
    { "output": "psllq.bin16", "match": "psllq.bin16.t" }
@@ -14,7 +14,7 @@
   "description": "Pseudorandom test for PSLLQ",
   "id": "psllq32",
   "format": "bin",
-  "source": "psllq.asm",
+  "source": "psllq_narrow.asm",
   "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/psllq/",
   "target": [
    { "output": "psllq.bin32", "match": "psllq.bin32.t" }

@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPDPBUSD",
+  "id": "vpdpbusd16",
+  "format": "bin",
+  "source": "vpdpbusd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpdpbusd/",
+  "target": [
+   { "output": "vpdpbusd.bin16", "match": "vpdpbusd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPDPBUSD",
+  "id": "vpdpbusd32",
+  "format": "bin",
+  "source": "vpdpbusd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpdpbusd/",
+  "target": [
+   { "output": "vpdpbusd.bin32", "match": "vpdpbusd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPDPBUSD",
   "id": "vpdpbusd64",
   "format": "bin",
   "source": "vpdpbusd.asm",

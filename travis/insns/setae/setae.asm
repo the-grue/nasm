@@ -2,6 +2,12 @@ default rel
 	setae bl
 	setae bl
 	setae rbx
-	setae rdx
-	setae ebx
-	setae edx
+	setae rdi
+	setae esi
+	setae ecx
+	setae r12b
+	setae r12
+	setae r8d
+	setae r21b
+	setae r16
+	setae r18d

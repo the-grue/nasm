@@ -1,3 +1,5 @@
 default rel
-	vgatherpf0qps [zmm8*1]
-	vgatherpf0qps [zmm7*1]
+	vgatherpf0qps [zmm4*1]
+	vgatherpf0qps [zmm5*1]
+	vgatherpf0qps [zmm11*1]
+	vgatherpf0qps [zmm24*1]

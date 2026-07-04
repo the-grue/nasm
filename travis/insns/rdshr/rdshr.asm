@@ -1,3 +1,3 @@
 default rel
 	rdshr edx
-	rdshr esi
+	rdshr ebx

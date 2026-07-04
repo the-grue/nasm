@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for CMPEQSS",
+  "id": "cmpeqss16",
+  "format": "bin",
+  "source": "cmpeqss_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/cmpeqss/",
+  "target": [
+   { "output": "cmpeqss.bin16", "match": "cmpeqss.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for CMPEQSS",
+  "id": "cmpeqss32",
+  "format": "bin",
+  "source": "cmpeqss_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/cmpeqss/",
+  "target": [
+   { "output": "cmpeqss.bin32", "match": "cmpeqss.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for CMPEQSS",
   "id": "cmpeqss64",
   "format": "bin",
   "source": "cmpeqss.asm",

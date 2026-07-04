@@ -1,13 +1,17 @@
 default rel
-	vfmsubaddps xmm6, xmm1, xmm4, xmm3
-	vfmsubaddps xmm6, xmm4, xmm3
-	vfmsubaddps xmm0, xmm9, xmm15, xmm13
-	vfmsubaddps ymm0, ymm3, ymm6, ymm11
-	vfmsubaddps ymm0, ymm6, ymm11
-	vfmsubaddps ymm8, ymm6, yword [0x8dc], ymm14
-	vfmsubaddps xmm2, xmm15, xmm7, xmm11
-	vfmsubaddps xmm2, xmm7, xmm11
-	vfmsubaddps xmm5, xmm4, xmm10, xmm13
-	vfmsubaddps ymm9, ymm13, ymm1, ymm4
-	vfmsubaddps ymm9, ymm1, ymm4
-	vfmsubaddps ymm1, ymm14, ymm2, ymm5
+	vfmsubaddps xmm3, xmm0, xmm2, xmm1
+	vfmsubaddps xmm3, xmm2, xmm1
+	vfmsubaddps xmm3, xmm5, xmm3, xmm5
+	vfmsubaddps ymm4, ymm7, ymm7, ymm3
+	vfmsubaddps ymm4, ymm7, ymm3
+	vfmsubaddps ymm6, ymm0, ymm2, ymm0
+	vfmsubaddps xmm7, xmm1, xmm3, xmm1
+	vfmsubaddps xmm7, xmm3, xmm1
+	vfmsubaddps xmm3, xmm7, xmm6, oword [0x191]
+	vfmsubaddps ymm0, ymm7, ymm6, ymm1
+	vfmsubaddps ymm0, ymm6, ymm1
+	vfmsubaddps ymm7, ymm0, ymm4, ymm0
+	vfmsubaddps xmm8, xmm12, xmm13, xmm15
+	vfmsubaddps ymm13, ymm13, ymm10, ymm10
+	vfmsubaddps xmm8, xmm9, xmm10, xmm12
+	vfmsubaddps ymm15, ymm12, ymm14, ymm15

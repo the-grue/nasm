@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for COMISD",
+  "id": "comisd16",
+  "format": "bin",
+  "source": "comisd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/comisd/",
+  "target": [
+   { "output": "comisd.bin16", "match": "comisd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for COMISD",
+  "id": "comisd32",
+  "format": "bin",
+  "source": "comisd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/comisd/",
+  "target": [
+   { "output": "comisd.bin32", "match": "comisd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for COMISD",
   "id": "comisd64",
   "format": "bin",
   "source": "comisd.asm",

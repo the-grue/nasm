@@ -1,7 +1,9 @@
 default rel
-	vfrczpd xmm6, xmm0
-	vfrczpd xmm6
-	vfrczpd xmm0, xmm14
-	vfrczpd ymm1, ymm6
-	vfrczpd ymm1
-	vfrczpd ymm15, yword [0xcf8]
+	vfrczpd xmm3, xmm0
+	vfrczpd xmm3
+	vfrczpd xmm1, xmm7
+	vfrczpd ymm7, yword [0xa82]
+	vfrczpd ymm7
+	vfrczpd ymm6, ymm5
+	vfrczpd xmm8, xmm8
+	vfrczpd ymm15, ymm11

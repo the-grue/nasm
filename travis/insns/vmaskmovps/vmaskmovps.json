@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VMASKMOVPS",
+  "id": "vmaskmovps16",
+  "format": "bin",
+  "source": "vmaskmovps_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vmaskmovps/",
+  "target": [
+   { "output": "vmaskmovps.bin16", "match": "vmaskmovps.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VMASKMOVPS",
+  "id": "vmaskmovps32",
+  "format": "bin",
+  "source": "vmaskmovps_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vmaskmovps/",
+  "target": [
+   { "output": "vmaskmovps.bin32", "match": "vmaskmovps.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VMASKMOVPS",
   "id": "vmaskmovps64",
   "format": "bin",
   "source": "vmaskmovps.asm",

@@ -1,6 +1,6 @@
 	ccmpl 8, dl, al
-	ccmpl 5, dl, cl
-	ccmpl 1, word [0xf8a], cx
-	ccmpl 7, word [0x4d1], ax
-	ccmpl 9, eax, esi
-	ccmpl 15, ebx, eax
+	ccmpl 15, bl, dl
+	ccmpl 4, si, bx
+	ccmpl 15, word [0x50c], bx
+	ccmpl 10, dword [0xabe], esi
+	ccmpl 10, edx, edx

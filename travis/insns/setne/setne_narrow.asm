@@ -1,4 +1,4 @@
 	setne byte [0x598]
-	setne bl
+	setne al
 	setne ebp
-	setne ecx
+	setne eax

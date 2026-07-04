@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VREDUCESD",
+  "id": "vreducesd16",
+  "format": "bin",
+  "source": "vreducesd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vreducesd/",
+  "target": [
+   { "output": "vreducesd.bin16", "match": "vreducesd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VREDUCESD",
+  "id": "vreducesd32",
+  "format": "bin",
+  "source": "vreducesd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vreducesd/",
+  "target": [
+   { "output": "vreducesd.bin32", "match": "vreducesd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VREDUCESD",
   "id": "vreducesd64",
   "format": "bin",
   "source": "vreducesd.asm",

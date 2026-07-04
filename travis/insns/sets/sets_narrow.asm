@@ -1,4 +1,4 @@
 	sets bl
-	sets dl
-	sets edx
-	sets edx
+	sets cl
+	sets esi
+	sets ecx

@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VFMADD132SH",
+  "id": "vfmadd132sh16",
+  "format": "bin",
+  "source": "vfmadd132sh_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vfmadd132sh/",
+  "target": [
+   { "output": "vfmadd132sh.bin16", "match": "vfmadd132sh.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VFMADD132SH",
+  "id": "vfmadd132sh32",
+  "format": "bin",
+  "source": "vfmadd132sh_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vfmadd132sh/",
+  "target": [
+   { "output": "vfmadd132sh.bin32", "match": "vfmadd132sh.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VFMADD132SH",
   "id": "vfmadd132sh64",
   "format": "bin",
   "source": "vfmadd132sh.asm",

@@ -1,10 +1,16 @@
 default rel
-	vaesenclast xmm5, xmm15, xmm6
-	vaesenclast xmm5, xmm6
-	vaesenclast xmm2, xmm10, xmm3
-	vaesenclast ymm10, ymm7, yword [0x95a]
-	vaesenclast ymm10, yword [0x95a]
-	vaesenclast ymm0, ymm12, ymm11
-	vaesenclast zmm1, zmm11, zmm0
-	vaesenclast zmm1, zmm0
-	vaesenclast zmm14, zmm1, zmm3
+	vaesenclast xmm2, xmm7, xmm3
+	vaesenclast xmm2, xmm3
+	vaesenclast xmm7, xmm4, xmm6
+	vaesenclast ymm1, ymm5, ymm5
+	vaesenclast ymm1, ymm5
+	vaesenclast ymm0, ymm0, ymm6
+	vaesenclast zmm5, zmm0, zword [0xd18]
+	vaesenclast zmm5, zword [0xd18]
+	vaesenclast zmm1, zmm4, zmm0
+	vaesenclast xmm9, xmm13, xmm12
+	vaesenclast ymm11, ymm8, ymm15
+	vaesenclast zmm8, zmm8, zmm15
+	vaesenclast xmm19, xmm26, xmm23
+	vaesenclast ymm17, ymm16, ymm19
+	vaesenclast zmm16, zmm20, zmm29

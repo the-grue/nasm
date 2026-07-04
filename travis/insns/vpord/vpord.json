@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPORD",
+  "id": "vpord16",
+  "format": "bin",
+  "source": "vpord_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpord/",
+  "target": [
+   { "output": "vpord.bin16", "match": "vpord.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPORD",
+  "id": "vpord32",
+  "format": "bin",
+  "source": "vpord_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpord/",
+  "target": [
+   { "output": "vpord.bin32", "match": "vpord.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPORD",
   "id": "vpord64",
   "format": "bin",
   "source": "vpord.asm",

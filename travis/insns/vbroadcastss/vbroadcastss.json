@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VBROADCASTSS",
+  "id": "vbroadcastss16",
+  "format": "bin",
+  "source": "vbroadcastss_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vbroadcastss/",
+  "target": [
+   { "output": "vbroadcastss.bin16", "match": "vbroadcastss.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VBROADCASTSS",
+  "id": "vbroadcastss32",
+  "format": "bin",
+  "source": "vbroadcastss_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vbroadcastss/",
+  "target": [
+   { "output": "vbroadcastss.bin32", "match": "vbroadcastss.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VBROADCASTSS",
   "id": "vbroadcastss64",
   "format": "bin",
   "source": "vbroadcastss.asm",

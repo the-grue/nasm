@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for XORPD",
+  "id": "xorpd16",
+  "format": "bin",
+  "source": "xorpd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/xorpd/",
+  "target": [
+   { "output": "xorpd.bin16", "match": "xorpd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for XORPD",
+  "id": "xorpd32",
+  "format": "bin",
+  "source": "xorpd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/xorpd/",
+  "target": [
+   { "output": "xorpd.bin32", "match": "xorpd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for XORPD",
   "id": "xorpd64",
   "format": "bin",
   "source": "xorpd.asm",

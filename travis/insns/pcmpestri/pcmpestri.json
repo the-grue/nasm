@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for PCMPESTRI",
+  "id": "pcmpestri16",
+  "format": "bin",
+  "source": "pcmpestri_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/pcmpestri/",
+  "target": [
+   { "output": "pcmpestri.bin16", "match": "pcmpestri.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for PCMPESTRI",
+  "id": "pcmpestri32",
+  "format": "bin",
+  "source": "pcmpestri_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/pcmpestri/",
+  "target": [
+   { "output": "pcmpestri.bin32", "match": "pcmpestri.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for PCMPESTRI",
   "id": "pcmpestri64",
   "format": "bin",
   "source": "pcmpestri.asm",

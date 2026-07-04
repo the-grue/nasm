@@ -1,9 +1,15 @@
 default rel
 	ud1 si, si
-	ud1 di, bx
-	ud1 edi, eax
-	ud1 ecx, edi
-	ud1 rdi, rbp
-	ud1 rcx, rcx
+	ud1 ax, cx
+	ud1 esi, dword [0xc08]
+	ud1 ecx, ebp
+	ud1 rbx, rax
+	ud1 rdi, qword [0xc3f]
 	ud1
 	ud1
+	ud1 r14w, r12w
+	ud1 r10d, r15d
+	ud1 r15, r10
+	ud1 r18w, r28w
+	ud1 r21d, r23d
+	ud1 r22, r22

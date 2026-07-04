@@ -1,4 +1,4 @@
 	setnb bl
-	setnb dl
-	setnb esi
-	setnb ebp
+	setnb cl
+	setnb edx
+	setnb ecx

@@ -1,7 +1,13 @@
 default rel
 	sets bl
-	sets dl
-	sets rax
+	sets cl
 	sets rdx
-	sets edx
-	sets edx
+	sets rsi
+	sets esi
+	sets ecx
+	sets r12b
+	sets r11
+	sets r15d
+	sets r28b
+	sets r17
+	sets r17d

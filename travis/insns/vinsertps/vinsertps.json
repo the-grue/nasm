@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VINSERTPS",
+  "id": "vinsertps16",
+  "format": "bin",
+  "source": "vinsertps_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vinsertps/",
+  "target": [
+   { "output": "vinsertps.bin16", "match": "vinsertps.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VINSERTPS",
+  "id": "vinsertps32",
+  "format": "bin",
+  "source": "vinsertps_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vinsertps/",
+  "target": [
+   { "output": "vinsertps.bin32", "match": "vinsertps.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VINSERTPS",
   "id": "vinsertps64",
   "format": "bin",
   "source": "vinsertps.asm",

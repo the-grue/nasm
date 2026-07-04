@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for MULSD",
+  "id": "mulsd16",
+  "format": "bin",
+  "source": "mulsd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/mulsd/",
+  "target": [
+   { "output": "mulsd.bin16", "match": "mulsd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for MULSD",
+  "id": "mulsd32",
+  "format": "bin",
+  "source": "mulsd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/mulsd/",
+  "target": [
+   { "output": "mulsd.bin32", "match": "mulsd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for MULSD",
   "id": "mulsd64",
   "format": "bin",
   "source": "mulsd.asm",

@@ -1,5 +1,7 @@
 default rel
-	vroundpd xmm6, oword [0x827], 0x40
-	vroundpd xmm11, oword [0x6f4], 0x95
-	vroundpd ymm5, ymm9, 0x10
-	vroundpd ymm7, ymm3, 0x12
+	vroundpd xmm3, oword [0x827], 0x40
+	vroundpd xmm4, xmm3, 0x51
+	vroundpd ymm1, ymm3, 0x9a
+	vroundpd ymm3, yword [0x434], 0x11
+	vroundpd xmm13, xmm14, 0x66
+	vroundpd ymm9, ymm15, 0xa9

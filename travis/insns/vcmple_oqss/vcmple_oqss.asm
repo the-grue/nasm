@@ -1,6 +1,8 @@
 default rel
-	vcmple_oqss xmm3, xmm1, xmm9
-	vcmple_oqss xmm3, xmm9
-	vcmple_oqss xmm7, xmm13, qword [0x110]
-	vcmple_oqss k7, xmm15, xmm14
-	vcmple_oqss k6, xmm9, dword [0x4f7]
+	vcmple_oqss xmm1, xmm0, xmm4
+	vcmple_oqss xmm1, xmm4
+	vcmple_oqss xmm1, xmm7, qword [0x9ae]
+	vcmple_oqss k7, xmm2, xmm3
+	vcmple_oqss k5, xmm1, dword [0x41e]
+	vcmple_oqss xmm11, xmm14, xmm13
+	vcmple_oqss k3, xmm12, xmm14

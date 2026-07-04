@@ -1,7 +1,11 @@
 default rel
 	pdep eax, edi, ebp
 	pdep eax, ebp
-	pdep ecx, eax, esi
-	pdep rdi, rdi, rdx
-	pdep rdi, rdx
-	pdep rbp, rdx, rcx
+	pdep esi, edx, dword [0x8c9]
+	pdep rax, rcx, rcx
+	pdep rax, rcx
+	pdep rsi, rsi, rbp
+	pdep r11d, r8d, r12d
+	pdep r12, r14, r10
+	pdep r26d, r27d, r27d
+	pdep r28, r18, r28

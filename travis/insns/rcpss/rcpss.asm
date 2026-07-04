@@ -1,3 +1,4 @@
 default rel
-	rcpss xmm15, xmm14
-	rcpss xmm0, xmm3
+	rcpss xmm7, xmm7
+	rcpss xmm4, dword [0xd1d]
+	rcpss xmm8, xmm12

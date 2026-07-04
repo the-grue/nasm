@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPADDSB",
+  "id": "vpaddsb16",
+  "format": "bin",
+  "source": "vpaddsb_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpaddsb/",
+  "target": [
+   { "output": "vpaddsb.bin16", "match": "vpaddsb.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPADDSB",
+  "id": "vpaddsb32",
+  "format": "bin",
+  "source": "vpaddsb_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpaddsb/",
+  "target": [
+   { "output": "vpaddsb.bin32", "match": "vpaddsb.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPADDSB",
   "id": "vpaddsb64",
   "format": "bin",
   "source": "vpaddsb.asm",

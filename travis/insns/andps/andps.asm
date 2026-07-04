@@ -1,3 +1,4 @@
 default rel
-	andps xmm15, xmm9
-	andps xmm13, xmm12
+	andps xmm7, xmm4
+	andps xmm7, xmm6
+	andps xmm14, xmm11

@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for CMPLTPS",
+  "id": "cmpltps16",
+  "format": "bin",
+  "source": "cmpltps_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/cmpltps/",
+  "target": [
+   { "output": "cmpltps.bin16", "match": "cmpltps.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for CMPLTPS",
+  "id": "cmpltps32",
+  "format": "bin",
+  "source": "cmpltps_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/cmpltps/",
+  "target": [
+   { "output": "cmpltps.bin32", "match": "cmpltps.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for CMPLTPS",
   "id": "cmpltps64",
   "format": "bin",
   "source": "cmpltps.asm",

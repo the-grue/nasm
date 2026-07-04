@@ -1,5 +1,7 @@
 default rel
-	cvttsd2si ebp, xmm5
-	cvttsd2si edx, xmm3
-	cvttsd2si rdx, qword [0xc54]
-	cvttsd2si rbp, xmm0
+	cvttsd2si ebp, xmm2
+	cvttsd2si edi, qword [0xe6e]
+	cvttsd2si rcx, xmm6
+	cvttsd2si rax, xmm1
+	cvttsd2si r11d, xmm11
+	cvttsd2si r15, xmm15

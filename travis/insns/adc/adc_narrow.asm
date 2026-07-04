@@ -1,6 +1,6 @@
 	adc al, bl
-	adc byte [0x25d], dl
-	adc ax, dx
-	adc word [0x974], di
-	adc edx, ebx
-	adc edi, edx
+	adc bl, dl
+	adc di, dx
+	adc bp, bp
+	adc eax, ecx
+	adc ebx, ecx

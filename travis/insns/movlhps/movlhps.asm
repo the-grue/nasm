@@ -1,3 +1,4 @@
 default rel
-	movlhps xmm2, xmm9
-	movlhps xmm14, xmm4
+	movlhps xmm1, xmm4
+	movlhps xmm4, xmm0
+	movlhps xmm15, xmm10

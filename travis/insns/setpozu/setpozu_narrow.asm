@@ -1,4 +1,4 @@
-	setpozu ebx
+	setpozu ecx
 	setpozu esi
+	setpozu dl
 	setpozu al
-	setpozu cl

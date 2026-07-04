@@ -1,8 +1,14 @@
 default rel
-	vmovsh xmm5, word [0xb2c]
-	vmovsh xmm12, word [0x606]
-	vmovsh word [0xdd9], xmm15
-	vmovsh word [0xbb1], xmm13
-	vmovsh xmm8, xmm4, xmm6
-	vmovsh xmm8, xmm6
-	vmovsh xmm7, xmm0, xmm2
+	vmovsh xmm2, word [0xb2c]
+	vmovsh xmm5, word [0xd4f]
+	vmovsh word [0x932], xmm2
+	vmovsh word [0xc57], xmm1
+	vmovsh xmm1, xmm3, xmm6
+	vmovsh xmm1, xmm6
+	vmovsh xmm4, xmm0, xmm3
+	vmovsh xmm14, word [0x606]
+	vmovsh word [0x6dd], xmm11
+	vmovsh xmm10, xmm15, xmm8
+	vmovsh xmm29, word [0xf4a]
+	vmovsh word [0x156], xmm18
+	vmovsh xmm17, xmm16, xmm24

@@ -1,6 +1,6 @@
 	cmovnc di, bp
-	cmovnc si, word [0x58d]
-	cmovnc ecx, esi
-	cmovnc ebp, ebp
-	cmovnc ax, di, si
-	cmovnc cx, bx, bp
+	cmovnc ax, bp
+	cmovnc ebx, dword [0xfa7]
+	cmovnc ebp, edi
+	cmovnc ax, bp, dx
+	cmovnc di, cx, di

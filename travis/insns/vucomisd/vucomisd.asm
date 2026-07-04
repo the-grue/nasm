@@ -1,5 +1,9 @@
 default rel
-	vucomisd xmm4, xmm9
-	vucomisd xmm10, xmm14
-	vucomisd xmm2, qword [0xf70]
-	vucomisd xmm8, xmm12
+	vucomisd xmm2, xmm4
+	vucomisd xmm7, qword [0x8a8]
+	vucomisd xmm2, qword [0x76f]
+	vucomisd xmm0, xmm7
+	vucomisd xmm13, xmm9
+	vucomisd xmm15, xmm8
+	vucomisd xmm30, xmm18
+	vucomisd xmm23, xmm27

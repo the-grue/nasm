@@ -1,10 +1,16 @@
 default rel
-	vfnmadd132ph xmm3, xmm14, oword [0xf73]
-	vfnmadd132ph xmm3, oword [0xf73]
-	vfnmadd132ph xmm4, xmm9, xmm4
-	vfnmadd132ph ymm6, ymm4, ymm14
-	vfnmadd132ph ymm6, ymm14
-	vfnmadd132ph ymm11, ymm1, yword [0x3ad]
-	vfnmadd132ph zmm13, zmm13, zmm8
-	vfnmadd132ph zmm13, zmm8
-	vfnmadd132ph zmm5, zmm3, zmm3
+	vfnmadd132ph xmm1, xmm7, oword [0xf73]
+	vfnmadd132ph xmm1, oword [0xf73]
+	vfnmadd132ph xmm2, xmm7, xmm0
+	vfnmadd132ph ymm6, ymm1, yword [0xd9a]
+	vfnmadd132ph ymm6, yword [0xd9a]
+	vfnmadd132ph ymm4, ymm2, ymm7
+	vfnmadd132ph zmm4, zmm5, zmm6
+	vfnmadd132ph zmm4, zmm6
+	vfnmadd132ph zmm7, zmm0, zword [0x6c6]
+	vfnmadd132ph xmm10, xmm12, xmm9
+	vfnmadd132ph ymm8, ymm12, ymm10
+	vfnmadd132ph zmm12, zmm14, zmm12
+	vfnmadd132ph xmm20, xmm22, xmm20
+	vfnmadd132ph ymm19, ymm18, ymm19
+	vfnmadd132ph zmm19, zmm23, zmm24

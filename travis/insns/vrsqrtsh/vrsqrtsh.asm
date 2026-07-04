@@ -1,4 +1,6 @@
 default rel
-	vrsqrtsh xmm8, xmm0, xmm5
-	vrsqrtsh xmm8, xmm5
-	vrsqrtsh xmm6, xmm11, xmm3
+	vrsqrtsh xmm4, xmm0, xmm2
+	vrsqrtsh xmm4, xmm2
+	vrsqrtsh xmm4, xmm2, xmm4
+	vrsqrtsh xmm11, xmm13, xmm11
+	vrsqrtsh xmm19, xmm22, xmm31

@@ -1,3 +1,5 @@
 default rel
 	verw word [0xa63]
-	verw word [0xe9c]
+	verw cx
+	verw r14w
+	verw r30w

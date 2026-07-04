@@ -1,10 +1,16 @@
 default rel
-	vscalefph xmm4, xmm6, oword [0xeb9]
-	vscalefph xmm4, oword [0xeb9]
-	vscalefph xmm13, xmm12, xmm5
-	vscalefph ymm3, ymm7, yword [0xb03]
-	vscalefph ymm3, yword [0xb03]
-	vscalefph ymm6, ymm10, ymm1
-	vscalefph zmm2, zmm14, zmm2
-	vscalefph zmm2, zmm2
-	vscalefph zmm10, zmm1, zword [0x7aa]
+	vscalefph xmm2, xmm3, oword [0xeb9]
+	vscalefph xmm2, oword [0xeb9]
+	vscalefph xmm6, xmm5, xmm5
+	vscalefph ymm3, ymm0, ymm7
+	vscalefph ymm3, ymm7
+	vscalefph ymm0, ymm0, ymm2
+	vscalefph zmm3, zmm7, zword [0x437]
+	vscalefph zmm3, zword [0x437]
+	vscalefph zmm5, zmm0, zword [0x84c]
+	vscalefph xmm14, xmm14, xmm11
+	vscalefph ymm11, ymm9, ymm13
+	vscalefph zmm9, zmm15, zmm13
+	vscalefph xmm21, xmm19, xmm23
+	vscalefph ymm17, ymm29, ymm23
+	vscalefph zmm23, zmm20, zmm17

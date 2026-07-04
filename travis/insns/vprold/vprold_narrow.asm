@@ -1,0 +1,9 @@
+	vprold xmm2, oword [0xbd4], 0x7d
+	vprold xmm2, 0x7d
+	vprold xmm0, xmm5, 0xb6
+	vprold ymm6, ymm0, 0xf
+	vprold ymm6, 0xf
+	vprold ymm5, yword [0xd9d], 0xb7
+	vprold zmm3, zword [0x26b], 0x85
+	vprold zmm3, 0x85
+	vprold zmm5, zmm7, 0xae

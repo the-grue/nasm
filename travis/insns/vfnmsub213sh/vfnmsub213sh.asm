@@ -1,4 +1,6 @@
 default rel
-	vfnmsub213sh xmm9, xmm7, xmm7
-	vfnmsub213sh xmm9, xmm7
-	vfnmsub213sh xmm1, xmm12, xmm8
+	vfnmsub213sh xmm4, xmm3, xmm3
+	vfnmsub213sh xmm4, xmm3
+	vfnmsub213sh xmm4, xmm4, xmm2
+	vfnmsub213sh xmm8, xmm14, xmm12
+	vfnmsub213sh xmm24, xmm31, xmm24

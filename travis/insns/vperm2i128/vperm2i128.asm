@@ -1,4 +1,5 @@
 default rel
-	vperm2i128 ymm8, ymm1, ymm13, 0x7e
-	vperm2i128 ymm8, ymm13, 0x7e
-	vperm2i128 ymm7, ymm10, ymm6, 0xd5
+	vperm2i128 ymm4, ymm0, ymm6, 0x7e
+	vperm2i128 ymm4, ymm6, 0x7e
+	vperm2i128 ymm7, ymm6, ymm0, 0x62
+	vperm2i128 ymm11, ymm13, ymm11, 0x6e

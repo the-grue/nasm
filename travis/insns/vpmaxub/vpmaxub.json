@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPMAXUB",
+  "id": "vpmaxub16",
+  "format": "bin",
+  "source": "vpmaxub_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpmaxub/",
+  "target": [
+   { "output": "vpmaxub.bin16", "match": "vpmaxub.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPMAXUB",
+  "id": "vpmaxub32",
+  "format": "bin",
+  "source": "vpmaxub_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpmaxub/",
+  "target": [
+   { "output": "vpmaxub.bin32", "match": "vpmaxub.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPMAXUB",
   "id": "vpmaxub64",
   "format": "bin",
   "source": "vpmaxub.asm",

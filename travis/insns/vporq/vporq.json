@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPORQ",
+  "id": "vporq16",
+  "format": "bin",
+  "source": "vporq_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vporq/",
+  "target": [
+   { "output": "vporq.bin16", "match": "vporq.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPORQ",
+  "id": "vporq32",
+  "format": "bin",
+  "source": "vporq_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vporq/",
+  "target": [
+   { "output": "vporq.bin32", "match": "vporq.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPORQ",
   "id": "vporq64",
   "format": "bin",
   "source": "vporq.asm",

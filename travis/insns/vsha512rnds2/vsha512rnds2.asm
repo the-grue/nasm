@@ -1,3 +1,4 @@
 default rel
-	vsha512rnds2 ymm5, ymm3, xmm1
-	vsha512rnds2 ymm9, ymm6, xmm3
+	vsha512rnds2 ymm2, ymm1, xmm0
+	vsha512rnds2 ymm5, ymm3, xmm7
+	vsha512rnds2 ymm12, ymm11, xmm9

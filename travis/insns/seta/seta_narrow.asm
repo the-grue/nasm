@@ -1,4 +1,4 @@
 	seta bl
-	seta cl
-	seta esi
+	seta byte [0xcfa]
+	seta ebx
 	seta esi

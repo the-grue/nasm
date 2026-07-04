@@ -1,11 +1,15 @@
 default rel
-	vcmpngeps xmm14, xmm6, oword [0xcb9]
-	vcmpngeps xmm14, oword [0xcb9]
-	vcmpngeps xmm6, xmm6, xmm1
-	vcmpngeps ymm12, ymm3, ymm10
-	vcmpngeps ymm12, ymm10
-	vcmpngeps ymm1, ymm13, yword [0x31b]
-	vcmpngeps k5, xmm3, oword [0xb96]
-	vcmpngeps k2, xmm10, xmm11
-	vcmpngeps k3, ymm13, ymm15
-	vcmpngeps k6, ymm7, ymm2
+	vcmpngeps xmm7, xmm3, oword [0xcb9]
+	vcmpngeps xmm7, oword [0xcb9]
+	vcmpngeps xmm3, xmm5, xmm6
+	vcmpngeps ymm6, ymm1, ymm1
+	vcmpngeps ymm6, ymm1
+	vcmpngeps ymm2, ymm6, ymm7
+	vcmpngeps k6, xmm3, xmm1
+	vcmpngeps k7, xmm4, oword [0x789]
+	vcmpngeps k2, ymm2, ymm5
+	vcmpngeps k5, ymm1, ymm2
+	vcmpngeps xmm11, xmm11, xmm10
+	vcmpngeps ymm15, ymm13, ymm10
+	vcmpngeps k7, xmm10, xmm13
+	vcmpngeps k7, ymm9, ymm11

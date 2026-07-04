@@ -1,7 +1,13 @@
 default rel
 	hint_nop53 cx
-	hint_nop53 bp
-	hint_nop53 edi
+	hint_nop53 di
 	hint_nop53 dword [0x3e9]
-	hint_nop53 qword [0xf5c]
-	hint_nop53 rax
+	hint_nop53 eax
+	hint_nop53 qword [0x87d]
+	hint_nop53 rcx
+	hint_nop53 r10w
+	hint_nop53 r14d
+	hint_nop53 r8
+	hint_nop53 r31w
+	hint_nop53 r31d
+	hint_nop53 r22

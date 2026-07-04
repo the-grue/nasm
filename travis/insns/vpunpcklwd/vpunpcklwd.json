@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPUNPCKLWD",
+  "id": "vpunpcklwd16",
+  "format": "bin",
+  "source": "vpunpcklwd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpunpcklwd/",
+  "target": [
+   { "output": "vpunpcklwd.bin16", "match": "vpunpcklwd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPUNPCKLWD",
+  "id": "vpunpcklwd32",
+  "format": "bin",
+  "source": "vpunpcklwd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpunpcklwd/",
+  "target": [
+   { "output": "vpunpcklwd.bin32", "match": "vpunpcklwd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPUNPCKLWD",
   "id": "vpunpcklwd64",
   "format": "bin",
   "source": "vpunpcklwd.asm",

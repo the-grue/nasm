@@ -1,6 +1,6 @@
 	cfcmovno word [0xde4], ax
-	cfcmovno word [0xedc], bx
-	cfcmovno ecx, ebp
-	cfcmovno eax, ecx
-	cfcmovno dx, word [0x86d]
-	cfcmovno dx, cx
+	cfcmovno bp, cx
+	cfcmovno ecx, ebx
+	cfcmovno edx, ebp
+	cfcmovno di, word [0x8dc]
+	cfcmovno cx, word [0xed5]

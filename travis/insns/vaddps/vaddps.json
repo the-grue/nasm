@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VADDPS",
+  "id": "vaddps16",
+  "format": "bin",
+  "source": "vaddps_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vaddps/",
+  "target": [
+   { "output": "vaddps.bin16", "match": "vaddps.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VADDPS",
+  "id": "vaddps32",
+  "format": "bin",
+  "source": "vaddps_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vaddps/",
+  "target": [
+   { "output": "vaddps.bin32", "match": "vaddps.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VADDPS",
   "id": "vaddps64",
   "format": "bin",
   "source": "vaddps.asm",

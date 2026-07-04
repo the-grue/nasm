@@ -1,7 +1,13 @@
 default rel
 	sete byte [0x4ef]
-	sete byte [0x3b4]
+	sete byte [0xa24]
 	sete rbp
-	sete rsi
-	sete ebp
+	sete rax
 	sete edx
+	sete eax
+	sete r15b
+	sete r11
+	sete r15d
+	sete r18b
+	sete r26
+	sete r21d

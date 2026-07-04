@@ -1,2 +1,2 @@
 	llwpcb ecx
-	llwpcb ebp
+	llwpcb edx

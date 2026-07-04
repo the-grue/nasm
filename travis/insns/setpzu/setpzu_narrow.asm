@@ -1,4 +1,4 @@
-	setpzu edx
-	setpzu esi
-	setpzu byte [0xbe9]
-	setpzu al
+	setpzu ebp
+	setpzu eax
+	setpzu dl
+	setpzu cl

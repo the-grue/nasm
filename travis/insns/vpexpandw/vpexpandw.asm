@@ -1,7 +1,13 @@
 default rel
-	vpexpandw xmm4, xmm7
-	vpexpandw xmm3, oword [0x98a]
-	vpexpandw ymm13, ymm15
-	vpexpandw ymm5, ymm7
-	vpexpandw zmm5, zword [0x108]
-	vpexpandw zmm8, zmm11
+	vpexpandw xmm2, xmm3
+	vpexpandw xmm1, oword [0x632]
+	vpexpandw ymm3, ymm2
+	vpexpandw ymm5, ymm0
+	vpexpandw zmm6, zword [0xf22]
+	vpexpandw zmm3, zmm1
+	vpexpandw xmm9, xmm13
+	vpexpandw ymm15, ymm8
+	vpexpandw zmm14, zmm15
+	vpexpandw xmm25, xmm29
+	vpexpandw ymm24, ymm25
+	vpexpandw zmm28, zmm27

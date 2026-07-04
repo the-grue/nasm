@@ -1,6 +1,6 @@
 	btc ax, bx
-	btc dx, dx
-	btc dword [0x5e1], ecx
-	btc ecx, edx
-	btc bp, 0x61
-	btc bp, 0xd3
+	btc cx, bx
+	btc edx, ebx
+	btc dword [0x790], ebp
+	btc si, 0x78
+	btc word [0xdc6], 0x99

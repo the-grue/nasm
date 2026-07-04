@@ -1,5 +1,9 @@
 default rel
 	cmpnsxadd dword [0x231], ebx, edx
-	cmpnsxadd dword [0x791], edi, ebp
-	cmpnsxadd qword [0xe56], rax, rsi
-	cmpnsxadd qword [0x598], rbp, rax
+	cmpnsxadd dword [0x598], ebp, eax
+	cmpnsxadd qword [0x257], rsi, rcx
+	cmpnsxadd qword [0xbbe], rdx, rdx
+	cmpnsxadd dword [0x791], r14d, r15d
+	cmpnsxadd qword [0x669], r10, r10
+	cmpnsxadd dword [0xe56], r16d, r26d
+	cmpnsxadd qword [0x733], r19, r19

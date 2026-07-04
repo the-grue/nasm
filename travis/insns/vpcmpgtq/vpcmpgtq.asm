@@ -1,11 +1,15 @@
 default rel
-	vpcmpgtq xmm1, xmm7, xmm4
-	vpcmpgtq xmm1, xmm4
-	vpcmpgtq xmm1, xmm11, xmm0
-	vpcmpgtq ymm9, ymm4, yword [0x141]
-	vpcmpgtq ymm9, yword [0x141]
-	vpcmpgtq ymm6, ymm13, ymm8
-	vpcmpgtq k5, xmm10, oword [0x69d]
-	vpcmpgtq k4, xmm6, xmm11
-	vpcmpgtq k1, ymm14, ymm5
-	vpcmpgtq k1, ymm3, yword [0x68e]
+	vpcmpgtq xmm0, xmm3, xmm2
+	vpcmpgtq xmm0, xmm2
+	vpcmpgtq xmm6, xmm0, xmm6
+	vpcmpgtq ymm2, ymm4, ymm5
+	vpcmpgtq ymm2, ymm5
+	vpcmpgtq ymm0, ymm7, ymm2
+	vpcmpgtq k1, xmm1, oword [0x68e]
+	vpcmpgtq k7, xmm3, oword [0xe6b]
+	vpcmpgtq k2, ymm3, yword [0x7ba]
+	vpcmpgtq k7, ymm1, ymm6
+	vpcmpgtq xmm8, xmm13, xmm13
+	vpcmpgtq ymm13, ymm10, ymm11
+	vpcmpgtq k3, xmm8, xmm9
+	vpcmpgtq k2, ymm11, ymm14

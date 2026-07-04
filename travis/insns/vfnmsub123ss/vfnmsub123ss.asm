@@ -1,3 +1,4 @@
 default rel
-	vfnmsub123ss xmm7, xmm7, dword [0x1fe]
-	vfnmsub123ss xmm6, xmm13, xmm13
+	vfnmsub123ss xmm3, xmm3, dword [0x1fe]
+	vfnmsub123ss xmm3, xmm5, dword [0x74d]
+	vfnmsub123ss xmm11, xmm14, xmm12

@@ -1,4 +1,4 @@
 	hint_nop 0x6d, ax, dx
-	hint_nop 0x7b, ax, word [0x6d9]
-	hint_nop 0x3c, ecx, ebp
-	hint_nop 0x9, ebp, ebp
+	hint_nop 0x2, bp, bp
+	hint_nop 0x4c, ebp, ebx
+	hint_nop 0x6a, ecx, dword [0x6cf]

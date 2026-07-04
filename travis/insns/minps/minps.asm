@@ -1,3 +1,4 @@
 default rel
-	minps xmm1, xmm0
-	minps xmm13, xmm11
+	minps xmm0, xmm0
+	minps xmm7, xmm1
+	minps xmm14, xmm11

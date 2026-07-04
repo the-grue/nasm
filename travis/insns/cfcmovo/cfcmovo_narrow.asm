@@ -1,6 +1,6 @@
 	cfcmovo ax, bx
-	cfcmovo word [0xcfb], di
-	cfcmovo ebp, ebp
-	cfcmovo dword [0x805], ebp
-	cfcmovo di, dx
-	cfcmovo cx, ax
+	cfcmovo word [0xf69], si
+	cfcmovo ebp, ebx
+	cfcmovo edi, ecx
+	cfcmovo cx, bx
+	cfcmovo bp, dx

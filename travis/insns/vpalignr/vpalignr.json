@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPALIGNR",
+  "id": "vpalignr16",
+  "format": "bin",
+  "source": "vpalignr_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpalignr/",
+  "target": [
+   { "output": "vpalignr.bin16", "match": "vpalignr.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPALIGNR",
+  "id": "vpalignr32",
+  "format": "bin",
+  "source": "vpalignr_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpalignr/",
+  "target": [
+   { "output": "vpalignr.bin32", "match": "vpalignr.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPALIGNR",
   "id": "vpalignr64",
   "format": "bin",
   "source": "vpalignr.asm",

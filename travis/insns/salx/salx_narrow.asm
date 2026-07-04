@@ -1,9 +1,9 @@
 	salx ebx, ebx, cl
 	salx ebx, cl
-	salx ecx, dword [0xdd2], al
-	salx edx, dword [0x631], ax
-	salx edx, ax
-	salx ebp, dword [0xd13], di
-	salx esi, ebp, ebp
-	salx esi, ebp
-	salx ecx, edi, edx
+	salx ecx, ebp, dl
+	salx edi, dword [0xb57], si
+	salx edi, si
+	salx ecx, edx, bp
+	salx edi, ecx, ebp
+	salx edi, ebp
+	salx eax, dword [0x20e], ebp

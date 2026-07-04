@@ -1,7 +1,13 @@
 default rel
 	setnb bl
-	setnb dl
+	setnb cl
 	setnb rsi
-	setnb rdx
-	setnb esi
-	setnb ebp
+	setnb rax
+	setnb edx
+	setnb ecx
+	setnb r11b
+	setnb r15
+	setnb r13d
+	setnb r30b
+	setnb r21
+	setnb r17d

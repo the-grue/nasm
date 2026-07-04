@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VFRCZPS",
+  "id": "vfrczps16",
+  "format": "bin",
+  "source": "vfrczps_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vfrczps/",
+  "target": [
+   { "output": "vfrczps.bin16", "match": "vfrczps.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VFRCZPS",
+  "id": "vfrczps32",
+  "format": "bin",
+  "source": "vfrczps_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vfrczps/",
+  "target": [
+   { "output": "vfrczps.bin32", "match": "vfrczps.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VFRCZPS",
   "id": "vfrczps64",
   "format": "bin",
   "source": "vfrczps.asm",

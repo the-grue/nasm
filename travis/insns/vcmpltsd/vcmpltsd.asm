@@ -1,6 +1,8 @@
 default rel
-	vcmpltsd xmm1, xmm7, xmm12
-	vcmpltsd xmm1, xmm12
-	vcmpltsd xmm11, xmm7, xmm15
-	vcmpltsd k6, xmm13, xmm7
-	vcmpltsd k3, xmm1, qword [0x6eb]
+	vcmpltsd xmm0, xmm3, xmm6
+	vcmpltsd xmm0, xmm6
+	vcmpltsd xmm4, xmm3, xmm0
+	vcmpltsd k7, xmm3, xmm5
+	vcmpltsd k3, xmm7, xmm2
+	vcmpltsd xmm13, xmm11, xmm9
+	vcmpltsd k6, xmm11, xmm15

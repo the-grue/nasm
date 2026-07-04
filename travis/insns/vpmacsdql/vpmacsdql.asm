@@ -1,4 +1,5 @@
 default rel
-	vpmacsdql xmm1, xmm6, xmm9, xmm12
-	vpmacsdql xmm1, xmm9, xmm12
-	vpmacsdql xmm11, xmm7, xmm8, xmm4
+	vpmacsdql xmm0, xmm3, xmm4, xmm6
+	vpmacsdql xmm0, xmm4, xmm6
+	vpmacsdql xmm3, xmm2, oword [0xc34], xmm2
+	vpmacsdql xmm13, xmm11, xmm11, xmm12

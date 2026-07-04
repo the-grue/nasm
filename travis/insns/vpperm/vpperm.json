@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPPERM",
+  "id": "vpperm16",
+  "format": "bin",
+  "source": "vpperm_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpperm/",
+  "target": [
+   { "output": "vpperm.bin16", "match": "vpperm.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPPERM",
+  "id": "vpperm32",
+  "format": "bin",
+  "source": "vpperm_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpperm/",
+  "target": [
+   { "output": "vpperm.bin32", "match": "vpperm.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPPERM",
   "id": "vpperm64",
   "format": "bin",
   "source": "vpperm.asm",

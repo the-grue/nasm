@@ -1,13 +1,21 @@
 default rel
-	vpmaxsw xmm10, xmm1, oword [0xd7e]
-	vpmaxsw xmm10, oword [0xd7e]
-	vpmaxsw xmm10, xmm8, xmm11
-	vpmaxsw ymm13, ymm1, ymm8
-	vpmaxsw ymm13, ymm8
-	vpmaxsw ymm10, ymm5, ymm12
-	vpmaxsw xmm15, xmm0, xmm9
-	vpmaxsw xmm15, xmm9
-	vpmaxsw xmm8, xmm7, xmm3
-	vpmaxsw ymm10, ymm15, ymm8
-	vpmaxsw ymm10, ymm8
-	vpmaxsw ymm15, ymm9, ymm8
+	vpmaxsw xmm5, xmm0, oword [0xd7e]
+	vpmaxsw xmm5, oword [0xd7e]
+	vpmaxsw xmm4, xmm4, xmm2
+	vpmaxsw ymm0, ymm6, yword [0x1ac]
+	vpmaxsw ymm0, yword [0x1ac]
+	vpmaxsw ymm5, ymm7, ymm4
+	vpmaxsw xmm7, xmm4, xmm4
+	vpmaxsw xmm7, xmm4
+	vpmaxsw xmm2, xmm3, oword [0x389]
+	vpmaxsw ymm5, ymm0, yword [0x39b]
+	vpmaxsw ymm5, yword [0x39b]
+	vpmaxsw ymm3, ymm0, yword [0x9de]
+	vpmaxsw xmm13, xmm12, xmm12
+	vpmaxsw ymm10, ymm12, ymm12
+	vpmaxsw xmm14, xmm13, xmm12
+	vpmaxsw ymm11, ymm15, ymm15
+	vpmaxsw xmm27, xmm29, xmm17
+	vpmaxsw ymm23, ymm25, ymm19
+	vpmaxsw xmm28, xmm18, xmm21
+	vpmaxsw ymm26, ymm25, ymm19

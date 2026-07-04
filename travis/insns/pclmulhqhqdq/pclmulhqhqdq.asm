@@ -1,3 +1,4 @@
 default rel
-	pclmulhqhqdq xmm4, xmm1
-	pclmulhqhqdq xmm9, xmm7
+	pclmulhqhqdq xmm2, xmm0
+	pclmulhqhqdq xmm4, xmm7
+	pclmulhqhqdq xmm12, xmm9

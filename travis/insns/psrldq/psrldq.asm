@@ -1,3 +1,4 @@
 default rel
-	psrldq xmm13, 0x2
-	psrldq xmm11, 0x11
+	psrldq xmm6, 0x2
+	psrldq xmm0, 0x37
+	psrldq xmm13, 0x11

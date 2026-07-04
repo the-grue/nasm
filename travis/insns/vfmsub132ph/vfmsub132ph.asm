@@ -1,10 +1,16 @@
 default rel
-	vfmsub132ph xmm11, xmm1, xmm6
-	vfmsub132ph xmm11, xmm6
-	vfmsub132ph xmm11, xmm3, xmm15
-	vfmsub132ph ymm11, ymm5, ymm11
-	vfmsub132ph ymm11, ymm11
-	vfmsub132ph ymm9, ymm14, ymm11
-	vfmsub132ph zmm4, zmm7, zmm5
-	vfmsub132ph zmm4, zmm5
-	vfmsub132ph zmm12, zmm5, zmm3
+	vfmsub132ph xmm5, xmm0, xmm3
+	vfmsub132ph xmm5, xmm3
+	vfmsub132ph xmm3, xmm5, xmm7
+	vfmsub132ph ymm4, ymm5, ymm3
+	vfmsub132ph ymm4, ymm3
+	vfmsub132ph ymm1, ymm0, ymm6
+	vfmsub132ph zmm3, zmm0, zmm0
+	vfmsub132ph zmm3, zmm0
+	vfmsub132ph zmm6, zmm1, zmm7
+	vfmsub132ph xmm13, xmm9, xmm9
+	vfmsub132ph ymm9, ymm10, ymm14
+	vfmsub132ph zmm11, zmm13, zmm15
+	vfmsub132ph xmm31, xmm27, xmm21
+	vfmsub132ph ymm21, ymm18, ymm19
+	vfmsub132ph zmm20, zmm19, zmm18

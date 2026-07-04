@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPMINSW",
+  "id": "vpminsw16",
+  "format": "bin",
+  "source": "vpminsw_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpminsw/",
+  "target": [
+   { "output": "vpminsw.bin16", "match": "vpminsw.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPMINSW",
+  "id": "vpminsw32",
+  "format": "bin",
+  "source": "vpminsw_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpminsw/",
+  "target": [
+   { "output": "vpminsw.bin32", "match": "vpminsw.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPMINSW",
   "id": "vpminsw64",
   "format": "bin",
   "source": "vpminsw.asm",

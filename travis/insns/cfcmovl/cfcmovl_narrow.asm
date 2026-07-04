@@ -1,6 +1,6 @@
 	cfcmovl word [0xe41], bp
-	cfcmovl word [0xd02], cx
-	cfcmovl esi, eax
-	cfcmovl ebx, eax
 	cfcmovl ax, dx
-	cfcmovl ax, word [0x5eb]
+	cfcmovl eax, edi
+	cfcmovl eax, ecx
+	cfcmovl dx, bx
+	cfcmovl si, si

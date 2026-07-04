@@ -1,3 +1,4 @@
 default rel
-	pmovzxbq xmm6, xmm12
-	pmovzxbq xmm11, xmm1
+	pmovzxbq xmm3, xmm6
+	pmovzxbq xmm1, xmm2
+	pmovzxbq xmm13, xmm11

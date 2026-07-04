@@ -3,7 +3,7 @@
   "description": "Pseudorandom test for PMOVMSKB",
   "id": "pmovmskb16",
   "format": "bin",
-  "source": "pmovmskb.asm",
+  "source": "pmovmskb_narrow.asm",
   "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/pmovmskb/",
   "target": [
    { "output": "pmovmskb.bin16", "match": "pmovmskb.bin16.t" }
@@ -14,7 +14,7 @@
   "description": "Pseudorandom test for PMOVMSKB",
   "id": "pmovmskb32",
   "format": "bin",
-  "source": "pmovmskb.asm",
+  "source": "pmovmskb_narrow.asm",
   "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/pmovmskb/",
   "target": [
    { "output": "pmovmskb.bin32", "match": "pmovmskb.bin32.t" }

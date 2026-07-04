@@ -1,3 +1,4 @@
 default rel
-	cmpunordpd xmm3, xmm3
-	cmpunordpd xmm7, oword [0x361]
+	cmpunordpd xmm1, xmm1
+	cmpunordpd xmm7, xmm1
+	cmpunordpd xmm11, xmm15

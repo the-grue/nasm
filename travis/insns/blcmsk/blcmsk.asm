@@ -1,5 +1,7 @@
 default rel
 	blcmsk ebx, ecx
-	blcmsk edx, ecx
-	blcmsk rbp, qword [0x4af]
-	blcmsk rsi, qword [0x7cf]
+	blcmsk edi, esi
+	blcmsk rdi, rdi
+	blcmsk rbx, qword [0x756]
+	blcmsk r11d, r13d
+	blcmsk r10, r13

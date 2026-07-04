@@ -1,2 +1,2 @@
 	tzmsk ecx, ecx
-	tzmsk ecx, edx
+	tzmsk eax, ebx

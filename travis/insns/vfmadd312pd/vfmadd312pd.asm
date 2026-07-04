@@ -1,5 +1,7 @@
 default rel
-	vfmadd312pd xmm15, xmm3, xmm7
-	vfmadd312pd xmm12, xmm15, xmm1
-	vfmadd312pd ymm0, ymm3, ymm15
-	vfmadd312pd ymm8, ymm5, ymm7
+	vfmadd312pd xmm7, xmm1, xmm3
+	vfmadd312pd xmm2, xmm7, xmm2
+	vfmadd312pd ymm2, ymm3, ymm2
+	vfmadd312pd ymm0, ymm7, ymm3
+	vfmadd312pd xmm14, xmm15, xmm9
+	vfmadd312pd ymm15, ymm15, ymm15

@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VFMADDPD",
+  "id": "vfmaddpd16",
+  "format": "bin",
+  "source": "vfmaddpd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vfmaddpd/",
+  "target": [
+   { "output": "vfmaddpd.bin16", "match": "vfmaddpd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VFMADDPD",
+  "id": "vfmaddpd32",
+  "format": "bin",
+  "source": "vfmaddpd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vfmaddpd/",
+  "target": [
+   { "output": "vfmaddpd.bin32", "match": "vfmaddpd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VFMADDPD",
   "id": "vfmaddpd64",
   "format": "bin",
   "source": "vfmaddpd.asm",

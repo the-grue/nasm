@@ -1,7 +1,13 @@
 default rel
 	setb dl
-	setb cl
-	setb rsi
-	setb rbp
+	setb dl
+	setb rbx
+	setb rax
 	setb ebx
-	setb eax
+	setb ebx
+	setb r10b
+	setb r8
+	setb r15d
+	setb r26b
+	setb r17
+	setb r27d

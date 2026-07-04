@@ -1,7 +1,13 @@
 default rel
 	setnszu rdi
-	setnszu rbx
-	setnszu esi
-	setnszu ecx
-	setnszu byte [0x13c]
-	setnszu dl
+	setnszu rcx
+	setnszu edi
+	setnszu edi
+	setnszu cl
+	setnszu bl
+	setnszu r9
+	setnszu r8d
+	setnszu r9b
+	setnszu r26
+	setnszu r20d
+	setnszu r29b

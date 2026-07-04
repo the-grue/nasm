@@ -1,5 +1,7 @@
 default rel
-	vpextrd rcx, xmm7, 0xe5
-	vpextrd rax, xmm8, 0x1b
-	vpextrd ebp, xmm4, 0xcb
-	vpextrd esi, xmm10, 0xf
+	vpextrd rcx, xmm3, 0xe5
+	vpextrd rdi, xmm3, 0xaf
+	vpextrd eax, xmm6, 0x5
+	vpextrd ebp, xmm2, 0xad
+	vpextrd r8, xmm12, 0x1b
+	vpextrd r9d, xmm12, 0x6d

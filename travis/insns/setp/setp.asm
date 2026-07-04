@@ -1,7 +1,13 @@
 default rel
 	setp byte [0x74c]
-	setp byte [0x9cc]
-	setp rcx
-	setp rcx
-	setp ebp
-	setp esi
+	setp bl
+	setp rbp
+	setp rbx
+	setp eax
+	setp edi
+	setp r14b
+	setp r12
+	setp r12d
+	setp r25b
+	setp r27
+	setp r26d

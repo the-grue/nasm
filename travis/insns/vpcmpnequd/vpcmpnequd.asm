@@ -1,7 +1,13 @@
 default rel
-	vpcmpnequd k7, xmm3, oword [0xd06]
-	vpcmpnequd k5, xmm13, xmm10
-	vpcmpnequd k1, ymm3, ymm4
-	vpcmpnequd k2, ymm1, yword [0x9ff]
-	vpcmpnequd k4, zmm0, zmm6
-	vpcmpnequd k5, zmm12, zmm0
+	vpcmpnequd k7, xmm1, oword [0xd06]
+	vpcmpnequd k1, xmm2, xmm0
+	vpcmpnequd k6, ymm4, ymm0
+	vpcmpnequd k5, ymm4, yword [0x6aa]
+	vpcmpnequd k1, zmm5, zmm0
+	vpcmpnequd k1, zmm0, zword [0x25d]
+	vpcmpnequd k5, xmm14, xmm10
+	vpcmpnequd k5, ymm11, ymm13
+	vpcmpnequd k3, zmm11, zmm11
+	vpcmpnequd k5, xmm17, xmm19
+	vpcmpnequd k6, ymm24, ymm16
+	vpcmpnequd k1, zmm19, zmm31

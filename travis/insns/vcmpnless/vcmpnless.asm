@@ -1,6 +1,8 @@
 default rel
-	vcmpnless xmm3, xmm14, xmm1
-	vcmpnless xmm3, xmm1
-	vcmpnless xmm2, xmm9, xmm14
-	vcmpnless k2, xmm11, xmm13
-	vcmpnless k4, xmm2, xmm12
+	vcmpnless xmm1, xmm7, xmm0
+	vcmpnless xmm1, xmm0
+	vcmpnless xmm0, xmm6, xmm1
+	vcmpnless k1, xmm6, dword [0x9da]
+	vcmpnless k6, xmm4, dword [0x54a]
+	vcmpnless xmm9, xmm12, xmm9
+	vcmpnless k3, xmm13, xmm12

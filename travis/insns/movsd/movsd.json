@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for MOVSD",
+  "id": "movsd16",
+  "format": "bin",
+  "source": "movsd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/movsd/",
+  "target": [
+   { "output": "movsd.bin16", "match": "movsd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for MOVSD",
+  "id": "movsd32",
+  "format": "bin",
+  "source": "movsd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/movsd/",
+  "target": [
+   { "output": "movsd.bin32", "match": "movsd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for MOVSD",
   "id": "movsd64",
   "format": "bin",
   "source": "movsd.asm",

@@ -1,3 +1,4 @@
 default rel
-	dppd xmm0, xmm14, 0x88
-	dppd xmm6, oword [0xf45], 0x46
+	dppd xmm0, xmm7, 0x88
+	dppd xmm1, oword [0xf35], 0xce
+	dppd xmm11, xmm14, 0xf3

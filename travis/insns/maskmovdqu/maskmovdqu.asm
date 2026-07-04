@@ -1,3 +1,4 @@
 default rel
-	maskmovdqu xmm6, xmm15
-	maskmovdqu xmm8, xmm3
+	maskmovdqu xmm3, xmm7
+	maskmovdqu xmm1, xmm1
+	maskmovdqu xmm12, xmm9

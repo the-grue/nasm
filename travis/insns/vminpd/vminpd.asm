@@ -1,13 +1,21 @@
 default rel
-	vminpd xmm4, xmm6, oword [0x270]
-	vminpd xmm4, oword [0x270]
-	vminpd xmm14, xmm8, oword [0x5bd]
-	vminpd ymm12, ymm3, ymm3
-	vminpd ymm12, ymm3
-	vminpd ymm15, ymm0, ymm13
-	vminpd xmm5, xmm1, xmm0
-	vminpd xmm5, xmm0
-	vminpd xmm12, xmm8, xmm11
-	vminpd ymm1, ymm2, ymm12
-	vminpd ymm1, ymm12
-	vminpd ymm12, ymm2, ymm2
+	vminpd xmm2, xmm3, oword [0x270]
+	vminpd xmm2, oword [0x270]
+	vminpd xmm4, xmm1, oword [0x153]
+	vminpd ymm0, ymm6, ymm0
+	vminpd ymm0, ymm0
+	vminpd ymm0, ymm1, ymm6
+	vminpd xmm6, xmm1, xmm1
+	vminpd xmm6, xmm1
+	vminpd xmm2, xmm4, xmm6
+	vminpd ymm2, ymm5, yword [0xc9f]
+	vminpd ymm2, yword [0xc9f]
+	vminpd ymm6, ymm5, ymm1
+	vminpd xmm15, xmm12, xmm15
+	vminpd ymm12, ymm8, ymm14
+	vminpd xmm12, xmm10, xmm9
+	vminpd ymm10, ymm11, ymm13
+	vminpd xmm21, xmm28, xmm19
+	vminpd ymm24, ymm26, ymm27
+	vminpd xmm16, xmm21, xmm29
+	vminpd ymm23, ymm28, ymm25

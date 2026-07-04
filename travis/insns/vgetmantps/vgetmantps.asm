@@ -1,7 +1,13 @@
 default rel
-	vgetmantps xmm1, xmm2, 0x7d
-	vgetmantps xmm4, oword [0xe23], 0xe0
-	vgetmantps ymm6, yword [0x52f], 0x9d
-	vgetmantps ymm2, ymm8, 0x1c
-	vgetmantps zmm14, zmm11, 0x95
-	vgetmantps zmm10, zmm2, 0x85
+	vgetmantps xmm0, xmm1, 0x7d
+	vgetmantps xmm2, xmm1, 0x5b
+	vgetmantps ymm4, ymm7, 0x36
+	vgetmantps ymm4, yword [0xbbe], 0xad
+	vgetmantps zmm2, zmm3, 0x13
+	vgetmantps zmm6, zmm5, 0x32
+	vgetmantps xmm10, xmm15, 0xe0
+	vgetmantps ymm13, ymm12, 0xa9
+	vgetmantps zmm10, zmm8, 0xe5
+	vgetmantps xmm30, xmm22, 0xf5
+	vgetmantps ymm23, ymm18, 0x85
+	vgetmantps zmm28, zmm30, 0x89

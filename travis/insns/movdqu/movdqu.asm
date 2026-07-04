@@ -1,5 +1,7 @@
 default rel
-	movdqu xmm12, xmm8
-	movdqu xmm12, xmm0
-	movdqu xmm13, xmm8
-	movdqu xmm7, xmm0
+	movdqu xmm6, xmm4
+	movdqu xmm6, xmm0
+	movdqu xmm0, xmm2
+	movdqu xmm0, xmm2
+	movdqu xmm14, xmm12
+	movdqu xmm10, xmm9

@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for UCOMISD",
+  "id": "ucomisd16",
+  "format": "bin",
+  "source": "ucomisd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/ucomisd/",
+  "target": [
+   { "output": "ucomisd.bin16", "match": "ucomisd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for UCOMISD",
+  "id": "ucomisd32",
+  "format": "bin",
+  "source": "ucomisd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/ucomisd/",
+  "target": [
+   { "output": "ucomisd.bin32", "match": "ucomisd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for UCOMISD",
   "id": "ucomisd64",
   "format": "bin",
   "source": "ucomisd.asm",

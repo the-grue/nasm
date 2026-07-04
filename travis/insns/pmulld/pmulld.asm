@@ -1,3 +1,4 @@
 default rel
-	pmulld xmm10, oword [0x302]
-	pmulld xmm8, oword [0x357]
+	pmulld xmm5, oword [0x302]
+	pmulld xmm5, oword [0x7e2]
+	pmulld xmm12, xmm15

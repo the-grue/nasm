@@ -1,0 +1,6 @@
+	vmovntdqa xmm7, oword [0xc04]
+	vmovntdqa xmm0, oword [0x6d6]
+	vmovntdqa ymm7, yword [0x80b]
+	vmovntdqa ymm6, yword [0x334]
+	vmovntdqa zmm7, zword [0x6f5]
+	vmovntdqa zmm7, zword [0xf74]

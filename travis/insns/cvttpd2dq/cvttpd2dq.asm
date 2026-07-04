@@ -1,3 +1,4 @@
 default rel
-	cvttpd2dq xmm9, oword [0x800]
-	cvttpd2dq xmm5, xmm11
+	cvttpd2dq xmm4, oword [0x800]
+	cvttpd2dq xmm1, oword [0xb9d]
+	cvttpd2dq xmm10, xmm9

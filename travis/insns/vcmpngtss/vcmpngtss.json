@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VCMPNGTSS",
+  "id": "vcmpngtss16",
+  "format": "bin",
+  "source": "vcmpngtss_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcmpngtss/",
+  "target": [
+   { "output": "vcmpngtss.bin16", "match": "vcmpngtss.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCMPNGTSS",
+  "id": "vcmpngtss32",
+  "format": "bin",
+  "source": "vcmpngtss_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcmpngtss/",
+  "target": [
+   { "output": "vcmpngtss.bin32", "match": "vcmpngtss.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCMPNGTSS",
   "id": "vcmpngtss64",
   "format": "bin",
   "source": "vcmpngtss.asm",

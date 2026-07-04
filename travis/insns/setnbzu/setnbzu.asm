@@ -1,7 +1,13 @@
 default rel
 	setnbzu rcx
-	setnbzu rbp
-	setnbzu esi
-	setnbzu edx
-	setnbzu byte [0x76b]
-	setnbzu byte [0x3bb]
+	setnbzu rdx
+	setnbzu edi
+	setnbzu ebx
+	setnbzu dl
+	setnbzu bl
+	setnbzu r14
+	setnbzu r11d
+	setnbzu r13b
+	setnbzu r26
+	setnbzu r28d
+	setnbzu r17b

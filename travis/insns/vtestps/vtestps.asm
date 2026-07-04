@@ -1,5 +1,7 @@
 default rel
-	vtestps xmm13, xmm3
-	vtestps xmm0, xmm7
-	vtestps ymm6, ymm7
-	vtestps ymm15, yword [0xf22]
+	vtestps xmm6, xmm1
+	vtestps xmm4, xmm7
+	vtestps ymm6, yword [0xe8b]
+	vtestps ymm0, yword [0x60c]
+	vtestps xmm8, xmm10
+	vtestps ymm9, ymm12

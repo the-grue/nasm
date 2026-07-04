@@ -1,6 +1,6 @@
 	cmovnge si, dx
-	cmovnge si, bp
-	cmovnge eax, esi
-	cmovnge ecx, ebp
-	cmovnge bx, si, di
-	cmovnge cx, dx, si
+	cmovnge dx, cx
+	cmovnge edx, dword [0xd15]
+	cmovnge edi, esi
+	cmovnge bx, cx, cx
+	cmovnge dx, dx, word [0x32c]

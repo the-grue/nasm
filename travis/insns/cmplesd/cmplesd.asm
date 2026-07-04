@@ -1,3 +1,4 @@
 default rel
-	cmplesd xmm0, xmm8
-	cmplesd xmm10, xmm8
+	cmplesd xmm0, xmm4
+	cmplesd xmm3, oword [0xf6b]
+	cmplesd xmm13, xmm9

@@ -1,6 +1,8 @@
 default rel
-	vcmpunordsd xmm12, xmm15, xmm7
-	vcmpunordsd xmm12, xmm7
-	vcmpunordsd xmm4, xmm12, xmm1
-	vcmpunordsd k5, xmm2, qword [0x123]
-	vcmpunordsd k6, xmm7, xmm10
+	vcmpunordsd xmm6, xmm7, xmm3
+	vcmpunordsd xmm6, xmm3
+	vcmpunordsd xmm7, xmm0, qword [0x799]
+	vcmpunordsd k1, xmm5, xmm5
+	vcmpunordsd k4, xmm0, qword [0x77e]
+	vcmpunordsd xmm10, xmm14, xmm13
+	vcmpunordsd k4, xmm10, xmm15

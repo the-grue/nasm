@@ -1,9 +1,17 @@
 default rel
 	cfcmovc word [0x52f], cx
-	cfcmovc word [0x418], di
-	cfcmovc ebx, edi
-	cfcmovc ebx, ebp
-	cfcmovc qword [0x531], rcx
-	cfcmovc rcx, rsi
-	cfcmovc si, word [0xa39]
-	cfcmovc bp, bp
+	cfcmovc di, bx
+	cfcmovc ebp, esi
+	cfcmovc esi, edi
+	cfcmovc rbp, rax
+	cfcmovc rbp, rsi
+	cfcmovc ax, di
+	cfcmovc dx, di
+	cfcmovc r14w, r9w
+	cfcmovc r10d, r10d
+	cfcmovc r15, r13
+	cfcmovc r15w, r15w
+	cfcmovc r27w, r20w
+	cfcmovc r26d, r21d
+	cfcmovc r24, r30
+	cfcmovc r23w, r19w

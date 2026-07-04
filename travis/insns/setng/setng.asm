@@ -1,7 +1,13 @@
 default rel
 	setng bl
-	setng bl
-	setng rbx
+	setng al
+	setng rbp
 	setng rax
-	setng ebp
-	setng eax
+	setng edx
+	setng esi
+	setng r10b
+	setng r8
+	setng r14d
+	setng r23b
+	setng r20
+	setng r24d

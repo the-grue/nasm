@@ -1,5 +1,7 @@
 default rel
-	movupd xmm1, xmm13
-	movupd xmm8, xmm4
-	movupd xmm4, xmm0
-	movupd oword [0x31d], xmm1
+	movupd xmm0, xmm6
+	movupd xmm2, xmm5
+	movupd xmm0, xmm0
+	movupd xmm5, xmm4
+	movupd xmm12, xmm10
+	movupd xmm12, xmm12

@@ -1,4 +1,5 @@
 default rel
-	vphaddubd xmm15, xmm9
-	vphaddubd xmm15
-	vphaddubd xmm8, xmm12
+	vphaddubd xmm7, xmm4
+	vphaddubd xmm7
+	vphaddubd xmm2, xmm3
+	vphaddubd xmm12, xmm11

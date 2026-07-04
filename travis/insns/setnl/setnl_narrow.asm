@@ -1,4 +1,4 @@
 	setnl dl
-	setnl al
-	setnl ebx
+	setnl cl
+	setnl edi
 	setnl edx

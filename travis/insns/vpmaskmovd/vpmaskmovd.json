@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPMASKMOVD",
+  "id": "vpmaskmovd16",
+  "format": "bin",
+  "source": "vpmaskmovd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpmaskmovd/",
+  "target": [
+   { "output": "vpmaskmovd.bin16", "match": "vpmaskmovd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPMASKMOVD",
+  "id": "vpmaskmovd32",
+  "format": "bin",
+  "source": "vpmaskmovd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpmaskmovd/",
+  "target": [
+   { "output": "vpmaskmovd.bin32", "match": "vpmaskmovd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPMASKMOVD",
   "id": "vpmaskmovd64",
   "format": "bin",
   "source": "vpmaskmovd.asm",

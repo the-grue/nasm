@@ -1,5 +1,7 @@
 default rel
-	vfmadd123pd xmm15, xmm2, xmm3
-	vfmadd123pd xmm15, xmm0, oword [0x7bf]
-	vfmadd123pd ymm1, ymm13, ymm15
-	vfmadd123pd ymm4, ymm8, yword [0xfaa]
+	vfmadd123pd xmm7, xmm1, xmm1
+	vfmadd123pd xmm2, xmm7, xmm4
+	vfmadd123pd ymm6, ymm7, ymm2
+	vfmadd123pd ymm2, ymm1, ymm0
+	vfmadd123pd xmm15, xmm8, xmm14
+	vfmadd123pd ymm14, ymm15, ymm15

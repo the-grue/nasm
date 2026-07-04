@@ -1,4 +1,6 @@
 default rel
-	vcvtsh2ss xmm4, xmm6, xmm10
-	vcvtsh2ss xmm4, xmm10
-	vcvtsh2ss xmm8, xmm10, xmm12
+	vcvtsh2ss xmm2, xmm3, xmm5
+	vcvtsh2ss xmm2, xmm5
+	vcvtsh2ss xmm1, xmm6, xmm2
+	vcvtsh2ss xmm12, xmm13, xmm8
+	vcvtsh2ss xmm28, xmm22, xmm25

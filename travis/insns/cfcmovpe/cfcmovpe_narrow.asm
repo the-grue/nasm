@@ -1,6 +1,6 @@
 	cfcmovpe bx, cx
-	cfcmovpe dx, dx
-	cfcmovpe edx, ebp
-	cfcmovpe eax, ecx
-	cfcmovpe ax, word [0x620]
-	cfcmovpe dx, dx
+	cfcmovpe bp, ax
+	cfcmovpe ecx, ebp
+	cfcmovpe eax, ebp
+	cfcmovpe bp, word [0xd05]
+	cfcmovpe cx, ax

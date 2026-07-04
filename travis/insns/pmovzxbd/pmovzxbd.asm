@@ -1,3 +1,4 @@
 default rel
-	pmovzxbd xmm13, xmm10
-	pmovzxbd xmm15, dword [0x11a]
+	pmovzxbd xmm6, xmm5
+	pmovzxbd xmm2, xmm1
+	pmovzxbd xmm15, xmm14

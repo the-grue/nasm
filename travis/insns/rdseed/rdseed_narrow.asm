@@ -1,4 +1,4 @@
 	rdseed bp
-	rdseed bx
-	rdseed edi
-	rdseed edx
+	rdseed dx
+	rdseed ecx
+	rdseed esi

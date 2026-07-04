@@ -1,5 +1,6 @@
 default rel
 	punpcklwd mm0, mm7
 	punpcklwd mm6, qword [0x35f]
-	punpcklwd xmm1, xmm0
-	punpcklwd xmm8, oword [0x658]
+	punpcklwd xmm0, xmm0
+	punpcklwd xmm3, xmm1
+	punpcklwd xmm12, xmm13

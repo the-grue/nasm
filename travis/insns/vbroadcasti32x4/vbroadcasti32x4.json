@@ -3,7 +3,7 @@
   "description": "Pseudorandom test for VBROADCASTI32X4",
   "id": "vbroadcasti32x416",
   "format": "bin",
-  "source": "vbroadcasti32x4.asm",
+  "source": "vbroadcasti32x4_narrow.asm",
   "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vbroadcasti32x4/",
   "target": [
    { "output": "vbroadcasti32x4.bin16", "match": "vbroadcasti32x4.bin16.t" }
@@ -14,7 +14,7 @@
   "description": "Pseudorandom test for VBROADCASTI32X4",
   "id": "vbroadcasti32x432",
   "format": "bin",
-  "source": "vbroadcasti32x4.asm",
+  "source": "vbroadcasti32x4_narrow.asm",
   "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vbroadcasti32x4/",
   "target": [
    { "output": "vbroadcasti32x4.bin32", "match": "vbroadcasti32x4.bin32.t" }

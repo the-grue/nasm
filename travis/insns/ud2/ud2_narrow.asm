@@ -1,6 +1,6 @@
 	ud2
 	ud2
 	ud2 di, word [0xa90]
-	ud2 dx, ax
-	ud2 eax, edi
-	ud2 esi, eax
+	ud2 ax, word [0xba0]
+	ud2 ecx, ebp
+	ud2 esi, edx

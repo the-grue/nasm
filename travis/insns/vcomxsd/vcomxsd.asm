@@ -1,3 +1,5 @@
 default rel
-	vcomxsd xmm11, xmm14
-	vcomxsd xmm9, xmm9
+	vcomxsd xmm5, xmm7
+	vcomxsd xmm4, xmm7
+	vcomxsd xmm12, xmm13
+	vcomxsd xmm25, xmm18

@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for CMPNLEPS",
+  "id": "cmpnleps16",
+  "format": "bin",
+  "source": "cmpnleps_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/cmpnleps/",
+  "target": [
+   { "output": "cmpnleps.bin16", "match": "cmpnleps.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for CMPNLEPS",
+  "id": "cmpnleps32",
+  "format": "bin",
+  "source": "cmpnleps_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/cmpnleps/",
+  "target": [
+   { "output": "cmpnleps.bin32", "match": "cmpnleps.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for CMPNLEPS",
   "id": "cmpnleps64",
   "format": "bin",
   "source": "cmpnleps.asm",

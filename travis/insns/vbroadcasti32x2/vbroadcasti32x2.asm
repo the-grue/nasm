@@ -1,7 +1,13 @@
 default rel
-	vbroadcasti32x2 xmm14, xmm1
-	vbroadcasti32x2 xmm14, xmm2
-	vbroadcasti32x2 ymm8, xmm11
-	vbroadcasti32x2 ymm2, xmm15
-	vbroadcasti32x2 zmm6, qword [0xa9e]
-	vbroadcasti32x2 zmm7, qword [0x7bc]
+	vbroadcasti32x2 xmm7, xmm0
+	vbroadcasti32x2 xmm0, qword [0x3b1]
+	vbroadcasti32x2 ymm1, qword [0x6c3]
+	vbroadcasti32x2 ymm3, xmm4
+	vbroadcasti32x2 zmm3, xmm6
+	vbroadcasti32x2 zmm2, xmm5
+	vbroadcasti32x2 xmm15, xmm8
+	vbroadcasti32x2 ymm15, xmm13
+	vbroadcasti32x2 zmm8, xmm9
+	vbroadcasti32x2 xmm18, xmm24
+	vbroadcasti32x2 ymm23, xmm27
+	vbroadcasti32x2 zmm24, xmm28

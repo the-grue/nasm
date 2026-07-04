@@ -3,7 +3,7 @@
   "description": "Pseudorandom test for VRCP28PD",
   "id": "vrcp28pd16",
   "format": "bin",
-  "source": "vrcp28pd.asm",
+  "source": "vrcp28pd_narrow.asm",
   "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vrcp28pd/",
   "target": [
    { "output": "vrcp28pd.bin16", "match": "vrcp28pd.bin16.t" }
@@ -14,7 +14,7 @@
   "description": "Pseudorandom test for VRCP28PD",
   "id": "vrcp28pd32",
   "format": "bin",
-  "source": "vrcp28pd.asm",
+  "source": "vrcp28pd_narrow.asm",
   "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vrcp28pd/",
   "target": [
    { "output": "vrcp28pd.bin32", "match": "vrcp28pd.bin32.t" }

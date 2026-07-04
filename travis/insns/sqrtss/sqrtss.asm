@@ -1,3 +1,4 @@
 default rel
-	sqrtss xmm1, xmm0
-	sqrtss xmm8, xmm7
+	sqrtss xmm0, xmm0
+	sqrtss xmm6, xmm1
+	sqrtss xmm12, xmm9

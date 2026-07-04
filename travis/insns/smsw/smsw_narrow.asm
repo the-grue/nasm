@@ -1,6 +1,6 @@
 	smsw dx
+	smsw cx
 	smsw dx
-	smsw bp
-	smsw di
-	smsw ecx
-	smsw ecx
+	smsw cx
+	smsw eax
+	smsw edx

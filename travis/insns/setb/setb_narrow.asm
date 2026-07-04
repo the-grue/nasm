@@ -1,4 +1,4 @@
 	setb dl
-	setb cl
+	setb dl
 	setb ebx
-	setb eax
+	setb ebx

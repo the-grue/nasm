@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VDIVSD",
+  "id": "vdivsd16",
+  "format": "bin",
+  "source": "vdivsd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vdivsd/",
+  "target": [
+   { "output": "vdivsd.bin16", "match": "vdivsd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VDIVSD",
+  "id": "vdivsd32",
+  "format": "bin",
+  "source": "vdivsd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vdivsd/",
+  "target": [
+   { "output": "vdivsd.bin32", "match": "vdivsd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VDIVSD",
   "id": "vdivsd64",
   "format": "bin",
   "source": "vdivsd.asm",

@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPTESTMB",
+  "id": "vptestmb16",
+  "format": "bin",
+  "source": "vptestmb_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vptestmb/",
+  "target": [
+   { "output": "vptestmb.bin16", "match": "vptestmb.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPTESTMB",
+  "id": "vptestmb32",
+  "format": "bin",
+  "source": "vptestmb_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vptestmb/",
+  "target": [
+   { "output": "vptestmb.bin32", "match": "vptestmb.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPTESTMB",
   "id": "vptestmb64",
   "format": "bin",
   "source": "vptestmb.asm",

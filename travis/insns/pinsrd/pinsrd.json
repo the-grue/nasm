@@ -3,7 +3,7 @@
   "description": "Pseudorandom test for PINSRD",
   "id": "pinsrd16",
   "format": "bin",
-  "source": "pinsrd.asm",
+  "source": "pinsrd_narrow.asm",
   "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/pinsrd/",
   "target": [
    { "output": "pinsrd.bin16", "match": "pinsrd.bin16.t" }
@@ -14,7 +14,7 @@
   "description": "Pseudorandom test for PINSRD",
   "id": "pinsrd32",
   "format": "bin",
-  "source": "pinsrd.asm",
+  "source": "pinsrd_narrow.asm",
   "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/pinsrd/",
   "target": [
    { "output": "pinsrd.bin32", "match": "pinsrd.bin32.t" }

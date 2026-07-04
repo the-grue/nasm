@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for HADDPS",
+  "id": "haddps16",
+  "format": "bin",
+  "source": "haddps_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/haddps/",
+  "target": [
+   { "output": "haddps.bin16", "match": "haddps.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for HADDPS",
+  "id": "haddps32",
+  "format": "bin",
+  "source": "haddps_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/haddps/",
+  "target": [
+   { "output": "haddps.bin32", "match": "haddps.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for HADDPS",
   "id": "haddps64",
   "format": "bin",
   "source": "haddps.asm",

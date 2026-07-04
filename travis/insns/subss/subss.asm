@@ -1,3 +1,4 @@
 default rel
-	subss xmm8, xmm13
-	subss xmm13, dword [0xa1e]
+	subss xmm4, xmm6
+	subss xmm0, xmm3
+	subss xmm14, xmm14

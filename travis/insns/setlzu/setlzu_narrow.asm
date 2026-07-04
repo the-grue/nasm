@@ -1,4 +1,4 @@
+	setlzu eax
 	setlzu esi
-	setlzu esi
-	setlzu cl
-	setlzu cl
+	setlzu byte [0x69f]
+	setlzu byte [0xf8d]

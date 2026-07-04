@@ -1,6 +1,6 @@
 	ctestb 5, dl, dl
-	ctestb 10, bl, bl
-	ctestb 14, bp, si
-	ctestb 2, bx, cx
-	ctestb 12, ebp, eax
-	ctestb 12, dword [0x8d8], esi
+	ctestb 15, al, bl
+	ctestb 3, di, ax
+	ctestb 13, word [0x733], bx
+	ctestb 11, ebp, ebx
+	ctestb 15, ecx, eax

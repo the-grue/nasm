@@ -1,6 +1,6 @@
 	ctestbe 4, byte [0xce0], al
-	ctestbe 4, byte [0xeea], dl
-	ctestbe 9, word [0x4cc], cx
-	ctestbe 15, cx, bp
-	ctestbe 14, eax, edi
-	ctestbe 12, dword [0x3a2], ebp
+	ctestbe 4, dl, bl
+	ctestbe 5, word [0xedd], ax
+	ctestbe 12, si, ax
+	ctestbe 8, eax, edx
+	ctestbe 0, edi, esi

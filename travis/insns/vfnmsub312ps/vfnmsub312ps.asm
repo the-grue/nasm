@@ -1,5 +1,7 @@
 default rel
-	vfnmsub312ps xmm1, xmm4, xmm14
-	vfnmsub312ps xmm14, xmm7, xmm10
-	vfnmsub312ps ymm4, ymm13, ymm1
-	vfnmsub312ps ymm14, ymm1, yword [0x539]
+	vfnmsub312ps xmm0, xmm2, xmm7
+	vfnmsub312ps xmm1, xmm0, oword [0x251]
+	vfnmsub312ps ymm5, ymm2, yword [0x23e]
+	vfnmsub312ps ymm5, ymm1, ymm5
+	vfnmsub312ps xmm15, xmm11, xmm11
+	vfnmsub312ps ymm11, ymm15, ymm14

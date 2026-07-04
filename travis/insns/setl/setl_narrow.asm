@@ -1,4 +1,4 @@
 	setl cl
-	setl al
-	setl edi
+	setl cl
 	setl eax
+	setl edx

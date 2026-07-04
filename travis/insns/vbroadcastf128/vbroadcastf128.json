@@ -3,7 +3,7 @@
   "description": "Pseudorandom test for VBROADCASTF128",
   "id": "vbroadcastf12816",
   "format": "bin",
-  "source": "vbroadcastf128.asm",
+  "source": "vbroadcastf128_narrow.asm",
   "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vbroadcastf128/",
   "target": [
    { "output": "vbroadcastf128.bin16", "match": "vbroadcastf128.bin16.t" }
@@ -14,7 +14,7 @@
   "description": "Pseudorandom test for VBROADCASTF128",
   "id": "vbroadcastf12832",
   "format": "bin",
-  "source": "vbroadcastf128.asm",
+  "source": "vbroadcastf128_narrow.asm",
   "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vbroadcastf128/",
   "target": [
    { "output": "vbroadcastf128.bin32", "match": "vbroadcastf128.bin32.t" }

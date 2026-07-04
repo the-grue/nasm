@@ -1,13 +1,21 @@
 default rel
-	vpsllq xmm4, xmm14, xmm6
-	vpsllq xmm4, xmm6
-	vpsllq xmm12, xmm10, oword [0xc25]
-	vpsllq xmm1, xmm5, 0x7b
-	vpsllq xmm1, 0x7b
-	vpsllq xmm0, xmm2, 0xb2
-	vpsllq ymm11, ymm3, xmm0
-	vpsllq ymm11, xmm0
-	vpsllq ymm13, ymm10, xmm12
-	vpsllq ymm9, ymm7, 0x29
-	vpsllq ymm9, 0x29
-	vpsllq ymm1, ymm8, 0x96
+	vpsllq xmm2, xmm7, xmm3
+	vpsllq xmm2, xmm3
+	vpsllq xmm3, xmm0, xmm5
+	vpsllq xmm5, xmm1, 0xa0
+	vpsllq xmm5, 0xa0
+	vpsllq xmm3, xmm1, 0x13
+	vpsllq ymm4, ymm4, oword [0xc7a]
+	vpsllq ymm4, oword [0xc7a]
+	vpsllq ymm3, ymm3, oword [0x185]
+	vpsllq ymm2, ymm7, 0x1
+	vpsllq ymm2, 0x1
+	vpsllq ymm7, ymm4, 0xda
+	vpsllq xmm14, xmm13, xmm14
+	vpsllq xmm8, xmm14, 0xab
+	vpsllq ymm8, ymm14, xmm11
+	vpsllq ymm13, ymm10, 0x44
+	vpsllq xmm27, xmm17, xmm21
+	vpsllq xmm24, xmm28, 0x9f
+	vpsllq ymm17, ymm19, xmm20
+	vpsllq ymm24, ymm22, 0x81

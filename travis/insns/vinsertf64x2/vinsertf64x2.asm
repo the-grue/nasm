@@ -1,7 +1,11 @@
 default rel
-	vinsertf64x2 ymm10, ymm5, oword [0x877], 0x25
-	vinsertf64x2 ymm10, oword [0x877], 0x25
-	vinsertf64x2 ymm4, ymm10, xmm5, 0xaf
-	vinsertf64x2 zmm13, zmm9, oword [0xd7f], 0x29
-	vinsertf64x2 zmm13, oword [0xd7f], 0x29
-	vinsertf64x2 zmm14, zmm5, xmm5, 0x8a
+	vinsertf64x2 ymm5, ymm2, oword [0x877], 0x25
+	vinsertf64x2 ymm5, oword [0x877], 0x25
+	vinsertf64x2 ymm6, ymm1, oword [0x613], 0x4e
+	vinsertf64x2 zmm2, zmm4, xmm3, 0x9e
+	vinsertf64x2 zmm2, xmm3, 0x9e
+	vinsertf64x2 zmm2, zmm4, xmm2, 0xf6
+	vinsertf64x2 ymm10, ymm13, xmm10, 0x50
+	vinsertf64x2 zmm9, zmm10, xmm12, 0xe0
+	vinsertf64x2 ymm26, ymm29, xmm25, 0xb7
+	vinsertf64x2 zmm28, zmm21, xmm27, 0x80

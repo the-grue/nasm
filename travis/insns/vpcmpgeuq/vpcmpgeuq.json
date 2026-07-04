@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPCMPGEUQ",
+  "id": "vpcmpgeuq16",
+  "format": "bin",
+  "source": "vpcmpgeuq_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpcmpgeuq/",
+  "target": [
+   { "output": "vpcmpgeuq.bin16", "match": "vpcmpgeuq.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPCMPGEUQ",
+  "id": "vpcmpgeuq32",
+  "format": "bin",
+  "source": "vpcmpgeuq_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpcmpgeuq/",
+  "target": [
+   { "output": "vpcmpgeuq.bin32", "match": "vpcmpgeuq.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPCMPGEUQ",
   "id": "vpcmpgeuq64",
   "format": "bin",
   "source": "vpcmpgeuq.asm",

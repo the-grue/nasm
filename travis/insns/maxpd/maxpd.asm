@@ -1,3 +1,4 @@
 default rel
-	maxpd xmm13, xmm5
-	maxpd xmm0, oword [0x90f]
+	maxpd xmm6, xmm2
+	maxpd xmm5, xmm0
+	maxpd xmm8, xmm13

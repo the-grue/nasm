@@ -1,5 +1,5 @@
 default rel
 	uwrmsr rdx, rbp
-	uwrmsr rax, rsi
-	uwrmsr 0xc020f1c, rdi
-	uwrmsr 0xc99c4a4, rdi
+	uwrmsr rbx, rdi
+	uwrmsr 0x24c220c2, rbp
+	uwrmsr 0x25c03a02, rdi

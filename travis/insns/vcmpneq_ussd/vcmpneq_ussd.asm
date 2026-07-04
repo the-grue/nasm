@@ -1,6 +1,8 @@
 default rel
-	vcmpneq_ussd xmm15, xmm10, xmm12
-	vcmpneq_ussd xmm15, xmm12
-	vcmpneq_ussd xmm12, xmm8, xmm0
-	vcmpneq_ussd k6, xmm7, xmm2
-	vcmpneq_ussd k3, xmm0, xmm11
+	vcmpneq_ussd xmm7, xmm5, xmm6
+	vcmpneq_ussd xmm7, xmm6
+	vcmpneq_ussd xmm1, xmm1, xmm0
+	vcmpneq_ussd k2, xmm5, qword [0x9f5]
+	vcmpneq_ussd k6, xmm6, xmm0
+	vcmpneq_ussd xmm14, xmm12, xmm8
+	vcmpneq_ussd k2, xmm9, xmm15

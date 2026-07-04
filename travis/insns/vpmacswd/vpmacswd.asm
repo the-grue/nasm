@@ -1,4 +1,5 @@
 default rel
-	vpmacswd xmm5, xmm0, xmm6, xmm2
-	vpmacswd xmm5, xmm6, xmm2
-	vpmacswd xmm13, xmm4, xmm15, xmm15
+	vpmacswd xmm2, xmm0, xmm3, xmm1
+	vpmacswd xmm2, xmm3, xmm1
+	vpmacswd xmm6, xmm2, xmm4, xmm5
+	vpmacswd xmm14, xmm10, xmm8, xmm15

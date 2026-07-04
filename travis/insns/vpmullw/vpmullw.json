@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPMULLW",
+  "id": "vpmullw16",
+  "format": "bin",
+  "source": "vpmullw_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpmullw/",
+  "target": [
+   { "output": "vpmullw.bin16", "match": "vpmullw.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPMULLW",
+  "id": "vpmullw32",
+  "format": "bin",
+  "source": "vpmullw_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpmullw/",
+  "target": [
+   { "output": "vpmullw.bin32", "match": "vpmullw.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPMULLW",
   "id": "vpmullw64",
   "format": "bin",
   "source": "vpmullw.asm",

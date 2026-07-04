@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPROTB",
+  "id": "vprotb16",
+  "format": "bin",
+  "source": "vprotb_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vprotb/",
+  "target": [
+   { "output": "vprotb.bin16", "match": "vprotb.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPROTB",
+  "id": "vprotb32",
+  "format": "bin",
+  "source": "vprotb_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vprotb/",
+  "target": [
+   { "output": "vprotb.bin32", "match": "vprotb.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPROTB",
   "id": "vprotb64",
   "format": "bin",
   "source": "vprotb.asm",

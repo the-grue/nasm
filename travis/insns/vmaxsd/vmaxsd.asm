@@ -1,7 +1,11 @@
 default rel
-	vmaxsd xmm5, xmm13, xmm2
-	vmaxsd xmm5, xmm2
-	vmaxsd xmm12, xmm13, xmm7
-	vmaxsd xmm11, xmm3, xmm2
-	vmaxsd xmm11, xmm2
-	vmaxsd xmm13, xmm14, xmm13
+	vmaxsd xmm2, xmm6, xmm1
+	vmaxsd xmm2, xmm1
+	vmaxsd xmm4, xmm1, qword [0xe4e]
+	vmaxsd xmm3, xmm6, qword [0x65c]
+	vmaxsd xmm3, qword [0x65c]
+	vmaxsd xmm1, xmm4, qword [0xe8a]
+	vmaxsd xmm14, xmm14, xmm8
+	vmaxsd xmm9, xmm14, xmm9
+	vmaxsd xmm23, xmm27, xmm19
+	vmaxsd xmm29, xmm16, xmm28

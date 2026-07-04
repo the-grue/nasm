@@ -1,6 +1,6 @@
 	cfcmovp bp, ax
-	cfcmovp word [0x810], bp
-	cfcmovp edi, edx
-	cfcmovp ebx, ecx
-	cfcmovp di, bp
-	cfcmovp bx, di
+	cfcmovp word [0x956], dx
+	cfcmovp ecx, edx
+	cfcmovp dword [0xcb4], esi
+	cfcmovp bx, ax
+	cfcmovp bx, word [0x677]

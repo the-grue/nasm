@@ -1,4 +1,5 @@
 default rel
-	vfrczsd xmm6, xmm14
-	vfrczsd xmm6
-	vfrczsd xmm15, xmm15
+	vfrczsd xmm3, xmm7
+	vfrczsd xmm3
+	vfrczsd xmm1, xmm0
+	vfrczsd xmm15, xmm10

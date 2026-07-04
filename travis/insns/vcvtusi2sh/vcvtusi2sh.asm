@@ -1,7 +1,11 @@
 default rel
-	vcvtusi2sh xmm14, xmm0, ebx
-	vcvtusi2sh xmm14, ebx
-	vcvtusi2sh xmm1, xmm4, ebx
-	vcvtusi2sh xmm6, xmm8, rcx
-	vcvtusi2sh xmm6, rcx
-	vcvtusi2sh xmm8, xmm11, rsi
+	vcvtusi2sh xmm7, xmm0, ebx
+	vcvtusi2sh xmm7, ebx
+	vcvtusi2sh xmm5, xmm2, edi
+	vcvtusi2sh xmm2, xmm5, rbp
+	vcvtusi2sh xmm2, rbp
+	vcvtusi2sh xmm1, xmm3, qword [0x83f]
+	vcvtusi2sh xmm8, xmm10, r11d
+	vcvtusi2sh xmm13, xmm10, r12
+	vcvtusi2sh xmm19, xmm22, r24d
+	vcvtusi2sh xmm25, xmm16, r19

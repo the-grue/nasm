@@ -1,4 +1,4 @@
-	setngezu ecx
-	setngezu ebx
+	setngezu edx
+	setngezu edi
+	setngezu byte [0xd7f]
 	setngezu bl
-	setngezu byte [0xd80]

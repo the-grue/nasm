@@ -1,3 +1,4 @@
 default rel
-	unpckhpd xmm7, xmm12
-	unpckhpd xmm15, xmm0
+	unpckhpd xmm3, xmm6
+	unpckhpd xmm7, xmm5
+	unpckhpd xmm15, xmm10

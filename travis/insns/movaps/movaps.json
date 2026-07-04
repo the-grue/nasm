@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for MOVAPS",
+  "id": "movaps16",
+  "format": "bin",
+  "source": "movaps_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/movaps/",
+  "target": [
+   { "output": "movaps.bin16", "match": "movaps.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for MOVAPS",
+  "id": "movaps32",
+  "format": "bin",
+  "source": "movaps_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/movaps/",
+  "target": [
+   { "output": "movaps.bin32", "match": "movaps.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for MOVAPS",
   "id": "movaps64",
   "format": "bin",
   "source": "movaps.asm",

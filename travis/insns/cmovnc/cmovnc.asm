@@ -1,9 +1,17 @@
 default rel
 	cmovnc di, bp
-	cmovnc si, word [0x58d]
-	cmovnc ecx, esi
-	cmovnc ebp, ebp
-	cmovnc rbp, rax
-	cmovnc rbp, qword [0xddb]
-	cmovnc ax, di, si
-	cmovnc cx, bx, bp
+	cmovnc ax, bp
+	cmovnc ebx, dword [0xfa7]
+	cmovnc ebp, edi
+	cmovnc rcx, rcx
+	cmovnc rsi, rdi
+	cmovnc ax, bp, dx
+	cmovnc di, cx, di
+	cmovnc r13w, r14w
+	cmovnc r13d, r8d
+	cmovnc r9, r10
+	cmovnc r12w, r12w, r13w
+	cmovnc r20w, r21w
+	cmovnc r31d, r31d
+	cmovnc r30, r27
+	cmovnc r19w, r16w, r27w

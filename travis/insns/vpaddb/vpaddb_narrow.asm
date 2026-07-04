@@ -1,0 +1,12 @@
+	vpaddb xmm1, xmm4, xmm0
+	vpaddb xmm1, xmm0
+	vpaddb xmm1, xmm5, xmm3
+	vpaddb ymm2, ymm2, ymm7
+	vpaddb ymm2, ymm7
+	vpaddb ymm4, ymm0, ymm4
+	vpaddb xmm0, xmm6, xmm2
+	vpaddb xmm0, xmm2
+	vpaddb xmm0, xmm2, oword [0x11f]
+	vpaddb ymm4, ymm5, ymm0
+	vpaddb ymm4, ymm0
+	vpaddb ymm5, ymm0, yword [0xd79]

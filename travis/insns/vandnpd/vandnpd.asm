@@ -1,13 +1,21 @@
 default rel
-	vandnpd xmm8, xmm2, xmm13
-	vandnpd xmm8, xmm13
-	vandnpd xmm6, xmm13, xmm0
-	vandnpd ymm9, ymm1, ymm8
-	vandnpd ymm9, ymm8
-	vandnpd ymm13, ymm0, ymm3
-	vandnpd xmm3, xmm5, oword [0x59c]
-	vandnpd xmm3, oword [0x59c]
-	vandnpd xmm7, xmm10, xmm14
-	vandnpd ymm9, ymm14, yword [0xdac]
-	vandnpd ymm9, yword [0xdac]
-	vandnpd ymm14, ymm14, ymm4
+	vandnpd xmm4, xmm1, xmm6
+	vandnpd xmm4, xmm6
+	vandnpd xmm2, xmm4, oword [0x1c7]
+	vandnpd ymm5, ymm1, ymm2
+	vandnpd ymm5, ymm2
+	vandnpd ymm4, ymm7, yword [0xdac]
+	vandnpd xmm7, xmm7, xmm2
+	vandnpd xmm7, xmm2
+	vandnpd xmm6, xmm0, xmm6
+	vandnpd ymm4, ymm6, ymm0
+	vandnpd ymm4, ymm0
+	vandnpd ymm5, ymm3, ymm6
+	vandnpd xmm11, xmm14, xmm10
+	vandnpd ymm15, ymm10, ymm11
+	vandnpd xmm11, xmm9, xmm8
+	vandnpd ymm8, ymm10, ymm15
+	vandnpd xmm16, xmm25, xmm17
+	vandnpd ymm26, ymm19, ymm30
+	vandnpd xmm19, xmm24, xmm24
+	vandnpd ymm24, ymm16, ymm29

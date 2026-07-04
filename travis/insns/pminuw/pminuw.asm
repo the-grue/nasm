@@ -1,3 +1,4 @@
 default rel
-	pminuw xmm10, xmm11
-	pminuw xmm14, xmm8
+	pminuw xmm5, xmm5
+	pminuw xmm5, xmm2
+	pminuw xmm15, xmm8

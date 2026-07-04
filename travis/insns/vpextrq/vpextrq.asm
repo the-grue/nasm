@@ -1,3 +1,5 @@
 default rel
-	vpextrq rdx, xmm11, 0x13
-	vpextrq qword [0xbae], xmm13, 0xca
+	vpextrq rdx, xmm5, 0x13
+	vpextrq rbp, xmm6, 0x5e
+	vpextrq r15, xmm13, 0xdd
+	vpextrq r28, xmm16, 0xbd

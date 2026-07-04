@@ -1,5 +1,7 @@
 default rel
-	vptest xmm12, xmm2
-	vptest xmm11, oword [0x4b3]
-	vptest ymm5, yword [0x4a1]
-	vptest ymm1, yword [0x43a]
+	vptest xmm6, xmm1
+	vptest xmm5, xmm0
+	vptest ymm7, ymm5
+	vptest ymm5, ymm4
+	vptest xmm13, xmm15
+	vptest ymm11, ymm10

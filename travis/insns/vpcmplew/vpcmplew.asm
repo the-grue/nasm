@@ -1,7 +1,13 @@
 default rel
-	vpcmplew k6, xmm13, xmm11
-	vpcmplew k4, xmm10, xmm2
-	vpcmplew k4, ymm1, ymm3
-	vpcmplew k3, ymm9, ymm7
-	vpcmplew k6, zmm6, zmm7
-	vpcmplew k6, zmm13, zword [0xff7]
+	vpcmplew k6, xmm6, xmm5
+	vpcmplew k2, xmm1, xmm4
+	vpcmplew k3, ymm3, yword [0x6ca]
+	vpcmplew k3, ymm0, yword [0x7df]
+	vpcmplew k5, zmm2, zword [0x6c2]
+	vpcmplew k4, zmm0, zmm3
+	vpcmplew k4, xmm13, xmm9
+	vpcmplew k2, ymm11, ymm13
+	vpcmplew k4, zmm13, zmm11
+	vpcmplew k1, xmm22, xmm17
+	vpcmplew k6, ymm30, ymm31
+	vpcmplew k5, zmm30, zmm27

@@ -1,5 +1,9 @@
 default rel
 	cmplexadd dword [0x497], ebx, ebx
-	cmplexadd dword [0x474], ebp, esi
-	cmplexadd qword [0x1ab], rdi, rax
-	cmplexadd qword [0x34b], rcx, rsi
+	cmplexadd dword [0x34b], ecx, esi
+	cmplexadd qword [0x4fe], rsi, rcx
+	cmplexadd qword [0x59b], rbp, rsi
+	cmplexadd dword [0x474], r15d, r13d
+	cmplexadd qword [0xefe], r15, r10
+	cmplexadd dword [0x1ab], r29d, r16d
+	cmplexadd qword [0x426], r25, r28

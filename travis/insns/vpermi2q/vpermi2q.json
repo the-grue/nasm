@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPERMI2Q",
+  "id": "vpermi2q16",
+  "format": "bin",
+  "source": "vpermi2q_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpermi2q/",
+  "target": [
+   { "output": "vpermi2q.bin16", "match": "vpermi2q.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPERMI2Q",
+  "id": "vpermi2q32",
+  "format": "bin",
+  "source": "vpermi2q_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpermi2q/",
+  "target": [
+   { "output": "vpermi2q.bin32", "match": "vpermi2q.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPERMI2Q",
   "id": "vpermi2q64",
   "format": "bin",
   "source": "vpermi2q.asm",

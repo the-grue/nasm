@@ -1,5 +1,9 @@
 default rel
 	cmpnoxadd dword [0x650], ebp, ebp
-	cmpnoxadd dword [0xecd], ebp, edi
-	cmpnoxadd qword [0x690], rcx, rdi
-	cmpnoxadd qword [0xa33], rbx, rdx
+	cmpnoxadd dword [0xa33], ebx, edx
+	cmpnoxadd qword [0xcee], rbx, rax
+	cmpnoxadd qword [0x251], rdx, rbx
+	cmpnoxadd dword [0xecd], r15d, r14d
+	cmpnoxadd qword [0x66d], r12, r9
+	cmpnoxadd dword [0x690], r20d, r28d
+	cmpnoxadd qword [0xe2c], r19, r21

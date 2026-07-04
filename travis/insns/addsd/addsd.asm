@@ -1,3 +1,4 @@
 default rel
-	addsd xmm5, xmm15
-	addsd xmm9, xmm2
+	addsd xmm2, xmm7
+	addsd xmm3, xmm0
+	addsd xmm12, xmm9

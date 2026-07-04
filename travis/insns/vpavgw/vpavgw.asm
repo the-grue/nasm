@@ -1,13 +1,21 @@
 default rel
-	vpavgw xmm15, xmm14, oword [0xf85]
-	vpavgw xmm15, oword [0xf85]
-	vpavgw xmm15, xmm3, xmm9
-	vpavgw ymm12, ymm15, yword [0xb7d]
-	vpavgw ymm12, yword [0xb7d]
-	vpavgw ymm9, ymm14, yword [0x27e]
-	vpavgw xmm7, xmm8, xmm8
-	vpavgw xmm7, xmm8
-	vpavgw xmm12, xmm7, xmm6
-	vpavgw ymm10, ymm10, ymm8
-	vpavgw ymm10, ymm8
-	vpavgw ymm7, ymm12, ymm0
+	vpavgw xmm7, xmm7, oword [0xf85]
+	vpavgw xmm7, oword [0xf85]
+	vpavgw xmm7, xmm5, xmm7
+	vpavgw ymm7, ymm0, ymm4
+	vpavgw ymm7, ymm4
+	vpavgw ymm5, ymm5, ymm4
+	vpavgw xmm3, xmm6, xmm0
+	vpavgw xmm3, xmm0
+	vpavgw xmm7, xmm7, xmm2
+	vpavgw ymm1, ymm6, ymm3
+	vpavgw ymm1, ymm3
+	vpavgw ymm2, ymm5, ymm7
+	vpavgw xmm15, xmm9, xmm9
+	vpavgw ymm10, ymm12, ymm14
+	vpavgw xmm9, xmm15, xmm10
+	vpavgw ymm9, ymm12, ymm9
+	vpavgw xmm25, xmm28, xmm31
+	vpavgw ymm23, ymm22, ymm22
+	vpavgw xmm21, xmm21, xmm18
+	vpavgw ymm20, ymm24, ymm27

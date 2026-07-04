@@ -1,3 +1,4 @@
 default rel
-	vfmadd123sd xmm1, xmm9, qword [0xcd5]
-	vfmadd123sd xmm11, xmm0, xmm5
+	vfmadd123sd xmm0, xmm4, qword [0xcd5]
+	vfmadd123sd xmm2, xmm0, qword [0xd37]
+	vfmadd123sd xmm13, xmm8, xmm11

@@ -1,4 +1,6 @@
 default rel
-	vmovlhps xmm3, xmm2, xmm11
-	vmovlhps xmm3, xmm11
-	vmovlhps xmm6, xmm0, xmm6
+	vmovlhps xmm1, xmm1, xmm5
+	vmovlhps xmm1, xmm5
+	vmovlhps xmm2, xmm1, xmm5
+	vmovlhps xmm11, xmm8, xmm11
+	vmovlhps xmm29, xmm16, xmm30

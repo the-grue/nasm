@@ -1,9 +1,17 @@
 default rel
 	movbe bx, word [0xdea]
-	movbe dx, word [0xd51]
-	movbe esi, dword [0xa9a]
-	movbe edx, dword [0xade]
-	movbe rcx, qword [0xcad]
-	movbe rdx, qword [0xfe9]
-	movbe word [0xda1], ax
-	movbe word [0x1fc], bx
+	movbe dx, word [0xade]
+	movbe ecx, dword [0xcad]
+	movbe eax, dword [0x4b5]
+	movbe rbp, qword [0xb81]
+	movbe rdx, qword [0x7f8]
+	movbe word [0xc58], ax
+	movbe word [0xb12], bp
+	movbe r11w, word [0xd51]
+	movbe r11d, dword [0xfe9]
+	movbe r9, qword [0xcea]
+	movbe word [0x708], r15w
+	movbe r25w, word [0xa9a]
+	movbe r29d, dword [0x221]
+	movbe r29, qword [0x4a5]
+	movbe word [0x723], r19w

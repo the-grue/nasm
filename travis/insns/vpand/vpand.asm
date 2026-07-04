@@ -1,7 +1,9 @@
 default rel
-	vpand xmm11, xmm3, oword [0xe0b]
-	vpand xmm11, oword [0xe0b]
-	vpand xmm4, xmm10, xmm7
-	vpand ymm5, ymm12, ymm0
-	vpand ymm5, ymm0
-	vpand ymm14, ymm15, ymm7
+	vpand xmm5, xmm1, oword [0xe0b]
+	vpand xmm5, oword [0xe0b]
+	vpand xmm1, xmm0, oword [0xf38]
+	vpand ymm5, ymm3, ymm4
+	vpand ymm5, ymm4
+	vpand ymm6, ymm2, ymm3
+	vpand xmm10, xmm13, xmm12
+	vpand ymm10, ymm13, ymm9

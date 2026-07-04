@@ -1,4 +1,6 @@
 default rel
-	vendscalesh xmm9, xmm10, xmm8, 0xef
-	vendscalesh xmm9, xmm8, 0xef
-	vendscalesh xmm4, xmm6, word [0x730], 0x39
+	vendscalesh xmm4, xmm5, xmm4, 0xef
+	vendscalesh xmm4, xmm4, 0xef
+	vendscalesh xmm3, xmm0, xmm2, 0x74
+	vendscalesh xmm10, xmm11, xmm15, 0x6a
+	vendscalesh xmm19, xmm31, xmm25, 0x19

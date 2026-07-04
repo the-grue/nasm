@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for GF2P8MULB",
+  "id": "gf2p8mulb16",
+  "format": "bin",
+  "source": "gf2p8mulb_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/gf2p8mulb/",
+  "target": [
+   { "output": "gf2p8mulb.bin16", "match": "gf2p8mulb.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for GF2P8MULB",
+  "id": "gf2p8mulb32",
+  "format": "bin",
+  "source": "gf2p8mulb_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/gf2p8mulb/",
+  "target": [
+   { "output": "gf2p8mulb.bin32", "match": "gf2p8mulb.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for GF2P8MULB",
   "id": "gf2p8mulb64",
   "format": "bin",
   "source": "gf2p8mulb.asm",

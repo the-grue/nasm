@@ -1,13 +1,21 @@
 default rel
-	vpackssdw xmm11, xmm4, oword [0x39b]
-	vpackssdw xmm11, oword [0x39b]
-	vpackssdw xmm12, xmm11, xmm10
-	vpackssdw ymm10, ymm7, yword [0xaff]
-	vpackssdw ymm10, yword [0xaff]
-	vpackssdw ymm10, ymm14, ymm6
-	vpackssdw xmm0, xmm5, xmm4
-	vpackssdw xmm0, xmm4
-	vpackssdw xmm1, xmm12, xmm3
-	vpackssdw ymm10, ymm12, ymm10
-	vpackssdw ymm10, ymm10
-	vpackssdw ymm13, ymm0, ymm5
+	vpackssdw xmm5, xmm2, oword [0x39b]
+	vpackssdw xmm5, oword [0x39b]
+	vpackssdw xmm6, xmm5, xmm7
+	vpackssdw ymm2, ymm3, ymm2
+	vpackssdw ymm2, ymm2
+	vpackssdw ymm5, ymm6, ymm5
+	vpackssdw xmm6, xmm0, xmm2
+	vpackssdw xmm6, xmm2
+	vpackssdw xmm2, xmm1, xmm4
+	vpackssdw ymm5, ymm6, ymm0
+	vpackssdw ymm5, ymm0
+	vpackssdw ymm3, ymm0, ymm3
+	vpackssdw xmm14, xmm13, xmm9
+	vpackssdw ymm12, ymm10, ymm8
+	vpackssdw xmm12, xmm11, xmm9
+	vpackssdw ymm11, ymm11, ymm13
+	vpackssdw xmm26, xmm26, xmm23
+	vpackssdw ymm28, ymm19, ymm19
+	vpackssdw xmm20, xmm25, xmm30
+	vpackssdw ymm23, ymm18, ymm25

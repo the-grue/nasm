@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for CMPORDPS",
+  "id": "cmpordps16",
+  "format": "bin",
+  "source": "cmpordps_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/cmpordps/",
+  "target": [
+   { "output": "cmpordps.bin16", "match": "cmpordps.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for CMPORDPS",
+  "id": "cmpordps32",
+  "format": "bin",
+  "source": "cmpordps_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/cmpordps/",
+  "target": [
+   { "output": "cmpordps.bin32", "match": "cmpordps.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for CMPORDPS",
   "id": "cmpordps64",
   "format": "bin",
   "source": "cmpordps.asm",

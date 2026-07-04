@@ -1,3 +1,4 @@
 default rel
-	pmovsxbw xmm5, qword [0x693]
-	pmovsxbw xmm8, xmm2
+	pmovsxbw xmm2, qword [0x693]
+	pmovsxbw xmm5, xmm0
+	pmovsxbw xmm12, xmm11

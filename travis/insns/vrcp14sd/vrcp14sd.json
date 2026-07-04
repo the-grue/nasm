@@ -3,7 +3,7 @@
   "description": "Pseudorandom test for VRCP14SD",
   "id": "vrcp14sd16",
   "format": "bin",
-  "source": "vrcp14sd.asm",
+  "source": "vrcp14sd_narrow.asm",
   "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vrcp14sd/",
   "target": [
    { "output": "vrcp14sd.bin16", "match": "vrcp14sd.bin16.t" }
@@ -14,7 +14,7 @@
   "description": "Pseudorandom test for VRCP14SD",
   "id": "vrcp14sd32",
   "format": "bin",
-  "source": "vrcp14sd.asm",
+  "source": "vrcp14sd_narrow.asm",
   "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vrcp14sd/",
   "target": [
    { "output": "vrcp14sd.bin32", "match": "vrcp14sd.bin32.t" }

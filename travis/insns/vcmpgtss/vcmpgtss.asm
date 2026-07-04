@@ -1,6 +1,8 @@
 default rel
-	vcmpgtss xmm12, xmm0, qword [0x167]
-	vcmpgtss xmm12, qword [0x167]
-	vcmpgtss xmm11, xmm7, xmm6
-	vcmpgtss k7, xmm1, xmm13
-	vcmpgtss k3, xmm5, xmm10
+	vcmpgtss xmm6, xmm0, qword [0x167]
+	vcmpgtss xmm6, qword [0x167]
+	vcmpgtss xmm1, xmm6, xmm2
+	vcmpgtss k4, xmm5, xmm2
+	vcmpgtss k1, xmm7, xmm1
+	vcmpgtss xmm13, xmm11, xmm8
+	vcmpgtss k5, xmm15, xmm14

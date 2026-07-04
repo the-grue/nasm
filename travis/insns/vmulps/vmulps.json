@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VMULPS",
+  "id": "vmulps16",
+  "format": "bin",
+  "source": "vmulps_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vmulps/",
+  "target": [
+   { "output": "vmulps.bin16", "match": "vmulps.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VMULPS",
+  "id": "vmulps32",
+  "format": "bin",
+  "source": "vmulps_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vmulps/",
+  "target": [
+   { "output": "vmulps.bin32", "match": "vmulps.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VMULPS",
   "id": "vmulps64",
   "format": "bin",
   "source": "vmulps.asm",

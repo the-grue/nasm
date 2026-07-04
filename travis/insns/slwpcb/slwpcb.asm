@@ -1,5 +1,7 @@
 default rel
 	slwpcb ebx
-	slwpcb edi
-	slwpcb rdi
-	slwpcb rax
+	slwpcb eax
+	slwpcb rdx
+	slwpcb rcx
+	slwpcb r14d
+	slwpcb r9

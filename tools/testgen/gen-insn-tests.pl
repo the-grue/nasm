@@ -162,20 +162,73 @@ my %fixed = (
     unity      => sub { '1' },
 );
 
-my @reg8    = qw(al bl cl dl);
-my @reg16   = qw(ax bx cx dx si di bp);
-my @reg32   = qw(eax ebx ecx edx esi edi ebp);
-my @reg32na = qw(eax ebx ecx edx esi edi);       # "no esp" pool
-my @reg64   = qw(rax rbx rcx rdx rsi rdi rbp);
+#-----------------------------------------------------------------------
+# Register-number "tier" pools.
+#
+# Registers 8+ are only ever valid in 64-bit mode (they require a REX
+# prefix -- or, for r16-r31/vector-reg 16-31, REX2/EVEX register-
+# extension bits -- neither of which exist outside 64-bit mode). Three
+# tiers per extendable register class:
+#   low    - numbers 0-7:  valid at any --bits width; used for the
+#            normal (non-register-number-focused) instruction lines.
+#   hireg  - numbers 8-15: needs a REX (GPR) prefix; 64-bit mode only.
+#   apxreg - numbers 16-31: needs REX2/EVEX register-extension bits
+#            (GPR) or an EVEX V'/X4 bit (vector regs); 64-bit mode only.
+# NB the "low" GPR pools intentionally avoid rsp (and, for reg32na,
+# rbp too) as before; the hireg/apxreg tiers have no such special-
+# purpose register to dodge.
+#-----------------------------------------------------------------------
+my @reg8_lo    = qw(al bl cl dl);
+my @reg16_lo   = qw(ax bx cx dx si di bp);
+my @reg32_lo   = qw(eax ebx ecx edx esi edi ebp);
+my @reg32na_lo = qw(eax ebx ecx edx esi edi);       # "no esp" pool
+my @reg64_lo   = qw(rax rbx rcx rdx rsi rdi rbp);
+
+my @reg8_hi  = map { "r${_}b" } (8 .. 15);
+my @reg16_hi = map { "r${_}w" } (8 .. 15);
+my @reg32_hi = map { "r${_}d" } (8 .. 15);
+my @reg64_hi = map { "r$_" }    (8 .. 15);
+
+my @reg8_apx  = map { "r${_}b" } (16 .. 31);
+my @reg16_apx = map { "r${_}w" } (16 .. 31);
+my @reg32_apx = map { "r${_}d" } (16 .. 31);
+my @reg64_apx = map { "r$_" }    (16 .. 31);
+
+my %gpr_pool = (
+    8  => { low => \@reg8_lo,    hireg => \@reg8_hi,  apxreg => \@reg8_apx  },
+    16 => { low => \@reg16_lo,   hireg => \@reg16_hi, apxreg => \@reg16_apx },
+    32 => { low => \@reg32_lo,   hireg => \@reg32_hi, apxreg => \@reg32_apx },
+    64 => { low => \@reg64_lo,   hireg => \@reg64_hi, apxreg => \@reg64_apx },
+    '32na' => { low => \@reg32na_lo, hireg => \@reg32_hi, apxreg => \@reg32_apx },
+);
+sub gpr_pool { my ($bits, $variant) = @_; return $gpr_pool{$bits}{$variant // 'low'}; }
+
+my @xmm_lo  = map { "xmm$_" } (0 .. 7);
+my @xmm_hi  = map { "xmm$_" } (8 .. 15);
+my @xmm_apx = map { "xmm$_" } (16 .. 31);
+my @ymm_lo  = map { "ymm$_" } (0 .. 7);
+my @ymm_hi  = map { "ymm$_" } (8 .. 15);
+my @ymm_apx = map { "ymm$_" } (16 .. 31);
+my @zmm_lo  = map { "zmm$_" } (0 .. 7);
+my @zmm_hi  = map { "zmm$_" } (8 .. 15);
+my @zmm_apx = map { "zmm$_" } (16 .. 31);
+
+my %vec_pool = (
+    xmm => { low => \@xmm_lo, hireg => \@xmm_hi, apxreg => \@xmm_apx },
+    ymm => { low => \@ymm_lo, hireg => \@ymm_hi, apxreg => \@ymm_apx },
+    zmm => { low => \@zmm_lo, hireg => \@zmm_hi, apxreg => \@zmm_apx },
+);
+sub vec_pool { my ($kind, $variant) = @_; return $vec_pool{$kind}{$variant // 'low'}; }
+
 my @sreg    = qw(cs ds es fs gs ss);
 my @creg    = qw(cr0 cr2 cr3 cr4);
 my @dreg    = qw(dr0 dr1 dr2 dr3);
 my @treg    = qw(tr3 tr4 tr5 tr6 tr7);
 my @fpureg  = map { "st$_" } (0 .. 7);
-my @mmxreg  = map { "mm$_" } (0 .. 7);
-my @bndreg  = map { "bnd$_" } (0 .. 3);
-my @tmmreg  = map { "tmm$_" } (0 .. 7);
-my @kreg    = map { "k$_" } (1 .. 7);          # avoid k0 (== "no mask")
+my @mmxreg  = map { "mm$_" } (0 .. 7);   # only 8 MMX regs exist -- no hi/apx tier
+my @bndreg  = map { "bnd$_" } (0 .. 3);  # only 4 BND regs exist -- no hi/apx tier
+my @tmmreg  = map { "tmm$_" } (0 .. 7);  # only 8 TMM regs exist -- no hi/apx tier
+my @kreg    = map { "k$_" } (1 .. 7);    # avoid k0 (== "no mask"); only 8 k regs exist
 my %memsize = (8=>'byte', 16=>'word', 32=>'dword', 64=>'qword',
                128=>'oword', 256=>'yword', 512=>'zword');
 
@@ -204,10 +257,13 @@ sub vsib_operand {
 
 # Wide/simd register-or-memory generator: mostly prefers the register
 # form (always syntactically safe), occasionally emits a sized memory
-# operand.
+# operand. $force_reg (used for the hireg/apxreg register-number-
+# focused lines, where the whole point is to exercise that specific
+# register, not a coin-flip chance of falling back to memory) always
+# picks the register form.
 sub regmem {
-    my ($rng, $regpool, $sizebits) = @_;
-    if ($rng->() < 0.7) {
+    my ($rng, $regpool, $sizebits, $force_reg) = @_;
+    if ($force_reg || $rng->() < 0.7) {
         return pick($rng, @$regpool);
     } else {
         return mem_operand($rng, $sizebits);
@@ -224,12 +280,12 @@ sub imm_operand {
 # base-token (decorators after '|' or trailing '*' stripped) -> coderef
 # coderef->($rng, \%decorators) -> operand text, or undef if unsupported
 my %gen = (
-    reg8    => sub { my ($r) = @_; pick($r, @reg8) },
-    reg16   => sub { my ($r) = @_; pick($r, @reg16) },
-    reg32   => sub { my ($r) = @_; pick($r, @reg32) },
-    reg32na => sub { my ($r) = @_; pick($r, @reg32na) },
-    reg64   => sub { my ($r) = @_; pick($r, @reg64) },
-    'reg64:reg64' => sub { my ($r) = @_; pick($r,@reg64).":".pick($r,@reg64) },
+    reg8    => sub { my ($r,$v) = @_; pick($r, @{gpr_pool(8,$v)}) },
+    reg16   => sub { my ($r,$v) = @_; pick($r, @{gpr_pool(16,$v)}) },
+    reg32   => sub { my ($r,$v) = @_; pick($r, @{gpr_pool(32,$v)}) },
+    reg32na => sub { my ($r,$v) = @_; pick($r, @{gpr_pool('32na',$v)}) },
+    reg64   => sub { my ($r,$v) = @_; pick($r, @{gpr_pool(64,$v)}) },
+    'reg64:reg64' => sub { my ($r,$v) = @_; my $p=gpr_pool(64,$v); pick($r,@$p).":".pick($r,@$p) },
     reg_sreg => sub { my ($r) = @_; pick($r, @sreg) },
     reg_creg => sub { my ($r) = @_; pick($r, @creg) },
     reg_dreg => sub { my ($r) = @_; pick($r, @dreg) },
@@ -247,11 +303,11 @@ my %gen = (
     krm16    => sub { my ($r) = @_; pick($r, @kreg) },
     krm32    => sub { my ($r) = @_; pick($r, @kreg) },
     krm64    => sub { my ($r) = @_; pick($r, @kreg) },
-    rm8      => sub { my ($r) = @_; regmem($r, \@reg8, 8) },
-    rm16     => sub { my ($r) = @_; regmem($r, \@reg16, 16) },
-    rm32     => sub { my ($r) = @_; regmem($r, \@reg32, 32) },
-    rm64     => sub { my ($r) = @_; regmem($r, \@reg64, 64) },
-    rm_sel   => sub { my ($r) = @_; regmem($r, \@reg16, 16) },
+    rm8      => sub { my ($r,$v) = @_; regmem($r, gpr_pool(8,$v), 8, $v && $v ne 'low') },
+    rm16     => sub { my ($r,$v) = @_; regmem($r, gpr_pool(16,$v), 16, $v && $v ne 'low') },
+    rm32     => sub { my ($r,$v) = @_; regmem($r, gpr_pool(32,$v), 32, $v && $v ne 'low') },
+    rm64     => sub { my ($r,$v) = @_; regmem($r, gpr_pool(64,$v), 64, $v && $v ne 'low') },
+    rm_sel   => sub { my ($r,$v) = @_; regmem($r, gpr_pool(16,$v), 16, $v && $v ne 'low') },
     mem      => sub { my ($r) = @_; mem_operand($r, 0) },
     mem8     => sub { my ($r) = @_; mem_operand($r, 8) },
     mem16    => sub { my ($r) = @_; mem_operand($r, 16) },
@@ -262,25 +318,25 @@ my %gen = (
     mem256   => sub { my ($r) = @_; mem_operand($r, 256) },
     mem512   => sub { my ($r) = @_; mem_operand($r, 512) },
     mem_offs => sub { my ($r) = @_; sprintf('[0x%x]', int($r->()*0x1000)) },
-    xmmreg   => sub { my ($r) = @_; 'xmm' . int($r->() * 16) },
-    ymmreg   => sub { my ($r) = @_; 'ymm' . int($r->() * 16) },
-    zmmreg   => sub { my ($r) = @_; 'zmm' . int($r->() * 16) },
-    xmmrm    => sub { my ($r) = @_; regmem($r, [map {"xmm$_"} 0..15], 128) },
-    xmmrm8   => sub { my ($r) = @_; regmem($r, [map {"xmm$_"} 0..15], 8) },
-    xmmrm16  => sub { my ($r) = @_; regmem($r, [map {"xmm$_"} 0..15], 16) },
-    xmmrm32  => sub { my ($r) = @_; regmem($r, [map {"xmm$_"} 0..15], 32) },
-    xmmrm64  => sub { my ($r) = @_; regmem($r, [map {"xmm$_"} 0..15], 64) },
-    xmmrm128 => sub { my ($r) = @_; regmem($r, [map {"xmm$_"} 0..15], 128) },
-    ymmrm256 => sub { my ($r) = @_; regmem($r, [map {"ymm$_"} 0..15], 256) },
-    zmmrm512 => sub { my ($r) = @_; regmem($r, [map {"zmm$_"} 0..15], 512) },
+    xmmreg   => sub { my ($r,$v) = @_; pick($r, @{vec_pool('xmm',$v)}) },
+    ymmreg   => sub { my ($r,$v) = @_; pick($r, @{vec_pool('ymm',$v)}) },
+    zmmreg   => sub { my ($r,$v) = @_; pick($r, @{vec_pool('zmm',$v)}) },
+    xmmrm    => sub { my ($r,$v) = @_; regmem($r, vec_pool('xmm',$v), 128, $v && $v ne 'low') },
+    xmmrm8   => sub { my ($r,$v) = @_; regmem($r, vec_pool('xmm',$v), 8, $v && $v ne 'low') },
+    xmmrm16  => sub { my ($r,$v) = @_; regmem($r, vec_pool('xmm',$v), 16, $v && $v ne 'low') },
+    xmmrm32  => sub { my ($r,$v) = @_; regmem($r, vec_pool('xmm',$v), 32, $v && $v ne 'low') },
+    xmmrm64  => sub { my ($r,$v) = @_; regmem($r, vec_pool('xmm',$v), 64, $v && $v ne 'low') },
+    xmmrm128 => sub { my ($r,$v) = @_; regmem($r, vec_pool('xmm',$v), 128, $v && $v ne 'low') },
+    ymmrm256 => sub { my ($r,$v) = @_; regmem($r, vec_pool('ymm',$v), 256, $v && $v ne 'low') },
+    zmmrm512 => sub { my ($r,$v) = @_; regmem($r, vec_pool('zmm',$v), 512, $v && $v ne 'low') },
     mmxrm    => sub { my ($r) = @_; regmem($r, \@mmxreg, 64) },
     mmxrm64  => sub { my ($r) = @_; regmem($r, \@mmxreg, 64) },
-    xmem32   => sub { my ($r) = @_; vsib_operand($r, [map {"xmm$_"} 0..15]) },
-    xmem64   => sub { my ($r) = @_; vsib_operand($r, [map {"xmm$_"} 0..15]) },
-    ymem32   => sub { my ($r) = @_; vsib_operand($r, [map {"ymm$_"} 0..15]) },
-    ymem64   => sub { my ($r) = @_; vsib_operand($r, [map {"ymm$_"} 0..15]) },
-    zmem32   => sub { my ($r) = @_; vsib_operand($r, [map {"zmm$_"} 0..15]) },
-    zmem64   => sub { my ($r) = @_; vsib_operand($r, [map {"zmm$_"} 0..15]) },
+    xmem32   => sub { my ($r,$v) = @_; vsib_operand($r, vec_pool('xmm',$v)) },
+    xmem64   => sub { my ($r,$v) = @_; vsib_operand($r, vec_pool('xmm',$v)) },
+    ymem32   => sub { my ($r,$v) = @_; vsib_operand($r, vec_pool('ymm',$v)) },
+    ymem64   => sub { my ($r,$v) = @_; vsib_operand($r, vec_pool('ymm',$v)) },
+    zmem32   => sub { my ($r,$v) = @_; vsib_operand($r, vec_pool('zmm',$v)) },
+    zmem64   => sub { my ($r,$v) = @_; vsib_operand($r, vec_pool('zmm',$v)) },
     imm      => sub { my ($r) = @_; imm_operand($r, 7) },  # unqualified
                                                             # "imm" width is
                                                             # only apparent
@@ -346,7 +402,7 @@ sub base_token {
 }
 
 sub gen_operand {
-    my ($rng, $tok, $mnem, $is_branch) = @_;
+    my ($rng, $tok, $mnem, $is_branch, $variant) = @_;
     my $base = base_token($tok);
     if ($is_branch) {
         return '.L1';
@@ -355,10 +411,48 @@ sub gen_operand {
         return $fixed{$base}->();
     }
     if (exists $gen{$base}) {
-        return $gen{$base}->($rng);
+        return $gen{$base}->($rng, $variant);
     }
     $unsupported{$base}++;
     return undef;
+}
+
+# Base tokens whose register pool has hireg (r8-r15 range) / apxreg
+# (r16-r31 range) tiers available -- i.e. templates containing at
+# least one of these are candidates for the extra register-number-
+# focused ("hireg"/"apxreg") coverage lines built by build_variant_line()
+# below.
+my %extendable_base = map { $_ => 1 } qw(
+    reg8 reg16 reg32 reg32na reg64 reg64:reg64
+    rm8 rm16 rm32 rm64 rm_sel
+    xmmreg ymmreg zmmreg
+    xmmrm xmmrm8 xmmrm16 xmmrm32 xmmrm64 xmmrm128 ymmrm256 zmmrm512
+    xmem32 xmem64 ymem32 ymem64 zmem32 zmem64
+);
+
+sub has_extendable_token {
+    my ($ops) = @_;
+    for my $tok (@$ops) {
+        return 1 if $extendable_base{ base_token($tok) };
+    }
+    return 0;
+}
+
+# Build one concrete instruction line with every extendable register
+# operand drawn from the given tier ('hireg' or 'apxreg'); returns
+# undef if any operand token is unsupported. These lines are always
+# 64-bit-mode-only (register numbers 8+ don't exist outside 64-bit
+# mode), regardless of the base token's own size-based needs64 status.
+sub build_variant_line {
+    my ($rng, $mnem, $ops, $is_branch, $variant) = @_;
+    my @operands;
+    for my $tok (@$ops) {
+        my $val = gen_operand($rng, $tok, $mnem, $is_branch, $variant);
+        return undef unless defined $val;
+        push @operands, $val;
+    }
+    my $text = lc($mnem) . (@operands ? ' ' . join(', ', @operands) : '');
+    return { text => $text, needs64 => 1 };
 }
 
 # insns.xda marks at most one operand per template with a trailing '*'
@@ -441,8 +535,11 @@ for my $mnem (sort keys %by_mnemonic) {
 
     my $is_branch = $branch_mnemonic{$mnem} ? 1 : 0;
     my @lines;        # { text => ..., needs64 => 0|1 }
+    my @extra_hireg;  # candidate hireg-tier lines, one per eligible template
+    my @extra_apxreg; # candidate apxreg-tier lines, one per eligible template
     for my $t (@sample) {
         my $opt_idx = optional_operand_index($t->{ops});
+        my $extendable = has_extendable_token($t->{ops});
         for my $variant_num (1 .. $variants) {
             my @operands;
             my $ok = 1;
@@ -472,6 +569,23 @@ for my $mnem (sort keys %by_mnemonic) {
                     needs64 => $needs64,
                 };
             }
+
+            # Register-number coverage: once per template (not once per
+            # --variants instance), also try building an all-hireg
+            # (r8-r15/xmm8-15/...) and an all-apxreg (r16-r31/xmm16-31)
+            # rendition of this same template. These are candidates
+            # only -- whether they actually get included in the
+            # generated file is decided by the staged-fallback probe
+            # below, since a handful of mnemonics won't support the
+            # extended encoding at all (e.g. NOAPX/NOLONG-flagged ones)
+            # and we don't want one bad line to cost the mnemonic its
+            # entire 64-bit body.
+            if ($extendable && $variant_num == 1) {
+                my $hl = build_variant_line($rng, $mnem, $t->{ops}, $is_branch, 'hireg');
+                push @extra_hireg, $hl if defined $hl;
+                my $al = build_variant_line($rng, $mnem, $t->{ops}, $is_branch, 'apxreg');
+                push @extra_apxreg, $al if defined $al;
+            }
         }
     }
 
@@ -489,13 +603,67 @@ for my $mnem (sort keys %by_mnemonic) {
     # outside the repo, where the "./" convention doesn't apply).
     my $dirref = ($dirname =~ m{^/}) ? $dirname : "./$dirname";
 
+    # Warnings that are inherent to the intentionally-simple bare-
+    # displacement addressing style used by mem_operand()/vsib_operand()
+    # (see comments there) rather than being interesting instruction-
+    # specific results in their own right; suppressed consistently so
+    # they don't get captured into every stderr golden.
+    my $warn_opts = '-w-ea-absolute -w-implicit-abs-deprecated';
+
+    # Staged-fallback probe: if we have hireg/apxreg candidate lines,
+    # try including both, then just hireg, then just apxreg, then
+    # neither -- keeping the first combination that actually assembles.
+    # The last (neither) stage is guaranteed to succeed, since @lines
+    # alone is exactly the pre-existing, already-validated generator
+    # behavior. This bounds the extra probing cost to a handful of
+    # throwaway nasm invocations only for mnemonics where the
+    # extended-register forms don't apply, while costing nothing extra
+    # in the common (all-succeed) case.
+    #
+    # Which bit widths need to be probed: always 64 (that's where the
+    # extra lines live), *and* 16/32 too whenever @narrow_lines is
+    # empty -- in that case the per-bits loop below reuses the same
+    # "full" file for every width (see the $asmfile ternary further
+    # down), so a hireg/apxreg line that only 64-bit mode can encode
+    # would otherwise silently break 16/32-bit coverage for such
+    # mnemonics (all of whose *only* templates happen to need 64-bit
+    # register operands, e.g. URDMSR/UWRMSR).
+    my @full_lines = @lines;
+    if (@extra_hireg || @extra_apxreg) {
+        my @probe_bits = @narrow_lines ? (64) : (16, 32, 64);
+        my @attempts = ([@extra_hireg, @extra_apxreg], [@extra_hireg], [@extra_apxreg], []);
+        for my $extra (@attempts) {
+            next if !@$extra && $extra != $attempts[-1]; # skip empty non-final combos
+            my $candidate = [@lines, @$extra];
+            my $body = render_body($candidate, $is_branch, 1);
+            my $probe_asm = "$dirname/.probe_" . lc($mnem) . '.asm';
+            my $probe_bin = "$probe_asm.bin";
+            open(my $pfh, '>', $probe_asm) or die "$probe_asm: $!\n";
+            print $pfh $body;
+            close($pfh);
+            my $ok = 1;
+            for my $pbits (@probe_bits) {
+                my $cmd = sprintf('%s --bits %d -f bin %s %s -o %s >/dev/null 2>&1',
+                                   $nasm_bin, $pbits, $warn_opts, $probe_asm, $probe_bin);
+                system($cmd);
+                if ($? != 0 || !-s $probe_bin) { $ok = 0; last; }
+                unlink($probe_bin);
+            }
+            unlink($probe_asm, $probe_bin);
+            if ($ok) {
+                @full_lines = @$candidate;
+                last;
+            }
+        }
+    }
+
     my $asmfile_full = lc($mnem) . '.asm';
     open(my $fh, '>', "$dirname/$asmfile_full") or die "$dirname/$asmfile_full: $!\n";
-    print $fh render_body(\@lines, $is_branch, 1);
+    print $fh render_body(\@full_lines, $is_branch, 1);
     close($fh);
 
     my $asmfile_narrow = $asmfile_full;
-    if (@narrow_lines && scalar(@narrow_lines) != scalar(@lines)) {
+    if (@narrow_lines && scalar(@narrow_lines) != scalar(@full_lines)) {
         $asmfile_narrow = lc($mnem) . '_narrow.asm';
         open(my $nfh, '>', "$dirname/$asmfile_narrow") or die $!;
         print $nfh render_body(\@narrow_lines, $is_branch);
@@ -503,12 +671,6 @@ for my $mnem (sort keys %by_mnemonic) {
     }
 
     my @json_entries;
-    # Warnings that are inherent to the intentionally-simple bare-
-    # displacement addressing style used by mem_operand()/vsib_operand()
-    # (see comments there) rather than being interesting instruction-
-    # specific results in their own right; suppressed consistently so
-    # they don't get captured into every stderr golden.
-    my $warn_opts = '-w-ea-absolute -w-implicit-abs-deprecated';
     for my $bits (16, 32, 64) {
         my $asmfile = ($bits == 64 || !@narrow_lines) ? $asmfile_full : $asmfile_narrow;
         my $binfile = lc($mnem) . ".bin$bits";

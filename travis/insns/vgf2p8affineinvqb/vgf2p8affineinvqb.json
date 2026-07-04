@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VGF2P8AFFINEINVQB",
+  "id": "vgf2p8affineinvqb16",
+  "format": "bin",
+  "source": "vgf2p8affineinvqb_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vgf2p8affineinvqb/",
+  "target": [
+   { "output": "vgf2p8affineinvqb.bin16", "match": "vgf2p8affineinvqb.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VGF2P8AFFINEINVQB",
+  "id": "vgf2p8affineinvqb32",
+  "format": "bin",
+  "source": "vgf2p8affineinvqb_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vgf2p8affineinvqb/",
+  "target": [
+   { "output": "vgf2p8affineinvqb.bin32", "match": "vgf2p8affineinvqb.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VGF2P8AFFINEINVQB",
   "id": "vgf2p8affineinvqb64",
   "format": "bin",
   "source": "vgf2p8affineinvqb.asm",

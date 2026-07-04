@@ -3,7 +3,7 @@
   "description": "Pseudorandom test for MOVSLDUP",
   "id": "movsldup16",
   "format": "bin",
-  "source": "movsldup.asm",
+  "source": "movsldup_narrow.asm",
   "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/movsldup/",
   "target": [
    { "output": "movsldup.bin16", "match": "movsldup.bin16.t" }
@@ -14,7 +14,7 @@
   "description": "Pseudorandom test for MOVSLDUP",
   "id": "movsldup32",
   "format": "bin",
-  "source": "movsldup.asm",
+  "source": "movsldup_narrow.asm",
   "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/movsldup/",
   "target": [
    { "output": "movsldup.bin32", "match": "movsldup.bin32.t" }

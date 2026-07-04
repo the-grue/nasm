@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VFNMADD213PH",
+  "id": "vfnmadd213ph16",
+  "format": "bin",
+  "source": "vfnmadd213ph_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vfnmadd213ph/",
+  "target": [
+   { "output": "vfnmadd213ph.bin16", "match": "vfnmadd213ph.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VFNMADD213PH",
+  "id": "vfnmadd213ph32",
+  "format": "bin",
+  "source": "vfnmadd213ph_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vfnmadd213ph/",
+  "target": [
+   { "output": "vfnmadd213ph.bin32", "match": "vfnmadd213ph.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VFNMADD213PH",
   "id": "vfnmadd213ph64",
   "format": "bin",
   "source": "vfnmadd213ph.asm",

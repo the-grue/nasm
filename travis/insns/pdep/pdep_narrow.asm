@@ -1,3 +1,3 @@
 	pdep eax, edi, ebp
 	pdep eax, ebp
-	pdep ecx, eax, esi
+	pdep esi, edx, dword [0x8c9]

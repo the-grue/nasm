@@ -1,5 +1,9 @@
 default rel
 	rdpid rbp
-	rdpid rax
-	rdpid eax
-	rdpid ebp
+	rdpid rbp
+	rdpid edx
+	rdpid edi
+	rdpid r8
+	rdpid r10d
+	rdpid r17
+	rdpid r26d

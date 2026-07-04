@@ -1,6 +1,6 @@
 	movzx si, dl
-	movzx ax, al
-	movzx eax, dl
-	movzx ecx, cl
-	movzx bp, word [0x171]
-	movzx bp, dx
+	movzx bx, byte [0x756]
+	movzx ebx, dl
+	movzx edx, byte [0xc18]
+	movzx ax, word [0x112]
+	movzx ax, ax

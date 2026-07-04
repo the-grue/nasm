@@ -1,4 +1,6 @@
 default rel
-	vrndscalesh xmm1, xmm14, xmm9, 0xa4
-	vrndscalesh xmm1, xmm9, 0xa4
-	vrndscalesh xmm10, xmm0, xmm6, 0x6e
+	vrndscalesh xmm0, xmm7, xmm4, 0xa4
+	vrndscalesh xmm0, xmm4, 0xa4
+	vrndscalesh xmm3, xmm5, word [0x196], 0x6a
+	vrndscalesh xmm13, xmm8, xmm13, 0x6a
+	vrndscalesh xmm22, xmm25, xmm31, 0x6c

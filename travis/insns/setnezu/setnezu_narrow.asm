@@ -1,4 +1,4 @@
-	setnezu edi
-	setnezu edi
-	setnezu cl
-	setnezu byte [0x63c]
+	setnezu edx
+	setnezu ecx
+	setnezu dl
+	setnezu byte [0xb42]

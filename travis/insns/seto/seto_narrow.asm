@@ -1,4 +1,4 @@
 	seto byte [0x857]
-	seto bl
-	seto edx
-	seto ecx
+	seto dl
+	seto edi
+	seto eax

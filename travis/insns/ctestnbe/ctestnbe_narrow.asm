@@ -1,6 +1,6 @@
 	ctestnbe 0, dl, al
-	ctestnbe 13, al, dl
-	ctestnbe 1, word [0x5af], cx
-	ctestnbe 6, word [0xddb], cx
-	ctestnbe 4, dword [0xdef], edx
-	ctestnbe 13, esi, eax
+	ctestnbe 4, bl, dl
+	ctestnbe 13, cx, di
+	ctestnbe 8, word [0xab8], ax
+	ctestnbe 7, dword [0x870], ebp
+	ctestnbe 3, ecx, esi

@@ -1,5 +1,9 @@
 default rel
 	rdgsbase edi
-	rdgsbase edi
-	rdgsbase rdi
-	rdgsbase rdx
+	rdgsbase edx
+	rdgsbase rax
+	rdgsbase rsi
+	rdgsbase r14d
+	rdgsbase r14
+	rdgsbase r28d
+	rdgsbase r23

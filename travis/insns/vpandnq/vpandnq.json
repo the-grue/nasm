@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPANDNQ",
+  "id": "vpandnq16",
+  "format": "bin",
+  "source": "vpandnq_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpandnq/",
+  "target": [
+   { "output": "vpandnq.bin16", "match": "vpandnq.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPANDNQ",
+  "id": "vpandnq32",
+  "format": "bin",
+  "source": "vpandnq_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpandnq/",
+  "target": [
+   { "output": "vpandnq.bin32", "match": "vpandnq.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPANDNQ",
   "id": "vpandnq64",
   "format": "bin",
   "source": "vpandnq.asm",

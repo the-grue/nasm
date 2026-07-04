@@ -1,6 +1,6 @@
-	vextractps ecx, xmm3, 0x59
-	vextractps dword [0xa12], xmm1, 0xce
-	vextractps edx, xmm2, 0x4f
-	vextractps ebp, xmm10, 0x1
-	vextractps dword [0x218], xmm7, 0x66
-	vextractps dword [0x1a9], xmm8, 0x3e
+	vextractps ecx, xmm1, 0x59
+	vextractps ebp, xmm5, 0x1
+	vextractps esi, xmm0, 0xf0
+	vextractps eax, xmm4, 0x3e
+	vextractps dword [0xbf8], xmm3, 0xb8
+	vextractps dword [0x172], xmm1, 0xe1

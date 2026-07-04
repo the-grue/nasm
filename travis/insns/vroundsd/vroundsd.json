@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VROUNDSD",
+  "id": "vroundsd16",
+  "format": "bin",
+  "source": "vroundsd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vroundsd/",
+  "target": [
+   { "output": "vroundsd.bin16", "match": "vroundsd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VROUNDSD",
+  "id": "vroundsd32",
+  "format": "bin",
+  "source": "vroundsd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vroundsd/",
+  "target": [
+   { "output": "vroundsd.bin32", "match": "vroundsd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VROUNDSD",
   "id": "vroundsd64",
   "format": "bin",
   "source": "vroundsd.asm",

@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VSHUFF32X4",
+  "id": "vshuff32x416",
+  "format": "bin",
+  "source": "vshuff32x4_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vshuff32x4/",
+  "target": [
+   { "output": "vshuff32x4.bin16", "match": "vshuff32x4.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VSHUFF32X4",
+  "id": "vshuff32x432",
+  "format": "bin",
+  "source": "vshuff32x4_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vshuff32x4/",
+  "target": [
+   { "output": "vshuff32x4.bin32", "match": "vshuff32x4.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VSHUFF32X4",
   "id": "vshuff32x464",
   "format": "bin",
   "source": "vshuff32x4.asm",

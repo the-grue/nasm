@@ -1,7 +1,9 @@
 default rel
-	vpandn xmm13, xmm3, xmm12
-	vpandn xmm13, xmm12
-	vpandn xmm2, xmm3, oword [0x6e1]
-	vpandn ymm0, ymm10, ymm0
-	vpandn ymm0, ymm0
-	vpandn ymm14, ymm12, yword [0x40b]
+	vpandn xmm6, xmm1, xmm6
+	vpandn xmm6, xmm6
+	vpandn xmm2, xmm0, oword [0xc6c]
+	vpandn ymm6, ymm1, ymm6
+	vpandn ymm6, ymm6
+	vpandn ymm2, ymm3, yword [0xa9c]
+	vpandn xmm9, xmm9, xmm14
+	vpandn ymm10, ymm13, ymm13

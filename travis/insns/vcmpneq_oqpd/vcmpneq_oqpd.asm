@@ -1,11 +1,15 @@
 default rel
-	vcmpneq_oqpd xmm9, xmm12, xmm12
-	vcmpneq_oqpd xmm9, xmm12
-	vcmpneq_oqpd xmm14, xmm11, xmm7
-	vcmpneq_oqpd ymm6, ymm9, ymm14
-	vcmpneq_oqpd ymm6, ymm14
-	vcmpneq_oqpd ymm7, ymm14, ymm9
-	vcmpneq_oqpd k3, xmm14, xmm9
-	vcmpneq_oqpd k1, xmm6, xmm15
-	vcmpneq_oqpd k2, ymm12, ymm13
-	vcmpneq_oqpd k2, ymm4, ymm6
+	vcmpneq_oqpd xmm4, xmm6, xmm6
+	vcmpneq_oqpd xmm4, xmm6
+	vcmpneq_oqpd xmm3, xmm7, xmm7
+	vcmpneq_oqpd ymm0, ymm4, ymm7
+	vcmpneq_oqpd ymm0, ymm7
+	vcmpneq_oqpd ymm1, ymm6, ymm6
+	vcmpneq_oqpd k2, xmm2, xmm3
+	vcmpneq_oqpd k3, xmm6, xmm1
+	vcmpneq_oqpd k6, ymm3, ymm7
+	vcmpneq_oqpd k1, ymm1, ymm4
+	vcmpneq_oqpd xmm15, xmm13, xmm11
+	vcmpneq_oqpd ymm11, ymm12, ymm8
+	vcmpneq_oqpd k5, xmm13, xmm10
+	vcmpneq_oqpd k4, ymm11, ymm9

@@ -1,7 +1,7 @@
 default rel
 	umonitor cx
-	umonitor ax
-	umonitor edi
-	umonitor esi
-	umonitor rbp
-	umonitor rax
+	umonitor si
+	umonitor ebp
+	umonitor eax
+	umonitor rbx
+	umonitor rdi

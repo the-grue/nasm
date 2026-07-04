@@ -1,6 +1,6 @@
-	vpextrb edi, xmm10, 0x6b
-	vpextrb ecx, xmm7, 0x48
-	vpextrb byte [0x22a], xmm15, 0xcd
-	vpextrb byte [0x670], xmm10, 0xe9
-	vpextrb bl, xmm6, 0x98
-	vpextrb cl, xmm10, 0x34
+	vpextrb eax, xmm7, 0xcd
+	vpextrb edx, xmm5, 0x34
+	vpextrb byte [0x1f1], xmm7, 0x8a
+	vpextrb byte [0x846], xmm0, 0xe2
+	vpextrb bl, xmm7, 0xec
+	vpextrb bl, xmm6, 0xc5

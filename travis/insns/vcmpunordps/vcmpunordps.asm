@@ -1,11 +1,15 @@
 default rel
-	vcmpunordps xmm0, xmm2, xmm0
+	vcmpunordps xmm0, xmm1, xmm0
 	vcmpunordps xmm0, xmm0
-	vcmpunordps xmm6, xmm14, xmm9
-	vcmpunordps ymm11, ymm11, ymm1
-	vcmpunordps ymm11, ymm1
-	vcmpunordps ymm12, ymm3, ymm1
-	vcmpunordps k6, xmm14, oword [0x4eb]
-	vcmpunordps k3, xmm1, oword [0x9de]
-	vcmpunordps k1, ymm13, ymm5
-	vcmpunordps k5, ymm14, ymm13
+	vcmpunordps xmm4, xmm0, oword [0x484]
+	vcmpunordps ymm2, ymm0, yword [0xe36]
+	vcmpunordps ymm2, yword [0xe36]
+	vcmpunordps ymm0, ymm6, ymm2
+	vcmpunordps k5, xmm7, xmm6
+	vcmpunordps k6, xmm5, oword [0xbf3]
+	vcmpunordps k1, ymm1, ymm5
+	vcmpunordps k5, ymm4, yword [0x776]
+	vcmpunordps xmm11, xmm15, xmm10
+	vcmpunordps ymm15, ymm10, ymm10
+	vcmpunordps k5, xmm14, xmm10
+	vcmpunordps k1, ymm8, ymm8

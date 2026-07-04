@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for AESENCLAST",
+  "id": "aesenclast16",
+  "format": "bin",
+  "source": "aesenclast_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/aesenclast/",
+  "target": [
+   { "output": "aesenclast.bin16", "match": "aesenclast.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for AESENCLAST",
+  "id": "aesenclast32",
+  "format": "bin",
+  "source": "aesenclast_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/aesenclast/",
+  "target": [
+   { "output": "aesenclast.bin32", "match": "aesenclast.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for AESENCLAST",
   "id": "aesenclast64",
   "format": "bin",
   "source": "aesenclast.asm",

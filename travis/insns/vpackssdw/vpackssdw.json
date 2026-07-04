@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPACKSSDW",
+  "id": "vpackssdw16",
+  "format": "bin",
+  "source": "vpackssdw_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpackssdw/",
+  "target": [
+   { "output": "vpackssdw.bin16", "match": "vpackssdw.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPACKSSDW",
+  "id": "vpackssdw32",
+  "format": "bin",
+  "source": "vpackssdw_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpackssdw/",
+  "target": [
+   { "output": "vpackssdw.bin32", "match": "vpackssdw.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPACKSSDW",
   "id": "vpackssdw64",
   "format": "bin",
   "source": "vpackssdw.asm",

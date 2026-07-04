@@ -1,10 +1,16 @@
 default rel
-	vpclmullqhqdq xmm11, xmm5, xmm13
-	vpclmullqhqdq xmm11, xmm13
-	vpclmullqhqdq xmm1, xmm12, xmm15
-	vpclmullqhqdq ymm3, ymm8, ymm1
-	vpclmullqhqdq ymm3, ymm1
-	vpclmullqhqdq ymm12, ymm0, ymm0
-	vpclmullqhqdq zmm2, zmm9, zword [0x295]
-	vpclmullqhqdq zmm2, zword [0x295]
-	vpclmullqhqdq zmm15, zmm7, zmm1
+	vpclmullqhqdq xmm5, xmm2, xmm6
+	vpclmullqhqdq xmm5, xmm6
+	vpclmullqhqdq xmm1, xmm0, oword [0x10f]
+	vpclmullqhqdq ymm0, ymm0, ymm4
+	vpclmullqhqdq ymm0, ymm4
+	vpclmullqhqdq ymm5, ymm1, ymm0
+	vpclmullqhqdq zmm1, zmm0, zword [0x66d]
+	vpclmullqhqdq zmm1, zword [0x66d]
+	vpclmullqhqdq zmm7, zmm6, zmm2
+	vpclmullqhqdq xmm8, xmm14, xmm11
+	vpclmullqhqdq ymm15, ymm8, ymm15
+	vpclmullqhqdq zmm13, zmm10, zmm8
+	vpclmullqhqdq xmm31, xmm19, xmm24
+	vpclmullqhqdq ymm23, ymm24, ymm17
+	vpclmullqhqdq zmm20, zmm27, zmm22

@@ -1,2 +1,2 @@
 	blsfill ecx, dword [0x4bf]
-	blsfill ecx, ebp
+	blsfill eax, dword [0x775]

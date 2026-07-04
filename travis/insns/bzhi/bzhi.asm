@@ -1,7 +1,11 @@
 default rel
 	bzhi edx, eax, ecx
 	bzhi edx, ecx
-	bzhi eax, ebx, eax
-	bzhi rax, rcx, rcx
-	bzhi rax, rcx
-	bzhi rbp, rax, rdi
+	bzhi ecx, ebp, edx
+	bzhi rax, qword [0x49a], rdx
+	bzhi rax, rdx
+	bzhi rbx, rsi, rsi
+	bzhi r8d, r12d, r9d
+	bzhi r8, r10, r10
+	bzhi r17d, r17d, r19d
+	bzhi r27, r27, r24

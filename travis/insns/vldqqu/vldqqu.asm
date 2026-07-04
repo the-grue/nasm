@@ -1,3 +1,4 @@
 default rel
-	vldqqu ymm3, yword [0x172]
-	vldqqu ymm6, yword [0x258]
+	vldqqu ymm1, yword [0x172]
+	vldqqu ymm7, yword [0x75e]
+	vldqqu ymm11, yword [0x258]

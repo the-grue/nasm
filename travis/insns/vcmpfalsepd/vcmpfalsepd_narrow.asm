@@ -1,0 +1,10 @@
+	vcmpfalsepd xmm6, xmm7, xmm6
+	vcmpfalsepd xmm6, xmm6
+	vcmpfalsepd xmm5, xmm4, xmm6
+	vcmpfalsepd ymm4, ymm1, ymm1
+	vcmpfalsepd ymm4, ymm1
+	vcmpfalsepd ymm4, ymm7, ymm3
+	vcmpfalsepd k4, xmm4, xmm7
+	vcmpfalsepd k4, xmm3, oword [0x864]
+	vcmpfalsepd k2, ymm7, ymm5
+	vcmpfalsepd k1, ymm0, yword [0x1f6]

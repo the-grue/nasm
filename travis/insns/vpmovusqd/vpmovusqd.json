@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPMOVUSQD",
+  "id": "vpmovusqd16",
+  "format": "bin",
+  "source": "vpmovusqd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpmovusqd/",
+  "target": [
+   { "output": "vpmovusqd.bin16", "match": "vpmovusqd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPMOVUSQD",
+  "id": "vpmovusqd32",
+  "format": "bin",
+  "source": "vpmovusqd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpmovusqd/",
+  "target": [
+   { "output": "vpmovusqd.bin32", "match": "vpmovusqd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPMOVUSQD",
   "id": "vpmovusqd64",
   "format": "bin",
   "source": "vpmovusqd.asm",

@@ -1,7 +1,13 @@
 default rel
 	setnaezu rdi
 	setnaezu rsi
-	setnaezu ebx
+	setnaezu ebp
 	setnaezu esi
-	setnaezu byte [0x59e]
 	setnaezu cl
+	setnaezu bl
+	setnaezu r13
+	setnaezu r10d
+	setnaezu r9b
+	setnaezu r18
+	setnaezu r21d
+	setnaezu r17b

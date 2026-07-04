@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VCMPNEQ_USSD",
+  "id": "vcmpneq_ussd16",
+  "format": "bin",
+  "source": "vcmpneq_ussd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcmpneq_ussd/",
+  "target": [
+   { "output": "vcmpneq_ussd.bin16", "match": "vcmpneq_ussd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCMPNEQ_USSD",
+  "id": "vcmpneq_ussd32",
+  "format": "bin",
+  "source": "vcmpneq_ussd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcmpneq_ussd/",
+  "target": [
+   { "output": "vcmpneq_ussd.bin32", "match": "vcmpneq_ussd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCMPNEQ_USSD",
   "id": "vcmpneq_ussd64",
   "format": "bin",
   "source": "vcmpneq_ussd.asm",

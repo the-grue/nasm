@@ -1,3 +1,4 @@
 default rel
-	phminposuw xmm5, xmm10
-	phminposuw xmm5, oword [0x265]
+	phminposuw xmm2, xmm5
+	phminposuw xmm4, xmm6
+	phminposuw xmm10, xmm14

@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VCMPLESD",
+  "id": "vcmplesd16",
+  "format": "bin",
+  "source": "vcmplesd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcmplesd/",
+  "target": [
+   { "output": "vcmplesd.bin16", "match": "vcmplesd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCMPLESD",
+  "id": "vcmplesd32",
+  "format": "bin",
+  "source": "vcmplesd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcmplesd/",
+  "target": [
+   { "output": "vcmplesd.bin32", "match": "vcmplesd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCMPLESD",
   "id": "vcmplesd64",
   "format": "bin",
   "source": "vcmplesd.asm",

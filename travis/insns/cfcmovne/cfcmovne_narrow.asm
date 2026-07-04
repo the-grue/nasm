@@ -1,6 +1,6 @@
 	cfcmovne bp, di
-	cfcmovne ax, si
-	cfcmovne ebp, ecx
-	cfcmovne dword [0xfcc], ebp
-	cfcmovne di, bx
-	cfcmovne si, bx
+	cfcmovne word [0x566], bp
+	cfcmovne dword [0xfcc], ebx
+	cfcmovne dword [0xcfe], eax
+	cfcmovne di, ax
+	cfcmovne ax, bx

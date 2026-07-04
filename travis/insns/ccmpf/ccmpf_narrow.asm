@@ -1,6 +1,6 @@
 	ccmpf 2, al, al
-	ccmpf 7, byte [0x46d], cl
-	ccmpf 10, word [0xff0], bx
-	ccmpf 7, word [0xf74], ax
-	ccmpf 4, edi, esi
-	ccmpf 4, ecx, ebx
+	ccmpf 15, bl, dl
+	ccmpf 15, cx, bx
+	ccmpf 3, si, bp
+	ccmpf 0, dword [0x4ee], ebx
+	ccmpf 4, edi, ebp

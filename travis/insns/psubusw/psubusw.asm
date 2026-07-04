@@ -1,5 +1,6 @@
 default rel
 	psubusw mm7, qword [0x5bd]
 	psubusw mm3, qword [0x589]
-	psubusw xmm7, oword [0xc9e]
-	psubusw xmm0, xmm9
+	psubusw xmm3, oword [0xc9e]
+	psubusw xmm2, oword [0x212]
+	psubusw xmm8, xmm9

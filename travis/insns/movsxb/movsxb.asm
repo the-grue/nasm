@@ -2,8 +2,14 @@ default rel
 	movsxb ax, al
 	movsxb ax, al
 	movsxb bx, dl
-	movsxb si, byte [0x251]
-	movsxb edx, dl
-	movsxb eax, dl
-	movsxb rcx, byte [0xda6]
+	movsxb bx, byte [0x110]
+	movsxb eax, byte [0x678]
+	movsxb esi, byte [0x598]
+	movsxb rax, cl
 	movsxb rsi, cl
+	movsxb r13w, r15b
+	movsxb r14d, r14b
+	movsxb r8, r14b
+	movsxb r17w, r23b
+	movsxb r26d, r20b
+	movsxb r24, r16b

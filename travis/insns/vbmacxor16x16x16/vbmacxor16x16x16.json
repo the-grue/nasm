@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VBMACXOR16X16X16",
+  "id": "vbmacxor16x16x1616",
+  "format": "bin",
+  "source": "vbmacxor16x16x16_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vbmacxor16x16x16/",
+  "target": [
+   { "output": "vbmacxor16x16x16.bin16", "match": "vbmacxor16x16x16.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VBMACXOR16X16X16",
+  "id": "vbmacxor16x16x1632",
+  "format": "bin",
+  "source": "vbmacxor16x16x16_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vbmacxor16x16x16/",
+  "target": [
+   { "output": "vbmacxor16x16x16.bin32", "match": "vbmacxor16x16x16.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VBMACXOR16X16X16",
   "id": "vbmacxor16x16x1664",
   "format": "bin",
   "source": "vbmacxor16x16x16.asm",

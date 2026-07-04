@@ -1,7 +1,13 @@
 default rel
 	setz byte [0x8b0]
-	setz byte [0xdf2]
-	setz rdi
-	setz rdx
-	setz esi
-	setz ebp
+	setz byte [0x881]
+	setz rsi
+	setz rbp
+	setz edx
+	setz ecx
+	setz r14b
+	setz r15
+	setz r13d
+	setz r29b
+	setz r22
+	setz r24d

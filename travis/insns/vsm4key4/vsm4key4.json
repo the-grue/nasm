@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VSM4KEY4",
+  "id": "vsm4key416",
+  "format": "bin",
+  "source": "vsm4key4_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vsm4key4/",
+  "target": [
+   { "output": "vsm4key4.bin16", "match": "vsm4key4.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VSM4KEY4",
+  "id": "vsm4key432",
+  "format": "bin",
+  "source": "vsm4key4_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vsm4key4/",
+  "target": [
+   { "output": "vsm4key4.bin32", "match": "vsm4key4.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VSM4KEY4",
   "id": "vsm4key464",
   "format": "bin",
   "source": "vsm4key4.asm",

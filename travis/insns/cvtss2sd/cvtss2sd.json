@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for CVTSS2SD",
+  "id": "cvtss2sd16",
+  "format": "bin",
+  "source": "cvtss2sd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/cvtss2sd/",
+  "target": [
+   { "output": "cvtss2sd.bin16", "match": "cvtss2sd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for CVTSS2SD",
+  "id": "cvtss2sd32",
+  "format": "bin",
+  "source": "cvtss2sd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/cvtss2sd/",
+  "target": [
+   { "output": "cvtss2sd.bin32", "match": "cvtss2sd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for CVTSS2SD",
   "id": "cvtss2sd64",
   "format": "bin",
   "source": "cvtss2sd.asm",

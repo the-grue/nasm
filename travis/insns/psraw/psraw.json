@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for PSRAW",
+  "id": "psraw16",
+  "format": "bin",
+  "source": "psraw_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/psraw/",
+  "target": [
+   { "output": "psraw.bin16", "match": "psraw.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for PSRAW",
+  "id": "psraw32",
+  "format": "bin",
+  "source": "psraw_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/psraw/",
+  "target": [
+   { "output": "psraw.bin32", "match": "psraw.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for PSRAW",
   "id": "psraw64",
   "format": "bin",
   "source": "psraw.asm",

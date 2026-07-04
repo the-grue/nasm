@@ -1,3 +1,5 @@
 default rel
-	vgatherpf1dpd [ymm8*1]
-	vgatherpf1dpd [ymm11*1]
+	vgatherpf1dpd [ymm4*1]
+	vgatherpf1dpd [ymm6*1]
+	vgatherpf1dpd [ymm13*1]
+	vgatherpf1dpd [ymm27*1]

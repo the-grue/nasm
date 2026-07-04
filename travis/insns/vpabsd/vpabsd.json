@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPABSD",
+  "id": "vpabsd16",
+  "format": "bin",
+  "source": "vpabsd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpabsd/",
+  "target": [
+   { "output": "vpabsd.bin16", "match": "vpabsd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPABSD",
+  "id": "vpabsd32",
+  "format": "bin",
+  "source": "vpabsd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpabsd/",
+  "target": [
+   { "output": "vpabsd.bin32", "match": "vpabsd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPABSD",
   "id": "vpabsd64",
   "format": "bin",
   "source": "vpabsd.asm",

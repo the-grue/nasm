@@ -1,0 +1,5 @@
+	vcmpgt_ossd xmm5, xmm5, xmm5
+	vcmpgt_ossd xmm5, xmm5
+	vcmpgt_ossd xmm2, xmm6, qword [0x51b]
+	vcmpgt_ossd k5, xmm6, qword [0x9bb]
+	vcmpgt_ossd k4, xmm6, xmm2

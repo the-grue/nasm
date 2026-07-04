@@ -3,7 +3,7 @@
   "description": "Pseudorandom test for VGATHERPF1DPS",
   "id": "vgatherpf1dps32",
   "format": "bin",
-  "source": "vgatherpf1dps.asm",
+  "source": "vgatherpf1dps_narrow.asm",
   "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vgatherpf1dps/",
   "target": [
    { "output": "vgatherpf1dps.bin32", "match": "vgatherpf1dps.bin32.t" }

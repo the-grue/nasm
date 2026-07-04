@@ -1,4 +1,4 @@
 	umonitor cx
-	umonitor ax
-	umonitor edi
-	umonitor esi
+	umonitor si
+	umonitor ebp
+	umonitor eax

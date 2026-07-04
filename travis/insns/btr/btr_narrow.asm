@@ -1,6 +1,6 @@
 	btr dx, bx
-	btr bp, si
-	btr dword [0x10d], eax
-	btr edi, edi
-	btr di, 0xe9
-	btr bx, 0xf4
+	btr ax, bx
+	btr dword [0xdda], edx
+	btr ebx, edi
+	btr si, 0xeb
+	btr cx, 0xf6

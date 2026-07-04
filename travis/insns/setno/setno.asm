@@ -1,7 +1,13 @@
 default rel
 	setno bl
-	setno byte [0x37e]
-	setno rbp
-	setno rbp
-	setno esi
-	setno ecx
+	setno byte [0xeeb]
+	setno rsi
+	setno rcx
+	setno ebx
+	setno ebp
+	setno r15b
+	setno r10
+	setno r14d
+	setno r18b
+	setno r22
+	setno r21d

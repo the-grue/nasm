@@ -1,6 +1,17 @@
 [
  {
   "description": "Pseudorandom test for VPSCATTERQD",
+  "id": "vpscatterqd32",
+  "format": "bin",
+  "source": "vpscatterqd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpscatterqd/",
+  "target": [
+   { "output": "vpscatterqd.bin32", "match": "vpscatterqd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPSCATTERQD",
   "id": "vpscatterqd64",
   "format": "bin",
   "source": "vpscatterqd.asm",

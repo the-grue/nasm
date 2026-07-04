@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPSIGNW",
+  "id": "vpsignw16",
+  "format": "bin",
+  "source": "vpsignw_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpsignw/",
+  "target": [
+   { "output": "vpsignw.bin16", "match": "vpsignw.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPSIGNW",
+  "id": "vpsignw32",
+  "format": "bin",
+  "source": "vpsignw_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpsignw/",
+  "target": [
+   { "output": "vpsignw.bin32", "match": "vpsignw.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPSIGNW",
   "id": "vpsignw64",
   "format": "bin",
   "source": "vpsignw.asm",

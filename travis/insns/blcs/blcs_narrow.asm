@@ -1,2 +1,2 @@
 	blcs ecx, ebx
-	blcs ebp, ebx
+	blcs esi, edx

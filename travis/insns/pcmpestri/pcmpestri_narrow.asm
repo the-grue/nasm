@@ -1,0 +1,2 @@
+	pcmpestri xmm5, oword [0xc4c], 0xf6
+	pcmpestri xmm5, oword [0x94e], 0x5c

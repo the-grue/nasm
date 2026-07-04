@@ -1,2 +1,2 @@
 	blcmsk ebx, ecx
-	blcmsk edx, ecx
+	blcmsk edi, esi

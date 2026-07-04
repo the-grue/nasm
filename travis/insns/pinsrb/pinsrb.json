@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for PINSRB",
+  "id": "pinsrb16",
+  "format": "bin",
+  "source": "pinsrb_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/pinsrb/",
+  "target": [
+   { "output": "pinsrb.bin16", "match": "pinsrb.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for PINSRB",
+  "id": "pinsrb32",
+  "format": "bin",
+  "source": "pinsrb_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/pinsrb/",
+  "target": [
+   { "output": "pinsrb.bin32", "match": "pinsrb.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for PINSRB",
   "id": "pinsrb64",
   "format": "bin",
   "source": "pinsrb.asm",

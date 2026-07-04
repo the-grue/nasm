@@ -1,9 +1,17 @@
 default rel
-	vpmovsxbw xmm5, qword [0x414]
-	vpmovsxbw xmm13, xmm7
-	vpmovsxbw ymm4, xmm5
-	vpmovsxbw ymm4, oword [0xff1]
-	vpmovsxbw xmm12, qword [0xd85]
-	vpmovsxbw xmm2, xmm4
-	vpmovsxbw ymm13, oword [0xa4f]
-	vpmovsxbw ymm5, oword [0x3b8]
+	vpmovsxbw xmm2, qword [0x414]
+	vpmovsxbw xmm0, xmm2
+	vpmovsxbw ymm6, oword [0xc5d]
+	vpmovsxbw ymm2, oword [0xff9]
+	vpmovsxbw xmm4, xmm6
+	vpmovsxbw xmm7, qword [0xeb1]
+	vpmovsxbw ymm3, xmm0
+	vpmovsxbw ymm0, xmm7
+	vpmovsxbw xmm14, xmm8
+	vpmovsxbw ymm14, xmm14
+	vpmovsxbw xmm9, xmm13
+	vpmovsxbw ymm10, xmm10
+	vpmovsxbw xmm23, xmm20
+	vpmovsxbw ymm18, xmm21
+	vpmovsxbw xmm21, xmm19
+	vpmovsxbw ymm21, xmm23

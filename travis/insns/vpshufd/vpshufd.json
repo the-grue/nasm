@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPSHUFD",
+  "id": "vpshufd16",
+  "format": "bin",
+  "source": "vpshufd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpshufd/",
+  "target": [
+   { "output": "vpshufd.bin16", "match": "vpshufd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPSHUFD",
+  "id": "vpshufd32",
+  "format": "bin",
+  "source": "vpshufd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpshufd/",
+  "target": [
+   { "output": "vpshufd.bin32", "match": "vpshufd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPSHUFD",
   "id": "vpshufd64",
   "format": "bin",
   "source": "vpshufd.asm",

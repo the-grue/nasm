@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VCMPFALSE_OSSS",
+  "id": "vcmpfalse_osss16",
+  "format": "bin",
+  "source": "vcmpfalse_osss_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcmpfalse_osss/",
+  "target": [
+   { "output": "vcmpfalse_osss.bin16", "match": "vcmpfalse_osss.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCMPFALSE_OSSS",
+  "id": "vcmpfalse_osss32",
+  "format": "bin",
+  "source": "vcmpfalse_osss_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcmpfalse_osss/",
+  "target": [
+   { "output": "vcmpfalse_osss.bin32", "match": "vcmpfalse_osss.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCMPFALSE_OSSS",
   "id": "vcmpfalse_osss64",
   "format": "bin",
   "source": "vcmpfalse_osss.asm",

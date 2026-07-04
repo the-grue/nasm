@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VMOVSD",
+  "id": "vmovsd16",
+  "format": "bin",
+  "source": "vmovsd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vmovsd/",
+  "target": [
+   { "output": "vmovsd.bin16", "match": "vmovsd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VMOVSD",
+  "id": "vmovsd32",
+  "format": "bin",
+  "source": "vmovsd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vmovsd/",
+  "target": [
+   { "output": "vmovsd.bin32", "match": "vmovsd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VMOVSD",
   "id": "vmovsd64",
   "format": "bin",
   "source": "vmovsd.asm",

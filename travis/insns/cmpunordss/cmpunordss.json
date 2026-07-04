@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for CMPUNORDSS",
+  "id": "cmpunordss16",
+  "format": "bin",
+  "source": "cmpunordss_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/cmpunordss/",
+  "target": [
+   { "output": "cmpunordss.bin16", "match": "cmpunordss.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for CMPUNORDSS",
+  "id": "cmpunordss32",
+  "format": "bin",
+  "source": "cmpunordss_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/cmpunordss/",
+  "target": [
+   { "output": "cmpunordss.bin32", "match": "cmpunordss.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for CMPUNORDSS",
   "id": "cmpunordss64",
   "format": "bin",
   "source": "cmpunordss.asm",

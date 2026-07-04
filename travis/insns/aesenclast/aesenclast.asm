@@ -1,3 +1,4 @@
 default rel
-	aesenclast xmm13, oword [0x7b6]
-	aesenclast xmm5, xmm7
+	aesenclast xmm6, oword [0x7b6]
+	aesenclast xmm4, oword [0x8f3]
+	aesenclast xmm10, xmm8

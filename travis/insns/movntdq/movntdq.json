@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for MOVNTDQ",
+  "id": "movntdq16",
+  "format": "bin",
+  "source": "movntdq_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/movntdq/",
+  "target": [
+   { "output": "movntdq.bin16", "match": "movntdq.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for MOVNTDQ",
+  "id": "movntdq32",
+  "format": "bin",
+  "source": "movntdq_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/movntdq/",
+  "target": [
+   { "output": "movntdq.bin32", "match": "movntdq.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for MOVNTDQ",
   "id": "movntdq64",
   "format": "bin",
   "source": "movntdq.asm",

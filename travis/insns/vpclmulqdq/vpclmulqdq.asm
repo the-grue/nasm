@@ -1,10 +1,16 @@
 default rel
-	vpclmulqdq xmm11, xmm11, oword [0x6f2], 0x3b
-	vpclmulqdq xmm11, oword [0x6f2], 0x3b
-	vpclmulqdq xmm2, xmm9, xmm2, 0xe0
-	vpclmulqdq ymm11, ymm7, yword [0xd82], 0xea
-	vpclmulqdq ymm11, yword [0xd82], 0xea
-	vpclmulqdq ymm15, ymm12, yword [0xfc5], 0xe3
-	vpclmulqdq zmm4, zmm9, zmm5, 0xe
-	vpclmulqdq zmm4, zmm5, 0xe
-	vpclmulqdq zmm12, zmm10, zmm9, 0x5a
+	vpclmulqdq xmm5, xmm5, oword [0x6f2], 0x3b
+	vpclmulqdq xmm5, oword [0x6f2], 0x3b
+	vpclmulqdq xmm6, xmm7, oword [0xcbc], 0xd9
+	vpclmulqdq ymm7, ymm7, ymm4, 0xc
+	vpclmulqdq ymm7, ymm4, 0xc
+	vpclmulqdq ymm2, ymm6, yword [0xe6c], 0x93
+	vpclmulqdq zmm2, zmm1, zmm0, 0xb1
+	vpclmulqdq zmm2, zmm0, 0xb1
+	vpclmulqdq zmm6, zmm1, zmm3, 0x1a
+	vpclmulqdq xmm9, xmm12, xmm9, 0x2c
+	vpclmulqdq ymm10, ymm8, ymm14, 0xa0
+	vpclmulqdq zmm10, zmm10, zmm8, 0xfb
+	vpclmulqdq xmm30, xmm27, xmm23, 0xbf
+	vpclmulqdq ymm21, ymm25, ymm21, 0xda
+	vpclmulqdq zmm25, zmm17, zmm29, 0x5b

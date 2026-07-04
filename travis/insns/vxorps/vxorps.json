@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VXORPS",
+  "id": "vxorps16",
+  "format": "bin",
+  "source": "vxorps_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vxorps/",
+  "target": [
+   { "output": "vxorps.bin16", "match": "vxorps.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VXORPS",
+  "id": "vxorps32",
+  "format": "bin",
+  "source": "vxorps_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vxorps/",
+  "target": [
+   { "output": "vxorps.bin32", "match": "vxorps.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VXORPS",
   "id": "vxorps64",
   "format": "bin",
   "source": "vxorps.asm",

@@ -1,3 +1,4 @@
 default rel
-	cmpordpd xmm10, xmm0
-	cmpordpd xmm5, xmm4
+	cmpordpd xmm5, xmm0
+	cmpordpd xmm7, xmm2
+	cmpordpd xmm10, xmm12

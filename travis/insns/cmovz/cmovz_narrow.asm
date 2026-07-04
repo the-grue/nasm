@@ -1,6 +1,6 @@
 	cmovz di, di
-	cmovz ax, dx
-	cmovz ecx, dword [0x2c6]
-	cmovz ebx, ebp
-	cmovz di, bx, si
-	cmovz bp, si, word [0x4e6]
+	cmovz di, bx
+	cmovz eax, dword [0xf2d]
+	cmovz edx, dword [0x409]
+	cmovz ax, dx, word [0x3d7]
+	cmovz bp, bp, word [0x8f0]

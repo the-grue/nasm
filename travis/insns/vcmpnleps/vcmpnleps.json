@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VCMPNLEPS",
+  "id": "vcmpnleps16",
+  "format": "bin",
+  "source": "vcmpnleps_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcmpnleps/",
+  "target": [
+   { "output": "vcmpnleps.bin16", "match": "vcmpnleps.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCMPNLEPS",
+  "id": "vcmpnleps32",
+  "format": "bin",
+  "source": "vcmpnleps_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcmpnleps/",
+  "target": [
+   { "output": "vcmpnleps.bin32", "match": "vcmpnleps.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCMPNLEPS",
   "id": "vcmpnleps64",
   "format": "bin",
   "source": "vcmpnleps.asm",

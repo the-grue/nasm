@@ -1,3 +1,4 @@
 default rel
-	vsm3msg1 xmm0, xmm10, xmm8
-	vsm3msg1 xmm12, xmm10, xmm12
+	vsm3msg1 xmm0, xmm5, xmm4
+	vsm3msg1 xmm6, xmm0, xmm1
+	vsm3msg1 xmm14, xmm13, xmm14

@@ -1,5 +1,5 @@
 default rel
 	bound dx, [0xd5b]
-	bound si, [0x2be]
-	bound esi, [0xd4d]
-	bound ecx, [0x671]
+	bound cx, [0x671]
+	bound ebx, [0xd68]
+	bound ebx, [0x661]

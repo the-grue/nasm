@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPCMPUB",
+  "id": "vpcmpub16",
+  "format": "bin",
+  "source": "vpcmpub_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpcmpub/",
+  "target": [
+   { "output": "vpcmpub.bin16", "match": "vpcmpub.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPCMPUB",
+  "id": "vpcmpub32",
+  "format": "bin",
+  "source": "vpcmpub_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpcmpub/",
+  "target": [
+   { "output": "vpcmpub.bin32", "match": "vpcmpub.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPCMPUB",
   "id": "vpcmpub64",
   "format": "bin",
   "source": "vpcmpub.asm",

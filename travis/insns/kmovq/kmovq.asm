@@ -4,6 +4,10 @@ default rel
 	kmovq qword [0x132], k1
 	kmovq qword [0x112], k5
 	kmovq k5, rdi
-	kmovq k4, rcx
-	kmovq rax, k7
-	kmovq rbx, k4
+	kmovq k2, rdx
+	kmovq rbp, k7
+	kmovq rcx, k2
+	kmovq k4, r11
+	kmovq r10, k3
+	kmovq k1, r31
+	kmovq r28, k6

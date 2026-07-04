@@ -1,3 +1,4 @@
 default rel
-	mulpd xmm11, oword [0x4b8]
-	mulpd xmm8, oword [0xf7f]
+	mulpd xmm5, oword [0x4b8]
+	mulpd xmm3, xmm0
+	mulpd xmm12, xmm14

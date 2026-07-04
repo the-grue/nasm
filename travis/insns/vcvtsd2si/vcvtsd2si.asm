@@ -1,9 +1,17 @@
 default rel
-	vcvtsd2si ebp, xmm1
-	vcvtsd2si ebx, qword [0x273]
-	vcvtsd2si rdi, xmm8
-	vcvtsd2si rsi, xmm11
-	vcvtsd2si ecx, qword [0xffb]
-	vcvtsd2si edi, qword [0x103]
-	vcvtsd2si rbp, qword [0x888]
-	vcvtsd2si rcx, xmm13
+	vcvtsd2si ebp, xmm0
+	vcvtsd2si ecx, xmm5
+	vcvtsd2si rdx, qword [0x6ac]
+	vcvtsd2si rax, qword [0xba2]
+	vcvtsd2si edx, xmm1
+	vcvtsd2si esi, xmm6
+	vcvtsd2si rdx, qword [0x510]
+	vcvtsd2si rbx, xmm0
+	vcvtsd2si r9d, xmm15
+	vcvtsd2si r15, xmm15
+	vcvtsd2si r14d, xmm12
+	vcvtsd2si r11, xmm11
+	vcvtsd2si r17d, xmm28
+	vcvtsd2si r27, xmm29
+	vcvtsd2si r24d, xmm27
+	vcvtsd2si r27, xmm24

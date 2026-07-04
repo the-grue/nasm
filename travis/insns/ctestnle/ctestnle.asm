@@ -1,9 +1,17 @@
 default rel
 	ctestnle 8, byte [0xd21], dl
-	ctestnle 2, bl, bl
-	ctestnle 6, dx, ax
-	ctestnle 1, word [0x7af], di
-	ctestnle 12, eax, edx
-	ctestnle 8, esi, ebp
-	ctestnle 15, qword [0xde4], rsi
-	ctestnle 1, rdi, rcx
+	ctestnle 8, al, dl
+	ctestnle 7, word [0xc46], si
+	ctestnle 15, word [0xde4], si
+	ctestnle 1, edi, ecx
+	ctestnle 8, edi, edi
+	ctestnle 8, rcx, rcx
+	ctestnle 9, qword [0xce4], rax
+	ctestnle 2, r10b, r11b
+	ctestnle 0, r11w, r12w
+	ctestnle 7, r10d, r11d
+	ctestnle 11, r10, r8
+	ctestnle 5, r22b, r22b
+	ctestnle 1, r25w, r31w
+	ctestnle 1, r21d, r22d
+	ctestnle 7, r20, r22

@@ -1,5 +1,6 @@
 default rel
 	pabsd mm0, mm5
 	pabsd mm0, mm0
-	pabsd xmm2, xmm1
-	pabsd xmm9, xmm12
+	pabsd xmm1, xmm0
+	pabsd xmm3, xmm4
+	pabsd xmm12, xmm8

@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for MOVLPS",
+  "id": "movlps16",
+  "format": "bin",
+  "source": "movlps_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/movlps/",
+  "target": [
+   { "output": "movlps.bin16", "match": "movlps.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for MOVLPS",
+  "id": "movlps32",
+  "format": "bin",
+  "source": "movlps_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/movlps/",
+  "target": [
+   { "output": "movlps.bin32", "match": "movlps.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for MOVLPS",
   "id": "movlps64",
   "format": "bin",
   "source": "movlps.asm",

@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPSUBUSW",
+  "id": "vpsubusw16",
+  "format": "bin",
+  "source": "vpsubusw_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpsubusw/",
+  "target": [
+   { "output": "vpsubusw.bin16", "match": "vpsubusw.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPSUBUSW",
+  "id": "vpsubusw32",
+  "format": "bin",
+  "source": "vpsubusw_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpsubusw/",
+  "target": [
+   { "output": "vpsubusw.bin32", "match": "vpsubusw.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPSUBUSW",
   "id": "vpsubusw64",
   "format": "bin",
   "source": "vpsubusw.asm",

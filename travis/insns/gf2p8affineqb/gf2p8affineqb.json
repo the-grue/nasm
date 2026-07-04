@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for GF2P8AFFINEQB",
+  "id": "gf2p8affineqb16",
+  "format": "bin",
+  "source": "gf2p8affineqb_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/gf2p8affineqb/",
+  "target": [
+   { "output": "gf2p8affineqb.bin16", "match": "gf2p8affineqb.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for GF2P8AFFINEQB",
+  "id": "gf2p8affineqb32",
+  "format": "bin",
+  "source": "gf2p8affineqb_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/gf2p8affineqb/",
+  "target": [
+   { "output": "gf2p8affineqb.bin32", "match": "gf2p8affineqb.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for GF2P8AFFINEQB",
   "id": "gf2p8affineqb64",
   "format": "bin",
   "source": "gf2p8affineqb.asm",

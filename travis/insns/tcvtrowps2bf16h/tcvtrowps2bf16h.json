@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for TCVTROWPS2BF16H",
+  "id": "tcvtrowps2bf16h16",
+  "format": "bin",
+  "source": "tcvtrowps2bf16h_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/tcvtrowps2bf16h/",
+  "target": [
+   { "output": "tcvtrowps2bf16h.bin16", "match": "tcvtrowps2bf16h.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for TCVTROWPS2BF16H",
+  "id": "tcvtrowps2bf16h32",
+  "format": "bin",
+  "source": "tcvtrowps2bf16h_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/tcvtrowps2bf16h/",
+  "target": [
+   { "output": "tcvtrowps2bf16h.bin32", "match": "tcvtrowps2bf16h.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for TCVTROWPS2BF16H",
   "id": "tcvtrowps2bf16h64",
   "format": "bin",
   "source": "tcvtrowps2bf16h.asm",

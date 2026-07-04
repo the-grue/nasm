@@ -1,2 +1,2 @@
-	movmskpd edx, xmm6
-	movmskpd eax, xmm11
+	movmskpd edx, xmm3
+	movmskpd edi, xmm5

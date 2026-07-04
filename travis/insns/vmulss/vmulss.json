@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VMULSS",
+  "id": "vmulss16",
+  "format": "bin",
+  "source": "vmulss_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vmulss/",
+  "target": [
+   { "output": "vmulss.bin16", "match": "vmulss.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VMULSS",
+  "id": "vmulss32",
+  "format": "bin",
+  "source": "vmulss_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vmulss/",
+  "target": [
+   { "output": "vmulss.bin32", "match": "vmulss.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VMULSS",
   "id": "vmulss64",
   "format": "bin",
   "source": "vmulss.asm",

@@ -1,3 +1,5 @@
 default rel
-	vcomxsh xmm5, xmm2
-	vcomxsh xmm4, word [0x86a]
+	vcomxsh xmm2, xmm1
+	vcomxsh xmm7, xmm5
+	vcomxsh xmm10, xmm14
+	vcomxsh xmm23, xmm24

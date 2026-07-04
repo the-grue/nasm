@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VRSQRT14PD",
+  "id": "vrsqrt14pd16",
+  "format": "bin",
+  "source": "vrsqrt14pd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vrsqrt14pd/",
+  "target": [
+   { "output": "vrsqrt14pd.bin16", "match": "vrsqrt14pd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VRSQRT14PD",
+  "id": "vrsqrt14pd32",
+  "format": "bin",
+  "source": "vrsqrt14pd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vrsqrt14pd/",
+  "target": [
+   { "output": "vrsqrt14pd.bin32", "match": "vrsqrt14pd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VRSQRT14PD",
   "id": "vrsqrt14pd64",
   "format": "bin",
   "source": "vrsqrt14pd.asm",

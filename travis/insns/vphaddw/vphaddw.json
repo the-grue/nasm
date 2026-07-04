@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPHADDW",
+  "id": "vphaddw16",
+  "format": "bin",
+  "source": "vphaddw_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vphaddw/",
+  "target": [
+   { "output": "vphaddw.bin16", "match": "vphaddw.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPHADDW",
+  "id": "vphaddw32",
+  "format": "bin",
+  "source": "vphaddw_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vphaddw/",
+  "target": [
+   { "output": "vphaddw.bin32", "match": "vphaddw.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPHADDW",
   "id": "vphaddw64",
   "format": "bin",
   "source": "vphaddw.asm",

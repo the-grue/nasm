@@ -1,5 +1,5 @@
 	adcx edi, ebp
-	adcx esi, dword [0x2de]
-	adcx eax, ecx, eax
-	adcx ecx, eax
-	adcx ebp, edi, eax
+	adcx ebp, edi
+	adcx ebp, esi, eax
+	adcx esi, eax
+	adcx eax, esi, ecx

@@ -1,4 +1,4 @@
-	setazu edi
-	setazu edi
-	setazu bl
+	setazu edx
+	setazu eax
 	setazu al
+	setazu byte [0x4c6]

@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for UNPCKHPS",
+  "id": "unpckhps16",
+  "format": "bin",
+  "source": "unpckhps_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/unpckhps/",
+  "target": [
+   { "output": "unpckhps.bin16", "match": "unpckhps.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for UNPCKHPS",
+  "id": "unpckhps32",
+  "format": "bin",
+  "source": "unpckhps_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/unpckhps/",
+  "target": [
+   { "output": "unpckhps.bin32", "match": "unpckhps.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for UNPCKHPS",
   "id": "unpckhps64",
   "format": "bin",
   "source": "unpckhps.asm",

@@ -3,7 +3,7 @@
   "description": "Pseudorandom test for VERW",
   "id": "verw16",
   "format": "bin",
-  "source": "verw.asm",
+  "source": "verw_narrow.asm",
   "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/verw/",
   "target": [
    { "output": "verw.bin16", "match": "verw.bin16.t" }
@@ -14,7 +14,7 @@
   "description": "Pseudorandom test for VERW",
   "id": "verw32",
   "format": "bin",
-  "source": "verw.asm",
+  "source": "verw_narrow.asm",
   "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/verw/",
   "target": [
    { "output": "verw.bin32", "match": "verw.bin32.t" }

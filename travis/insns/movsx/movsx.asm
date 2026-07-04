@@ -6,4 +6,6 @@ default rel
 	movsx rax, eax
 	movsx rax, eax
 	movsx dx, dl
-	movsx ax, byte [0x644]
+	movsx cx, cl
+	movsx r8w, r14b
+	movsx r21w, r31b

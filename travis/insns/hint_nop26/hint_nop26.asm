@@ -1,7 +1,13 @@
 default rel
 	hint_nop26 bp
-	hint_nop26 bx
-	hint_nop26 edi
+	hint_nop26 di
 	hint_nop26 ebp
-	hint_nop26 rbp
-	hint_nop26 rbp
+	hint_nop26 ebp
+	hint_nop26 rdi
+	hint_nop26 qword [0xada]
+	hint_nop26 r8w
+	hint_nop26 r9d
+	hint_nop26 r13
+	hint_nop26 r18w
+	hint_nop26 r31d
+	hint_nop26 r26

@@ -1,2 +1,2 @@
-	movmskps eax, xmm14
-	movmskps ecx, xmm14
+	movmskps eax, xmm7
+	movmskps eax, xmm3

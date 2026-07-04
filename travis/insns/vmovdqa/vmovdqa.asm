@@ -1,9 +1,13 @@
 default rel
-	vmovdqa xmm6, xmm4
-	vmovdqa xmm1, xmm5
-	vmovdqa xmm5, xmm11
-	vmovdqa xmm3, xmm5
-	vmovdqa ymm6, ymm12
-	vmovdqa ymm0, yword [0x26f]
-	vmovdqa ymm12, ymm3
-	vmovdqa ymm15, ymm5
+	vmovdqa xmm3, xmm2
+	vmovdqa xmm2, xmm0
+	vmovdqa xmm2, xmm3
+	vmovdqa xmm2, xmm6
+	vmovdqa ymm1, ymm7
+	vmovdqa ymm3, ymm1
+	vmovdqa ymm1, ymm1
+	vmovdqa yword [0x410], ymm2
+	vmovdqa xmm8, xmm12
+	vmovdqa xmm8, xmm14
+	vmovdqa ymm10, ymm12
+	vmovdqa ymm14, ymm9

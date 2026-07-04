@@ -1,5 +1,6 @@
 default rel
 	phaddw mm7, qword [0x5e5]
 	phaddw mm0, qword [0x32a]
-	phaddw xmm8, xmm1
-	phaddw xmm1, xmm7
+	phaddw xmm4, xmm0
+	phaddw xmm2, oword [0x59d]
+	phaddw xmm8, xmm12

@@ -1,6 +1,6 @@
 	cfcmovnae word [0x738], si
-	cfcmovnae bp, cx
-	cfcmovnae esi, edx
+	cfcmovnae word [0x909], bx
+	cfcmovnae esi, ecx
 	cfcmovnae esi, esi
-	cfcmovnae si, ax
-	cfcmovnae ax, word [0x175]
+	cfcmovnae cx, word [0xa17]
+	cfcmovnae dx, word [0x9ae]

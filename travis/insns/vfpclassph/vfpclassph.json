@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VFPCLASSPH",
+  "id": "vfpclassph16",
+  "format": "bin",
+  "source": "vfpclassph_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vfpclassph/",
+  "target": [
+   { "output": "vfpclassph.bin16", "match": "vfpclassph.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VFPCLASSPH",
+  "id": "vfpclassph32",
+  "format": "bin",
+  "source": "vfpclassph_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vfpclassph/",
+  "target": [
+   { "output": "vfpclassph.bin32", "match": "vfpclassph.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VFPCLASSPH",
   "id": "vfpclassph64",
   "format": "bin",
   "source": "vfpclassph.asm",

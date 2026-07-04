@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VTESTPD",
+  "id": "vtestpd16",
+  "format": "bin",
+  "source": "vtestpd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vtestpd/",
+  "target": [
+   { "output": "vtestpd.bin16", "match": "vtestpd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VTESTPD",
+  "id": "vtestpd32",
+  "format": "bin",
+  "source": "vtestpd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vtestpd/",
+  "target": [
+   { "output": "vtestpd.bin32", "match": "vtestpd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VTESTPD",
   "id": "vtestpd64",
   "format": "bin",
   "source": "vtestpd.asm",

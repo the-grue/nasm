@@ -1,5 +1,5 @@
 default rel
 	urdmsr rdi, rbp
-	urdmsr rsi, rdx
-	urdmsr rcx, 0x1fd30253
-	urdmsr rbx, 0x3a1dae92
+	urdmsr rbx, rbp
+	urdmsr rdi, 0x37a67da0
+	urdmsr rbx, 0x3e56f995

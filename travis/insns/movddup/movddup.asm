@@ -1,3 +1,4 @@
 default rel
-	movddup xmm4, xmm4
-	movddup xmm15, xmm10
+	movddup xmm2, xmm2
+	movddup xmm2, qword [0xe4e]
+	movddup xmm15, xmm11

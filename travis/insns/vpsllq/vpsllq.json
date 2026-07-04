@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPSLLQ",
+  "id": "vpsllq16",
+  "format": "bin",
+  "source": "vpsllq_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpsllq/",
+  "target": [
+   { "output": "vpsllq.bin16", "match": "vpsllq.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPSLLQ",
+  "id": "vpsllq32",
+  "format": "bin",
+  "source": "vpsllq_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpsllq/",
+  "target": [
+   { "output": "vpsllq.bin32", "match": "vpsllq.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPSLLQ",
   "id": "vpsllq64",
   "format": "bin",
   "source": "vpsllq.asm",

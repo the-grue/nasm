@@ -1,7 +1,13 @@
 default rel
 	seta bl
-	seta cl
-	seta rbp
-	seta rdi
+	seta byte [0xcfa]
+	seta rsi
+	seta rsi
+	seta ebx
 	seta esi
-	seta esi
+	seta r10b
+	seta r13
+	seta r8d
+	seta r24b
+	seta r28
+	seta r18d

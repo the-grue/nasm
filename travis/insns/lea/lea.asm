@@ -1,9 +1,17 @@
 default rel
 	lea cx, [0x8fc]
-	lea si, [0x26c]
-	lea edx, [0x600]
-	lea eax, [0x96b]
-	lea rax, [0x549]
-	lea rdi, [0x38e]
-	lea cx, 0x8d4f
-	lea cx, 0xbb55
+	lea ax, [0x96b]
+	lea eax, [0x549]
+	lea ecx, [0xbfa]
+	lea rbp, [0x719]
+	lea rdi, [0x8e7]
+	lea di, 0x8a6e
+	lea ax, 0x246a
+	lea r13w, [0x26c]
+	lea r14d, [0x38e]
+	lea r12, [0x7fe]
+	lea r10w, 0xc1ba
+	lea r24w, [0x600]
+	lea r22d, [0x947]
+	lea r24, [0xdf7]
+	lea r16w, 0x2ac7

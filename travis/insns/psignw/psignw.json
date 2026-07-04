@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for PSIGNW",
+  "id": "psignw16",
+  "format": "bin",
+  "source": "psignw_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/psignw/",
+  "target": [
+   { "output": "psignw.bin16", "match": "psignw.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for PSIGNW",
+  "id": "psignw32",
+  "format": "bin",
+  "source": "psignw_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/psignw/",
+  "target": [
+   { "output": "psignw.bin32", "match": "psignw.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for PSIGNW",
   "id": "psignw64",
   "format": "bin",
   "source": "psignw.asm",

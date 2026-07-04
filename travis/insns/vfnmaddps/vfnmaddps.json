@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VFNMADDPS",
+  "id": "vfnmaddps16",
+  "format": "bin",
+  "source": "vfnmaddps_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vfnmaddps/",
+  "target": [
+   { "output": "vfnmaddps.bin16", "match": "vfnmaddps.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VFNMADDPS",
+  "id": "vfnmaddps32",
+  "format": "bin",
+  "source": "vfnmaddps_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vfnmaddps/",
+  "target": [
+   { "output": "vfnmaddps.bin32", "match": "vfnmaddps.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VFNMADDPS",
   "id": "vfnmaddps64",
   "format": "bin",
   "source": "vfnmaddps.asm",

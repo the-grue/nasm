@@ -1,6 +1,8 @@
 default rel
-	vcmpnge_uqsd xmm14, xmm0, xmm4
-	vcmpnge_uqsd xmm14, xmm4
-	vcmpnge_uqsd xmm10, xmm0, qword [0x640]
-	vcmpnge_uqsd k7, xmm1, qword [0x217]
-	vcmpnge_uqsd k4, xmm7, xmm2
+	vcmpnge_uqsd xmm7, xmm0, xmm2
+	vcmpnge_uqsd xmm7, xmm2
+	vcmpnge_uqsd xmm7, xmm0, xmm3
+	vcmpnge_uqsd k3, xmm1, xmm3
+	vcmpnge_uqsd k5, xmm4, xmm1
+	vcmpnge_uqsd xmm13, xmm8, xmm13
+	vcmpnge_uqsd k5, xmm8, xmm11

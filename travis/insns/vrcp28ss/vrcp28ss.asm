@@ -1,4 +1,6 @@
 default rel
-	vrcp28ss xmm2, xmm6, xmm11
-	vrcp28ss xmm2, xmm11
-	vrcp28ss xmm12, xmm15, xmm10
+	vrcp28ss xmm1, xmm3, xmm5
+	vrcp28ss xmm1, xmm5
+	vrcp28ss xmm3, xmm5, xmm7
+	vrcp28ss xmm14, xmm15, xmm10
+	vrcp28ss xmm26, xmm17, xmm23

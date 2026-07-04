@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for AESENC256KL",
+  "id": "aesenc256kl16",
+  "format": "bin",
+  "source": "aesenc256kl_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/aesenc256kl/",
+  "target": [
+   { "output": "aesenc256kl.bin16", "match": "aesenc256kl.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for AESENC256KL",
+  "id": "aesenc256kl32",
+  "format": "bin",
+  "source": "aesenc256kl_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/aesenc256kl/",
+  "target": [
+   { "output": "aesenc256kl.bin32", "match": "aesenc256kl.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for AESENC256KL",
   "id": "aesenc256kl64",
   "format": "bin",
   "source": "aesenc256kl.asm",

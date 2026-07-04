@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VRNDSCALEPH",
+  "id": "vrndscaleph16",
+  "format": "bin",
+  "source": "vrndscaleph_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vrndscaleph/",
+  "target": [
+   { "output": "vrndscaleph.bin16", "match": "vrndscaleph.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VRNDSCALEPH",
+  "id": "vrndscaleph32",
+  "format": "bin",
+  "source": "vrndscaleph_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vrndscaleph/",
+  "target": [
+   { "output": "vrndscaleph.bin32", "match": "vrndscaleph.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VRNDSCALEPH",
   "id": "vrndscaleph64",
   "format": "bin",
   "source": "vrndscaleph.asm",

@@ -1,11 +1,15 @@
 default rel
-	vcmpnlt_uqpd xmm8, xmm7, xmm3
-	vcmpnlt_uqpd xmm8, xmm3
-	vcmpnlt_uqpd xmm4, xmm4, xmm8
-	vcmpnlt_uqpd ymm0, ymm14, yword [0x7bf]
-	vcmpnlt_uqpd ymm0, yword [0x7bf]
-	vcmpnlt_uqpd ymm10, ymm1, ymm12
-	vcmpnlt_uqpd k3, xmm15, xmm5
-	vcmpnlt_uqpd k1, xmm14, xmm4
-	vcmpnlt_uqpd k4, ymm15, ymm4
-	vcmpnlt_uqpd k6, ymm9, ymm2
+	vcmpnlt_uqpd xmm4, xmm3, xmm1
+	vcmpnlt_uqpd xmm4, xmm1
+	vcmpnlt_uqpd xmm7, xmm3, xmm0
+	vcmpnlt_uqpd ymm1, ymm6, ymm7
+	vcmpnlt_uqpd ymm1, ymm7
+	vcmpnlt_uqpd ymm4, ymm7, ymm2
+	vcmpnlt_uqpd k6, xmm4, xmm1
+	vcmpnlt_uqpd k6, xmm5, xmm2
+	vcmpnlt_uqpd k5, ymm2, ymm4
+	vcmpnlt_uqpd k4, ymm7, ymm0
+	vcmpnlt_uqpd xmm10, xmm10, xmm9
+	vcmpnlt_uqpd ymm12, ymm10, ymm9
+	vcmpnlt_uqpd k3, xmm13, xmm12
+	vcmpnlt_uqpd k2, ymm12, ymm9

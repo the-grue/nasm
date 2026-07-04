@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPCLMULHQHQDQ",
+  "id": "vpclmulhqhqdq16",
+  "format": "bin",
+  "source": "vpclmulhqhqdq_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpclmulhqhqdq/",
+  "target": [
+   { "output": "vpclmulhqhqdq.bin16", "match": "vpclmulhqhqdq.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPCLMULHQHQDQ",
+  "id": "vpclmulhqhqdq32",
+  "format": "bin",
+  "source": "vpclmulhqhqdq_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpclmulhqhqdq/",
+  "target": [
+   { "output": "vpclmulhqhqdq.bin32", "match": "vpclmulhqhqdq.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPCLMULHQHQDQ",
   "id": "vpclmulhqhqdq64",
   "format": "bin",
   "source": "vpclmulhqhqdq.asm",

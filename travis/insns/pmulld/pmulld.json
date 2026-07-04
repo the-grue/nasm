@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for PMULLD",
+  "id": "pmulld16",
+  "format": "bin",
+  "source": "pmulld_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/pmulld/",
+  "target": [
+   { "output": "pmulld.bin16", "match": "pmulld.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for PMULLD",
+  "id": "pmulld32",
+  "format": "bin",
+  "source": "pmulld_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/pmulld/",
+  "target": [
+   { "output": "pmulld.bin32", "match": "pmulld.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for PMULLD",
   "id": "pmulld64",
   "format": "bin",
   "source": "pmulld.asm",

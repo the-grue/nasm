@@ -1,7 +1,13 @@
 default rel
-	vpcmpgeq k4, xmm2, xmm11
-	vpcmpgeq k1, xmm7, oword [0xb84]
-	vpcmpgeq k3, ymm0, yword [0x91c]
-	vpcmpgeq k6, ymm3, ymm6
-	vpcmpgeq k5, zmm15, zword [0x8dc]
-	vpcmpgeq k1, zmm1, zmm3
+	vpcmpgeq k4, xmm1, xmm5
+	vpcmpgeq k7, xmm4, oword [0x4b3]
+	vpcmpgeq k5, ymm3, ymm7
+	vpcmpgeq k6, ymm6, ymm7
+	vpcmpgeq k3, zmm5, zword [0xffe]
+	vpcmpgeq k7, zmm3, zmm7
+	vpcmpgeq k1, xmm11, xmm13
+	vpcmpgeq k7, ymm12, ymm8
+	vpcmpgeq k4, zmm10, zmm9
+	vpcmpgeq k5, xmm21, xmm16
+	vpcmpgeq k1, ymm25, ymm19
+	vpcmpgeq k4, zmm17, zmm16

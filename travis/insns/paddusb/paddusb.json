@@ -3,7 +3,7 @@
   "description": "Pseudorandom test for PADDUSB",
   "id": "paddusb16",
   "format": "bin",
-  "source": "paddusb.asm",
+  "source": "paddusb_narrow.asm",
   "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/paddusb/",
   "target": [
    { "output": "paddusb.bin16", "match": "paddusb.bin16.t" }
@@ -14,7 +14,7 @@
   "description": "Pseudorandom test for PADDUSB",
   "id": "paddusb32",
   "format": "bin",
-  "source": "paddusb.asm",
+  "source": "paddusb_narrow.asm",
   "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/paddusb/",
   "target": [
    { "output": "paddusb.bin32", "match": "paddusb.bin32.t" }

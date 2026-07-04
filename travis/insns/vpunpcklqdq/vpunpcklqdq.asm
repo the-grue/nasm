@@ -1,13 +1,21 @@
 default rel
-	vpunpcklqdq xmm1, xmm0, xmm12
-	vpunpcklqdq xmm1, xmm12
-	vpunpcklqdq xmm9, xmm5, xmm6
-	vpunpcklqdq ymm15, ymm4, yword [0xe4d]
-	vpunpcklqdq ymm15, yword [0xe4d]
-	vpunpcklqdq ymm10, ymm14, yword [0x9dc]
-	vpunpcklqdq xmm8, xmm9, oword [0x735]
-	vpunpcklqdq xmm8, oword [0x735]
-	vpunpcklqdq xmm2, xmm8, xmm8
-	vpunpcklqdq ymm10, ymm13, ymm2
-	vpunpcklqdq ymm10, ymm2
-	vpunpcklqdq ymm14, ymm14, ymm5
+	vpunpcklqdq xmm0, xmm0, xmm6
+	vpunpcklqdq xmm0, xmm6
+	vpunpcklqdq xmm6, xmm7, xmm7
+	vpunpcklqdq ymm7, ymm4, ymm4
+	vpunpcklqdq ymm7, ymm4
+	vpunpcklqdq ymm5, ymm6, ymm1
+	vpunpcklqdq xmm7, xmm7, xmm2
+	vpunpcklqdq xmm7, xmm2
+	vpunpcklqdq xmm1, xmm2, xmm0
+	vpunpcklqdq ymm1, ymm1, ymm7
+	vpunpcklqdq ymm1, ymm7
+	vpunpcklqdq ymm5, ymm7, ymm7
+	vpunpcklqdq xmm12, xmm10, xmm10
+	vpunpcklqdq ymm15, ymm11, ymm9
+	vpunpcklqdq xmm14, xmm14, xmm13
+	vpunpcklqdq ymm9, ymm11, ymm9
+	vpunpcklqdq xmm22, xmm31, xmm20
+	vpunpcklqdq ymm24, ymm20, ymm24
+	vpunpcklqdq xmm25, xmm17, xmm24
+	vpunpcklqdq ymm18, ymm17, ymm20

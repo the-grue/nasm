@@ -1,4 +1,5 @@
 default rel
-	vpcomq xmm5, xmm10, xmm10, 0x4f
-	vpcomq xmm5, xmm10, 0x4f
-	vpcomq xmm6, xmm13, oword [0xb48], 0x50
+	vpcomq xmm2, xmm5, xmm5, 0x4f
+	vpcomq xmm2, xmm5, 0x4f
+	vpcomq xmm0, xmm6, oword [0x3ca], 0x71
+	vpcomq xmm11, xmm14, xmm14, 0xaf

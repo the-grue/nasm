@@ -1,9 +1,17 @@
 default rel
 	vpmovusqb xmm0, xmm0
-	vpmovusqb xmm11, xmm8
-	vpmovusqb xmm11, ymm11
-	vpmovusqb xmm4, ymm6
-	vpmovusqb xmm14, zmm8
-	vpmovusqb xmm6, zmm10
-	vpmovusqb word [0x7a1], xmm6
-	vpmovusqb word [0xd44], xmm0
+	vpmovusqb xmm2, xmm3
+	vpmovusqb xmm7, ymm4
+	vpmovusqb xmm6, ymm0
+	vpmovusqb xmm5, zmm2
+	vpmovusqb xmm6, zmm1
+	vpmovusqb word [0xa4e], xmm7
+	vpmovusqb word [0x779], xmm2
+	vpmovusqb xmm13, xmm12
+	vpmovusqb xmm11, ymm13
+	vpmovusqb xmm13, zmm13
+	vpmovusqb word [0x2b8], xmm8
+	vpmovusqb xmm27, xmm27
+	vpmovusqb xmm23, ymm22
+	vpmovusqb xmm21, zmm23
+	vpmovusqb word [0xf2b], xmm23

@@ -1,9 +1,17 @@
 default rel
 	bt ax, di
-	bt word [0x301], di
-	bt ebx, eax
+	bt ax, dx
+	bt dword [0xf36], ebx
 	bt ebp, ebp
-	bt rcx, rdi
-	bt rax, rax
-	bt word [0xef4], 0x40
-	bt si, 0x1f
+	bt rbx, rsi
+	bt rdi, rbx
+	bt cx, 0x6f
+	bt word [0x900], 0x2e
+	bt r15w, r9w
+	bt r10d, r14d
+	bt r8, r13
+	bt r8w, 0x13
+	bt r28w, r27w
+	bt r22d, r16d
+	bt r21, r25
+	bt r17w, 0xd9

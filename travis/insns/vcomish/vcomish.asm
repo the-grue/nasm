@@ -1,3 +1,5 @@
 default rel
-	vcomish xmm12, xmm1
-	vcomish xmm5, xmm13
+	vcomish xmm6, xmm0
+	vcomish xmm5, word [0xd90]
+	vcomish xmm10, xmm11
+	vcomish xmm29, xmm28

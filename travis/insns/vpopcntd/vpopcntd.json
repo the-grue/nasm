@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPOPCNTD",
+  "id": "vpopcntd16",
+  "format": "bin",
+  "source": "vpopcntd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpopcntd/",
+  "target": [
+   { "output": "vpopcntd.bin16", "match": "vpopcntd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPOPCNTD",
+  "id": "vpopcntd32",
+  "format": "bin",
+  "source": "vpopcntd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpopcntd/",
+  "target": [
+   { "output": "vpopcntd.bin32", "match": "vpopcntd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPOPCNTD",
   "id": "vpopcntd64",
   "format": "bin",
   "source": "vpopcntd.asm",

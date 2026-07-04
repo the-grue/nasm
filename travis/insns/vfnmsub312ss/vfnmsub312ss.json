@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VFNMSUB312SS",
+  "id": "vfnmsub312ss16",
+  "format": "bin",
+  "source": "vfnmsub312ss_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vfnmsub312ss/",
+  "target": [
+   { "output": "vfnmsub312ss.bin16", "match": "vfnmsub312ss.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VFNMSUB312SS",
+  "id": "vfnmsub312ss32",
+  "format": "bin",
+  "source": "vfnmsub312ss_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vfnmsub312ss/",
+  "target": [
+   { "output": "vfnmsub312ss.bin32", "match": "vfnmsub312ss.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VFNMSUB312SS",
   "id": "vfnmsub312ss64",
   "format": "bin",
   "source": "vfnmsub312ss.asm",

@@ -1,6 +1,6 @@
 	ccmple 4, bl, cl
-	ccmple 3, cl, al
-	ccmple 10, ax, di
-	ccmple 0, word [0x69e], ax
-	ccmple 12, ebp, esi
-	ccmple 9, ecx, ecx
+	ccmple 1, byte [0x1e4], dl
+	ccmple 5, di, cx
+	ccmple 14, dx, bp
+	ccmple 12, ebp, ecx
+	ccmple 6, dword [0xda2], ebp

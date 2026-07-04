@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for PCMPESTRM",
+  "id": "pcmpestrm16",
+  "format": "bin",
+  "source": "pcmpestrm_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/pcmpestrm/",
+  "target": [
+   { "output": "pcmpestrm.bin16", "match": "pcmpestrm.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for PCMPESTRM",
+  "id": "pcmpestrm32",
+  "format": "bin",
+  "source": "pcmpestrm_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/pcmpestrm/",
+  "target": [
+   { "output": "pcmpestrm.bin32", "match": "pcmpestrm.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for PCMPESTRM",
   "id": "pcmpestrm64",
   "format": "bin",
   "source": "pcmpestrm.asm",

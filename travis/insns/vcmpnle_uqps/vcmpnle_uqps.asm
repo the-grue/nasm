@@ -1,11 +1,15 @@
 default rel
-	vcmpnle_uqps xmm14, xmm6, xmm0
-	vcmpnle_uqps xmm14, xmm0
-	vcmpnle_uqps xmm13, xmm13, xmm5
-	vcmpnle_uqps ymm13, ymm2, ymm14
-	vcmpnle_uqps ymm13, ymm14
-	vcmpnle_uqps ymm5, ymm2, ymm5
-	vcmpnle_uqps k1, xmm1, oword [0xad9]
-	vcmpnle_uqps k5, xmm14, xmm8
-	vcmpnle_uqps k4, ymm14, ymm12
-	vcmpnle_uqps k3, ymm2, ymm8
+	vcmpnle_uqps xmm7, xmm3, xmm0
+	vcmpnle_uqps xmm7, xmm0
+	vcmpnle_uqps xmm1, xmm7, xmm1
+	vcmpnle_uqps ymm2, ymm2, ymm0
+	vcmpnle_uqps ymm2, ymm0
+	vcmpnle_uqps ymm3, ymm7, ymm6
+	vcmpnle_uqps k3, xmm1, xmm4
+	vcmpnle_uqps k4, xmm6, xmm7
+	vcmpnle_uqps k2, ymm5, yword [0xce4]
+	vcmpnle_uqps k4, ymm7, ymm2
+	vcmpnle_uqps xmm14, xmm14, xmm8
+	vcmpnle_uqps ymm13, ymm13, ymm13
+	vcmpnle_uqps k5, xmm10, xmm13
+	vcmpnle_uqps k7, ymm13, ymm14

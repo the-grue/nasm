@@ -1,6 +1,6 @@
 	ctestnae 0, al, dl
-	ctestnae 7, byte [0x7e9], al
-	ctestnae 8, bx, dx
-	ctestnae 8, dx, di
-	ctestnae 7, esi, ebx
-	ctestnae 8, ebx, esi
+	ctestnae 3, cl, bl
+	ctestnae 8, word [0x795], dx
+	ctestnae 9, dx, bp
+	ctestnae 12, esi, ecx
+	ctestnae 15, ebp, edx

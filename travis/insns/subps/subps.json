@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for SUBPS",
+  "id": "subps16",
+  "format": "bin",
+  "source": "subps_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/subps/",
+  "target": [
+   { "output": "subps.bin16", "match": "subps.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for SUBPS",
+  "id": "subps32",
+  "format": "bin",
+  "source": "subps_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/subps/",
+  "target": [
+   { "output": "subps.bin32", "match": "subps.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for SUBPS",
   "id": "subps64",
   "format": "bin",
   "source": "subps.asm",

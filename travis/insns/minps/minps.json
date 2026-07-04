@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for MINPS",
+  "id": "minps16",
+  "format": "bin",
+  "source": "minps_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/minps/",
+  "target": [
+   { "output": "minps.bin16", "match": "minps.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for MINPS",
+  "id": "minps32",
+  "format": "bin",
+  "source": "minps_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/minps/",
+  "target": [
+   { "output": "minps.bin32", "match": "minps.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for MINPS",
   "id": "minps64",
   "format": "bin",
   "source": "minps.asm",

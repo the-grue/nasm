@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPCMPISTRI",
+  "id": "vpcmpistri16",
+  "format": "bin",
+  "source": "vpcmpistri_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpcmpistri/",
+  "target": [
+   { "output": "vpcmpistri.bin16", "match": "vpcmpistri.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPCMPISTRI",
+  "id": "vpcmpistri32",
+  "format": "bin",
+  "source": "vpcmpistri_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpcmpistri/",
+  "target": [
+   { "output": "vpcmpistri.bin32", "match": "vpcmpistri.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPCMPISTRI",
   "id": "vpcmpistri64",
   "format": "bin",
   "source": "vpcmpistri.asm",

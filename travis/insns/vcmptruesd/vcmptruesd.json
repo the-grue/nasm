@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VCMPTRUESD",
+  "id": "vcmptruesd16",
+  "format": "bin",
+  "source": "vcmptruesd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcmptruesd/",
+  "target": [
+   { "output": "vcmptruesd.bin16", "match": "vcmptruesd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCMPTRUESD",
+  "id": "vcmptruesd32",
+  "format": "bin",
+  "source": "vcmptruesd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcmptruesd/",
+  "target": [
+   { "output": "vcmptruesd.bin32", "match": "vcmptruesd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VCMPTRUESD",
   "id": "vcmptruesd64",
   "format": "bin",
   "source": "vcmptruesd.asm",

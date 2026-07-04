@@ -1,2 +1,2 @@
 	cmpzxadd dword [0xdfe], ebx, esi
-	cmpzxadd dword [0x252], ebp, ebp
+	cmpzxadd dword [0xb48], edx, eax

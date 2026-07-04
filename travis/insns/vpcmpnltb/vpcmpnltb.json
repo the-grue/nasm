@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPCMPNLTB",
+  "id": "vpcmpnltb16",
+  "format": "bin",
+  "source": "vpcmpnltb_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpcmpnltb/",
+  "target": [
+   { "output": "vpcmpnltb.bin16", "match": "vpcmpnltb.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPCMPNLTB",
+  "id": "vpcmpnltb32",
+  "format": "bin",
+  "source": "vpcmpnltb_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpcmpnltb/",
+  "target": [
+   { "output": "vpcmpnltb.bin32", "match": "vpcmpnltb.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPCMPNLTB",
   "id": "vpcmpnltb64",
   "format": "bin",
   "source": "vpcmpnltb.asm",

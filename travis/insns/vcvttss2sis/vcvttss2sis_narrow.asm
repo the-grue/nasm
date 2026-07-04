@@ -1,2 +1,2 @@
-	vcvttss2sis eax, xmm8
-	vcvttss2sis edx, dword [0x7b2]
+	vcvttss2sis eax, xmm4
+	vcvttss2sis edi, xmm1

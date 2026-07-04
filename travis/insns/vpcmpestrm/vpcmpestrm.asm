@@ -1,3 +1,4 @@
 default rel
-	vpcmpestrm xmm7, oword [0x4ff], 0xf5
-	vpcmpestrm xmm8, oword [0xeb3], 0x9b
+	vpcmpestrm xmm3, oword [0x4ff], 0xf5
+	vpcmpestrm xmm3, xmm5, 0x71
+	vpcmpestrm xmm12, xmm14, 0xe9

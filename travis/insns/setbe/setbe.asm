@@ -1,7 +1,13 @@
 default rel
 	setbe byte [0xb09]
-	setbe dl
-	setbe rax
-	setbe rax
-	setbe ebp
-	setbe edi
+	setbe al
+	setbe rbp
+	setbe rbx
+	setbe ecx
+	setbe eax
+	setbe r12b
+	setbe r14
+	setbe r14d
+	setbe r31b
+	setbe r24
+	setbe r21d

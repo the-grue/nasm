@@ -1,3 +1,5 @@
 default rel
-	vucomxss xmm14, xmm0
-	vucomxss xmm7, xmm3
+	vucomxss xmm7, xmm0
+	vucomxss xmm2, xmm4
+	vucomxss xmm11, xmm8
+	vucomxss xmm19, xmm17

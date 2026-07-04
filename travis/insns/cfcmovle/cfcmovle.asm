@@ -1,9 +1,17 @@
 default rel
 	cfcmovle cx, ax
-	cfcmovle word [0x950], cx
-	cfcmovle dword [0x58d], ecx
-	cfcmovle ecx, esi
-	cfcmovle qword [0xaed], rdi
-	cfcmovle rbx, rdx
-	cfcmovle dx, word [0xb08]
-	cfcmovle ax, bp
+	cfcmovle cx, si
+	cfcmovle esi, esi
+	cfcmovle edx, ebp
+	cfcmovle rax, rcx
+	cfcmovle qword [0xf8f], rbx
+	cfcmovle dx, di
+	cfcmovle bp, bp
+	cfcmovle r15w, r12w
+	cfcmovle r13d, r14d
+	cfcmovle r15, r14
+	cfcmovle r8w, r15w
+	cfcmovle r20w, r31w
+	cfcmovle r24d, r20d
+	cfcmovle r23, r24
+	cfcmovle r19w, r16w

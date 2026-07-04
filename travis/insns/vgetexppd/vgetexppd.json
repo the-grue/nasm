@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VGETEXPPD",
+  "id": "vgetexppd16",
+  "format": "bin",
+  "source": "vgetexppd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vgetexppd/",
+  "target": [
+   { "output": "vgetexppd.bin16", "match": "vgetexppd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VGETEXPPD",
+  "id": "vgetexppd32",
+  "format": "bin",
+  "source": "vgetexppd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vgetexppd/",
+  "target": [
+   { "output": "vgetexppd.bin32", "match": "vgetexppd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VGETEXPPD",
   "id": "vgetexppd64",
   "format": "bin",
   "source": "vgetexppd.asm",

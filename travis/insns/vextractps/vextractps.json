@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VEXTRACTPS",
+  "id": "vextractps16",
+  "format": "bin",
+  "source": "vextractps_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vextractps/",
+  "target": [
+   { "output": "vextractps.bin16", "match": "vextractps.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VEXTRACTPS",
+  "id": "vextractps32",
+  "format": "bin",
+  "source": "vextractps_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vextractps/",
+  "target": [
+   { "output": "vextractps.bin32", "match": "vextractps.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VEXTRACTPS",
   "id": "vextractps64",
   "format": "bin",
   "source": "vextractps.asm",

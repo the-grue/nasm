@@ -1,11 +1,15 @@
 default rel
-	vcmplepd xmm4, xmm11, xmm8
-	vcmplepd xmm4, xmm8
-	vcmplepd xmm0, xmm9, oword [0x7bb]
-	vcmplepd ymm13, ymm12, ymm10
-	vcmplepd ymm13, ymm10
-	vcmplepd ymm10, ymm8, ymm0
-	vcmplepd k2, xmm10, oword [0x3a8]
-	vcmplepd k5, xmm3, xmm7
-	vcmplepd k3, ymm2, ymm3
-	vcmplepd k6, ymm5, ymm9
+	vcmplepd xmm2, xmm5, xmm4
+	vcmplepd xmm2, xmm4
+	vcmplepd xmm2, xmm5, xmm4
+	vcmplepd ymm5, ymm0, ymm5
+	vcmplepd ymm5, ymm5
+	vcmplepd ymm2, ymm1, ymm1
+	vcmplepd k6, xmm2, xmm4
+	vcmplepd k7, xmm1, xmm2
+	vcmplepd k5, ymm2, yword [0xcd8]
+	vcmplepd k2, ymm5, yword [0xd69]
+	vcmplepd xmm8, xmm12, xmm15
+	vcmplepd ymm15, ymm9, ymm13
+	vcmplepd k2, xmm14, xmm10
+	vcmplepd k7, ymm9, ymm14

@@ -3,7 +3,7 @@
   "description": "Pseudorandom test for VCOMXSH",
   "id": "vcomxsh16",
   "format": "bin",
-  "source": "vcomxsh.asm",
+  "source": "vcomxsh_narrow.asm",
   "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcomxsh/",
   "target": [
    { "output": "vcomxsh.bin16", "match": "vcomxsh.bin16.t" }
@@ -14,7 +14,7 @@
   "description": "Pseudorandom test for VCOMXSH",
   "id": "vcomxsh32",
   "format": "bin",
-  "source": "vcomxsh.asm",
+  "source": "vcomxsh_narrow.asm",
   "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vcomxsh/",
   "target": [
    { "output": "vcomxsh.bin32", "match": "vcomxsh.bin32.t" }

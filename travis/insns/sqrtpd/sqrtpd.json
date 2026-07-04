@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for SQRTPD",
+  "id": "sqrtpd16",
+  "format": "bin",
+  "source": "sqrtpd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/sqrtpd/",
+  "target": [
+   { "output": "sqrtpd.bin16", "match": "sqrtpd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for SQRTPD",
+  "id": "sqrtpd32",
+  "format": "bin",
+  "source": "sqrtpd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/sqrtpd/",
+  "target": [
+   { "output": "sqrtpd.bin32", "match": "sqrtpd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for SQRTPD",
   "id": "sqrtpd64",
   "format": "bin",
   "source": "sqrtpd.asm",

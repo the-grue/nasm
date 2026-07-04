@@ -1,6 +1,6 @@
 	ctestng 2, cl, al
-	ctestng 15, byte [0xb23], dl
-	ctestng 14, dx, cx
-	ctestng 14, dx, bx
-	ctestng 9, edi, eax
-	ctestng 1, ebx, eax
+	ctestng 7, dl, bl
+	ctestng 8, dx, cx
+	ctestng 5, di, ax
+	ctestng 13, esi, edi
+	ctestng 2, dword [0x4a9], ecx

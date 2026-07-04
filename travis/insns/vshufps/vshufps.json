@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VSHUFPS",
+  "id": "vshufps16",
+  "format": "bin",
+  "source": "vshufps_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vshufps/",
+  "target": [
+   { "output": "vshufps.bin16", "match": "vshufps.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VSHUFPS",
+  "id": "vshufps32",
+  "format": "bin",
+  "source": "vshufps_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vshufps/",
+  "target": [
+   { "output": "vshufps.bin32", "match": "vshufps.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VSHUFPS",
   "id": "vshufps64",
   "format": "bin",
   "source": "vshufps.asm",

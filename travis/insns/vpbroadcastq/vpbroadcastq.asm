@@ -1,9 +1,17 @@
 default rel
-	vpbroadcastq xmm8, qword [0x9f8]
-	vpbroadcastq xmm14, qword [0x3c4]
-	vpbroadcastq xmm13, xmm6
-	vpbroadcastq xmm13, xmm2
-	vpbroadcastq ymm0, qword [0xe89]
-	vpbroadcastq ymm1, qword [0xecd]
-	vpbroadcastq ymm1, xmm10
-	vpbroadcastq ymm10, xmm12
+	vpbroadcastq xmm4, qword [0x9f8]
+	vpbroadcastq xmm6, qword [0x351]
+	vpbroadcastq xmm0, xmm7
+	vpbroadcastq xmm5, xmm6
+	vpbroadcastq ymm0, qword [0x290]
+	vpbroadcastq ymm7, qword [0xa8c]
+	vpbroadcastq ymm3, xmm1
+	vpbroadcastq ymm4, xmm3
+	vpbroadcastq xmm15, qword [0x3c4]
+	vpbroadcastq xmm8, xmm15
+	vpbroadcastq ymm9, qword [0x553]
+	vpbroadcastq ymm11, xmm10
+	vpbroadcastq xmm29, qword [0x70e]
+	vpbroadcastq xmm17, xmm26
+	vpbroadcastq ymm17, qword [0x5f2]
+	vpbroadcastq ymm19, xmm24

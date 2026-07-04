@@ -1,6 +1,6 @@
 	cfcmovna di, si
-	cfcmovna word [0x478], bx
-	cfcmovna dword [0xaa3], ebx
-	cfcmovna edx, edx
-	cfcmovna di, dx
-	cfcmovna cx, word [0x3da]
+	cfcmovna bx, ax
+	cfcmovna edx, esi
+	cfcmovna dword [0xdc9], ecx
+	cfcmovna bx, cx
+	cfcmovna si, di

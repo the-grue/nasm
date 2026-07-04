@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPBROADCASTMB2Q",
+  "id": "vpbroadcastmb2q16",
+  "format": "bin",
+  "source": "vpbroadcastmb2q_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpbroadcastmb2q/",
+  "target": [
+   { "output": "vpbroadcastmb2q.bin16", "match": "vpbroadcastmb2q.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPBROADCASTMB2Q",
+  "id": "vpbroadcastmb2q32",
+  "format": "bin",
+  "source": "vpbroadcastmb2q_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vpbroadcastmb2q/",
+  "target": [
+   { "output": "vpbroadcastmb2q.bin32", "match": "vpbroadcastmb2q.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPBROADCASTMB2Q",
   "id": "vpbroadcastmb2q64",
   "format": "bin",
   "source": "vpbroadcastmb2q.asm",

@@ -1,9 +1,13 @@
 default rel
-	vmaskmovpd xmm7, xmm8, oword [0x3a6]
-	vmaskmovpd xmm10, xmm14, oword [0xca9]
-	vmaskmovpd ymm4, ymm2, yword [0x2bd]
-	vmaskmovpd ymm10, ymm0, yword [0xc2d]
-	vmaskmovpd oword [0xa3f], xmm14, xmm6
-	vmaskmovpd oword [0x5ae], xmm8, xmm3
-	vmaskmovpd yword [0xf8b], ymm7, ymm9
-	vmaskmovpd yword [0xfdf], ymm13, ymm5
+	vmaskmovpd xmm3, xmm4, oword [0x3a6]
+	vmaskmovpd xmm5, xmm0, oword [0xc2d]
+	vmaskmovpd ymm4, ymm7, yword [0x6c6]
+	vmaskmovpd ymm7, ymm6, yword [0x68e]
+	vmaskmovpd oword [0x240], xmm3, xmm6
+	vmaskmovpd oword [0x5e0], xmm5, xmm5
+	vmaskmovpd yword [0xa29], ymm6, ymm1
+	vmaskmovpd yword [0x489], ymm2, ymm0
+	vmaskmovpd xmm13, xmm15, oword [0xca9]
+	vmaskmovpd ymm10, ymm12, yword [0x491]
+	vmaskmovpd oword [0x405], xmm12, xmm12
+	vmaskmovpd yword [0x877], ymm10, ymm9

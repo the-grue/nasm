@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VPRORQ",
+  "id": "vprorq16",
+  "format": "bin",
+  "source": "vprorq_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vprorq/",
+  "target": [
+   { "output": "vprorq.bin16", "match": "vprorq.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPRORQ",
+  "id": "vprorq32",
+  "format": "bin",
+  "source": "vprorq_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vprorq/",
+  "target": [
+   { "output": "vprorq.bin32", "match": "vprorq.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VPRORQ",
   "id": "vprorq64",
   "format": "bin",
   "source": "vprorq.asm",

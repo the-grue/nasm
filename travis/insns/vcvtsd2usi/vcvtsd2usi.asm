@@ -1,5 +1,9 @@
 default rel
-	vcvtsd2usi edi, xmm13
-	vcvtsd2usi edx, qword [0x8b5]
-	vcvtsd2usi rdx, qword [0x1eb]
-	vcvtsd2usi rdx, xmm1
+	vcvtsd2usi edi, xmm6
+	vcvtsd2usi ebp, xmm3
+	vcvtsd2usi rdx, xmm3
+	vcvtsd2usi rax, xmm5
+	vcvtsd2usi r12d, xmm14
+	vcvtsd2usi r10, xmm13
+	vcvtsd2usi r24d, xmm23
+	vcvtsd2usi r28, xmm30

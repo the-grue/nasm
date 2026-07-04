@@ -1,7 +1,13 @@
 default rel
-	vplzcntq xmm2, xmm1
-	vplzcntq xmm13, xmm9
-	vplzcntq ymm1, ymm14
-	vplzcntq ymm1, ymm15
-	vplzcntq zmm9, zmm15
-	vplzcntq zmm7, zword [0xc81]
+	vplzcntq xmm1, xmm0
+	vplzcntq xmm2, oword [0x2d3]
+	vplzcntq ymm0, yword [0xa12]
+	vplzcntq ymm6, ymm7
+	vplzcntq zmm0, zmm2
+	vplzcntq zmm7, zmm5
+	vplzcntq xmm14, xmm11
+	vplzcntq ymm11, ymm15
+	vplzcntq zmm14, zmm15
+	vplzcntq xmm25, xmm17
+	vplzcntq ymm23, ymm30
+	vplzcntq zmm17, zmm24

@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VMAXPS",
+  "id": "vmaxps16",
+  "format": "bin",
+  "source": "vmaxps_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vmaxps/",
+  "target": [
+   { "output": "vmaxps.bin16", "match": "vmaxps.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VMAXPS",
+  "id": "vmaxps32",
+  "format": "bin",
+  "source": "vmaxps_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vmaxps/",
+  "target": [
+   { "output": "vmaxps.bin32", "match": "vmaxps.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VMAXPS",
   "id": "vmaxps64",
   "format": "bin",
   "source": "vmaxps.asm",

@@ -1,0 +1,12 @@
+	vpminuw xmm7, xmm3, oword [0xeba]
+	vpminuw xmm7, oword [0xeba]
+	vpminuw xmm1, xmm4, xmm1
+	vpminuw ymm2, ymm4, ymm1
+	vpminuw ymm2, ymm1
+	vpminuw ymm3, ymm7, ymm7
+	vpminuw xmm5, xmm1, xmm4
+	vpminuw xmm5, xmm4
+	vpminuw xmm0, xmm1, xmm0
+	vpminuw ymm7, ymm3, ymm6
+	vpminuw ymm7, ymm6
+	vpminuw ymm1, ymm4, yword [0x459]

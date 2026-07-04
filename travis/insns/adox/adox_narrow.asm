@@ -1,5 +1,5 @@
 	adox ebx, dword [0xd6b]
-	adox ecx, ecx
-	adox ebx, ebp, dword [0x7dd]
-	adox ebp, dword [0x7dd]
-	adox ecx, ebp, eax
+	adox ebp, esi
+	adox eax, edx, dword [0x1df]
+	adox edx, dword [0x1df]
+	adox eax, ebx, dword [0xe7e]

@@ -3,7 +3,7 @@
   "description": "Pseudorandom test for PUNPCKHDQ",
   "id": "punpckhdq16",
   "format": "bin",
-  "source": "punpckhdq.asm",
+  "source": "punpckhdq_narrow.asm",
   "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/punpckhdq/",
   "target": [
    { "output": "punpckhdq.bin16", "match": "punpckhdq.bin16.t" }
@@ -14,7 +14,7 @@
   "description": "Pseudorandom test for PUNPCKHDQ",
   "id": "punpckhdq32",
   "format": "bin",
-  "source": "punpckhdq.asm",
+  "source": "punpckhdq_narrow.asm",
   "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/punpckhdq/",
   "target": [
    { "output": "punpckhdq.bin32", "match": "punpckhdq.bin32.t" }

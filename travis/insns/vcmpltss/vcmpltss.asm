@@ -1,6 +1,8 @@
 default rel
-	vcmpltss xmm8, xmm14, qword [0x6ad]
-	vcmpltss xmm8, qword [0x6ad]
-	vcmpltss xmm2, xmm9, xmm8
-	vcmpltss k2, xmm0, xmm11
-	vcmpltss k1, xmm1, xmm10
+	vcmpltss xmm4, xmm7, qword [0x6ad]
+	vcmpltss xmm4, qword [0x6ad]
+	vcmpltss xmm2, xmm5, xmm0
+	vcmpltss k1, xmm5, xmm3
+	vcmpltss k7, xmm7, dword [0x5e3]
+	vcmpltss xmm9, xmm12, xmm8
+	vcmpltss k1, xmm11, xmm15

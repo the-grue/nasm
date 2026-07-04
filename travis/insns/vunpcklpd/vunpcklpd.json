@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VUNPCKLPD",
+  "id": "vunpcklpd16",
+  "format": "bin",
+  "source": "vunpcklpd_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vunpcklpd/",
+  "target": [
+   { "output": "vunpcklpd.bin16", "match": "vunpcklpd.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VUNPCKLPD",
+  "id": "vunpcklpd32",
+  "format": "bin",
+  "source": "vunpcklpd_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vunpcklpd/",
+  "target": [
+   { "output": "vunpcklpd.bin32", "match": "vunpcklpd.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VUNPCKLPD",
   "id": "vunpcklpd64",
   "format": "bin",
   "source": "vunpcklpd.asm",

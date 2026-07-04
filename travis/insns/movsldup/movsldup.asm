@@ -1,3 +1,4 @@
 default rel
-	movsldup xmm7, xmm5
-	movsldup xmm0, oword [0xe67]
+	movsldup xmm3, xmm2
+	movsldup xmm4, oword [0xa35]
+	movsldup xmm8, xmm15

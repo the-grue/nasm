@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VSQRTBF16",
+  "id": "vsqrtbf1616",
+  "format": "bin",
+  "source": "vsqrtbf16_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vsqrtbf16/",
+  "target": [
+   { "output": "vsqrtbf16.bin16", "match": "vsqrtbf16.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VSQRTBF16",
+  "id": "vsqrtbf1632",
+  "format": "bin",
+  "source": "vsqrtbf16_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vsqrtbf16/",
+  "target": [
+   { "output": "vsqrtbf16.bin32", "match": "vsqrtbf16.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VSQRTBF16",
   "id": "vsqrtbf1664",
   "format": "bin",
   "source": "vsqrtbf16.asm",

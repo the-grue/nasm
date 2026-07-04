@@ -1,4 +1,5 @@
 default rel
-	vroundsd xmm2, xmm15, xmm12, 0xfd
-	vroundsd xmm2, xmm12, 0xfd
-	vroundsd xmm5, xmm7, xmm15, 0x41
+	vroundsd xmm1, xmm7, xmm6, 0xfd
+	vroundsd xmm1, xmm6, 0xfd
+	vroundsd xmm5, xmm0, xmm3, 0x80
+	vroundsd xmm10, xmm11, xmm11, 0xfe

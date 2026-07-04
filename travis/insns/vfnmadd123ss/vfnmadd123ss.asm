@@ -1,3 +1,4 @@
 default rel
-	vfnmadd123ss xmm6, xmm10, xmm8
-	vfnmadd123ss xmm7, xmm1, xmm7
+	vfnmadd123ss xmm3, xmm5, xmm4
+	vfnmadd123ss xmm1, xmm0, xmm5
+	vfnmadd123ss xmm11, xmm8, xmm10

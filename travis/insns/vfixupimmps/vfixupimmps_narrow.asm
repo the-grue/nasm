@@ -1,0 +1,9 @@
+	vfixupimmps xmm5, xmm2, xmm1, 0x6
+	vfixupimmps xmm5, xmm1, 0x6
+	vfixupimmps xmm7, xmm5, oword [0xf16], 0xd5
+	vfixupimmps ymm1, ymm0, ymm0, 0x3c
+	vfixupimmps ymm1, ymm0, 0x3c
+	vfixupimmps ymm5, ymm1, yword [0x418], 0xe0
+	vfixupimmps zmm2, zmm0, zmm5, 0x98
+	vfixupimmps zmm2, zmm5, 0x98
+	vfixupimmps zmm1, zmm7, zmm0, 0x4f

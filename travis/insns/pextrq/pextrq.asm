@@ -1,3 +1,4 @@
 default rel
-	pextrq qword [0x204], xmm14, 0xbb
-	pextrq qword [0x12f], xmm12, 0x6d
+	pextrq qword [0x204], xmm7, 0xbb
+	pextrq qword [0x891], xmm4, 0x61
+	pextrq r14, xmm8, 0xc0

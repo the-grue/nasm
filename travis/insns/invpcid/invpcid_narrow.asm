@@ -1,2 +1,2 @@
 	invpcid edx, oword [0xdfa]
-	invpcid ebx, oword [0xc20]
+	invpcid eax, oword [0x18b]

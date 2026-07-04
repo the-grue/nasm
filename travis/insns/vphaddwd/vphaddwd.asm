@@ -1,4 +1,5 @@
 default rel
-	vphaddwd xmm7, xmm9
-	vphaddwd xmm7
-	vphaddwd xmm4, xmm8
+	vphaddwd xmm3, xmm4
+	vphaddwd xmm3
+	vphaddwd xmm4, xmm7
+	vphaddwd xmm10, xmm9

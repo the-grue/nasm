@@ -1,6 +1,8 @@
 default rel
-	vcmpngt_uqss xmm5, xmm9, xmm9
-	vcmpngt_uqss xmm5, xmm9
-	vcmpngt_uqss xmm1, xmm10, qword [0x8a5]
-	vcmpngt_uqss k6, xmm2, xmm10
-	vcmpngt_uqss k6, xmm7, xmm4
+	vcmpngt_uqss xmm2, xmm4, xmm4
+	vcmpngt_uqss xmm2, xmm4
+	vcmpngt_uqss xmm0, xmm5, qword [0x7f7]
+	vcmpngt_uqss k1, xmm2, xmm0
+	vcmpngt_uqss k1, xmm2, dword [0x900]
+	vcmpngt_uqss xmm8, xmm13, xmm14
+	vcmpngt_uqss k1, xmm10, xmm15

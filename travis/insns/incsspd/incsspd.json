@@ -3,7 +3,7 @@
   "description": "Pseudorandom test for INCSSPD",
   "id": "incsspd16",
   "format": "bin",
-  "source": "incsspd.asm",
+  "source": "incsspd_narrow.asm",
   "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/incsspd/",
   "target": [
    { "output": "incsspd.bin16", "match": "incsspd.bin16.t" }
@@ -14,7 +14,7 @@
   "description": "Pseudorandom test for INCSSPD",
   "id": "incsspd32",
   "format": "bin",
-  "source": "incsspd.asm",
+  "source": "incsspd_narrow.asm",
   "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/incsspd/",
   "target": [
    { "output": "incsspd.bin32", "match": "incsspd.bin32.t" }

@@ -1,4 +1,4 @@
 	setpe dl
-	setpe byte [0xfcd]
-	setpe ebx
+	setpe byte [0xb26]
 	setpe ebp
+	setpe esi

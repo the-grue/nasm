@@ -1,13 +1,21 @@
 default rel
-	vpmulld xmm4, xmm12, xmm1
-	vpmulld xmm4, xmm1
-	vpmulld xmm6, xmm6, xmm4
-	vpmulld ymm2, ymm1, yword [0xc9d]
-	vpmulld ymm2, yword [0xc9d]
-	vpmulld ymm15, ymm3, yword [0xf84]
-	vpmulld xmm9, xmm3, xmm4
-	vpmulld xmm9, xmm4
-	vpmulld xmm13, xmm4, xmm8
-	vpmulld ymm5, ymm11, ymm2
-	vpmulld ymm5, ymm2
-	vpmulld ymm7, ymm7, ymm9
+	vpmulld xmm2, xmm6, xmm0
+	vpmulld xmm2, xmm0
+	vpmulld xmm7, xmm6, oword [0x3ea]
+	vpmulld ymm6, ymm7, ymm1
+	vpmulld ymm6, ymm1
+	vpmulld ymm2, ymm5, ymm1
+	vpmulld xmm3, xmm3, xmm4
+	vpmulld xmm3, xmm4
+	vpmulld xmm3, xmm1, oword [0xb78]
+	vpmulld ymm0, ymm1, ymm0
+	vpmulld ymm0, ymm0
+	vpmulld ymm2, ymm2, ymm5
+	vpmulld xmm11, xmm11, xmm8
+	vpmulld ymm11, ymm10, ymm14
+	vpmulld xmm15, xmm9, xmm12
+	vpmulld ymm9, ymm15, ymm8
+	vpmulld xmm20, xmm18, xmm17
+	vpmulld ymm20, ymm24, ymm24
+	vpmulld xmm22, xmm18, xmm26
+	vpmulld ymm23, ymm22, ymm17

@@ -1,3 +1,4 @@
 default rel
-	mulss xmm7, dword [0x495]
-	mulss xmm8, xmm14
+	mulss xmm3, dword [0x495]
+	mulss xmm7, xmm7
+	mulss xmm12, xmm10

@@ -1,4 +1,4 @@
 	setnge al
-	setnge byte [0xee7]
+	setnge bl
 	setnge ebx
 	setnge edi

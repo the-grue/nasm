@@ -1,6 +1,6 @@
 	cfcmova cx, dx
-	cfcmova word [0x2dd], ax
-	cfcmova edx, ebx
-	cfcmova ebx, eax
-	cfcmova bp, si
-	cfcmova dx, dx
+	cfcmova bx, ax
+	cfcmova eax, esi
+	cfcmova dword [0xeaa], edx
+	cfcmova ax, bp
+	cfcmova si, di

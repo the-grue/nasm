@@ -3,7 +3,7 @@
   "description": "Pseudorandom test for LMSW",
   "id": "lmsw16",
   "format": "bin",
-  "source": "lmsw.asm",
+  "source": "lmsw_narrow.asm",
   "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/lmsw/",
   "target": [
    { "output": "lmsw.bin16", "match": "lmsw.bin16.t" }
@@ -14,7 +14,7 @@
   "description": "Pseudorandom test for LMSW",
   "id": "lmsw32",
   "format": "bin",
-  "source": "lmsw.asm",
+  "source": "lmsw_narrow.asm",
   "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/lmsw/",
   "target": [
    { "output": "lmsw.bin32", "match": "lmsw.bin32.t" }

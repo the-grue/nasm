@@ -1,4 +1,6 @@
 default rel
-	vrsqrt14ss xmm7, xmm9, xmm6
-	vrsqrt14ss xmm7, xmm6
-	vrsqrt14ss xmm6, xmm8, xmm14
+	vrsqrt14ss xmm3, xmm4, xmm3
+	vrsqrt14ss xmm3, xmm3
+	vrsqrt14ss xmm0, xmm4, dword [0x109]
+	vrsqrt14ss xmm11, xmm12, xmm13
+	vrsqrt14ss xmm30, xmm28, xmm20

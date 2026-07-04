@@ -1,6 +1,28 @@
 [
  {
   "description": "Pseudorandom test for VINSERTI64X2",
+  "id": "vinserti64x216",
+  "format": "bin",
+  "source": "vinserti64x2_narrow.asm",
+  "option": "--bits 16 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vinserti64x2/",
+  "target": [
+   { "output": "vinserti64x2.bin16", "match": "vinserti64x2.bin16.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VINSERTI64X2",
+  "id": "vinserti64x232",
+  "format": "bin",
+  "source": "vinserti64x2_narrow.asm",
+  "option": "--bits 32 -w-ea-absolute -w-implicit-abs-deprecated -I./travis/insns/vinserti64x2/",
+  "target": [
+   { "output": "vinserti64x2.bin32", "match": "vinserti64x2.bin32.t" }
+  ]
+ }
+,
+ {
+  "description": "Pseudorandom test for VINSERTI64X2",
   "id": "vinserti64x264",
   "format": "bin",
   "source": "vinserti64x2.asm",
