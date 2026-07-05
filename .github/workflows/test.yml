@@ -35,3 +35,11 @@ jobs:
       - name: Run travis tests
         run: |
           make travis
+
+      - name: Upload travis.log
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: travis-log
+          path: travis.log
+          if-no-files-found: warn
