@@ -20,7 +20,7 @@ jobs:
           apt-get update && apt-get install -y automake perl python3 build-essential
 
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Prepare build system
         run: |
