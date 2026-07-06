@@ -102,6 +102,12 @@ static inline void os_set_binary_mode(FILE *f) {
     }
 }
 
+static inline int os_compare_paths(const os_filename a, const os_filename b)
+{
+    return CompareStringOrdinal(a, -1, b, -1, TRUE);
+}
+#define os_compare_paths os_compare_paths
+
 #else  /* not _WIN32 */
 
 typedef const char *os_filename;
@@ -425,3 +431,34 @@ int nasm_remove(const char *pathname)
 
     return rv;
 }
+
+/*
+ * Try to determine if two paths are the same. This test must not have
+ * false positives; false negatives are OK but (obviously) not ideal.
+ */
+#ifdef os_compare_paths
+int nasm_compare_paths(const char *a, const char *b)
+{
+    os_filename oa, ob;
+    /* A direct string comparison is usually quick */
+    int rv = strcmp(a, b);
+
+    if (!rv)
+        return rv;
+
+    oa = os_mangle_filename(a);
+    ob = os_mangle_filename(b);
+
+    rv = os_compare_paths(oa, ob);
+
+    os_free_filename(oa);
+    os_free_filename(ob);
+
+    return rv;
+}
+#else
+int nasm_compare_paths(const char *a, const char *b)
+{
+    return strcmp(a, b);
+}
+#endif

@@ -527,6 +527,9 @@ void nasm_set_binary_mode(FILE *f);
 /* Probe for existence of a file */
 bool nasm_file_exists(const char *filename);
 
+/* Compare two pathnames */
+int nasm_compare_paths(const char *a, const char *b);
+
 /* Missing fseeko/ftello */
 #ifndef HAVE_FSEEKO
 # undef off_t                   /* Just in case it is a macro */
