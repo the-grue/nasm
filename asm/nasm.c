@@ -112,7 +112,6 @@ static unsigned int operating_mode;
 /* Dependency flags */
 static bool depend_emit_phony = false;
 static bool depend_missing_ok = false;
-static char *depend_target = NULL;
 struct strlist *depend_list;
 
 static inline bool terminate_after_phase(void)
@@ -460,7 +459,7 @@ static void emit_dependencies(struct strlist *list)
         deps = stdout;
     }
 
-    linepos = fprintf(deps, "%s :", depend_target);
+    linepos = fprintf(deps, "%s :", get_filename(FN_DEPEND_TARGET));
     strlist_for_each(l, list) {
         char *file = quote_for_make(l->str);
         len = strlen(file);
@@ -714,10 +713,15 @@ int main(int argc, char **argv)
     fix_dependfile_name();
     fix_outfile_name();
 
-    depend_list = (operating_mode & OP_DEPEND) ? strlist_alloc(true) : NULL;
+    if (operating_mode & OP_DEPEND) {
+        depend_list = strlist_alloc(true);
 
-    if (!depend_target)
-        depend_target = quote_for_make(get_filename(FN_OUTFILE));
+        if (!get_filename(FN_DEPEND_TARGET))
+            set_filename(FN_DEPEND_TARGET,
+                         quote_for_make(get_filename(FN_OUTFILE)));
+    } else {
+        depend_list = NULL;
+    }
 
     reset_global_defaults(cmd_sb);
 
@@ -842,7 +846,6 @@ int main(int argc, char **argv)
     src_free();
     strlist_free(&include_path);
     cleanup_filenames();
-    nasm_free(depend_target);
 
     return terminate_after_phase();
 }
@@ -1349,11 +1352,11 @@ static bool process_arg(char *p, char *q, int pass)
                     advance = true;
                     break;
                 case 'T':
-                    nasm_strdupto(&depend_target, q);
+                    copy_filename(FN_DEPEND_TARGET, q);
                     advance = true;
                     break;
                 case 'Q':
-                    nasm_strto(&depend_target, quote_for_make(q));
+                    set_filename(FN_DEPEND_TARGET, quote_for_make(q));
                     advance = true;
                     break;
                 case 'W':

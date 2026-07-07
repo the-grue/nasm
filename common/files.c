@@ -6,13 +6,20 @@
 #include "files.h"
 #include "error.h"
 
+/* These must match the constants in "files.h" */
 static const char * const filename_names[FN_NFILES] = {
     "input",
-    "mapped-input",
+
     "output",
     "error",
     "list",
-    "dependency"
+    "dependency",
+    "map",
+
+    NULL,                       /* End of "real" filenames */
+
+    "debug mapped input",
+    "make mapped output"
 };
 
 const char *_filenames[FN_NFILES];
@@ -40,17 +47,20 @@ const char *set_filename(enum filenames fn, char *src)
 
 void check_overwrite_files(void)
 {
-    enum filenames fn;
-    const char *inname = get_filename(FN_INFILE);
+    enum filenames fi, fo;      /* No fie or fum */
 
-    if (!inname)
-        return;
+    for (fi = FN_INFILE; fi < FN_OUTFILE; fi++) {
+        const char *inname = get_filename(fi);
 
-    for (fn = FN_INFILE+2; fn < FN_NFILES; fn++) {
-        const char *outname = get_filename(fn);
-        if (outname && !nasm_compare_paths(inname, outname)) {
-            nasm_fatal("%s file would overwrite input file",
-                       filename_names[fn]);
+        if (!inname)
+            continue;
+
+        for (fo = FN_OUTFILE; fo < FN_NFILES_REAL; fo++) {
+            const char *outname = get_filename(fo);
+            if (outname && !nasm_compare_paths(inname, outname)) {
+                nasm_nonfatal("%s file would overwrite %s file `%s'",
+                              filename_names[fo], filename_names[fi], inname);
+            }
         }
     }
 }

@@ -10,17 +10,35 @@
 /*
  * Primary file names set on the command line etc.
  * Wrapped in accessors to make them as constant as possible.
+ *
+ * The order of the sections in this enum is critical!
  */
 enum filenames {
-    /* These two entries must be first, in this order */
-    FN_INFILE,                  /* Primary input file */
-    FN_MAPPED_INFILE,           /* Debug mapped input file */
-    FN_OUTFILE,                 /* Primary output file */
+    /* Input filenames. FN_INFILE MUST be the first entry. */
+    FN_INFILE,                  /* Primary input file - MUST BE FIRST */
 
+    /*
+     * Section: Output filenames.
+     * FN_OUTFILE MUST be the first entry.
+     */
+    FN_OUTFILE,                 /* Primary output file - MUST BE FIRST */
     FN_ERRFILE,                 /* Error message file */
     FN_LISTFILE,                /* Listing file */
     FN_DEPENDFILE,              /* Dependency file */
     FN_MAPFILE,                 /* Map file (outbin) */
+
+    /* Total number of "real" filenames. */
+    FN_NFILES_REAL,
+
+    /*
+     * Section: Virtual filenames.
+     * Strings that don't necessarily correspond directly to paths
+     * in the host filesystem.
+     */
+    FN_MAPPED_INFILE,           /* Debug mapped input file name */
+    FN_DEPEND_TARGET,           /* Output target name per -MF, -MD, -MQ */
+
+    /* Total fixed filename count */
     FN_NFILES
 };
 
